@@ -3,7 +3,7 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background: var(--blackish);
+  background: var(--blackishBack);
   position: fixed;
   left: 0;
   right: 0;
@@ -15,11 +15,19 @@ nav {
   text-transform: uppercase;
   font-size: 17px;
   font-weight: 450;
+  box-shadow: 0 -65px 30px 50px #0D9580cc;
+
+
 }
+nav a:hover {
+  color: var(--greenish);/**********************/
+}
+
 nav .logo {
   position: relative;
   float: left;
-  margin-bottom: 10px;
+  margin: 10px 0 10px 0;
+
   height: 60px;
   line-height: 50px;
 }

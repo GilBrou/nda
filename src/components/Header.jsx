@@ -17,13 +17,41 @@ function Header(props) {
           <div className="menu-button" />
         </label>
         <ul className="menu">
-          <li>Accueil</li>
-          <li>Univers</li>
-          <li>Créateurs</li>
-          <li>À propos</li>
-          <li>Contact</li>
-          <li>Blog</li>
-          <li>Boutique</li>
+          <li>
+            <a href="" className="page-scroll">
+              {props.data ? props.data.Sec1 : "loading..."}
+            </a>
+          </li>
+          <li>
+            <a href="" className="page-scroll">
+              {props.data ? props.data.Sec2 : "loading..."}
+            </a>
+          </li>
+          <li>
+            <a href="" className="page-scroll">
+              {props.data ? props.data.Sec3 : "loading..."}
+            </a>
+          </li>
+          <li>
+            <a href="" className="page-scroll">
+              {props.data ? props.data.Sec4 : "loading..."}
+            </a>
+          </li>
+          <li>
+            <a href="" className="page-scroll">
+              {props.data ? props.data.Sec5 : "loading..."}
+            </a>
+          </li>
+          <li>
+            <a href="" className="page-scroll">
+              {props.data ? props.data.Sec6 : "loading..."}
+            </a>
+          </li>
+          <li>
+            <a href="" className="page-scroll">
+              {props.data ? props.data.Sec7 : "loading..."}
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
