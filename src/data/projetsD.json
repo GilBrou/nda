@@ -1,0 +1,546 @@
+{
+  "projets": [
+    {
+      "pId": "projet15",
+      "pImg": "img/projets/Portfolio.webp",
+      "pName": "Mon portfolio",
+      "pDescription": "",
+      "pInfos": "Réalisation de la partie Front-End full responsive, DOM dynamique (depuis Json), composants modulaires et réutilisables, code commenté. Création de la charte graphique, logo, infographies, icônes et animations.",
+      "technos": [
+        {
+          "name": "React",
+          "icon": "img/techIcons/react.webp"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "img/techIcons/javascript.webp"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "img/techIcons/bootstrap.webp"
+        },
+        {
+          "name": "Html",
+          "icon": "img/techIcons/html.webp"
+        },
+        {
+          "name": "Css",
+          "icon": "img/techIcons/css.webp"
+        },
+
+        {
+          "name": "Github",
+          "icon": "img/techIcons/github.webp"
+        },
+        {
+          "name": "Krita",
+          "icon": "img/techIcons/Krita.webp"
+        },
+        {
+          "name": "Figma",
+          "icon": "img/techIcons/Figma.webp"
+        },
+        {
+          "name": "Inkscape",
+          "icon": "img/techIcons/Inkscape.webp"
+        }
+      ],
+      "pSite": "https://www.gillianbroussedev.com/accueil",
+      "but1": "Visiter le site",
+      "bClassName": "buttonNotNeeded",
+      "but2": "Détails du code",
+      "b2ClassName": "soloButton",
+      "pCode": "https://github.com/GilBrou/MonPortfolio"
+    },
+    {
+      "pId": "projet14",
+      "pImg": "img/projets/Gali.webp",
+      "pName": "Rachel Gali - Autrice SFFF",
+      "pDescription": "L'univers d'une apprentie conteuse.",
+      "pInfos": "Site full responsive, Liste dynamique des ouvrages, lien vers page dédiée (DOM hydraté par Json), création de template pour les livres (image, vidéos, résumé général, résumé de texte, liens d'achats, liens d'avis...), code commenté. Création de la charte graphique, logo, infographie et animations.",
+      "technos": [
+        {
+          "name": "React",
+          "icon": "img/techIcons/react.webp"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "img/techIcons/javascript.webp"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "img/techIcons/bootstrap.webp"
+        },
+        {
+          "name": "Html",
+          "icon": "img/techIcons/html.webp"
+        },
+        {
+          "name": "Css",
+          "icon": "img/techIcons/css.webp"
+        },
+
+        {
+          "name": "Github",
+          "icon": "img/techIcons/github.webp"
+        },
+        {
+          "name": "Krita",
+          "icon": "img/techIcons/Krita.webp"
+        },
+        {
+          "name": "Figma",
+          "icon": "img/techIcons/Figma.webp"
+        },
+        {
+          "name": "Inkscape",
+          "icon": "img/techIcons/Inkscape.webp"
+        }
+      ],
+      "pSite": "https://rachelgali.com/",
+      "but1": "Visiter le site",
+      "but2": "Détails du code",
+      "pCode": "https://github.com/GilBrou/RachelGali"
+    },
+    {
+      "pId": "projet13",
+      "pImg": "img/projets/Learn.webp",
+      "pName": "Learn@Home",
+      "pDescription": "Association de soutien scolaire à distance.",
+      "pInfos": "Ma mission consistait à réaliser les maquettes Desktop & Mobile, ainsi que les users stories et les diagrammes d'utilisation d'après le cahier des charges et les croquis fournis par l'entreprise.",
+      "technos": [
+        {
+          "name": "Figma",
+          "icon": "img/techIcons/Figma.webp"
+        },
+        {
+          "name": "Krita",
+          "icon": "img/techIcons/Krita.webp"
+        },
+        {
+          "name": "Inkscape",
+          "icon": "img/techIcons/Inkscape.webp"
+        },
+        {
+          "name": "Github",
+          "icon": "img/techIcons/github.webp"
+        }
+      ],
+      "pSite": "",
+      "but1": "Visiter le site",
+      "but2": "Détails du code",
+      "pCode": "https://github.com/GilBrou/Learn",
+      "bClassName": "buttonNotNeeded",
+      "but2": "Détails",
+      "b2ClassName": "soloButton"
+    },
+    {
+      "pId": "projet12",
+      "pImg": "img/projets/Miss.webp",
+      "pName": "Les Sacs de la Miss",
+      "pDescription": "Sacs artisanaux uniques ou en séries limitées.",
+      "pInfos": "Création de la charte graphique et du logo pour une marque de sacs artisanaux. Site full responsive, DOM dynamique, composants modulaires et réutilisables.",
+      "technos": [
+        {
+          "name": "React",
+          "icon": "img/techIcons/react.webp"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "img/techIcons/javascript.webp"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "img/techIcons/bootstrap.webp"
+        },
+        {
+          "name": "Html",
+          "icon": "img/techIcons/html.webp"
+        },
+        {
+          "name": "Css",
+          "icon": "img/techIcons/css.webp"
+        },
+
+        {
+          "name": "Github",
+          "icon": "img/techIcons/github.webp"
+        },
+        {
+          "name": "Krita",
+          "icon": "img/techIcons/Krita.webp"
+        },
+        {
+          "name": "Figma",
+          "icon": "img/techIcons/Figma.webp"
+        },
+        {
+          "name": "Inkscape",
+          "icon": "img/techIcons/Inkscape.webp"
+        }
+      ],
+      "pSite": "https://lessacsdelamiss.netlify.app/",
+      "but1": "Visiter le site",
+      "but2": "Détails du code",
+      "bClassName": "soloButton",
+      "pCode": "",
+      "b2ClassName": "buttonNotNeeded"
+    },
+    {
+      "pId": "projet11",
+      "pImg": "img/projets/HRnet.webp",
+      "pName": "HRnet",
+      "pDescription": "Application de gestion de dossiers employés",
+      "pInfos": "Ma mission : faire passer une librairie jQuery vers React, et choisir l'un des composant JQuery et le publier comme bibliothèque react, analyser la performance d'une application, programmer en JavaScript avec la programmation fonctionnelle, refondre une application pour réduire la dette technique.",
+      "technos": [
+        {
+          "name": "React",
+          "icon": "img/techIcons/react.webp"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "img/techIcons/javascript.webp"
+        },
+        {
+          "name": "Html",
+          "icon": "img/techIcons/html.webp"
+        },
+        {
+          "name": "Css",
+          "icon": "img/techIcons/css.webp"
+        },
+        {
+          "name": "Github",
+          "icon": "img/techIcons/github.webp"
+        }
+      ],
+      "pSite": "https://github.com/GilBrou/HRnet",
+      "but1": "Code application",
+      "pCode": "https://github.com/GilBrou/HrnetModal",
+      "bClassName": "",
+      "but2": "Code bibliothèque",
+      "b2ClassName": ""
+    },
+    {
+      "pId": "projet10",
+      "pImg": "img/projets/Bank.webp",
+      "pName": "ArgentBank",
+      "pDescription": "Application de consultation de comptes bancaires.",
+      "pInfos": "Mon travail consistait à implémenter un gestionnaire d'état dans une application React, modéliser, intéragir et m'identifier avec une API.",
+      "technos": [
+        {
+          "name": "React",
+          "icon": "img/techIcons/react.webp"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "img/techIcons/javascript.webp"
+        },
+        {
+          "name": "Html",
+          "icon": "img/techIcons/html.webp"
+        },
+        {
+          "name": "Css",
+          "icon": "img/techIcons/css.webp"
+        },
+        {
+          "name": "Github",
+          "icon": "img/techIcons/github.webp"
+        }
+      ],
+      "pSite": "",
+      "but1": "Visiter le site",
+      "pCode": "https://github.com/GilBrou/ArgentB",
+      "bClassName": "buttonNotNeeded",
+      "but2": "Détails du code",
+      "b2ClassName": "soloButton"
+    },
+    {
+      "pId": "projet9",
+      "pImg": "img/projets/Sport.webp",
+      "pName": "SportSee",
+      "pDescription": "Startup dédiée au coaching sportif",
+      "pInfos": "Je devais développer un tableau de bord d'analytics avec React tout en assurant la qualité des données de l'application, interagissant avec un service Web et développer des éléments graphiques avancés à l'aide d'une bibliothèque JavaScript (Recharts).",
+      "technos": [
+        {
+          "name": "React",
+          "icon": "img/techIcons/react.webp"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "img/techIcons/javascript.webp"
+        },
+        {
+          "name": "Html",
+          "icon": "img/techIcons/html.webp"
+        },
+        {
+          "name": "Css",
+          "icon": "img/techIcons/css.webp"
+        },
+        {
+          "name": "Github",
+          "icon": "img/techIcons/github.webp"
+        }
+      ],
+      "pSite": "",
+      "but1": "Visiter le site",
+      "pCode": "https://github.com/GilBrou/sport",
+      "bClassName": "buttonNotNeeded",
+      "but2": "Détails du code",
+      "b2ClassName": "soloButton"
+    },
+    {
+      "pId": "projet8",
+      "pImg": "img/projets/Kasa.webp",
+      "pName": "Kasa",
+      "pDescription": "Plateforme spécialisée dans la location d’appartements.",
+      "pInfos": "Refonte totale en full responsive et premiers pas avec React (pas de librairies externes), composants modulaires et réutilisables, page 404 pour les routes inexistantes. Données mockées en Json.",
+      "technos": [
+        {
+          "name": "React",
+          "icon": "img/techIcons/react.webp"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "img/techIcons/javascript.webp"
+        },
+        {
+          "name": "Html",
+          "icon": "img/techIcons/html.webp"
+        },
+        {
+          "name": "Css",
+          "icon": "img/techIcons/css.webp"
+        },
+        {
+          "name": "Github",
+          "icon": "img/techIcons/github.webp"
+        }
+      ],
+      "pSite": "https://kasaproject.netlify.app/",
+      "but1": "Visiter le site",
+      "but2": "Détails du code",
+      "pCode": "https://github.com/GilBrou/KasaProject"
+    },
+    {
+      "pId": "projet7",
+      "pImg": "img/projets/CultQuiz.webp",
+      "pName": "CultQuiz",
+      "pDescription": "Site de quiz sur la Pop-culture.",
+      "pInfos": "Projet personnel : création du logo et de la charte graphique, POO, pages dynamiques (depuis fichier Json), rédaction des questions/réponses, affichage du score final et des réponses, animations fluides, fonctionnalité de tri des quiz par sujet, mode multijoueur local, full responsive.",
+      "technos": [
+        {
+          "name": "JavaScript",
+          "icon": "img/techIcons/javascript.webp"
+        },
+        {
+          "name": "Html",
+          "icon": "img/techIcons/html.webp"
+        },
+        {
+          "name": "Scss",
+          "icon": "img/techIcons/sass.webp"
+        },
+        {
+          "name": "Github",
+          "icon": "img/techIcons/github.webp"
+        },
+        {
+          "name": "Krita",
+          "icon": "img/techIcons/Krita.webp"
+        },
+        {
+          "name": "Inkscape",
+          "icon": "img/techIcons/Inkscape.webp"
+        }
+      ],
+      "pSite": "https://gilbrou.github.io/CultQuizProject/",
+      "but1": "Visiter le site",
+      "but2": "Détails du code",
+      "pCode": "https://github.com/GilBrou/CultQuizProject"
+    },
+    {
+      "pId": "projet6",
+      "pImg": "img/projets/Chef.webp",
+      "pName": "Ce soir, c'est VOUS le chef !",
+      "pDescription": "Moteur de recherche de recettes de cuisine.",
+      "pInfos": "Ma mission : réaliser la partie Front-End et full responsive, développer deux algorithmes de recherche puis réaliser une fiche d’investigation de fonctionnalité afin de comparer leurs performances et, enfin, implémenter la fonctionnalité de recherche par ingrédients, appareils et ustensiles, création du logo. Données mockées.",
+      "technos": [
+        {
+          "name": "JavaScript",
+          "icon": "img/techIcons/javascript.webp"
+        },
+        {
+          "name": "Html",
+          "icon": "img/techIcons/html.webp"
+        },
+        {
+          "name": "Scss",
+          "icon": "img/techIcons/sass.webp"
+        },
+        {
+          "name": "Github",
+          "icon": "img/techIcons/github.webp"
+        },
+        {
+          "name": "Krita",
+          "icon": "img/techIcons/Krita.webp"
+        },
+        {
+          "name": "Inkscape",
+          "icon": "img/techIcons/Inkscape.webp"
+        }
+      ],
+      "pSite": "https://gilbrou.github.io/CeSoirC-estVousLeChef/",
+      "but1": "Visiter le site",
+      "but2": "Détails du code",
+      "pCode": "https://github.com/GilBrou/CeSoirC-estVousLeChef"
+    },
+    {
+      "pId": "projet5",
+      "pImg": "img/projets/PICme.webp",
+      "pName": "PICme",
+      "pDescription": "Plateforme pour photographes indépendants.",
+      "pInfos": "Réalisation de la partie Front-End fonctionnelle, POO, site responsive desktop & mobile. Liste dynamique des photographes et lien vers page dédiée, tri par tags, galerie photo et vidéo navigable et accessibilité complète (navigation clavier,  lecture d’écran), création du logo. Données mockées en Json.",
+      "technos": [
+        {
+          "name": "JavaScript",
+          "icon": "img/techIcons/javascript.webp"
+        },
+        {
+          "name": "Html",
+          "icon": "img/techIcons/html.webp"
+        },
+        {
+          "name": "Scss",
+          "icon": "img/techIcons/sass.webp"
+        },
+        {
+          "name": "Github",
+          "icon": "img/techIcons/github.webp"
+        },
+        {
+          "name": "Krita",
+          "icon": "img/techIcons/Krita.webp"
+        },
+        {
+          "name": "Inkscape",
+          "icon": "img/techIcons/Inkscape.webp"
+        }
+      ],
+      "pSite": "https://gilbrou.github.io/PICme/",
+      "but1": "Visiter le site",
+      "but2": "Détails du code",
+      "pCode": "https://github.com/GilBrou/PICme"
+    },
+    {
+      "pId": "projet4",
+      "pImg": "img/projets/GameOn.webp",
+      "pName": "GameOn",
+      "pDescription": "Spécialiste des conférences et concours gamers.",
+      "pInfos": " À l’aide du code commencé par mon prédécesseur, d’un brief de mission et de maquettes, je devais compléter la partie Front-End du projet, implémenter le code JavaScript permettant de fermer la modale et paramétrer les conditions de soumission des entrées du formulaire.",
+      "technos": [
+        {
+          "name": "JavaScript",
+          "icon": "img/techIcons/javascript.webp"
+        },
+        {
+          "name": "Html",
+          "icon": "img/techIcons/html.webp"
+        },
+        {
+          "name": "Css",
+          "icon": "img/techIcons/css.webp"
+        },
+        {
+          "name": "Github",
+          "icon": "img/techIcons/github.webp"
+        }
+      ],
+      "pSite": "https://gilbrou.github.io/GameOn/",
+      "but1": "Visiter le site",
+      "but2": "Détails du code",
+      "pCode": "https://github.com/GilBrou/GameOn"
+    },
+    {
+      "pId": "projet3",
+      "pImg": "img/projets/Cityfoodies.webp",
+      "pName": "Cityfoodies",
+      "pDescription": "Précommandes pour restaurants gastronomiques.",
+      "pInfos": "Ma mission consistait à réaliser un prototype du site fidèle au cahier des charges et à créer la charte graphique (et logo) en utilisant l’approche mobile-first. Au menu de ce projet : site responsive, découverte du Scss, champ de recherche éditable, pages dédiées pour les cartes des restaurants.",
+      "technos": [
+        {
+          "name": "Html",
+          "icon": "img/techIcons/html.webp"
+        },
+        {
+          "name": "Scss",
+          "icon": "img/techIcons/sass.webp"
+        },
+        {
+          "name": "Krita",
+          "icon": "img/techIcons/Krita.webp"
+        },
+        {
+          "name": "Github",
+          "icon": "img/techIcons/github.webp"
+        },
+        {
+          "name": "Inkscape",
+          "icon": "img/techIcons/Inkscape.webp"
+        }
+      ],
+      "pSite": "https://gilbrou.github.io/cityfoodies/",
+      "but1": "Visiter le site",
+      "but2": "Détails du code",
+      "pCode": "https://github.com/GilBrou/cityfoodies"
+    },
+    {
+      "pId": "projet2",
+      "pImg": "img/projets/Hairbnb.webp",
+      "pName": "Hairbnb",
+      "pDescription": "Réservation de logements 100% METAL.",
+      "pInfos": "Création du logo et de la charte graphique du projet, intégration de maquette responsive d'un site de réservation de logements de vacances. Vous présenter ce premier projet de formation en Html/Css me permet d'illustrer les progrès réalisés depuis sa création en avril 2021.",
+      "technos": [
+        {
+          "name": "Html",
+          "icon": "img/techIcons/html.webp"
+        },
+        {
+          "name": "Css",
+          "icon": "img/techIcons/css.webp"
+        },
+        {
+          "name": "Github",
+          "icon": "img/techIcons/github.webp"
+        },
+        {
+          "name": "Krita",
+          "icon": "img/techIcons/Krita.webp"
+        },
+        {
+          "name": "Inkscape",
+          "icon": "img/techIcons/Inkscape.webp"
+        }
+      ],
+      "pSite": "https://gilbrou.github.io/Hairbnb/",
+      "but1": "Visiter le site",
+      "but2": "Détails du code",
+      "pCode": "https://github.com/GilBrou/Hairbnb"
+    },
+    {
+      "pId": "projet1",
+      "pImg": "img/projets/Spleen.webp",
+      "pName": "Spleen Cities",
+      "pDescription": "Jeu Point & Click rétro (PC) dans l'univers de mon roman éponyme.",
+      "pInfos": "Ma première rencontre avec le monde du dev (et le montage vidéo) ! Entièrement réalisé avec des ressources libres de droits et le moteur Adventure Game Studio. 18000 lignes de code, 9393 images retravaillées ou créées, 1939 lignes de dialogues, 80 musiques & effets sonores, 30 scènes originales, 16 litres de café pour... 4 mois de travail.",
+      "technos": [],
+      "pSite": "https://d48913ea-30ee-4023-aabe-0eb8bfda9652.usrfiles.com/archives/d48913_50b2d727e304430b8e843af8053a542e.zip",
+      "but1": "Télécharger la démo (PC)",
+      "but2": "Trailer",
+      "pCode": "https://youtu.be/hP8GtNPHX-8"
+    }
+  ]
+}

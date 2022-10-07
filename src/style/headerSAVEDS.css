@@ -1,0 +1,313 @@
+/*Module*/
+#menu {
+  padding: 15px 50px 15px 50px;
+  border: unset;
+  padding-top: 25px;
+  background: url("./background.webp"), var(--blackish);
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+#menu a.navbar-brand {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 24px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+#menu.navbar-default .navbar-nav > li > a {
+  font-family: "Titillium Web", sans-serif;
+  text-transform: uppercase;
+  color: var(--primary-subcolor);
+  font-size: 19px;
+  font-weight: 400;
+  padding: 8px 2px;
+  border-radius: 0;
+  margin: 15px 20px 0;
+}
+#menu.navbar-default .navbar-nav > li > a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0;
+  height: 2px;
+  background: var(--secondary-color);
+  content: "";
+  transition: width 0.2s;
+}
+#menu.navbar-default .navbar-nav > li > a:hover:after {
+  width: 100%;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a:after,
+.navbar-default .navbar-nav > .active > a:hover:after,
+.navbar-default .navbar-nav > .active > a:focus:after {
+  display: block !important;
+  position: absolute !important;
+  left: 0 !important;
+  bottom: -1px !important;
+  width: 100% !important;
+  height: 2px !important;
+  background: white;
+  content: "" !important;
+  transition: width 0.2s !important;
+}
+.navbar-toggle {
+  border-radius: 0;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: var(--whiteish);
+  border-color: var(--whiteish);
+}
+.navbar-default .navbar-toggle:hover > .icon-bar {
+  background-color: var(--blackish);
+}
+a:focus,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+  outline-offset: none;
+}
+/*Site logo & entrance animation*/
+.authorLogo {
+  width: auto;
+  height: auto;
+  max-height: 70px;
+  -webkit-animation: Alogo 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s both;
+  animation: Alogo 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s both;
+}
+/*Scrollable section title*/
+.section-title {
+  margin-bottom: 70px;
+}
+.section-title h2 {
+  text-shadow: 1px 1px 2px black;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+/*Scrollable section title underline*/
+.section-title h2::after {
+  position: absolute;
+  content: "";
+  background: white;
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  margin-left: -30px;
+  left: 50%;
+}
+.section-title p {
+  font-size: 18px;
+}
+/*Scrollable section title entrance animation*/
+.one {
+  -webkit-animation: menuA 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s both;
+  animation: menuA 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s both;
+}
+.two {
+  -webkit-animation: menuA 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.2s
+    both;
+  animation: menuA 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.2s both;
+}
+.three {
+  -webkit-animation: menuA 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.4s
+    both;
+  animation: menuA 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.4s both;
+}
+.four {
+  -webkit-animation: menuA 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.6s
+    both;
+  animation: menuA 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.6s both;
+}
+.five {
+  -webkit-animation: menuA 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.8s
+    both;
+  animation: menuA 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.8s both;
+}
+
+
+/* A simple, css only, (some-what) responsive menu */
+
+
+.wrap {
+  display: inline-block;
+  -webkit-box-shadow: 0 0 70px #fff;
+  -moz-box-shadow: 0 0 70px #fff;
+  box-shadow: 0 0 70px #fff;
+  margin-top: 40px;
+}
+
+/* a little "umph" */
+.decor {
+  background: #6EAF8D;
+  background: -webkit-linear-gradient(left, #CDEBDB 50%, #6EAF8D 50%);
+  background: -moz-linear-gradient(left, #CDEBDB 50%, #6EAF8D 50%);
+  background: -o-linear-gradient(left, #CDEBDB 50%, #6EAF8D 50%);
+  background: linear-gradient(left, white 50%, #6EAF8D 50%);
+  background-size: 50px 25%;;
+  padding: 2px;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  position: relative;
+  text-align: left;
+}
+
+li {
+  float: left;
+}
+
+/* clear'n floats */
+ul:after {
+  clear: both;
+}
+
+ul:before,
+ul:after {
+    content: " ";
+    display: table;
+}
+
+nav {
+  position: relative;
+  background: #2B2B2B;
+  background-image: -webkit-linear-gradient(bottom, #2B2B2B 7%, #333333 100%);
+  background-image: -moz-linear-gradient(bottom, #2B2B2B 7%, #333333 100%);
+  background-image: -o-linear-gradient(bottom, #2B2B2B 7%, #333333 100%);
+  background-image: linear-gradient(bottom, #2B2B2B 7%, #333333 100%);
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px #0E0E0E;
+  -webkit-box-shadow: 2px 2px 3px #888;
+  -moz-box-shadow: 2px 2px 3px #888;
+  box-shadow: 2px 2px 3px #888;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+/* prime */
+ul.primary li a {
+  display: block;
+  padding: 20px 30px;
+  border-right: 1px solid #3D3D3D;
+}
+
+ul.primary li:last-child a {
+  border-right: none;
+}
+
+ul.primary li a:hover {
+  
+  color: #000;
+}
+
+/* subs */
+ul.sub {
+  position: absolute;
+  z-index: 200;
+  box-shadow: 2px 2px 0 #BEBEBE;
+  width: 35%;
+  display:none;
+}
+
+ul.sub li {
+  float: none;
+  margin: 0;
+}
+
+ul.sub li a {
+  border-bottom: 1px dotted #ccc;
+  border-right: none;
+  color: #000;
+  padding: 15px 30px;
+}
+
+ul.sub li:last-child a {
+  border-bottom: none;
+}
+
+ul.sub li a:hover {
+  color: #000;
+  background: #eeeeee;
+}
+
+/* sub display*/
+ul.primary li:hover ul {
+  display: block;
+  background: #fff;
+}
+
+/* keeps the tab background white */
+ul.primary li:hover a {
+  background: #fff;
+  color: #666;
+  text-shadow: none;
+}
+
+ul.primary li:hover > a{
+  color: #000;
+} 
+
+@media only screen and (max-width: 600px) {
+  .decor {
+    padding: 3px;
+  }
+  
+  .wrap {
+    width: 100%;
+    margin-top: 0px;
+  }
+  
+   li {
+    float: none;
+  }
+  
+  ul.primary li:hover a {
+    background: none;
+    color: #8B8B8B;
+    text-shadow: 1px 1px #000;
+  }
+
+  ul.primary li:hover ul {
+    display: block;
+    background: #272727;
+    color: #fff;
+  }
+  
+  ul.sub {
+    display: block;  
+    position: static;
+    box-shadow: none;
+    width: 100%;
+  }
+  
+  ul.sub li a {
+    background: #272727;
+    border: none;
+    color: #8B8B8B;
+  }
+  
+  ul.sub li a:hover {
+    color: #ccc;
+    background: none;
+  }
+}

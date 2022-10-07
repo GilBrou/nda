@@ -1,0 +1,107 @@
+/*Module*/
+.cv {
+  padding-top: 20vh;
+  padding-bottom: 15vh;
+}
+.cv .row {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+/*Left part*/
+.cv-img {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  margin: 10px;
+  /*
+  -webkit-animation: popInText 0.85s linear 1.65s both;
+  animation: popInText 0.85s linear 1.65s both;
+  */
+}
+/*Skills image*/
+.skillsPhoto {
+  max-height: 600px;
+  animation: movingImg 9s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
+    alternate both;
+}
+/*Right part*/
+.cv-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  justify-content: center;
+  margin: 10px;
+  text-align: justify;
+  /*
+  -webkit-animation: popInPhoto 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.3s
+    both;
+  animation: popInPhoto 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.3s both;
+  */
+}
+/*Title*/
+.cv-text h1 {
+  text-shadow: 0 -1px 1.5px var(--secondary-subcolor);
+  color: var(--primary-subcolor);
+  border-bottom: solid 1px var(--secondary-color);
+  padding-bottom: 10px;
+}
+/*Paragraph*/
+.cv-text p {
+  font-size: 22px;
+  line-height: 32px;
+  margin-bottom: 0px;
+  padding-bottom: 35px;
+}
+/*Buttons wrapper*/
+.buttonWrap {
+  padding-bottom: 20px;
+  border-bottom: solid 1px var(--secondary-color);
+}
+/*Buttons wrapper*/
+.buttonWrap {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: unset;
+  padding-bottom: 20px;
+}
+/*Buttons*/
+.cv button {
+  border: solid 2px var(--secondary-color);
+  box-shadow: 0 0 3px 1px var(--secondary-color);
+}
+/*Buttons text*/
+.buttonWrap h2 {
+  font-family: "Titillium Web", sans-serif;
+  text-transform: uppercase;
+  color: var(--blackish);
+  font-weight: 400;
+  font-size: 20px;
+  margin: auto;
+  pointer-events: none;
+}
+/*Animate buttons and buttons texts = hover out*/
+.cv button,
+.cv button > h2 {
+  -webkit-animation: bFlip2 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) reverse
+    both;
+  animation: bFlip2 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) reverse both;
+  transition: all 0.5s;
+}
+/*Buttons hover*/
+.cv button:hover {
+  border: solid 2px var(--primary-subcolor);
+}
+/*Buttons and buttons texts hover*/
+.cv button:hover,
+.cv button:hover > h2 {
+  background-color: var(--primary-subcolor);
+  -webkit-animation: bFlip 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: bFlip 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  transition: all 0.5s;
+  box-shadow: 0 0 7px 1px var(--primary-subcolor);
+}

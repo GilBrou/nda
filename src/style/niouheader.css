@@ -1,0 +1,120 @@
+nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 80px;
+  padding: 20px 0 20px 0;
+  background: var(--blackish);
+  box-shadow: 0 0px 9px 4px rgba(0, 0, 0, 0.1),
+    0 -5px 2px 2px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  min-width: 580px;
+  text-transform: uppercase;
+}
+nav .logo {
+  position: relative;
+  float: left;
+  padding: 0px 0px 15px 15px;
+  height: 60px;
+  line-height: 50px;
+}
+nav .logo span {
+  display: inline-block;
+  position: relative;
+  top: -8px;
+  font-size: 13pt;
+}
+nav .links {
+  float: right;
+  margin-right: 30px;
+  position: relative;
+  width: 115, 8px;
+}
+nav .links li {
+  float: left;
+  list-style: none;
+  position: relative;
+  margin: 10px;
+  display: inline-block;
+}
+nav .links li > a {
+  position: relative;
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 30px;
+  height: 30px;
+}
+nav .links li > a:hover {
+  color: yellow;
+  color: #85dd91;
+  border-radius: 2px;
+}
+nav .links li > a[class^="trigger-"] {
+  padding-right: 40px;
+}
+nav .links li > a .arrow {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 45%;
+  text-align: center;
+  right: 10px;
+  border-width: 5px 5px 0 5px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.8) transparent;
+}
+nav .links li > a .arrow:after {
+  content: "";
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  top: -10px;
+  left: -15px;
+  position: absolute;
+  height: 15px;
+}
+nav .links li ul {
+  position: absolute;
+  left: 0;
+  margin: 0;
+  background: var(--blackish);
+  border-radius: 2px;
+  display: none;
+  padding: 15px;
+  border-radius: 0px 0px 15px 15px;
+  min-width: 250px;
+  text-transform: unset;
+}
+nav .links li ul > li {
+  clear: both;
+  list-style: none;
+  display: block;
+  padding: 0 10px;
+  margin: 0;
+  width: 100%;
+  /*background-color: red;*/
+  border-radius: 5px;
+}
+nav .links li ul > li:hover {
+  background: #497e50;
+}
+nav .links li ul > li:hover > a {
+  background: #497e50;
+  color: var(--whiteish);
+}
+nav .links li:hover > .drop {
+  display: block;
+  animation: fadeInRight 0.3s ease;
+  -webkit-animation: fadeInRight 0.3s ease;
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+

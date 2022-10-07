@@ -1,0 +1,48 @@
+/*Page*/
+.quatrecentquatre {
+  padding-top: 10vh;
+  height: 50vh;
+}
+/*Animated text*/
+.quatrecentquatre .logo {
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  color: var(--secondary-color);
+  font-size: 47px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: auto;
+  margin-bottom: 40px;
+  animation: flicker-in-1 2s linear both;
+  width: 50vw;
+}
+.quatrecentquatre .logo b {
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 0.5em var(--blackish),
+    0 0 0.5em var(--blackish), 0 0 0.1em var(--blackish),
+    0 0px 1px var(--blackish);
+}
+.quatrecentquatre .logo b span {
+  animation: blink linear infinite 2s;
+}
+.quatrecentquatre .logo b span:nth-of-type(2) {
+  animation: blink linear infinite 3s;
+}
+.quatrecentquatre b {
+  font-size: 40px;
+}
+.quatre1 b {
+  font-size: 200px;
+}
+/*Return button*/
+.quatre4 {
+  background-color: var(--secondary-color);
+  border-radius: 12px;
+  animation: flicker-in-1 2s linear both 0.5s;
+}
+.quatre4 p {
+  margin-top: 50px;
+  padding: 5px;
+  font-size: 30px;
+  color: var(--primary-color);
+  text-shadow: unset;
+}
