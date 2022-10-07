@@ -3,7 +3,6 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background: var(--blackishBack);
   position: fixed;
   left: 0;
   right: 0;
@@ -15,6 +14,8 @@ nav {
   text-transform: uppercase;
   font-size: 17px;
   font-weight: 450;
+
+  background: var(--blackishBack);
   box-shadow: 0 -65px 30px 50px #0d9580cc;
 
   -webkit-animation: swing-in-top-fwd 1.5s
@@ -167,7 +168,7 @@ nav .logo {
     padding: 0.5em 0;
     width: 100%;
     color: var(--whiteish);
-    background-color: var(--blackish);
+    background-color: var(--blackishBack);
   }
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;

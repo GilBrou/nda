@@ -3,7 +3,7 @@ function Header(props) {
   return (
     <div>
       <nav className="top-nav">
-        <div className="logoWrapper">
+        <div>
           <img
             src={props.data ? props.data.logo : "loading..."}
             className=" logo img-responsive page-scroll authorLogo"
@@ -16,7 +16,7 @@ function Header(props) {
         <label className="menu-button-container" htmlFor="menu-toggle">
           <div className="menu-button" />
         </label>
-        <ul className="menu manuWrapper">
+        <ul className="menu">
           <li>
             <a href="" className="page-scroll">
               {props.data ? props.data.Sec1 : "loading..."}
@@ -53,6 +53,7 @@ function Header(props) {
             </a>
           </li>
         </ul>
+
       </nav>
     </div>
   );
