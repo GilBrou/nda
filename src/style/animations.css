@@ -45,3 +45,68 @@
     opacity: 1;
   }
 }
+
+/*logo's shadow anim*/
+@keyframes ShadowAnim {
+  0% {
+    box-shadow: -5px -5px 10px -6px var(--greenish); /*1*/
+  }
+  8.33% {
+    box-shadow: -2.5px -5px 10px -6px var(--greenish2);
+  }
+  16.66% {
+    box-shadow: 0px -5px 10px -6px var(--greenish2);
+  }
+  24.99% {
+    box-shadow: 2.5px -5px 10px -6px var(--greenish2);
+  }
+  33.32% {
+    box-shadow: 5px -5px 10px -6px var(--greenish2); /*2*/
+  }
+  41.65% {
+    box-shadow: 5px -2.5px 10px -6px var(--greenish2); /*2*/
+  }
+
+  49.98% {
+    box-shadow: 5px 0px 10px -6px var(--greenish);
+  }
+  58.31% {
+    box-shadow: 5px 2.5px 10px -6px var(--greenish);
+  }
+
+  66.64% {
+    box-shadow: 5px 5px 10px -6px var(--greenish); /*3*/
+  }
+  74.97% {
+    box-shadow: 2.5px 5px 10px -6px var(--greenish); /*3*/
+  }
+
+  83.30% {
+    box-shadow: 0px 5px 10px -6px var(--greenish2);
+  }
+  91.63% {
+    box-shadow: -2.5px 5px 10px -6px var(--greenish2);
+  }
+
+  99.96% {
+    box-shadow: -5px 5px 10px -6px var(--greenish2); /*4*/
+  }
+}
+
+/*Logo's entrance*/
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

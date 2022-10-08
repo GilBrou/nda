@@ -2,7 +2,8 @@
 import { useState, useEffect } from "react";
 
 /***COMPONENTS***/
-/*import Header from "./components/Header";*/
+import Intro from "./components/Intro";
+
 
 /***DATAS***/
 /*import projetsD from "./data/projetsD.json";*/
@@ -22,9 +23,9 @@ function Homepage(data) {
   /***PAGE***/
   return (
     <div className="homepage">
-s      {/*<Header data={data.data.nav} />*/}
+      <Intro data={data.data.intro}/>
       {/*
-      <Intro data={data.data.intro} data2={data.data.contact} />
+
       <Parcours data={data.data.parcours} />
       <Projets data={pDatas} />
       <CV data={data.data.cv} />

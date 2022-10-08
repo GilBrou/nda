@@ -15,10 +15,10 @@ nav {
   font-size: 17px;
   font-weight: 450;
   background: var(--blackishBack);
-  box-shadow: 0 -65px 30px 50px #0d9580cc;
+  box-shadow: 0 -65px 30px 50px var(--blueish);
   -webkit-animation: swing-in-top-fwd 1.5s
     cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s both;
-  animation: swing-in-top-fwd 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 3s
+  animation: swing-in-top-fwd 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 2.5s
     both;
 }
 

@@ -1,7 +1,6 @@
 {
   "nav": {
     "logo": "img/ndaLogo.webp",
-    "logoFull": "img/LogoFullB.webp",
     "nom": "Noir d'Absinthe",
     "Sec1": "Accueil",
     "Sec2": "Univers",
@@ -12,7 +11,14 @@
     "Sec7": "Boutique"
   },
 
-  "intro": {},
+  "intro": {
+    "logoFull": "img/LogoFullW2.webp",
+    "photoAlt": "Logo Noir d'Absinthe",
+    "introP":  "Maison d'édition spécialisée dans les littératures de l'imaginaire."
+  },
+
+
+
   "contact": {
     "title": "Contact",
     "mail": "gillian.brousse@outlook.fr",

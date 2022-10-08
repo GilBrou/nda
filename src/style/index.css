@@ -3,12 +3,11 @@
 @import "./header.css";
 @import "./responsive.css";
 @import "./BackgroundParticleAnim.css";
-
+@import "./intro.css";
 
 /*
 @import "./contact.css";
 @import "./cv.css";
-@import "./intro.css";
 @import "./parcours.css";
 @import "./projets.css";
 @import "./404.css";
@@ -42,51 +41,14 @@ html {
   --whiteish: #f9f7fd;
   --greenish: #85dd91;
   --greenish2: #497e50;
+  --greenish3: #325537;
+  --greenish4: #213724;
+  --blueish: #0d9580cc;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  margin: 0 0 20px;
-  font-weight: 800;
-  font-size: 36px;
-  transition: 0.3s;
-  color: var(--whiteish);
-}
-h1 {
-  font-family: sans-serif;
-  text-transform: uppercase;
-}
-h2 {
-  font-weight: 600;
-  font-size: 36px;
-}
-h3 {
-  font-weight: 600;
-  font-size: 30px;
-}
-h4 {
-  font-weight: 300;
-  font-size: 24px;
-}
 a,
 p {
   font-size: 18px;
   color: var(--whiteish);
   transition: 0.3s;
-}
-a:hover,
-a:focus {
-  text-decoration: none;
-}
-button {
-  margin: auto;
-  background-color: var(--secondary-color);
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  padding: 10px;
-  cursor: pointer;
-  transition: all 0.5s;
 }

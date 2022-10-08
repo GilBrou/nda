@@ -1,0 +1,55 @@
+/*Introduction*/
+#intro {
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s both;
+          animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s both;
+}
+
+.intro {
+  /*
+  height:  50%;
+  background-color: lightblue;
+  */
+  width: 20%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+.logoFull {
+  width: 100%;
+  margin: auto;
+  background-color: var(--blackish);
+  background: radial-gradient(
+    var(--blackish),
+    var(--blackish),
+    var(--blackish),
+    var(--blackish),
+    var(--blackish),
+    var(--blackish),
+    var(--blackish),
+    var(--blackish),
+    var(--blackish),
+    var(--blackish),
+    var(--blackish),
+    var(--greenish4),
+    var(--greenish2),
+    var(--greenish2),
+    var(--greenish),
+    var(--greenish)
+  );
+  border-radius: 100%;
+  animation: ShadowAnim 11s infinite;
+}
+
+.intro h1 {
+  font-size: 24px;
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+          animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+}
