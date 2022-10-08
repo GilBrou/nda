@@ -21,8 +21,8 @@ function Homepage(data) {
 
   /***PAGE***/
   return (
-    <div className="homepage backLayer">
-      {/*<Header data={data.data.nav} />*/}
+    <div className="homepage">
+s      {/*<Header data={data.data.nav} />*/}
       {/*
       <Intro data={data.data.intro} data2={data.data.contact} />
       <Parcours data={data.data.parcours} />
