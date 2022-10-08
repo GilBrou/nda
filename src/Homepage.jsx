@@ -3,17 +3,13 @@ import { useState, useEffect } from "react";
 
 /***COMPONENTS***/
 /*import Header from "./components/Header";*/
-import Intro from "./components/Intro";
-import Parcours from "./components/Parcours";
-import Projets from "./components/Projets";
-import CV from "./components/CV";
-import Contact from "./components/Contact";
 
 /***DATAS***/
-import projetsD from "./data/projetsD.json";
+/*import projetsD from "./data/projetsD.json";*/
 
 function Homepage(data) {
   /*Get projects datas*/
+  /*
   const [pDatas, setPDatas] = useState({});
   useEffect(() => {
     async function fetchDatas() {
@@ -21,6 +17,7 @@ function Homepage(data) {
     }
     fetchDatas();
   }, []);
+*/
 
   /***PAGE***/
   return (

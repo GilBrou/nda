@@ -6,7 +6,6 @@ import SmoothScroll from "smooth-scroll";
 
 /***PAGES***/
 import Header from "./components/Header";
-
 import Homepage from "./Homepage";
 import Error404 from "./Error404";
 
@@ -33,18 +32,22 @@ function App() {
   return (
     <Router>
       <Header data={allDatas.nav} />
-      <div id="foglayer_01" className="fog">
-        <div className="image01" />
-        <div className="image02" />
-      </div>
-      <div id="foglayer_02" className="fog">
-        <div className="image01" />
-        <div className="image02" />
-      </div>
-      <div id="foglayer_03" className="fog">
-        <div className="image01" />
-        <div className="image02" />
-      </div>
+       <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+
       <div className="app">
         <Switch>
           <Route exact path="/accueil">
