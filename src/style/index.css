@@ -25,7 +25,8 @@ html {
   color: var(--whiteish);
 
   /*Background*/
-  background: url("./background.webp"), var(--blackish);
+  background-color: var(--blackish);
+  background: url("./background.webp");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -33,7 +34,7 @@ html {
   overflow: hidden;
 
   /*Background animation*/
-  animation: animMuse 30s ease-out infinite alternate both;
+  animation: animMuse 30s ease-out infinite alternate both 1s;
 
   /*Color Variables*/
   --blackish: #0e0d0d;
@@ -51,4 +52,14 @@ p {
   font-size: 18px;
   color: var(--whiteish);
   transition: 0.3s;
+  text-decoration: none;
+}
+
+/*background's entrance*/
+.hideback {
+  background-color: var(--blackish);
+  width: 100vw;
+  height: 100vh;
+  -webkit-animation: fade-out 5s ease-out both;
+  animation: fade-out 5s ease-out both;
 }

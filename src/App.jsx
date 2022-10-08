@@ -31,38 +31,8 @@ function App() {
 
   return (
     <Router>
-      <Header data={allDatas.nav} />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-      <div className="firefly" />
-
+      <div className="hideback"></div>    
+      <Header data={allDatas.nav} />   
       <div className="app">
         <Switch>
           <Route exact path="/accueil">

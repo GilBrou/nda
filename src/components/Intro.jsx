@@ -2,8 +2,7 @@
 function Intro(props) {
   return (
     <section id="intro">
-      <div className="intro">
-        
+          <div className="intro">
         {/*Photo*/}
             <img
               src={props.data ? props.data.logoFull : "loading..."}
