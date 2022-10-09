@@ -5,21 +5,22 @@ import { Modal } from "react-responsive-modal";
 
 function Footer(props) {
   const [open, setOpen] = useState(false);
-  
-
   const onOpenModal = () => setOpen(true);
-
   const onCloseModal = () => setOpen(false);
+  const [open2, setOpen2] = useState(false);
+  const onOpenModal2 = () => setOpen2(true);
+  const onCloseModal2 = () => setOpen2(false);
+  const [open3, setOpen3] = useState(false);
+  const onOpenModal3 = () => setOpen3(true);
+  const onCloseModal3 = () => setOpen3(false);
 
   return (
     <div>
       <footer>
         <ul className="menu">
-
-
           <li>
             <div>
-              <button onClick={onOpenModal}>
+              <button className="footButton" onClick={onOpenModal}>
                 {" "}
                 {props.data ? props.data.Sec1 : "loading..."}
               </button>
@@ -39,17 +40,17 @@ function Footer(props) {
               </Modal>
             </div>
           </li>
-
-             <li>
+          {/*
+          <li>
             <div>
-              <button onClick={onOpenModal}>
+              <button onClick={onOpenModal2}>
                 {" "}
                 {props.data ? props.data.Sec2 : "loading..."}
               </button>
               <Modal
                 className="myModal"
-                open={open}
-                onClose={onCloseModal}
+                open={open2}
+                onClose={onCloseModal2}
                 center
               >
                 <h1> {props.data ? props.data.Sec2 : "loading..."}</h1>
@@ -62,6 +63,29 @@ function Footer(props) {
               </Modal>
             </div>
           </li>
+          <li>
+            <div>
+              <button onClick={onOpenModal3}>
+                {" "}
+                {props.data ? props.data.Sec3 : "loading..."}
+              </button>
+              <Modal
+                className="myModal"
+                open={open3}
+                onClose={onCloseModal3}
+                center
+              >
+                <h1> {props.data ? props.data.Sec3 : "loading..."}</h1>
+                <p> {props.data ? props.data.Sec3P1 : "loading..."}</p>
+                <p> {props.data ? props.data.Sec3P2 : "loading..."}</p>
+                <p> {props.data ? props.data.Sec3P3 : "loading..."}</p>
+                <p> {props.data ? props.data.Sec3P4 : "loading..."}</p>
+                <p> {props.data ? props.data.Sec3P5 : "loading..."}</p>
+                <p> {props.data ? props.data.Sec3P6 : "loading..."}</p>
+              </Modal>
+            </div>
+          </li>
+          */}
           <li>
             <a
               href={props.data ? props.data.Sec4Link : "loading..."}
