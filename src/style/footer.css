@@ -47,7 +47,11 @@ footer img {
   margin-left: 20px;
 }
 .footButton {
+    all: unset;
+    cursor: pointer;
+
   background-color: inherit;
+
 }
 .footButton:hover {
   color: var(--greenish);

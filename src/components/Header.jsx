@@ -13,7 +13,6 @@ function Header(props) {
             />{" "}
           </a>
         </div>
-
         <input id="menu-toggle" type="checkbox" />
         <label className="menu-button-container" htmlFor="menu-toggle">
           <div className="menu-button" />
@@ -27,7 +26,6 @@ function Header(props) {
               {props.data ? props.data.Sec1 : "loading..."}
             </a>
           </li>
-
           <li>
             <a
               href={props.data ? props.data.Sec2Link : "loading..."}
@@ -35,6 +33,61 @@ function Header(props) {
             >
               {props.data ? props.data.Sec2 : "loading..."}
             </a>
+            <ul className="subList">
+              <li>
+                <a href={props.data ? props.data.Sec2sub1L : "loading..."}>
+                  {" "}
+                  {props.data ? props.data.Sec2sub1 : "loading..."}
+                </a>
+              </li>
+
+              <li>
+                <a href={props.data ? props.data.Sec2sub2L : "loading..."}>
+                  {" "}
+                  {props.data ? props.data.Sec2sub2 : "loading..."}
+                </a>
+              </li>
+
+              <li>
+                <a href={props.data ? props.data.Sec2sub3L : "loading..."}>
+                  {" "}
+                  {props.data ? props.data.Sec2sub3 : "loading..."}
+                </a>
+              </li>
+
+              <li>
+                <a href={props.data ? props.data.Sec2sub4L : "loading..."}>
+                  {" "}
+                  {props.data ? props.data.Sec2sub4 : "loading..."}
+                </a>
+              </li>
+              <li>
+                <a href={props.data ? props.data.Sec2sub5L : "loading..."}>
+                  {" "}
+                  {props.data ? props.data.Sec2sub5 : "loading..."}
+                </a>
+              </li>
+              <li>
+                <a href={props.data ? props.data.Sec2sub6L : "loading..."}>
+                  {" "}
+                  {props.data ? props.data.Sec2sub6 : "loading..."}
+                </a>
+              </li>
+
+              <li>
+                <a href={props.data ? props.data.Sec2sub7L : "loading..."}>
+                  {" "}
+                  {props.data ? props.data.Sec2sub7 : "loading..."}
+                </a>
+              </li>
+
+              <li>
+                <a href={props.data ? props.data.Sec2sub8L : "loading..."}>
+                  {" "}
+                  {props.data ? props.data.Sec2sub8 : "loading..."}
+                </a>
+              </li>
+            </ul>
           </li>
 
           <li>
@@ -60,6 +113,36 @@ function Header(props) {
             >
               {props.data ? props.data.Sec5 : "loading..."}
             </a>
+                        <ul className="subList">
+
+              <li>
+                <a href={props.data ? props.data.Sec5sub1L : "loading..."}>
+                  {" "}
+                  {props.data ? props.data.Sec5sub1 : "loading..."}
+                </a>
+              </li>
+
+              <li>
+                <a href={props.data ? props.data.Sec5sub2L : "loading..."}>
+                  {" "}
+                  {props.data ? props.data.Sec5sub2 : "loading..."}
+                </a>
+              </li>
+
+              <li>
+                <a href={props.data ? props.data.Sec5sub3L : "loading..."}>
+                  {" "}
+                  {props.data ? props.data.Sec5sub3 : "loading..."}
+                </a>
+              </li>
+
+              <li>
+                <a href={props.data ? props.data.Sec5sub4L : "loading..."}>
+                  {" "}
+                  {props.data ? props.data.Sec5sub4 : "loading..."}
+                </a>
+              </li>
+            </ul>
           </li>
           <li>
             <a

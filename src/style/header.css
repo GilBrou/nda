@@ -4,14 +4,12 @@ nav {
   align-items: center;
   justify-content: space-between;
   position: fixed;
-
   left: 0;
   right: 0;
   top: 0;
   color: var(--whiteish);
   height: 80px;
   padding: 40px;
-  z-index: 999;
   text-transform: uppercase;
   font-size: 17px;
   font-weight: 450;
@@ -21,10 +19,12 @@ nav {
     cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s both;
   animation: swing-in-top-fwd 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.4s
     both;
+  /*position: absolute;*/
+  z-index: 1000;
 }
 
 nav a:hover {
-  color: var(--greenish); /**********************/
+  color: var(--greenish);
   text-decoration: none;
 }
 
@@ -42,8 +42,6 @@ nav .logo {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  
-
 }
 .menu > li {
   margin: 0 1rem;
@@ -131,7 +129,32 @@ nav .logo {
     border-bottom: 1px solid #444;
   }
 }
-
-
-
-/**/
+/*DROPDOWN*/
+ul {
+  position: relative;
+  list-style-type: none;
+}
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  display: block;
+  padding: 25px 25px 10px 25px;
+  line-height: 40px;
+  background: var(--blackishBack2);
+  border-radius: 5px;
+  transition: opacity 0.2s, visibility 0.2s;
+  margin-left: -8px;
+  font-size: 10px;
+}
+ul li ul li {
+  border-bottom: solid 2px var(--greenishTrans2);
+}
+ul li:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+.subList li a {
+  font-size: unset;
+  font-size: 15px;
+}

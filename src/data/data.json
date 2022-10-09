@@ -6,18 +6,41 @@
     "Sec1Link": "/accueil",
     "Sec2": "Univers ▾",
     "Sec2Link": "/Univers",
+    "Sec2sub1": "Mémoria",
+    "Sec2sub1L": "/memoria",
+    "Sec2sub2": "Futuria",
+    "Sec2sub2L": "/futuria",
+    "Sec2sub3": "Terra Urbana",
+    "Sec2sub3L": "/terra-Urbana",
+    "Sec2sub4": "Rouge d'Absinthe",
+    "Sec2sub4L": "/rouge-d-absinthe",
+    "Sec2sub5": "L'Antre de la Folie",
+    "Sec2sub5L": "/l-antre-de-la-folie",
+    "Sec2sub6": "Fleur d'Absinthe",
+    "Sec2sub6L": "/fleur-d-absinthe",
+    "Sec2sub7": "Chrysalis",
+    "Sec2sub7L": "/chrysalis",
+    "Sec2sub8": "Pousse d'Absinthe",
+    "Sec2sub8L": "/pousse-d-absinthe",
     "Sec3": "Créateurs",
     "Sec3Link": "/Createurs",
     "Sec4": "À propos",
     "Sec4Link": "/a-propos",
     "Sec5": "Contact ▾",
     "Sec5Link": "/contact",
+    "Sec5sub1": "Nous contacter",
+    "Sec5sub1L": "/contact",
+    "Sec5sub2": "Manuscrits & AT",
+    "Sec5sub2L": "/manuscrits-&-at",
+    "Sec5sub3": "Service presse",
+    "Sec5sub3L": "/service-presse",
+    "Sec5sub4": "Kit média",
+    "Sec5sub4L": "/kit-media",
     "Sec6": "Blog",
     "Sec6Link": "https://www.noirdabsinthe.com/blog",
     "Sec7": "Boutique",
     "Sec7Link": "https://www.noirdabsinthe.com/shop"
   },
-
   "intro": {
     "logoFull": "img/LogoFullW2.webp",
     "photoAlt": "Logo Noir d'Absinthe",
@@ -43,10 +66,12 @@
     "Sec5Link": "https://twitter.com/NoirdAbsinthe",
     "Sec6": "fa fa-instagram",
     "Sec6Link": "https://www.instagram.com/noirdabsinthe/",
-    "Sec7": "img/logoBre.webp",
-    "Sec7b": "logo Bretagne",
-    "Sec8": "img/logoRe.webp",
-    "Sec8b": "logo Rennes"
+    "Sec7": "fa fa-youtube",
+    "Sec7Link": "https://www.youtube.com/channel/UCbZRksrbS8qcN6fzv4Y3y-g/",
+    "Sec8": "img/logoBre.webp",
+    "Sec8b": "logo Bretagne",
+    "Sec9": "img/logoRe.webp",
+    "Sec9b": "logo Rennes"
   },
   "contact": {
     "title": "Contact",
@@ -65,5 +90,23 @@
     "linkdnA": "icône Linkedin",
     "GitLink": "https://github.com/GilBrou",
     "linkdLink": "https://fr.linkedin.com/in/gillianbrousse"
+  },
+
+  "PAGES A FAIRE": {
+    "UNIVERS": "",
+    "CREATEURS": "",
+    "A PROPOS": "",
+    "CONTACT": "",
+    "MANUSCRITS & AT": "",
+    "SERVICE PRESSE": "",
+    "KIT MEDIA": ""
+  },
+  "SOUS-PAGES A FAIRE": {
+    "UNIVERS DEDIE TEMPLATE": "MEMORIA FUTURIA ETC",
+    "LIVRES DEDIE TEMPLATE": "UN PAR UN"
+  },
+  "FONCTIONNALITES A VOIR": {
+    "RECHERCHE PAR TAG/MOTS CLES": "",
+    "QUESTIONNAIRE EN LIGNE POUR AFFICHER TRI": ""
   }
 }

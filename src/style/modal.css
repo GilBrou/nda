@@ -7,7 +7,7 @@
   z-index: 1000;
 }
 .react-responsive-modal-overlay {
-  background: #b5cc9633;
+  background: var(--greenishTrans);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -46,7 +46,8 @@
   box-shadow: 0px 0px 40px -25px var(--greenish);
   margin: 1.2rem;
   padding: 1rem 4rem;
-  border-radius: 15px;
+  /*border-radius: 15px;*/
+  border-radius: 5px;
   position: relative;
   overflow-y: auto;
   color: var(--blackish);

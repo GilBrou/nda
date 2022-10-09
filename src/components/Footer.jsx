@@ -120,18 +120,30 @@ function Footer(props) {
               ></i>
             </a>
           </li>
+                   <li>
+            <a
+              href={props.data ? props.data.Sec7Link : "loading..."}
+              target="_blank"
+            >
+              <i
+                className={props.data ? props.data.Sec7 : "loading..."}
+                aria-hidden="true"
+              ></i>
+            </a>
+          </li>
+
           <li>
             <img
-              src={props.data ? props.data.Sec7 : "loading..."}
+              src={props.data ? props.data.Sec8 : "loading..."}
               className="img-responsive BretagneLogo"
-              alt={props.data ? props.data.Sec7b : "loading..."}
+              alt={props.data ? props.data.Sec8b : "loading..."}
             />{" "}
           </li>
           <li>
             <img
-              src={props.data ? props.data.Sec8 : "loading..."}
+              src={props.data ? props.data.Sec9 : "loading..."}
               className="img-responsive"
-              alt={props.data ? props.data.Sec8b : "loading..."}
+              alt={props.data ? props.data.Sec9b : "loading..."}
             />{" "}
           </li>
         </ul>

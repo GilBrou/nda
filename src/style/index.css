@@ -42,14 +42,15 @@ html {
   /*Color Variables*/
   --blackish: #0e0d0d;
   --blackishBack: #000000cc;
+  --blackishBack2: #00000099;
   --whiteish: #f9f7fd;
   --greenish: #85dd91;
   --greenish2: #497e50;
   --greenish3: #325537;
   --greenish4: #213724;
   --blueish: #0d9580cc;
-
-  --greenishTrans:  #00000066;
+  --greenishTrans: #b5cc9633;
+  --greenishTrans2: #85dd9140;
 }
 
 a,
@@ -66,4 +67,3 @@ a:active {
   text-decoration: none;
   color: inherit;
 }
-
