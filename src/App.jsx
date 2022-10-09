@@ -6,6 +6,8 @@ import SmoothScroll from "smooth-scroll";
 
 /***PAGES***/
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+
 import Homepage from "./Homepage";
 import Error404 from "./Error404";
 
@@ -31,8 +33,7 @@ function App() {
 
   return (
     <Router>
-      <div className="hideback"></div>    
-      <Header data={allDatas.nav} />   
+      <Header data={allDatas.nav} />
       <div className="app">
         <Switch>
           <Route exact path="/accueil">
@@ -46,6 +47,7 @@ function App() {
           </Route>
         </Switch>
       </div>
+      <Footer data={allDatas.footer} />
     </Router>
   );
 }

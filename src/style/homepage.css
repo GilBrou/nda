@@ -1,0 +1,10 @@
+/*Homepage*/
+
+/*background's entrance*/
+.hideback {
+  background-color: var(--blackish);
+  width: 100vw;
+  height: 100vh;
+  -webkit-animation: fade-out 5s ease-out both;
+  animation: fade-out 5s ease-out both;
+}

@@ -1,8 +1,10 @@
 /***HEADER/NAV MODULE***/
-function Header(props) {
+function Footer(props) {
   return (
     <div>
-      <nav className="top-nav">
+      <footer>
+        {/*
+
         <div>
           <img
             src={props.data ? props.data.logo : "loading..."}
@@ -11,74 +13,84 @@ function Header(props) {
             alt={props.data ? props.data.nom : "loading..."}
           />{" "}
         </div>
+        */}
+
+        {/*
 
         <input id="menu-toggle" type="checkbox" />
         <label className="menu-button-container" htmlFor="menu-toggle">
           <div className="menu-button" />
         </label>
+        */}
+
         <ul className="menu">
           <li>
-            <a
-              href={props.data ? props.data.Sec1Link : "loading..."}
-              className="page-scroll"
-            >
+            <a href={props.data ? props.data.Sec1Link : "loading..."}>
               {props.data ? props.data.Sec1 : "loading..."}
             </a>
           </li>
           <li>
-            <a
-              href={props.data ? props.data.Sec2Link : "loading..."}
-              className="page-scroll"
-            >
+            <a href={props.data ? props.data.Sec2Link : "loading..."}>
               {props.data ? props.data.Sec2 : "loading..."}
             </a>
           </li>
           <li>
-            <a
-              href={props.data ? props.data.Sec3Link : "loading..."}
-              className="page-scroll"
-            >
+            <a href={props.data ? props.data.Sec3Link : "loading..."}>
               {props.data ? props.data.Sec3 : "loading..."}
             </a>
           </li>
           <li>
             <a
               href={props.data ? props.data.Sec4Link : "loading..."}
-              className="page-scroll"
+              target="_blank"
+              className="fb"
             >
-              {props.data ? props.data.Sec4 : "loading..."}
+              <i
+                className={props.data ? props.data.Sec4 : "loading..."}
+                aria-hidden="true"
+              ></i>
             </a>
           </li>
           <li>
             <a
               href={props.data ? props.data.Sec5Link : "loading..."}
-              className="page-scroll"
+              target="_blank"
             >
-              {props.data ? props.data.Sec5 : "loading..."}
+              <i
+                className={props.data ? props.data.Sec5 : "loading..."}
+                aria-hidden="true"
+              ></i>
             </a>
           </li>
           <li>
             <a
               href={props.data ? props.data.Sec6Link : "loading..."}
               target="_blank"
-              className="page-scroll"
             >
-              {props.data ? props.data.Sec6 : "loading..."}
+              <i
+                className={props.data ? props.data.Sec6 : "loading..."}
+                aria-hidden="true"
+              ></i>
             </a>
           </li>
           <li>
-            <a
-              href={props.data ? props.data.Sec7Link : "loading..."}
-              target="_blank"
-              className="page-scroll"
-            >
-              {props.data ? props.data.Sec7 : "loading..."}
-            </a>
+            <img
+              src={props.data ? props.data.Sec7 : "loading..."}
+              className="img-responsive BretagneLogo"
+              alt={props.data ? props.data.Sec7b : "loading..."}
+            />{" "}
+          </li>
+          <li>
+            <img
+              src={props.data ? props.data.Sec8 : "loading..."}
+              className="img-responsive"
+              alt={props.data ? props.data.Sec8b : "loading..."}
+            />{" "}
           </li>
         </ul>
-      </nav>
+      </footer>
     </div>
   );
 }
 
-export default Header;
+export default Footer;

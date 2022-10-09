@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 /***COMPONENTS***/
 import Intro from "./components/Intro";
 
+
 /***DATAS***/
 /*import projetsD from "./data/projetsD.json";*/
 
@@ -22,6 +23,7 @@ function Homepage(data) {
   /***PAGE***/
   return (
     <div className="homepage">
+      <div className="hideback"></div>
       <div className="firefly" />
       <div className="firefly" />
       <div className="firefly" />
@@ -52,15 +54,16 @@ function Homepage(data) {
       <div className="firefly" />
       <div className="firefly" />
       <div className="firefly" />
-
       <Intro data={data.data.intro} />
-      {/*
 
+      
+      {/*
       <Parcours data={data.data.parcours} />
       <Projets data={pDatas} />
       <CV data={data.data.cv} />
       <Contact data={data.data.contact} />
       */}
+      
     </div>
   );
 }

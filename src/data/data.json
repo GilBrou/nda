@@ -3,18 +3,45 @@
     "logo": "img/ndaLogo.webp",
     "nom": "Noir d'Absinthe",
     "Sec1": "Accueil",
+    "Sec1Link": "/accueil",
     "Sec2": "Univers",
+    "Sec2Link": "/Univers",
     "Sec3": "Créateurs",
+    "Sec3Link": "/Createurs",
     "Sec4": "À propos",
+    "Sec4Link": "/a-propos",
     "Sec5": "Contact",
+    "Sec5Link": "/contact",
     "Sec6": "Blog",
-    "Sec7": "Boutique"
+    "Sec6Link": "https://www.noirdabsinthe.com/blog",
+    "Sec7": "Boutique",
+    "Sec7Link": "https://www.noirdabsinthe.com/shop"
   },
 
   "intro": {
     "logoFull": "img/LogoFullW2.webp",
     "photoAlt": "Logo Noir d'Absinthe",
     "introP": "Maison d'édition spécialisée dans les littératures de l'imaginaire."
+  },
+  "footer": {
+    "logo": "img/ndaLogo.webp",
+    "nom": "Noir d'Absinthe",
+    "Sec1": "Mentions légales",
+    "Sec1Link": "/Mentions",
+    "Sec2": "Politique de confidentialité",
+    "Sec2Link": "/Confidentialité",
+    "Sec3": "CGV",
+    "Sec3Link": "/Conditions",
+    "Sec4": "fa fa-facebook",
+    "Sec4Link": "https://www.facebook.com/NoirdAbsinthe/",
+    "Sec5": "fa fa-twitter",
+    "Sec5Link": "https://twitter.com/NoirdAbsinthe",
+    "Sec6": "fa fa-instagram",
+    "Sec6Link": "https://www.instagram.com/noirdabsinthe/",
+    "Sec7": "img/logoBre.webp",
+    "Sec7b": "logo Bretagne",
+    "Sec8": "img/logoRe.webp",
+    "Sec8b": "logo Rennes"
   },
 
   "contact": {

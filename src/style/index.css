@@ -4,6 +4,9 @@
 @import "./responsive.css";
 @import "./BackgroundParticleAnim.css";
 @import "./intro.css";
+@import "./footer.css";
+@import "./homepage.css";
+
 
 /*
 @import "./contact.css";
@@ -55,11 +58,9 @@ p {
   text-decoration: none;
 }
 
-/*background's entrance*/
-.hideback {
-  background-color: var(--blackish);
-  width: 100vw;
-  height: 100vh;
-  -webkit-animation: fade-out 5s ease-out both;
-  animation: fade-out 5s ease-out both;
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
 }

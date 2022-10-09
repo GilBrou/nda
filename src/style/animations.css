@@ -12,7 +12,41 @@
   }
 }
 
-/* Header animation swing-in-top-fwd*/
+/* Footer entrance animation*/
+@-webkit-keyframes swing-in-bottom-fwd {
+  0% {
+    -webkit-transform: rotateX(100deg);
+    transform: rotateX(100deg);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    opacity: 1;
+  }
+}
+@keyframes swing-in-bottom-fwd {
+  0% {
+    -webkit-transform: rotateX(100deg);
+    transform: rotateX(100deg);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    opacity: 1;
+  }
+}
+
+/* Header entrance animation*/
 @-webkit-keyframes swing-in-top-fwd {
   0% {
     -webkit-transform: rotateX(-100deg);
@@ -56,21 +90,20 @@
   }
 
   8.33% {
-    box-shadow: -2.5px -5px 10px -6px var(--greenish2);
+    box-shadow: -2.5px -5px 10px -6px var(--blueish);
   }
   16.66% {
-    box-shadow: 0px -5px 10px -6px var(--greenish2);
+    box-shadow: 0px -5px 10px -6px var(--blueish);
   }
   24.99% {
-    box-shadow: 2.5px -5px 10px -6px var(--greenish2);
+    box-shadow: 2.5px -5px 10px -6px var(--blueish);
   }
   33.32% {
-    box-shadow: 5px -5px 10px -6px var(--greenish2); /*2*/
+    box-shadow: 5px -5px 10px -6px var(--blueish); /*2*/
   }
   41.65% {
-    box-shadow: 5px -2.5px 10px -6px var(--greenish2); /*2*/
+    box-shadow: 5px -2.5px 10px -6px var(--blueish); /*2*/
   }
-
   49.98% {
     box-shadow: 5px 0px 10px -6px var(--greenish);
   }
@@ -91,14 +124,14 @@
   }
 
   83.30% {
-    box-shadow: 0px 5px 10px -6px var(--greenish2);
+    box-shadow: 0px 5px 10px -6px var(--blueish);
   }
   91.63% {
-    box-shadow: -2.5px 5px 10px -6px var(--greenish2);
+    box-shadow: -2.5px 5px 10px -6px var(--blueish);
   }
 
   99.96% {
-    box-shadow: -5px 5px 10px -6px var(--greenish2); /*4*/
+    box-shadow: -5px 5px 10px -6px var(--blueish); /*4*/
   }
 
   100% {
