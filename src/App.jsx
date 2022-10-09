@@ -7,7 +7,6 @@ import SmoothScroll from "smooth-scroll";
 /***PAGES***/
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-
 import Homepage from "./Homepage";
 import Error404 from "./Error404";
 
@@ -39,9 +38,11 @@ function App() {
           <Route exact path="/accueil">
             <Homepage data={allDatas} />
           </Route>
+        {/*
           <Route>
             <Redirect to="/accueil" />
           </Route>
+          */}
           <Route>
             <Error404 />
           </Route>

@@ -22,7 +22,9 @@ nav {
   /*position: absolute;*/
   z-index: 1000;
 }
-
+nav li a {
+  font-size: 17px;
+}
 nav a:hover {
   color: var(--greenish);
   text-decoration: none;
@@ -156,5 +158,5 @@ ul li:hover ul {
 }
 .subList li a {
   font-size: unset;
-  font-size: 15px;
+  font-size: 16px;
 }
