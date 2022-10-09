@@ -2,14 +2,16 @@
 function Header(props) {
   return (
     <div>
-      <nav className="top-nav">
+      <nav role="navigation" className="top-nav primary-navigation">
         <div>
-          <img
-            src={props.data ? props.data.logo : "loading..."}
-            className=" logo img-responsive page-scroll authorLogo"
-            href="#page-top"
-            alt={props.data ? props.data.nom : "loading..."}
-          />{" "}
+          <a href="/accueil">
+            <img
+              src={props.data ? props.data.logo : "loading..."}
+              className=" logo img-responsive page-scroll authorLogo"
+              href="#page-top"
+              alt={props.data ? props.data.nom : "loading..."}
+            />{" "}
+          </a>
         </div>
 
         <input id="menu-toggle" type="checkbox" />
@@ -25,6 +27,7 @@ function Header(props) {
               {props.data ? props.data.Sec1 : "loading..."}
             </a>
           </li>
+
           <li>
             <a
               href={props.data ? props.data.Sec2Link : "loading..."}
@@ -33,6 +36,7 @@ function Header(props) {
               {props.data ? props.data.Sec2 : "loading..."}
             </a>
           </li>
+
           <li>
             <a
               href={props.data ? props.data.Sec3Link : "loading..."}
