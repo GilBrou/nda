@@ -1,43 +1,66 @@
 /***HEADER/NAV MODULE***/
+import React, { useState } from "react";
+import "react-responsive-modal/styles.css";
+import { Modal } from "react-responsive-modal";
+
 function Footer(props) {
+  const [open, setOpen] = useState(false);
+  
+
+  const onOpenModal = () => setOpen(true);
+
+  const onCloseModal = () => setOpen(false);
+
   return (
     <div>
       <footer>
-        {/*
-
-        <div>
-          <img
-            src={props.data ? props.data.logo : "loading..."}
-            className=" logo img-responsive page-scroll authorLogo"
-            href="#page-top"
-            alt={props.data ? props.data.nom : "loading..."}
-          />{" "}
-        </div>
-        */}
-
-        {/*
-
-        <input id="menu-toggle" type="checkbox" />
-        <label className="menu-button-container" htmlFor="menu-toggle">
-          <div className="menu-button" />
-        </label>
-        */}
-
         <ul className="menu">
+
+
           <li>
-            <a href={props.data ? props.data.Sec1Link : "loading..."}>
-              {props.data ? props.data.Sec1 : "loading..."}
-            </a>
+            <div>
+              <button onClick={onOpenModal}>
+                {" "}
+                {props.data ? props.data.Sec1 : "loading..."}
+              </button>
+              <Modal
+                className="myModal"
+                open={open}
+                onClose={onCloseModal}
+                center
+              >
+                <h1> {props.data ? props.data.Sec1 : "loading..."}</h1>
+                <p> {props.data ? props.data.Sec1P1 : "loading..."}</p>
+                <p> {props.data ? props.data.Sec1P2 : "loading..."}</p>
+                <p> {props.data ? props.data.Sec1P3 : "loading..."}</p>
+                <p> {props.data ? props.data.Sec1P4 : "loading..."}</p>
+                <p> {props.data ? props.data.Sec1P5 : "loading..."}</p>
+                <p> {props.data ? props.data.Sec1P6 : "loading..."}</p>
+              </Modal>
+            </div>
           </li>
-          <li>
-            <a href={props.data ? props.data.Sec2Link : "loading..."}>
-              {props.data ? props.data.Sec2 : "loading..."}
-            </a>
-          </li>
-          <li>
-            <a href={props.data ? props.data.Sec3Link : "loading..."}>
-              {props.data ? props.data.Sec3 : "loading..."}
-            </a>
+
+             <li>
+            <div>
+              <button onClick={onOpenModal}>
+                {" "}
+                {props.data ? props.data.Sec2 : "loading..."}
+              </button>
+              <Modal
+                className="myModal"
+                open={open}
+                onClose={onCloseModal}
+                center
+              >
+                <h1> {props.data ? props.data.Sec2 : "loading..."}</h1>
+                <p> {props.data ? props.data.Sec2P1 : "loading..."}</p>
+                <p> {props.data ? props.data.Sec2P2 : "loading..."}</p>
+                <p> {props.data ? props.data.Sec2P3 : "loading..."}</p>
+                <p> {props.data ? props.data.Sec2P4 : "loading..."}</p>
+                <p> {props.data ? props.data.Sec2P5 : "loading..."}</p>
+                <p> {props.data ? props.data.Sec2P6 : "loading..."}</p>
+              </Modal>
+            </div>
           </li>
           <li>
             <a

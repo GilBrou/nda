@@ -49,3 +49,8 @@ footer img {
 .BretagneLogo {
   margin-left: 30px;
 }
+
+
+footer button{
+  background-color: inherit;
+}

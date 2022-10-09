@@ -27,11 +27,16 @@
     "logo": "img/ndaLogo.webp",
     "nom": "Noir d'Absinthe",
     "Sec1": "Mentions légales",
-    "Sec1Link": "/Mentions",
+    "Sec1P1": "Noir d'Absinthe - SASU au capital de 1000 Euros - 8 Allée Jacques Cartier, 35000 Rennes",
+    "Sec1P2": "contact(@)noirdabsinthe.com",
+    "Sec1P3": "06 52 49 96 97",
+    "Sec1P4": "R.C.S Rennes : 835 370 859",
+    "Sec1P5": "FR25835370859",
+    "Sec1P6": "Toutes les illustrations sont protégées. Elles ont été réalisées pour Noir d'Absinthe par Tiphs.",
     "Sec2": "Politique de confidentialité",
-    "Sec2Link": "/Confidentialité",
+    "Sec2P": "Mauris ac arcu sit amet dui interdum bibendum a sed diam. Praesent rhoncus congue ipsum elementum lobortis. Ut ligula purus, ultrices id condimentum quis, tincidunt quis purus. Proin quis enim metus. Nunc feugiat odio at eros porta, ut rhoncus lorem tristique. Nunc et ipsum eu ex vulputate consectetur vel eu nisi. Donec ultricies rutrum lectus, sit ame feugiat est semper vitae. Proin varius imperdiet consequat. Proin eu metus nisi. In hac habitasse platea dictumst. Vestibulum ac ultrices risus. Pellentesque arcu sapien, aliquet sed orci sit amet, pulvinar interdum velit. Nunc a rhoncus ipsum, maximus fermentum dolor. Praesent aliquet justo vitae rutrum volutpat. Ut quis pulvinar est.",
     "Sec3": "CGV",
-    "Sec3Link": "/Conditions",
+    "Sec3P": "Mauris ac arcu sit amet dui interdum bibendum a sed diam. Praesent rhoncus congue ipsum elementum lobortis. Ut ligula purus, ultrices id condimentum quis, tincidunt quis purus. Proin quis enim metus. Nunc feugiat odio at eros porta, ut rhoncus lorem tristique. Nunc et ipsum eu ex vulputate consectetur vel eu nisi. Donec ultricies rutrum lectus, sit ame feugiat est semper vitae. Proin varius imperdiet consequat. Proin eu metus nisi. In hac habitasse platea dictumst. Vestibulum ac ultrices risus. Pellentesque arcu sapien, aliquet sed orci sit amet, pulvinar interdum velit. Nunc a rhoncus ipsum, maximus fermentum dolor. Praesent aliquet justo vitae rutrum volutpat. Ut quis pulvinar est.",
     "Sec4": "fa fa-facebook",
     "Sec4Link": "https://www.facebook.com/NoirdAbsinthe/",
     "Sec5": "fa fa-twitter",
@@ -43,7 +48,6 @@
     "Sec8": "img/logoRe.webp",
     "Sec8b": "logo Rennes"
   },
-
   "contact": {
     "title": "Contact",
     "mail": "gillian.brousse@outlook.fr",

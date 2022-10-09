@@ -6,7 +6,7 @@
 @import "./intro.css";
 @import "./footer.css";
 @import "./homepage.css";
-
+@import "./modal.css";
 
 /*
 @import "./contact.css";
@@ -48,6 +48,8 @@ html {
   --greenish3: #325537;
   --greenish4: #213724;
   --blueish: #0d9580cc;
+
+  --greenishTrans:  #00000066;
 }
 
 a,
