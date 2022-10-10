@@ -69,7 +69,7 @@ function App() {
           </Route>
         </Switch>
       </div>
-      <Footer data={allDatas.footer} />
+      <Footer data={allDatas.footer}/>
     </Router>
   );
 }

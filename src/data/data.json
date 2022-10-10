@@ -77,12 +77,6 @@
     "Sec9": "img/logoRe.webp",
     "Sec9b": "logo Rennes"
   },
-
-  "press": {
-    "p1": "coucou",
-    "p2": "je suis un",
-    "p3": "service presse"
-  },
   "contact": {
     "title": "Contact",
     "mail": "gillian.brousse@outlook.fr",
@@ -118,5 +112,10 @@
   },
   "MORGANE TO DO": {
     "MAJ KIT MEDIA": ""
+  },
+    "MOI TO DO": {
+    "SEO PERFORMANCE ET REFERENCEMENT": "",
+    "tri json": "",
+    "translate from excel": ""
   }
 }

@@ -153,6 +153,12 @@ function Header(props) {
                     {props.data ? props.data.ManuscritP1 : "loading..."}
                   </p>
                   <p> {props.data ? props.data.ManuscritP2 : "loading..."}</p>
+                  <img
+                    src={props.data ? props.data.logo : "loading..."}
+                    className=" logo img-responsive page-scroll authorLogo modalImg"
+                    href="#page-top"
+                    alt={props.data ? props.data.nom : "loading..."}
+                  />{" "}
                 </Modal>
               </div>
 
@@ -180,6 +186,12 @@ function Header(props) {
                   </a>
                   <p> {props.data ? props.data.pressP3 : "loading..."}</p>
                   <p> {props.data ? props.data.pressP4 : "loading..."}</p>
+                  <img
+                    src={props.data ? props.data.logo : "loading..."}
+                    className=" logo img-responsive page-scroll authorLogo modalImg"
+                    href="#page-top"
+                    alt={props.data ? props.data.nom : "loading..."}
+                  />{" "}
                 </Modal>
               </div>
 
