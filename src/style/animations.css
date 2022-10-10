@@ -13,6 +13,7 @@
 }
 
 /* Footer entrance animation*/
+/*
 @-webkit-keyframes swing-in-bottom-fwd {
   0% {
     -webkit-transform: rotateX(100deg);
@@ -45,8 +46,10 @@
     opacity: 1;
   }
 }
+*/
 
 /* Header entrance animation*/
+/*
 @-webkit-keyframes swing-in-top-fwd {
   0% {
     -webkit-transform: rotateX(-100deg);
@@ -79,6 +82,7 @@
     opacity: 1;
   }
 }
+*/
 
 /*logo's shadow and movement anim*/
 @keyframes ShadowAnim {
@@ -160,6 +164,7 @@
 }
 
 /*background's entrance*/
+/*
 @-webkit-keyframes fade-out {
   0% {
     opacity: 1;
@@ -176,3 +181,4 @@
     opacity: 0;
   }
 }
+*/

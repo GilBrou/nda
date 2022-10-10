@@ -5,17 +5,8 @@
 @import "./BackgroundParticleAnim.css";
 @import "./intro.css";
 @import "./footer.css";
-@import "./homepage.css";
 @import "./modal.css";
 @import "./page404.css";
-
-
-/*
-@import "./contact.css";
-@import "./cv.css";
-@import "./parcours.css";
-@import "./projets.css";
-*/
 
 body,
 html {
@@ -44,6 +35,7 @@ html {
   --blackish: #0e0d0d;
   --blackishBack: #000000cc;
   --blackishBack2: #00000099;
+  --blackishBack3: #00000066;
   --whiteish: #f9f7fd;
   --greenish: #85dd91;
   --greenish2: #497e50;

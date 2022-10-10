@@ -7,12 +7,14 @@ function Footer(props) {
   const [open, setOpen] = useState(false);
   const onOpenModal = () => setOpen(true);
   const onCloseModal = () => setOpen(false);
+  /*
   const [open2, setOpen2] = useState(false);
   const onOpenModal2 = () => setOpen2(true);
   const onCloseModal2 = () => setOpen2(false);
   const [open3, setOpen3] = useState(false);
   const onOpenModal3 = () => setOpen3(true);
   const onCloseModal3 = () => setOpen3(false);
+  */
 
   return (
     <div>
@@ -20,7 +22,10 @@ function Footer(props) {
         <ul className="menu">
           <li>
             <div>
-              <button className="footButton" onClick={onOpenModal}>
+              <button
+                className="modalButton modalMentions"
+                onClick={onOpenModal}
+              >
                 {" "}
                 {props.data ? props.data.Sec1 : "loading..."}
               </button>
@@ -120,7 +125,7 @@ function Footer(props) {
               ></i>
             </a>
           </li>
-                   <li>
+          <li>
             <a
               href={props.data ? props.data.Sec7Link : "loading..."}
               target="_blank"

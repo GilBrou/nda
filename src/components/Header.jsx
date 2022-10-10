@@ -1,7 +1,19 @@
 /***HEADER/NAV MODULE***/
+import React, { useState } from "react";
+import "react-responsive-modal/styles.css";
+import { Modal } from "react-responsive-modal";
+import { Link } from "react-router-dom";
+
 function Header(props) {
+  const [open4, setOpen4] = useState(false);
+  const onOpenModal4 = () => setOpen4(true);
+  const onCloseModal4 = () => setOpen4(false);
+  const [open5, setOpen5] = useState(false);
+  const onOpenModal5 = () => setOpen5(true);
+  const onCloseModal5 = () => setOpen5(false);
+
   return (
-    <div>
+    <header>
       <nav role="navigation" className="top-nav primary-navigation">
         <div>
           <a href="/accueil">
@@ -121,25 +133,64 @@ function Header(props) {
                 </a>
               </li>
 
-              <li>
-                <a href={props.data ? props.data.Sec5sub2L : "loading..."}>
+              <div>
+                <button
+                  className="modalButton modalPress"
+                  onClick={onOpenModal5}
+                >
                   {" "}
                   {props.data ? props.data.Sec5sub2 : "loading..."}
-                </a>
-              </li>
+                </button>
+                <Modal
+                  className="myModal"
+                  open={open5}
+                  onClose={onCloseModal5}
+                  center
+                >
+                  <h1>{props.data ? props.data.Sec5sub2 : "loading..."}</h1>
+                  <p className="manuCenter">
+                    {" "}
+                    {props.data ? props.data.ManuscritP1 : "loading..."}
+                  </p>
+                  <p> {props.data ? props.data.ManuscritP2 : "loading..."}</p>
+                </Modal>
+              </div>
 
-              <li>
-                <a href={props.data ? props.data.Sec5sub3L : "loading..."}>
+              <div>
+                <button
+                  className="modalButton modalPress"
+                  onClick={onOpenModal4}
+                >
                   {" "}
                   {props.data ? props.data.Sec5sub3 : "loading..."}
-                </a>
+                </button>
+                <Modal
+                  className="myModal"
+                  open={open4}
+                  onClose={onCloseModal4}
+                  center
+                >
+                  <h1> {props.data ? props.data.Sec5sub3 : "loading..."}</h1>
+                  <p> {props.data ? props.data.pressP1 : "loading..."}</p>
+                  <p> {props.data ? props.data.pressP2 : "loading..."}</p>
+                  <a href="mailto:contact@noirdabsinthe.com">
+                    <p className="CenterMail">
+                      {props.data ? props.data.pressMail : "loading..."}
+                    </p>
+                  </a>
+                  <p> {props.data ? props.data.pressP3 : "loading..."}</p>
+                  <p> {props.data ? props.data.pressP4 : "loading..."}</p>
+                </Modal>
+              </div>
+
+              <li>
+                <a href={props.data ? props.data.Sec5sub3L : "loading..."}> </a>
               </li>
 
               <li>
-                <a href={props.data ? props.data.Sec5sub4L : "loading..."}>
-                  {" "}
+                <Link to="/Kit_Media_Noir_d'Absinthe.pdf" target="_blank">
                   {props.data ? props.data.Sec5sub4 : "loading..."}
-                </a>
+                </Link>
               </li>
             </ul>
           </li>
@@ -163,7 +214,7 @@ function Header(props) {
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
   );
 }
 

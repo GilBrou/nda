@@ -7,7 +7,9 @@
   z-index: 1000;
 }
 .react-responsive-modal-overlay {
-  background: var(--greenishTrans);
+  /*background: var(--greenishTrans);*/
+  /*opacity:  0.5;*/
+  visibility: hidden; /**/
   position: fixed;
   top: 0;
   bottom: 0;
@@ -32,12 +34,14 @@
   vertical-align: middle;
 }
 .react-responsive-modal-modal {
-  max-width: 800px;
+  /*max-width: 800px;*/
+  width: 100%;
+  height: auto;
   display: inline-block;
   text-align: left;
   vertical-align: middle;
-  background-color: var(--blackish);
-  background: url("./background1.webp");
+  background-color: var(--blackishBack2);
+  /*background: url("./background1.webp");*/
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -45,13 +49,14 @@
   overflow: hidden;
   box-shadow: 0px 0px 40px -25px var(--greenish);
   margin: 1.2rem;
-  padding: 1rem 4rem;
+  /*padding: 1rem 4rem;*/
+  padding: 50px;
   /*border-radius: 15px;*/
   border-radius: 5px;
   position: relative;
   overflow-y: auto;
   color: var(--blackish);
-  border: solid 3px var(--blackish);
+  border: solid 1px var(--blackishBack3);
 }
 .react-responsive-modal-modal h1 {
   text-transform: uppercase;
@@ -59,14 +64,15 @@
   text-align: center;
   font-size: 22px;
   align-self: center;
-  margin: 15px auto 20px auto;
+  margin: 0px auto 30px auto;
   padding-bottom: 5px;
   width: fit-content;
   border-bottom: solid 1px var(--greenish);
 }
 .react-responsive-modal-modal p {
-  color: var(--whiteish);
+  /*color: var(--whiteish);*/
   text-align: justify;
+  font-size: 19px;
 }
 .react-responsive-modal-closeButton {
   position: absolute;
@@ -114,4 +120,25 @@
     transform: scale(0.96);
     opacity: 0;
   }
+}
+
+/*Personalisation*/
+
+.modalButton {
+  all: unset;
+  cursor: pointer;
+  background-color: inherit;
+}
+.modalPress {
+  font-size: 16px;
+}
+.modalButton:hover {
+  color: var(--greenish);
+}
+.CenterMail,
+.manuCenter {
+  display: flex;
+  color: unset;
+  color: var(--greenish);
+  justify-content: center;
 }

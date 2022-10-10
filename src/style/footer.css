@@ -13,10 +13,12 @@ footer {
   background: var(--blackishBack);
   box-shadow: -9px 12px 20px 1px var(--blueish);
   border-radius: 0 25px 0 0;
+  /*
   -webkit-animation: swing-in-bottom-fwd 1.5s
     cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.4s both;
   animation: swing-in-bottom-fwd 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)
     1.4s both;
+    */
 }
 footer a,
 footer p,
@@ -45,14 +47,4 @@ footer img {
 .fb,
 .BretagneLogo {
   margin-left: 20px;
-}
-.footButton {
-    all: unset;
-    cursor: pointer;
-
-  background-color: inherit;
-
-}
-.footButton:hover {
-  color: var(--greenish);
 }

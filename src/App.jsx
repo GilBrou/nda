@@ -2,22 +2,15 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Redirect } from "react-router";
-import SmoothScroll from "smooth-scroll";
 
 /***PAGES***/
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Homepage from "./Homepage";
-import Error404 from "./Error404";
+import Homepage from "./pages/Homepage";
+import Error404 from "./pages/Error404";
 
 /***DATAS***/
 import JsonData from "./data/data.json";
-
-/*Smooth scroll parameters*/
-export const scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 1000,
-  speedAsDuration: true,
-});
 
 /*Main app*/
 function App() {
@@ -34,15 +27,43 @@ function App() {
     <Router>
       <Header data={allDatas.nav} />
       <div className="app">
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
+        <div className="firefly" />
         <Switch>
           <Route exact path="/accueil">
             <Homepage data={allDatas} />
           </Route>
-        {/*
           <Route>
             <Redirect to="/accueil" />
           </Route>
-          */}
           <Route>
             <Error404 />
           </Route>

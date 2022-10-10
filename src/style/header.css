@@ -15,10 +15,14 @@ nav {
   font-weight: 450;
   background: var(--blackishBack);
   box-shadow: 0 -65px 30px 50px var(--blueish);
+
+  /*
   -webkit-animation: swing-in-top-fwd 1.5s
     cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s both;
   animation: swing-in-top-fwd 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.4s
     both;
+    */
+
   /*position: absolute;*/
   z-index: 1000;
 }
@@ -158,5 +162,5 @@ ul li:hover ul {
 }
 .subList li a {
   font-size: unset;
-  font-size: 16px;
+  font-size: 15px;
 }

@@ -32,10 +32,14 @@
     "Sec5sub1L": "/contact",
     "Sec5sub2": "Manuscrits & AT",
     "Sec5sub2L": "/manuscrits-&-at",
-    "Sec5sub3": "Service presse",
-    "Sec5sub3L": "/service-presse",
+    "ManuscritP1": "Les soumissions sont désormais fermées et aucun AT n'est en cours.",
+    "ManuscritP2": "Les manuscrits reçus ne seront pas lus et aucune réponse ne sera communiquée. Si vous souhaitez travailler avec nous, restez attentifs à nos appels à textes de nouvelles.",
+    "Sec5sub3": "Service-presse",
+    "pressP1": "Noir d'Absinthe propose des services de presse aux journalistes, blogueurs et youtubers intéressés.",
+    "pressP2": "Si vous souhaitez recevoir un ouvrage au format numérique, merci d'en faire la demande en précisant l'adresse de votre blog ou de votre chaîne à cette adresse",
+    "pressP3": "En sollicitant un service-presse, vous vous engagez à publier un avis de lecture.",
+    "pressMail": "contact@noirdabsinthe.com",
     "Sec5sub4": "Kit média",
-    "Sec5sub4L": "/kit-media",
     "Sec6": "Blog",
     "Sec6Link": "https://www.noirdabsinthe.com/blog",
     "Sec7": "Boutique",
@@ -73,6 +77,12 @@
     "Sec9": "img/logoRe.webp",
     "Sec9b": "logo Rennes"
   },
+
+  "press": {
+    "p1": "coucou",
+    "p2": "je suis un",
+    "p3": "service presse"
+  },
   "contact": {
     "title": "Contact",
     "mail": "gillian.brousse@outlook.fr",
@@ -95,12 +105,8 @@
   "PAGES A FAIRE": {
     "UNIVERS": "",
     "CREATEURS": "",
-    "A PROPOS": "",
-    "CONTACT": "",
-    "MANUSCRITS & AT": "",
-    "SERVICE PRESSE": "",
-    "404": "",
-    "KIT MEDIA": ""
+    "A PROPOS": "modale ou page ? voire replace intro ?",
+    "CONTACT": "formulaire de contact"
   },
   "SOUS-PAGES A FAIRE": {
     "UNIVERS DEDIE TEMPLATE": "MEMORIA FUTURIA ETC",
@@ -109,5 +115,8 @@
   "FONCTIONNALITES A VOIR": {
     "RECHERCHE PAR TAG/MOTS CLES": "",
     "QUESTIONNAIRE EN LIGNE POUR AFFICHER TRI": ""
+  },
+  "MORGANE TO DO": {
+    "MAJ KIT MEDIA": ""
   }
 }
