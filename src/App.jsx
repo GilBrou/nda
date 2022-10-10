@@ -13,7 +13,6 @@ import Error404 from "./pages/Error404";
 import Data1 from "./data/data.json";
 import Data2 from "./data/dataExt.json";
 
-
 /*Main app*/
 function App() {
   /*Get datas*/
@@ -28,13 +27,14 @@ function App() {
     fetchDatas();
   }, []);
 
-
+  /*
   console.log(Data1)
   console.log(Data2)
+  */
 
   return (
     <Router>
-      <Header data={allDatas.nav} />
+      <Header data1={Data1} data2={Data2} />
       <div className="app">
         <div className="firefly" />
         <div className="firefly" />
@@ -67,9 +67,11 @@ function App() {
         <div className="firefly" />
         <div className="firefly" />
         <Switch>
+          {/*
           <Route exact path="/accueil">
-            <Homepage data={allDatas} />
-          </Route>
+            <Homepage data1={Data1} data2={Data2} />
+          </Route>       
+        */}
           <Route>
             <Redirect to="/accueil" />
           </Route>
@@ -78,7 +80,7 @@ function App() {
           </Route>
         </Switch>
       </div>
-      <Footer data={allDatas.footer}/>
+      <Footer data1={Data1} data2={Data2} />
     </Router>
   );
 }

@@ -129,9 +129,11 @@
   cursor: pointer;
   background-color: inherit;
 }
+/*
 .modalPress {
   font-size: 16px;
 }
+*/
 .modalButton:hover {
   color: var(--greenish);
 }

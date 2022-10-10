@@ -15,32 +15,25 @@ nav {
   font-weight: 450;
   background: var(--blackishBack);
   box-shadow: 0 -65px 30px 50px var(--blueish);
-
-  /*
-  -webkit-animation: swing-in-top-fwd 1.5s
-    cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s both;
-  animation: swing-in-top-fwd 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.4s
-    both;
-    */
-
-  /*position: absolute;*/
   z-index: 1000;
 }
-nav li a {
+nav li a,
+nav li,
+nav div,
+nav p,
+nav button p {
   font-size: 17px;
 }
-nav a:hover {
+nav a:hover,
+nav button p:hover {
   color: var(--greenish);
   text-decoration: none;
 }
-
 nav .logo {
   position: relative;
   float: left;
-  margin: 10px 0 10px 0;
-
-  height: 60px;
-  line-height: 50px;
+  margin: 11px 0 11px 0;
+  height: 59px;
 }
 .menu {
   display: flex;
@@ -49,7 +42,7 @@ nav .logo {
   margin: 0;
   padding: 0;
 }
-.menu > li {
+.menu > * {
   margin: 0 1rem;
   overflow: hidden;
 }
@@ -153,14 +146,19 @@ ul li ul {
   margin-left: -8px;
   font-size: 10px;
 }
-ul li ul li {
+ul li ul li,
+ul li div {
   border-bottom: solid 2px var(--greenishTrans2);
 }
 ul li:hover ul {
   visibility: visible;
   opacity: 1;
 }
-.subList li a {
+.subList li a,
+.subList * {
   font-size: unset;
   font-size: 15px;
+}
+.noClick {
+  pointer-events: none;
 }
