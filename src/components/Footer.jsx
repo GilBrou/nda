@@ -3,18 +3,11 @@ import React, { useState } from "react";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 
-function Footer(props) {
-  const [open, setOpen] = useState(false);
-  const onOpenModal = () => setOpen(true);
-  const onCloseModal = () => setOpen(false);
-  /*
-  const [open2, setOpen2] = useState(false);
-  const onOpenModal2 = () => setOpen2(true);
-  const onCloseModal2 = () => setOpen2(false);
-  const [open3, setOpen3] = useState(false);
-  const onOpenModal3 = () => setOpen3(true);
-  const onCloseModal3 = () => setOpen3(false);
-  */
+function Footer(data) {
+  const [open5, setOpen5] = useState(false);
+  const onOpenModal5 = () => setOpen5(true);
+  const onCloseModal5 = () => setOpen5(false);
+  const ThatMail = "mailto:" + data.data2.nda.mail;
 
   return (
     <div>
@@ -22,70 +15,111 @@ function Footer(props) {
         <ul className="menu">
           <li>
             <div>
-              <button
-                className="modalButton modalMentions"
-                onClick={onOpenModal}
-              >
+              <button className="modalButton footB" onClick={onOpenModal5}>
                 {" "}
-                {props.data ? props.data.Sec1 : "loading..."}
+                {data.data2 ? data.data2.mentions.titre : "loading..."}
               </button>
               <Modal
                 className="myModal"
-                open={open}
-                onClose={onCloseModal}
+                open={open5}
+                onClose={onCloseModal5}
                 center
               >
-                <h1> {props.data ? props.data.Sec1 : "loading..."}</h1>
-                <p> {props.data ? props.data.Sec1P1 : "loading..."}</p>
-                <p> {props.data ? props.data.Sec1P2 : "loading..."}</p>
-                <p> {props.data ? props.data.Sec1P3 : "loading..."}</p>
-                <p> {props.data ? props.data.Sec1P4 : "loading..."}</p>
-                <p> {props.data ? props.data.Sec1P5 : "loading..."}</p>
-                <p> {props.data ? props.data.Sec1P6 : "loading..."}</p>
+                <h1>{data.data2 ? data.data2.mentions.titre : "loading..."}</h1>
+
+                <div className="paraMentions">
+                  <p>{data.data1 ? data.data1.info.nom : "loading..."}</p>
+                  <p>{data.data2 ? data.data2.mentions.P1 : "loading..."}</p>
+                  <p> {data.data2 ? data.data2.mentions.P2 : "loading..."}</p>
+                  <p> {data.data2 ? data.data2.mentions.P3 : "loading..."}</p>
+                </div>
+
+                <div className="paraMentions">
+                  <a href={ThatMail}>
+                    <p>{data.data2 ? data.data2.nda.mail : "loading..."}</p>
+                  </a>
+                  <p>{data.data2 ? data.data2.nda.tel : "loading..."}</p>
+                </div>
+
+                <div className="paraMentions">
+                  <p> {data.data2 ? data.data2.mentions.P4 : "loading..."}</p>
+                  <p> {data.data2 ? data.data2.mentions.P5 : "loading..."}</p>
+                </div>
+                <div className="Pcenter2">
+                  <p> {data.data2 ? data.data2.mentions.P6 : "loading..."}</p>
+
+                  <span className="Pinline">
+                    <p className="">
+                      {" "}
+                      {data.data2 ? data.data2.mentions.P7 : "loading..."}
+                    </p>
+
+                    <a
+                      href={data.data2 ? data.data2.nda.Tiphs : "loading..."}
+                      target="_blank"
+                    >
+                      <p className="Tiphs">
+                        {data.data2 ? data.data2.mentions.P8 : "loading..."}
+                      </p>
+                    </a>
+                  </span>
+                </div>
               </Modal>
             </div>
           </li>
+
           <li>
             <a
-              href={props.data ? props.data.Sec4Link : "loading..."}
+              href={data.data2 ? data.data2.nda.FB : "loading..."}
               target="_blank"
               className="fb"
             >
               <i
-                className={props.data ? props.data.Sec4 : "loading..."}
+                className={
+                  data.data1 ? data.data1.ressources.logoFB : "loading..."
+                }
                 aria-hidden="true"
               ></i>
             </a>
           </li>
+
           <li>
             <a
-              href={props.data ? props.data.Sec5Link : "loading..."}
+              href={data.data2 ? data.data2.nda.TW : "loading..."}
               target="_blank"
             >
               <i
-                className={props.data ? props.data.Sec5 : "loading..."}
+                className={
+                  data.data1 ? data.data1.ressources.logoTW : "loading..."
+                }
                 aria-hidden="true"
               ></i>
             </a>
           </li>
+
           <li>
             <a
-              href={props.data ? props.data.Sec6Link : "loading..."}
+              href={data.data2 ? data.data2.nda.IG : "loading..."}
               target="_blank"
             >
               <i
-                className={props.data ? props.data.Sec6 : "loading..."}
+                className={
+                  data.data1 ? data.data1.ressources.logoIG : "loading..."
+                }
                 aria-hidden="true"
               ></i>
             </a>
           </li>
+
           <li>
             <a
-              href={props.data ? props.data.Sec7Link : "loading..."}
+              href={data.data2 ? data.data2.nda.YT : "loading..."}
               target="_blank"
             >
               <i
-                className={props.data ? props.data.Sec7 : "loading..."}
+                className={
+                  data.data1 ? data.data1.ressources.logoYT : "loading..."
+                }
                 aria-hidden="true"
               ></i>
             </a>
@@ -93,16 +127,19 @@ function Footer(props) {
 
           <li>
             <img
-              src={props.data ? props.data.Sec8 : "loading..."}
+              src={
+                data.data1 ? data.data1.ressources.logoBretagne : "loading..."
+              }
               className="img-responsive BretagneLogo"
-              alt={props.data ? props.data.Sec8b : "loading..."}
+              alt={data.data1 ? data.data1.logoBretagneAlt : "loading..."}
             />{" "}
           </li>
+
           <li>
             <img
-              src={props.data ? props.data.Sec9 : "loading..."}
+              src={data.data1 ? data.data1.ressources.logoRennes : "loading..."}
               className="img-responsive"
-              alt={props.data ? props.data.Sec9b : "loading..."}
+              alt={data.data1 ? data.data1.logoRennesAlt : "loading..."}
             />{" "}
           </li>
         </ul>

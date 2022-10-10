@@ -146,8 +146,8 @@ ul li ul {
   margin-left: -8px;
   font-size: 10px;
 }
-ul li ul li,
-ul li div {
+header ul li ul li,
+header ul li div {
   border-bottom: solid 2px var(--greenishTrans2);
 }
 ul li:hover ul {

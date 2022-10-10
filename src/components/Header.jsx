@@ -18,13 +18,7 @@ function Header(data) {
   const onOpenModal4 = () => setOpen4(true);
   const onCloseModal4 = () => setOpen4(false);
 
-  /*
-  console.log(data)
-  console.log(data.data1)
-  console.log(data.data2)
-  console.log(data.data2.apropos)
-  console.log(data.data2.apropos.titre)
-  */
+  const ThatMail = "mailto:" + data.data2.nda.mail;
 
   return (
     <header>
@@ -151,7 +145,7 @@ function Header(data) {
               onClose={onCloseModal}
               center
             >
-              <h1>{data.data2 ? data.data2.apropos.title : "loading..."}</h1>
+              <h1>{data.data2 ? data.data2.apropos.titre : "loading..."}</h1>
               <p> {data.data2 ? data.data2.apropos.P1 : "loading..."}</p>
               <p> {data.data2 ? data.data2.apropos.P2 : "loading..."}</p>
               <p> {data.data2 ? data.data2.apropos.P3 : "loading..."}</p>
@@ -183,7 +177,7 @@ function Header(data) {
                   center
                 >
                   <h1>
-                    {data.data2 ? data.data2.contact.title : "loading..."}
+                    {data.data2 ? data.data2.contact.titre : "loading..."}
                   </h1>
                   <p>{data.data2 ? data.data2.contact.P1 : "loading..."}</p>
                   <p> {data.data2 ? data.data2.contact.P2 : "loading..."}</p>
@@ -213,9 +207,9 @@ function Header(data) {
                   center
                 >
                   <h1>
-                    {data.data2 ? data.data2.manuscrits.title : "loading..."}
+                    {data.data2 ? data.data2.manuscrits.titre : "loading..."}
                   </h1>
-                  <p className="manuCenter">
+                  <p className="Pcenter">
                     {data.data2 ? data.data2.manuscrits.P1 : "loading..."}
                   </p>
                   <p> {data.data2 ? data.data2.manuscrits.P2 : "loading..."}</p>
@@ -244,10 +238,15 @@ function Header(data) {
                   onClose={onCloseModal4}
                   center
                 >
-                  <h1>{data.data2 ? data.data2.presse.title : "loading..."}</h1>
+                  <h1>{data.data2 ? data.data2.presse.titre : "loading..."}</h1>
                   <p>{data.data2 ? data.data2.presse.P1 : "loading..."}</p>
                   <p> {data.data2 ? data.data2.presse.P2 : "loading..."}</p>
                   <p> {data.data2 ? data.data2.presse.P3 : "loading..."}</p>
+                  <a href={ThatMail}>
+                    <p className="Pcenter">
+                      {data.data2 ? data.data2.nda.mail : "loading..."}
+                    </p>
+                  </a>
                   <p> {data.data2 ? data.data2.presse.P4 : "loading..."}</p>
                   <p> {data.data2 ? data.data2.presse.P5 : "loading..."}</p>
                   <img
