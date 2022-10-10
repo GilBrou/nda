@@ -45,52 +45,6 @@ function Footer(props) {
               </Modal>
             </div>
           </li>
-          {/*
-          <li>
-            <div>
-              <button onClick={onOpenModal2}>
-                {" "}
-                {props.data ? props.data.Sec2 : "loading..."}
-              </button>
-              <Modal
-                className="myModal"
-                open={open2}
-                onClose={onCloseModal2}
-                center
-              >
-                <h1> {props.data ? props.data.Sec2 : "loading..."}</h1>
-                <p> {props.data ? props.data.Sec2P1 : "loading..."}</p>
-                <p> {props.data ? props.data.Sec2P2 : "loading..."}</p>
-                <p> {props.data ? props.data.Sec2P3 : "loading..."}</p>
-                <p> {props.data ? props.data.Sec2P4 : "loading..."}</p>
-                <p> {props.data ? props.data.Sec2P5 : "loading..."}</p>
-                <p> {props.data ? props.data.Sec2P6 : "loading..."}</p>
-              </Modal>
-            </div>
-          </li>
-          <li>
-            <div>
-              <button onClick={onOpenModal3}>
-                {" "}
-                {props.data ? props.data.Sec3 : "loading..."}
-              </button>
-              <Modal
-                className="myModal"
-                open={open3}
-                onClose={onCloseModal3}
-                center
-              >
-                <h1> {props.data ? props.data.Sec3 : "loading..."}</h1>
-                <p> {props.data ? props.data.Sec3P1 : "loading..."}</p>
-                <p> {props.data ? props.data.Sec3P2 : "loading..."}</p>
-                <p> {props.data ? props.data.Sec3P3 : "loading..."}</p>
-                <p> {props.data ? props.data.Sec3P4 : "loading..."}</p>
-                <p> {props.data ? props.data.Sec3P5 : "loading..."}</p>
-                <p> {props.data ? props.data.Sec3P6 : "loading..."}</p>
-              </Modal>
-            </div>
-          </li>
-          */}
           <li>
             <a
               href={props.data ? props.data.Sec4Link : "loading..."}

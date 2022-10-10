@@ -1,0 +1,53 @@
+{
+  "nda": {
+    "description": "Maison d'édition spécialisée dans les littératures de l'imaginaire.",
+    "mail": "contact@noirdabsinthe.com",
+    "tel": "06 52 49 96 97",
+    "blog": "https://www.noirdabsinthe.com/blog",
+    "boutique": "https://www.noirdabsinthe.com/shop",
+    "FB": "https://www.facebook.com/NoirdAbsinthe/",
+    "TW": "https://twitter.com/NoirdAbsinthe",
+    "IG": "https://www.instagram.com/noirdabsinthe/",
+    "YT": "https://www.youtube.com/channel/UCbZRksrbS8qcN6fzv4Y3y-g/"
+  },
+  "manuscrits": {
+    "titre": "Manuscrits & AT",
+    "P1": "Les soumissions sont désormais fermées et aucun AT n'est en cours.",
+    "P2": "Les manuscrits reçus ne seront pas lus et aucune réponse ne sera communiquée. Si vous souhaitez travailler avec nous, restez attentifs à nos appels à textes de nouvelles.",
+    "P3": "",
+    "P4": "",
+    "P5": ""
+  },
+  "presse": {
+    "titre": "Service-presse",
+    "P1": "Noir d'Absinthe propose des services de presse aux journalistes, blogueurs et youtubers intéressés.",
+    "P2": "Si vous souhaitez recevoir un ouvrage au format numérique, merci d'en faire la demande en précisant l'adresse de votre blog ou de votre chaîne à cette adresse",
+    "P3": "En sollicitant un service-presse, vous vous engagez à publier un avis de lecture.",
+    "P4": "",
+    "P5": ""
+  },
+  "mentions": {
+    "titre": "Mentions légales",
+    "P1": "Noir d'Absinthe - SASU au capital de 1000 Euros - 8 Allée Jacques Cartier, 35000 Rennes",
+    "P2": "R.C.S Rennes : 835 370 859",
+    "P3": "FR25835370859",
+    "P4": "Les illustrations de ce site sont protégées. Elles ont été réalisées pour Noir d'Absinthe par Tiphs.",
+    "P5": ""
+  },
+  "apropos": {
+    "titre": "À propos",
+    "P1": "",
+    "P2": "",
+    "P3": "",
+    "P4": "",
+    "P5": ""
+  },
+  "contact": {
+    "titre": "Nous contacter",
+    "P1": "",
+    "P2": "",
+    "P3": "",
+    "P4": "",
+    "P5": ""
+  }
+}

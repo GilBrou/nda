@@ -1,6 +1,9 @@
 {
   "info": {
-    "nom": "Noir d'Absinthe"
+    "nom": "Noir d'Absinthe",
+    "description": "Maison d'édition spécialisée dans les littératures de l'imaginaire.",
+    "mail": "contact@noirdabsinthe.com",
+    "tel": "06 52 49 96 97"
   },
   "ressources": {
     "logo1": "img/ndaLogo.webp",
@@ -8,10 +11,16 @@
     "logo2": "img/LogoFullW2.webp",
     "logo2Alt": "Logo de Noir d'Absinthe",
     "kitMédia": "/Kit_Media_Noir_d'Absinthe.pdf",
+    "blog": "https://www.noirdabsinthe.com/blog",
+    "boutique": "https://www.noirdabsinthe.com/shop",
     "logoFB": "fa fa-facebook",
+    "FB": "https://www.facebook.com/NoirdAbsinthe/",
     "logoTW": "fa fa-twitter",
+    "TW": "https://twitter.com/NoirdAbsinthe",
     "logoIG": "fa fa-instagram",
+    "IG": "https://www.instagram.com/noirdabsinthe/",
     "logoYT": "fa fa-youtube",
+    "YT": "https://www.youtube.com/channel/UCbZRksrbS8qcN6fzv4Y3y-g/",
     "logoBretagne": "img/logoBre.webp",
     "logoBretagneAlt": "logo Bretagne",
     "logoRennes": "img/logoRe.webp",
@@ -37,6 +46,24 @@
     "menu5-4": "Kit média",
     "menu6": "Blog",
     "menu7": "Boutique"
+  },
+  "manuscrits": {
+    "titre": "Manuscrits & AT",
+    "P1": "Les soumissions sont désormais fermées et aucun AT n'est en cours.",
+    "P2": "Les manuscrits reçus ne seront pas lus et aucune réponse ne sera communiquée. Si vous souhaitez travailler avec nous, restez attentifs à nos appels à textes de nouvelles."
+  },
+  "presse": {
+    "titre": "Service-presse",
+    "pressP1": "Noir d'Absinthe propose des services de presse aux journalistes, blogueurs et youtubers intéressés.",
+    "pressP2": "Si vous souhaitez recevoir un ouvrage au format numérique, merci d'en faire la demande en précisant l'adresse de votre blog ou de votre chaîne à cette adresse",
+    "pressP3": "En sollicitant un service-presse, vous vous engagez à publier un avis de lecture."
+  },
+  "mentions": {
+    "titre": "Mentions légales",
+    "P1": "Noir d'Absinthe - SASU au capital de 1000 Euros - 8 Allée Jacques Cartier, 35000 Rennes",
+    "P2": "R.C.S Rennes : 835 370 859",
+    "P3": "FR25835370859",
+    "P4": "Les illustrations de ce site sont protégées. Elles ont été réalisées pour Noir d'Absinthe par Tiphs."
   },
   "PAGES A FAIRE": {
     "UNIVERS": "",
