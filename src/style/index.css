@@ -46,7 +46,6 @@ html {
   --greenishTrans: #b5cc9633;
   --greenishTrans2: #85dd9140;
 }
-
 a,
 p {
   font-size: 18px;
@@ -54,7 +53,6 @@ p {
   transition: 0.3s;
   text-decoration: none;
 }
-
 a:focus,
 a:visited,
 a:active {

@@ -67,11 +67,9 @@ function App() {
         <div className="firefly" />
         <div className="firefly" />
         <Switch>
-          {/*
           <Route exact path="/accueil">
             <Homepage data1={Data1} data2={Data2} />
           </Route>       
-        */}
           <Route>
             <Redirect to="/accueil" />
           </Route>

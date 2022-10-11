@@ -5,6 +5,16 @@ import { Modal } from "react-responsive-modal";
 import { Link } from "react-router-dom";
 
 function Header(data) {
+  /*Toggle Intro according to modals*/
+  const thisIntro = document.getElementById("intro");
+  function HideThisIntro() {
+    thisIntro.style.visibility = "hidden";
+  }
+  function DisplayThisIntro() {
+    thisIntro.style.visibility = "visible";
+  }
+
+  /*Toggle modals*/
   const [open, setOpen] = useState(false);
   const onOpenModal = () => setOpen(true);
   const onCloseModal = () => setOpen(false);
@@ -18,6 +28,7 @@ function Header(data) {
   const onOpenModal4 = () => setOpen4(true);
   const onCloseModal4 = () => setOpen4(false);
 
+  /*Create mailto from Json*/
   const ThatMail = "mailto:" + data.data2.nda.mail;
 
   return (
@@ -135,14 +146,23 @@ function Header(data) {
             </a>
           </li>
           <div>
-            <button className="modalButton" onClick={onOpenModal}>
+            <button
+              className="modalButton"
+              onClick={() => {
+                onOpenModal();
+                HideThisIntro();
+              }}
+            >
               {" "}
               <p>{data.data1 ? data.data1.menu.menu4 : "loading..."}</p>
             </button>
             <Modal
               className="myModal"
               open={open}
-              onClose={onCloseModal}
+              onClose={() => {
+                onCloseModal();
+                DisplayThisIntro();
+              }}
               center
             >
               <h1>{data.data2 ? data.data2.apropos.titre : "loading..."}</h1>
@@ -166,14 +186,23 @@ function Header(data) {
 
             <ul className="subList">
               <div>
-                <button className="modalButton" onClick={onOpenModal2}>
+                <button
+                  className="modalButton"
+                  onClick={() => {
+                    onOpenModal2();
+                    HideThisIntro();
+                  }}
+                >
                   {" "}
                   {data.data1 ? data.data1.menu.menu5a : "loading..."}
                 </button>
                 <Modal
                   className="myModal"
                   open={open2}
-                  onClose={onCloseModal2}
+                  onClose={() => {
+                    onCloseModal2();
+                    DisplayThisIntro();
+                  }}
                   center
                 >
                   <h1>
@@ -196,14 +225,23 @@ function Header(data) {
               </div>
 
               <div>
-                <button className="modalButton" onClick={onOpenModal3}>
+                <button
+                  className="modalButton"
+                  onClick={() => {
+                    onOpenModal3();
+                    HideThisIntro();
+                  }}
+                >
                   {" "}
                   {data.data1 ? data.data1.menu.menu5b : "loading..."}
                 </button>
                 <Modal
                   className="myModal"
                   open={open3}
-                  onClose={onCloseModal3}
+                  onClose={() => {
+                    onCloseModal3();
+                    DisplayThisIntro();
+                  }}
                   center
                 >
                   <h1>
@@ -228,14 +266,23 @@ function Header(data) {
               </div>
 
               <div>
-                <button className="modalButton" onClick={onOpenModal4}>
+                <button
+                  className="modalButton"
+                  onClick={() => {
+                    onOpenModal4();
+                    HideThisIntro();
+                  }}
+                >
                   {" "}
                   {data.data1 ? data.data1.menu.menu5c : "loading..."}
                 </button>
                 <Modal
                   className="myModal"
                   open={open4}
-                  onClose={onCloseModal4}
+                  onClose={() => {
+                    onCloseModal4();
+                    DisplayThisIntro();
+                  }}
                   center
                 >
                   <h1>{data.data2 ? data.data2.presse.titre : "loading..."}</h1>

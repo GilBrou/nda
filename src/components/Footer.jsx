@@ -4,9 +4,21 @@ import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 
 function Footer(data) {
+  /*Toggle Intro according to modals*/
+  const thisIntro = document.getElementById("intro");
+  function HideThisIntro() {
+    thisIntro.style.visibility = "hidden";
+  }
+  function DisplayThisIntro() {
+    thisIntro.style.visibility = "visible";
+  }
+
+  /*Toggle modal*/
   const [open5, setOpen5] = useState(false);
   const onOpenModal5 = () => setOpen5(true);
   const onCloseModal5 = () => setOpen5(false);
+
+  /*Create mailto from Json*/
   const ThatMail = "mailto:" + data.data2.nda.mail;
 
   return (
@@ -15,14 +27,23 @@ function Footer(data) {
         <ul className="menu">
           <li>
             <div>
-              <button className="modalButton footB" onClick={onOpenModal5}>
-                {" "}
+              <button
+                className="modalButton footB"
+                onClick={() => {
+                  onOpenModal5();
+                  HideThisIntro();
+                }}
+              >
+                {/*NEW WAY*/}{" "}
                 {data.data2 ? data.data2.mentions.titre : "loading..."}
               </button>
               <Modal
                 className="myModal"
                 open={open5}
-                onClose={onCloseModal5}
+                onClose={() => {
+                  onCloseModal5();
+                  DisplayThisIntro();
+                }}
                 center
               >
                 <h1>{data.data2 ? data.data2.mentions.titre : "loading..."}</h1>

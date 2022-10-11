@@ -1,17 +1,16 @@
 /***INTRO MODULE***/
-function Intro(props) {
+function Intro(data) {
+
   return (
     <section id="intro">
-          <div className="intro">
-        {/*Photo*/}
-            <img
-              src={props.data ? props.data.logoFull : "loading..."}
-              className="img-responsive logoFull"
-              alt={props.data ? props.data.photoAlt : "loading..."}
-            />{" "}
-        {/*Title*/}
+      <div className="intro">
+        <img
+          src={data.data1 ? data.data1.ressources.logo2 : "loading..."}
+          className="img-responsive logoFull"
+          alt={data.data1 ? data.data1.ressources.logo2Alt : "loading..."}
+        />{" "}
         <h1 className="text-center">
-          {props.data ? props.data.introP : "loading..."}
+          {data.data2 ? data.data2.nda.description : "loading..."}
         </h1>
       </div>
     </section>
@@ -19,4 +18,3 @@ function Intro(props) {
 }
 
 export default Intro;
-
