@@ -7,10 +7,12 @@ function Footer(data) {
   /*Toggle Intro according to modals*/
   const thisIntro = document.getElementById("intro");
   function HideThisIntro() {
-    thisIntro.style.visibility = "hidden";
+    /*thisIntro.style.visibility = "hidden";*/
+    thisIntro.style.opacity = 0;
   }
   function DisplayThisIntro() {
-    thisIntro.style.visibility = "visible";
+    /*thisIntro.style.visibility = "visible";*/
+    thisIntro.style.opacity = 1;
   }
 
   /*Toggle modal*/

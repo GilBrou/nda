@@ -4,6 +4,7 @@
   width: auto;
   display: flex;
   flex-direction: row-reverse;
+  transition: 0.5s;
 }
 .intro {
   width: 20%;

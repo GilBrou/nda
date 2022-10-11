@@ -1,0 +1,49 @@
+form {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 80%;
+}
+
+.input_group {
+  width: 90%;
+  margin: 0 auto 1.2rem;
+  overflow: hidden;
+}
+form input,
+textarea {
+  background-color: var(--whiteish);
+  margin: 10px auto;
+  width: 70%;
+  padding: 0.5rem 1rem;
+  font-size: 18px;
+  border: solid 1px var(--blackish);
+}
+.messA {
+  height: 250px;
+  margin-bottom: 25px;
+}
+form input:focus,
+form textarea:focus {
+  outline: none;
+}
+form button {
+  display: block;
+  width: 25%;
+  border-radius: 3px;
+  background: var(--greenish);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.8rem 0;
+  font-size: 18px;
+  color: var(--blackish);
+  margin: 0 auto;
+  border: solid 1px var(--blackish);
+  transition: 0.4s;
+  text-transform: uppercase;
+}
+form button:hover {
+  transform: scale(1.1);
+}

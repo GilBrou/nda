@@ -14,7 +14,7 @@
     height: 100%;
 }
 #stars {
-    filter: blur(1px);
+    filter: blur(1.7px);
     width: 1px;
     height: 1px;
     background: transparent;

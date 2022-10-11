@@ -52,9 +52,7 @@
   },
   "PAGES A FAIRE": {
     "UNIVERS": "",
-    "CREATEURS": "",
-    "A PROPOS": "modale ou page ? voire replace intro ?",
-    "CONTACT": "formulaire de contact"
+    "CREATEURS": ""
   },
   "SOUS-PAGES A FAIRE": {
     "UNIVERS DEDIE TEMPLATE": "MEMORIA FUTURIA ETC",
@@ -65,10 +63,12 @@
     "inclusion vidéos": "",
     "NEWSLETTER": "",
     "INCLUSION IG ET FB ?": "",
-    "QUESTIONNAIRE EN LIGNE POUR AFFICHER TRI": ""
+    "QUESTIONNAIRE EN LIGNE POUR AFFICHER TRI": "",
+    "A PROPOS": "modale ou page ? voire replace intro ?"
   },
   "MORGANE TO DO": {
-    "MAJ KIT MEDIA": ""
+    "MAJ KIT MEDIA": "",
+    "MAJ auteurs": ""
   },
   "MOI TO DO": {
     "SEO PERFORMANCE ET REFERENCEMENT": "",
