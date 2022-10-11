@@ -34,14 +34,13 @@
   vertical-align: middle;
 }
 .react-responsive-modal-modal {
-  /*max-width: 800px;*/
+  max-width: 50vw;
   width: 100%;
   height: auto;
   display: inline-block;
   text-align: left;
   vertical-align: middle;
   background-color: var(--blackishBack2);
-  /*background: url("./background1.webp");*/
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -49,9 +48,7 @@
   overflow: hidden;
   box-shadow: 0px 0px 40px -25px var(--greenish);
   margin: 1.2rem;
-  /*padding: 1rem 4rem;*/
   padding: 50px;
-  /*border-radius: 15px;*/
   border-radius: 5px;
   position: relative;
   overflow-y: auto;
@@ -61,6 +58,7 @@
   -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     */
+  /*backdrop-filter: brightness(150%);*/
 }
 .react-responsive-modal-modal h1 {
   text-transform: uppercase;
@@ -74,11 +72,11 @@
   border-bottom: solid 1px var(--greenish);
 }
 .react-responsive-modal-modal p {
-  /*color: var(--whiteish);*/
   text-align: justify;
   font-size: 19px;
 }
 .react-responsive-modal-closeButton {
+  /*visibility: hidden;*/
   position: absolute;
   top: 14px;
   right: 14px;
@@ -163,4 +161,10 @@
 .modalImg {
   margin: auto;
   margin-top: 50px;
+}
+
+.aProposImg{
+  /*width: 50%;
+  max-width: 300px;*/
+  margin: 30px auto 0 auto;
 }

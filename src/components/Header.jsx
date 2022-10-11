@@ -157,6 +157,7 @@ function Header(data) {
               <p>{data.data1 ? data.data1.menu.menu4 : "loading..."}</p>
             </button>
             <Modal
+              id="aProposModal"
               className="myModal"
               open={open}
               onClose={() => {
@@ -172,8 +173,8 @@ function Header(data) {
               <p> {data.data2 ? data.data2.apropos.P4 : "loading..."}</p>
               <p> {data.data2 ? data.data2.apropos.P5 : "loading..."}</p>
               <img
-                src={data.data1 ? data.data1.ressources.logo2 : "loading..."}
-                className=" logo img-responsive page-scroll authorLogo modalImg"
+                src={data.data1 ? data.data1.ressources.logo1 : "loading..."}
+                className=" logo img-responsive page-scroll modalImg aProposImg"
                 href="#page-top"
                 alt={data.data1 ? data.data1.ressources.logo2Alt : "loading..."}
               />{" "}
