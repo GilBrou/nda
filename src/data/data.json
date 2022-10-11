@@ -48,7 +48,7 @@
     "menu2fL": "/fleur-d-absinthe",
     "menu2gL": "/chrysalis",
     "menu2hL": "/pousse-d-absinthe",
-    "menu3L": ""
+    "menu3L": "/createurs"
   },
   "PAGES A FAIRE": {
     "UNIVERS": "",
@@ -64,9 +64,10 @@
     "NEWSLETTER": "",
     "INCLUSION IG ET FB ?": "",
     "QUESTIONNAIRE EN LIGNE POUR AFFICHER TRI": "",
-    "A PROPOS": "modale ou page ? voire replace intro ?"
+    "Autheurs DEDIE TEMPLATE ?": "UN PAR UN"
   },
   "MORGANE TO DO": {
+    "MAJ infosite": "",
     "MAJ KIT MEDIA": "",
     "MAJ auteurs": ""
   },

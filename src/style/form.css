@@ -28,9 +28,10 @@ form input:focus,
 form textarea:focus {
   outline: none;
 }
-form button {
+form button, .btn-block {
   display: block;
-  width: 25%;
+  /*width: 25%;*/
+  width:  250px;
   border-radius: 3px;
   background: var(--greenish);
   border: none;
@@ -44,6 +45,7 @@ form button {
   transition: 0.4s;
   text-transform: uppercase;
 }
+
 form button:hover {
   transform: scale(1.1);
 }

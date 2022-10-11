@@ -9,7 +9,12 @@
 @import "./modal.css";
 @import "./page404.css";
 @import "./form.css";
+@import "./createurs.css";
 
+html {
+  background-color: back;
+
+}
 body,
 html {
   /*General*/
@@ -22,8 +27,8 @@ html {
   color: var(--whiteish);
 
   /*Background*/
-  background-color: var(--blackish);
   background: url("./background.webp");
+  background-color: back;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;

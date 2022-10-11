@@ -7,6 +7,8 @@ import { Redirect } from "react-router";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Homepage from "./pages/Homepage";
+import Createurs from "./pages/Createurs";
+
 import Error404 from "./pages/Error404";
 
 /***DATAS***/
@@ -69,7 +71,10 @@ function App() {
         <Switch>
           <Route exact path="/accueil">
             <Homepage data1={Data1} data2={Data2} />
-          </Route>       
+          </Route>
+          <Route exact path="/createurs">
+            <Createurs data1={Data1} data2={Data2} />
+          </Route>
           <Route>
             <Redirect to="/accueil" />
           </Route>
