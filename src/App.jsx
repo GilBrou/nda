@@ -27,15 +27,15 @@ function App() {
     fetchDatas();
   }, []);
 
-  /*
-  console.log(Data1)
-  console.log(Data2)
-  */
-
   return (
     <Router>
       <Header data1={Data1} data2={Data2} />
       <div className="app">
+        <div className="bg-animation">
+          <div id="stars" />
+          <div id="stars2" />
+          <div id="stars4" />
+        </div>
         <div className="firefly" />
         <div className="firefly" />
         <div className="firefly" />

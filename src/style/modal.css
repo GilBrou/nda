@@ -57,6 +57,10 @@
   overflow-y: auto;
   color: var(--blackish);
   border: solid 1px var(--blackishBack3);
+  /*
+  -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    */
 }
 .react-responsive-modal-modal h1 {
   text-transform: uppercase;
