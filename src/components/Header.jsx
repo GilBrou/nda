@@ -211,6 +211,14 @@ function Header(data) {
                   }}
                   center
                 >
+                  <img
+                    src={
+                      data.data1 ? data.data1.ressources.logo1 : "loading..."
+                    }
+                    className=" logo img-responsive page-scroll authorLogo"
+                    href="#page-top"
+                    alt={data.data1 ? data.data1.info.nom : "loading..."}
+                  />{" "}
                   <h1>
                     {data.data2 ? data.data2.contact.titre : "loading..."}
                   </h1>
