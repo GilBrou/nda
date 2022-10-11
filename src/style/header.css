@@ -14,7 +14,7 @@ nav {
   font-size: 17px;
   font-weight: 450;
   background: var(--blackishBack);
-  box-shadow: 0 -65px 30px 50px var(--blueish);
+  /*box-shadow: 0 -65px 30px 50px var(--blueish);*/ /**/
   z-index: 1000;
 }
 nav li a,

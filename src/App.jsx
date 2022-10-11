@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Homepage from "./pages/Homepage";
 import Createurs from "./pages/Createurs";
+import Univers from "./pages/Univers";
 
 import Error404 from "./pages/Error404";
 
@@ -74,6 +75,9 @@ function App() {
           </Route>
           <Route exact path="/createurs">
             <Createurs data1={Data1} data2={Data2} />
+          </Route>
+               <Route exact path="/univers">
+            <Univers data1={Data1} data2={Data2} />
           </Route>
           <Route>
             <Redirect to="/accueil" />
