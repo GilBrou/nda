@@ -8,15 +8,23 @@ import { Modal } from "react-responsive-modal";
 export default function Footer(data) {
   /*Toggle Intro according to modals*/
   const thisIntro = document.getElementById("intro");
+  const thisUniverse = document.getElementById("univers0");
+
   function HideThisIntro() {
     if (thisIntro != null) {
       thisIntro.style.opacity = 0;
+    }
+        else if (thisUniverse != null) {
+      thisUniverse.style.opacity = 0;
     }
   }
   function DisplayThisIntro() {
     if (thisIntro != null) {
       thisIntro.style.opacity = 1;
     }
+     else if(thisUniverse != null) {
+      thisUniverse.style.opacity = 1;
+    }    
   }
 
   /*Toggle modal*/

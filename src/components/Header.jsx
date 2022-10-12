@@ -144,6 +144,14 @@ export default function Header(data) {
                   {data.data1 ? data.data1.menu.menu2h : "loading..."}
                 </a>
               </li>
+                        <li>
+                <a
+                  href={data.data1 ? data.data1.links.menu2iL : "loading..."}
+                  className="page-scroll"
+                >
+                  {data.data1 ? data.data1.menu.menu2i : "loading..."}
+                </a>
+              </li>
             </ul>
           </li>
           <li>
