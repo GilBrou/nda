@@ -16,7 +16,7 @@ export default function Footer(data) {
   }
 
   function DisplayThis() {
-    if (uPage != null) {
+    if (thisToggle != null) {
       thisToggle.style.visibility = "visible";
     }
   }

@@ -1,19 +1,12 @@
-/***UNIVERS***/
-
-/***GENERAL***/
-import { useState, useEffect } from "react";
-
-/***COMPONENTS***/
-import MyUniverses from "../components/MyUniverses";
+/******UNIVERS******/
 
 /***COMPONENT***/
-export default function Univers(data) {
-  /*DOM*/
+export default function Univers(data) {  
+
+  /*DOM*/  
   return (
-    <div id="uPage">
-      <div className="univers">
-        <MyUniverses />
-      </div>
+    <div className="univers">
+  
     </div>
   );
 }

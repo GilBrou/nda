@@ -78,7 +78,7 @@ export default function App() {
           <Route exact path="/createurs">
             <Createurs data1={Data1} data2={Data2} />
           </Route>
-          <Route exact path="/univers">
+          <Route exact path="/univer">
             <Univers data1={Data1} data2={Data2} />
           </Route>
           <Route>
