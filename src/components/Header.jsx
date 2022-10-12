@@ -9,16 +9,17 @@ import { Link } from "react-router-dom";
 import Form from "./Form";
 
 export default function Header(data) {
-  /*Toggle Intro according to modals*/
-  const thisIntro = document.getElementById("intro");
-  function HideThisIntro() {
-    if (thisIntro != null) {
-      thisIntro.style.opacity = 0;
+  /*Toggle modules according to modals*/
+  const thisToggle = document.getElementById("thisToggle");
+
+  function HideThis() {
+    if (thisToggle != null) {
+      thisToggle.style.visibility = "hidden";
     }
   }
-  function DisplayThisIntro() {
-    if (thisIntro != null) {
-      thisIntro.style.opacity = 1;
+  function DisplayThis() {
+    if (thisToggle != null) {
+      thisToggle.style.visibility = "visible";
     }
   }
 
@@ -144,7 +145,7 @@ export default function Header(data) {
                   {data.data1 ? data.data1.menu.menu2h : "loading..."}
                 </a>
               </li>
-                        <li>
+              <li>
                 <a
                   href={data.data1 ? data.data1.links.menu2iL : "loading..."}
                   className="page-scroll"
@@ -167,7 +168,7 @@ export default function Header(data) {
               className="modalButton"
               onClick={() => {
                 onOpenModal();
-                HideThisIntro();
+                HideThis();
               }}
             >
               {" "}
@@ -179,7 +180,7 @@ export default function Header(data) {
               open={open}
               onClose={() => {
                 onCloseModal();
-                DisplayThisIntro();
+                DisplayThis();
               }}
               center
             >
@@ -208,7 +209,7 @@ export default function Header(data) {
                   className="modalButton"
                   onClick={() => {
                     onOpenModal2();
-                    HideThisIntro();
+                    HideThis();
                   }}
                 >
                   {" "}
@@ -219,7 +220,7 @@ export default function Header(data) {
                   open={open2}
                   onClose={() => {
                     onCloseModal2();
-                    DisplayThisIntro();
+                    DisplayThis();
                   }}
                   center
                 >
@@ -317,7 +318,7 @@ export default function Header(data) {
                   className="modalButton"
                   onClick={() => {
                     onOpenModal3();
-                    HideThisIntro();
+                    HideThis();
                   }}
                 >
                   {" "}
@@ -328,7 +329,7 @@ export default function Header(data) {
                   open={open3}
                   onClose={() => {
                     onCloseModal3();
-                    DisplayThisIntro();
+                    DisplayThis();
                   }}
                   center
                 >
@@ -358,7 +359,7 @@ export default function Header(data) {
                   className="modalButton"
                   onClick={() => {
                     onOpenModal4();
-                    HideThisIntro();
+                    HideThis();
                   }}
                 >
                   {" "}
@@ -369,7 +370,7 @@ export default function Header(data) {
                   open={open4}
                   onClose={() => {
                     onCloseModal4();
-                    DisplayThisIntro();
+                    DisplayThis();
                   }}
                   center
                 >

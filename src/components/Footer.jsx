@@ -6,25 +6,19 @@ import { Modal } from "react-responsive-modal";
 
 /***COMPONENT***/
 export default function Footer(data) {
-  /*Toggle Intro according to modals*/
-  const thisIntro = document.getElementById("intro");
-  const thisUniverse = document.getElementById("univers0");
+  /*Toggle modules according to modals*/
+  const thisToggle = document.getElementById("thisToggle");
 
-  function HideThisIntro() {
-    if (thisIntro != null) {
-      thisIntro.style.opacity = 0;
-    }
-        else if (thisUniverse != null) {
-      thisUniverse.style.opacity = 0;
+  function HideThis() {
+    if (thisToggle != null) {
+      thisToggle.style.visibility = "hidden";
     }
   }
-  function DisplayThisIntro() {
-    if (thisIntro != null) {
-      thisIntro.style.opacity = 1;
+
+  function DisplayThis() {
+    if (uPage != null) {
+      thisToggle.style.visibility = "visible";
     }
-     else if(thisUniverse != null) {
-      thisUniverse.style.opacity = 1;
-    }    
   }
 
   /*Toggle modal*/
@@ -46,7 +40,7 @@ export default function Footer(data) {
                 className="modalButton footB"
                 onClick={() => {
                   onOpenModal5();
-                  HideThisIntro();
+                  HideThis();
                 }}
               >
                 {data.data2 ? data.data2.mentions.titre : "loading..."}
@@ -56,7 +50,7 @@ export default function Footer(data) {
                 open={open5}
                 onClose={() => {
                   onCloseModal5();
-                  DisplayThisIntro();
+                  DisplayThis();
                 }}
                 center
               >

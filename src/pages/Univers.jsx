@@ -10,7 +10,7 @@ import MyUniverses from "../components/MyUniverses";
 export default function Univers(data) {
   /*DOM*/
   return (
-    <div className="univers0">
+    <div id="uPage">
       <div className="univers">
         <MyUniverses />
       </div>

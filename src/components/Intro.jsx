@@ -5,7 +5,7 @@ export default function Intro(data) {
 /*DOM*/
   return (
     <section id="intro">
-      <div className="intro">
+      <div className="intro" id="thisToggle">
         <img
           src={data.data1 ? data.data1.ressources.logo2 : "loading..."}
           className="img-responsive logoFull"

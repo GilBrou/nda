@@ -4,6 +4,8 @@
 .myUniverses {
   -webkit-animation: fadeInBibli 1s ease-out both 4.3s;
   animation: fadeInBibli 1s ease-out both 4.3s;
+  transition:  -1s;
+
 }
 .myUniverses .section {
   position: relative;
@@ -161,7 +163,8 @@
   /*writing-mode: vertical-rl;*/
   opacity: 0;
   pointer-events: none;
-  box-shadow: 0 8px 25px 0 rgba(16, 39, 112, 0.1);
+  /*box-shadow: 0 8px 25px 0 rgba(16, 39, 112, 0.1);*/
+  box-shadow: 0px 0px 12px -1px var(--whiteish);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   text-align: center;

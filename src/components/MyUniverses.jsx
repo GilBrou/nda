@@ -9,7 +9,7 @@ import { useState, useEffect } from "react";
 export default function MyUniverses(data) {
   /*DOM*/
   return (
-    <div className="myUniverses">
+    <div className="myUniverses" id="thisToggle">
       <div className="section full-height over-hide px-4 px-sm-0">
         <div className="container">
           <div className="row full-height justify-content-center">
