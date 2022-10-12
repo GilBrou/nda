@@ -162,3 +162,39 @@ ul li:hover ul {
 .noClick {
   pointer-events: none;
 }
+.contactList {
+  display: flex;
+  float: right;
+}
+
+.contactList a,
+.contactList p,
+.contactList li {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px 0 5px;
+}
+.contactList .fa {
+  font-size: 25px;
+  text-decoration: none;
+}
+.contactList a:hover,
+.contactMail p:hover {
+  color: var(--greenish);
+  text-decoration: none;
+}
+.contactList img {
+  max-height: 40px;
+}
+.contactList.fb {
+  margin: none;
+}
+
+.contactMail {
+  float: left;
+}

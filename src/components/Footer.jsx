@@ -8,11 +8,14 @@ function Footer(data) {
   const thisIntro = document.getElementById("intro");
   function HideThisIntro() {
     /*thisIntro.style.visibility = "hidden";*/
-    thisIntro.style.opacity = 0;
+    if (thisIntro != null) {
+      thisIntro.style.opacity = 0;
+    }
   }
   function DisplayThisIntro() {
-    /*thisIntro.style.visibility = "visible";*/
-    thisIntro.style.opacity = 1;
+    if (thisIntro != null) {
+      thisIntro.style.opacity = 1;
+    }
   }
 
   /*Toggle modal*/

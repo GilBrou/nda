@@ -46,7 +46,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
-  box-shadow: 0px 0px 40px -25px var(--greenish);
+  /*box-shadow: 0px 0px 40px -25px var(--greenish);*/
   margin: 1.2rem;
   padding: 50px;
   border-radius: 5px;
@@ -55,8 +55,8 @@
   color: var(--blackish);
   border: solid 1px var(--blackishBack3);
   /*
-  -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(3px);
+ -webkit-backdrop-filter: blur(3px);
+backdrop-filter: blur(3px);
     */
   /*backdrop-filter: brightness(150%);*/
 }
@@ -163,7 +163,7 @@
   margin-top: 50px;
 }
 
-.aProposImg{
+.aProposImg {
   /*width: 50%;
   max-width: 300px;*/
   margin: 30px auto 0 auto;

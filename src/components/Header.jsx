@@ -11,12 +11,14 @@ function Header(data) {
   /*Toggle Intro according to modals*/
   const thisIntro = document.getElementById("intro");
   function HideThisIntro() {
-    /*thisIntro.style.visibility = "hidden";*/
-    thisIntro.style.opacity = 0;
+    if (thisIntro != null) {
+      thisIntro.style.opacity = 0;
+    }
   }
   function DisplayThisIntro() {
-    /*thisIntro.style.visibility = "visible";*/
-    thisIntro.style.opacity = 1;
+    if (thisIntro != null) {
+      thisIntro.style.opacity = 1;
+    }
   }
 
   /*Toggle modals*/
@@ -38,7 +40,7 @@ function Header(data) {
 
   return (
     <header>
-      <nav role="navigation" className="top-nav primary-navigation">
+      <nav role="navigation" className="top-nav primary-navigation Hheader">
         <div>
           <a href="/accueil">
             <img
@@ -228,6 +230,75 @@ function Header(data) {
                   <p> {data.data2 ? data.data2.contact.P3 : "loading..."}</p>
                   <p> {data.data2 ? data.data2.contact.P4 : "loading..."}</p>
                   <p> {data.data2 ? data.data2.contact.P5 : "loading..."}</p>
+                  <a href={ThatMail} className="contactMail">
+                    <p>{data.data2 ? data.data2.nda.mail : "loading..."}</p>
+                  </a>
+                  <ul className="contactList">
+                    <li>
+                      <a
+                        href={data.data2 ? data.data2.nda.FB : "loading..."}
+                        target="_blank"
+                        className="fb"
+                      >
+                        <i
+                          className={
+                            data.data1
+                              ? data.data1.ressources.logoFB
+                              : "loading..."
+                          }
+                          aria-hidden="true"
+                        ></i>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href={data.data2 ? data.data2.nda.TW : "loading..."}
+                        target="_blank"
+                      >
+                        <i
+                          className={
+                            data.data1
+                              ? data.data1.ressources.logoTW
+                              : "loading..."
+                          }
+                          aria-hidden="true"
+                        ></i>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href={data.data2 ? data.data2.nda.IG : "loading..."}
+                        target="_blank"
+                      >
+                        <i
+                          className={
+                            data.data1
+                              ? data.data1.ressources.logoIG
+                              : "loading..."
+                          }
+                          aria-hidden="true"
+                        ></i>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href={data.data2 ? data.data2.nda.YT : "loading..."}
+                        target="_blank"
+                      >
+                        <i
+                          className={
+                            data.data1
+                              ? data.data1.ressources.logoYT
+                              : "loading..."
+                          }
+                          aria-hidden="true"
+                        ></i>
+                      </a>
+                    </li>
+                  </ul>
                 </Modal>
               </div>
 
