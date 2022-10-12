@@ -74,7 +74,7 @@
 }
 
 /*FADE IN UNIVERS*/
-@-webkit-keyframes fadeInBibli {
+@-webkit-keyframes fadeInPage {
   0% {
     opacity: 0;
   }
@@ -82,7 +82,7 @@
     opacity: 1;
   }
 }
-@keyframes fadeInBibli {
+@keyframes fadeInPage {
   0% {
     opacity: 0;
   }

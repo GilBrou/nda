@@ -1,23 +1,13 @@
 /***CREATEURS***/
 .createurs {
-  /*Background*/
   background-color: var(--blackish);
-  background: url("./background2.webp");
+  background: url("./background/background2.webp");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
-
-  /*Background animation*/
-  animation: animMuse 25s ease-out infinite alternate both 1s;
-
+  animation: animMuse 25s ease-out infinite alternate both;
   width: 100%;
   height: 100vh;
-  background-color: back;
-  display: flex;
-
-  /*margin: auto;*/
-  justify-content: center;
-  text-align: center;
 }

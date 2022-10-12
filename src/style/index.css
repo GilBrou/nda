@@ -30,17 +30,16 @@ html {
   color: var(--whiteish);
 
   /*Background*/
-  background: url("./background.webp");
+  background: url("./background/background.webp");
   background-color: var(--blackish);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  /*overflow: hidden;*/ /***/
   overflow: hidden;
 
   /*Background animation*/
-  animation: animMuse 30s ease-out infinite alternate both 1s;
+  animation: animMuse 30s ease-out infinite alternate both;
 
   /*Color Variables*/
   --blackish: #0e0d0d;

@@ -183,6 +183,7 @@ ul li:hover ul {
 .contactList .fa {
   font-size: 25px;
   text-decoration: none;
+  color: var(--whiteish);
 }
 .contactList a:hover,
 .contactMail p:hover {
