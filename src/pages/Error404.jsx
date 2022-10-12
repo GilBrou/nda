@@ -1,9 +1,12 @@
+/******ERROR404 MODULE******/
+
 /***GENERAL***/
 import React from "react";
 import { Link } from "react-router-dom";
 
-/***Page***/
-function Error404() {
+/***COMPONENT***/
+export default function Error404() {
+  /*DOM*/    
     return (
         <div className="div404">
             <div />
@@ -70,4 +73,3 @@ function Error404() {
         </div>
     );
 }
-export default Error404;

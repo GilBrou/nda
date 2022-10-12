@@ -1,4 +1,4 @@
-/*Introduction*/
+/***INTRO***/
 #intro {
   height: 100%;
   width: auto;
@@ -39,10 +39,8 @@
     var(--greenish)
   );
   border-radius: 100%;
-  /*logo's shadow and movement anim*/
   animation: ShadowAnim 11s infinite alternate both;
 }
-
 .intro h1 {
   margin-top: 35px;
   font-size: 22px;

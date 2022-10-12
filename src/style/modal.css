@@ -1,3 +1,4 @@
+/***MODAL***/
 .react-responsive-modal-root {
   position: fixed;
   top: 0;
@@ -7,9 +8,7 @@
   z-index: 1000;
 }
 .react-responsive-modal-overlay {
-  /*background: var(--greenishTrans);*/
-  /*opacity:  0.5;*/
-  visibility: hidden; /**/
+  visibility: hidden;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -25,7 +24,6 @@
   overflow-y: auto;
   text-align: center;
 }
-/* Used to trick the browser to center the modal content properly  */
 .react-responsive-modal-containerCenter:after {
   width: 0;
   height: 100%;
@@ -46,7 +44,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
-  /*box-shadow: 0px 0px 40px -25px var(--greenish);*/
   margin: 1.2rem;
   padding: 50px;
   border-radius: 5px;
@@ -58,7 +55,6 @@
  -webkit-backdrop-filter: blur(3px);
 backdrop-filter: blur(3px);
     */
-  /*backdrop-filter: brightness(150%);*/
 }
 .react-responsive-modal-modal h1 {
   text-transform: uppercase;
@@ -76,7 +72,6 @@ backdrop-filter: blur(3px);
   font-size: 19px;
 }
 .react-responsive-modal-closeButton {
-  /*visibility: hidden;*/
   position: absolute;
   top: 14px;
   right: 14px;
@@ -87,45 +82,8 @@ backdrop-filter: blur(3px);
   border-radius: 5px;
   display: flex;
 }
-@keyframes react-responsive-modal-overlay-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes react-responsive-modal-overlay-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes react-responsive-modal-modal-in {
-  0% {
-    transform: scale(0.96);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(100%);
-    opacity: 1;
-  }
-}
-@keyframes react-responsive-modal-modal-out {
-  0% {
-    transform: scale(100%);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0.96);
-    opacity: 0;
-  }
-}
 
 /*Personalisation*/
-
 .modalButton {
   all: unset;
   cursor: pointer;
@@ -164,7 +122,5 @@ backdrop-filter: blur(3px);
 }
 
 .aProposImg {
-  /*width: 50%;
-  max-width: 300px;*/
   margin: 30px auto 0 auto;
 }

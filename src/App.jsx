@@ -1,11 +1,14 @@
+/******APP******/
+
 /***GENERAL***/
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Redirect } from "react-router";
 
-/***PAGES***/
+/***COMPONENTS***/
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+/***PAGES***/
 import Homepage from "./pages/Homepage";
 import Createurs from "./pages/Createurs";
 import Univers from "./pages/Univers";
@@ -15,12 +18,11 @@ import Error404 from "./pages/Error404";
 import Data1 from "./data/data.json";
 import Data2 from "./data/dataExt.json";
 
-/*Main app*/
-function App() {
+/***APP***/
+export default function App() {
   /*Get datas*/
   const [allDatas, setAllDatas] = useState({});
   const [allDatas2, setAllDatas2] = useState({});
-
   useEffect(() => {
     async function fetchDatas() {
       setAllDatas(Data1);
@@ -29,6 +31,7 @@ function App() {
     fetchDatas();
   }, []);
 
+  /*DOM*/
   return (
     <Router>
       <Header data1={Data1} data2={Data2} />
@@ -75,7 +78,7 @@ function App() {
           <Route exact path="/createurs">
             <Createurs data1={Data1} data2={Data2} />
           </Route>
-               <Route exact path="/univers">
+          <Route exact path="/univers">
             <Univers data1={Data1} data2={Data2} />
           </Route>
           <Route>
@@ -90,5 +93,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;

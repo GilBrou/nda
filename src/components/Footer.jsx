@@ -1,13 +1,14 @@
-/***HEADER/NAV MODULE***/
+/******FOOTER MODULE******/
+
+/***GENERAL***/
 import React, { useState } from "react";
-import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 
-function Footer(data) {
+/***COMPONENT***/
+export default function Footer(data) {
   /*Toggle Intro according to modals*/
   const thisIntro = document.getElementById("intro");
   function HideThisIntro() {
-    /*thisIntro.style.visibility = "hidden";*/
     if (thisIntro != null) {
       thisIntro.style.opacity = 0;
     }
@@ -26,6 +27,7 @@ function Footer(data) {
   /*Create mailto from Json*/
   const ThatMail = "mailto:" + data.data2.nda.mail;
 
+  /*DOM*/
   return (
     <div>
       <footer>
@@ -39,7 +41,6 @@ function Footer(data) {
                   HideThisIntro();
                 }}
               >
-                {/*NEW WAY*/}{" "}
                 {data.data2 ? data.data2.mentions.titre : "loading..."}
               </button>
               <Modal
@@ -52,14 +53,12 @@ function Footer(data) {
                 center
               >
                 <h1>{data.data2 ? data.data2.mentions.titre : "loading..."}</h1>
-
                 <div className="paraMentions">
                   <p>{data.data1 ? data.data1.info.nom : "loading..."}</p>
                   <p>{data.data2 ? data.data2.mentions.P1 : "loading..."}</p>
                   <p> {data.data2 ? data.data2.mentions.P2 : "loading..."}</p>
                   <p> {data.data2 ? data.data2.mentions.P3 : "loading..."}</p>
                 </div>
-
                 <div className="paraMentions">
                   <a href={ThatMail}>
                     <p>{data.data2 ? data.data2.nda.mail : "loading..."}</p>
@@ -93,7 +92,6 @@ function Footer(data) {
               </Modal>
             </div>
           </li>
-
           <li>
             <a
               href={data.data2 ? data.data2.nda.FB : "loading..."}
@@ -108,7 +106,6 @@ function Footer(data) {
               ></i>
             </a>
           </li>
-
           <li>
             <a
               href={data.data2 ? data.data2.nda.TW : "loading..."}
@@ -122,7 +119,6 @@ function Footer(data) {
               ></i>
             </a>
           </li>
-
           <li>
             <a
               href={data.data2 ? data.data2.nda.IG : "loading..."}
@@ -136,7 +132,6 @@ function Footer(data) {
               ></i>
             </a>
           </li>
-
           <li>
             <a
               href={data.data2 ? data.data2.nda.YT : "loading..."}
@@ -150,7 +145,6 @@ function Footer(data) {
               ></i>
             </a>
           </li>
-
           <li>
             <img
               src={
@@ -173,5 +167,3 @@ function Footer(data) {
     </div>
   );
 }
-
-export default Footer;

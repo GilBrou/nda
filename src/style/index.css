@@ -1,3 +1,5 @@
+/***INDEX***/
+
 /***COMPONENTS STYLES***/
 @import "./animations.css";
 @import "./header.css";
@@ -12,9 +14,6 @@
 @import "./createurs.css";
 @import "./univers.css";
 
-html {
-  background-color: back;
-}
 body,
 html {
   /*General*/
@@ -33,7 +32,7 @@ html {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  /*overflow: hidden;*/   /***/
+  /*overflow: hidden;*/ /***/
 
   /*Background animation*/
   animation: animMuse 30s ease-out infinite alternate both 1s;

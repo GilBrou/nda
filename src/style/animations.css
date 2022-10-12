@@ -12,78 +12,6 @@
   }
 }
 
-/* Footer entrance animation*/
-/*
-@-webkit-keyframes swing-in-bottom-fwd {
-  0% {
-    -webkit-transform: rotateX(100deg);
-    transform: rotateX(100deg);
-    -webkit-transform-origin: bottom;
-    transform-origin: bottom;
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotateX(0);
-    transform: rotateX(0);
-    -webkit-transform-origin: bottom;
-    transform-origin: bottom;
-    opacity: 1;
-  }
-}
-@keyframes swing-in-bottom-fwd {
-  0% {
-    -webkit-transform: rotateX(100deg);
-    transform: rotateX(100deg);
-    -webkit-transform-origin: bottom;
-    transform-origin: bottom;
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotateX(0);
-    transform: rotateX(0);
-    -webkit-transform-origin: bottom;
-    transform-origin: bottom;
-    opacity: 1;
-  }
-}
-*/
-
-/* Header entrance animation*/
-/*
-@-webkit-keyframes swing-in-top-fwd {
-  0% {
-    -webkit-transform: rotateX(-100deg);
-    transform: rotateX(-100deg);
-    -webkit-transform-origin: top;
-    transform-origin: top;
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotateX(0deg);
-    transform: rotateX(0deg);
-    -webkit-transform-origin: top;
-    transform-origin: top;
-    opacity: 1;
-  }
-}
-@keyframes swing-in-top-fwd {
-  0% {
-    -webkit-transform: rotateX(-100deg);
-    transform: rotateX(-100deg);
-    -webkit-transform-origin: top;
-    transform-origin: top;
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotateX(0deg);
-    transform: rotateX(0deg);
-    -webkit-transform-origin: top;
-    transform-origin: top;
-    opacity: 1;
-  }
-}
-*/
-
 /*logo's shadow and movement anim*/
 @keyframes ShadowAnim {
   0% {
@@ -145,8 +73,8 @@
   }
 }
 
-/*Logo's entrance*/
-@-webkit-keyframes fade-in {
+/*FADE IN UNIVERS*/
+@-webkit-keyframes fadeInBibli {
   0% {
     opacity: 0;
   }
@@ -154,7 +82,7 @@
     opacity: 1;
   }
 }
-@keyframes fade-in {
+@keyframes fadeInBibli {
   0% {
     opacity: 0;
   }
@@ -163,9 +91,395 @@
   }
 }
 
-/*background's entrance*/
-/*
-@-webkit-keyframes fade-out {
+/*FLASHLIGHT ANIM IN UNIVERS*/
+@-moz-keyframes flashlight {
+  0%,
+  9% {
+    opacity: 0;
+    clip-path: circle(150px at 45% 10%);
+  }
+  10%,
+  15%,
+  85% {
+    opacity: 1;
+  }
+  50% {
+    clip-path: circle(150px at 60% 20%);
+  }
+  54%,
+  100% {
+    clip-path: circle(150px at 55% 92%);
+  }
+  88%,
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes flashlight {
+  0%,
+  9% {
+    opacity: 0;
+    clip-path: circle(150px at 45% 10%);
+  }
+  10%,
+  15%,
+  85% {
+    opacity: 1;
+  }
+  50% {
+    clip-path: circle(150px at 60% 20%);
+  }
+  54%,
+  100% {
+    clip-path: circle(150px at 55% 92%);
+  }
+  88%,
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes flashlight {
+  0%,
+  9% {
+    opacity: 0;
+    clip-path: circle(150px at 45% 10%);
+  }
+  10%,
+  15%,
+  85% {
+    opacity: 1;
+  }
+  50% {
+    clip-path: circle(150px at 60% 20%);
+  }
+  54%,
+  100% {
+    clip-path: circle(150px at 55% 92%);
+  }
+  88%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes flashlight {
+  0%,
+  9% {
+    opacity: 0;
+    clip-path: circle(150px at 45% 10%);
+  }
+  10%,
+  15%,
+  85% {
+    opacity: 1;
+  }
+  50% {
+    clip-path: circle(150px at 60% 20%);
+  }
+  54%,
+  100% {
+    clip-path: circle(150px at 55% 92%);
+  }
+  88%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/*EYES ANIM IN UNIVERS*/
+@-moz-keyframes eyes {
+  0%,
+  52% {
+    opacity: 0;
+  }
+  53%,
+  87% {
+    opacity: 1;
+  }
+  64% {
+    transform: scaleY(1);
+  }
+  67% {
+    transform: scaleY(0);
+  }
+  70% {
+    transform: scaleY(1);
+  }
+  88%,
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes eyes {
+  0%,
+  52% {
+    opacity: 0;
+  }
+  53%,
+  87% {
+    opacity: 1;
+  }
+  64% {
+    transform: scaleY(1);
+  }
+  67% {
+    transform: scaleY(0);
+  }
+  70% {
+    transform: scaleY(1);
+  }
+  88%,
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes eyes {
+  0%,
+  52% {
+    opacity: 0;
+  }
+  53%,
+  87% {
+    opacity: 1;
+  }
+  64% {
+    transform: scaleY(1);
+  }
+  67% {
+    transform: scaleY(0);
+  }
+  70% {
+    transform: scaleY(1);
+  }
+  88%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes eyes {
+  0%,
+  52% {
+    opacity: 0;
+  }
+  53%,
+  87% {
+    opacity: 1;
+  }
+  64% {
+    transform: scaleY(1);
+  }
+  67% {
+    transform: scaleY(0);
+  }
+  70% {
+    transform: scaleY(1);
+  }
+  88%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/***404 ANIM***/
+@keyframes drawLine1 {
+  0% {
+    stroke-dashoffset: -940px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes drawLine2 {
+  0% {
+    stroke-dashoffset: -735px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes drawLine3 {
+  0% {
+    stroke-dashoffset: -940px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes flicker1 {
+  0% {
+    stroke: #00ff84;
+  }
+  1% {
+    stroke: transparent;
+  }
+  3% {
+    stroke: transparent;
+  }
+  4% {
+    stroke: #00ff84;
+  }
+  6% {
+    stroke: #00ff84;
+  }
+  7% {
+    stroke: transparent;
+  }
+  13% {
+    stroke: transparent;
+  }
+  14% {
+    stroke: #00ff84;
+  }
+  100% {
+    stroke: #00ff84;
+  }
+}
+
+@keyframes flicker2 {
+  0% {
+    stroke: #00ff84;
+  }
+  50% {
+    stroke: #00ff84;
+  }
+  51% {
+    stroke: transparent;
+  }
+  61% {
+    stroke: transparent;
+  }
+  62% {
+    stroke: #00ff84;
+  }
+  100% {
+    stroke: #00ff84;
+  }
+}
+
+@keyframes flicker3 {
+  0% {
+    stroke: #00ff84;
+  }
+  1% {
+    stroke: transparent;
+  }
+  10% {
+    stroke: transparent;
+  }
+  11% {
+    stroke: #00ff84;
+  }
+  40% {
+    stroke: #00ff84;
+  }
+  41% {
+    stroke: transparent;
+  }
+  45% {
+    stroke: transparent;
+  }
+  46% {
+    stroke: #00ff84;
+  }
+  100% {
+    stroke: #00ff84;
+  }
+}
+
+@keyframes flicker4 {
+  0% {
+    color: #00ff84;
+    text-shadow: 0px 0px 4px #00ff84;
+  }
+  30% {
+    color: #00ff84;
+    text-shadow: 0px 0px 4px #00ff84;
+  }
+  31% {
+    color: #001204;
+    text-shadow: 0px 0px 4px #001204;
+  }
+  32% {
+    color: #00ff84;
+    text-shadow: 0px 0px 4px #00ff84;
+  }
+  36% {
+    color: #00ff84;
+    text-shadow: 0px 0px 4px #00ff84;
+  }
+  37% {
+    color: #001204;
+    text-shadow: 0px 0px 4px #001204;
+  }
+  41% {
+    color: #001204;
+    text-shadow: 0px 0px 4px #001204;
+  }
+  42% {
+    color: #00ff84;
+    text-shadow: 0px 0px 4px #00ff84;
+  }
+  85% {
+    color: #00ff84;
+    text-shadow: 0px 0px 4px #00ff84;
+  }
+  86% {
+    color: #001204;
+    text-shadow: 0px 0px 4px #001204;
+  }
+  95% {
+    color: #001204;
+    text-shadow: 0px 0px 4px #001204;
+  }
+  96% {
+    color: #00ff66;
+    text-shadow: 0px 0px 4px #00ffb4;
+  }
+  100% {
+    color: #00ff90;
+    text-shadow: 0px 0px 4px #00ff96;
+  }
+}
+
+@keyframes fadeInText {
+  1% {
+    color: #001203;
+    text-shadow: 0px 0px 4px #00120a;
+  }
+  70% {
+    color: #00ffa8;
+    text-shadow: 0px 0px 14px #00ffa2;
+  }
+  100% {
+    color: #00ffa2;
+    text-shadow: 0px 0px 4px #00ff78;
+  }
+}
+
+@keyframes hueRotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(5deg);
+  }
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}
+
+/*Modal Toggle Animation*/
+@keyframes react-responsive-modal-overlay-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes react-responsive-modal-overlay-out {
   0% {
     opacity: 1;
   }
@@ -173,12 +487,23 @@
     opacity: 0;
   }
 }
-@keyframes fade-out {
+@keyframes react-responsive-modal-modal-in {
   0% {
+    transform: scale(0.96);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(100%);
+    opacity: 1;
+  }
+}
+@keyframes react-responsive-modal-modal-out {
+  0% {
+    transform: scale(100%);
     opacity: 1;
   }
   100% {
+    transform: scale(0.96);
     opacity: 0;
   }
 }
-*/

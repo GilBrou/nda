@@ -1,3 +1,4 @@
+/***BACKGROUND PARTICLE ANIM 1***/
 .firefly {
   position: fixed;
   left: 50%;
@@ -7,7 +8,6 @@
   margin: -0.2vw 0 0 9.8vw;
   animation: ease 200s alternate infinite;
   pointer-events: none;
-  /*z-index: 999;*/
 }
 .firefly::before,
 .firefly::after {
@@ -27,10 +27,8 @@
   background: white;
   opacity: 0;
   box-shadow: 0 0 0vw 0vw var(--greenish);
-
   animation: drift ease alternate infinite, flash ease infinite;
 }
-
 .firefly:nth-child(1) {
   animation-name: move1;
 }
@@ -41,7 +39,6 @@
   animation-duration: 15s, 10911ms;
   animation-delay: 0ms, 4546ms;
 }
-
 @keyframes move1 {
   0% {
     transform: translateX(5vw) translateY(19vh) scale(0.65);
@@ -113,7 +110,6 @@
     transform: translateX(-6vw) translateY(39vh) scale(0.63);
   }
 }
-
 .firefly:nth-child(2) {
   animation-name: move2;
 }
@@ -124,7 +120,6 @@
   animation-duration: 15s, 7522ms;
   animation-delay: 0ms, 4840ms;
 }
-
 @keyframes move2 {
   0% {
     transform: translateX(36vw) translateY(-32vh) scale(0.67);
@@ -214,7 +209,6 @@
     transform: translateX(-18vw) translateY(33vh) scale(0.45);
   }
 }
-
 .firefly:nth-child(3) {
   animation-name: move3;
 }
@@ -225,7 +219,6 @@
   animation-duration: 13s, 6486ms;
   animation-delay: 0ms, 6472ms;
 }
-
 @keyframes move3 {
   0% {
     transform: translateX(16vw) translateY(-11vh) scale(0.76);
@@ -285,7 +278,6 @@
     transform: translateX(41vw) translateY(-23vh) scale(0.53);
   }
 }
-
 .firefly:nth-child(4) {
   animation-name: move4;
 }
@@ -296,7 +288,6 @@
   animation-duration: 13s, 8400ms;
   animation-delay: 0ms, 7996ms;
 }
-
 @keyframes move4 {
   0% {
     transform: translateX(-3vw) translateY(-13vh) scale(0.75);
@@ -377,7 +368,6 @@
     transform: translateX(-37vw) translateY(12vh) scale(0.68);
   }
 }
-
 .firefly:nth-child(5) {
   animation-name: move5;
 }
@@ -388,7 +378,6 @@
   animation-duration: 14s, 7852ms;
   animation-delay: 0ms, 1445ms;
 }
-
 @keyframes move5 {
   0% {
     transform: translateX(42vw) translateY(9vh) scale(0.53);
@@ -469,7 +458,6 @@
     transform: translateX(6vw) translateY(-25vh) scale(0.33);
   }
 }
-
 .firefly:nth-child(6) {
   animation-name: move6;
 }
@@ -480,7 +468,6 @@
   animation-duration: 11s, 8191ms;
   animation-delay: 0ms, 1966ms;
 }
-
 @keyframes move6 {
   0% {
     transform: translateX(6vw) translateY(1vh) scale(0.53);
@@ -561,7 +548,6 @@
     transform: translateX(37vw) translateY(-40vh) scale(0.45);
   }
 }
-
 .firefly:nth-child(7) {
   animation-name: move7;
 }
@@ -572,7 +558,6 @@
   animation-duration: 16s, 5635ms;
   animation-delay: 0ms, 2631ms;
 }
-
 @keyframes move7 {
   0% {
     transform: translateX(39vw) translateY(-29vh) scale(0.41);
@@ -653,7 +638,6 @@
     transform: translateX(23vw) translateY(2vh) scale(0.62);
   }
 }
-
 .firefly:nth-child(8) {
   animation-name: move8;
 }
@@ -664,7 +648,6 @@
   animation-duration: 15s, 6163ms;
   animation-delay: 0ms, 2529ms;
 }
-
 @keyframes move8 {
   0% {
     transform: translateX(41vw) translateY(27vh) scale(0.86);
@@ -745,7 +728,6 @@
     transform: translateX(-25vw) translateY(-7vh) scale(0.6);
   }
 }
-
 .firefly:nth-child(9) {
   animation-name: move9;
 }
@@ -756,7 +738,6 @@
   animation-duration: 10s, 6390ms;
   animation-delay: 0ms, 2607ms;
 }
-
 @keyframes move9 {
   0% {
     transform: translateX(22vw) translateY(-9vh) scale(0.9);
@@ -846,7 +827,6 @@
     transform: translateX(-29vw) translateY(-19vh) scale(0.78);
   }
 }
-
 .firefly:nth-child(10) {
   animation-name: move10;
 }
@@ -857,7 +837,6 @@
   animation-duration: 17s, 10176ms;
   animation-delay: 0ms, 8234ms;
 }
-
 @keyframes move10 {
   0% {
     transform: translateX(-21vw) translateY(-16vh) scale(0.33);

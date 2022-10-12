@@ -1,11 +1,15 @@
+/******CREATEURS******/
+
 /***GENERAL***/
 import { useState, useEffect } from "react";
 
 /***COMPONENTS***/
 /*import Createurs from "../components/Intro";*/
 
-/*Main app*/
-function Createurs(data) {
+/***COMPONENT***/
+export default function Createurs(data) {  
+
+  /*DOM*/  
   return (
     <div className="createurs">
   {/*
@@ -62,5 +66,3 @@ function Createurs(data) {
     </div>
   );
 }
-
-export default Createurs;

@@ -1,3 +1,5 @@
+/***FOOTER***/
+
 footer {
   display: flex;
   flex-direction: row;
@@ -11,7 +13,6 @@ footer {
   padding: 30px 5px 30px 5px;
   z-index: 1000;
   background: var(--blackishBack);
-  /*box-shadow: -9px 12px 20px 1px var(--blueish);*/
   border-radius: 0 25px 0 0;
 }
 footer a,

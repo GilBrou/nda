@@ -13,7 +13,7 @@ détail :
 		Page 404 pour les routes inexistantes.
 		Code commenté.
 		Site full responsive.
-		Création de la charte graphique, logo, infographies icônes et animations.
+		Création de la charte graphique et des animations.
 	
 
 Environnement de travail :

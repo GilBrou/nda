@@ -1,6 +1,8 @@
-/*Form*/
+/******FORM MODULE******/
 
+/***COMPONENT***/
 export default function Form() {
+  /*DOM*/
   return (
     <form
       target="_blank"

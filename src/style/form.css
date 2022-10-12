@@ -1,3 +1,5 @@
+/***FORM***/
+
 form {
   margin: auto;
   text-align: center;
@@ -5,7 +7,6 @@ form {
   box-sizing: border-box;
   max-width: 80%;
 }
-
 .input_group {
   width: 90%;
   margin: 0 auto 1.2rem;
@@ -28,10 +29,11 @@ form input:focus,
 form textarea:focus {
   outline: none;
 }
-form button, .btn-block {
+form button,
+.btn-block {
   display: block;
   /*width: 25%;*/
-  width:  250px;
+  width: 250px;
   border-radius: 3px;
   background: var(--greenish);
   border: none;

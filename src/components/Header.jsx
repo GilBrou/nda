@@ -1,13 +1,14 @@
-/***HEADER/NAV MODULE***/
+/******HEADER MODULE******/
+
+/***GENERAL***/
 import React, { useState } from "react";
-import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 import { Link } from "react-router-dom";
 
 /***COMPONENTS***/
 import Form from "./Form";
 
-function Header(data) {
+export default function Header(data) {
   /*Toggle Intro according to modals*/
   const thisIntro = document.getElementById("intro");
   function HideThisIntro() {
@@ -38,6 +39,7 @@ function Header(data) {
   /*Create mailto from Json*/
   const ThatMail = "mailto:" + data.data2.nda.mail;
 
+  /*DOM*/
   return (
     <header>
       <nav role="navigation" className="top-nav primary-navigation Hheader">
@@ -421,5 +423,3 @@ function Header(data) {
     </header>
   );
 }
-
-export default Header;
