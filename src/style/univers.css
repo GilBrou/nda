@@ -18,6 +18,10 @@
   transform: translate(-50%, -50%);
   text-decoration: none;
   transition: 1s;
+    -webkit-box-reflect: below 2px
+    linear-gradient(transparent, transparent, #0004);
+  animation: anipers 30s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
+    alternate both;
 }
 
 .linkToU:link {
