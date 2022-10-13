@@ -6,9 +6,13 @@ import { Link } from "react-router-dom";
 
 /***COMPONENT***/
 export default function Error404() {
+
+        /*background objects selection for toggling according to modals*/
+   const thisToggle = document.getElementById("thisToggle");
+
   /*DOM*/    
     return (
-        <div className="div404">
+        <div className="div404" id="thisToggle">
             <div />
             <svg
                 id="svgWrap_2"

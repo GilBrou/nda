@@ -3,6 +3,9 @@
 /***COMPONENT***/
 export default function Univers(data) {
   /*CHECK MODAL TOGGLE AND UNIVERSES BEHIND !!!!!!!*/
+  /*background objects selection for toggling according to modals*/
+  const thisToggle = document.getElementById("thisToggle");
+  console.log(thisToggle);
 
   /*Rain Anim (Folie)*/
   var makeItRain = function () {
@@ -97,7 +100,7 @@ export default function Univers(data) {
               },
               (
                 <div
-                  id={"slide-" + [i + 1]}
+                  id={"-" + univers.link}
                   className="slide"
                   key={univers.name + "S"}
                 >
@@ -1238,13 +1241,14 @@ export default function Univers(data) {
                 /*univers slideshow links*/
               },
               (
-                <a href={"#slide-" + [i + 1]} key={univers.name + "a"}>
-                  <span>{[i + 1]}</span>
+                <a href={"#-" + univers.link} key={univers.name + "a"}>
+             <span></span>
                 </a>
               )
             )
           )}
         </div>
+
       </div>
     </div>
   );

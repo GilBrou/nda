@@ -41,7 +41,9 @@
 
   "PAGES A FAIRE": {
     "UNIVERS": "faire anim persos",
-    "CREATEURS": ""
+    "CREATEURS": "",
+    "404": "blacken header and go back"
+
   },
   "SOUS-PAGES A FAIRE": {
     "UNIVERS DEDIE TEMPLATE": "MEMORIA FUTURIA ETC",

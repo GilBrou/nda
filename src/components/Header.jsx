@@ -4,25 +4,12 @@
 import React, { useState } from "react";
 import { Modal } from "react-responsive-modal";
 import { Link } from "react-router-dom";
+import { HideThis, DisplayThis } from "./Toggling.jsx";
 
 /***COMPONENTS***/
 import Form from "./Form";
 
 export default function Header(data) {
-  /*Toggle modules according to modals*/
-  const thisToggle = document.getElementById("thisToggle");
-
-  function HideThis() {
-    if (thisToggle != null) {
-      thisToggle.style.visibility = "hidden";
-    }
-  }
-  function DisplayThis() {
-    if (thisToggle != null) {
-      thisToggle.style.visibility = "visible";
-    }
-  }
-
   /*Toggle modals*/
   const [open, setOpen] = useState(false);
   const onOpenModal = () => setOpen(true);

@@ -3,23 +3,11 @@
 /***GENERAL***/
 import React, { useState } from "react";
 import { Modal } from "react-responsive-modal";
+import {HideThis, DisplayThis} from './Toggling.jsx'
 
 /***COMPONENT***/
 export default function Footer(data) {
-  /*Toggle modules according to modals*/
-  const thisToggle = document.getElementById("thisToggle");
 
-  function HideThis() {
-    if (thisToggle != null) {
-      thisToggle.style.visibility = "hidden";
-    }
-  }
-
-  function DisplayThis() {
-    if (thisToggle != null) {
-      thisToggle.style.visibility = "visible";
-    }
-  }
 
   /*Toggle modal*/
   const [open5, setOpen5] = useState(false);

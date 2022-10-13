@@ -7,12 +7,10 @@ import { useState, useEffect } from "react";
 /*import Createurs from "../components/Intro";*/
 
 /***COMPONENT***/
-export default function Createurs(data) {  
+export default function Createurs(data) {
+  /*background objects selection for toggling according to modals*/
+  const thisToggle = document.getElementById("thisToggle");
 
-  /*DOM*/  
-  return (
-    <div className="createurs">
-      
-    </div>
-  );
+  /*DOM*/
+  return <div className="createurs"></div>;
 }
