@@ -20,10 +20,13 @@ nav {
 }
 nav li a,
 nav li,
-nav div,
+nav div {
+  font-size: 17px;
+}
 nav p,
 nav button p {
   font-size: 17px;
+  margin: auto;
 }
 nav a:hover,
 nav button p:hover {
@@ -142,10 +145,12 @@ ul li ul {
   padding: 25px 25px 10px 25px;
   line-height: 40px;
   background: var(--blackishBack2);
-  border-radius: 5px;
+  border-radius: 0px 0px 5px 5px;
   transition: opacity 0.2s, visibility 0.2s;
-  margin-left: -8px;
+  /*margin-left: -8px;*/
   font-size: 10px;
+  /*margin-top:  28px;*/
+  margin: 28px 0 0 -8px;
 }
 header ul li ul li,
 header ul li div {
