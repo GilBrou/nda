@@ -9,7 +9,33 @@ import { Link } from "react-router-dom";
 import Form from "./Form";
 
 export default function Header(data) {
+
   /*console.log(data.data2.univers[0].name)*/
+
+  function getThisNavU() {
+    /*console.log(data.data2.univers[7].name);*/
+
+
+    for (let i in data.data2.univers){
+    console.log(data.data2.univers[i].name);
+
+
+    
+
+    
+    return (
+      <li>
+        <a
+          href={data.data2 ? data.data2.univers[i].link : "loading..."}
+          className="page-scroll"
+        >
+          {data.data2 ? data.data2.univers[i].name : "loading..."}
+        </a>
+      </li>
+    );
+    
+    }
+  }
 
   /*Toggle modules according to modals*/
   const thisToggle = document.getElementById("thisToggle");
@@ -79,21 +105,80 @@ export default function Header(data) {
             </a>
 
             <ul className="subList">
-              {/*Dynamic creation from Json data*/}
-              {data.data2.univers.map(
-                (univers) => (
-                  {
-                    /*univers subNav links*/
-                  },
-                  (
-                    <li key={univers.link}>
-                      <a href={univers.link} className="page-scroll">
-                        {univers.name}
-                      </a>
-                    </li>
-                  )
-                )
-              )}
+              {/*
+    <NavU data={data.data1} data2={data.data2}/>
+*/}
+
+              {getThisNavU()}
+
+              <li>
+                <a
+                  href={data.data1 ? data.data1.links.menu2bL : "loading..."}
+                  className="page-scroll"
+                >
+                  {data.data1 ? data.data1.menu.menu2b : "loading..."}
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href={data.data1 ? data.data1.links.menu2cL : "loading..."}
+                  className="page-scroll"
+                >
+                  {data.data1 ? data.data1.menu.menu2c : "loading..."}
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href={data.data1 ? data.data1.links.menu2dL : "loading..."}
+                  className="page-scroll"
+                >
+                  {data.data1 ? data.data1.menu.menu2d : "loading..."}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={data.data1 ? data.data1.links.menu2eL : "loading..."}
+                  className="page-scroll"
+                >
+                  {data.data1 ? data.data1.menu.menu2e : "loading..."}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={data.data1 ? data.data1.links.menu2fL : "loading..."}
+                  className="page-scroll"
+                >
+                  {data.data1 ? data.data1.menu.menu2f : "loading..."}
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href={data.data1 ? data.data1.links.menu2gL : "loading..."}
+                  className="page-scroll"
+                >
+                  {data.data1 ? data.data1.menu.menu2g : "loading..."}
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href={data.data1 ? data.data1.links.menu2hL : "loading..."}
+                  className="page-scroll"
+                >
+                  {data.data1 ? data.data1.menu.menu2h : "loading..."}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={data.data1 ? data.data1.links.menu2iL : "loading..."}
+                  className="page-scroll"
+                >
+                  {data.data1 ? data.data1.menu.menu2i : "loading..."}
+                </a>
+              </li>
             </ul>
           </li>
           <li>

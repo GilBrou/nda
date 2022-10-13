@@ -19,6 +19,15 @@
   "menu": {
     "menu1": "Accueil",
     "menu2": "Univers ▾",
+    "menu2a": "Mémoria",
+    "menu2b": "Futuria",
+    "menu2c": "Onyria",
+    "menu2d": "Terra Urbana",
+    "menu2e": "Rouge d'Absinthe",
+    "menu2f": "L'Antre de la Folie",
+    "menu2g": "Fleur d'Absinthe",
+    "menu2h": "Chrysalis",
+    "menu2i": "Pousse d'Absinthe",
     "menu3": "Créateurs",
     "menu4": "À propos",
     "menu5": "Contact ▾",
@@ -32,6 +41,15 @@
   "links": {
     "menu1L": "/accueil",
     "menu2L": "/nos-univers",
+    "menu2aL": "/memoria",
+    "menu2bL": "/futuria",
+    "menu2cL": "/onyria",
+    "menu2dL": "/terra-urbana",
+    "menu2eL": "/rouge-d-absinthe",
+    "menu2fL": "/l-antre-de-la-folie",
+    "menu2gL": "/fleur-d-absinthe",
+    "menu2hL": "/chrysalis",
+    "menu2iL": "/pousse-d-absinthe",
     "menu3L": "/createurs"
   },
   "PAGES A FAIRE": {

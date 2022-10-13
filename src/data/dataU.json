@@ -1,16 +1,4 @@
 {
-  "nda": {
-    "description": "Maison d'édition spécialisée dans les littératures de l'imaginaire.",
-    "mail": "contact@noirdabsinthe.com",
-    "tel": "06 52 49 96 97",
-    "blog": "https://www.noirdabsinthe.com/blog",
-    "boutique": "https://www.noirdabsinthe.com/shop",
-    "FB": "https://www.facebook.com/NoirdAbsinthe/",
-    "TW": "https://twitter.com/NoirdAbsinthe",
-    "IG": "https://www.instagram.com/noirdabsinthe/",
-    "YT": "https://www.youtube.com/channel/UCbZRksrbS8qcN6fzv4Y3y-g/",
-    "Tiphs": "https://www.tiphs-art.com/"
-  },
   "univers": [
     {
       "name": "Mémoria",
@@ -57,48 +45,5 @@
       "link": "/pousse-d-absinthe",
       "description": "À venir"
     }
-  ],
-  "manuscrits": {
-    "titre": "Manuscrits & AT",
-    "P1": "Les soumissions sont désormais fermées et aucun AT n'est en cours.",
-    "P2": "Les manuscrits reçus ne seront pas lus et aucune réponse ne sera communiquée. Si vous souhaitez travailler avec nous, restez attentifs à nos appels à textes de nouvelles.",
-    "P3": "",
-    "P4": "",
-    "P5": ""
-  },
-  "presse": {
-    "titre": "Service-presse",
-    "P1": "Noir d'Absinthe propose des services de presse aux journalistes, blogueurs et youtubers intéressés.",
-    "P2": "En sollicitant un service-presse, vous vous engagez à publier un avis de lecture.",
-    "P3": "Si vous souhaitez recevoir un ouvrage au format numérique, merci d'en faire la demande en précisant l'adresse de votre blog ou de votre chaîne à cette adresse :",
-    "P4": "",
-    "P5": ""
-  },
-  "mentions": {
-    "titre": "Mentions légales",
-    "P1": "SASU au capital de 1000 Euros",
-    "P2": "8 Allée Jacques Cartier",
-    "P3": "35000 Rennes",
-    "P4": "R.C.S Rennes : 835 370 859",
-    "P5": "FR25835370859",
-    "P6": "Les illustrations de ce site sont protégées.",
-    "P7": "Elles ont été réalisées pour Noir d'Absinthe par",
-    "P8": "Tiphs."
-  },
-  "apropos": {
-    "titre": "Noir d'Absinthe",
-    "P1": "Les éditions Noir d'Absinthe publient dans les littératures de l'imaginaire : Fantasy, Fantastique, Science-Fiction et Horreur.",
-    "P2": "Nous brouillons cependant les genres  avec délectation et, avec nous, les frontières deviennent muables et poreuses.",
-    "P3": "Nous sommes des enfants de la nuit et préférons les livres en nuances, affichant avec orgueil leurs doutes et leurs ambiguïtés. Nos héros sont des couards, nos princesses des déesses, et nos dragons nous emportent dans un monde de rêves hallucinés.",
-    "P4": "Nous ne renions pas la folie qui coule, encre d'un Noir d'Absinthe, dans nos veines empoisonnées.",
-    "P5": "Nos œuvres sont disponibles au format numérique ainsi qu'en impression à la demande. Nous sommes également distribués en librairies."
-  },
-  "contact": {
-    "titre": "Nous contacter",
-    "P1": "",
-    "P2": "",
-    "P3": "",
-    "P4": "",
-    "P5": ""
-  }
+  ]
 }

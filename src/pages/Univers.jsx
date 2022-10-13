@@ -3,13 +3,16 @@
 /***COMPONENT***/
 export default function Univers(data) {
   /*DOM*/
+
+
+  /*CHECK MODAL TOGGLE AND UNIVERSES BEHIND !!!!!!!*/
   return (
     <div className="univers">
       <div className="container">
         <div className="slideshow">
           <div id="slide-1" className="slide">
             <a className="linkToU" href="/accueil">
-              <h1>MÉMORIA</h1>
+              <h1>Mémoria</h1>
               <p>
                 Au fond du verre, découvrez Absinthia, la belle mais dangereuse
                 fée verte . Laissez-la vous prendre par les sens, l'espace d'un
