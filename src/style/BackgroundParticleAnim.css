@@ -1,6 +1,6 @@
 /***BACKGROUND PARTICLE ANIM 1***/
 .firefly {
-  z-index: 1500;
+  /*z-index: 1500;*//***/
   position: fixed;
   left: 50%;
   top: 50%;

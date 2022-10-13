@@ -9,7 +9,7 @@
 }
 
 .univers img {
-  animation: animMuse 25s ease-out infinite alternate both; /********************/
+  /*animation: animMuse 25s ease-out infinite alternate both;*/ /********************/
 }
 .linkToU {
   position: absolute;
@@ -17,19 +17,19 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-decoration: none;
-  transition: 1s;;
-  }
+  transition: 1s;
+}
 
 .linkToU:link {
   text-decoration: none;
 }
-.linkToU:hover h1{
+.linkToU:hover h1 {
   transform: scale(1.05);
 }
 .linkToU:hover p {
   transform: scale(1.01);
 }
-.univers h1{
+.univers h1 {
   text-align: center;
   font-size: 100px;
   text-shadow: 5px 2px 12px var(--blackish);
@@ -130,8 +130,75 @@ box-shadow: 0px 0px 18px 1px var(--blackishBack3);
 .pagination a:nth-child(1) {
   background: url("./background/backgroundU1.webp");
   background-position: center;
+  animation: dotAnim 10s linear infinite both;
 }
 .pagination a:nth-child(2) {
   background: url("./background/backgroundU2.webp");
   background-position: center;
+  animation: dotAnim 7s linear infinite both -1s;
 }
+.pagination a:nth-child(3) {
+  background: url("./background/backgroundU3.webp");
+  background-position: center;
+  animation: dotAnim 15s linear infinite both -3s;
+}
+.pagination a:nth-child(4) {
+  background: url("./background/backgroundU4.webp");
+  background-position: center;
+  animation: dotAnim 10s linear infinite both;
+}
+.pagination a:nth-child(5) {
+  background: url("./background/backgroundU5.webp");
+  background-position: center;
+  animation: dotAnim 7s linear infinite both -1s;
+}
+.pagination a:nth-child(6) {
+  background: url("./background/backgroundU6.webp");
+  background-position: center;
+  animation: dotAnim 15s linear infinite both -3s;
+}
+.pagination a:nth-child(7) {
+  background: url("./background/backgroundU7.webp");
+  background-position: center;
+  animation: dotAnim 10s linear infinite both;
+}
+.pagination a:nth-child(8) {
+  background: url("./background/backgroundU8.webp");
+  background-position: center;
+  animation: dotAnim 7s linear infinite both -1s;
+}
+.pagination a:nth-child(9) {
+  background: url("./background/backgroundU9.webp");
+  background-position: center;
+  animation: dotAnim 13s linear infinite both -4s;
+}
+
+/*ANIM*/
+
+/*360° anim for slidet dots*/
+
+@keyframes dotAnim {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*anim Futuria*/
+/*body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(ellipse at bottom, #0D1E31, #111);
+  overflow: hidden;
+
+}
+*/
+.FuturiaAnim {
+}
+

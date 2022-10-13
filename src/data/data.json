@@ -34,8 +34,13 @@
     "menu2L": "/nos-univers",
     "menu3L": "/createurs"
   },
+  "UimgLinks": {
+    "IL1": "/img/",
+    "IL1B": ".webp"
+  },
+
   "PAGES A FAIRE": {
-    "UNIVERS": "",
+    "UNIVERS": "faire anim persos",
     "CREATEURS": ""
   },
   "SOUS-PAGES A FAIRE": {

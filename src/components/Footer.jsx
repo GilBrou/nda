@@ -94,6 +94,7 @@ export default function Footer(data) {
               </Modal>
             </div>
           </li>
+
           <li>
             <a
               href={data.data2 ? data.data2.nda.FB : "loading..."}
@@ -108,6 +109,7 @@ export default function Footer(data) {
               ></i>
             </a>
           </li>
+
           <li>
             <a
               href={data.data2 ? data.data2.nda.TW : "loading..."}
@@ -121,6 +123,7 @@ export default function Footer(data) {
               ></i>
             </a>
           </li>
+
           <li>
             <a
               href={data.data2 ? data.data2.nda.IG : "loading..."}
@@ -134,6 +137,7 @@ export default function Footer(data) {
               ></i>
             </a>
           </li>
+
           <li>
             <a
               href={data.data2 ? data.data2.nda.YT : "loading..."}
@@ -147,6 +151,7 @@ export default function Footer(data) {
               ></i>
             </a>
           </li>
+
           <li>
             <img
               src={

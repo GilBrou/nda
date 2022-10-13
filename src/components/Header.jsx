@@ -9,8 +9,6 @@ import { Link } from "react-router-dom";
 import Form from "./Form";
 
 export default function Header(data) {
-  /*console.log(data.data2.univers[0].name)*/
-
   /*Toggle modules according to modals*/
   const thisToggle = document.getElementById("thisToggle");
 
