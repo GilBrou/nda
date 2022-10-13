@@ -7,19 +7,32 @@ export default function Univers(data) {
     <div className="univers">
       <div className="container">
         <div className="slideshow">
-
-
           <div id="slide-1" className="slide">
-          <a className="linkToU" href="/accueil">
-            <h1>MÉMORIA</h1>
-          <p>Au fond du verre, découvrez Absinthia, la belle mais dangereuse fée verte . Laissez-la vous prendre par les sens, l'espace d'un instant, et elle vous mènera vers Memoria, terre des âges passés. Elle vous y contera, à demi-mot, des rêves emplis de Magie, dont vous ne voudrez jamais vous éveiller.</p>
-            {/*<h2>Explorer</h2>*/}
-
+            <a className="linkToU" href="/accueil">
+              <h1>MÉMORIA</h1>
+              <p>
+                Au fond du verre, découvrez Absinthia, la belle mais dangereuse
+                fée verte . Laissez-la vous prendre par les sens, l'espace d'un
+                instant, et elle vous mènera vers Memoria, terre des âges
+                passés. Elle vous y contera, à demi-mot, des rêves emplis de
+                Magie, dont vous ne voudrez jamais vous éveiller.
+              </p>
             </a>
             <img className="img-responsive" src="/img/backgroundU1.webp" />
           </div>
 
           <div id="slide-2" className="slide">
+            <a className="linkToU" href="/accueil">
+              <h1>FUTURIA</h1>
+              <p>
+                Inspirez profondément le souffle d’Absinthia et ses vapeurs
+                exaltantes, qui vous transporteront ailleurs, dans un temps que
+                vous ne connaissez pas encore. Elle vous guidera vers Futuria,
+                ses galaxies lointaines, ses terres étranges et ses cités
+                méconnaissables. Mais prenez garde, nos futurs sont rarement
+                accueillants…
+              </p>
+            </a>
             <img className="img-responsive" src="/img/backgroundU2.webp" />
           </div>
 
