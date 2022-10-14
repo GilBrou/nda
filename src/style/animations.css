@@ -463,7 +463,7 @@
     filter: hue-rotate(0deg);
   }
   50% {
-    filter: hue-rotate(5deg);
+    filter: hue-rotate(10deg);
   }
   100% {
     filter: hue-rotate(0deg);

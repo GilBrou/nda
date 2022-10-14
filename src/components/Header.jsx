@@ -4,12 +4,28 @@
 import React, { useState } from "react";
 import { Modal } from "react-responsive-modal";
 import { Link } from "react-router-dom";
-import { HideThis, DisplayThis } from "./Toggling.jsx";
 
 /***COMPONENTS***/
 import Form from "./Form";
 
 export default function Header(data) {
+  /******Background object toggling******/
+  /*background objects selection for toggling according to modals*/
+  const thisToggle = document.getElementById("thisToggle");
+
+  /*Hide target when modal is open*/
+  function HideThis() {
+    if (thisToggle != null || thisToggle != undefined) {
+      thisToggle.style.visibility = "hidden";
+    }
+  }
+  /*Display target when modal is closed*/
+  function DisplayThis() {
+    if (thisToggle != null || thisToggle != undefined) {
+      thisToggle.style.visibility = "visible";
+    }
+  }
+
   /*Toggle modals*/
   const [open, setOpen] = useState(false);
   const onOpenModal = () => setOpen(true);
@@ -29,9 +45,10 @@ export default function Header(data) {
 
   /*DOM*/
   return (
-    <header>
+    <header id="header">
       <nav role="navigation" className="top-nav primary-navigation Hheader">
         <div>
+          {/*Site Logo*/}
           <a href="/accueil">
             <img
               src={data.data1 ? data.data1.ressources.logo1 : "loading..."}
@@ -41,12 +58,14 @@ export default function Header(data) {
             />{" "}
           </a>
         </div>
-
+        {/*Responsive Burger Menu*/}
         <input id="menu-toggle" type="checkbox" />
         <label className="menu-button-container" htmlFor="menu-toggle">
           <div className="menu-button" />
         </label>
+        {/*Menu*/}
         <ul className="menu">
+          {/*1 - Accueil*/}
           <li>
             <a
               href={data.data1 ? data.data1.links.menu1L : "loading..."}
@@ -55,6 +74,7 @@ export default function Header(data) {
               {data.data1 ? data.data1.menu.menu1 : "loading..."}
             </a>
           </li>
+          {/*2 - Univers*/}
           <li>
             <a
               href={data.data1 ? data.data1.links.menu2L : "loading..."}
@@ -62,13 +82,13 @@ export default function Header(data) {
             >
               {data.data1 ? data.data1.menu.menu2 : "loading..."}
             </a>
-
+            {/*2b - Univers sub menu2 */}
             <ul className="subList">
               {/*Dynamic creation from Json data*/}
               {data.data2.univers.map(
                 (univers) => (
                   {
-                    /*univers subNav links*/
+                    /*Univers subNav links*/
                   },
                   (
                     <li key={univers.link}>
@@ -81,6 +101,7 @@ export default function Header(data) {
               )}
             </ul>
           </li>
+          {/*3 - Créateurs*/}
           <li>
             <a
               href={data.data1 ? data.data1.links.menu3L : "loading..."}
@@ -89,6 +110,7 @@ export default function Header(data) {
               {data.data1 ? data.data1.menu.menu3 : "loading..."}
             </a>
           </li>
+          {/*4 - à propos + modal*/}
           <div>
             <button
               className="modalButton"
@@ -124,12 +146,15 @@ export default function Header(data) {
               />{" "}
             </Modal>
           </div>
+          {/*5 - Contact*/}
+
           <li>
             <p className="noClick">
               {data.data1 ? data.data1.menu.menu5 : "loading..."}
             </p>
-
+            {/*5b - Contact sub menu2 */}
             <ul className="subList">
+              {/*5b - 1 - Contact Form & Modal */}
               <div>
                 <button
                   className="modalButton"
@@ -167,9 +192,7 @@ export default function Header(data) {
                   <p> {data.data2 ? data.data2.contact.P3 : "loading..."}</p>
                   <p> {data.data2 ? data.data2.contact.P4 : "loading..."}</p>
                   <p> {data.data2 ? data.data2.contact.P5 : "loading..."}</p>
-                  <a href={ThatMail} className="contactMail">
-                    <p>{data.data2 ? data.data2.nda.mail : "loading..."}</p>
-                  </a>
+                  {/*Social Logo & Links*/}
                   <ul className="contactList">
                     <li>
                       <a
@@ -238,7 +261,7 @@ export default function Header(data) {
                   </ul>
                 </Modal>
               </div>
-
+              {/*5b - 2 - Manuscripts & text submissions + modal*/}
               <div>
                 <button
                   className="modalButton"
@@ -279,7 +302,7 @@ export default function Header(data) {
                   />{" "}
                 </Modal>
               </div>
-
+              {/*5b - 3 - Press + modal*/}
               <div>
                 <button
                   className="modalButton"
@@ -321,7 +344,7 @@ export default function Header(data) {
                   />{" "}
                 </Modal>
               </div>
-
+              {/*5b - 4 - Media kit download link (PDF)*/}
               <li>
                 <Link
                   to={
@@ -335,6 +358,7 @@ export default function Header(data) {
               </li>
             </ul>
           </li>
+          {/*6 Blog link*/}
           <li>
             <a
               href={data.data2 ? data.data2.nda.blog : "loading..."}
@@ -344,6 +368,7 @@ export default function Header(data) {
               {data.data1 ? data.data1.menu.menu6 : "loading..."}
             </a>
           </li>
+          {/*7 Shop link*/}
           <li>
             <a
               href={data.data2 ? data.data2.nda.boutique : "loading..."}

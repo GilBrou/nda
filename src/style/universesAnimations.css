@@ -500,9 +500,9 @@ svg {
 
 .FolieAnim {
   pointer-events: none;
-  opacity:  0.1;
+  opacity: 0.1;
   -webkit-animation: fade-in 4s cubic-bezier(0.39, 0.575, 0.565, 1) both 0.5s;
-  animation: fade-in 4s cubic-bezier(0.39, 0.575, 0.565, 1) both 0.5s ;
+  animation: fade-in 4s cubic-bezier(0.39, 0.575, 0.565, 1) both 0.5s;
 }
 
 /*Make divs stack up */

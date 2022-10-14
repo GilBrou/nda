@@ -2,18 +2,12 @@
 
 /***GENERAL***/
 import React from "react";
-import { Link } from "react-router-dom";
 
 /***COMPONENT***/
 export default function Error404() {
-
-        /*background objects selection for toggling according to modals*/
-   const thisToggle = document.getElementById("thisToggle");
-
-  /*DOM*/    
+    /*DOM*/
     return (
-        <div className="div404" id="thisToggle">
-            <div />
+        <div className="divW404">
             <svg
                 id="svgWrap_2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +67,11 @@ export default function Error404() {
                     </filter>
                 </defs>
             </svg>
-            <h2>Page introuvable</h2>
+            <div className="div404">
+                <div />
+                <h2>Page introuvable</h2>
+                <a href="/accueil">Retourner à l'accueil</a>
+            </div>
         </div>
     );
 }

@@ -3,11 +3,25 @@
 /***GENERAL***/
 import React, { useState } from "react";
 import { Modal } from "react-responsive-modal";
-import {HideThis, DisplayThis} from './Toggling.jsx'
 
 /***COMPONENT***/
 export default function Footer(data) {
+  /******Background object toggling******/
+  /*background objects selection for toggling according to modals*/
+  const thisToggle = document.getElementById("thisToggle");
 
+  /*Hide target when modal is open*/
+  function HideThis() {
+    if (thisToggle != null || thisToggle != undefined) {
+      thisToggle.style.visibility = "hidden";
+    }
+  }
+  /*Display target when modal is closed*/
+  function DisplayThis() {
+    if (thisToggle != null || thisToggle != undefined) {
+      thisToggle.style.visibility = "visible";
+    }
+  }
 
   /*Toggle modal*/
   const [open5, setOpen5] = useState(false);
@@ -20,8 +34,9 @@ export default function Footer(data) {
   /*DOM*/
   return (
     <div>
-      <footer>
+      <footer id="footer">
         <ul className="menu">
+          {/*Mentions button & modal*/}
           <li>
             <div>
               <button
@@ -82,7 +97,8 @@ export default function Footer(data) {
               </Modal>
             </div>
           </li>
-
+          {/*Socials buttons & links*/}
+          {/*Facebook*/}
           <li>
             <a
               href={data.data2 ? data.data2.nda.FB : "loading..."}
@@ -97,7 +113,7 @@ export default function Footer(data) {
               ></i>
             </a>
           </li>
-
+          {/*Twitter*/}
           <li>
             <a
               href={data.data2 ? data.data2.nda.TW : "loading..."}
@@ -111,7 +127,7 @@ export default function Footer(data) {
               ></i>
             </a>
           </li>
-
+          {/*Instagram*/}
           <li>
             <a
               href={data.data2 ? data.data2.nda.IG : "loading..."}
@@ -125,7 +141,7 @@ export default function Footer(data) {
               ></i>
             </a>
           </li>
-
+          {/*YouTube*/}
           <li>
             <a
               href={data.data2 ? data.data2.nda.YT : "loading..."}
@@ -139,7 +155,7 @@ export default function Footer(data) {
               ></i>
             </a>
           </li>
-
+          {/*Sponsor logos*/}
           <li>
             <img
               src={

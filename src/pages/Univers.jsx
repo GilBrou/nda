@@ -2,10 +2,16 @@
 
 /***COMPONENT***/
 export default function Univers(data) {
-  /*CHECK MODAL TOGGLE AND UNIVERSES BEHIND !!!!!!!*/
-  /*background objects selection for toggling according to modals*/
-  const thisToggle = document.getElementById("thisToggle");
-  console.log(thisToggle);
+  /*CHECK MODAL TOGGLE AND UNIVERSES BEHIND
+
+
+  clean code 
+  other doc for anim ?
+
+
+
+
+  !!!!!!!*/
 
   /*Rain Anim (Folie)*/
   var makeItRain = function () {
@@ -89,7 +95,7 @@ export default function Univers(data) {
 
   /*DOM*/
   return (
-    <div className="univers">
+    <div className="univers" id="noToggle">
       <div className="container">
         <div className="slideshow">
           {/*Dynamic creation from Json data*/}
