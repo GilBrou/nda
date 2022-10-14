@@ -74,6 +74,49 @@
       "description": "Absinthia cultive, à l'abri des regards, un jardin merveilleux où l'imaginaire est le terreau des rêves. Lorsque vient le soir, les jeunes pousses se tournent vers le ciel et écoutent ses histoires empreintes de Magie."
     }
   ],
+  "teamEdi": [
+    {
+      "name": "Morgane",
+      "name2": "Stankiewiez",
+      "photo": "img/Photos/Morgane.webp",
+      "job": "Éditrice et autrice"
+    },
+    {
+      "name": "Louise",
+      "name2": "Le Bars",
+      "photo": "img/Photos/Louise.webp",
+
+      "job": "Co-éditrice, autrice et directrice de collections"
+    },
+    {
+      "name": "Émilie",
+      "name2": "Chevallier Moreux",
+      "photo": "img/Photos/Émilie.webp",
+
+      "job": "Anthologiste, autrice et directrice de collections"
+    },
+    {
+      "name": "Alexiane",
+      "name2": "Thill",
+      "photo": "img/Photos/Alexiane.webp",
+
+      "job": "Directrice de collections Fleur d'Absinthe"
+    },
+    {
+      "name": "Anne",
+      "name2": "Ledieu",
+      "photo": "img/Photos/Anne.webp",
+
+      "job": "Correctrice"
+    },
+    {
+      "name": "Marin'",
+      "name2": "Maltese",
+      "photo": "img/Photos/Marin.webp",
+
+      "job": "Directrice commerciale"
+    }
+  ],
   "manuscrits": {
     "titre": "Manuscrits & AT",
     "P1": "Les soumissions sont désormais fermées et aucun AT n'est en cours.",
