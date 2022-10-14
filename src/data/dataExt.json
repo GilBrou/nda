@@ -15,64 +15,63 @@
     {
       "name": "Mémoria",
       "link": "memoria",
-      "accroche": "Suivre Absinthia",
-      "description": " Au fond du verre, découvrez Absinthia, la belle mais dangereuse fée verte . Laissez-la vous prendre par les sens, l'espace d'un passés. Elle vous y contera, à demi-mot, des rêves emplis de Magie, dont vous ne voudrez jamais vous éveiller."
+      "accroche": "Écoutez Absinthia",
+      "description": " Au fond du verre, découvrez Absinthia, la belle mais dangereuse fée verte . Laissez-la vous prendre par les sens, l'espace d'un instant, et elle vous mènera vers Memoria, terre des âges passés. Elle vous y contera, à demi-mot, des rêves emplis de Magie, dont vous ne voudrez jamais vous éveiller."
     },
     {
       "name": "Futuria",
       "link": "futuria",
-      "accroche": "Suivre Absinthia",
-
+      "accroche": "Explorez les possibles",
       "description": " Inspirez profondément le souffle d’Absinthia et ses vapeurs exaltantes, qui vous transporteront ailleurs, dans un temps que vous ne connaissez pas encore. Elle vous guidera vers Futuria, ses galaxies lointaines, ses terres étranges et ses cités méconnaissables. Mais prenez garde, nos futurs sont rarement accueillants…"
     },
     {
       "name": "Onyria",
       "link": "onyria",
-      "accroche": "Suivre Absinthia",
+      "accroche": "Suivez la fée verte",
 
       "description": "Dans le sillage d’Absinthia, laissez-vous envoûter par le parfum de jardins étranges où règnent les chimères du rêve. Prenez garde cependant : malgré le caractère enchanteur de ces contrées mystérieuses, celles-ci brouillent la frontière entre le réel et le phantasme. Elles flirtent aisément avec la folie et les méandres plus obscurs de l’inconscient."
     },
     {
       "name": "Terra Urbana",
       "link": "terra-urbana",
-      "accroche": "Suivre Absinthia",
+      "accroche": "Levez le voile",
 
       "description": "Trempez vos lèvres et sentez le baiser brûlant d’Absinthia. Devant vous, elle lèvera le voile qui masque la Terra Urbana, vous laissant pénétrer dans une réalité autre, onirique et enivrante, nichée dans les recoins de notre monde."
     },
     {
       "name": "Rouge d'Absinthe",
       "link": "rouge-d-absinthe",
-      "accroche": "Suivre Absinthia",
+      "accroche": "Abandonnez-vous",
 
       "description": "Absinthia vous emmène dans son boudoir, antre de non-dits et d'interdits, qu'elle vous dévoilera avec langueur. Les passions, les fureurs et les désirs ont libre cours ici, et les péchés s'évanouissent dans le plaisir."
     },
     {
       "name": "L'Antre de la Folie",
       "link": "l-antre-de-la-folie",
-      "accroche": "Suivre Absinthia",
+      "accroche": "Plongez dans l'abîme",
 
       "description": "Absinthia vous guidera vers un lieu plus obscur, personnel et terrifiant. Au plus profond de l’Antre de la Folie, vous serez seul avec elle, face aux doutes primordiaux et aux peurs ataviques. Elle mettra l’humain à nu, sans le filtre de la raison, dans toute sa laideur et sa splendeur."
     },
     {
       "name": "Fleur d'Absinthe",
       "link": "fleur-d-absinthe",
-      "accroche": "Suivre Absinthia",
+      "accroche": "Attisez la flamme",
 
       "description": "Absinthia cache aussi, derrières ses sourires aux dents pointues, un petit cœur qui parfois - je dis bien parfois - bât pour une histoire d'amour. Elle aime toutefois les êtres vrais, en fragilité, et dans les pages de ses romances, vous y trouverez la même flamme qui l'anime au quotidien."
     },
     {
       "name": "Chrysalis",
       "link": "chrysalis",
-      "accroche": "Suivre Absinthia",
+      "accroche": "Brisez le cocon",
 
       "description": "Un cocon, rituel de passage de l'adolescence à l'âge adulte. La lutte nécessaire d'une fée qui s'extraie de la soie, sous le regard d'Absinthia. La Muse se gardera bien d'apporter son aide, cependant, de crainte que la renaissance demeure incomplète..."
     },
     {
       "name": "Pousse d'Absinthe",
       "link": "pousse-d-absinthe",
-      "accroche": "Suivre Absinthia",
+      "accroche": "Cultivez la graine de l'Imaginaire",
 
-      "description": "Description à venir"
+      "description": "Absinthia cultive, à l'abri des regards, un jardin merveilleux où l'imaginaire est le terreau des rêves. Lorsque vient le soir, les jeunes pousses se tournent vers le ciel et écoutent ses histoires empreintes de Magie."
     }
   ],
   "manuscrits": {

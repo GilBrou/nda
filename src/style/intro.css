@@ -19,7 +19,9 @@
 .logoFull {
   width: 100%;
   margin: auto;
-  background-color: var(--blackish);
+  /*background-color: var(--blackish);*/
+  background-color: rgba(0, 0, 0, 0.5);
+  /*
   background: radial-gradient(
     var(--blackish),
     var(--blackish),
@@ -38,6 +40,9 @@
     var(--greenish),
     var(--greenish)
   );
+  */
+
+  backdrop-filter: blur(2px);
   border-radius: 100%;
   animation: ShadowAnim 11s infinite alternate both;
 }
@@ -46,4 +51,7 @@
   font-size: 22px;
   width: 100%;
   font-weight: 100;
+  animation: anipers2 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
+    alternate both;
+  text-shadow: 5px 2px 12px var(--blackish);
 }

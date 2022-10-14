@@ -1,5 +1,6 @@
 /******UNIVERS******/
 import { Link } from "react-router-dom";
+import ReactTooltip from "react-tooltip";
 
 import {
   MainAnim,
@@ -30,10 +31,14 @@ export default function Univers(data) {
                 >
                   {/*Universe Link Wrapper*/},
                   <a className="linkToU" href={"/1" + univers.link}>
-                    {/*Universe Title*/},
+                    {/*Universe Title*/}
                     <h1 id={univers.link + "H1"}>{univers.name}</h1>
-                    {/*Universe Description*/},<p>{univers.description}</p>
-                    {/*Universe invitation button*/},<h2>{univers.accroche}</h2>
+                    {/*Universe Description*/}
+                    <p>{univers.description}</p>
+                    {/*Universe invitation button*/}
+                    <div className={univers.link + "H2"}>
+                      <h2>{univers.accroche}</h2>
+                    </div>
                   </a>
                   {/*Select Background Anim according to selected Universe*/}
                   {(() => {
@@ -81,11 +86,43 @@ export default function Univers(data) {
                 /*Universe slideshow links*/
               },
               (
-                <a href={"#-" + univers.link} key={univers.name + "a"}>
+                <a
+                  href={"#-" + univers.link}
+                  key={univers.name + "a"}
+                  data-tip
+                  data-for={"Utip-" + univers.link}
+                >
                   <div className="aAnim">
                     <span></span>
                   </div>
                 </a>
+              )
+            )
+          )}
+
+          {/*Dynamic creation from Json data*/}
+          {data.data2.univers.map(
+            (univers, i) => (
+              {
+                /*Universe slideshow links tooltips*/
+              },
+              (
+                <ReactTooltip
+                  id={"Utip-" + univers.link}
+                  place="top"
+                  animation="FadeIn"
+                  data-offset="{'top':5}"
+                  effect="solid"
+                  textColor="#fff"
+                  arrowColor="#222020"
+                  /*border="true"*/
+                  borderColor="#2CC78E"
+                  effect="solid"
+                  backgroundColor="#222020"
+                  key={"tipFor-" + univers.link}
+                >
+                  {univers.name}
+                </ReactTooltip>
               )
             )
           )}
