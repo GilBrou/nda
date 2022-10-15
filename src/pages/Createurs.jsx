@@ -6,29 +6,51 @@ export default function Createurs(data) {
   return (
     <div id="createurs" className="text-center">
       <div className="container text-center">
-        <h1>ÉDITRICES</h1>
+        <h1 className="ediTitle">ÉDITRICES</h1>
         <div className="row text-center">
           {data.data2
             ? data.data2.teamEdi.map((team, i) => (
                 <div
                   key={`${team.name}-${i}`}
-                  className="col-sm-6 col-md-4 col-lg-3 creator"
+                  className="col-sm-4 col-md-2 col-lg-2 creator"
                 >
-                  {/*
-                    <img
-                      className="img-responsive"
-                      src={"/img/" + team.name + ".webp"}
-                    />
-                    */}
-                  <div
-                    id={"photoEd" + [i + 1]}
-                    className="creator1 text-center"
-                    style={{ backgroundImage:`url(${team.photo})` }}>
-                  </div>
+                  <img
+                    className="img-responsive creatora"
+                    src={"/img/Photos/" + team.name + ".webp"}
+                  />
+                  <p className="Names" id={team.name + "H1"}>
+                    {team.name + " " + team.name2}
+                  </p>
+                  <a
+                    href={team.Lien}
+                    target="_blank"
+                    className="page-scroll"
+                  ></a>
+                </div>
+              ))
+            : "Loading..."}
+        </div>
 
-                  <div className="creator2 text-center">
-                    <p id={team.name + "H1"}>{team.name + " " + team.name2}</p>
-                  </div>
+        <h1 className="authTitle">Auteurs et Autrices</h1>
+        <div className="row text-center">
+          {data.data2
+            ? data.data2.teamAuth.map((team, i) => (
+                <div
+                  key={`${team.name}-${i}`}
+                  className="col-sm-4 col-md-2 col-lg-2 creator"
+                >
+                  <img
+                    className="img-responsive creatora"
+                    src={"/img/Photos/" + team.name + ".webp"}
+                  />
+                  <p className="Names" id={team.name + "H1"}>
+                    {team.name + " " + team.name2}
+                  </p>
+                  <a
+                    href={team.Lien}
+                    target="_blank"
+                    className="page-scroll"
+                  ></a>
                 </div>
               ))
             : "Loading..."}

@@ -586,6 +586,36 @@
     text-shadow: 5px 2px 12px var(--blackish);
   }
 }
+
+@keyframes anipers3 {
+  0% {
+    transform: translateX(0px);
+    transform-origin: center;
+    transform: perspective(800px) rotateY(7deg);
+    letter-spacing: 5px;
+    text-shadow: 5px 2px 12px var(--blackish);
+  }
+  25% {
+    transform: translateX(-7);
+    letter-spacing: 9px;
+    text-shadow: 10px 5px 13px var(--blackish);
+  }
+  50% {
+    transform: translateX(10px);
+    transform-origin: center;
+    transform: perspective(800px) rotateY(-7deg);
+    letter-spacing: 9px;
+    text-shadow: 10px 5px 13px var(--blackish);
+  }
+  100% {
+    transform: translateX(0px);
+    transform-origin: center;
+    transform: perspective(800px) rotateY(7deg);
+    letter-spacing: 5px;
+    text-shadow: 5px 2px 12px var(--blackish);
+  }
+}
+
 /*Dot universes anim*/
 @keyframes circle {
   0% {

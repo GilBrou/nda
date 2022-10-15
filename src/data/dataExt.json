@@ -70,50 +70,211 @@
       "name": "Pousse d'Absinthe",
       "link": "pousse-d-absinthe",
       "accroche": "Cultivez la graine de l'Imaginaire",
-
-      "description": "Absinthia cultive, à l'abri des regards, un jardin merveilleux où l'imaginaire est le terreau des rêves. Lorsque vient le soir, les jeunes pousses se tournent vers le ciel et écoutent ses histoires empreintes de Magie."
+      "descriptionOLDOLDOLD": "Absinthia cultive, à l'abri des regards, un jardin merveilleux où l'imaginaire est le terreau des rêves. Lorsque vient le soir, les jeunes pousses se tournent vers le ciel et écoutent ses histoires empreintes de Magie.",
+      "description": "Absinthia cultive, à l'abri des regards, un jardin merveilleux où l'imaginaire se fait terreau et où les rêves se cachent dans les gouttes d'eau. Lorsque vient le soir, les jeunes pousses se tournent vers le ciel et écoutent ses histoires empreintes de Magie."
     }
   ],
   "teamEdi": [
     {
       "name": "Morgane",
       "name2": "Stankiewiez",
-      "photo": "img/Photos/Morgane.webp",
+      "Lien": "https://mort-gane.fr/",
       "job": "Éditrice et autrice"
     },
     {
       "name": "Louise",
       "name2": "Le Bars",
-      "photo": "img/Photos/Louise.webp",
+      "Lien": "https://mort-gane.fr/",
 
       "job": "Co-éditrice, autrice et directrice de collections"
     },
     {
       "name": "Émilie",
       "name2": "Chevallier Moreux",
-      "photo": "img/Photos/Émilie.webp",
+      "Lien": "https://mort-gane.fr/",
 
       "job": "Anthologiste, autrice et directrice de collections"
     },
     {
       "name": "Alexiane",
       "name2": "Thill",
-      "photo": "img/Photos/Alexiane.webp",
+      "Lien": "https://mort-gane.fr/",
 
       "job": "Directrice de collections Fleur d'Absinthe"
     },
     {
       "name": "Anne",
       "name2": "Ledieu",
-      "photo": "img/Photos/Anne.webp",
+      "Lien": "https://mort-gane.fr/",
 
       "job": "Correctrice"
     },
     {
-      "name": "Marin'",
-      "name2": "Maltese",
-      "photo": "img/Photos/Marin.webp",
+      "name": "Marin",
+      "name2": "' Maltese",
+      "Lien": "https://mort-gane.fr/",
+      "job": "Directrice commerciale"
+    }
+  ],
+  "teamAuth": [
+    {
+      "name": "Morgane",
+      "name2": "Stankiewiez",
+      "Lien": "https://mort-gane.fr/",
+      "job": "Éditrice et autrice"
+    },
+    {
+      "name": "Louise",
+      "name2": "Le Bars",
+      "Lien": "https://mort-gane.fr/",
 
+      "job": "Co-éditrice, autrice et directrice de collections"
+    },
+    {
+      "name": "Émilie",
+      "name2": "Chevallier Moreux",
+      "Lien": "https://mort-gane.fr/",
+
+      "job": "Anthologiste, autrice et directrice de collections"
+    },
+    {
+      "name": "Alexiane",
+      "name2": "Thill",
+      "Lien": "https://mort-gane.fr/",
+
+      "job": "Directrice de collections Fleur d'Absinthe"
+    },
+    {
+      "name": "Anne",
+      "name2": "Ledieu",
+      "Lien": "https://mort-gane.fr/",
+
+      "job": "Correctrice"
+    },
+    {
+      "name": "Marin",
+      "name2": "' Maltese",
+      "Lien": "https://mort-gane.fr/",
+      "job": "Directrice commerciale"
+    },
+    {
+      "name": "Morgane",
+      "name2": "Stankiewiez",
+      "Lien": "https://mort-gane.fr/",
+      "job": "Éditrice et autrice"
+    },
+    {
+      "name": "Louise",
+      "name2": "Le Bars",
+      "Lien": "https://mort-gane.fr/",
+
+      "job": "Co-éditrice, autrice et directrice de collections"
+    },
+    {
+      "name": "Émilie",
+      "name2": "Chevallier Moreux",
+      "Lien": "https://mort-gane.fr/",
+
+      "job": "Anthologiste, autrice et directrice de collections"
+    },
+    {
+      "name": "Alexiane",
+      "name2": "Thill",
+      "Lien": "https://mort-gane.fr/",
+
+      "job": "Directrice de collections Fleur d'Absinthe"
+    },
+    {
+      "name": "Anne",
+      "name2": "Ledieu",
+      "Lien": "https://mort-gane.fr/",
+
+      "job": "Correctrice"
+    },
+    {
+      "name": "Marin",
+      "name2": "' Maltese",
+      "Lien": "https://mort-gane.fr/",
+      "job": "Directrice commerciale"
+    },
+    {
+      "name": "Morgane",
+      "name2": "Stankiewiez",
+      "Lien": "https://mort-gane.fr/",
+      "job": "Éditrice et autrice"
+    },
+    {
+      "name": "Louise",
+      "name2": "Le Bars",
+      "Lien": "https://mort-gane.fr/",
+
+      "job": "Co-éditrice, autrice et directrice de collections"
+    },
+    {
+      "name": "Émilie",
+      "name2": "Chevallier Moreux",
+      "Lien": "https://mort-gane.fr/",
+
+      "job": "Anthologiste, autrice et directrice de collections"
+    },
+    {
+      "name": "Alexiane",
+      "name2": "Thill",
+      "Lien": "https://mort-gane.fr/",
+
+      "job": "Directrice de collections Fleur d'Absinthe"
+    },
+    {
+      "name": "Anne",
+      "name2": "Ledieu",
+      "Lien": "https://mort-gane.fr/",
+
+      "job": "Correctrice"
+    },
+    {
+      "name": "Marin",
+      "name2": "' Maltese",
+      "Lien": "https://mort-gane.fr/",
+      "job": "Directrice commerciale"
+    },
+    {
+      "name": "Morgane",
+      "name2": "Stankiewiez",
+      "Lien": "https://mort-gane.fr/",
+      "job": "Éditrice et autrice"
+    },
+    {
+      "name": "Louise",
+      "name2": "Le Bars",
+      "Lien": "https://mort-gane.fr/",
+
+      "job": "Co-éditrice, autrice et directrice de collections"
+    },
+    {
+      "name": "Émilie",
+      "name2": "Chevallier Moreux",
+      "Lien": "https://mort-gane.fr/",
+
+      "job": "Anthologiste, autrice et directrice de collections"
+    },
+    {
+      "name": "Alexiane",
+      "name2": "Thill",
+      "Lien": "https://mort-gane.fr/",
+
+      "job": "Directrice de collections Fleur d'Absinthe"
+    },
+    {
+      "name": "Anne",
+      "name2": "Ledieu",
+      "Lien": "https://mort-gane.fr/",
+
+      "job": "Correctrice"
+    },
+    {
+      "name": "Marin",
+      "name2": "' Maltese",
+      "Lien": "https://mort-gane.fr/",
       "job": "Directrice commerciale"
     }
   ],

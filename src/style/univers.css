@@ -4,12 +4,13 @@
   background-color: var(--blackish);
   width: 100vw;
   height: 100vh;
-  margin-top: -50px;
+  /*margin-top: -50px;*/
   position: relative;
+  overflow: hidden;
 }
 
 .linkToU {
-  padding-top: 50px;
+  /*padding-top: 50px;*/
   position: absolute;
   top: 40%;
   left: 50%;
