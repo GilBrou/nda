@@ -18,8 +18,11 @@ export default function Createurs(data) {
                     className="img-responsive creatora"
                     src={"/img/Photos/" + team.name + ".webp"}
                   />
-                  <p className="Names" id={team.name + "H1"}>
+                  <p className="Names" id={team.name + "P1"}>
                     {team.name + " " + team.name2}
+                  </p>
+                  <p className="Jobs" id={team.name + "P2"}>
+                    {team.job}
                   </p>
                   <a
                     href={team.Lien}
@@ -45,6 +48,9 @@ export default function Createurs(data) {
                   />
                   <p className="Names" id={team.name + "H1"}>
                     {team.name + " " + team.name2}
+                  </p>
+                  <p className="Jobs" id={team.name + "P2"}>
+                    {team.job}
                   </p>
                   <a
                     href={team.Lien}

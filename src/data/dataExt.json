@@ -79,203 +79,141 @@
       "name": "Morgane",
       "name2": "Stankiewiez",
       "Lien": "https://mort-gane.fr/",
-      "job": "Éditrice et autrice"
+      "job": "Éditrice & autrice"
     },
     {
       "name": "Louise",
       "name2": "Le Bars",
-      "Lien": "https://mort-gane.fr/",
-
-      "job": "Co-éditrice, autrice et directrice de collections"
+      "Lien": "",
+      "job": "Co-éditrice, autrice & directrice de collections"
     },
     {
       "name": "Émilie",
-      "name2": "Chevallier Moreux",
-      "Lien": "https://mort-gane.fr/",
-
-      "job": "Anthologiste, autrice et directrice de collections"
+      "name2": "Chevallier",
+      "Lien": "https://emilie-chevallier.com/",
+      "job": "Anthologiste, autrice & directrice de collections"
     },
     {
       "name": "Alexiane",
       "name2": "Thill",
-      "Lien": "https://mort-gane.fr/",
-
-      "job": "Directrice de collections Fleur d'Absinthe"
+      "Lien": "",
+      "job": "Directrice de collections : Fleur d'Absinthe"
     },
     {
       "name": "Anne",
       "name2": "Ledieu",
-      "Lien": "https://mort-gane.fr/",
-
+      "Lien": "",
       "job": "Correctrice"
     },
     {
       "name": "Marin",
       "name2": "' Maltese",
-      "Lien": "https://mort-gane.fr/",
+      "Lien": "",
       "job": "Directrice commerciale"
     }
   ],
   "teamAuth": [
     {
-      "name": "Morgane",
-      "name2": "Stankiewiez",
-      "Lien": "https://mort-gane.fr/",
-      "job": "Éditrice et autrice"
+      "name": "Cécile ",
+      "name2": "Pommereau",
+      "Lien": "",
+      "job": ""
     },
     {
-      "name": "Louise",
-      "name2": "Le Bars",
-      "Lien": "https://mort-gane.fr/",
-
-      "job": "Co-éditrice, autrice et directrice de collections"
+      "name": "Sarah",
+      "name2": "Buschmann",
+      "Lien": "",
+      "job": ""
     },
     {
-      "name": "Émilie",
-      "name2": "Chevallier Moreux",
-      "Lien": "https://mort-gane.fr/",
-
-      "job": "Anthologiste, autrice et directrice de collections"
+      "name": "Cyrielle",
+      "name2": "Bandura",
+      "Lien": "",
+      "job": ""
     },
     {
-      "name": "Alexiane",
-      "name2": "Thill",
-      "Lien": "https://mort-gane.fr/",
-
-      "job": "Directrice de collections Fleur d'Absinthe"
+      "name": "A.F",
+      "name2": "Lune",
+      "Lien": "",
+      "job": ""
     },
     {
-      "name": "Anne",
-      "name2": "Ledieu",
-      "Lien": "https://mort-gane.fr/",
-
-      "job": "Correctrice"
+      "name": "Pierre ",
+      "name2": "Efratas",
+      "Lien": "",
+      "job": ""
     },
     {
-      "name": "Marin",
-      "name2": "' Maltese",
-      "Lien": "https://mort-gane.fr/",
-      "job": "Directrice commerciale"
+      "name": "Sara ",
+      "name2": "Pintado",
+      "Lien": "",
+      "job": ""
     },
     {
-      "name": "Morgane",
-      "name2": "Stankiewiez",
-      "Lien": "https://mort-gane.fr/",
-      "job": "Éditrice et autrice"
+      "name": "Axelle ",
+      "name2": "Colau",
+      "Lien": "",
+      "job": ""
     },
     {
-      "name": "Louise",
-      "name2": "Le Bars",
-      "Lien": "https://mort-gane.fr/",
-
-      "job": "Co-éditrice, autrice et directrice de collections"
+      "name": "Marion",
+      "name2": "B.",
+      "Lien": "",
+      "job": ""
     },
     {
-      "name": "Émilie",
-      "name2": "Chevallier Moreux",
-      "Lien": "https://mort-gane.fr/",
-
-      "job": "Anthologiste, autrice et directrice de collections"
+      "name": "Lisa",
+      "name2": "Soto",
+      "Lien": "",
+      "job": ""
     },
     {
-      "name": "Alexiane",
-      "name2": "Thill",
-      "Lien": "https://mort-gane.fr/",
-
-      "job": "Directrice de collections Fleur d'Absinthe"
+      "name": "Gillian",
+      "name2": "Brousse",
+      "Lien": "https://gillianbrousse.com/",
+      "job": ""
     },
     {
-      "name": "Anne",
-      "name2": "Ledieu",
-      "Lien": "https://mort-gane.fr/",
-
-      "job": "Correctrice"
+      "name": "Magalie",
+      "name2": "Lefebvre",
+      "Lien": "/",
+      "job": ""
     },
     {
-      "name": "Marin",
-      "name2": "' Maltese",
-      "Lien": "https://mort-gane.fr/",
-      "job": "Directrice commerciale"
+      "name": "Népenth",
+      "name2": "S.",
+      "Lien": "",
+      "job": ""
     },
     {
-      "name": "Morgane",
-      "name2": "Stankiewiez",
-      "Lien": "https://mort-gane.fr/",
-      "job": "Éditrice et autrice"
+      "name": "Geny H.",
+      "name2": "David",
+      "Lien": "",
+      "job": ""
     },
     {
-      "name": "Louise",
-      "name2": "Le Bars",
-      "Lien": "https://mort-gane.fr/",
-
-      "job": "Co-éditrice, autrice et directrice de collections"
+      "name": " Alizée",
+      "name2": "Villemin",
+      "Lien": "",
+      "job": ""
     },
     {
-      "name": "Émilie",
-      "name2": "Chevallier Moreux",
-      "Lien": "https://mort-gane.fr/",
-
-      "job": "Anthologiste, autrice et directrice de collections"
+      "name": "Frédérique",
+      "name2": "Badoux",
+      "Lien": "",
+      "job": ""
     },
     {
-      "name": "Alexiane",
-      "name2": "Thill",
-      "Lien": "https://mort-gane.fr/",
-
-      "job": "Directrice de collections Fleur d'Absinthe"
+      "name": "Marge",
+      "name2": "Nantel",
+      "Lien": "",
+      "job": ""
     },
     {
-      "name": "Anne",
-      "name2": "Ledieu",
-      "Lien": "https://mort-gane.fr/",
-
-      "job": "Correctrice"
-    },
-    {
-      "name": "Marin",
-      "name2": "' Maltese",
-      "Lien": "https://mort-gane.fr/",
-      "job": "Directrice commerciale"
-    },
-    {
-      "name": "Morgane",
-      "name2": "Stankiewiez",
-      "Lien": "https://mort-gane.fr/",
-      "job": "Éditrice et autrice"
-    },
-    {
-      "name": "Louise",
-      "name2": "Le Bars",
-      "Lien": "https://mort-gane.fr/",
-
-      "job": "Co-éditrice, autrice et directrice de collections"
-    },
-    {
-      "name": "Émilie",
-      "name2": "Chevallier Moreux",
-      "Lien": "https://mort-gane.fr/",
-
-      "job": "Anthologiste, autrice et directrice de collections"
-    },
-    {
-      "name": "Alexiane",
-      "name2": "Thill",
-      "Lien": "https://mort-gane.fr/",
-
-      "job": "Directrice de collections Fleur d'Absinthe"
-    },
-    {
-      "name": "Anne",
-      "name2": "Ledieu",
-      "Lien": "https://mort-gane.fr/",
-
-      "job": "Correctrice"
-    },
-    {
-      "name": "Marin",
-      "name2": "' Maltese",
-      "Lien": "https://mort-gane.fr/",
-      "job": "Directrice commerciale"
+      "name": "Rachel",
+      "name2": "Gali",
+      "Lien": "https://www.rachelgali.com/",
+      "job": ""
     }
   ],
   "manuscrits": {

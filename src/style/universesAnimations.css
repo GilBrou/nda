@@ -395,7 +395,7 @@ body.single-toggle .drop:nth-child(10) {
   pointer-events: none;
 }
 
-svg {
+.univers * svg {
   height: 140%;
   display: block;
   position: absolute;
