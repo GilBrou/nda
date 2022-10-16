@@ -106,12 +106,9 @@
   display: block;
   height: 40px;
   width: 40px;
-
   margin-top: -100px;
   box-shadow: 0 0 7px 0.5px var(--blackishBack2);
   transition: 0.2s;
-  /*animation: circle 2s linear infinite;*/
-  /*animation: circle 2.5s linear infinite;*/
   animation: circle 3s linear infinite;
 
 }

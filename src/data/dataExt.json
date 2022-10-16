@@ -74,6 +74,12 @@
       "description": "Absinthia cultive, à l'abri des regards, un jardin merveilleux où l'imaginaire se fait terreau et où les rêves se cachent dans les gouttes d'eau. Lorsque vient le soir, les jeunes pousses se tournent vers le ciel et écoutent ses histoires empreintes de Magie."
     }
   ],
+  "createurs": {
+    "crea1": "Éditrices",
+    "crea2": "Auteurs et Autrices",
+    "crea3": "Illustratrices et Illustrateurs",
+    "crea4": "Dans les coulisses"
+  },
   "teamEdi": [
     {
       "name": "Morgane",
@@ -84,7 +90,7 @@
     {
       "name": "Louise",
       "name2": "Le Bars",
-      "Lien": "",
+      "Lien": "https://www.instagram.com/louiselebars/",
       "job": "Co-éditrice, autrice & directrice de collections"
     },
     {
@@ -96,13 +102,13 @@
     {
       "name": "Alexiane",
       "name2": "Thill",
-      "Lien": "",
+      "Lien": "https://alexianethill.com/",
       "job": "Directrice de collections : Fleur d'Absinthe"
     },
     {
       "name": "Anne",
       "name2": "Ledieu",
-      "Lien": "",
+      "Lien": "https://lesmotspourlecrire.com/",
       "job": "Correctrice"
     },
     {
@@ -114,43 +120,43 @@
   ],
   "teamAuth": [
     {
-      "name": "Cécile ",
+      "name": "Cécile",
       "name2": "Pommereau",
-      "Lien": "",
+      "Lien": "https://www.facebook.com/cpommereau/",
       "job": ""
     },
     {
       "name": "Sarah",
       "name2": "Buschmann",
-      "Lien": "",
+      "Lien": "https://www.facebook.com/SarahBuschmannautrice/",
       "job": ""
     },
     {
       "name": "Cyrielle",
       "name2": "Bandura",
-      "Lien": "",
+      "Lien": "https://www.instagram.com/dragonebuleuse/",
       "job": ""
     },
     {
       "name": "A.F",
       "name2": "Lune",
-      "Lien": "",
+      "Lien": "https://www.facebook.com/people/AF-Lune/100012619089269/",
       "job": ""
     },
     {
-      "name": "Pierre ",
+      "name": "Pierre",
       "name2": "Efratas",
       "Lien": "",
       "job": ""
     },
     {
-      "name": "Sara ",
+      "name": "Sara",
       "name2": "Pintado",
-      "Lien": "",
+      "Lien": "https://www.facebook.com/people/Sara-Pintado-Autaire/100041399838599/",
       "job": ""
     },
     {
-      "name": "Axelle ",
+      "name": "Axelle",
       "name2": "Colau",
       "Lien": "",
       "job": ""
@@ -158,13 +164,13 @@
     {
       "name": "Marion",
       "name2": "B.",
-      "Lien": "",
+      "Lien": "https://www.artofmarionb.com/",
       "job": ""
     },
     {
       "name": "Lisa",
       "name2": "Soto",
-      "Lien": "",
+      "Lien": "https://www.facebook.com/lisa.soto.hb/",
       "job": ""
     },
     {
@@ -174,15 +180,15 @@
       "job": ""
     },
     {
-      "name": "Magalie",
+      "name": "Magali",
       "name2": "Lefebvre",
-      "Lien": "/",
+      "Lien": "https://lullastories.wordpress.com/",
       "job": ""
     },
     {
       "name": "Népenth",
       "name2": "S.",
-      "Lien": "",
+      "Lien": "https://lechatseraphique.wordpress.com/biographie/",
       "job": ""
     },
     {
@@ -192,21 +198,21 @@
       "job": ""
     },
     {
-      "name": " Alizée",
+      "name": "Alizée",
       "name2": "Villemin",
-      "Lien": "",
+      "Lien": "http://www.alizeevillemin.com/",
       "job": ""
     },
     {
       "name": "Frédérique",
       "name2": "Badoux",
-      "Lien": "",
+      "Lien": "https://www.facebook.com/FredLBadoux/",
       "job": ""
     },
     {
       "name": "Marge",
       "name2": "Nantel",
-      "Lien": "",
+      "Lien": "https://www.facebook.com/MargeNantel/",
       "job": ""
     },
     {
@@ -216,6 +222,77 @@
       "job": ""
     }
   ],
+  "teamIllus": [
+    {
+      "name": "Tiphs",
+      "name2": "",
+      "Lien": "https://www.tiphs-art.com/",
+      "job": ""
+    },
+    {
+      "name": "Amaryan",
+      "name2": "",
+      "Lien": "https://amaryan.fr/",
+      "job": ""
+    },
+    {
+      "name": "Emilie",
+      "name2": "Léger",
+      "Lien": "https://emilieleger.ca/",
+      "job": ""
+    },
+    {
+      "name": "Svalia",
+      "name2": "",
+      "Lien": "",
+      "job": ""
+    },
+    {
+      "name": "Laurent",
+      "name2": "Cazuguel",
+      "Lien": "",
+      "job": ""
+    },
+    {
+      "name": "Flokera",
+      "name2": "",
+      "Lien": "https://www.facebook.com/flokera.art/",
+      "job": ""
+    },
+    {
+      "name": "Marcela",
+      "name2": "Bolivar",
+      "Lien": "https://www.artstation.com/marcelabolivar",
+      "job": ""
+    },
+    {
+      "name": "Ampreh",
+      "name2": "",
+      "Lien": "https://www.ampreh.net/",
+      "job": ""
+    }
+  ],
+  "teamOmbre": [
+    {
+      "name": "Fabienne",
+      "name2": "Boerlen",
+      "Lien": "",
+      "job": "Comité de lecture, Béta-lectrice"
+    },
+    {
+      "name": "Tristan",
+      "name2": "Lefevre",
+      "Lien": "",
+      "job": "Expert-comptable"
+    },
+    {
+      "name": "Julien",
+      "name2": "Aufderbruck",
+      "Lien": "",
+      "job": "Responsable des visuels, Béta-lecteur"
+    }
+  ],
+
   "manuscrits": {
     "titre": "Manuscrits & AT",
     "P1": "Les soumissions sont désormais fermées et aucun AT n'est en cours.",
