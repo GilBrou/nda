@@ -92,10 +92,7 @@ export default function Header(data) {
                   },
                   (
                     <li key={univers.link}>
-                      <a
-                        href={"nos-univers/" + univers.link}
-                        className="page-scroll"
-                      >
+                      <a href={univers.link} className="page-scroll">
                         {univers.name}
                       </a>
                     </li>

@@ -1,13 +1,7 @@
-/******CREATEURS******/
-import ReactTooltip from "react-tooltip";
+/******This Universe******/
 
 /***COMPONENT***/
 export default function ThisUniverse(data) {
-
-  console.log(data.data1, data.data2)
-  return(
-    <div>
-
-    </div>
-  );
+  console.log("This is THIS UNIVERSE Page !!");
+  return <div id="thisUniverse"></div>;
 }

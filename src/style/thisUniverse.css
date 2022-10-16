@@ -1,0 +1,15 @@
+/****This Universe****/
+ #thisUniverse{
+
+  width:  100vw;
+  height:  300vh;
+
+  /*Background*/
+  background: url("./background/background3.webp");
+  background-color: var(--blackish);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*overflow: hidden;*/
+ } 

@@ -14,6 +14,8 @@
 @import "./createurs.css";
 @import "./univers.css";
 @import "./universesAnimations.css";
+@import "./thisUniverse.css";
+
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900"); /**/
 
@@ -39,7 +41,7 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   /*overflow: hidden;*/
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
 
 
   /*Background animation*/

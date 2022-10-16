@@ -13,6 +13,7 @@ import Homepage from "./pages/Homepage";
 import Createurs from "./pages/Createurs";
 import Univers from "./pages/Univers";
 import ThisUniverse from "./pages/ThisUniverse";
+import ThisBook from "./pages/ThisBook";
 
 import Error404 from "./pages/Error404";
 
@@ -83,9 +84,28 @@ export default function App() {
           <Route exact path="/nos-univers">
             <Univers data1={Data1} data2={Data2} />
           </Route>
+          <Route
+            exact
+            path={[
+              "/memoria",
+              "/futuria",
+              "/onyria",
+              "/terra-urbana",
+              "/rouge-d-absinthe",
+              "/l-antre-de-la-folie",
+              "/fleur-d-absinthe",
+              "/chrysalis",
+              "/pousse-d-absinthe",
+            ]}
+          >
+            <ThisUniverse data1={Data1} data2={Data2} />
+          </Route>
+
+          {/*
           <Route exact path="/nos-univers/:id">
             <ThisUniverse data1={Data1} data2={Data2} />
           </Route>
+          */}
           <Route>
             <Redirect to="/accueil" />
           </Route>
