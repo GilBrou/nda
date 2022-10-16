@@ -1,15 +1,66 @@
 /****This Universe****/
- #thisUniverse{
+#thisUniverse {
+    width: 100vw;
+    height: 100vh;
 
-  width:  100vw;
-  height:  300vh;
+    /*Background*/
+    background: url("./background/background3.webp"); /**/
+    background-color: var(--blackish);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: animMuse 25s ease-out infinite alternate both;
+    width: 100vw;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13vh 0 10vh 0;
+    position: relative;
+}
 
-  /*Background*/
-  background: url("./background/background3.webp");
-  background-color: var(--blackish);
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  /*overflow: hidden;*/
- } 
+#thisUniverse h1 {
+    text-align: center;
+    font-size: 65px;
+    text-shadow: 5px 2px 12px var(--blackish);
+    color: var(--whiteish);
+    transition: 0.6s;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    animation: anipers 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
+        alternate both;
+    margin-bottom: 25px;
+}
+
+#thisUniverse p {
+    margin-bottom: 50px;
+    font-size: 17px;
+}
+
+#thisUniverse .container {
+    padding: 0 30px 0 30px;
+}
+#thisUniverse .container h1 {
+}
+#thisUniverse .creator {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    position: relative;
+    transition: 0.45s;
+}
+#thisUniverse .creator img {
+    border-radius: 10px;
+    box-shadow: -3px 0px 3px 2px var(--blackish);
+    width: 100%;
+    height: 100%;
+}
+#thisUniverse .creaTitle {
+    animation: anipers3 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
+        alternate both;
+}
+/*#thisUniverse .creator:hover img{
+    transform: scale(1.1);
+}*/

@@ -13,7 +13,7 @@ import {
 export default function Univers(data) {
   /*DOM*/
   return (
-    <div className="univers" id="noToggle">
+    <div className="univers">
       <div className="container">
         <div className="slideshow">
           {/*Dynamic creation from Json data*/}

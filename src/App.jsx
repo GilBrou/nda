@@ -8,13 +8,13 @@ import { Redirect } from "react-router";
 /***COMPONENTS***/
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+
 /***PAGES***/
 import Homepage from "./pages/Homepage";
 import Createurs from "./pages/Createurs";
 import Univers from "./pages/Univers";
 import ThisUniverse from "./pages/ThisUniverse";
 import ThisBook from "./pages/ThisBook";
-
 import Error404 from "./pages/Error404";
 
 /***DATAS***/
@@ -101,10 +101,9 @@ export default function App() {
           >
             <ThisUniverse data1={Data1} data2={Data2} />
           </Route>
-
-          {/*
-          <Route exact path="/nos-univers/:id">
-            <ThisUniverse data1={Data1} data2={Data2} />
+        {/*
+          <Route exact path="/livre/:id">
+            <ThisBook data1={Data1} data2={Data2} />
           </Route>
           */}
           <Route>
