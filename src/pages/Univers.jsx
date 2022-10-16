@@ -1,5 +1,4 @@
 /******UNIVERS******/
-import { Link } from "react-router-dom";
 import ReactTooltip from "react-tooltip";
 
 import {
@@ -30,7 +29,7 @@ export default function Univers(data) {
                   key={univers.name + "S"}
                 >
                   {/*Universe Link Wrapper*/},
-                  <a className="linkToU" href={"/1" + univers.link}>
+                  <a className="linkToU" href={"/nos-univers/" + univers.link}>
                     {/*Universe Title*/}
                     <h1 id={univers.link + "H1"}>{univers.name}</h1>
                     {/*Universe Description*/}

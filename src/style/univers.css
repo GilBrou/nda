@@ -15,7 +15,8 @@
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-decoration: none ;  transition: 1s;
+  text-decoration: none;
+  transition: 1s;
 }
 
 .linkToU:link {
@@ -110,7 +111,6 @@
   box-shadow: 0 0 7px 0.5px var(--blackishBack2);
   transition: 0.2s;
   animation: circle 3s linear infinite;
-
 }
 
 .pagination a:nth-child(2) {

@@ -12,6 +12,8 @@ import Footer from "./components/Footer";
 import Homepage from "./pages/Homepage";
 import Createurs from "./pages/Createurs";
 import Univers from "./pages/Univers";
+import ThisUniverse from "./pages/ThisUniverse";
+
 import Error404 from "./pages/Error404";
 
 /***DATAS***/
@@ -80,6 +82,9 @@ export default function App() {
           </Route>
           <Route exact path="/nos-univers">
             <Univers data1={Data1} data2={Data2} />
+          </Route>
+          <Route exact path="/nos-univers/:id">
+            <ThisUniverse data1={Data1} data2={Data2} />
           </Route>
           <Route>
             <Redirect to="/accueil" />
