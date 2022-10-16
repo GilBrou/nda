@@ -84,7 +84,6 @@ export default function App() {
           <Route exact path="/nos-univers">
             <Univers data1={Data1} data2={Data2} />
           </Route>
-
           <Route
             exact
             path={[
