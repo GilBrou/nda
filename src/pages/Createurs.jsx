@@ -1,8 +1,9 @@
-/******createurs******/
+/******CREATEURS******/
 import ReactTooltip from "react-tooltip";
 
 /***COMPONENT***/
 export default function Createurs(data) {
+  /*Toggle link buttons*/
   function GetLink(props) {
     if (props >= "1") {
       return (
@@ -21,9 +22,10 @@ export default function Createurs(data) {
   return (
     <div id="createurs" className="text-center">
       <div className="container text-center">
+        {/*Editors Section*/}
         <h1 className="creaTitle">{data.data2.createurs.crea1}</h1>
-
-        <div className="row text-center">
+        {/*Editors's cards creation from Json data*/}
+        <div className="row text-center justify-content-center">
           {data.data2
             ? data.data2.teamEdi.map((team, i) => (
                 <div
@@ -46,14 +48,15 @@ export default function Createurs(data) {
             : "Loading..."}
         </div>
 
+        {/*Authors Section*/}
         <h1 className="creaTitle">{data.data2.createurs.crea2}</h1>
-
+        {/*Authors's cards creation from Json data*/}
         <div className="row text-center">
           {data.data2
             ? data.data2.teamAuth.map((team, i) => (
                 <div
                   key={`${team.name}-${i}`}
-                  className="col-sm-4 col-md-2 col-lg-2 creator"
+                  className="col-sm-4 col-md-2 col-lg-2 creator creator2"
                 >
                   <img
                     className="img-responsive creatora"
@@ -62,23 +65,27 @@ export default function Createurs(data) {
                   <p className="Names" id={team.name + "P1"}>
                     {team.name + " " + team.name2}
                   </p>
+                  {/*
                   <p className="Jobs" id={team.name + "P2"}>
                     {team.job}
                   </p>
+                */}
+
                   {GetLink(team.Lien)}
                 </div>
               ))
             : "Loading..."}
         </div>
 
+        {/*Illustrators Section*/}
         <h1 className="creaTitle">{data.data2.createurs.crea3}</h1>
-
+        {/*Illustrators's cards creation from Json data*/}
         <div className="row text-center">
           {data.data2
             ? data.data2.teamIllus.map((team, i) => (
                 <div
                   key={`${team.name}-${i}`}
-                  className="col-sm-4 col-md-2 col-lg-2 creator"
+                  className="col-sm-4 col-md-2 col-lg-2 creator creator2"
                 >
                   <img
                     className="img-responsive creatora"
@@ -96,32 +103,36 @@ export default function Createurs(data) {
             : "Loading..."}
         </div>
 
+        {/*Support Section*/}
         <h1 className="creaTitle">{data.data2.createurs.crea4}</h1>
-
+        {/*Supporters's cards creation from Json data*/}
         <div className="row text-center">
-          {data.data2
-            ? data.data2.teamOmbre.map((team, i) => (
-                <div
-                  key={`${team.name}-${i}`}
-                  className="col-sm-4 col-md-2 col-lg-2 creator"
-                >
-                  <img
-                    className="img-responsive creatora"
-                    src={"/img/Photos/" + team.name + ".webp"}
-                  />
-                  <p className="Names" id={team.name + "P1"}>
-                    {team.name + " " + team.name2}
-                  </p>
-                  <p className="Jobs" id={team.name + "P2"}>
-                    {team.job}
-                  </p>
-                  {GetLink(team.Lien)}
-                </div>
-              ))
-            : "Loading..."}
+          <div className="subRow">
+            {data.data2
+              ? data.data2.teamOmbre.map((team, i) => (
+                  <div
+                    key={`${team.name}-${i}`}
+                    className="col-sm-4 col-md-2 col-lg-2 creator"
+                  >
+                    <img
+                      className="img-responsive creatora"
+                      src={"/img/Photos/" + team.name + ".webp"}
+                    />
+                    <p className="Names" id={team.name + "P1"}>
+                      {team.name + " " + team.name2}
+                    </p>
+                    <p className="Jobs" id={team.name + "P2"}>
+                      {team.job}
+                    </p>
+                    {GetLink(team.Lien)}
+                  </div>
+                ))
+              : "Loading..."}
+          </div>
         </div>
       </div>
 
+      {/*Tooltips parameters for hover links*/}
       <ReactTooltip
         id="UtipLink"
         place="bottom"
