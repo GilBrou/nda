@@ -15,58 +15,52 @@ export default function ThisUniverse(data) {
 
   /*Style page according to universe selected*/
   const thisUniverse = document.getElementById("thisUniverse");
-  /*console.log(thisUniverse);*/
 
   function SetUniverse() {
     if (thisUniverse != null || thisUniverse != undefined) {
       if (window.location.pathname.indexOf("memoria") != -1) {
         console.log("This is memoria !!!");
-        thisUniverse.style.backgroundColor = "orange";
-        thisUniverse.style.backgroundImage = 'url("' + {} + '")';
+        thisUniverse.classList.add("MemoriaU");
+        /*let thisIntro = "";*/
       } else if (window.location.pathname.indexOf("futuria") != -1) {
         console.log("This is futuria !!!");
-        thisUniverse.style.backgroundColor = "lightblue";
+        thisUniverse.classList.add("FuturiaU");
       } else if (window.location.pathname.indexOf("onyria") != -1) {
         console.log("This is onyria !!!");
-        thisUniverse.style.backgroundColor = "lightgreen";
+        thisUniverse.classList.add("OnyriaU");
       } else if (window.location.pathname.indexOf("urbana") != -1) {
         console.log("This is urbana !!!");
-        thisUniverse.style.backgroundColor = "purple";
+        thisUniverse.classList.add("UrbanaU");
       } else if (window.location.pathname.indexOf("rouge") != -1) {
         console.log("This is rouge !!!");
-        thisUniverse.style.backgroundColor = "red";
+        thisUniverse.classList.add("RougeU");
       } else if (window.location.pathname.indexOf("folie") != -1) {
         console.log("This is folie !!!");
-        thisUniverse.style.backgroundColor = "cyan";
+        thisUniverse.classList.add("FolieU");
       } else if (window.location.pathname.indexOf("fleur") != -1) {
         console.log("This is fleur !!!");
-        thisUniverse.style.backgroundColor = "lightpink";
+        thisUniverse.classList.add("FleurU");
       } else if (window.location.pathname.indexOf("chrysalis") != -1) {
         console.log("This is chrysalis !!!");
-        thisUniverse.style.backgroundColor = "yellow";
+        thisUniverse.classList.add("ChrysalisU");
       } else if (window.location.pathname.indexOf("pousse") != -1) {
         console.log("This is pousse !!!");
-        thisUniverse.style.backgroundColor = "green";
+        thisUniverse.classList.add("PousseU;");
       }
     }
   }
+
+  SetUniverse();
 
   return (
     <div id="thisUniverse" className="text-center">
       <div className="container text-center">
         {/*Editors Section*/}
-        <h1 className="UTitle">Mémoria</h1>
-        <p className="UP">
-          Au fond du verre, découvrez Absinthia, la belle mais dangereuse fée
-          verte . Laissez-la vous prendre par les sens, l'espace d'un instant,
-          et elle vous mènera vers Memoria, terre des âges passés. Elle vous y
-          contera, à demi-mot, des rêves emplis de Magie, dont vous ne voudrez
-          jamais vous éveiller.
-        </p>
+        <h1 className="UTitle">Titre à définir</h1>
+        <p className="UP">Paragraphe à définir</p>
 
         <div className="row text-center justify-content-center">
           {/*Dynamic creation from Json data*/}
-          {SetUniverse()}
           {data.data3.Livres.map((thatBook, i) => (
             <div
               key={`${thatBook.titre}-${i}`}

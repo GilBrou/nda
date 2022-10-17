@@ -21,6 +21,35 @@
     background-repeat: no-repeat;
     overflow: hidden;
 }
+
+.MemoriaU {
+    background: url("../../public/img/Mémoria.webp");
+}
+.FuturiaU {
+    background: url("../../public/img/Futuria.webp");
+}
+.OnyriaU {
+    background: url("../../public/img/Onyria.webp");
+}
+.UrbanaU {
+    background: url("../../public/img/Terra Urbana.webp");
+}
+.RougeU {
+    background: url("../../public/img/Rouge d'Absinthe.webp");
+}
+.FolieU {
+    background: url("../../public/img/L'Antre de la Folie.webp");
+}
+.FleurU {
+    background: url("../../public/img/Fleur d'Absinthe.webp");
+}
+.ChrysalisU {
+    background: url("../../public/img/Chrysalis.webp");
+}
+.PousseU {
+    background: url("../../public/img/Pousse d'Absinthe.webp");
+}
+
 #thisUniverse .container {
     padding: 0 30px 0 30px;
 }
