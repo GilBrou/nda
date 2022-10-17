@@ -14,7 +14,7 @@
     align-items: center;
     padding: 13vh 0 10vh 0;
 
-    background: url("./background/background3.webp");
+    /*background: url("./background/background3.webp");*/
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -126,10 +126,9 @@
 }
 .book h2 {
     font-size: 28px;
-
 }
 .book h3 {
-    font-size: 22px;    
+    font-size: 22px;
 }
 .book p {
     color: var(--blackish);
@@ -138,7 +137,6 @@
     padding: 10px;
     font-weight: 450;
     margin: 0;
-
 }
 .subTitle {
     margin: 20px;

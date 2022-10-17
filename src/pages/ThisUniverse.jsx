@@ -17,40 +17,39 @@ export default function ThisUniverse(data) {
   const thisUniverse = document.getElementById("thisUniverse");
   /*console.log(thisUniverse);*/
 
-  /*
-
-  if (thisUniverse != null || thisUniverse != undefined) {
-    if (window.location.pathname.indexOf("memoria") != -1) {
-      console.log("This is memoria !!!");
-      thisUniverse.style.backgroundColor = "orange";
-    sUniverse.style.backgroundImage = 'url("' + {  } + '")';
-    } else if (window.location.pathname.indexOf("futuria") != -1) {
-      console.log("This is futuria !!!");
-      thisUniverse.style.backgroundColor = "lightblue";
-    } else if (window.location.pathname.indexOf("onyria") != -1) {
-      console.log("This is onyria !!!");
-      thisUniverse.style.backgroundColor = "lightgreen";
-    } else if (window.location.pathname.indexOf("urbana") != -1) {
-      console.log("This is urbana !!!");
-      thisUniverse.style.backgroundColor = "purple";
-    } else if (window.location.pathname.indexOf("rouge") != -1) {
-      console.log("This is rouge !!!");
-      thisUniverse.style.backgroundColor = "red";
-    } else if (window.location.pathname.indexOf("folie") != -1) {
-      console.log("This is folie !!!");
-      thisUniverse.style.backgroundColor = "cyan";
-    } else if (window.location.pathname.indexOf("fleur") != -1) {
-      console.log("This is fleur !!!");
-      thisUniverse.style.backgroundColor = "lightpink";
-    } else if (window.location.pathname.indexOf("chrysalis") != -1) {
-      console.log("This is chrysalis !!!");
-      thisUniverse.style.backgroundColor = "yellow";
-    } else if (window.location.pathname.indexOf("pousse") != -1) {
-      console.log("This is pousse !!!");
-      thisUniverse.style.backgroundColor = "green";
+  function SetUniverse() {
+    if (thisUniverse != null || thisUniverse != undefined) {
+      if (window.location.pathname.indexOf("memoria") != -1) {
+        console.log("This is memoria !!!");
+        thisUniverse.style.backgroundColor = "orange";
+        thisUniverse.style.backgroundImage = 'url("' + {} + '")';
+      } else if (window.location.pathname.indexOf("futuria") != -1) {
+        console.log("This is futuria !!!");
+        thisUniverse.style.backgroundColor = "lightblue";
+      } else if (window.location.pathname.indexOf("onyria") != -1) {
+        console.log("This is onyria !!!");
+        thisUniverse.style.backgroundColor = "lightgreen";
+      } else if (window.location.pathname.indexOf("urbana") != -1) {
+        console.log("This is urbana !!!");
+        thisUniverse.style.backgroundColor = "purple";
+      } else if (window.location.pathname.indexOf("rouge") != -1) {
+        console.log("This is rouge !!!");
+        thisUniverse.style.backgroundColor = "red";
+      } else if (window.location.pathname.indexOf("folie") != -1) {
+        console.log("This is folie !!!");
+        thisUniverse.style.backgroundColor = "cyan";
+      } else if (window.location.pathname.indexOf("fleur") != -1) {
+        console.log("This is fleur !!!");
+        thisUniverse.style.backgroundColor = "lightpink";
+      } else if (window.location.pathname.indexOf("chrysalis") != -1) {
+        console.log("This is chrysalis !!!");
+        thisUniverse.style.backgroundColor = "yellow";
+      } else if (window.location.pathname.indexOf("pousse") != -1) {
+        console.log("This is pousse !!!");
+        thisUniverse.style.backgroundColor = "green";
+      }
     }
   }
-  */
 
   return (
     <div id="thisUniverse" className="text-center">
@@ -67,6 +66,7 @@ export default function ThisUniverse(data) {
 
         <div className="row text-center justify-content-center">
           {/*Dynamic creation from Json data*/}
+          {SetUniverse()}
           {data.data3.Livres.map((thatBook, i) => (
             <div
               key={`${thatBook.titre}-${i}`}
@@ -89,13 +89,15 @@ export default function ThisUniverse(data) {
                 <div className="subTitle">
                   <p>{thatBook.format}</p>
                   {thatBook.genres.map((tag, i) => (
-                    <p className="tag">{tag}</p>
+                    <p className="tag" key={"tag" + i}>
+                      {tag}
+                    </p>
                   ))}
                 </div>
 
-                <p>{thatBook.résumé}</p>
+                <p key={"resum1" + thatBook.titre}>{thatBook.résumé}</p>
 
-                <p>{thatBook.résumé2}</p>
+                <p key={"resum2" + thatBook.titre}>{thatBook.résumé2}</p>
               </div>
             </div>
           ))}
