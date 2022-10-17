@@ -70,10 +70,40 @@ export default function ThisUniverse(data) {
     }
   }
 
+  function SetAnim(props) {
+    const TargetedUniverse = document.querySelector(".UTitle");
+
+    if (TargetedUniverse != null || TargetedUniverse != undefined) {
+      const This = TargetedUniverse.innerHTML;
+
+      console.log(This);
+
+      if (
+        This == "Mémoria" ||
+        This == "Onyria" ||
+        This == "Chrysalis" ||
+        This == "Pousse d'Absinthe"
+      ) {
+        /*return MainAnim();*/
+      } else if (This == "Terra Urbana") {
+        /*return TerraAnim();*/
+      } else if (This == "L'Antre de la Folie") {
+        /*return FolieAnim();*/
+      } else if (This == "Fleur d'Absinthe" || This == "Rouge d'Absinthe") {
+        /*return FleurRougeAnim();*/
+      } else if (This == "Futuria") {
+        console.log("c'est le futur!");
+        /*return FuturiaAnim();*/
+      }
+    }
+  }
+
   SetUniverse();
 
   return (
     <div id="thisUniverse" className="text-center">
+      {SetAnim(data.data2.univers)}
+
       <div className="container text-center">
         {checkName(data.data2.univers)}
         <div className="row text-center justify-content-center">

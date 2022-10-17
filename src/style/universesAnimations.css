@@ -391,7 +391,6 @@ body.single-toggle .drop:nth-child(10) {
 }
 
 .FuturiaAnim {
-  z-index: 800;
   pointer-events: none;
 }
 

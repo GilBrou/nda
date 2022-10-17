@@ -1,5 +1,6 @@
 /****This Universe****/
 #thisUniverse {
+    z-index: 500;
     width: 100vw;
     height: 100vh;
     animation: animMuse 25s ease-out infinite alternate both;
