@@ -1,21 +1,16 @@
 /****This Universe****/
 #thisUniverse {
-    z-index: 500;
     width: 100vw;
     height: 100vh;
     animation: animMuse 25s ease-out infinite alternate both;
     width: 100vw;
     height: 100%;
-    /*min-height: 100vh;*/
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
-
     justify-content: center;
     align-items: center;
     padding: 13vh 0 10vh 0;
-
-    /*background: url("./background/background3.webp");*/
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -28,6 +23,7 @@
 }
 .FuturiaU {
     background: url("../../public/img/Futuria.webp");
+    z-index: 750;
 }
 .OnyriaU {
     background: url("../../public/img/Onyria.webp");
@@ -61,7 +57,7 @@
     color: var(--whiteish);
     transition: 0.6s;
     text-transform: uppercase;
-    animation: anipers 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
+    animation: anipers3 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
         alternate both;
     margin-bottom: 25px;
 }
@@ -120,6 +116,8 @@
 }
 .bookLeft {
     width: 30%;
+  position: relative;
+
 }
 .bookLeft img {
     -webkit-box-reflect: below 2px
