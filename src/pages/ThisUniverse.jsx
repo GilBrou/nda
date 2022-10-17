@@ -138,8 +138,7 @@ export default function ThisUniverse(data) {
           </div>
         </div>
 
-
-                {/*Editors's cards creation from Json data*/}
+        {/*Editors's cards creation from Json data*/}
         <div className="row text-center justify-content-center">
           <div
             /*key={`${team.name}-${i}`}*/
@@ -176,7 +175,7 @@ export default function ThisUniverse(data) {
           </div>
         </div>
 
-                {/*Editors's cards creation from Json data*/}
+        {/*Editors's cards creation from Json data*/}
         <div className="row text-center justify-content-center">
           <div
             /*key={`${team.name}-${i}`}*/
@@ -213,8 +212,7 @@ export default function ThisUniverse(data) {
           </div>
         </div>
 
-
-                {/*Editors's cards creation from Json data*/}
+        {/*Editors's cards creation from Json data*/}
         <div className="row text-center justify-content-center">
           <div
             /*key={`${team.name}-${i}`}*/
@@ -251,7 +249,7 @@ export default function ThisUniverse(data) {
           </div>
         </div>
 
-                {/*Editors's cards creation from Json data*/}
+        {/*Editors's cards creation from Json data*/}
         <div className="row text-center justify-content-center">
           <div
             /*key={`${team.name}-${i}`}*/
@@ -288,7 +286,7 @@ export default function ThisUniverse(data) {
           </div>
         </div>
 
-                {/*Editors's cards creation from Json data*/}
+        {/*Editors's cards creation from Json data*/}
         <div className="row text-center justify-content-center">
           <div
             /*key={`${team.name}-${i}`}*/
@@ -324,10 +322,6 @@ export default function ThisUniverse(data) {
             </div>
           </div>
         </div>
-
-
-
-
       </div>
     </div>
   );
