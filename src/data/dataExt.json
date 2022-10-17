@@ -335,32 +335,5 @@
     "P3": "",
     "P4": "",
     "P5": ""
-  },
-  "Livres": [
-    {
-      "lien": "Des-Astres-Humains",
-      "titre": "Des Astres Humains",
-      "format": "",
-      "extrait": "",
-      "sousTitre": "Prix mille saison 2022",
-      "par": ["Célia Ibanez", "Hugo Giovannetti"],
-      "genres": ["Science-fiction", "Fantastique", "Fantasy"],
-      "video": "",
-      "video2": "https://www.youtube.com/embed/EdPF1RiDCgQ",
-      "résumé": "Ensemble, passons les Désastres humains vers Des Astres humains pour retrouver cette part d’humanité que nous avons oubliée. Vingt-deux nouvelles, accompagnées d’illustrations, de compositions musicales et de libres courts cinématographiques, vous proposent de la découvrir à la croisée des Arts du langage.",
-      "résumé2": "Il l’observe. Elle l’intrigue. Elle l’obsède. Elle rayonne et pourtant, elle dissimule une certaine noirceur. Alors que tout les oppose, comme le jour et la nuit, leurs routes se croisent. Leurs destins se lient, à l’aube d’une renaissance. Mais l’univers renferme encore d’innombrables secrets et le sort a ses raisons que les mortels ignorent… C’est ce qu’ils découvriront à la faveur des astres, au cœur de la forêt mystérieuse qui borde une maison solitaire.",
-      "reviews": [
-        "https://www.lepoint.fr/livres/un-livre-pour-lire-ecouter-et-voir-28-06-2021-2433151_37.php",
-        "https://www.babelio.com/livres/Portejoie-Des-astres-humains/1344546",
-        "https://www.chroniquesunoceandhistoires.com/cl-des-astres-humains",
-        "https://lantredemyfanwi.wordpress.com/2021/07/18/le-grimoire-des-astres-humains-prix-mille-saisons-2022/"
-      ],
-      "buy": [
-        {
-          "nameE": "Le Grimoire",
-          "link": "https://legrimoire.net/librairie/fr/publications/33-des-astres-humains-prix-mille-saisons-2022.html"
-        }
-      ]
-    }
-  ]
+  }
 }

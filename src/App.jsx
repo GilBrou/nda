@@ -20,16 +20,20 @@ import Error404 from "./pages/Error404";
 /***DATAS***/
 import Data1 from "./data/data.json";
 import Data2 from "./data/dataExt.json";
+import Data3 from "./data/dataExt2.json";
 
 /***APP***/
 export default function App() {
   /*Get datas*/
   const [allDatas, setAllDatas] = useState({});
   const [allDatas2, setAllDatas2] = useState({});
+  const [allDatas3, setAllDatas3] = useState({});
+
   useEffect(() => {
     async function fetchDatas() {
       setAllDatas(Data1);
       setAllDatas2(Data2);
+      setAllDatas2(Data3);
     }
     fetchDatas();
   }, []);
@@ -99,7 +103,7 @@ export default function App() {
               "/pousse-d-absinthe",
             ]}
           >
-            <ThisUniverse data1={Data1} data2={Data2} />
+            <ThisUniverse data1={Data1} data2={Data2} data3={Data3} />
           </Route>
           {/*
           <Route exact path="/livre/:id">

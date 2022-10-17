@@ -40,8 +40,7 @@
   },
 
   "PAGES A FAIRE": {
-    "UNIVERS": "tooltips, checkbutton !",
-    "CREATEURS": "mettr auteurs antho ? code si pas de link ou de photos",
+    "CREATEURS": "mettr auteurs antho ?",
     "404": "blacken header"
   },
   "SOUS-PAGES A FAIRE": {
@@ -61,7 +60,7 @@
   "MORGANE TO DO": {
     "MAJ infosite": "",
     "MAJ KIT MEDIA": "",
-    "MAJ auteurs": ""
+    "MAJ auteurs": "vérif + a venir + philippe aurèle ?"
   },
   "MOI TO DO": {
     "SEO PERFORMANCE ET REFERENCEMENT": "",

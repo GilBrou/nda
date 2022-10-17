@@ -11,6 +11,13 @@ import {
 
 /***COMPONENT***/
 export default function ThisUniverse(data) {
+
+console.log(data.data1);
+console.log(data.data2);
+
+console.log(data.data3);
+
+
   /*console.log(window.location.pathname);*/
 
   /*Style page according to universe selected*/
@@ -63,191 +70,6 @@ export default function ThisUniverse(data) {
           contera, à demi-mot, des rêves emplis de Magie, dont vous ne voudrez
           jamais vous éveiller.
         </p>
-
-        {/*Editors's cards creation from Json data*/}
-        <div className="row text-center justify-content-center">
-          <div
-            /*key={`${team.name}-${i}`}*/
-            className="col-sm-12 col-md-12 col-lg-12 book"
-          >
-            <div className="bookLeft">
-              <Link to="/livre/Isulka">
-                <img
-                  className="img-responsive creatora"
-                  src={"/img/Livres/Test.webp"}
-                />
-              </Link>
-            </div>
-            <div className="bookRight">
-              <h2>Isulka La Mageresse</h2>
-              <h3 className="bAuthor">Morgane Stankiewiez</h3>
-              <p>
-                Isulka est une mageresse marginale, un peu vénale, mais surtout
-                très endettée, vivotant en donnant des spectacles de magie dans
-                des cabarets parisiens. Scipione est un spadassin vénitien comme
-                on n'en fait plus, un reliquat du passé exilé de la Sérénissime,
-                trahi par ses pairs et en quête de Vendetta.
-              </p>
-
-              <p>
-                Recrutés par un employeur anglais pour subtiliser une bague de
-                rubis, la mission se révèle sous un tout autre jour lorsqu'ils
-                découvrent la valeur du joyau. L'appât du gain les mènera de
-                Paris au Caire, de coups bas en coupe-gorges, dans une
-                course-poursuite avec des espions, des criminels et une
-                inquiétante secte égyptienne...
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/*Editors's cards creation from Json data*/}
-        <div className="row text-center justify-content-center">
-          <div
-            /*key={`${team.name}-${i}`}*/
-            className="col-sm-12 col-md-12 col-lg-12 book"
-          >
-            <div className="bookLeft">
-              <Link to="/livre/Isulka">
-                <img
-                  className="img-responsive creatora"
-                  src={"/img/Livres/Test.webp"}
-                />
-              </Link>
-            </div>
-            <div className="bookRight">
-              <h2>Isulka La Mageresse</h2>
-              <h3 className="bAuthor">Morgane Stankiewiez</h3>
-              <p>
-                Isulka est une mageresse marginale, un peu vénale, mais surtout
-                très endettée, vivotant en donnant des spectacles de magie dans
-                des cabarets parisiens. Scipione est un spadassin vénitien comme
-                on n'en fait plus, un reliquat du passé exilé de la Sérénissime,
-                trahi par ses pairs et en quête de Vendetta.
-              </p>
-
-              <p>
-                Recrutés par un employeur anglais pour subtiliser une bague de
-                rubis, la mission se révèle sous un tout autre jour lorsqu'ils
-                découvrent la valeur du joyau. L'appât du gain les mènera de
-                Paris au Caire, de coups bas en coupe-gorges, dans une
-                course-poursuite avec des espions, des criminels et une
-                inquiétante secte égyptienne...
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/*Editors's cards creation from Json data*/}
-        <div className="row text-center justify-content-center">
-          <div
-            /*key={`${team.name}-${i}`}*/
-            className="col-sm-12 col-md-12 col-lg-12 book"
-          >
-            <div className="bookLeft">
-              <Link to="/livre/Isulka">
-                <img
-                  className="img-responsive creatora"
-                  src={"/img/Livres/Test.webp"}
-                />
-              </Link>
-            </div>
-            <div className="bookRight">
-              <h2>Isulka La Mageresse</h2>
-              <h3 className="bAuthor">Morgane Stankiewiez</h3>
-              <p>
-                Isulka est une mageresse marginale, un peu vénale, mais surtout
-                très endettée, vivotant en donnant des spectacles de magie dans
-                des cabarets parisiens. Scipione est un spadassin vénitien comme
-                on n'en fait plus, un reliquat du passé exilé de la Sérénissime,
-                trahi par ses pairs et en quête de Vendetta.
-              </p>
-
-              <p>
-                Recrutés par un employeur anglais pour subtiliser une bague de
-                rubis, la mission se révèle sous un tout autre jour lorsqu'ils
-                découvrent la valeur du joyau. L'appât du gain les mènera de
-                Paris au Caire, de coups bas en coupe-gorges, dans une
-                course-poursuite avec des espions, des criminels et une
-                inquiétante secte égyptienne...
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/*Editors's cards creation from Json data*/}
-        <div className="row text-center justify-content-center">
-          <div
-            /*key={`${team.name}-${i}`}*/
-            className="col-sm-12 col-md-12 col-lg-12 book"
-          >
-            <div className="bookLeft">
-              <Link to="/livre/Isulka">
-                <img
-                  className="img-responsive creatora"
-                  src={"/img/Livres/Test.webp"}
-                />
-              </Link>
-            </div>
-            <div className="bookRight">
-              <h2>Isulka La Mageresse</h2>
-              <h3 className="bAuthor">Morgane Stankiewiez</h3>
-              <p>
-                Isulka est une mageresse marginale, un peu vénale, mais surtout
-                très endettée, vivotant en donnant des spectacles de magie dans
-                des cabarets parisiens. Scipione est un spadassin vénitien comme
-                on n'en fait plus, un reliquat du passé exilé de la Sérénissime,
-                trahi par ses pairs et en quête de Vendetta.
-              </p>
-
-              <p>
-                Recrutés par un employeur anglais pour subtiliser une bague de
-                rubis, la mission se révèle sous un tout autre jour lorsqu'ils
-                découvrent la valeur du joyau. L'appât du gain les mènera de
-                Paris au Caire, de coups bas en coupe-gorges, dans une
-                course-poursuite avec des espions, des criminels et une
-                inquiétante secte égyptienne...
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/*Editors's cards creation from Json data*/}
-        <div className="row text-center justify-content-center">
-          <div
-            /*key={`${team.name}-${i}`}*/
-            className="col-sm-12 col-md-12 col-lg-12 book"
-          >
-            <div className="bookLeft">
-              <Link to="/livre/Isulka">
-                <img
-                  className="img-responsive creatora"
-                  src={"/img/Livres/Test.webp"}
-                />
-              </Link>
-            </div>
-            <div className="bookRight">
-              <h2>Isulka La Mageresse</h2>
-              <h3 className="bAuthor">Morgane Stankiewiez</h3>
-              <p>
-                Isulka est une mageresse marginale, un peu vénale, mais surtout
-                très endettée, vivotant en donnant des spectacles de magie dans
-                des cabarets parisiens. Scipione est un spadassin vénitien comme
-                on n'en fait plus, un reliquat du passé exilé de la Sérénissime,
-                trahi par ses pairs et en quête de Vendetta.
-              </p>
-
-              <p>
-                Recrutés par un employeur anglais pour subtiliser une bague de
-                rubis, la mission se révèle sous un tout autre jour lorsqu'ils
-                découvrent la valeur du joyau. L'appât du gain les mènera de
-                Paris au Caire, de coups bas en coupe-gorges, dans une
-                course-poursuite avec des espions, des criminels et une
-                inquiétante secte égyptienne...
-              </p>
-            </div>
-          </div>
-        </div>
 
         {/*Editors's cards creation from Json data*/}
         <div className="row text-center justify-content-center">
