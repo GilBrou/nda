@@ -2,23 +2,26 @@
 #thisUniverse {
     width: 100vw;
     height: 100vh;
-
-    /*Background*/
-    background: url("./background/background3.webp"); /**/
-    background-color: var(--blackish);
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
     animation: animMuse 25s ease-out infinite alternate both;
     width: 100vw;
     height: 100%;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 13vh 0 10vh 0;
-    position: relative;
+
+    background: url("./background/background3.webp");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+#thisUniverse .container {
+    padding: 0 30px 0 30px;
 }
 
 #thisUniverse h1 {
@@ -27,40 +30,95 @@
     text-shadow: 5px 2px 12px var(--blackish);
     color: var(--whiteish);
     transition: 0.6s;
-    margin-bottom: 50px;
     text-transform: uppercase;
     animation: anipers 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
         alternate both;
     margin-bottom: 25px;
 }
-
-#thisUniverse p {
-    margin-bottom: 50px;
-    font-size: 17px;
-}
-
-#thisUniverse .container {
-    padding: 0 30px 0 30px;
-}
-#thisUniverse .container h1 {
-}
-#thisUniverse .creator {
-    display: flex;
-    flex-direction: column;
+.UP {
     margin-bottom: 100px;
-    position: relative;
-    transition: 0.45s;
 }
-#thisUniverse .creator img {
-    border-radius: 10px;
-    box-shadow: -3px 0px 3px 2px var(--blackish);
-    width: 100%;
-    height: 100%;
+#thisUniverse .row {
+    display: flex;
+    justify-content: center;
 }
-#thisUniverse .creaTitle {
-    animation: anipers3 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
+
+#thisUniverse .book {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 150px;
+}
+
+#thisUniverse .book img {
+    animation: anipers3 11.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
         alternate both;
 }
-/*#thisUniverse .creator:hover img{
-    transform: scale(1.1);
-}*/
+
+#thisUniverse .container .row:nth-child(even) .book img {
+    animation: anipers3 11.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
+        alternate both -7.5s;
+}
+
+#thisUniverse .container .row:nth-child(even) .book {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.bookLeft,
+.bookRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bookLeft {
+    width: 30%;
+}
+.bookLeft img {
+    -webkit-box-reflect: below 2px
+        linear-gradient(
+            transparent,
+            transparent,
+            transparent,
+            transparent,
+            #0004
+        );
+    transform-origin: center;
+    transition: 0.8s;
+    box-shadow: 4px 4px 10px 2px var(--blackishBack2);
+}
+#thisUniverse .container .row:nth-child(even) .book img {
+    box-shadow: 4px 4px 8px 1px var(--blackishBack2);
+}
+
+#thisUniverse .container .row:nth-child(even) .book .bookRight {
+    box-shadow: -4px 4px 10px 2px var(--blackishBack2);
+}
+.bookRight {
+    width: 50%;
+    padding: 0px 5px 5px 5px;
+    color: var(--blackish);
+    border-radius: 7px;
+    background-color: var(--whiteishTrans);
+    box-shadow: 4px 4px 8px 1px var(--blackishBack2);
+}
+.book h2,
+.book h3 {
+    margin: 10px 0 0 0;
+    text-shadow: 1px -1px 1px var(--whiteishTrans);
+}
+.book h2 {
+    font-size: 28px;
+}
+.book h3 {
+    font-size: 22px;
+}
+
+.bAuthor {
+    margin: 0 0 25px 0;
+}
+.book p {
+    color: var(--blackish);
+    text-align: justify;
+    font-size: 16px;
+    padding: 10px;
+}

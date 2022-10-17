@@ -16,7 +16,6 @@
 @import "./universesAnimations.css";
 @import "./thisUniverse.css";
 
-
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900"); /**/
 
 body,
@@ -43,7 +42,6 @@ html {
   /*overflow: hidden;*/
   /*overflow-x: hidden;*/
 
-
   /*Background animation*/
   animation: animMuse 30s ease-out infinite alternate both;
 
@@ -54,20 +52,19 @@ html {
   --blackishBack3: #00000066;
   --whiteish: #f9f7fd;
   --whiteishTrans: #f9f7fd66;
+  --whiteishTrans2: #f9f7fd50;
+
   --greenish: #85dd91;
   --greenish2: #497e50;
   --greenish3: #325537;
   --greenish4: #213724;
   --blueish0: #0d9580;
-  
+
   --blueish: #0d9580cc;
-  --blueish2: #15A07A;
+  --blueish2: #15a07a;
   --greenishTrans0: #b5cc9699;
   --greenishTrans: #b5cc9633;
   --greenishTrans2: #85dd9140;
-
-
-  
 }
 a,
 p {
