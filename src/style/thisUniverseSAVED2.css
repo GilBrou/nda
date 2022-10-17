@@ -8,8 +8,6 @@
     /*min-height: 100vh;*/
     max-width: 100%;
     display: flex;
-    flex-wrap: wrap;
-
     justify-content: center;
     align-items: center;
     padding: 13vh 0 10vh 0;
@@ -40,23 +38,13 @@
 }
 #thisUniverse .row {
     display: flex;
-    flex-wrap: wrap;
-
-    flex-direction: column; /**/
     justify-content: center;
 }
 
 #thisUniverse .book {
     display: flex;
-    flex-wrap: wrap;
-
     justify-content: space-around;
     margin-bottom: 150px;
-}
-
-#thisUniverse h2 {
-    /*    display: flex;*/
-    /*color:  red;*/
 }
 
 #thisUniverse .book img {
@@ -64,26 +52,22 @@
         alternate both;
 }
 
-#thisUniverse .container .row .book:nth-child(even) img {
+#thisUniverse .container .row:nth-child(even) .book img {
     animation: anipers3 11.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
         alternate both -7.5s;
 }
 
-#thisUniverse .container .row .book:nth-child(even) {
+#thisUniverse .container .row:nth-child(even) .book {
     display: flex;
-    flex-wrap: wrap;
-
     flex-direction: row-reverse;
 }
 
-#thisUniverse .container .row .book:last-child {
+#thisUniverse .container .row:last-child .book {
     margin-bottom: 50px;
 }
 .bookLeft,
 .bookRight {
     display: flex;
-    flex-wrap: wrap;
-
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -104,16 +88,16 @@
     transition: 0.8s;
     box-shadow: 4px 4px 10px 2px var(--blackishBack2);
 }
-#thisUniverse .container .row .book:nth-child(even) img {
+#thisUniverse .container .row:nth-child(even) .book img {
     box-shadow: 4px 4px 8px 1px var(--blackishBack2);
 }
 
-#thisUniverse .container .row .book:nth-child(even) .bookRight {
+#thisUniverse .container .row:nth-child(even) .book .bookRight {
     box-shadow: -4px 4px 10px 2px var(--blackishBack2);
 }
 .bookRight {
-    width: 65%;
-    padding: 7px;
+    width: 50%;
+    padding: 0px 5px 5px 5px;
     color: var(--blackish);
     border-radius: 7px;
     background-color: var(--whiteishTrans);
@@ -126,37 +110,17 @@
 }
 .book h2 {
     font-size: 28px;
-
 }
 .book h3 {
-    font-size: 22px;    
+    font-size: 22px;
+}
+
+.bAuthor {
+    margin: 0 0 25px 0;
 }
 .book p {
     color: var(--blackish);
     text-align: justify;
     font-size: 16px;
     padding: 10px;
-    font-weight: 450;
-    margin: 0;
-
-}
-.subTitle {
-    margin: 20px;
-    display: flex;
-    width: 95%;
-    text-align: left;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.subTitle p {
-    color: var(--whiteish);
-    background-color: var(--blackish);
-    padding: 4px;
-    font-size: 14px;
-    text-align: center;
-    align-self: center;
-    margin: 3px 10px 3px 10px;
-    border-radius: 5px;
 }

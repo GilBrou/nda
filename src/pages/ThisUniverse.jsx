@@ -11,26 +11,19 @@ import {
 
 /***COMPONENT***/
 export default function ThisUniverse(data) {
-
-console.log(data.data1);
-console.log(data.data2);
-
-console.log(data.data3);
-
-
   /*console.log(window.location.pathname);*/
 
   /*Style page according to universe selected*/
   const thisUniverse = document.getElementById("thisUniverse");
   /*console.log(thisUniverse);*/
 
+  /*
+
   if (thisUniverse != null || thisUniverse != undefined) {
     if (window.location.pathname.indexOf("memoria") != -1) {
       console.log("This is memoria !!!");
       thisUniverse.style.backgroundColor = "orange";
-      /*
-      thisUniverse.style.backgroundImage = 'url("' + {  } + '")';
-      */
+    sUniverse.style.backgroundImage = 'url("' + {  } + '")';
     } else if (window.location.pathname.indexOf("futuria") != -1) {
       console.log("This is futuria !!!");
       thisUniverse.style.backgroundColor = "lightblue";
@@ -57,6 +50,7 @@ console.log(data.data3);
       thisUniverse.style.backgroundColor = "green";
     }
   }
+  */
 
   return (
     <div id="thisUniverse" className="text-center">
@@ -71,78 +65,40 @@ console.log(data.data3);
           jamais vous éveiller.
         </p>
 
-        {/*Editors's cards creation from Json data*/}
         <div className="row text-center justify-content-center">
-          <div
-            /*key={`${team.name}-${i}`}*/
-            className="col-sm-12 col-md-12 col-lg-12 book"
-          >
-            <div className="bookLeft">
-              <Link to="/livre/Isulka">
-                <img
-                  className="img-responsive creatora"
-                  src={"/img/Livres/Test.webp"}
-                />
-              </Link>
-            </div>
-            <div className="bookRight">
-              <h2>Isulka La Mageresse</h2>
-              <h3 className="bAuthor">Morgane Stankiewiez</h3>
-              <p>
-                Isulka est une mageresse marginale, un peu vénale, mais surtout
-                très endettée, vivotant en donnant des spectacles de magie dans
-                des cabarets parisiens. Scipione est un spadassin vénitien comme
-                on n'en fait plus, un reliquat du passé exilé de la Sérénissime,
-                trahi par ses pairs et en quête de Vendetta.
-              </p>
+          {/*Dynamic creation from Json data*/}
+          {data.data3.Livres.map((thatBook, i) => (
+            <div
+              key={`${thatBook.titre}-${i}`}
+              className="col-sm-12 col-md-12 col-lg-12 book"
+            >
+              <div className="bookLeft">
+                <Link to={"/livre/" + thatBook.lien}>
+                  <img
+                    className="img-responsive creatora"
+                    src={"/img/Livres/" + thatBook.lien + ".webp"}
+                  />
+                </Link>
+              </div>
 
-              <p>
-                Recrutés par un employeur anglais pour subtiliser une bague de
-                rubis, la mission se révèle sous un tout autre jour lorsqu'ils
-                découvrent la valeur du joyau. L'appât du gain les mènera de
-                Paris au Caire, de coups bas en coupe-gorges, dans une
-                course-poursuite avec des espions, des criminels et une
-                inquiétante secte égyptienne...
-              </p>
-            </div>
-          </div>
-        </div>
+              <div className="bookRight">
+                <h2>
+                  {thatBook.titre} {thatBook.titre2}
+                </h2>
+                <h3 className="bAuthor">{thatBook.par + " "}</h3>
+                <div className="subTitle">
+                  <p>{thatBook.format}</p>
+                  {thatBook.genres.map((tag, i) => (
+                    <p className="tag">{tag}</p>
+                  ))}
+                </div>
 
-        {/*Editors's cards creation from Json data*/}
-        <div className="row text-center justify-content-center">
-          <div
-            /*key={`${team.name}-${i}`}*/
-            className="col-sm-12 col-md-12 col-lg-12 book"
-          >
-            <div className="bookLeft">
-              <Link to="/livre/Isulka">
-                <img
-                  className="img-responsive creatora"
-                  src={"/img/Livres/Test.webp"}
-                />
-              </Link>
-            </div>
-            <div className="bookRight">
-              <h2>Isulka La Mageresse</h2>
-              <h3 className="bAuthor">Morgane Stankiewiez</h3>
-              <p>
-                Isulka est une mageresse marginale, un peu vénale, mais surtout
-                très endettée, vivotant en donnant des spectacles de magie dans
-                des cabarets parisiens. Scipione est un spadassin vénitien comme
-                on n'en fait plus, un reliquat du passé exilé de la Sérénissime,
-                trahi par ses pairs et en quête de Vendetta.
-              </p>
+                <p>{thatBook.résumé}</p>
 
-              <p>
-                Recrutés par un employeur anglais pour subtiliser une bague de
-                rubis, la mission se révèle sous un tout autre jour lorsqu'ils
-                découvrent la valeur du joyau. L'appât du gain les mènera de
-                Paris au Caire, de coups bas en coupe-gorges, dans une
-                course-poursuite avec des espions, des criminels et une
-                inquiétante secte égyptienne...
-              </p>
+                <p>{thatBook.résumé2}</p>
+              </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
