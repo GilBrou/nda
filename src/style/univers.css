@@ -25,11 +25,6 @@
 .linkToU:hover h2 {
   transform: scale(1.1);
 }
-/*
-.linkToU:hover p {
-  transition: 3s;
-  transform: scale(1.05);
-}*/
 .univers h1 {
   text-align: center;
   font-size: 80px;
