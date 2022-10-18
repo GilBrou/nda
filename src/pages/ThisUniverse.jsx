@@ -65,7 +65,13 @@ export default function ThisUniverse(data) {
   function SetReviews(props, i) {
     if (props != 0) {
       return (
-        <a href={props} target="_blank" key={"aKey" + i}>
+        <a
+          href={props}
+          target="_blank"
+          key={"aKey" + i}
+          data-tip
+          data-for={"UtipBuy"}
+        >
           <i className="fa fa-book" aria-hidden="true"></i>
         </a>
       );
@@ -92,7 +98,6 @@ export default function ThisUniverse(data) {
                 />
 
                 <div className="ReviewLinks">
-                  <p>Avis :</p>
                   {thatBook.reviews.map((R, i) => SetReviews(R, i))}
                 </div>
 
@@ -125,31 +130,22 @@ export default function ThisUniverse(data) {
               </div>
             </div>
           ))}
-        </div>
+        </div>{" "}
       </div>
-      {/*
-
-          data-tip
-                    data-for={"UtipBuy"}
-
-
-      
       <ReactTooltip
         id={"UtipBuy"}
-        place="bottom"
+        place="left"
         animation="FadeIn"
-        data-offset="{'top':5}"
         effect="solid"
-        textColor="#fff"
-        arrowColor="#222020"
-        borderColor="#2CC78E"
+        textColor="var(--greenish)"
+        arrowColor="var(--blackish)"
+        borderColor="var(--greenish)"
         effect="solid"
-        backgroundColor="#222020"
+        backgroundColor="black"
         key={"tipForBuy"}
       >
-        Acheter
+        Avis
       </ReactTooltip>
-      */}
     </div>
   );
 }

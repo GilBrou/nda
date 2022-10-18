@@ -135,17 +135,16 @@
 }
 
 .ReviewLinks {
+    width: 70%;
     margin-top: 20px;
     flex-wrap: nowrap;
+    justify-content: space-between;
 }
 .ReviewLinks p {
     font-size: 18px !important;
     font-weight: bold !important;
 }
 
-.ReviewLinks * {
-    color: var(--blackish);
-}
 .buyLinks a,
 .ReviewLinks a {
     text-decoration: none;
@@ -159,12 +158,34 @@
     border-radius: 5px;
 }
 
+.buyLinks a {
+    border: solid 1px var(--blackish);
+    box-shadow: -3px 3px 5px 0.5px var(--blackishBack2);
+}
 .ReviewLinks a,
 .ReviewLinks p {
     background-color: unset;
     padding: 00px;
     font-size: 36px;
     margin: 0px;
+    color: var(--blackish) !important;
+}
+
+.ReviewLinks a {
+    margin: 2px;
+}
+.ReviewLinks a:hover {
+    transition: 0.3s;
+    /*color: var(--whiteish)!important;*/
+    /*color: var(--greenish)!important;*/
+    transform: scale(1.2);
+}
+
+.buyLinks a:hover {
+    transition: 0.4s;
+    color: var(--greenish);
+    box-shadow: 0px 0px 5px 0.5px var(--blackishBack2);
+    transform: scale(1.1);
 }
 
 #thisUniverse .container .row .book:nth-child(even) img {
@@ -221,3 +242,33 @@
     margin: 3px 10px 3px 10px;
     border-radius: 5px;
 }
+
+/*Restyling*/
+.OnyriaU .ReviewLinks a,
+.UrbanaU .ReviewLinks a,
+.RougeU .ReviewLinks a,
+.FolieU .ReviewLinks a,
+.FleurU .ReviewLinks a,
+.PousseU .ReviewLinks a {
+    color: var(--whiteish) !important;
+}
+
+.OnyriaU .bookRight,
+.UrbanaU .bookRight,
+.RougeU .bookRight,
+.FolieU .bookRight,
+.FleurU .bookRight,
+.PousseU .bookRight {
+    background-color: var(--whiteishTrans3);
+}
+
+.UrbanaU {
+} /*Restyling*/
+.RougeU {
+} /*Restyling*/
+.FolieU {
+} /*Restyling*/
+.FleurU {
+} /*Restyling*/
+.PousseU {
+} /*Restyling*/
