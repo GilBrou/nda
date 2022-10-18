@@ -574,13 +574,19 @@
       "lien": "kevin",
       "format": "Roman",
       "sousTitre": "",
-      "par": [""],
-      "genres": ["", ""],
-      "résumé": "",
-      "résumé2": "",
-      "reviews": ["", "", "", "", ""],
-      "buyPaper": "",
-      "buyEbook": ""
+      "par": ["Cécile Pommereau"],
+      "genres": ["Fantastique"],
+      "résumé": "Quand il emménage dans un appartement parisien, Matthieu réalise très vite que celui-ci est hanté… Mais pas par n’importe qui : son fantôme s’appelle Kévin, est ado, et surtout fan de Jenny, star de la pop. La cohabitation s’annonce difficile… Toutefois, la mort tragique de la chanteuse pourrait bien les rapprocher, d’autant que la famille ne compte pas respecter la demande de la star : répandre ses cendres aux quatre coins de la France.",
+      "résumé2": "Dès lors, mortel et fantôme se décident à réaliser les dernières volontés de Jenny… Après tout, qu'est-ce qui pourrait mal tourner ?",
+      "reviews": [
+        "",
+        "",
+        "",
+        "https://www.amazon.fr/K%C3%A9vin-C%C3%A9cile-Pommereau-ebook/dp/B0BHX8JTGN/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=15DNF7WQ16ZZP&keywords=C%C3%A9cile+Pommereau+K%C3%A9vin&qid=1666136951&sprefix=c%C3%A9cile+pommereau+k%C3%A9vin%2Caps%2C105&sr=8-1",
+        ""
+      ],
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/k%C3%A9vin",
+      "buyEbook": "https://www.amazon.fr/K%C3%A9vin-C%C3%A9cile-Pommereau-ebook/dp/B0BHX8JTGN/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=15DNF7WQ16ZZP&keywords=C%C3%A9cile+Pommereau+K%C3%A9vin&qid=1666136951&sprefix=c%C3%A9cile+pommereau+k%C3%A9vin%2Caps%2C105&sr=8-1"
     },
     {
       "titre": "Mojunsha, Tome 2 :",
@@ -589,13 +595,19 @@
       "lien": "mojunsha2",
       "format": "Roman",
       "sousTitre": "",
-      "par": [""],
-      "genres": ["", ""],
-      "résumé": "",
-      "résumé2": "",
-      "reviews": ["", "", "", "", ""],
-      "buyPaper": "",
-      "buyEbook": ""
+      "par": ["Sara Pintado"],
+      "genres": ["Fantasy", ""],
+      "résumé": "(Lire le tome 1 est nécessaire pour la compréhension du roman)",
+      "résumé2": "Malgré la défaite des rebelles kunji, le Royaume Mojun est au bord du gouffre. Nayti, la sœur de Japsaro, poursuit la lutte contre les Mojunsha, tandis que les yeux du Grand Roi de Chaljuse, puissant empire voisin, se tournent vers les terres Mojun. Pour ne rien arranger, Tigre-à-dents-de-sabre pourrait bien tenir sa vengeance et renverser Éléphant-de-lumière, plongeant la terre des humains comme celle des avatars dans le chaos…",
+      "reviews": [
+        "https://www.babelio.com/livres/Pintado-Mojunsha-tome-2--Tigre-a-dents-de-sabre/1459305",
+        "https://booknode.com/mojunsha_tome_2_tigre_a_dents_de_sabre_03465518",
+        "https://www.amazon.fr/gp/product/B0BFBRP8MV?ref_=dbs_p_pwh_rwt_anx_cl_1&storeType=ebooks",
+        "",
+        ""
+      ],
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/mojunsha-tome-2-tigre-%C3%A0-dents-de-sabre",
+      "buyEbook": "https://www.amazon.fr/gp/product/B0BFBRP8MV?ref_=dbs_p_pwh_rwt_anx_cl_1&storeType=ebooks"
     },
     {
       "titre": "Mojunsha, Tome 1 :",
@@ -604,13 +616,19 @@
       "lien": "mojunsha1",
       "format": "Roman",
       "sousTitre": "",
-      "par": [""],
-      "genres": ["", ""],
-      "résumé": "",
-      "résumé2": "",
-      "reviews": ["", "", "", "", ""],
-      "buyPaper": "",
-      "buyEbook": ""
+      "par": ["Sara Pintado"],
+      "genres": ["Fantasy", ""],
+      "résumé": "Plus de huit cents ans après la chute des Rois-Panthères, les Kunji constituent la caste la plus méprisée du Royaume Mojun. Leurs tentatives pour renverser la dynastie des Mojunsha se sont toutes soldées par des échecs",
+      "résumé2": "Japsaro, descendant des Rois-Panthères, passe un pacte terrible avec Panthère-des-ténèbres, l’un des Avatars du Grand Dieu, afin de rendre aux Kunji leur prestige d’antan. Est-il cependant prêt à tous les sacrifices que lui demande Panthère-des-ténèbres en échange de son soutien ? Et surtout, sert-il vraiment sa cause ou n’est-il qu’un pion dans les luttes des Avatars du Grand Dieu ?",
+      "reviews": [
+        "https://www.babelio.com/livres/Pintado-Mojunsha-tome-1--Panthere-des-tenebres/1146175",
+        "https://booknode.com/mojunsha_tome_1_panthere_des_tenebres_02942074",
+        "https://www.goodreads.com/book/show/46005428-mojunsha-tome-1?ac=1&from_search=true&qid=LdI1FC5hkf&rank=1",
+        "https://www.amazon.fr/Mojunsha-Panth%C3%A8re-t%C3%A9n%C3%A8bres-Sara-Pintado-ebook/dp/B07RTYJXTS/ref=as_li_ss_tl?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=mojunsha&qid=1557828099&s=gateway&sr=8-1&linkCode=sl1&tag=neocity-21&linkId=b29c014861966b780c9f1f21b53a11d8&language=fr_FR#customerReviews",
+        ""
+      ],
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/mojunsha-tome-1",
+      "buyEbook": "https://www.amazon.fr/Mojunsha-Panth%C3%A8re-t%C3%A9n%C3%A8bres-Sara-Pintado-ebook/dp/B07RTYJXTS/ref=as_li_ss_tl?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=mojunsha&qid=1557828099&s=gateway&sr=8-1&linkCode=sl1&tag=neocity-21&linkId=b29c014861966b780c9f1f21b53a11d8&language=fr_FR"
     },
     {
       "titre": "Sous les ailes du dieu corbeau",
@@ -619,13 +637,19 @@
       "lien": "sous-les-ailes-du-dieu-corbeau",
       "format": "Roman",
       "sousTitre": "",
-      "par": [""],
-      "genres": ["", ""],
-      "résumé": "",
-      "résumé2": "",
-      "reviews": ["", "", "", "", ""],
-      "buyPaper": "",
-      "buyEbook": ""
+      "par": ["Sara Pintado"],
+      "genres": ["Fantasy", "Jeune Adulte", "LGBT"],
+      "résumé": "Alors que le Grand Roi de Chaljuse dépérit, la lutte pour la succession se prépare. Jenarp, son fils cadet, se doit de réussir l’Épreuve des Crocs pour devenir adulte et espérer prétendre au trône.",
+      "résumé2": "Ijpurna, garçon fragile et grand amour de Jenarp, aborde l’Épreuve avec beaucoup plus de réticence. Les Mages du Palais comme ses camarades lui vouent en effet une grande rancœur due à ses origines comme à son identité de genre, qu’ils risquent fort de lui faire payer quand il sera seul et vulnérable dans la montagne. Quant à Araxa, fille du Mage Suprême et assoiffée de connaissances, peut-être apprendra-t-elle enfin les Mystères interdits aux femmes, ainsi que le nom secret du Dieu Corbeau ?",
+      "reviews": [
+        "https://www.babelio.com/livres/Pintado-Sous-les-ailes-du-dieu-corbeau/1317668",
+        "https://booknode.com/sous_les_ailes_du_dieu_corbeau_03387026",
+        "https://www.goodreads.com/book/show/57600638-sous-les-ailes-du-dieu-corbeau?ac=1&from_search=true&qid=TFNIKZNj8y&rank=1",
+        "https://www.amazon.fr/Sous-ailes-du-dieu-corbeau-ebook/dp/B08WR5WQVW?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=sara+pintado&qid=1614845431&sr=8-1&linkCode=sl1&tag=neocity-21&linkId=6d483a0b74cdbf883ce112edcbb6b381&language=fr_FR&ref_=as_li_ss_tl#customerReviews",
+        ""
+      ],
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/Sadic",
+      "buyEbook": "https://www.amazon.fr/Sous-ailes-du-dieu-corbeau-ebook/dp/B08WR5WQVW?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=sara+pintado&qid=1614845431&sr=8-1&linkCode=sl1&tag=neocity-21&linkId=6d483a0b74cdbf883ce112edcbb6b381&language=fr_FR&ref_=as_li_ss_tl"
     },
     {
       "titre": "Hors Caste",
@@ -634,13 +658,19 @@
       "lien": "hors-caste",
       "format": "Roman",
       "sousTitre": "",
-      "par": [""],
-      "genres": ["", ""],
-      "résumé": "",
-      "résumé2": "",
-      "reviews": ["", "", "", "", ""],
-      "buyPaper": "",
-      "buyEbook": ""
+      "par": ["Marge Nantel"],
+      "genres": ["Dark Fantasy", "Romance", "LGBT"],
+      "résumé": "Suèhl est tellement dépourvu de magie qu’il n’appartient à aucune caste à Hemurn, où seul le Don confère une situation sociale. Repoussé, délaissé, il ne s’attend pas à attirer l’attention de cet étranger à la puissance hors norme.",
+      "résumé2": "Pourtant, la complicité entre eux est immédiate. Et quand un drame fait vaciller les lois rigides d’Hemurn, l’alliance de ces hommes hors caste, dégagés des obligations qui les régissent, pourrait bien s’avérer la seule planche de salut.",
+      "reviews": [
+        "https://www.babelio.com/livres/Nantel-Hors-Caste/1454136",
+        "https://booknode.com/hors_caste_03462622",
+        "https://www.goodreads.com/book/show/62588948-hors-caste?ac=1&from_search=true&qid=wThptk26Y7&rank=1",
+        "https://www.amazon.fr/Hors-Caste-Marge-Nantel-ebook/dp/B0BD98BG94/ref=sr_1_1?crid=VKV5Y71QT1WF&keywords=hors+caste&qid=1666136186&qu=eyJxc2MiOiIwLjAwIiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=Hors+Caste%2Caps%2C99&sr=8-1#customerReviews",
+        ""
+      ],
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/hors-caste",
+      "buyEbook": "https://www.amazon.fr/Hors-Caste-Marge-Nantel-ebook/dp/B0BD98BG94/ref=sr_1_1?crid=VKV5Y71QT1WF&keywords=hors+caste&qid=1666136186&qu=eyJxc2MiOiIwLjAwIiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=Hors+Caste%2Caps%2C99&sr=8-1"
     },
     {
       "titre": "Higher than the sun",
@@ -649,43 +679,54 @@
       "lien": "higher-than-the-sun",
       "format": "Roman",
       "sousTitre": "",
-      "par": [""],
-      "genres": ["", ""],
-      "résumé": "",
-      "résumé2": "",
-      "reviews": ["", "", "", "", ""],
-      "buyPaper": "",
-      "buyEbook": ""
+      "par": ["Frédérique Badoux"],
+      "genres": ["Romance", "LGBT"],
+      "résumé": "Los Angeles, capitale du libéralisme, subit l’assaut d’une terrible vague homophobe. Dans ce climat d’insécurité, Éric Hamilton, célèbre acteur et fils de multimilliardaire, tombe amoureux d’un étudiant en situation précaire.",
+      "résumé2": "Mais peut-on aimer dans la Cité des Anges, quand on se trouve de part et d’autre de ces frontières invisibles entre Westwood et South L.A., entre les banlieues chics et les quartiers sordides ? Deux mondes hermétiques, deux prisons, l’une d’or et l’autre de plomb. Ballotté entre l’authenticité et le déni, le besoin d’ancrage et de lâcher prise, Éric finira-t-il par émerger de ce maelstrom qui ravage son cœur comme la Cité ?",
+      "reviews": [
+        "https://www.babelio.com/livres/Badoux-Higher-than-the-sun/1448907",
+        "https://booknode.com/higher_than_the_sun_02303014",
+        "https://www.goodreads.com/book/show/61641488-higher-than-the-sun?ac=1&from_search=true&qid=JqjFeSYV9V&rank=1",
+        "https://www.amazon.fr/Higher-than-sun-Romance-Gay-ebook/dp/B0B5PFWYRQ/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2JZKS1VELKN5P&keywords=Higher+than+the+sun+badoux&qid=1666136013&qu=eyJxc2MiOiIwLjUwIiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=higher+than+the+sun+badoux%2Caps%2C173&sr=8-1#customerReviews",
+        ""
+      ],
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/higher-than-the-sun",
+      "buyEbook": "https://www.amazon.fr/Higher-than-sun-Romance-Gay-ebook/dp/B0B5PFWYRQ/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2JZKS1VELKN5P&keywords=Higher+than+the+sun+badoux&qid=1666136013&qu=eyJxc2MiOiIwLjUwIiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=higher+than+the+sun+badoux%2Caps%2C173&sr=8-1#customerReviews"
     },
     {
       "titre": "Lady Falkenna",
       "titre2": ": Intégrale 1",
-      "univers": "",
+      "univers": "Mémoria",
       "lien": "lady-falkenna",
       "format": "Roman",
       "sousTitre": "",
-      "par": [""],
-      "genres": ["", ""],
-      "résumé": "",
+      "par": ["Alizée Villemin"],
+      "genres": ["Steampunk", ""],
+      "résumé": "Lady Falkenna – Eve pour les intimes – est une jeune femme au tempérament bien trempé. Chasseuse de l’occulte, elle quitte parfois son domaine niché au sein de l’Angleterre victorienne pour plonger dans un monde où l’emprise de la magie se révèle chaque jour plus importante, où les dragons griffent les ardoises parisiennes et les faëries dansent sur la Tamise…",
       "résumé2": "",
-      "reviews": ["", "", "", "", ""],
-      "buyPaper": "",
-      "buyEbook": ""
+      "reviews": [
+        "https://www.babelio.com/livres/Villemin-Lady-Falkenna-Integrale-tome-1/1450799",
+        "https://booknode.com/lady_falkenna_integrale_1_03450539",
+        "https://www.goodreads.com/book/show/61432175-lady-falkenna?ac=1&from_search=true&qid=bFuYW62s96&rank=1",
+        "https://www.amazon.fr/Lady-Falkenna-Int%C3%A9grale-Aliz%C3%A9e-Villemin-ebook/dp/B0B2S87BVP/ref=sr_1_2?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=11W92FKGZ37XO&keywords=Lady+Falkenna+%3A+Int%C3%A9grale+1&qid=1666135756&qu=eyJxc2MiOiIwLjU1IiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=lady+falkenna+int%C3%A9grale+1%2Caps%2C146&sr=8-2#customerReviews",
+        ""
+      ],
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/lady-falkenna-int%C3%A9grale-1",
+      "buyEbook": "https://www.amazon.fr/Lady-Falkenna-Int%C3%A9grale-Aliz%C3%A9e-Villemin-ebook/dp/B0B2S87BVP/ref=sr_1_2?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=11W92FKGZ37XO&keywords=Lady+Falkenna+%3A+Int%C3%A9grale+1&qid=1666135756&qu=eyJxc2MiOiIwLjU1IiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=lady+falkenna+int%C3%A9grale+1%2Caps%2C146&sr=8-2"
     },
     {
       "titre": "Vernold",
       "titre2": "",
       "univers": "Pousse d'Absinthe",
       "lien": "vernold",
-      "format": "Roman",
+      "format": "Album Jeunesse",
       "sousTitre": "",
       "par": ["Louise Le Bars", "&", "Laurent Cazuguel"],
-
       "genres": ["", ""],
-      "résumé": "",
-      "résumé2": "",
+      "résumé": "Vernold est un petit vampire. Un vrai. Mais il lui manque juste quelque chose pour en être un vrai de vrai, comme des parents. Oh, pas grand-chose : des canines pointues...",
+      "résumé2": "Livre destiné aux enfants et grands enfants, à partir de 6 ans.",
       "reviews": ["", "", "", "", ""],
-      "buyPaper": "",
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/vernold",
       "buyEbook": ""
     },
     {
@@ -696,41 +737,55 @@
       "format": "Roman",
       "sousTitre": "",
       "par": ["Morgane Stankiewiez", "&", "Sarah Buschmann"],
-      "genres": ["", ""],
-      "résumé": "",
-      "résumé2": "",
-      "reviews": ["", "", "", "", ""],
-      "buyPaper": "",
-      "buyEbook": ""
+      "genres": ["Thriller", "Asiatique"],
+      "résumé": "Chine, 2015. Deux âmes perdues, un père et sa fille, se retrouvent après des années d'absence pour un décès. Celui de la Mère. Celui qui rouvre les plaies d'un passé que tous deux auraient préféré oublier…",
+      "résumé2": "Un thriller asiatique sombre et cruel, sur fond de secte, livré par deux autrices amoureuses des ténèbres…",
+      "reviews": [
+        "https://www.babelio.com/livres/Buschmann-Zhaodi/1397964",
+        "https://booknode.com/zhaodi_03432286",
+        "https://www.goodreads.com/book/show/60674421-zhaodi?ac=1&from_search=true&qid=qdZKY4gznr&rank=1",
+        "https://www.amazon.fr/Zhaodi-Thriller-Asiatique-Morgane-Stankiewiez-ebook/dp/B09SZDNQ1C/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1HJKEEFVYJ5FE&keywords=zhaodi+morgane+stankiewiez&qid=1666135461&qu=eyJxc2MiOiIxLjU1IiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=zhaodi+morgane+stankiewiez%2Caps%2C98&sr=8-1#customerReviews",
+        ""
+      ],
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/zhaodi",
+      "buyEbook": "https://www.amazon.fr/Zhaodi-Thriller-Asiatique-Morgane-Stankiewiez-ebook/dp/B09SZDNQ1C/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1HJKEEFVYJ5FE&keywords=zhaodi+morgane+stankiewiez&qid=1666135461&qu=eyJxc2MiOiIxLjU1IiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=zhaodi+morgane+stankiewiez%2Caps%2C98&sr=8-1"
     },
     {
       "titre": "Monstresse(s)",
       "titre2": "",
       "univers": "L'Antre de la Folie",
       "lien": "monstresses",
-      "format": "Roman",
+      "format": "Anthologie",
       "sousTitre": "",
-      "par": [""],
-      "genres": ["", ""],
-      "résumé": "",
-      "résumé2": "",
-      "reviews": ["", "", "", "", ""],
-      "buyPaper": "",
-      "buyEbook": ""
+      "par": [
+        "Xavier Lhomme, Maxence Madone, Sarah Kügel, Dola Rosselet, Gillian Brousse, Népenth S. ,Émilie Chevallier, Charlène Ferlay, Éli Boudeau, Maëlig Duval, Kathrine Hasnaoui, Morgane Stankiewiez"
+      ],
+      "genres": ["Horreur", "Fantastique", "Science-fiction"],
+      "résumé": "Lovée au creux du sein maternel, son cruel poison s’insinue dans le lait intime, corrompt et pervertit jusqu’au socle même de la société. C’est la dévoreuse, la puissance féminine de l’ombre, crainte et pourchassée à égale mesure. Qui se cache derrière ces traits tantôt hideux, tantôt radieux ?",
+      "résumé2": "Descendez aux côtés de nos auteurs dans les catacombes de la civilisation, explorez cette peur du féminin, excavez les tabous qui l’habillent, parure de chair et de sang, ornement de stupre et de vengeance…",
+      "reviews": [
+        "https://www.babelio.com/livres/Chevallier-Moreux-Monstresses/1390888",
+        "https://booknode.com/monstresses_03425808",
+        "https://www.goodreads.com/book/show/60674603-monstresse?ac=1&from_search=true&qid=bMwGmRU31C&rank=1",
+        "https://www.amazon.fr/Monstresse-s-Chevallier-emil/dp/2490417797/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=38GL07UZ5UVKF&keywords=monstresse%28s%29&qid=1666135319&qu=eyJxc2MiOiIxLjQ4IiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=monstres+des+%2Caps%2C142&sr=8-1#customerReviews",
+        ""
+      ],
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/monstresse-s",
+      "buyEbook": "https://www.amazon.fr/Monstresse-s-Chevallier-emil/dp/2490417797/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=38GL07UZ5UVKF&keywords=monstresse%28s%29&qid=1666135319&qu=eyJxc2MiOiIxLjQ4IiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=monstres+des+%2Caps%2C142&sr=8-1"
     },
     {
       "titre": "Dremence",
       "titre2": "",
       "univers": "Hors Collection",
-      "lien": "dremence-prestige",
+      "lien": "dremence",
       "format": "Roman",
       "sousTitre": "",
-      "par": [""],
-      "genres": ["", ""],
-      "résumé": "",
+      "par": ["Morgane Stankiewiez", "&", "Amaryan"],
+      "genres": ["Horreur", "Futuriste"],
+      "résumé": "À l'aube du 24e siècle, un passeur des enfers est prêt à tout pour ramener sa fille du monde des morts.",
       "résumé2": "",
       "reviews": ["", "", "", "", ""],
-      "buyPaper": "",
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/dremence",
       "buyEbook": ""
     },
     {
@@ -740,12 +795,12 @@
       "lien": "dremence",
       "format": "Roman",
       "sousTitre": "",
-      "par": [""],
-      "genres": ["", ""],
-      "résumé": "",
+      "par": ["Morgane Stankiewiez", "&", "Amaryan"],
+      "genres": ["Horreur", "Futuriste"],
+      "résumé": "À l'aube du 24e siècle, un passeur des enfers est prêt à tout pour ramener sa fille du monde des morts.",
       "résumé2": "",
       "reviews": ["", "", "", "", ""],
-      "buyPaper": "",
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/dremence-cartonn%C3%A9e",
       "buyEbook": ""
     },
     {
@@ -756,12 +811,18 @@
       "format": "Roman",
       "sousTitre": "",
       "par": ["Cécile Pommereau", "&", "Geny H. David"],
-      "genres": ["", ""],
-      "résumé": "",
-      "résumé2": "",
-      "reviews": ["", "", "", "", ""],
-      "buyPaper": "",
-      "buyEbook": ""
+      "genres": ["Thriller", "Romantique", "LGBT"],
+      "résumé": "Un tueur insaisissable a fait de la capitale son terrain de jeu, au grand dam de Camille, vice procureure fraîchement débarquée à son poste. De son côté, Alice Moreau dévoue son existence à son travail et se définit en un mot : flic.",
+      "résumé2": "Lorsque les deux femmes se retrouvent sur la sordide affaire, naît une collaboration particulière et acharnée. Dans cette valse dangereuse, Camille et Alice se rapprochent l'une de l'autre autant que de l’assassin. Après tout, n'est-ce pas dans l'adversité que se nouent les liens les plus intimes ?",
+      "reviews": [
+        "https://www.babelio.com/livres/David-Promethee/1373866",
+        "https://booknode.com/promethee_03418817",
+        "https://www.goodreads.com/book/show/60222970-prom-th-e?ac=1&from_search=true&qid=V4JnKyY7a1&rank=1",
+        "https://www.amazon.fr/Prom%C3%A9th%C3%A9e-C%C3%A9cile-Pommereau-ebook/dp/B09L9C3G3Q/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=TXHUDKRDHVTT&keywords=c%C3%A9cile+pommereau+prom%C3%A9th%C3%A9e&qid=1666134802&qu=eyJxc2MiOiIyLjQyIiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=c%C3%A9cile+pommereau+prometh%C3%A9e%2Caps%2C144&sr=8-1#customerReviews",
+        ""
+      ],
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/prom%C3%A9th%C3%A9e",
+      "buyEbook": "https://www.amazon.fr/Prom%C3%A9th%C3%A9e-C%C3%A9cile-Pommereau-ebook/dp/B09L9C3G3Q/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=TXHUDKRDHVTT&keywords=c%C3%A9cile+pommereau+prom%C3%A9th%C3%A9e&qid=1666134802&qu=eyJxc2MiOiIyLjQyIiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=c%C3%A9cile+pommereau+prometh%C3%A9e%2Caps%2C144&sr=8-1#customerReviews"
     },
     {
       "titre": "Tisseurs d'Esprits",
@@ -770,28 +831,40 @@
       "lien": "tisseurs-d-esprits",
       "format": "Roman",
       "sousTitre": "",
-      "par": [""],
-      "genres": ["", ""],
-      "résumé": "",
-      "résumé2": "",
-      "reviews": ["", "", "", "", ""],
-      "buyPaper": "",
-      "buyEbook": ""
+      "par": ["Axelle Colau"],
+      "genres": ["12 ans et plus", ""],
+      "résumé": "Quand deux destins s'entremêlent par magie... Lucie se réveille en pleine rue, sa mémoire vide de tout souvenirs. On ne peut pas en dire autant des monstres qui ont décidé de s’en prendre à elle pile à ce moment, ni de cet homme étrange qui ne lui inspire rien qui vaille. Et encore moins de son sauveur, non pas un chevalier en armure étincelante, mais un écureuil-chat cracheur de feu, de la taille d'un poney. Avec le soutien d’Akû, son patibulaire compagnon, Lucie affrontera bien des dangers pour retrouver ses souvenirs et sa famille. Sa route croisera celle de Zack, Tisseur de son état, oppressé par l'éducation stricte de sa mère et cherchant à percer le mystère de ses origines. Leurs quêtes sont-elles si différentes, au fond ?",
+      "résumé2": "Entre combats à coups de sortilèges, courses-poursuites échevelées et ennemis déterminés, Lucie et Zack arriveront-ils à trouver leur place dans le monde des Tisseurs ?",
+      "reviews": [
+        "https://www.babelio.com/livres/Colau-Tisseurs-desprit/1359375",
+        "https://booknode.com/tisseurs_desprit_03411256",
+        "https://www.goodreads.com/book/show/59415776-tisseurs-d-esprit?ac=1&from_search=true&qid=qQ1RZOmbdC&rank=1",
+        "https://www.amazon.fr/Tisseurs-dEsprit-Axelle-Colau-ebook/dp/B09FSSNSK3/ref=sr_1_1?crid=W85L9XOFM04O&keywords=tisseurs+d%27esprit&qid=1666134634&qu=eyJxc2MiOiIwLjk3IiwicXNhIjoiMC45MiIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=Tisseurs+d%27espr%2Caps%2C356&sr=8-1#customerReviews",
+        ""
+      ],
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/tisseurs-d-esprit",
+      "buyEbook": "https://www.amazon.fr/Tisseurs-dEsprit-Axelle-Colau-ebook/dp/B09FSSNSK3/ref=sr_1_1?crid=W85L9XOFM04O&keywords=tisseurs+d%27esprit&qid=1666134634&qu=eyJxc2MiOiIwLjk3IiwicXNhIjoiMC45MiIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=Tisseurs+d%27espr%2Caps%2C356&sr=8-1"
     },
     {
       "titre": "Dolls",
       "titre2": "",
       "univers": "L'Antre de la Folie",
       "lien": "dolls",
-      "format": "Roman",
+      "format": "Recueil de nouvelles",
       "sousTitre": "",
-      "par": [""],
-      "genres": ["", ""],
-      "résumé": "",
-      "résumé2": "",
-      "reviews": ["", "", "", "", ""],
-      "buyPaper": "",
-      "buyEbook": ""
+      "par": ["Népenth S.", "&", "MoonE"],
+      "genres": ["Fantastique", ""],
+      "résumé": "Des histoires de poupées, d'enfances (trop) prolongées, de personnages brisés. Mêlant humour noir et tragédie, les pantins de papier qui peuplent ce recueil vous confient leur triste sort. Des enfants-loups séquestrés tentent d’échapper à leur bourreau. Deux frères se disputent l’amour d’une mère pas si parfaite que ça. Une fillette rêve que son frère est un ange. Une femme transforme son appartement en paradis pour micro-organismes. Alice traverse de nouveau le miroir pour se retrouver dans un pays aux merveilles détraquées.",
+      "résumé2": "Onze nouvelles, onze manières de raconter les peurs qui grondent sous une douce mélancolie.",
+      "reviews": [
+        "https://www.amazon.fr/Dolls-N%C3%A9penth-S-ebook/dp/B09FQFZXV5/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1MTADQ3LBBSRG&keywords=N%C3%A9penth+S.+Dolls&qid=1666134464&qu=eyJxc2MiOiIxLjgzIiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=n%C3%A9penth+s.+dolls%2Caps%2C105&sr=8-1#customerReviews",
+        "https://www.babelio.com/livres/Nepenth-S-Dolls/1356999",
+        "https://booknode.com/dolls_03411332",
+        "https://www.goodreads.com/book/show/60496477-dolls?ac=1&from_search=true&qid=qvT6DSf6YQ&rank=1",
+        ""
+      ],
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/dolls",
+      "buyEbook": "https://www.amazon.fr/Dolls-N%C3%A9penth-S-ebook/dp/B09FQFZXV5/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1MTADQ3LBBSRG&keywords=N%C3%A9penth+S.+Dolls&qid=1666134464&qu=eyJxc2MiOiIxLjgzIiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=n%C3%A9penth+s.+dolls%2Caps%2C105&sr=8-1"
     },
     {
       "titre": "Sagas des Mers Grises",
@@ -800,28 +873,40 @@
       "lien": "sagas-des-mers-grises",
       "format": "Roman",
       "sousTitre": "",
-      "par": [""],
-      "genres": ["", ""],
-      "résumé": "",
-      "résumé2": "",
-      "reviews": ["", "", "", "", ""],
-      "buyPaper": "",
-      "buyEbook": ""
+      "par": ["Pierre Efratas"],
+      "genres": ["Saga", "Nordique", "Mythes"],
+      "résumé": "''Femmes et hommes libres, nobles jarls, bienvenue dans ma grand-salle, prenez vos aises auprès du feu qui danse ! Sur les flots dorés de l'amitié, par l'écume des mers grises, je vous ferai partager le destin aventureux d'un jeune Viking que tout destinait à la réussite et qui fut le jouet des Nornes, des dieux, des déesses et d'étranges créatures. Écoutez la saga d'Ingvarr le Réprouvé...''",
+      "résumé2": "Par la voix de la Dame Genovefa, Pierre Efratas vous emmène en voyage et partage avec vous légendes, drames, amours, poésie et Histoire, sans oublier quelques brassées de sourires (et d'hydromel).",
+      "reviews": [
+        "https://www.babelio.com/livres/Efratas-Sagas-des-mers-grises-Integrale/1341482",
+        "https://booknode.com/sagas_des_mers_grises_integrale_03399510",
+        "https://www.goodreads.com/book/show/59144074-sagas-des-mers-grises?ac=1&from_search=true&qid=n4wVHFqRWr&rank=1",
+        "https://www.amazon.fr/Sagas-Mers-Grises-Pierre-Efratas-ebook/dp/B094DS2LKV/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2R4BIQVFSN2ZM&keywords=Sagas+des+Mers+Grises%3A+Int%C3%A9grale&qid=1666134157&qu=eyJxc2MiOiIwLjA0IiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=sagas+des+mers+grises+int%C3%A9grale%2Caps%2C91&sr=8-1#customerReviews",
+        ""
+      ],
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/sagas-des-mers-grises-int%C3%A9grale",
+      "buyEbook": "https://www.amazon.fr/Sagas-Mers-Grises-Pierre-Efratas-ebook/dp/B094DS2LKV/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2R4BIQVFSN2ZM&keywords=Sagas+des+Mers+Grises%3A+Int%C3%A9grale&qid=1666134157&qu=eyJxc2MiOiIwLjA0IiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=sagas+des+mers+grises+int%C3%A9grale%2Caps%2C91&sr=8-1"
     },
     {
       "titre": "Meredith",
       "titre2": "",
       "univers": "Onyria",
       "lien": "meredith",
-      "format": "Roman",
+      "format": "Novella",
       "sousTitre": "",
-      "par": [""],
-      "genres": ["", ""],
-      "résumé": "",
-      "résumé2": "",
-      "reviews": ["", "", "", "", ""],
-      "buyPaper": "",
-      "buyEbook": ""
+      "par": ["Morgane Stankiewiez"],
+      "genres": ["Gothique", ""],
+      "résumé": " Nouvelle Angleterre, 1813 : Caleb Vance est destiné à un avenir ennuyeux : épouser la fille du maire, reprendre l’entreprise familiale et perpétuer la lignée. Pour lui qui rêvait d’aventures, le futur s’avère peu reluisant.",
+      "résumé2": "L’arrivée d’Elias Morrington et sa fille, deux Anglais fuyant la guerre qui fait rage au Nord, contrarie ce gris destin. La sulfureuse Alathea, sirène noire au charme aussi vénéneux qu’envoûtant, éveille l’intérêt de Caleb, que cette noire passion pourrait bien mener à sa perte. Les Vance ont invité le diable en leur demeure, et il semble bien qu’ils en paieront le prix",
+      "reviews": [
+        "https://www.babelio.com/livres/Stankiewiez-Meredith/1303946",
+        "https://booknode.com/meredith_03389287",
+        "https://www.goodreads.com/book/show/57639248-meredith?ac=1&from_search=true&qid=LXAo5hXBeM&rank=1",
+        "https://www.amazon.fr/gp/product/B08T1KMCBT?&linkCode=sl1&tag=neocity-21&linkId=5379bee5e68fb436c9870e20a69b6a59&language=fr_FR&ref_=as_li_ss_tl#customerReviews",
+        ""
+      ],
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/meredith",
+      "buyEbook": "https://www.amazon.fr/gp/product/B08T1KMCBT?&linkCode=sl1&tag=neocity-21&linkId=5379bee5e68fb436c9870e20a69b6a59&language=fr_FR&ref_=as_li_ss_tl"
     },
     {
       "titre": "Chair Morte",
@@ -830,28 +915,39 @@
       "lien": "chair-morte",
       "format": "Roman",
       "sousTitre": "",
-      "par": [""],
-      "genres": ["", ""],
-      "résumé": "",
-      "résumé2": "",
-      "reviews": ["", "", "", "", ""],
-      "buyPaper": "",
-      "buyEbook": ""
+      "par": ["Sarah Buschmann"],
+      "genres": ["Contemporain", "Fantasy", "Sombre", "Thriller"],
+      "résumé": "Australie, 2016 : un mois après les meurtres de Melbourne, Chiara Adamo rejoint la célèbre Brigade de Traque et Arrestation des Sorcières à Sydney. Très vite, elle constate une recrudescence de Sorcellerie de Chair, dans l’outback australien. Pourquoi cette activité soudaine ? Que préparent les sorcières ? Commence alors une difficile traque, où chaque faux pas peut être fatal. Au milieu du désert, dans la prison souterraine de Simpson, 313, sorcière condamnée à perpétuité, purge sa peine. Dans ce lieu de non droit où les Enfers prennent chair, 313 devra lutter pour ne pas sombrer dans la folie.",
+      "résumé2": "Deux âmes tourmentées, qui plongent toujours plus profondément dans l’abîme. Jusqu’où iront-elles, avant de réaliser qu’il n’y a plus aucun espoir ?",
+      "reviews": [
+        "https://www.babelio.com/livres/Buschmann-Chair-morte/1275746",
+        "https://booknode.com/chair_morte_03373162",
+        "https://www.goodreads.com/book/show/56228752-chair-morte?ac=1&from_search=true&qid=alcWOnPMPk&rank=1",
+        "https://www.amazon.fr/Chair-Morte-Sarah-Buschmann-ebook/dp/B08NTQ2HT1/ref=as_li_ss_tl?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=chair+morte&qid=1605780406&sr=8-3&linkCode=sl1&tag=neocity-21&linkId=8478d2884da187398c15fbee7cce3286&language=fr_FR#customerReviews",
+        ""
+      ],
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/chair-morte",
+      "buyEbook": "https://www.amazon.fr/Chair-Morte-Sarah-Buschmann-ebook/dp/B08NTQ2HT1/ref=as_li_ss_tl?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=chair+morte&qid=1605780406&sr=8-3&linkCode=sl1&tag=neocity-21&linkId=8478d2884da187398c15fbee7cce3286&language=fr_FR"
     },
     {
-      "titre": "Spleen Cities",
-      "titre2": "- Le Jeu",
+      "titre": "Spleen Cities - Le Jeu",
+      "titre2": "",
       "univers": "Futuria",
       "lien": "spleen-jeu",
-      "format": "Roman",
-      "sousTitre": "",
-      "par": [""],
-      "genres": ["", ""],
-      "résumé": "",
-      "résumé2": "",
+      "format": "Jeu PC",
+      "sousTitre": "Offert pour tout achat du roman Spleen Cities",
+      "par": ["Gillian Brousse"],
+      "genres": [
+        "Rétrogaming",
+        "Point & Click",
+        "Science-fiction",
+        "Cyberpunk"
+      ],
+      "résumé": "Deux cent ans après un mystérieux cataclysme, les rescapés se sont divisés en deux cités : Novart et Veilam, protégées des créatures qui grouillent à l'extérieur par un mur gigantesque.",
+      "résumé2": "Dans cette histoire qui précède le roman, vous incarnez Cibi, le chef de la bande des Youngsters, alors qu'il se réveille sans souvenirs dans cette ruelle crasseuse en territoire ennemi. Vous devrez trouver le moyen de regagner la sécurité et de faire la lumière sur ce qu'il s'est passé. Mais faites attention, car à Novart, le moindre faux pas peut signer votre arrêt de mort.",
       "reviews": ["", "", "", "", ""],
-      "buyPaper": "",
-      "buyEbook": ""
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/spleen-cities-le-jeu-vid%C3%A9o",
+      "buyEbook": "https://d48913ea-30ee-4023-aabe-0eb8bfda9652.usrfiles.com/archives/d48913_50b2d727e304430b8e843af8053a542e.zip"
     }
   ],
   "template": {

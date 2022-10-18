@@ -12,6 +12,9 @@ import {
 
 /***COMPONENT***/
 export default function ThisUniverse(data) {
+
+/*console.log(data.data3.Livres)*/
+
   /*console.log(data.data3.Livres[0].buy[0])*/
   /*console.log(window.location.pathname);*/
 
@@ -107,33 +110,66 @@ export default function ThisUniverse(data) {
   }
 
   function SetBuyLinks(props) {
-    if (props.buyPaper != 0 && props.buyEbook == 0) {
-      return (
-        <div className="buyLinks">
-          <a href={props.buyPaper} target="_blank">
-            Version papier
-          </a>
-        </div>
-      );
-    } else if (props.buyEbook != 0 && props.buyPaper == 0) {
-      return (
-        <div className="buyLinks">
-          <a href={props.buyEbook} target="_blank">
-            E-book
-          </a>
-        </div>
-      );
-    } else if (props.buyEbook != 0 && props.buyPaper != 0) {
-      return (
-        <div className="buyLinks">
-          <a href={props.buyPaper} target="_blank">
-            Version papier
-          </a>
-          <a href={props.buyEbook} target="_blank">
-            E-book
-          </a>
-        </div>
-      );
+    /*console.log(props.format)*/
+    if (props.format === "Jeu PC") {
+      /*console.log(props.format)*/
+      if (props.buyPaper != 0 && props.buyEbook == 0) {
+        return (
+          <div className="buyLinks">
+            <a href={props.buyPaper} target="_blank">
+              Achat
+            </a>
+          </div>
+        );
+      } else if (props.buyEbook != 0 && props.buyPaper == 0) {
+        return (
+          <div className="buyLinks">
+            <a href={props.buyEbook} target="_blank">
+              Démo
+            </a>
+          </div>
+        );
+      } else if (props.buyEbook != 0 && props.buyPaper != 0) {
+        return (
+          <div className="buyLinks">
+            <a href={props.buyPaper} target="_blank">
+              Achat
+            </a>
+            <a href={props.buyEbook} target="_blank">
+              Démo
+            </a>
+          </div>
+        );
+      }
+    } else {
+      if (props.buyPaper != 0 && props.buyEbook == 0) {
+        return (
+          <div className="buyLinks">
+            <a href={props.buyPaper} target="_blank">
+              Version papier
+            </a>
+          </div>
+        );
+      } else if (props.buyEbook != 0 && props.buyPaper == 0) {
+        return (
+          <div className="buyLinks">
+            <a href={props.buyEbook} target="_blank">
+              E-book
+            </a>
+          </div>
+        );
+      } else if (props.buyEbook != 0 && props.buyPaper != 0) {
+        return (
+          <div className="buyLinks">
+            <a href={props.buyPaper} target="_blank">
+              Version papier
+            </a>
+            <a href={props.buyEbook} target="_blank">
+              E-book
+            </a>
+          </div>
+        );
+      }
     }
   }
 
