@@ -214,11 +214,12 @@
     width: 65%;
     padding: 7px;
     color: var(--blackish);
-    border-radius: 7px;
+    border-radius: 5px;
     background-color: var(--whiteishTrans);
     box-shadow: 4px 4px 8px 1px var(--blackishBack2);
     animation: swing-in-right-fwd 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275)
         0.3s both;
+    background: url("./background/background3.webp");
 }
 .book h2,
 .book h3 {
@@ -232,7 +233,12 @@
 }
 .sousTitre {
     border: unset !important;
+    color: var(--whiteish);
+    text-shadow: unset !important;
+    padding: 7px;
+    background-color: var(--blackishBack2);
     font-size: 22px !important;
+    border-radius: 5px;
 }
 .book h3 {
     font-size: 24px;
@@ -241,6 +247,7 @@
 .book p {
     color: var(--blackish);
     text-align: justify;
+    width: 100%;
     font-size: 16px;
     padding: 10px;
     font-weight: 450;
@@ -262,9 +269,9 @@
     padding: 4px;
     font-size: 14px;
     text-align: center;
-    align-self: center;
-    margin: 3px 10px 3px 10px;
+align-self: center;    margin: 3px 10px 3px 10px;
     border-radius: 5px;
+    width: unset;
 }
 
 /*Restyling*/
@@ -273,7 +280,8 @@
 .RougeU .ReviewLinks a,
 .FolieU .ReviewLinks a,
 .FleurU .ReviewLinks a,
-.PousseU .ReviewLinks a {
+.PousseU .ReviewLinks a,
+.HorsCollecU .ReviewLinks a  {
     color: var(--whiteish) !important;
 }
 
@@ -284,19 +292,8 @@
 .FleurU .bookRight,
 .PousseU .bookRight {
     background-color: var(--whiteishTrans3);
+
 }
-
-.UrbanaU {
-} /*Restyling*/
-.RougeU {
-} /*Restyling*/
-.FolieU {
-} /*Restyling*/
-.FleurU {
-} /*Restyling*/
-.PousseU {
-} /*Restyling*/
-
 .authorList {
     display: flex;
     flex-wrap: wrap;

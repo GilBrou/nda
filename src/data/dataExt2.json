@@ -6,7 +6,7 @@
       "univers": "Mémoria",
       "lien": "isulka-tome-1",
       "format": "Roman",
-      "sousTitre": "PRIX Imaginaire Découverte 2017 : Les Petits Mots des Libraires.",
+      "sousTitre": "Prix Imaginaire Découverte",
       "par": ["Morgane Stankiewiez"],
       "genres": ["Aventure", "Fantasy"],
       "résumé": "Isulka est une mageresse marginale, un peu vénale, mais surtout très endettée, vivotant en donnant des spectacles de magie dans des cabarets parisiens. Scipione est un spadassin vénitien comme on n'en fait plus, un reliquat du passé exilé de la Sérénissime, trahi par ses pairs et en quête de Vendetta.",
@@ -21,7 +21,6 @@
       "buyPaper": "https://www.noirdabsinthe.com/product-page/isulka-la-mageresse-tome-1-la-pierre-d-isis",
       "buyEbook": "https://www.amazon.fr/Isulka-Mageresse-1-Pierre-dIsis-ebook/dp/B07BXG7DMG/ref=as_li_ss_tl?ie=UTF8&linkCode=sl1&tag=neocity-21&linkId=ae89cc1ddfecd0cac3a171c09346b1d5"
     },
-
     {
       "titre": "Isulka la Mageresse",
       "titre2": ": La Vieille Alliance",
@@ -38,7 +37,7 @@
         "https://bertieandellie.weebly.com/bertie--books/isulka-la-mageresse-la-vieille-alliance",
         "https://www.babelio.com/livres/Stankiewiez-Isulka-la-Mageresse-tome-2--La-Vieille-Alliance/1044712",
         "https://booknode.com/isulka_la_mageresse_tome_2_la_vieille_alliance_02575425",
-        ""
+        "https://www.goodreads.com/book/show/40510444-la-vieille-alliance?ac=1&from_search=true&qid=1oMSBAxOIT&rank=2"
       ],
       "buyPaper": "https://www.noirdabsinthe.com/product-page/isulka-la-mageresse-tome-2-la-vieille-alliance",
       "buyEbook": "https://www.amazon.fr/Isulka-Mageresse-2-Vieille-Alliance-ebook/dp/B07CDQVNFB/ref=as_li_ss_tl?ie=UTF8&linkCode=sl1&tag=neocity-21&linkId=9b9418e30558bf231c8cb6d6343936b2"
@@ -49,14 +48,20 @@
       "univers": "Terra Urbana",
       "lien": "immortel-ad-vitam",
       "format": "Roman",
-      "sousTitre": "",
+      "sousTitre": "Prix des Auteurs Inconnus",
       "par": ["Cécile Pommereau"],
       "genres": ["Fantastique", "Polar"],
       "résumé": " Fred a un physique banal et les poches trouées. Il n'arrive pas à garder une fille plus de trois semaines et sort de prison. Pour couronner le tout, c'est le jour où il essaie de se foutre en l'air qu'il apprend qu'il est immortel. Fred n'a pas de chance.",
       "résumé2": "Jean, lui, est flic. Il pensait avoir tout vu après trente ans passés à la Crim'. Mais voilà qu'un beau jour, un de ses cadavres se paye le luxe de se tirer de la scène de crime. Pour lui c'en est trop et il est bien décidé à le retrouver. Il ne manquerait plus qu'il parte en retraite avec une affaire non élucidée...",
-      "reviews": ["", "", "", "", ""],
+      "reviews": [
+        "https://www.babelio.com/livres/Pommereau-Immortel-Ad-Vitam/1043245",
+        "https://booknode.com/immortel_ad_vitam_02623915",
+        "https://www.goodreads.com/fr/book/show/39900365-immortel-ad-vitam",
+        "https://www.amazon.fr/Immortel-Ad-Vitam-C%C3%A9cile-Pommereau/dp/2490417126#customerReviews",
+        ""
+      ],
       "buyPaper": "https://www.noirdabsinthe.com/product-page/immortel-ad-vitam",
-      "buyEbook": ""
+      "buyEbook": "https://www.amazon.fr/Immortel-Ad-Vitam-C%C3%A9cile-Pommereau-ebook/dp/B07GZ4K9DB/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr="
     },
     {
       "titre": "Éternelle Odyssée",
@@ -70,9 +75,184 @@
 
       "résumé": "Harms Moyser est un soldat Lycaon engagé sur le Prétorien, vaisseau spatial amiral de la flotte humaine. Au cours d’une bataille contre les Enkidous, l’ennemi héréditaire de l’humanité, le vaisseau est happé par une tempête stellaire et doit se poser en catastrophe sur une planète inconnue. L’équipage y découvre des hommes, au stade de civilisation antique, qui les prennent pour des dieux. Et si ces derniers n’avaient pas tort ?",
       "résumé2": "Un texte unique, au carrefour entre Planet Opera et Tragédie grecque, véritable relecture des mythes antiques où dieux et hommes sont les jouets d’un Destin implacable.",
-      "reviews": ["", "", "", "", ""],
+      "reviews": [
+        "https://www.babelio.com/livres/Lune-ternelle-Odyssee/1118683",
+        "https://booknode.com/eternelle_odyssee_02834653",
+        "https://www.goodreads.com/book/show/43907757-ternelle-odyss-e?ac=1&from_search=true&qid=ZbwSKLGfCW&rank=1",
+        "https://www.amazon.fr/%C3%89ternelle-Odyss%C3%A9e-F-Lune-ebook/dp/B07N1Q6ND7/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=QA2VOUM6YT2Z&keywords=eternelle+odyssee+lune&qid=1666086797&sprefix=eternelle+odysee+lun%2Caps%2C109&sr=8-1#customerReviews",
+        ""
+      ],
       "buyPaper": "https://www.noirdabsinthe.com/product-page/eternelle-odyssee",
       "buyEbook": "https://www.amazon.fr/%C3%89ternelle-Odyss%C3%A9e-F-Lune-ebook/dp/B07N1Q6ND7/ref=as_li_ss_tl?_encoding=UTF8&qid=1548883292&sr=8-1&linkCode=sl1&tag=neocity-21&linkId=3bd1d94653c4d051594a5bbc3eff48c3&language=fr_FR"
+    },
+    {
+      "titre": "Vert-de-Lierre",
+      "titre2": "",
+      "univers": "Onyria",
+      "lien": "Vert-de-Lierre",
+      "format": "Roman",
+      "sousTitre": "",
+      "par": ["Louise Le Bars"],
+      "genres": ["Gothique"],
+
+      "résumé": "Olivier Moreau, écrivain délaissé par la Muse, retourne dans le village de sa Grand-Mère, récemment décédée, pour mettre de l’ordre dans ses affaires comme dans son esprit. Il y renoue avec les souvenirs de son enfance, et redécouvre un étrange personnage de conte populaire local surnommé le Vert-de-Lierre, cet antique vampire végétal qui le fascinait enfant. Cet intérêt va déclencher des visions et cauchemars chez l'écrivain en mal d'imaginaire ainsi que la rencontre de deux femmes tout aussi intrigantes l'une que l'autre.",
+      "résumé2": "À quel prix Olivier retrouvera-t-il sa muse ?",
+      "reviews": [
+        "https://www.babelio.com/livres/Le-Bars-Vert-de-Lierre/1059787",
+        "https://booknode.com/vert_de_lierre_02661765",
+        "https://www.goodreads.com/book/show/45713606-vert-de-lierre?ac=1&from_search=true&qid=9v7464NBA0&rank=1",
+        "https://www.amazon.fr/Vert-Lierre-Louise-Bars-ebook/dp/B07NV19LDJ/ref=as_li_ss_tl?_encoding=UTF8&qid=1553420916&sr=8-1&linkCode=sl1&tag=neocity-21&linkId=2ac4991068ec87ff72428f9fb3ab590f&language=fr_FR#customerReviews",
+        ""
+      ],
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/vert-de-lierre",
+      "buyEbook": "https://www.amazon.fr/Vert-Lierre-Louise-Bars-ebook/dp/B07NV19LDJ/ref=as_li_ss_tl?_encoding=UTF8&qid=1553420916&sr=8-1&linkCode=sl1&tag=neocity-21&linkId=2ac4991068ec87ff72428f9fb3ab590f&language=fr_FR"
+    },
+    {
+      "titre": "L'Espion de la Reine",
+      "titre2": "",
+      "univers": "Rouge d'Absinthe",
+      "lien": "l-espion-de-la-reine",
+      "format": "Roman",
+      "sousTitre": "",
+      "par": ["Morgane Stankiewiez"],
+      "genres": ["Historique", "Érotique"],
+
+      "résumé": "Versailles, 1776. Lucien est Garde-du-corps du Roi, prestigieux office qu’il doit à la bienveillance de la royale épouse. Lorsque cette dernière lui demande d’intriguer contre la duchesse d’Aiguillon, il n’a guère d’autre choix que d’accepter. La mission prend rapidement de l’envergure lorsque des espions anglais s’immiscent dans la manœuvre…",
+
+      "résumé2": "Un roman érotique où intrigues de Cour, espionnage, jeux de séduction et duels au sabre se succèdent dans une danse impitoyable.",
+      "reviews": [
+        "https://www.babelio.com/livres/Stankiewiez-Lespion-de-la-reine/1389245",
+        "https://booknode.com/lespion_de_la_reine_02650693",
+        "https://bertieandellie.weebly.com/bertie--books/lespion-de-la-reine",
+        "https://www.amazon.fr/LEspion-Reine-Dorian-Lake-ebook/dp/B07F2LZ656/ref=as_li_ss_tl?s=amazon-devices&ie=UTF8&qid=1531239989&sr=8-6&keywords=dorian+lake&linkCode=sl1&tag=neocity-21&linkId=9ad0da4ad948352c63c345de25dbce4c#customerReviews",
+        ""
+      ],
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/l-espion-de-la-reine",
+      "buyEbook": "https://www.amazon.fr/LEspion-Reine-Dorian-Lake-ebook/dp/B07F2LZ656/ref=as_li_ss_tl?s=amazon-devices&ie=UTF8&qid=1531239989&sr=8-6&keywords=dorian+lake&linkCode=sl1&tag=neocity-21&linkId=9ad0da4ad948352c63c345de25dbce4c"
+    },
+    {
+      "titre": "Sorcière de Chair",
+      "titre2": "",
+      "univers": "L'Antre de la Folie",
+      "lien": "sorciere-de-chair",
+      "format": "Roman",
+      "sousTitre": "Finaliste Prix Masterton",
+      "par": ["Sarah Buschmann"],
+      "genres": ["Contemporain", "Fantasy", "Thriller", "Sombre"],
+      "résumé": "Australie, 2016. Sept ans après un massacre qui a décimé toute une famille, de nouveaux meurtres surviennent à Melbourne. Des homicides si sordides que la Sorcellerie de Chair, taboue depuis les grandes chasses qui ont déchiré le pays, est évoquée. Pour Arabella Malvo, lieutenant de la brigade criminelle, ils s’avèrent particulièrement déstabilisants. Pourquoi les victimes lui ressemblent-elles comme des sœurs ? Le meurtrier la connaît-elle ? Pourquoi maintenant ?",
+      "résumé2": "Une chose est sûre : l'abîme qu’elle fuit depuis toutes ces années risque de s’ouvrir à nouveau sous ses pieds. Et cette fois, de l’engloutir pour de bon…",
+      "reviews": [
+        "https://www.babelio.com/livres/Buschmann-Sorciere-de-chair/1075576",
+        "https://booknode.com/sorciere_de_chair_02714563",
+        "https://www.goodreads.com/book/show/42610497-sorci-re-de-chair?from_search=true&from_srp=true&qid=fdgroBIfRl&rank=1",
+        "https://www.amazon.fr/Sorci%C3%A8re-Chair-Sarah-Buschmann/dp/249041710X/ref=sr_1_1?crid=2CGGGLHFFJM9D&keywords=sorci%C3%A8re+de+chair&qid=1666088618&qu=eyJxc2MiOiIwLjkyIiwicXNhIjoiMC41MCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=Sorci%C3%A8re+de+Chair%2Caps%2C247&sr=8-1#customerReviews",
+        ""
+      ],
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/sorci%C3%A8re-de-chair",
+      "buyEbook": "https://www.amazon.fr/Sorci%C3%A8re-Chair-Sarah-Buschmann-ebook/dp/B07HCJKHJW/ref=sr_1_2?crid=2CGGGLHFFJM9D&keywords=sorci%C3%A8re+de+chair&qid=1666088618&qu=eyJxc2MiOiIwLjkyIiwicXNhIjoiMC41MCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=Sorci%C3%A8re+de+Chair%2Caps%2C247&sr=8-2"
+    },
+    {
+      "titre": "Sextape",
+      "titre2": "",
+      "univers": "Fleur d'Absinthe",
+      "lien": "sextape",
+      "format": "Roman",
+      "sousTitre": "",
+      "par": ["Morgane Stankiewiez"],
+      "genres": ["Contemporain", "Romance", "LGBT"],
+      "résumé": "La vie d’Alice est bouleversée lorsqu’une Sextape vieille de dix-huit ans fait surface, la mettant en scène avec Styx Winter, aujourd’hui star du rock planétaire.",
+      "résumé2": " Heureusement pour elle, Eva, une attachée de communication new-yorkaise, va l’aider à transformer ce désastre en opportunité…",
+      "reviews": [
+        "https://www.babelio.com/livres/Stankiewiez-Sextape/1153871",
+        "https://booknode.com/sextape_02990913",
+        "https://www.amazon.fr/Sextape-Version-LGBT-Dorian-Lake-ebook/dp/B07TJBJ5YB/ref=as_li_ss_tl?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=sextape+lgbt&qid=1561720802&s=gateway&sr=8-1&linkCode=sl1&tag=neocity-21&linkId=4c9c99fb299d545fc388ff2b56dbe079&language=fr_FR#customerReviews",
+        "",
+        ""
+      ],
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/sextape",
+      "buyEbook": "https://www.amazon.fr/Sextape-Version-LGBT-Dorian-Lake-ebook/dp/B07TJBJ5YB/ref=as_li_ss_tl?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=sextape+lgbt&qid=1561720802&s=gateway&sr=8-1&linkCode=sl1&tag=neocity-21&linkId=4c9c99fb299d545fc388ff2b56dbe079&language=fr_FR"
+    },
+    {
+      "titre": "Athnuachan",
+      "titre2": ": L'Académie",
+      "univers": "Chrysalis",
+      "lien": "athnuachan",
+      "format": "Roman",
+      "sousTitre": "",
+      "par": ["Cyrielle Bandura"],
+      "genres": ["Fantasy", "Post-Apo", "Féministe"],
+      "résumé": "Presque mille ans ans après l’éveil des Dragons et la fin du monde des hommes, Sélène est choisie pour devenir une Guerrière, une protectrice de Mór-roinn, dernier rempart face aux horreurs qui menacent l’humanité",
+      "résumé2": "Pourquoi l’a-t-on choisie, elle qui rêvait d’une vie libre et sans contraintes ? Quel terrible secret lui cache-t-on depuis sa naissance ? Et surtout, quel but poursuivent vraiment ces créatures honnies, aussi majestueuses que dangereuses ? Les réponses risquent bien d’ébranler sa conception du monde…",
+      "reviews": [
+        "https://www.babelio.com/livres/Bandura-Athnuachan--LAcademie/986566",
+        "https://booknode.com/athnuachan_tome_1_lacademie_02371064",
+        "https://www.goodreads.com/book/show/36220627-l-academie?from_search=true&from_srp=true&qid=1ajZGsuEOn&rank=1",
+        "https://www.amazon.fr/Athnuachan-LAcad%C3%A9mie-Jeune-Adulte-F%C3%A9ministe-ebook/dp/B07KSPQ73W/ref=sr_1_2?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3PLC5O6KSF312&keywords=Athnuachan+%3A+L%27Acad%C3%A9mie&qid=1666089281&sprefix=athnuachan+l%27acad%C3%A9mie%2Caps%2C230&sr=8-2#customerReviews",
+        ""
+      ],
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/athnuachan-l-acad%C3%A9mie",
+      "buyEbook": "https://www.amazon.fr/Athnuachan-LAcad%C3%A9mie-Jeune-Adulte-F%C3%A9ministe-ebook/dp/B07KSPQ73W/ref=sr_1_2?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3PLC5O6KSF312&keywords=Athnuachan+%3A+L%27Acad%C3%A9mie&qid=1666089281&sprefix=athnuachan+l%27acad%C3%A9mie%2Caps%2C230&sr=8-2"
+    },
+    {
+      "titre": "Le Prince Sans Sourire",
+      "titre2": "",
+      "univers": "Pousse d'Absinthe",
+      "lien": "le-prince-sans-sourire",
+      "format": "Roman",
+      "sousTitre": "",
+      "par": ["Louise Le Bars", "Laurent Cazuguel"],
+      "genres": ["Jeunesse", ""],
+      "résumé": "Au pays de Mont-Breloc, la vie est difficile pour ses habitants. Le royaume est gouverné par une famille bien trop riche. Jusqu'au jour où Barbatine la sorcière va tout changer…",
+      "résumé2": "Livre destiné aux enfants et grands enfants, à partir de 6 ans",
+      "reviews": [
+        "https://www.babelio.com/livres/Le-Bars-Le-Prince-Sans-Sourire/1215048",
+        "https://booknode.com/le_prince_sans_sourire_03189145",
+        "https://www.goodreads.com/book/show/52405613-le-prince-sans-sourire?from_search=true&from_srp=true&qid=hGAsshLupq&rank=1",
+        "https://www.amazon.fr/Prince-Sans-Sourire-Louise-Bars/dp/2490417452/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1K4PI6ZELSAFS&keywords=Le+Prince+Sans+Sourire&qid=1666091895&sprefix=le+prince+sans+sourire%2Caps%2C291&sr=8-1#customerReviews",
+        ""
+      ],
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/le-prince-sans-sourire",
+      "buyEbook": ""
+    },
+    {
+      "titre": "Comment Bien Raconter des Histoires ?",
+      "titre2": "",
+      "univers": "Hors Collection",
+      "lien": "comment-bien-raconter-des-histoires",
+      "format": "Guide d'écriture",
+      "sousTitre": "",
+      "par": [
+        "Morgane Stankiewiez",
+        ", avec la participation de",
+        "Cécile Pommereau et Sara Pintado"
+      ],
+      "genres": ["", ""],
+      "résumé": "En France, on considère l’écrivain comme un génie au talent inné. Aux États-Unis, au contraire, on perçoit l’écriture comme un artisanat qui demande simplement de la méthode et du travail. Dans ce guide d’écriture, je partagerai mon approche, quelque part entre ces deux extrêmes. Nous discuterons du cœur des histoires, de leur âme et de la manière de créer des personnages, des intrigues qui vous correspondent et captivent les lecteurs.",
+      "résumé2": "Nous parlerons aussi de la structure du récit et d’aspects plus techniques, utiles pour bien comprendre les possibilités qu’offre cet Art. La simplicité et l’honnêteté se trouveront au cœur de votre démarche tout au long de votre périple. C’est ce qui vous permettra de terminer un premier roman et, ce faisant, de devenir écrivain.",
+      "reviews": [
+        "https://www.babelio.com/livres/Stankiewiez-Comment-bien-raconter-des-histoires-/1176066",
+        "https://booknode.com/comment_bien_raconter_des_histoires_03033603",
+        "https://www.goodreads.com/book/show/52208367-comment-bien-raconter-des-histoires?from_search=true&from_srp=true&qid=YOh6ecDrgj&rank=1",
+        "https://www.amazon.fr/Comment-bien-raconter-histoires-d%C3%A9criture-ebook/dp/B07Y3Z19DZ/ref=as_li_ss_tl?_encoding=UTF8&qid=1569145362&sr=1-11&linkCode=sl1&tag=neocity-21&linkId=80f1899a8b5a04f6d3992f2aeab3e681&language=fr_FR#customerReviews",
+        ""
+      ],
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/comment-bien-raconter-des-histoires",
+      "buyEbook": "https://www.amazon.fr/Comment-bien-raconter-histoires-d%C3%A9criture-ebook/dp/B07Y3Z19DZ/ref=as_li_ss_tl?_encoding=UTF8&qid=1569145362&sr=1-11&linkCode=sl1&tag=neocity-21&linkId=80f1899a8b5a04f6d3992f2aeab3e681&language=fr_FR"
     }
-  ]
+  ],
+  "template": {
+    "titre": "",
+    "titre2": "",
+    "univers": "",
+    "lien": "",
+    "format": "Roman",
+    "sousTitre": "",
+    "par": [""],
+    "genres": ["", ""],
+    "résumé": "",
+    "résumé2": "",
+    "reviews": ["", "", "", "", ""],
+    "buyPaper": "",
+    "buyEbook": ""
+  }
 }

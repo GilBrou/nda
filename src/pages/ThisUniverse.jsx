@@ -80,6 +80,53 @@ export default function ThisUniverse(data) {
     }
   }
 
+  function SetBuyLinks(props) {
+    if (props.buyPaper != 0 && props.buyEbook == 0) {
+      return (
+        <div className="buyLinks">
+          <a href={props.buyPaper} target="_blank">
+            Version papier
+          </a>
+        </div>
+      );
+    } else if (props.buyEbook != 0 && props.buyPaper == 0) {
+      return (
+        <div className="buyLinks">
+          <a href={props.buyEbook} target="_blank">
+            E-book
+          </a>
+        </div>
+      );
+    } else if (props.buyEbook != 0 && props.buyPaper != 0) {
+      return (
+        <div className="buyLinks">
+          <a href={props.buyPaper} target="_blank">
+            Version papier
+          </a>
+          <a href={props.buyEbook} target="_blank">
+            E-book
+          </a>
+        </div>
+      );
+    }
+  }
+
+  function SetPrize(props, i) {
+    if (props.sousTitre != 0) {
+      return <h2 className="sousTitre">{props.sousTitre}</h2>;
+    }
+  }
+
+  function SetTags(props, i) {
+    if (props != 0) {
+      return (
+        <p className="tag" key={"tag" + i}>
+          {props}
+        </p>
+      );
+    }
+  }
+
   function SortBooks(thatBook, i) {
     /*console.log(thatBook.univers)*/
     let target0 = window.location.pathname;
@@ -108,22 +155,14 @@ export default function ThisUniverse(data) {
               {thatBook.reviews.map((R, i) => SetReviews(R, i))}
             </div>
 
-            <div className="buyLinks">
-              <a href={thatBook.buyPaper} target="_blank">
-                Version papier
-              </a>
-
-              <a href={thatBook.buyEbook} target="_blank">
-                E-book
-              </a>
-            </div>
+            {SetBuyLinks(thatBook)}
           </div>
 
           <div className="bookRight">
             <h2>
               {thatBook.titre} {thatBook.titre2}
             </h2>
-            <h2 className="sousTitre">{thatBook.sousTitre}</h2>
+            {SetPrize(thatBook)}
             <div className="authorList">
               {thatBook.par.map((par, i) => (
                 <h3 className="bAuthor" key={"author" + i}>
@@ -134,11 +173,7 @@ export default function ThisUniverse(data) {
 
             <div className="subTitle">
               <p>{thatBook.format}</p>
-              {thatBook.genres.map((tag, i) => (
-                <p className="tag" key={"tag" + i}>
-                  {tag}
-                </p>
-              ))}
+              {thatBook.genres.map((tag, i) => SetTags(tag, i))}
             </div>
             <p key={"resum1" + thatBook.titre}>{thatBook.résumé}</p>
             <p key={"resum2" + thatBook.titre}>{thatBook.résumé2}</p>
