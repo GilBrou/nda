@@ -65,11 +65,7 @@ export default function ThisUniverse(data) {
   function SetReviews(props, i) {
     if (props != 0) {
       return (
-        <a href={props} target="_blank"
-        key={"aKey" + i}
-
-
-        >
+        <a href={props} target="_blank" key={"aKey" + i}>
           <i className="fa fa-book" aria-hidden="true"></i>
         </a>
       );
@@ -95,7 +91,7 @@ export default function ThisUniverse(data) {
                   src={"/img/Livres/" + thatBook.lien + ".webp"}
                 />
 
-                <div className="ReviewLinks;">
+                <div className="ReviewLinks">
                   <p>Avis :</p>
                   {thatBook.reviews.map((R, i) => SetReviews(R, i))}
                 </div>

@@ -135,13 +135,19 @@
 }
 
 .ReviewLinks {
+    margin-top: 20px;
     flex-wrap: nowrap;
 }
+.ReviewLinks p {
+    font-size: 18px !important;
+    font-weight: bold !important;
+}
 
-.ReviewLinks *{
+.ReviewLinks * {
     color: var(--blackish);
 }
-.buyLinks a, .ReviewLinks a {
+.buyLinks a,
+.ReviewLinks a {
     text-decoration: none;
     color: var(--whiteish);
     background-color: var(--blackish);
@@ -153,10 +159,11 @@
     border-radius: 5px;
 }
 
-.ReviewLinks a {
+.ReviewLinks a,
+.ReviewLinks p {
     background-color: unset;
     padding: 00px;
-    font-size: 30px;
+    font-size: 36px;
     margin: 0px;
 }
 
