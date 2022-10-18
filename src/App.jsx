@@ -14,7 +14,6 @@ import Homepage from "./pages/Homepage";
 import Createurs from "./pages/Createurs";
 import Univers from "./pages/Univers";
 import ThisUniverse from "./pages/ThisUniverse";
-import ThisBook from "./pages/ThisBook";
 import Error404 from "./pages/Error404";
 
 /***DATAS***/
@@ -105,11 +104,6 @@ export default function App() {
           >
             <ThisUniverse data1={Data1} data2={Data2} data3={Data3} />
           </Route>
-          {/*
-          <Route exact path="/livre/:id">
-            <ThisBook data1={Data1} data2={Data2} />
-          </Route>
-          */}
           <Route>
             <Redirect to="/accueil" />
           </Route>

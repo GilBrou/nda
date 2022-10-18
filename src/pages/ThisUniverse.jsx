@@ -78,6 +78,72 @@ export default function ThisUniverse(data) {
     }
   }
 
+  function SortBooks(thatBook, i) {
+    /*console.log(thatBook.univers)*/
+    let targetB = window.location.pathname;
+    /*console.log(targetB);*/
+    let targetBa = thatBook.univers.toLowerCase();
+    /*      console.log(targetBa)*/
+    let targetBb = "/" + targetBa;
+    /*console.log(targetBb)*/
+    let targetBc = targetBb.replace(new RegExp(/[èéêë]/g), "e");
+    /*console.log(targetBc);*/
+
+    if (targetBc === targetB) {
+      return (
+        <div
+          key={`${thatBook.titre}-${i}`}
+          className="col-sm-12 col-md-12 col-lg-12 book"
+        >
+          <div className="bookLeft">
+            <img
+              className="img-responsive creatora"
+              src={"/img/Livres/" + thatBook.lien + ".webp"}
+            />
+
+            <div className="ReviewLinks">
+              {thatBook.reviews.map((R, i) => SetReviews(R, i))}
+            </div>
+
+            <div className="buyLinks">
+              <a href={thatBook.buyPaper} target="_blank">
+                Version papier
+              </a>
+
+              <a href={thatBook.buyEbook} target="_blank">
+                E-book
+              </a>
+            </div>
+          </div>
+
+          <div className="bookRight">
+            <h2>
+              {thatBook.titre} {thatBook.titre2}
+            </h2>
+            <div className="authorList">
+              {thatBook.par.map((par, i) => (
+                <h3 className="bAuthor" key={"author" + i}>
+                  {par}
+                </h3>
+              ))}
+            </div>
+
+            <div className="subTitle">
+              <p>{thatBook.format}</p>
+              {thatBook.genres.map((tag, i) => (
+                <p className="tag" key={"tag" + i}>
+                  {tag}
+                </p>
+              ))}
+            </div>
+            <p key={"resum1" + thatBook.titre}>{thatBook.résumé}</p>
+            <p key={"resum2" + thatBook.titre}>{thatBook.résumé2}</p>
+          </div>
+        </div>
+      );
+    }
+  }
+
   SetUniverse();
 
   return (
@@ -86,50 +152,7 @@ export default function ThisUniverse(data) {
         {checkName(data.data2.univers)}
         <div className="row text-center justify-content-center">
           {/*Dynamic creation from Json data*/}
-          {data.data3.Livres.map((thatBook, i) => (
-            <div
-              key={`${thatBook.titre}-${i}`}
-              className="col-sm-12 col-md-12 col-lg-12 book"
-            >
-              <div className="bookLeft">
-                <img
-                  className="img-responsive creatora"
-                  src={"/img/Livres/" + thatBook.lien + ".webp"}
-                />
-
-                <div className="ReviewLinks">
-                  {thatBook.reviews.map((R, i) => SetReviews(R, i))}
-                </div>
-
-                <div className="buyLinks">
-                  <a href={thatBook.buyPaper} target="_blank">
-                    Version papier
-                  </a>
-
-                  <a href={thatBook.buyEbook} target="_blank">
-                    E-book
-                  </a>
-                </div>
-              </div>
-
-              <div className="bookRight">
-                <h2>
-                  {thatBook.titre} {thatBook.titre2}
-                </h2>
-                <h3 className="bAuthor">{thatBook.par + " "}</h3>
-                <div className="subTitle">
-                  <p>{thatBook.format}</p>
-                  {thatBook.genres.map((tag, i) => (
-                    <p className="tag" key={"tag" + i}>
-                      {tag}
-                    </p>
-                  ))}
-                </div>
-                <p key={"resum1" + thatBook.titre}>{thatBook.résumé}</p>
-                <p key={"resum2" + thatBook.titre}>{thatBook.résumé2}</p>
-              </div>
-            </div>
-          ))}
+          {data.data3.Livres.map((thatBook, i) => SortBooks(thatBook, i))}
         </div>{" "}
       </div>
       <ReactTooltip
