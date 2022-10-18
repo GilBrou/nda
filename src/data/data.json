@@ -40,12 +40,9 @@
   },
 
   "PAGES A FAIRE": {
-    "CREATEURS": "mettr auteurs antho ? & faire crédits photos",
-    "404": "blacken header"
-  },
-  "SOUS-PAGES A FAIRE": {
-    "UNIVERS DEDIE TEMPLATE": "MEMORIA FUTURIA ETC",
-    "LIVRES DEDIE TEMPLATE": "UN PAR UN"
+    "CREATEURS": "mettr auteurs antho ? & crédits photos",
+    "UNIVERS": "CUSTOM BACKGROUND ANIM ACCORDING TO UNIVERSE"
+
   },
   "FONCTIONNALITES A VOIR": {
     "PROBLEMS": "SCROLL",

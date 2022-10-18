@@ -39,6 +39,8 @@ export default function ThisUniverse(data) {
         thisUniverse.classList.add("ChrysalisU");
       } else if (window.location.pathname.indexOf("pousse") != -1) {
         thisUniverse.classList.add("PousseU");
+      } else if (window.location.pathname.indexOf("hors") != -1) {
+        thisUniverse.classList.add("HorsCollecU");
       }
     }
   }
@@ -80,15 +82,16 @@ export default function ThisUniverse(data) {
 
   function SortBooks(thatBook, i) {
     /*console.log(thatBook.univers)*/
-    let targetB = window.location.pathname;
+    let target0 = window.location.pathname;
+    let targetB = target0.replace(new RegExp(/[-]/g), " ");
     /*console.log(targetB);*/
     let targetBa = thatBook.univers.toLowerCase();
-    /*      console.log(targetBa)*/
+    /*console.log(targetBa)*/
     let targetBb = "/" + targetBa;
     /*console.log(targetBb)*/
-    let targetBc = targetBb.replace(new RegExp(/[èéêë]/g), "e");
+    let targetBb2 = targetBb.replace(new RegExp(/[']/g), " ");
+    let targetBc = targetBb2.replace(new RegExp(/[èéêë]/g), "e");
     /*console.log(targetBc);*/
-
     if (targetBc === targetB) {
       return (
         <div
@@ -120,6 +123,7 @@ export default function ThisUniverse(data) {
             <h2>
               {thatBook.titre} {thatBook.titre2}
             </h2>
+            <h2 className="sousTitre">{thatBook.sousTitre}</h2>
             <div className="authorList">
               {thatBook.par.map((par, i) => (
                 <h3 className="bAuthor" key={"author" + i}>

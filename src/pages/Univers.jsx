@@ -45,7 +45,8 @@ export default function Univers(data) {
                       univers.name == "Mémoria" ||
                       univers.name == "Onyria" ||
                       univers.name == "Chrysalis" ||
-                      univers.name == "Pousse d'Absinthe"
+                      univers.name == "Pousse d'Absinthe" ||
+                      univers.name == "Hors Collection"
                     ) {
                       /*Firefly Anim*/
                       return MainAnim();

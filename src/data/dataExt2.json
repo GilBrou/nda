@@ -9,8 +9,6 @@
       "sousTitre": "PRIX Imaginaire Découverte 2017 : Les Petits Mots des Libraires.",
       "par": ["Morgane Stankiewiez"],
       "genres": ["Aventure", "Fantasy"],
-      "video": "https://www.youtube.com/embed/4_fzynYMmBo",
-      "video2": "https://www.youtube.com/embed/4_fzynYMmBo",
       "résumé": "Isulka est une mageresse marginale, un peu vénale, mais surtout très endettée, vivotant en donnant des spectacles de magie dans des cabarets parisiens. Scipione est un spadassin vénitien comme on n'en fait plus, un reliquat du passé exilé de la Sérénissime, trahi par ses pairs et en quête de Vendetta.",
       "résumé2": "Recrutés par un employeur anglais pour subtiliser une bague de rubis, la mission se révèle sous un tout autre jour lorsqu'ils découvrent la valeur du joyau. L'appât du gain les mènera de Paris au Caire, de coups bas en coupe-gorges, dans une course-poursuite avec des espions, des criminels et une inquiétante secte égyptienne...",
       "reviews": [
@@ -33,8 +31,6 @@
       "sousTitre": "",
       "par": ["Morgane Stankiewiez"],
       "genres": ["Aventure", "Fantasy"],
-      "video": "https://www.youtube.com/embed/KeIlRnvE7gM",
-      "video2": "",
       "résumé": "Au nom de la Vieille Alliance, qui unit la France et l'Écosse depuis l'époque de William Wallace et Robert the Bruce, Isulka, mageresse de cabaret, et Scipione, spadassin vénitien, sont appelés au cœur des Highlands pour lutter contre une ancienne malédiction…",
       "résumé2": "Quelque part entre victorian fantasy, cape et épée et mythes pictes, laissez-vous entraîner dans la suite des aventures d’Isulka et de Scipione.",
       "reviews": [
@@ -47,41 +43,36 @@
       "buyPaper": "https://www.noirdabsinthe.com/product-page/isulka-la-mageresse-tome-2-la-vieille-alliance",
       "buyEbook": "https://www.amazon.fr/Isulka-Mageresse-2-Vieille-Alliance-ebook/dp/B07CDQVNFB/ref=as_li_ss_tl?ie=UTF8&linkCode=sl1&tag=neocity-21&linkId=9b9418e30558bf231c8cb6d6343936b2"
     },
-
     {
-      "titre": "Au Coeur de la Science-fiction",
+      "titre": "Immortel Ad Vitam",
+      "titre2": "",
+      "univers": "Terra Urbana",
+      "lien": "immortel-ad-vitam",
+      "format": "Roman",
+      "sousTitre": "",
+      "par": ["Cécile Pommereau"],
+      "genres": ["Fantastique", "Polar"],
+      "résumé": " Fred a un physique banal et les poches trouées. Il n'arrive pas à garder une fille plus de trois semaines et sort de prison. Pour couronner le tout, c'est le jour où il essaie de se foutre en l'air qu'il apprend qu'il est immortel. Fred n'a pas de chance.",
+      "résumé2": "Jean, lui, est flic. Il pensait avoir tout vu après trente ans passés à la Crim'. Mais voilà qu'un beau jour, un de ses cadavres se paye le luxe de se tirer de la scène de crime. Pour lui c'en est trop et il est bien décidé à le retrouver. Il ne manquerait plus qu'il parte en retraite avec une affaire non élucidée...",
+      "reviews": ["", "", "", "", ""],
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/immortel-ad-vitam",
+      "buyEbook": ""
+    },
+    {
+      "titre": "Éternelle Odyssée",
       "titre2": "",
       "univers": "Futuria",
-      "lien": "Au-Coeur-de-la-Science-fiction",
-      "format": "Essai",
-      "sousTitre": "(Re)découverte d'un genre",
-      "par": [
-        "Gillian Brousse",
-        "avec la participation de :",
-        "Rachel Gali,",
-        "Wilfried Renaut,",
-        "Magali Lefebvre,",
-        "A.F Lune,",
-        "Amélia Chatterton,",
-        "Morgane Sankiewiez",
-        "et Laurent Cazuguel"
-      ],
-      "genres": [
-        "Science-fiction",
-        "Littérature",
-        "Cinéma",
-        "BD/Comic/Manga",
-        "Arts",
-        "Musique",
-        "Interviews"
-      ],
-      "video": "https://www.youtube.com/embed/4_fzynYMmBo",
-      "video2": "https://www.youtube.com/embed/videoseries?list=PLrV7JOeIe4uabwA8wMNl_lWBSgAFFTHtv",
-      "résumé": "Avec cet ouvrage, nous entendons vous faire (re) découvrir ce vaste genre aux multiples facettes capable comme nul autre de s’interroger sur notre monde. Nous allons parcourir le temps à la recherche du moment où tout a commencé, rencontrer les précurseurs et les personnalités du genre, nous faufiler au cœur de récits majeurs et explorer ses thèmes de prédilection.",
-      "résumé2": "Qui que vous soyez, peu importe où et quand vous existez, vous découvrirez des œuvres qui résonneront en vous. Alors, respirez un grand coup et accrochez-vous à ce livre, mais n’attachez pas vos ceintures, car là où nous allons, nous n’aurons plus besoin de routes…",
+      "lien": "eternelle-odyssee",
+      "format": "Roman",
+      "sousTitre": "",
+      "par": ["A.F Lune"],
+      "genres": ["Planet Opera", "Mythologique"],
+
+      "résumé": "Harms Moyser est un soldat Lycaon engagé sur le Prétorien, vaisseau spatial amiral de la flotte humaine. Au cours d’une bataille contre les Enkidous, l’ennemi héréditaire de l’humanité, le vaisseau est happé par une tempête stellaire et doit se poser en catastrophe sur une planète inconnue. L’équipage y découvre des hommes, au stade de civilisation antique, qui les prennent pour des dieux. Et si ces derniers n’avaient pas tort ?",
+      "résumé2": "Un texte unique, au carrefour entre Planet Opera et Tragédie grecque, véritable relecture des mythes antiques où dieux et hommes sont les jouets d’un Destin implacable.",
       "reviews": ["", "", "", "", ""],
-      "buyPaper": "https://www.noirdabsinthe.com/product-page/au-coeur-de-la-science-fiction",
-      "buyEbook": "https://www.amazon.fr/gp/product/B0BDFJP4FR/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i2"
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/eternelle-odyssee",
+      "buyEbook": "https://www.amazon.fr/%C3%89ternelle-Odyss%C3%A9e-F-Lune-ebook/dp/B07N1Q6ND7/ref=as_li_ss_tl?_encoding=UTF8&qid=1548883292&sr=8-1&linkCode=sl1&tag=neocity-21&linkId=3bd1d94653c4d051594a5bbc3eff48c3&language=fr_FR"
     }
   ]
 }

@@ -132,6 +132,10 @@
 .pagination a:nth-child(9) {
   animation-delay: -2.4s;
 }
+.pagination a:nth-child(10) {
+  animation-delay: -2.7s;
+}
+
 
 .aAnim {
   width: 100%;
@@ -189,6 +193,12 @@
   background: url("./background/backgroundU9.webp");
   background-position: center;
   animation: dotAnim 13s linear infinite both -4s;
+}
+
+.pagination a:nth-child(10) div {
+  background: url("./background/backgroundU10.webp");
+  background-position: center;
+  animation: dotAnim 7s linear infinite both -2s;
 }
 
 .pagination a:not(:last-child) {

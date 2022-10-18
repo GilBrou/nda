@@ -72,6 +72,12 @@
       "accroche": "Cultivez la graine de l'Imaginaire",
       "descriptionOLDOLDOLD": "Absinthia cultive, à l'abri des regards, un jardin merveilleux où l'imaginaire est le terreau des rêves. Lorsque vient le soir, les jeunes pousses se tournent vers le ciel et écoutent ses histoires empreintes de Magie.",
       "description": "Absinthia cultive, à l'abri des regards, un jardin merveilleux où l'imaginaire se fait terreau et où les rêves se cachent dans les gouttes d'eau. Lorsque vient le soir, les jeunes pousses se tournent vers le ciel et écoutent ses histoires empreintes de Magie."
+    },
+    {
+      "name": "Hors Collection",
+      "link": "hors-collection",
+      "accroche": "Découvrir",
+      "description": ""
     }
   ],
   "createurs": {

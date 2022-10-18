@@ -100,6 +100,8 @@ export default function App() {
               "/fleur-d-absinthe",
               "/chrysalis",
               "/pousse-d-absinthe",
+              "/hors-collection"
+
             ]}
           >
             <ThisUniverse data1={Data1} data2={Data2} data3={Data3} />

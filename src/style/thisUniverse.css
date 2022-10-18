@@ -46,6 +46,10 @@
     background: url("../../public/img/Pousse d'Absinthe.webp");
 }
 
+.HorsCollecU {
+    background: url("../../public/img/Hors Collection.webp");
+}
+
 #thisUniverse .container {
     padding: 0 30px 0 30px;
 }
@@ -226,8 +230,12 @@
     padding-bottom: 4px;
     border-bottom: solid 2px var(--blackish);
 }
+.sousTitre {
+    border: unset !important;
+    font-size: 22px !important;
+}
 .book h3 {
-    font-size: 22px;
+    font-size: 24px;
     margin-left: 10px !important;
 }
 .book p {
