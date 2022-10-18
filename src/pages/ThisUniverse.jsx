@@ -162,7 +162,6 @@ export default function ThisUniverse(data) {
             <h2>
               {thatBook.titre} {thatBook.titre2}
             </h2>
-            {SetPrize(thatBook)}
             <div className="authorList">
               {thatBook.par.map((par, i) => (
                 <h3 className="bAuthor" key={"author" + i}>
@@ -170,6 +169,7 @@ export default function ThisUniverse(data) {
                 </h3>
               ))}
             </div>
+            {SetPrize(thatBook)}
 
             <div className="subTitle">
               <p>{thatBook.format}</p>

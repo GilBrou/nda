@@ -41,8 +41,9 @@
 
   "PAGES A FAIRE": {
     "CREATEURS": "mettr auteurs antho ? & crédits photos",
-    "UNIVERS": "CUSTOM BACKGROUND ANIM ACCORDING TO UNIVERSE"
+    "book": "jeu video spleen",
 
+    "UNIVERS": "CUSTOM BACKGROUND ANIM ACCORDING TO UNIVERSE"
   },
   "FONCTIONNALITES A VOIR": {
     "PROBLEMS": "SCROLL",
@@ -56,6 +57,8 @@
   },
   "MORGANE TO DO": {
     "MAJ infosite": "",
+    "Livre": "Sabot spleinir toujours vendu ?",
+
     "MAJ KIT MEDIA": "",
     "MAJ auteurs": "vérif + a venir + philippe aurèle ?"
   },

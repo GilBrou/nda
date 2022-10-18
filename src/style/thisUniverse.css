@@ -220,6 +220,7 @@
     animation: swing-in-right-fwd 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275)
         0.3s both;
     background: url("./background/background3.webp");
+    pointer-events: none;
 }
 .book h2,
 .book h3 {
@@ -269,19 +270,24 @@
     padding: 4px;
     font-size: 14px;
     text-align: center;
-align-self: center;    margin: 3px 10px 3px 10px;
+    align-self: center;
+    margin: 3px 10px 3px 10px;
     border-radius: 5px;
     width: unset;
 }
 
 /*Restyling*/
+.FolieU img{
+    box-shadow: 4px 4px 20px 2px #232323!important;
+}
+
 .OnyriaU .ReviewLinks a,
 .UrbanaU .ReviewLinks a,
 .RougeU .ReviewLinks a,
 .FolieU .ReviewLinks a,
 .FleurU .ReviewLinks a,
 .PousseU .ReviewLinks a,
-.HorsCollecU .ReviewLinks a  {
+.HorsCollecU .ReviewLinks a {
     color: var(--whiteish) !important;
 }
 
@@ -290,9 +296,9 @@ align-self: center;    margin: 3px 10px 3px 10px;
 .RougeU .bookRight,
 .FolieU .bookRight,
 .FleurU .bookRight,
-.PousseU .bookRight {
+.PousseU .bookRight,
+.HorsCollecU .bookRight {
     background-color: var(--whiteishTrans3);
-
 }
 .authorList {
     display: flex;
