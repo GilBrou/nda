@@ -45,6 +45,32 @@ export default function ThisUniverse(data) {
     }
   }
 
+  function SetBackground() {
+    if (thisUniverse != null || thisUniverse != undefined) {
+      if (window.location.pathname.indexOf("memoria") != -1) {
+        return MainAnim();
+      } else if (window.location.pathname.indexOf("futuria") != -1) {
+        return FuturiaAnim();
+      } else if (window.location.pathname.indexOf("onyria") != -1) {
+        return MainAnim();
+      } else if (window.location.pathname.indexOf("urbana") != -1) {
+        return TerraAnim();
+      } else if (window.location.pathname.indexOf("rouge") != -1) {
+        return FleurRougeAnim();
+      } else if (window.location.pathname.indexOf("folie") != -1) {
+        return FolieAnim();
+      } else if (window.location.pathname.indexOf("fleur") != -1) {
+        return FleurRougeAnim();
+      } else if (window.location.pathname.indexOf("chrysalis") != -1) {
+        return MainAnim();
+      } else if (window.location.pathname.indexOf("pousse") != -1) {
+        return MainAnim();
+      } else if (window.location.pathname.indexOf("hors") != -1) {
+        return MainAnim();
+      }
+    }
+  }
+
   function checkName(props) {
     for (let i in props) {
       let thisUL = props[i].link;
@@ -183,15 +209,23 @@ export default function ThisUniverse(data) {
     }
   }
 
+  function randomize(a, b) {
+    return Math.random() - 0.5;
+  }
+
   SetUniverse();
 
   return (
     <div id="thisUniverse" className="text-center">
+      {SetBackground()}
       <div className="container text-center">
         {checkName(data.data2.univers)}
         <div className="row text-center justify-content-center">
           {/*Dynamic creation from Json data*/}
-          {data.data3.Livres.map((thatBook, i) => SortBooks(thatBook, i))}
+
+          {data.data3.Livres.sort(randomize).map((thatBook, i) =>
+            SortBooks(thatBook, i)
+          )}
         </div>{" "}
       </div>
       <ReactTooltip

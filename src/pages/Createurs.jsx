@@ -18,6 +18,10 @@ export default function Createurs(data) {
     }
   }
 
+    function randomize(a, b) {
+    return Math.random() - 0.5;
+  }
+
   /*DOM*/
   return (
     <div id="createurs" className="text-center">
@@ -53,7 +57,7 @@ export default function Createurs(data) {
         {/*Authors's cards creation from Json data*/}
         <div className="row text-center">
           {data.data2
-            ? data.data2.teamAuth.map((team, i) => (
+            ? data.data2.teamAuth.sort(randomize).map((team, i) => (
                 <div
                   key={`${team.name}-${i}`}
                   className="col-sm-4 col-md-2 col-lg-2 creator creator2"
@@ -82,7 +86,7 @@ export default function Createurs(data) {
         {/*Illustrators's cards creation from Json data*/}
         <div className="row text-center">
           {data.data2
-            ? data.data2.teamIllus.map((team, i) => (
+            ? data.data2.teamIllus.sort(randomize).map((team, i) => (
                 <div
                   key={`${team.name}-${i}`}
                   className="col-sm-4 col-md-2 col-lg-2 creator creator2"
@@ -109,7 +113,7 @@ export default function Createurs(data) {
         <div className="row text-center">
           <div className="subRow">
             {data.data2
-              ? data.data2.teamOmbre.map((team, i) => (
+              ? data.data2.teamOmbre.sort(randomize).map((team, i) => (
                   <div
                     key={`${team.name}-${i}`}
                     className="col-sm-4 col-md-2 col-lg-2 creator"
