@@ -12,6 +12,7 @@ import {
 
 /***COMPONENT***/
 export default function ThisUniverse(data) {
+  /*console.log(data.data3.Livres[0].buy[0])*/
   /*console.log(window.location.pathname);*/
 
   /*Style page according to universe selected*/
@@ -61,6 +62,20 @@ export default function ThisUniverse(data) {
     }
   }
 
+  function SetReviews(props, i) {
+    if (props != 0) {
+      return (
+        <a href={props} target="_blank"
+        key={"aKey" + i}
+
+
+        >
+          <i className="fa fa-book" aria-hidden="true"></i>
+        </a>
+      );
+    }
+  }
+
   SetUniverse();
 
   return (
@@ -75,14 +90,25 @@ export default function ThisUniverse(data) {
               className="col-sm-12 col-md-12 col-lg-12 book"
             >
               <div className="bookLeft">
-                <Link to={"/livre/" + thatBook.lien}>
-                  <img
-                    className="img-responsive creatora"
-                    src={"/img/Livres/" + thatBook.lien + ".webp"}
-                    data-tip
-                    data-for={"UtipBuy"}
-                  />
-                </Link>
+                <img
+                  className="img-responsive creatora"
+                  src={"/img/Livres/" + thatBook.lien + ".webp"}
+                />
+
+                <div className="ReviewLinks;">
+                  <p>Avis :</p>
+                  {thatBook.reviews.map((R, i) => SetReviews(R, i))}
+                </div>
+
+                <div className="buyLinks">
+                  <a href={thatBook.buyPaper} target="_blank">
+                    Version papier
+                  </a>
+
+                  <a href={thatBook.buyEbook} target="_blank">
+                    E-book
+                  </a>
+                </div>
               </div>
 
               <div className="bookRight">
@@ -105,6 +131,13 @@ export default function ThisUniverse(data) {
           ))}
         </div>
       </div>
+      {/*
+
+          data-tip
+                    data-for={"UtipBuy"}
+
+
+      
       <ReactTooltip
         id={"UtipBuy"}
         place="bottom"
@@ -113,7 +146,6 @@ export default function ThisUniverse(data) {
         effect="solid"
         textColor="#fff"
         arrowColor="#222020"
-        /*border="true"*/
         borderColor="#2CC78E"
         effect="solid"
         backgroundColor="#222020"
@@ -121,6 +153,7 @@ export default function ThisUniverse(data) {
       >
         Acheter
       </ReactTooltip>
+      */}
     </div>
   );
 }

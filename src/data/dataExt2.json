@@ -20,14 +20,8 @@
         "https://www.livraddict.com/biblio/book.php?id=143387",
         "https://songedunenuitdete.com/2018/07/05/isulka-la-mageresse-tome-1-la-pierre-disis-de-dorian-lake/"
       ],
-      "buy": [
-        {
-          "nameE": "Papier",
-          "link": "https://www.noirdabsinthe.com/product-page/isulka-la-mageresse-tome-1-la-pierre-d-isis",
-          "nameE": "E-book",
-          "link": "https://www.amazon.fr/Isulka-Mageresse-1-Pierre-dIsis-ebook/dp/B07BXG7DMG/ref=as_li_ss_tl?ie=UTF8&linkCode=sl1&tag=neocity-21&linkId=ae89cc1ddfecd0cac3a171c09346b1d5"
-        }
-      ]
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/isulka-la-mageresse-tome-1-la-pierre-d-isis",
+      "buyEbook": "https://www.amazon.fr/Isulka-Mageresse-1-Pierre-dIsis-ebook/dp/B07BXG7DMG/ref=as_li_ss_tl?ie=UTF8&linkCode=sl1&tag=neocity-21&linkId=ae89cc1ddfecd0cac3a171c09346b1d5"
     },
 
     {
@@ -50,14 +44,8 @@
         "https://booknode.com/isulka_la_mageresse_tome_2_la_vieille_alliance_02575425",
         ""
       ],
-      "buy": [
-        {
-          "nameE": "Papier",
-          "link": "https://www.noirdabsinthe.com/product-page/isulka-la-mageresse-tome-2-la-vieille-alliance",
-          "nameE": "E-book",
-          "link": "https://www.amazon.fr/Isulka-Mageresse-2-Vieille-Alliance-ebook/dp/B07CDQVNFB/ref=as_li_ss_tl?ie=UTF8&linkCode=sl1&tag=neocity-21&linkId=9b9418e30558bf231c8cb6d6343936b2"
-        }
-      ]
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/isulka-la-mageresse-tome-2-la-vieille-alliance",
+      "buyEbook": "https://www.amazon.fr/Isulka-Mageresse-2-Vieille-Alliance-ebook/dp/B07CDQVNFB/ref=as_li_ss_tl?ie=UTF8&linkCode=sl1&tag=neocity-21&linkId=9b9418e30558bf231c8cb6d6343936b2"
     },
 
     {
@@ -69,7 +57,7 @@
       "sousTitre": "(Re)découverte d'un genre",
       "par": [
         "Gillian Brousse",
-        "Avec la participation de :",
+        "avec la participation de :",
         "Rachel Gali,",
         "Wilfried Renaut,",
         "Magali Lefebvre,",
@@ -92,14 +80,8 @@
       "résumé": "Avec cet ouvrage, nous entendons vous faire (re) découvrir ce vaste genre aux multiples facettes capable comme nul autre de s’interroger sur notre monde. Nous allons parcourir le temps à la recherche du moment où tout a commencé, rencontrer les précurseurs et les personnalités du genre, nous faufiler au cœur de récits majeurs et explorer ses thèmes de prédilection.",
       "résumé2": "Qui que vous soyez, peu importe où et quand vous existez, vous découvrirez des œuvres qui résonneront en vous. Alors, respirez un grand coup et accrochez-vous à ce livre, mais n’attachez pas vos ceintures, car là où nous allons, nous n’aurons plus besoin de routes…",
       "reviews": ["", "", "", "", ""],
-      "buy": [
-        {
-          "nameE": "Papier",
-          "link": "https://www.noirdabsinthe.com/product-page/au-coeur-de-la-science-fiction",
-          "nameE": "E-book",
-          "link": "https://www.amazon.fr/gp/product/B0BDFJP4FR/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i2"
-        }
-      ]
+      "buyPaper": "https://www.noirdabsinthe.com/product-page/au-coeur-de-la-science-fiction",
+      "buyEbook": "https://www.amazon.fr/gp/product/B0BDFJP4FR/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i2"
     }
   ]
 }

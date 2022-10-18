@@ -109,29 +109,57 @@
 .bookRight {
     display: flex;
     flex-wrap: wrap;
-
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 .bookLeft {
     width: 30%;
-  position: relative;
-
+    position: relative;
+    /*   background-color: lightblue;*/
 }
 .bookLeft img {
-    -webkit-box-reflect: below 2px
-        linear-gradient(
-            transparent,
-            transparent,
-            transparent,
-            transparent,
-            #0004
-        );
     transform-origin: center;
     transition: 0.8s;
     box-shadow: 4px 4px 10px 2px var(--blackishBack2);
 }
+
+.buyLinks,
+.ReviewLinks {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.ReviewLinks {
+    flex-wrap: nowrap;
+}
+
+.ReviewLinks *{
+    color: var(--blackish);
+}
+.buyLinks a, .ReviewLinks a {
+    text-decoration: none;
+    color: var(--whiteish);
+    background-color: var(--blackish);
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    align-self: center;
+    margin: 20px 10px 0 10px;
+    border-radius: 5px;
+}
+
+.ReviewLinks a {
+    background-color: unset;
+    padding: 00px;
+    font-size: 30px;
+    margin: 0px;
+}
+
 #thisUniverse .container .row .book:nth-child(even) img {
     box-shadow: 4px 4px 8px 1px var(--blackishBack2);
 }
