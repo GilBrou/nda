@@ -51,7 +51,6 @@
   position: absolute;
   text-shadow: -1px 2px 1px var(--blackish);
   opacity: 0.8;
-  background-color: var(--blueish);
   background-color: var(--blueish0);
   height: 100%;
   border-radius: 10px 0 0 10px;
@@ -133,7 +132,6 @@
 .creator:hover a {
   -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
   animation: heartbeat 1.5s ease-in-out infinite both;
-  background-color: var(--greenish);
   background-color: var(--blueish2);
 }
 .creator:hover a::before {
