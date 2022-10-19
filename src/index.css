@@ -1,29 +1,27 @@
 /***INDEX***/
 
 /***COMPONENTS STYLES***/
-@import "./animations.css";
-@import "./header.css";
-@import "./responsive.css";
-@import "./BackgroundParticleAnim.css";
-@import "./BackgroundParticleAnim2.css";
-@import "./intro.css";
-@import "./footer.css";
-@import "./modal.css";
-@import "./page404.css";
-@import "./form.css";
-@import "./createurs.css";
-@import "./univers.css";
-@import "./universesAnimations.css";
-@import "./thisUniverse.css";
+@import "./style/animations.css";
+@import "./style/header.css";
+@import "./style/responsive.css";
+@import "./style/BackgroundParticleAnim.css";
+@import "./style/BackgroundParticleAnim2.css";
+@import "./style/intro.css";
+@import "./style/footer.css";
+@import "./style/modal.css";
+@import "./style/page404.css";
+@import "./style/form.css";
+@import "./style/createurs.css";
+@import "./style/univers.css";
+@import "./style/universesAnimations.css";
+@import "./style/thisUniverse.css";
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900"); /**/
 
 body,
 html {
   /*General*/
-  /*font-family: "Roboto Slab", serif;*/
-  font-family: "Poppins", serif; /**/
-
+  font-family: "Poppins", serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   font-weight: 400;
@@ -34,14 +32,12 @@ html {
   color: var(--whiteish);
 
   /*Background*/
-  background: url("./background/background.webp");
+  background: url("./style/background/background.webp");
   background-color: var(--blackish);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  /*overflow: hidden;*/
-  /*overflow-x: hidden;*/
 
   /*Background animation*/
   animation: animMuse 30s ease-out infinite alternate both;
@@ -53,21 +49,16 @@ html {
   --blackishBack3: #00000066;
   --whiteish: #f9f7fd;
   --whiteishTrans: #f9f7fd66;
-  --whiteishTrans2: #f9f7fd50;
   --whiteishTrans3: #f9f7fd99;
-
-
   --greenish: #85dd91;
   --greenish2: #497e50;
-  --greenish3: #325537;
   --greenish4: #213724;
-  --blueish0: #0d9580;
-
-  --blueish: #0d9580cc;
-  --blueish2: #15a07a;
   --greenishTrans0: #b5cc9699;
   --greenishTrans: #b5cc9633;
   --greenishTrans2: #85dd9140;
+  --blueish0: #0d9580;
+  --blueish: #0d9580cc;
+  --blueish2: #15a07a;
 }
 a,
 p {
@@ -82,4 +73,3 @@ a:active {
   text-decoration: none;
   color: inherit;
 }
-

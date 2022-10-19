@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import ReactTooltip from "react-tooltip";
 
+/***COMPONENTS***/
 import {
   MainAnim,
   TerraAnim,
@@ -12,16 +13,10 @@ import {
 
 /***COMPONENT***/
 export default function ThisUniverse(data) {
-
-/*console.log(data.data3.Livres)*/
-
-  /*console.log(data.data3.Livres[0].buy[0])*/
-  /*console.log(window.location.pathname);*/
-
   /*Style page according to universe selected*/
   const thisUniverse = document.getElementById("thisUniverse");
-  /*let thisTitle = " Mémoria";*/
 
+  /***Select background image according to selected universe***/
   function SetUniverse() {
     if (thisUniverse != null || thisUniverse != undefined) {
       if (window.location.pathname.indexOf("memoria") != -1) {
@@ -48,14 +43,19 @@ export default function ThisUniverse(data) {
     }
   }
 
+  /***Select background animation according to selected universe***/
   function SetBackground() {
     if (thisUniverse != null || thisUniverse != undefined) {
-      if (window.location.pathname.indexOf("memoria") != -1) {
+      if (
+        window.location.pathname.indexOf("memoria") != -1 ||
+        window.location.pathname.indexOf("onyria") != -1 ||
+        window.location.pathname.indexOf("chrysalis") != -1 ||
+        window.location.pathname.indexOf("pousse") != -1 ||
+        window.location.pathname.indexOf("hors") != -1
+      ) {
         return MainAnim();
       } else if (window.location.pathname.indexOf("futuria") != -1) {
         return FuturiaAnim();
-      } else if (window.location.pathname.indexOf("onyria") != -1) {
-        return MainAnim();
       } else if (window.location.pathname.indexOf("urbana") != -1) {
         return TerraAnim();
       } else if (window.location.pathname.indexOf("rouge") != -1) {
@@ -64,16 +64,11 @@ export default function ThisUniverse(data) {
         return FolieAnim();
       } else if (window.location.pathname.indexOf("fleur") != -1) {
         return FleurRougeAnim();
-      } else if (window.location.pathname.indexOf("chrysalis") != -1) {
-        return MainAnim();
-      } else if (window.location.pathname.indexOf("pousse") != -1) {
-        return MainAnim();
-      } else if (window.location.pathname.indexOf("hors") != -1) {
-        return MainAnim();
       }
     }
   }
 
+  /***Select Title and Intro paragraph according to selected universe***/
   function checkName(props) {
     for (let i in props) {
       let thisUL = props[i].link;
@@ -93,6 +88,7 @@ export default function ThisUniverse(data) {
     }
   }
 
+  /***Check if Reviews links are available and display them***/
   function SetReviews(props, i) {
     if (props != 0) {
       return (
@@ -101,7 +97,7 @@ export default function ThisUniverse(data) {
           target="_blank"
           key={"aKey" + i}
           data-tip
-          data-for={"UtipBuy"}
+          data-for={"UtipReview"}
         >
           <i className="fa fa-book" aria-hidden="true"></i>
         </a>
@@ -109,10 +105,9 @@ export default function ThisUniverse(data) {
     }
   }
 
+  /***Check if Buy links are available and display them && Check if object is a book or a game***/
   function SetBuyLinks(props) {
-    /*console.log(props.format)*/
     if (props.format === "Jeu PC") {
-      /*console.log(props.format)*/
       if (props.buyPaper != 0 && props.buyEbook == 0) {
         return (
           <div className="buyLinks">
@@ -173,12 +168,14 @@ export default function ThisUniverse(data) {
     }
   }
 
+  /***Check if Litterary Proze are available and display them***/
   function SetPrize(props, i) {
     if (props.sousTitre != 0) {
       return <h2 className="sousTitre">{props.sousTitre}</h2>;
     }
   }
 
+  /***Check if tags are available and display them***/
   function SetTags(props, i) {
     if (props != 0) {
       return (
@@ -189,18 +186,14 @@ export default function ThisUniverse(data) {
     }
   }
 
+  /***Sort books from Json according to selected Universe and display them***/
   function SortBooks(thatBook, i) {
-    /*console.log(thatBook.univers)*/
     let target0 = window.location.pathname;
     let targetB = target0.replace(new RegExp(/[-]/g), " ");
-    /*console.log(targetB);*/
     let targetBa = thatBook.univers.toLowerCase();
-    /*console.log(targetBa)*/
     let targetBb = "/" + targetBa;
-    /*console.log(targetBb)*/
     let targetBb2 = targetBb.replace(new RegExp(/[']/g), " ");
     let targetBc = targetBb2.replace(new RegExp(/[èéêë]/g), "e");
-    /*console.log(targetBc);*/
     if (targetBc === targetB) {
       return (
         <div
@@ -210,7 +203,11 @@ export default function ThisUniverse(data) {
           <div className="bookLeft">
             <img
               className="img-responsive creatora"
-              src={"/img/Livres/" + thatBook.lien + ".webp"}
+              src={
+                data.data1.UimgLinks.IL3 +
+                thatBook.lien +
+                data.data1.UimgLinks.IL1B
+              }
             />
 
             <div className="ReviewLinks">
@@ -245,10 +242,12 @@ export default function ThisUniverse(data) {
     }
   }
 
+  /***Randomize Book position in universe***/
   function randomize(a, b) {
     return Math.random() - 0.5;
   }
 
+  /***Check Selected Universe***/
   SetUniverse();
 
   return (
@@ -258,14 +257,14 @@ export default function ThisUniverse(data) {
         {checkName(data.data2.univers)}
         <div className="row text-center justify-content-center">
           {/*Dynamic creation from Json data*/}
-
           {data.data3.Livres.sort(randomize).map((thatBook, i) =>
             SortBooks(thatBook, i)
           )}
         </div>{" "}
       </div>
+      {/*Stylize Tooltips for Reviews*/}
       <ReactTooltip
-        id={"UtipBuy"}
+        id={"UtipReview"}
         place="left"
         animation="FadeIn"
         effect="solid"
@@ -274,7 +273,7 @@ export default function ThisUniverse(data) {
         borderColor="var(--greenish)"
         effect="solid"
         backgroundColor="black"
-        key={"tipForBuy"}
+        key={"tipForReview"}
       >
         Avis
       </ReactTooltip>

@@ -42,6 +42,7 @@ export default function App() {
     <Router>
       <Header data1={Data1} data2={Data2} />
       <div className="app">
+        {/*BACKGROUND ANIMATION*/}
         <div className="bg-animation">
           <div id="stars" />
           <div id="stars2" />
@@ -77,17 +78,21 @@ export default function App() {
         <div className="firefly" />
         <div className="firefly" />
         <div className="firefly" />
+        {/*ROUTES*/}
         <Switch>
+          {/*HOMEPAGE*/}
           <Route exact path="/accueil">
             <Homepage data1={Data1} data2={Data2} />
           </Route>
+          {/*CREATEURSE*/}
           <Route exact path="/createurs">
             <Createurs data1={Data1} data2={Data2} />
           </Route>
+          {/*UNIVERS HOMEPAGE*/}
           <Route exact path="/nos-univers">
             <Univers data1={Data1} data2={Data2} />
           </Route>
-
+          {/*UNIVERS*/}
           <Route
             exact
             path={[
@@ -100,15 +105,17 @@ export default function App() {
               "/fleur-d-absinthe",
               "/chrysalis",
               "/pousse-d-absinthe",
-              "/hors-collection"
-
+              "/hors-collection",
             ]}
           >
             <ThisUniverse data1={Data1} data2={Data2} data3={Data3} />
           </Route>
+          {/*REDIRECT*/}
           <Route>
             <Redirect to="/accueil" />
           </Route>
+          {/*404 PAGE*/}
+
           <Route>
             <Error404 />
           </Route>

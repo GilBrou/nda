@@ -1,6 +1,7 @@
 /******UNIVERS******/
 import ReactTooltip from "react-tooltip";
 
+/***COMPONENTS***/
 import {
   MainAnim,
   TerraAnim,
@@ -70,7 +71,11 @@ export default function Univers(data) {
                   }{/*Universe Background*/},
                   <img
                     className="img-responsive"
-                    src={"/img/" + univers.name + ".webp"}
+                    src={
+                      data.data1.UimgLinks.IL1 +
+                      univers.name +
+                      data.data1.UimgLinks.IL1B
+                    }
                   />
                 </div>
               )

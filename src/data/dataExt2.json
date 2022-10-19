@@ -429,6 +429,40 @@
     },
     {
       "titre": "Au Coeur de la Science-fiction",
+      "titre2": " - Prestige",
+      "univers": "Hors Collection",
+      "lien": "au-coeur-de-la-science-fiction-prestige",
+      "format": "Essai",
+      "sousTitre": "",
+      "par": [
+        "Gillian Brousse",
+        ", avec la participation de :",
+        "Rachel Gali,",
+        "Wilfried Renaut,",
+        "Magali Lefebvre,",
+        "A.F Lune,",
+        "Amélia Chatterton,",
+        "Morgane Sankiewiez",
+        "et Laurent Cazuguel"
+      ],
+      "genres": [
+        "Illustré",
+        "Science-fiction",
+        "Littérature",
+        "Cinéma",
+        "BD/Comic/Manga",
+        "Arts",
+        "Musique",
+        "Interviews"
+      ],
+      "résumé": "La Science-fiction incarne pour certains le domaine des possibles, alors que pour d’autres elle apparaît comme puérile, car souvent réduite à des stéréotypes éculés et des œuvres non représentatives. Avec cet ouvrage, nous entendons vous faire (re) découvrir ce vaste genre aux multiples facettes capable comme nul autre de s’interroger sur notre monde. Nous allons parcourir le temps à la recherche du moment où tout a commencé, rencontrer les précurseurs et les personnalités du genre, nous faufiler au cœur de récits majeurs et explorer ses thèmes de prédilection.",
+      "résumé2": "Qui que vous soyez, peu importe où et quand vous existez, vous découvrirez des œuvres qui résonneront en vous. Alors, respirez un grand coup et accrochez-vous à ce livre, mais n’attachez pas vos ceintures, car là où nous allons, nous n’aurons plus besoin de routes…",
+      "reviews": ["", "", "", "", ""],
+      "buyPaper": "",
+      "buyEbook": ""
+    },
+    {
+      "titre": "Au Coeur de la Science-fiction",
       "titre2": " - [Re]découverte d'un genre",
       "univers": "Hors Collection",
       "lien": "au-coeur-de-la-science-fiction",

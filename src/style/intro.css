@@ -19,29 +19,7 @@
 .logoFull {
   width: 100%;
   margin: auto;
-  /*background-color: var(--blackish);*/
   background-color: rgba(0, 0, 0, 0.5);
-  /*
-  background: radial-gradient(
-    var(--blackish),
-    var(--blackish),
-    var(--blackish),
-    var(--blackish),
-    var(--blackish),
-    var(--blackish),
-    var(--blackish),
-    var(--blackish),
-    var(--blackish),
-    var(--blackish),
-    var(--blackish),
-    var(--greenish4),
-    var(--greenish2),
-    var(--greenish2),
-    var(--greenish),
-    var(--greenish)
-  );
-  */
-
   backdrop-filter: blur(2px);
   border-radius: 100%;
   animation: ShadowAnim 11s infinite alternate both;

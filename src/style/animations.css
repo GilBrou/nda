@@ -1,6 +1,6 @@
 /***ANIMATIONS***/
 
-/*Background animation / smooth zoom infinite*/
+/***Background images's animation***/
 @keyframes animMuse {
   0% {
     background-position: 50% 47%;
@@ -12,7 +12,7 @@
   }
 }
 
-/*logo's shadow and movement anim*/
+/***Homepage logo L shadow and movement anim***/
 @keyframes ShadowAnim {
   0% {
     box-shadow: -5px -5px 10px -6px var(--greenish); /*1*/
@@ -73,213 +73,7 @@
   }
 }
 
-/*FADE IN UNIVERS*/
-@-webkit-keyframes fadeInPage {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeInPage {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/*FLASHLIGHT ANIM IN UNIVERS*/
-@-moz-keyframes flashlight {
-  0%,
-  9% {
-    opacity: 0;
-    clip-path: circle(150px at 45% 10%);
-  }
-  10%,
-  15%,
-  85% {
-    opacity: 1;
-  }
-  50% {
-    clip-path: circle(150px at 60% 20%);
-  }
-  54%,
-  100% {
-    clip-path: circle(150px at 55% 92%);
-  }
-  88%,
-  100% {
-    opacity: 0;
-  }
-}
-@-webkit-keyframes flashlight {
-  0%,
-  9% {
-    opacity: 0;
-    clip-path: circle(150px at 45% 10%);
-  }
-  10%,
-  15%,
-  85% {
-    opacity: 1;
-  }
-  50% {
-    clip-path: circle(150px at 60% 20%);
-  }
-  54%,
-  100% {
-    clip-path: circle(150px at 55% 92%);
-  }
-  88%,
-  100% {
-    opacity: 0;
-  }
-}
-@-o-keyframes flashlight {
-  0%,
-  9% {
-    opacity: 0;
-    clip-path: circle(150px at 45% 10%);
-  }
-  10%,
-  15%,
-  85% {
-    opacity: 1;
-  }
-  50% {
-    clip-path: circle(150px at 60% 20%);
-  }
-  54%,
-  100% {
-    clip-path: circle(150px at 55% 92%);
-  }
-  88%,
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes flashlight {
-  0%,
-  9% {
-    opacity: 0;
-    clip-path: circle(150px at 45% 10%);
-  }
-  10%,
-  15%,
-  85% {
-    opacity: 1;
-  }
-  50% {
-    clip-path: circle(150px at 60% 20%);
-  }
-  54%,
-  100% {
-    clip-path: circle(150px at 55% 92%);
-  }
-  88%,
-  100% {
-    opacity: 0;
-  }
-}
-
-/*EYES ANIM IN UNIVERS*/
-@-moz-keyframes eyes {
-  0%,
-  52% {
-    opacity: 0;
-  }
-  53%,
-  87% {
-    opacity: 1;
-  }
-  64% {
-    transform: scaleY(1);
-  }
-  67% {
-    transform: scaleY(0);
-  }
-  70% {
-    transform: scaleY(1);
-  }
-  88%,
-  100% {
-    opacity: 0;
-  }
-}
-@-webkit-keyframes eyes {
-  0%,
-  52% {
-    opacity: 0;
-  }
-  53%,
-  87% {
-    opacity: 1;
-  }
-  64% {
-    transform: scaleY(1);
-  }
-  67% {
-    transform: scaleY(0);
-  }
-  70% {
-    transform: scaleY(1);
-  }
-  88%,
-  100% {
-    opacity: 0;
-  }
-}
-@-o-keyframes eyes {
-  0%,
-  52% {
-    opacity: 0;
-  }
-  53%,
-  87% {
-    opacity: 1;
-  }
-  64% {
-    transform: scaleY(1);
-  }
-  67% {
-    transform: scaleY(0);
-  }
-  70% {
-    transform: scaleY(1);
-  }
-  88%,
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes eyes {
-  0%,
-  52% {
-    opacity: 0;
-  }
-  53%,
-  87% {
-    opacity: 1;
-  }
-  64% {
-    transform: scaleY(1);
-  }
-  67% {
-    transform: scaleY(0);
-  }
-  70% {
-    transform: scaleY(1);
-  }
-  88%,
-  100% {
-    opacity: 0;
-  }
-}
-
-/***404 ANIM***/
+/***404 neon anim***/
 @keyframes drawLine1 {
   0% {
     stroke-dashoffset: -940px;
@@ -443,6 +237,7 @@
   }
 }
 
+/***404 text fade in anim***/
 @keyframes fadeInText {
   1% {
     color: #001203;
@@ -458,6 +253,7 @@
   }
 }
 
+/***404 color anim***/
 @keyframes hueRotate {
   0% {
     filter: hue-rotate(0deg);
@@ -470,7 +266,7 @@
   }
 }
 
-/*Modal Toggle Animation*/
+/***Modal Toggle Animation***/
 @keyframes react-responsive-modal-overlay-in {
   0% {
     opacity: 0;
@@ -508,7 +304,7 @@
   }
 }
 
-/* animation fade-in*/
+/***Folie Background (Spiral) Anim***/
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0;
@@ -526,6 +322,7 @@
   }
 }
 
+/***Rotate and perspective anim***/
 @keyframes anipers {
   0% {
     transform: translateX(0px);
@@ -555,6 +352,7 @@
   }
 }
 
+/***Rotate and perspective anim 2***/
 @keyframes anipers2 {
   0% {
     transform: translateX(0px);
@@ -587,6 +385,7 @@
   }
 }
 
+/***Rotate and perspective anim 3***/
 @keyframes anipers3 {
   0% {
     transform: translateX(0px);
@@ -616,7 +415,7 @@
   }
 }
 
-/*Dot universes anim*/
+/***Dot universes selector anim***/
 @keyframes circle {
   0% {
     transform: rotate(0deg) translate(-2px) rotate(0deg);
@@ -626,7 +425,7 @@
   }
 }
 
-/* heartbeat Anim heartbeat*/
+/***Creators Link button anim***/
 @-webkit-keyframes heartbeat {
   from {
     -webkit-transform: scale(1);
@@ -696,6 +495,7 @@
   }
 }
 
+/***Creators Link button anim 2 ("+" rotate 1)***/
 @keyframes dotAnim2 {
   0% {
     transform: rotate(0deg);
@@ -706,6 +506,7 @@
   }
 }
 
+/***Creators Link button anim 2 ("+" rotate 2)***/
 @keyframes dotAnim3 {
   0% {
     transform: rotate(0deg);
@@ -716,7 +517,7 @@
   }
 }
 
-/**/
+/***Book entrance anim 1***/
 @keyframes scale-in-center {
   0% {
     -webkit-transform: scale(0);
@@ -730,6 +531,7 @@
   }
 }
 
+/***Book entrance anim 2***/
 @keyframes swing-in-right-fwd {
   0% {
     -webkit-transform: rotateY(-100deg);
@@ -747,6 +549,7 @@
   }
 }
 
+/***Book entrance anim 3***/
 @keyframes swing-in-bottom-fwd {
   0% {
     -webkit-transform: rotateX(100deg);
@@ -764,6 +567,7 @@
   }
 }
 
+/***Book entrance anim 4***/
 @keyframes swing-in-left-fwd {
   0% {
     -webkit-transform: rotateY(100deg);

@@ -59,7 +59,7 @@ export default function Footer(data) {
               >
                 <h1>{data.data2 ? data.data2.mentions.titre : "loading..."}</h1>
                 <div className="paraMentions">
-                  <p>{data.data1 ? data.data1.info.nom : "loading..."}</p>
+                  <p>{data.data1 ? data.data1.nom : "loading..."}</p>
                   <p>{data.data2 ? data.data2.mentions.P1 : "loading..."}</p>
                   <p> {data.data2 ? data.data2.mentions.P2 : "loading..."}</p>
                   <p> {data.data2 ? data.data2.mentions.P3 : "loading..."}</p>
@@ -159,18 +159,24 @@ export default function Footer(data) {
           <li>
             <img
               src={
-                data.data1 ? data.data1.ressources.logoBretagne : "loading..."
+                data.data1.UimgLinks.IL0 +
+                data.data1.ressources.sponso1 +
+                data.data1.UimgLinks.IL1B
               }
               className="img-responsive BretagneLogo"
-              alt={data.data1 ? data.data1.logoBretagneAlt : "loading..."}
+              alt="Sponsor 1"
             />{" "}
           </li>
 
           <li>
             <img
-              src={data.data1 ? data.data1.ressources.logoRennes : "loading..."}
+              src={
+                data.data1.UimgLinks.IL0 +
+                data.data1.ressources.sponso2 +
+                data.data1.UimgLinks.IL1B
+              }
               className="img-responsive"
-              alt={data.data1 ? data.data1.logoRennesAlt : "loading..."}
+              alt="Sponsor 2"
             />{" "}
           </li>
         </ul>

@@ -18,7 +18,7 @@ export default function Createurs(data) {
     }
   }
 
-    function randomize(a, b) {
+  function randomize(a, b) {
     return Math.random() - 0.5;
   }
 
@@ -38,7 +38,11 @@ export default function Createurs(data) {
                 >
                   <img
                     className="img-responsive creatora"
-                    src={"/img/Photos/" + team.name + ".webp"}
+                    src={
+                      data.data1.UimgLinks.IL2 +
+                      team.name +
+                      data.data1.UimgLinks.IL1B
+                    }
                   />
                   <p className="Names" id={team.name + "P1"}>
                     {team.name + " " + team.name2}
@@ -64,7 +68,11 @@ export default function Createurs(data) {
                 >
                   <img
                     className="img-responsive creatora"
-                    src={"/img/Photos/" + team.name + ".webp"}
+                    src={
+                      data.data1.UimgLinks.IL2 +
+                      team.name +
+                      data.data1.UimgLinks.IL1B
+                    }
                   />
                   <p className="Names" id={team.name + "P1"}>
                     {team.name + " " + team.name2}
@@ -93,7 +101,11 @@ export default function Createurs(data) {
                 >
                   <img
                     className="img-responsive creatora"
-                    src={"/img/Photos/" + team.name + ".webp"}
+                    src={
+                      data.data1.UimgLinks.IL2 +
+                      team.name +
+                      data.data1.UimgLinks.IL1B
+                    }
                   />
                   <p className="Names" id={team.name + "P1"}>
                     {team.name + " " + team.name2}
@@ -120,7 +132,11 @@ export default function Createurs(data) {
                   >
                     <img
                       className="img-responsive creatora"
-                      src={"/img/Photos/" + team.name + ".webp"}
+                      src={
+                        data.data1.UimgLinks.IL2 +
+                        team.name +
+                        data.data1.UimgLinks.IL1B
+                      }
                     />
                     <p className="Names" id={team.name + "P1"}>
                       {team.name + " " + team.name2}

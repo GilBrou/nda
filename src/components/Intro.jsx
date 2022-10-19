@@ -8,9 +8,13 @@ export default function Intro(data) {
       <div className="intro" id="thisToggle">
         {/*Large Animated Logo*/}
         <img
-          src={data.data1 ? data.data1.ressources.logo2 : "loading..."}
+          src={
+            data.data1.UimgLinks.IL0 +
+            data.data1.ressources.logo2 +
+            data.data1.UimgLinks.IL1B
+          }
           className="img-responsive logoFull"
-          alt={data.data1 ? data.data1.ressources.logo2Alt : "loading..."}
+          alt={"Logo de " + data.data1.nom}
         />{" "}
         {/*Introduction Text*/}
         <h1 className="text-center">

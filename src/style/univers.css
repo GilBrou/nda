@@ -1,5 +1,7 @@
 /***UNIVERS***/
 
+/*** COMMENT AND CLEAN ***/
+
 .univers {
   background-color: var(--blackish);
   width: 100vw;
@@ -135,7 +137,6 @@
 .pagination a:nth-child(10) {
   animation-delay: -2.7s;
 }
-
 
 .aAnim {
   width: 100%;

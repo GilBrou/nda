@@ -51,10 +51,14 @@ export default function Header(data) {
           {/*Site Logo*/}
           <a href="/accueil">
             <img
-              src={data.data1 ? data.data1.ressources.logo1 : "loading..."}
+              src={
+                data.data1.UimgLinks.IL0 +
+                data.data1.ressources.logo1 +
+                data.data1.UimgLinks.IL1B
+              }
               className=" logo img-responsive page-scroll authorLogo"
               href="#page-top"
-              alt={data.data1 ? data.data1.info.nom : "loading..."}
+              alt={data.data1 ? data.data1.nom : "loading..."}
             />{" "}
           </a>
         </div>
@@ -139,10 +143,14 @@ export default function Header(data) {
               <p> {data.data2 ? data.data2.apropos.P4 : "loading..."}</p>
               <p> {data.data2 ? data.data2.apropos.P5 : "loading..."}</p>
               <img
-                src={data.data1 ? data.data1.ressources.logo1 : "loading..."}
+                src={
+                  data.data1.UimgLinks.IL0 +
+                  data.data1.ressources.logo1 +
+                  data.data1.UimgLinks.IL1B
+                }
                 className=" logo img-responsive page-scroll modalImg aProposImg"
                 href="#page-top"
-                alt={data.data1 ? data.data1.ressources.logo2Alt : "loading..."}
+                alt={"Logo de " + data.data1.nom}
               />{" "}
             </Modal>
           </div>
@@ -177,11 +185,13 @@ export default function Header(data) {
                 >
                   <img
                     src={
-                      data.data1 ? data.data1.ressources.logo1 : "loading..."
+                      data.data1.UimgLinks.IL0 +
+                      data.data1.ressources.logo1 +
+                      data.data1.UimgLinks.IL1B
                     }
                     className=" logo img-responsive page-scroll authorLogo"
                     href="#page-top"
-                    alt={data.data1 ? data.data1.info.nom : "loading..."}
+                    alt={data.data1.nom}
                   />{" "}
                   <h1>
                     {data.data2 ? data.data2.contact.titre : "loading..."}
@@ -294,11 +304,13 @@ export default function Header(data) {
                   <p> {data.data2 ? data.data2.manuscrits.P5 : "loading..."}</p>
                   <img
                     src={
-                      data.data1 ? data.data1.ressources.logo1 : "loading..."
+                      data.data1.UimgLinks.IL0 +
+                      data.data1.ressources.logo1 +
+                      data.data1.UimgLinks.IL1B
                     }
                     className=" logo img-responsive page-scroll authorLogo modalImg"
                     href="#page-top"
-                    alt={data.data1 ? data.data1.info.nom : "loading..."}
+                    alt={data.data1 ? data.data1.nom : "loading..."}
                   />{" "}
                 </Modal>
               </div>
@@ -336,11 +348,13 @@ export default function Header(data) {
                   <p> {data.data2 ? data.data2.presse.P5 : "loading..."}</p>
                   <img
                     src={
-                      data.data1 ? data.data1.ressources.logo1 : "loading..."
+                      data.data1.UimgLinks.IL0 +
+                      data.data1.ressources.logo1 +
+                      data.data1.UimgLinks.IL1B
                     }
                     className=" logo img-responsive page-scroll authorLogo modalImg"
                     href="#page-top"
-                    alt={data.data1 ? data.data1.info.nom : "loading..."}
+                    alt={data.data1 ? data.data1.nom : "loading..."}
                   />{" "}
                 </Modal>
               </div>

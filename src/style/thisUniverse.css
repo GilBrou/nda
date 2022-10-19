@@ -1,4 +1,7 @@
 /****This Universe****/
+
+/*** COMMENT AND CLEAN ***/
+
 #thisUniverse {
     animation: animMuse 25s ease-out infinite alternate both;
     width: 100vw;
@@ -20,36 +23,36 @@
 }
 
 .MemoriaU {
-    background: url("../../public/img/Mémoria.webp");
+    background: url("../../public/img/Background/Mémoria.webp");
 }
 .FuturiaU {
-    background: url("../../public/img/Futuria.webp");
+    background: url("../../public/img/Background/Futuria.webp");
     z-index: 750;
 }
 .OnyriaU {
-    background: url("../../public/img/Onyria.webp");
+    background: url("../../public/img/Background/Onyria.webp");
 }
 .UrbanaU {
-    background: url("../../public/img/Terra Urbana.webp");
+    background: url("../../public/img/Background/Terra Urbana.webp");
 }
 .RougeU {
-    background: url("../../public/img/Rouge d'Absinthe.webp");
+    background: url("../../public/img/Background/Rouge d'Absinthe.webp");
 }
 .FolieU {
-    background: url("../../public/img/L'Antre de la Folie.webp");
+    background: url("../../public/img/Background/L'Antre de la Folie.webp");
 }
 .FleurU {
-    background: url("../../public/img/Fleur d'Absinthe.webp");
+    background: url("../../public/img/Background/Fleur d'Absinthe.webp");
 }
 .ChrysalisU {
-    background: url("../../public/img/Chrysalis.webp");
+    background: url("../../public/img/Background/Chrysalis.webp");
 }
 .PousseU {
-    background: url("../../public/img/Pousse d'Absinthe.webp");
+    background: url("../../public/img/Background/Pousse d'Absinthe.webp");
 }
 
 .HorsCollecU {
-    background: url("../../public/img/Hors Collection.webp");
+    background: url("../../public/img/Background/Hors Collection.webp");
 }
 
 #thisUniverse .container {

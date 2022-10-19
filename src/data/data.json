@@ -1,20 +1,15 @@
 {
-  "info": {
-    "nom": "Noir d'Absinthe"
-  },
+  "nom": "Noir d'Absinthe",
   "ressources": {
-    "logo1": "img/ndaLogo.webp",
-    "logo2": "img/LogoFullW2.webp",
-    "logo2Alt": "Logo de Noir d'Absinthe",
+    "logo1": "LogoS",
+    "logo2": "LogoL",
     "kitMédia": "/Kit_Media_Noir_d'Absinthe.pdf",
     "logoFB": "fa fa-facebook",
     "logoTW": "fa fa-twitter",
     "logoIG": "fa fa-instagram",
     "logoYT": "fa fa-youtube",
-    "logoBretagne": "img/logoBre.webp",
-    "logoBretagneAlt": "logo Bretagne",
-    "logoRennes": "img/logoRe.webp",
-    "logoRennesAlt": "logo Rennes"
+    "sponso1": "Sponso1",
+    "sponso2": "Sponso2"
   },
   "menu": {
     "menu1": "Accueil",
@@ -35,32 +30,33 @@
     "menu3L": "/createurs"
   },
   "UimgLinks": {
-    "IL1": "/img/",
+    "IL0": "img/",
+    "IL1": "/img/Background/",
+    "IL2": "/img/Photos/",
+    "IL3": "/img/Livres/",
     "IL1B": ".webp"
   },
-
   "PAGES A FAIRE": {
-    "CREATEURS": "mettr auteurs antho ? & crédits photos",
+    "CSS": "COMMENT AND CLEAN",
+    "CREATEURS": "crédits photos",
     "TERRA URBANA": "UNIVERS BACKGROUND !!??",
-    "book": "jeu video spleen (lien dl et direct demo) et nouvelle Cécile",
-    "book": "Check tag in oldsite",
-    "UNIVERS": "CUSTOM BACKGROUND ANIM ACCORDING TO UNIVERSE"
+    "book": "Nouvelle Cécile",
+    "book": "Check tags (ARRAY + OLDSITE)",
+    "UNIVERS": "CUSTOM BACKGROUND ANIM TERRA URBANA & color univer perso FUTURIA",
+    "SITE": "RESPONSIVE"
   },
   "FONCTIONNALITES A VOIR": {
-    "questionnaire guide book": "?",
+    "QUESTIONNAIRE EN LIGNE POUR AFFICHER TRI": "",
     "RECHERCHE PAR TAG/MOTS CLES": "",
     "inclusion vidéos": "?",
     "NEWSLETTER": "?",
-    "INCLUSION IG ET FB ?": "",
-    "QUESTIONNAIRE EN LIGNE POUR AFFICHER TRI": "",
-    "Autheurs DEDIE TEMPLATE ?": "UN PAR UN"
+    "INCLUSION IG ET FB ?": ""
   },
   "MORGANE TO DO": {
     "MAJ infosite": "",
-    "Livre": "Sabot spleinir toujours vendu ?",
-
     "MAJ KIT MEDIA": "",
-    "MAJ auteurs": "vérif + a venir + philippe aurèle ?"
+    "MAJ auteurs": "to do",
+    "MAJ auteurs": "to do"
   },
   "MOI TO DO": {
     "SEO PERFORMANCE ET REFERENCEMENT": "",
