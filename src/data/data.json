@@ -38,12 +38,8 @@
   },
   "PAGES A FAIRE": {
     "CSS": "COMMENT AND CLEAN",
-    "CREATEURS": "crédits photos",
-    "TERRA URBANA": "UNIVERS BACKGROUND !!??",
-    "book": "Nouvelle Cécile",
-    "book": "Check tags (ARRAY + OLDSITE)",
-    "UNIVERS": "CUSTOM BACKGROUND ANIM TERRA URBANA & color univer perso FUTURIA",
-    "SITE": "RESPONSIVE"
+    "SITE": "RESPONSIVE",
+    "book": "Check tags (ARRAY + OLDSITE)"
   },
   "FONCTIONNALITES A VOIR": {
     "QUESTIONNAIRE EN LIGNE POUR AFFICHER TRI": "",
@@ -55,11 +51,12 @@
   "MORGANE TO DO": {
     "MAJ infosite": "",
     "MAJ KIT MEDIA": "",
-    "MAJ auteurs": "to do",
-    "MAJ auteurs": "to do"
+    "MAJ createurs": "to do",
+    "Photos createurs": "to do",
+    "Plus de nouvelles gratuites en DL": "?"
   },
   "MOI TO DO": {
-    "SEO PERFORMANCE ET REFERENCEMENT": "",
+    "SEO PERFORMANCE ET REFERENCEMENT": "1/2",
     "tri json": "",
     "translate from excel": ""
   }

@@ -2,7 +2,6 @@
 
 /*** COMMENT AND CLEAN ***/
 
-
 /*ANIM*/
 
 /*360° anim for slider dots*/
@@ -17,9 +16,12 @@
   }
 }
 
-.TerraAnim,
-.rain.front-row {
+/*Terra Background Anim*/
+.TerraAnim {
   pointer-events: none; /*RAIN ANIM BUG**********************/
+}
+
+.rain.front-row {
 }
 
 .rain {
@@ -396,17 +398,11 @@ body.single-toggle .drop:nth-child(10) {
 
 .FuturiaAnim {
   pointer-events: none;
-  /*z-index:  2500;*/
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
   opacity: 0.7;
-  -webkit-filter: hue-rotate(95deg);
-  -moz-filter: hue-rotate(95deg);
-  -ms-filter: hue-rotate(95deg);
-  filter: hue-rotate(95deg);
-  mix-blend-mode: color-burn;
 }
 
 .univers * svg {
@@ -415,7 +411,11 @@ body.single-toggle .drop:nth-child(10) {
   position: absolute;
   left: 0;
   top: -100px;
-  opacity: 0.7;
+}
+
+.univers * svg,
+#thisUniverse * svg {
+  opacity: 0.85;
   -webkit-filter: hue-rotate(95deg);
   -moz-filter: hue-rotate(95deg);
   -ms-filter: hue-rotate(95deg);
@@ -508,17 +508,13 @@ body.single-toggle .drop:nth-child(10) {
   }
 }
 
+/*Folie Background Anim*/
 .FolieAnim {
   pointer-events: none;
   opacity: 0.1;
   -webkit-animation: fade-in 4s cubic-bezier(0.39, 0.575, 0.565, 1) both 0.5s;
   animation: fade-in 4s cubic-bezier(0.39, 0.575, 0.565, 1) both 0.5s;
 }
-
-/*Make divs stack up */
-.absolute {
-}
-
 .circles {
   opacity: 0.3;
   margin: 0 auto;
@@ -533,7 +529,6 @@ body.single-toggle .drop:nth-child(10) {
   left: 35%;
   filter: blur(15px);
 }
-
 .one {
   animation: circles 2.4s infinite linear;
 }

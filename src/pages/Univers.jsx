@@ -76,6 +76,7 @@ export default function Univers(data) {
                       univers.name +
                       data.data1.UimgLinks.IL1B
                     }
+                    alt={"Image d'illustration de l'univers " + univers.name}
                   />
                 </div>
               )

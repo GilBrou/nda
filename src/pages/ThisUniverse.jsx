@@ -56,14 +56,19 @@ export default function ThisUniverse(data) {
         return MainAnim();
       } else if (window.location.pathname.indexOf("futuria") != -1) {
         return FuturiaAnim();
-      } else if (window.location.pathname.indexOf("urbana") != -1) {
-        return TerraAnim();
-      } else if (window.location.pathname.indexOf("rouge") != -1) {
+      } else if (window.location.pathname.indexOf("rbana") != -1) {
+        /*
+        console.log("This is URBANA !!! ");
+        return <div className="TerraAnimWrapper">{TerraAnim()}</div>;
+        */
+        return MainAnim();
+      } else if (
+        window.location.pathname.indexOf("rouge") != -1 ||
+        window.location.pathname.indexOf("fleur") != -1
+      ) {
         return FleurRougeAnim();
       } else if (window.location.pathname.indexOf("folie") != -1) {
         return FolieAnim();
-      } else if (window.location.pathname.indexOf("fleur") != -1) {
-        return FleurRougeAnim();
       }
     }
   }
@@ -132,6 +137,35 @@ export default function ThisUniverse(data) {
             </a>
             <a href={props.buyEbook} target="_blank">
               Démo
+            </a>
+          </div>
+        );
+      }
+    } else if (props.format === "Nouvelle") {
+      if (props.buyPaper != 0 && props.buyEbook == 0) {
+        return (
+          <div className="buyLinks">
+            <a href={props.buyPaper} target="_blank">
+              Télécharger
+            </a>
+          </div>
+        );
+      } else if (props.buyEbook != 0 && props.buyPaper == 0) {
+        return (
+          <div className="buyLinks">
+            <a href={props.buyEbook} target="_blank">
+              Télécharger
+            </a>
+          </div>
+        );
+      } else if (props.buyEbook != 0 && props.buyPaper != 0) {
+        return (
+          <div className="buyLinks">
+            <a href={props.buyPaper} target="_blank">
+              Télécharger
+            </a>
+            <a href={props.buyEbook} target="_blank">
+              Télécharger
             </a>
           </div>
         );
@@ -208,6 +242,7 @@ export default function ThisUniverse(data) {
                 thatBook.lien +
                 data.data1.UimgLinks.IL1B
               }
+              alt={"Couverture de " + thatBook.titre}
             />
 
             <div className="ReviewLinks">

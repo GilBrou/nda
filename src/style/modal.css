@@ -52,7 +52,6 @@
   overflow-y: auto;
   color: var(--blackish);
   border: solid 1px var(--blackishBack3);
-  /*z-index: 1501;*/
 }
 .react-responsive-modal-modal h1 {
   text-transform: uppercase;
@@ -70,8 +69,6 @@
   font-size: 19px;
 }
 .react-responsive-modal-closeButton {
-  /*z-index: 1600;*/
-
   position: absolute;
   top: 14px;
   right: 14px;
@@ -83,8 +80,6 @@
   display: flex;
 }
 .react-responsive-modal-modal-closeButton {
-  /*z-index: 1600;*/
-
   position: absolute;
   top: 14px;
   right: 14px;

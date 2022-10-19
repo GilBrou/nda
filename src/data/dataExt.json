@@ -91,36 +91,45 @@
       "name": "Morgane",
       "name2": "Stankiewiez",
       "Lien": "https://mort-gane.fr/",
+      "credits": "",
       "job": "Éditrice & autrice"
     },
     {
       "name": "Louise",
       "name2": "Le Bars",
       "Lien": "https://www.instagram.com/louiselebars/",
+      "credits": "© Bronwyn Eibon",
       "job": "Co-éditrice, directrice de collection & autrice"
     },
     {
       "name": "Émilie",
       "name2": "Chevallier",
       "Lien": "https://emilie-chevallier.com/",
+      "credits": "",
       "job": "Anthologiste, directrice de collection & autrice"
     },
     {
       "name": "Alexiane",
       "name2": "Thill",
       "Lien": "https://alexianethill.com/",
+      "credits": "",
+
       "job": "Directrice de collection"
     },
     {
       "name": "Anne",
       "name2": "Ledieu",
       "Lien": "https://lesmotspourlecrire.com/",
+      "credits": "",
+
       "job": "Correctrice"
     },
     {
       "name": "Marin",
       "name2": "' Maltese",
       "Lien": "",
+      "credits": "",
+
       "job": "Directrice commerciale"
     }
   ],
@@ -129,47 +138,60 @@
       "name": "Cécile",
       "name2": "Pommereau",
       "Lien": "https://www.facebook.com/cpommereau/",
+      "credits": "",
+
       "job": ""
     },
     {
       "name": "Sarah",
       "name2": "Buschmann",
       "Lien": "https://www.facebook.com/SarahBuschmannautrice/",
+      "credits": "© Jack Schoonjans",
       "job": ""
     },
     {
       "name": "Cyrielle",
       "name2": "Bandura",
       "Lien": "https://www.instagram.com/dragonebuleuse/",
+      "credits": "",
+
       "job": ""
     },
     {
       "name": "A.F",
       "name2": "Lune",
       "Lien": "https://www.facebook.com/people/AF-Lune/100012619089269/",
+      "credits": "",
+
       "job": ""
     },
     {
       "name": "Pierre",
       "name2": "Efratas",
       "Lien": "",
+      "credits": "© B.legrand",
+
       "job": ""
     },
     {
       "name": "Sara",
       "name2": "Pintado",
       "Lien": "https://www.facebook.com/people/Sara-Pintado-Autaire/100041399838599/",
+      "credits": "",
+
       "job": ""
     },
     {
       "name": "Axelle",
       "name2": "Colau",
+      "credits": "",
       "Lien": "https://axellecolau.fr/",
       "job": ""
     },
     {
       "name": "Marion",
       "name2": "B.",
+      "credits": "",
       "Lien": "https://www.artofmarionb.com/",
       "job": ""
     },
@@ -177,54 +199,63 @@
       "name": "Lisa",
       "name2": "Soto",
       "Lien": "https://www.facebook.com/lisa.soto.hb/",
+      "credits": "",
       "job": ""
     },
     {
       "name": "Gillian",
       "name2": "Brousse",
       "Lien": "https://gillianbrousse.com/",
+      "credits": "",
       "job": ""
     },
     {
       "name": "Magali",
       "name2": "Lefebvre",
       "Lien": "https://lullastories.wordpress.com/",
+      "credits": "",
       "job": ""
     },
     {
       "name": "Népenth",
       "name2": "S.",
       "Lien": "https://lechatseraphique.wordpress.com/biographie/",
+      "credits": "",
       "job": ""
     },
     {
       "name": "Geny H.",
       "name2": "David",
       "Lien": "https://davidbijoux.fr/",
+      "credits": "",
       "job": ""
     },
     {
       "name": "Alizée",
       "name2": "Villemin",
       "Lien": "http://www.alizeevillemin.com/",
+      "credits": "",
       "job": ""
     },
     {
       "name": "Frédérique",
       "name2": "Badoux",
       "Lien": "https://www.facebook.com/FredLBadoux/",
+      "credits": "",
       "job": ""
     },
     {
       "name": "Marge",
       "name2": "Nantel",
       "Lien": "https://www.facebook.com/MargeNantel/",
+      "credits": "",
       "job": ""
     },
     {
       "name": "Rachel",
       "name2": "Gali",
       "Lien": "https://www.rachelgali.com/",
+      "credits": "",
       "job": ""
     }
   ],
@@ -233,47 +264,55 @@
       "name": "Tiphs",
       "name2": "",
       "Lien": "https://www.tiphs-art.com/",
+      "credits": "",
       "job": ""
     },
     {
       "name": "Amaryan",
       "name2": "",
+      "credits": "",
       "Lien": "https://amaryan.fr/",
       "job": ""
     },
     {
       "name": "Emilie",
       "name2": "Léger",
+      "credits": "",
       "Lien": "https://emilieleger.ca/",
       "job": ""
     },
     {
       "name": "Svalia",
       "name2": "",
+      "credits": "",
       "Lien": "https://www.facebook.com/Invidiaillustrations/",
       "job": ""
     },
     {
       "name": "Laurent",
       "name2": "Cazuguel",
+      "credits": "",
       "Lien": "https://www.facebook.com/lolokazu/",
       "job": ""
     },
     {
       "name": "Flokera",
       "name2": "",
+      "credits": "",
       "Lien": "https://www.facebook.com/flokera.art/",
       "job": ""
     },
     {
       "name": "Marcela",
       "name2": "Bolivar",
+      "credits": "",
       "Lien": "https://www.artstation.com/marcelabolivar",
       "job": ""
     },
     {
       "name": "Ampreh",
       "name2": "",
+      "credits": "",
       "Lien": "https://www.ampreh.net/",
       "job": ""
     }
@@ -282,18 +321,21 @@
     {
       "name": "Fabienne",
       "name2": "Boerlen",
+      "credits": "",
       "Lien": "",
       "job": "Comité de lecture, Béta-lectrice"
     },
     {
       "name": "Tristan",
       "name2": "Lefevre",
+      "credits": "",
       "Lien": "",
       "job": "Expert-comptable"
     },
     {
       "name": "Julien",
       "name2": "Aufderbruck",
+      "credits": "",
       "Lien": "",
       "job": "Responsable des visuels, Béta-lecteur"
     }

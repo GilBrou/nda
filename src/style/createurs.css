@@ -1,6 +1,6 @@
 /***CREATEURS***/
 
-/*** COMMENT AND CLEAN ***/
+/* Page */
 #createurs {
   background-color: var(--blackish);
   background: url("./background/background2.webp");
@@ -12,7 +12,7 @@
   width: 100vw;
   height: 100%;
   min-height: 100vh;
-  max-width:  100%;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,12 +25,12 @@
 .container h1 {
   margin-bottom: 70px;
 }
-
 .subRow {
   display: flex;
   justify-content: center;
 }
 
+/* Profile card */
 .creator {
   display: flex;
   flex-direction: column;
@@ -41,6 +41,8 @@
 .creator2 {
   margin-bottom: 35px;
 }
+
+/* Vertical Names */
 .creator .Names {
   padding: 3px;
   font-size: 16px;
@@ -55,8 +57,10 @@
   border-radius: 10px 0 0 10px;
   box-shadow: 0px 0px 3px 2px var(--blackish);
   transition: 0.3s;
+  z-index: 2;
 }
 
+/* under card infos */
 .creator .Jobs {
   position: absolute;
   height: 30%;
@@ -67,6 +71,22 @@
   pointer-events: none;
 }
 
+/* over card infos */
+.creator .Credits {
+  position: absolute;
+  color: #ffd70099;
+  /*height: 30%;*/
+  width: 85%;
+  font-size: 10px !important;
+  /*bottom: -60px;*/
+  bottom: -10px;
+  text-shadow: 1px 1px 0.5px var(--blackish);
+  pointer-events: none;
+  background-color: var(--blackishBack2);
+  z-index: 1;
+}
+
+/* Profile photos */
 .creator img {
   border-radius: 10px;
   box-shadow: -3px 0px 3px 2px var(--blackish);
@@ -74,11 +94,13 @@
   height: 100%;
 }
 
+/* Titles animations */
 .creaTitle {
   animation: anipers3 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
     alternate both;
 }
 
+/* Porfile links */
 .creator a {
   width: 15%;
   height: 12%;
@@ -94,8 +116,8 @@
   align-items: center;
   background-color: var(--blueish);
   transition: 0.45s;
+  z-index: 2;
 }
-
 .creator a::before {
   pointer-events: none;
   text-decoration: none;
@@ -107,22 +129,20 @@
   justify-content: center;
 }
 
+/* Porfile hover animations*/
 .creator:hover a {
   -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
   animation: heartbeat 1.5s ease-in-out infinite both;
   background-color: var(--greenish);
   background-color: var(--blueish2);
 }
-
 .creator:hover a::before {
   animation: dotAnim2 0.1s linear both;
   color: var(--whiteish);
 }
-
 .creator:not(:hover) a::before {
   animation: dotAnim3 0.1s linear both;
 }
-
 .creator:hover {
   transform: scale(1.1);
 }
@@ -131,6 +151,7 @@
   background-color: var(--blueish2);
 }
 
+/* Tooltip style*/
 .myTip {
   width: 50%;
   height: 100%;

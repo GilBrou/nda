@@ -982,6 +982,21 @@
       "reviews": ["", "", "", "", ""],
       "buyPaper": "https://www.noirdabsinthe.com/product-page/spleen-cities-le-jeu-vid%C3%A9o",
       "buyEbook": "https://d48913ea-30ee-4023-aabe-0eb8bfda9652.usrfiles.com/archives/d48913_50b2d727e304430b8e843af8053a542e.zip"
+    },
+    {
+      "titre": "Les Larmes de Cernunnos",
+      "titre2": "",
+      "univers": "Mémoria",
+      "lien": "les-larmes-de-cernunnos",
+      "format": "Nouvelle",
+      "sousTitre": "À télécharger gratuitement",
+      "par": ["Cécile Pommereau"],
+      "genres": ["Fantastique", "Celtique"],
+      "résumé": "Alors qu'un Hiver Éternel s'est abattu sur le monde, une jeune druidesse qui a tout perdu en appelle aux dieux pour sauver son peuple.",
+      "résumé2": "NB : Nous vous conseillons de lire la nouvelle après la lecture d'Immortel Ad Vitam, car elle lève le voile sur des éléments de l'intrigue du roman.",
+      "reviews": ["", "", "", "", ""],
+      "buyPaper": "",
+      "buyEbook": "https://payhip.com/b/x9HK"
     }
   ],
   "template": {

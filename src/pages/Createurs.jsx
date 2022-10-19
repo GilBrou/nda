@@ -3,6 +3,13 @@ import ReactTooltip from "react-tooltip";
 
 /***COMPONENT***/
 export default function Createurs(data) {
+
+
+console.log(window.innerWidth)
+console.log(window.innerHeight)
+
+
+
   /*Toggle link buttons*/
   function GetLink(props) {
     if (props >= "1") {
@@ -43,12 +50,16 @@ export default function Createurs(data) {
                       team.name +
                       data.data1.UimgLinks.IL1B
                     }
+                    alt={"photo de " + team.name + " " + team.name2}
                   />
                   <p className="Names" id={team.name + "P1"}>
                     {team.name + " " + team.name2}
                   </p>
                   <p className="Jobs" id={team.name + "P2"}>
                     {team.job}
+                  </p>
+                  <p className="Credits" id={team.name + "P2"}>
+                    {team.credits}
                   </p>
                   {GetLink(team.Lien)}
                 </div>
@@ -73,16 +84,14 @@ export default function Createurs(data) {
                       team.name +
                       data.data1.UimgLinks.IL1B
                     }
+                    alt={"photo de " + team.name + " " + team.name2}
                   />
                   <p className="Names" id={team.name + "P1"}>
                     {team.name + " " + team.name2}
                   </p>
-                  {/*
-                  <p className="Jobs" id={team.name + "P2"}>
-                    {team.job}
+                  <p className="Credits" id={team.name + "P2"}>
+                    {team.credits}
                   </p>
-                */}
-
                   {GetLink(team.Lien)}
                 </div>
               ))
@@ -106,6 +115,7 @@ export default function Createurs(data) {
                       team.name +
                       data.data1.UimgLinks.IL1B
                     }
+                    alt={"photo de " + team.name + " " + team.name2}
                   />
                   <p className="Names" id={team.name + "P1"}>
                     {team.name + " " + team.name2}
@@ -137,6 +147,7 @@ export default function Createurs(data) {
                         team.name +
                         data.data1.UimgLinks.IL1B
                       }
+                      alt={"photo de " + team.name + " " + team.name2}
                     />
                     <p className="Names" id={team.name + "P1"}>
                       {team.name + " " + team.name2}

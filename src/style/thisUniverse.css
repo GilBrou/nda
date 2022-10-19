@@ -13,13 +13,13 @@
     justify-content: center;
     align-items: center;
     padding: 13vh 0 10vh 0;
-    background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    /*background-position: center;*/
+    background-position: 50% 10%!important;/**/
     background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
-    /*max-width:  100vw;*/
 }
 
 .MemoriaU {
@@ -310,3 +310,23 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+/*Re-Style Folie Background anim**/
+.FolieU .FolieAnim {
+    height: 100%;
+    width: 100vw;
+}
+
+.FolieU .FolieAnim .absolute {
+    position: fixed;
+    left: 40%;
+    top: 30%;
+}
+/*
+.TerraAnimWrapper{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index:  5000;
+}
+*/
