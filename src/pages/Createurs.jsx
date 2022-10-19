@@ -3,13 +3,6 @@ import ReactTooltip from "react-tooltip";
 
 /***COMPONENT***/
 export default function Createurs(data) {
-
-
-console.log(window.innerWidth)
-console.log(window.innerHeight)
-
-
-
   /*Toggle link buttons*/
   function GetLink(props) {
     if (props >= "1") {

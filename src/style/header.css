@@ -1,7 +1,6 @@
 /***HEADER***/
 
-/*** COMMENT AND CLEAN ***/
-
+/*Header Nav*/
 nav {
   display: flex;
   flex-direction: row;
@@ -36,12 +35,16 @@ nav button p:hover {
   color: var(--greenish);
   text-decoration: none;
 }
+
+/*Header Logo*/
 nav .logo {
   position: relative;
   float: left;
   margin: 11px 0 11px 0;
   height: 59px;
 }
+
+/*Header menu*/
 .menu {
   display: flex;
   flex-direction: row;
@@ -135,7 +138,8 @@ nav .logo {
     border-bottom: 1px solid #444;
   }
 }
-/*DROPDOWN*/
+
+/*Header Nav menu dropdown*/
 ul {
   position: relative;
   list-style-type: none;
@@ -149,10 +153,8 @@ ul li ul {
   line-height: 40px;
   background: var(--blackishBack2);
   border-radius: 0px 0px 5px 5px;
-  transition: opacity 0.2s, visibility 0.2s;
-  /*margin-left: -8px;*/
-  font-size: 10px;
-  /*margin-top:  28px;*/
+  transition: opacity 0.2s, visibility 0.2s;  
+  font-size: 10px;  
   margin: 28px 0 0 -8px;
 }
 header ul li ul li,
@@ -198,8 +200,10 @@ ul li:hover ul {
   color: var(--greenish);
   text-decoration: none;
 }
-.contactList img {
+.contactList .authorLogo {
   max-height: 40px;
+  /*height: 40px;
+  width: 100%;*/
 }
 .contactList.fb {
   margin: none;

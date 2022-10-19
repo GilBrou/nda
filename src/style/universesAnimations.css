@@ -1,11 +1,8 @@
 /*Universes Animation*/
 
-/*** COMMENT AND CLEAN ***/
-
 /*ANIM*/
 
 /*360° anim for slider dots*/
-
 @keyframes dotAnim {
   0% {
     transform: rotate(0deg);
@@ -18,12 +15,8 @@
 
 /*Terra Background Anim*/
 .TerraAnim {
-  pointer-events: none; /*RAIN ANIM BUG**********************/
+  pointer-events: none;
 }
-
-.rain.front-row {
-}
-
 .rain {
   position: absolute;
   left: 0;
@@ -31,14 +24,12 @@
   height: 100%;
   z-index: 2;
 }
-
 .rain.back-row {
   display: none;
   z-index: 1;
   bottom: 60px;
   opacity: 0.5;
 }
-
 .drop {
   position: absolute;
   bottom: 100%;
@@ -47,19 +38,6 @@
   pointer-events: none;
   animation: drop 0.5s linear infinite;
 }
-
-@keyframes drop {
-  0% {
-    transform: translateY(0vh);
-  }
-  75% {
-    transform: translateY(90vh);
-  }
-  100% {
-    transform: translateY(90vh);
-  }
-}
-
 .stem {
   width: 1px;
   height: 60%;
@@ -70,6 +48,82 @@
     rgba(255, 255, 255, 0.25)
   );
   animation: stem 0.5s linear infinite;
+}
+.splat {
+  width: 15px;
+  height: 10px;
+  border-top: 2px dotted rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  opacity: 1;
+  transform: scale(0);
+  animation: splat 0.5s linear infinite;
+  display: none;
+}
+
+body.splat-toggle .splat {
+  display: block;
+}
+.toggles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+.toggle {
+  position: absolute;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  line-height: 51px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.toggle:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.toggle:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.toggle.active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.splat-toggle {
+  top: 20px;
+}
+.back-row-toggle {
+  top: 90px;
+  line-height: 12px;
+  padding-top: 14px;
+}
+.single-toggle {
+  top: 160px;
+}
+body.single-toggle .drop {
+  display: none;
+}
+body.single-toggle .drop:nth-child(10) {
+  display: block;
+}
+
+/*Terra Background Anim keyframes*/
+@keyframes drop {
+  0% {
+    transform: translateY(0vh);
+  }
+  75% {
+    transform: translateY(90vh);
+  }
+  100% {
+    transform: translateY(90vh);
+  }
 }
 
 @keyframes stem {
@@ -85,21 +139,6 @@
   100% {
     opacity: 0;
   }
-}
-
-.splat {
-  width: 15px;
-  height: 10px;
-  border-top: 2px dotted rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  opacity: 1;
-  transform: scale(0);
-  animation: splat 0.5s linear infinite;
-  display: none;
-}
-
-body.splat-toggle .splat {
-  display: block;
 }
 
 @keyframes splat {
@@ -121,86 +160,18 @@ body.splat-toggle .splat {
   }
 }
 
-.toggles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 3;
-}
-
-.toggle {
-  position: absolute;
-  left: 20px;
-  width: 50px;
-  height: 50px;
-  line-height: 51px;
-  box-sizing: border-box;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 10px;
-  font-weight: bold;
-  background-color: rgba(255, 255, 255, 0.2);
-  color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.toggle:hover {
-  background-color: rgba(255, 255, 255, 0.25);
-}
-
-.toggle:active {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.toggle.active {
-  background-color: rgba(255, 255, 255, 0.4);
-}
-
-.splat-toggle {
-  top: 20px;
-}
-
-.back-row-toggle {
-  top: 90px;
-  line-height: 12px;
-  padding-top: 14px;
-}
-
-.single-toggle {
-  top: 160px;
-}
-
-body.single-toggle .drop {
-  display: none;
-}
-
-body.single-toggle .drop:nth-child(10) {
-  display: block;
-}
-
+/*Fleur/Rouge Background Anim*/
 .FleurRougeAnim {
   pointer-events: none;
 }
-
-@keyframes move {
-  100% {
-    transform: translate3d(0, 0, 1px) rotate(360deg);
-  }
-}
-
 .background {
   position: fixed;
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
-  /*background: #3E1E68;*/
   overflow: hidden;
-  /*opacity: 0.8;*/
 }
-
 .background span {
   opacity: 0.2;
   width: 28vmin;
@@ -214,7 +185,6 @@ body.single-toggle .drop:nth-child(10) {
   animation-iteration-count: infinite;
   filter: saturate(50%);
 }
-
 .background span:nth-child(0) {
   color: #e45a84;
   top: 93%;
@@ -396,6 +366,14 @@ body.single-toggle .drop:nth-child(10) {
   box-shadow: 56vmin 0 7.4154181922351246vmin currentColor;
 }
 
+/*Fleur/Rouge Background Anim keyframes*/
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+/*Futuria Background Anim */
 .FuturiaAnim {
   pointer-events: none;
   position: absolute;
@@ -404,7 +382,6 @@ body.single-toggle .drop:nth-child(10) {
   height: 100%;
   opacity: 0.7;
 }
-
 .univers * svg {
   height: 140%;
   display: block;
@@ -412,7 +389,6 @@ body.single-toggle .drop:nth-child(10) {
   left: 0;
   top: -100px;
 }
-
 .univers * svg,
 #thisUniverse * svg {
   opacity: 0.85;
@@ -422,7 +398,6 @@ body.single-toggle .drop:nth-child(10) {
   filter: hue-rotate(95deg);
   mix-blend-mode: color-burn;
 }
-
 #top .st48,
 #top .st52,
 #top .st50 {
@@ -477,6 +452,8 @@ body.single-toggle .drop:nth-child(10) {
 #farright .st51 {
   animation: drift-right-up 40s;
 }
+
+/*Futuria Background Anim keyframes*/
 @keyframes drift-right {
   100% {
     transform: translate(2000px, -20px);
