@@ -1,5 +1,6 @@
 /******CREATEURS******/
 import ReactTooltip from "react-tooltip";
+import Back from "../style/background/background2.webp";
 
 /***COMPONENT***/
 export default function Createurs(data) {
@@ -25,6 +26,12 @@ export default function Createurs(data) {
   /*DOM*/
   return (
     <div id="createurs" className="text-center">
+      {/*Background Img*/}
+      <img
+        src={Back}
+        className="backgnd"
+        alt={"Illustration de Noir D'absinthe"}
+      />{" "}
       <div className="container text-center">
         {/*Editors Section*/}
         <h1 className="creaTitle">{data.data2.createurs.crea1}</h1>
@@ -34,7 +41,7 @@ export default function Createurs(data) {
             ? data.data2.teamEdi.map((team, i) => (
                 <div
                   key={`${team.name}-${i}`}
-                  className="col-sm-4 col-md-2 col-lg-2 creator"
+                  className="col-sm-3 col-md-2 col-lg-2 creator"
                 >
                   <img
                     className="img-responsive creatora"
@@ -68,7 +75,7 @@ export default function Createurs(data) {
             ? data.data2.teamAuth.sort(randomize).map((team, i) => (
                 <div
                   key={`${team.name}-${i}`}
-                  className="col-sm-4 col-md-2 col-lg-2 creator creator2"
+                  className="col-sm-3 col-md-2 col-lg-2 creator creator2"
                 >
                   <img
                     className="img-responsive creatora"
@@ -99,7 +106,7 @@ export default function Createurs(data) {
             ? data.data2.teamIllus.sort(randomize).map((team, i) => (
                 <div
                   key={`${team.name}-${i}`}
-                  className="col-sm-4 col-md-2 col-lg-2 creator creator2"
+                  className="col-sm-3 col-md-2 col-lg-2 creator creator2"
                 >
                   <img
                     className="img-responsive creatora"
@@ -131,7 +138,7 @@ export default function Createurs(data) {
               ? data.data2.teamOmbre.sort(randomize).map((team, i) => (
                   <div
                     key={`${team.name}-${i}`}
-                    className="col-sm-4 col-md-2 col-lg-2 creator"
+                    className="col-sm-3 col-md-2 col-lg-2 creator"
                   >
                     <img
                       className="img-responsive creatora"
@@ -155,7 +162,6 @@ export default function Createurs(data) {
           </div>
         </div>
       </div>
-
       {/*Tooltips parameters for hover links*/}
       <ReactTooltip
         id="UtipLink"
