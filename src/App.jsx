@@ -13,7 +13,6 @@ import {
   FuturiaAnim,
 } from "./components/UniversAnim";
 
-
 /***COMPONENTS***/
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -48,9 +47,8 @@ export default function App() {
 
   /*DOM*/
   return (
-
     <Router>
-              {/*BACKGROUND ANIMATION*/}
+      {/*BACKGROUND ANIMATION*/}
       {DustAnim()}
       {MainAnim()}
       <Header data1={Data1} data2={Data2} />
@@ -58,11 +56,9 @@ export default function App() {
         {/*ROUTES*/}
         <Switch>
           {/*HOMEPAGE*/}
-        {/*
           <Route exact path="/accueil">
             <Homepage data1={Data1} data2={Data2} />
           </Route>
-          */}
           {/*CREATEURSE*/}
           {/*
           <Route exact path="/createurs">
@@ -76,6 +72,7 @@ export default function App() {
           </Route>
           */}
           {/*UNIVERS*/}
+          {/*
           <Route
             exact
             path={[
@@ -93,7 +90,9 @@ export default function App() {
           >
             <ThisUniverse data1={Data1} data2={Data2} data3={Data3} />
           </Route>
+        */}
           {/*REDIRECT*/}
+
           <Route>
             <Redirect to="/accueil" />
           </Route>

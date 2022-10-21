@@ -122,7 +122,7 @@ export default function Header(data) {
             </a>
           </li>
           {/*4 - à propos + modal*/}
-          <div>
+          <li>
             <button
               className="modalButton"
               onClick={() => {
@@ -160,7 +160,7 @@ export default function Header(data) {
                 alt={"Logo de " + data.data1.nom}
               />{" "}
             </Modal>
-          </div>
+          </li>
           {/*5 - Contact*/}
 
           <li>
@@ -170,7 +170,7 @@ export default function Header(data) {
             {/*5b - Contact sub menu2 */}
             <ul className="subList">
               {/*5b - 1 - Contact Form & Modal */}
-              <div>
+              <li>
                 <button
                   className="modalButton"
                   onClick={() => {
@@ -277,9 +277,9 @@ export default function Header(data) {
                     </li>
                   </ul>
                 </Modal>
-              </div>
+              </li>
               {/*5b - 2 - Manuscripts & text submissions + modal*/}
-              <div>
+              <li>
                 <button
                   className="modalButton"
                   onClick={() => {
@@ -320,9 +320,9 @@ export default function Header(data) {
                     alt={data.data1 ? data.data1.nom : "loading..."}
                   />{" "}
                 </Modal>
-              </div>
+              </li>
               {/*5b - 3 - Press + modal*/}
-              <div>
+              <li>
                 <button
                   className="modalButton"
                   onClick={() => {
@@ -364,7 +364,7 @@ export default function Header(data) {
                     alt={data.data1 ? data.data1.nom : "loading..."}
                   />{" "}
                 </Modal>
-              </div>
+              </li>
               {/*5b - 4 - Media kit download link (PDF)*/}
               <li>
                 <Link

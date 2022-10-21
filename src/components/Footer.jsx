@@ -35,7 +35,7 @@ export default function Footer(data) {
   return (
     <div>
       <footer id="footer">
-        <ul className="menu">
+        <ul className="menuF">
           {/*Mentions button & modal*/}
           <li>
             <div>
