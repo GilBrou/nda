@@ -13,24 +13,20 @@
   position: relative;
 
   /*Background*/
-
-  /*
   background: url("./background/background2.jpg");
-
   background-color: var(--blackish);
-
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  */
 }
 
+/*
 #createurs .backgnd {
-  /*********************/
   position: fixed;
   left: 0;
 }
+*/
 .container {
   padding: 0 30px 0 30px;
 }

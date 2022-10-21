@@ -1,5 +1,6 @@
 /******CREATEURS******/
 import ReactTooltip from "react-tooltip";
+/*
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Back from "../style/background/background2.jpg";
 import {
@@ -10,6 +11,7 @@ import {
   FleurRougeAnim,
   FuturiaAnim,
 } from "../components/UniversAnim";
+*/
 
 /***COMPONENT***/
 export default function Createurs(data) {
@@ -36,15 +38,21 @@ export default function Createurs(data) {
   return (
     <div id="createurs" className="text-center">
       <div className="container text-center">
+    {/*
         <LazyLoadImage
           src={Back}
           className="backgnd"
           effect="blur"
           alt={"Illustration de Noir D'absinthe"}
         />{" "}
+      */}
+
+
         {/*BACKGROUND ANIMATION*/}
+      {/*
         {DustAnim()}
         {MainAnim()}
+        */}
         {/*Editors Section*/}
         <h1 className="creaTitle">{data.data2.createurs.crea1}</h1>
         {/*Editors's cards creation from Json data*/}

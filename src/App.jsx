@@ -4,6 +4,15 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Redirect } from "react-router";
+import {
+  DustAnim,
+  MainAnim,
+  TerraAnim,
+  FolieAnim,
+  FleurRougeAnim,
+  FuturiaAnim,
+} from "./components/UniversAnim";
+
 
 /***COMPONENTS***/
 import Header from "./components/Header";
@@ -39,7 +48,11 @@ export default function App() {
 
   /*DOM*/
   return (
+
     <Router>
+              {/*BACKGROUND ANIMATION*/}
+      {DustAnim()}
+      {MainAnim()}
       <Header data1={Data1} data2={Data2} />
       <div className="app">
         {/*ROUTES*/}
