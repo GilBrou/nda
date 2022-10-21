@@ -17,7 +17,6 @@ import {
 } from "../components/UniversAnim";
 */
 
-
 /***COMPONENT***/
 export default function Homepage(data) {
   /*background objects selection for toggling according to modals*/
@@ -27,7 +26,7 @@ export default function Homepage(data) {
   /*DOM*/
   return (
     <div className="homepage">
-  {/*
+      {/*
       <LazyLoadImage
         src={Back}
         className="backgnd"
@@ -37,7 +36,7 @@ export default function Homepage(data) {
       />{" "}
       */}
       {/*BACKGROUND ANIMATION*/}
-    {/*
+      {/*
       {DustAnim()}
       {MainAnim()}
       */}
