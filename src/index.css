@@ -69,7 +69,7 @@ a:active {
 .homepage {
   width: 100%;
   height: 100vh;
-  background: url("./style/background/background.webp");
+  background: url("./style/background/background.jpg");
   /*background-color: var(--blackish);*/
   background-position: center;
   background-attachment: fixed;
