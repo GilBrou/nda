@@ -58,13 +58,17 @@ export default function App() {
         {/*ROUTES*/}
         <Switch>
           {/*HOMEPAGE*/}
+        {/*
           <Route exact path="/accueil">
             <Homepage data1={Data1} data2={Data2} />
           </Route>
+          */}
           {/*CREATEURSE*/}
+          {/*
           <Route exact path="/createurs">
             <Createurs data1={Data1} data2={Data2} />
           </Route>
+          */}
           {/*UNIVERS HOMEPAGE*/}
           {/*
           <Route exact path="/nos-univers">
