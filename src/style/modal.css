@@ -71,6 +71,7 @@
 }
 .react-responsive-modal-closeButton {
   position: absolute;
+  z-index: 1500;
   top: 14px;
   right: 14px;
   border: none;
