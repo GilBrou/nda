@@ -75,6 +75,7 @@ a:active {
 
 .backgnd {
   pointer-events: none;
+  width: 100%;
   height: auto;
   display: flex;
   position: absolute;
