@@ -1,5 +1,15 @@
 /******CREATEURS******/
 import ReactTooltip from "react-tooltip";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import Back from "../style/background/background2.jpg";
+import {
+  DustAnim,
+  MainAnim,
+  TerraAnim,
+  FolieAnim,
+  FleurRougeAnim,
+  FuturiaAnim,
+} from "../components/UniversAnim";
 
 /***COMPONENT***/
 export default function Createurs(data) {
@@ -26,6 +36,15 @@ export default function Createurs(data) {
   return (
     <div id="createurs" className="text-center">
       <div className="container text-center">
+        <LazyLoadImage
+          src={Back}
+          className="backgnd"
+          effect="blur"
+          alt={"Illustration de Noir D'absinthe"}
+        />{" "}
+        {/*BACKGROUND ANIMATION*/}
+        {DustAnim()}
+        {MainAnim()}
         {/*Editors Section*/}
         <h1 className="creaTitle">{data.data2.createurs.crea1}</h1>
         {/*Editors's cards creation from Json data*/}
@@ -59,7 +78,6 @@ export default function Createurs(data) {
               ))
             : "Loading..."}
         </div>
-
         {/*Authors Section*/}
         <h1 className="creaTitle">{data.data2.createurs.crea2}</h1>
         {/*Authors's cards creation from Json data*/}
@@ -90,7 +108,6 @@ export default function Createurs(data) {
               ))
             : "Loading..."}
         </div>
-
         {/*Illustrators Section*/}
         <h1 className="creaTitle">{data.data2.createurs.crea3}</h1>
         {/*Illustrators's cards creation from Json data*/}
@@ -121,7 +138,6 @@ export default function Createurs(data) {
               ))
             : "Loading..."}
         </div>
-
         {/*Support Section*/}
         <h1 className="creaTitle">{data.data2.createurs.crea4}</h1>
         {/*Supporters's cards creation from Json data*/}

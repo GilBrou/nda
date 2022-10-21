@@ -4,6 +4,7 @@ import ReactTooltip from "react-tooltip";
 
 /***COMPONENTS***/
 import {
+  DustAnim,
   MainAnim,
   TerraAnim,
   FolieAnim,
@@ -51,24 +52,39 @@ export default function ThisUniverse(data) {
         window.location.pathname.indexOf("onyria") != -1 ||
         window.location.pathname.indexOf("chrysalis") != -1 ||
         window.location.pathname.indexOf("pousse") != -1 ||
-        window.location.pathname.indexOf("hors") != -1
+        window.location.pathname.indexOf("hors") != -1 ||
+        window.location.pathname.indexOf("urbana") != -1
       ) {
-        return MainAnim();
+        return (
+          <div>
+            {DustAnim()}
+            {MainAnim()}
+          </div>
+        );
       } else if (window.location.pathname.indexOf("futuria") != -1) {
-        return FuturiaAnim();
-      } else if (window.location.pathname.indexOf("rbana") != -1) {
-        /*
-        console.log("This is URBANA !!! ");
-        return <div className="TerraAnimWrapper">{TerraAnim()}</div>;
-        */
-        return MainAnim();
+        return (
+          <div>
+            {DustAnim()}
+            {FuturiaAnim()}
+          </div>
+        );
       } else if (
         window.location.pathname.indexOf("rouge") != -1 ||
         window.location.pathname.indexOf("fleur") != -1
       ) {
-        return FleurRougeAnim();
+        return (
+          <div>
+            {DustAnim()}
+            {FleurRougeAnim()}
+          </div>
+        );
       } else if (window.location.pathname.indexOf("folie") != -1) {
-        return FolieAnim();
+        return (
+          <div>
+            {DustAnim()}
+            {FolieAnim()}
+          </div>
+        );
       }
     }
   }

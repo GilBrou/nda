@@ -42,42 +42,6 @@ export default function App() {
     <Router>
       <Header data1={Data1} data2={Data2} />
       <div className="app">
-        {/*BACKGROUND ANIMATION*/}
-        <div className="bg-animation">
-          <div id="stars" />
-          <div id="stars2" />
-          <div id="stars4" />
-        </div>
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
         {/*ROUTES*/}
         <Switch>
           {/*HOMEPAGE*/}
@@ -92,7 +56,6 @@ export default function App() {
           {/*
           <Route exact path="/nos-univers">
             <Univers data1={Data1} data2={Data2} />
-
           </Route>
           */}
           {/*UNIVERS*/}

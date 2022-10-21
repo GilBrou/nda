@@ -1,5 +1,16 @@
 /***Universes Animations***/
 
+/*Dust Anim*/
+export function DustAnim() {
+	return (
+		<div className="bg-animation">
+			<div id="stars" />
+			<div id="stars2" />
+			<div id="stars4" />
+		</div>
+	);
+}
+
 /*Firefly Anim*/
 export function MainAnim() {
 	return (
