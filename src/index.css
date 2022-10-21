@@ -32,6 +32,9 @@ html {
   color: var(--whiteish);
   background-color: var(--blackish);
 
+  /*Background animation*/
+  /*animation: animMuse; 30s ease-out infinite alternate both;*/
+
   /*Color Variables*/
   --blackish: #0e0d0d;
   --blackishBack: #000000cc;
@@ -63,22 +66,14 @@ a:active {
   text-decoration: none;
   color: inherit;
 }
-
 .homepage {
   width: 100%;
-  max-width: 100vw;
-  max-height: 100vh;
-  height: 100%;
+  height: 100vh;
+  background: url("./style/background/background.webp");
+  /*background-color: var(--blackish);*/
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   overflow: hidden;
-  position: absolute;
-}
-
-.backgnd {
-  pointer-events: none;
-  width: 100%;
-  height: auto;
-  display: flex;
-  position: absolute;
-  top: 35%;
-  transform: translate(0%, -35%);
 }

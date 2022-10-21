@@ -11,10 +11,15 @@
   align-items: center;
   padding: 17vh 0 10vh 0;
   position: relative;
-}
 
-#createurs .backgnd { /**/
-  position: fixed;
+  /*Background*/
+  background: url("./background/background2.webp");
+  background-color: var(--blackish);
+
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container {

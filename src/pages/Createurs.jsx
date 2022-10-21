@@ -1,8 +1,5 @@
 /******CREATEURS******/
 import ReactTooltip from "react-tooltip";
-import Back from "../style/background/background2.webp";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-
 
 /***COMPONENT***/
 export default function Createurs(data) {
@@ -28,17 +25,6 @@ export default function Createurs(data) {
   /*DOM*/
   return (
     <div id="createurs" className="text-center">
-
-      {/*Background Img*/}
-     <LazyLoadImage
-        src={Back}
-        className="backgnd"
-        width={1920}
-        height={937}
-        alt={"Illustration de Noir D'absinthe"}
-      />{" "}
-
-
       <div className="container text-center">
         {/*Editors Section*/}
         <h1 className="creaTitle">{data.data2.createurs.crea1}</h1>
