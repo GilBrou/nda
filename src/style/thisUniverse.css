@@ -16,7 +16,7 @@
     background-attachment: fixed;
     background-size: cover;
     /*background-position: center;*/
-    background-position: 50% 10%!important;/**/
+    background-position: 50% 10% !important; /**/
     background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
@@ -262,7 +262,7 @@
 .subTitle {
     margin: 20px;
     display: flex;
-    width: 95%;
+    /*width: 95%;*/
     text-align: left;
     align-content: center;
     justify-content: center;

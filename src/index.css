@@ -38,7 +38,7 @@ html {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  overflow: hidden;
+  /*overflow: hidden;*/
 
   /*Background animation*/
   /*animation: animMuse; 30s ease-out infinite alternate both;*/

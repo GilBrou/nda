@@ -38,14 +38,6 @@ export default function Createurs(data) {
   return (
     <div id="createurs" className="text-center">
       <div className="container text-center">
-        {/*
-        <LazyLoadImage
-          src={Back}
-          className="backgnd"
-          effect="blur"
-          alt={"Illustration de Noir D'absinthe"}
-        />{" "}
-      */}
         {/*BACKGROUND ANIMATION*/}
         {DustAnim()}
         {MainAnim()}
@@ -120,7 +112,7 @@ export default function Createurs(data) {
             ? data.data2.teamIllus.sort(randomize).map((team, i) => (
                 <div
                   key={`${team.name}-${i}`}
-                  className="col-sm-3 col-md-2 col-lg-2 creator creator2"
+                  className="col-sm-3 col-md-2 col-lg-2 creator"
                 >
                   <img
                     className="img-responsive creatora"

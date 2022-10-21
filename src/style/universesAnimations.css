@@ -377,6 +377,8 @@ body.single-toggle .drop:nth-child(10) {
 .FuturiaAnim {
   pointer-events: none;
   position: absolute;
+  position: fixed;
+
   top: 0;
   width: 100%;
   height: 100%;
