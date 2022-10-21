@@ -41,7 +41,7 @@ html {
   /*overflow: hidden;*/
 
   /*Background animation*/
-  /*animation: animMuse; 30s ease-out infinite alternate both;*/
+  /*animation: animMuse 30s ease-out infinite alternate both;*/
 
   /*Color Variables*/
   --blackish: #0e0d0d;

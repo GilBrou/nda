@@ -21,6 +21,7 @@
 		display: block !important;
 		margin: auto !important;
 		padding: 50px;
+		/*background-color: red;*/
 	}
 
 	#createurs h1 {
@@ -57,6 +58,8 @@
 		width: 60% !important;
 		align-self: center !important;
 		padding: 0 50px 0 50px;
+		margin-top: 125px !important;
+		/*background-color: blue!important;*/
 	}
 	.creator .Jobs {
 		bottom: -70px !important;
@@ -182,9 +185,9 @@
 	#intro {
 		padding: unset;
 	}
-	.intro {
+	/*.intro {
 		padding-top: 10vh !important;
-	}
+	}*/
 	.logoFull {
 		width: 80% !important;
 	}
@@ -200,6 +203,7 @@
 	}
 	.intro h1 {
 		font-size: 20px !important;
+		margin-top: 100px !important;
 	}
 	.creator {
 		max-width: 70%;
