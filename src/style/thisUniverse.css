@@ -23,36 +23,36 @@
 }
 
 .MemoriaU {
-    background: url("../../public/img/Background/Mémoria.webp");
+    background: url("../../public/img/Background/Mémoria.jpg");
 }
 .FuturiaU {
-    background: url("../../public/img/Background/Futuria.webp");
+    background: url("../../public/img/Background/Futuria.jpg");
     z-index: 750;
 }
 .OnyriaU {
-    background: url("../../public/img/Background/Onyria.webp");
+    background: url("../../public/img/Background/Onyria.jpg");
 }
 .UrbanaU {
-    background: url("../../public/img/Background/Terra Urbana.webp");
+    background: url("../../public/img/Background/Terra Urbana.jpg");
 }
 .RougeU {
-    background: url("../../public/img/Background/Rouge d'Absinthe.webp");
+    background: url("../../public/img/Background/Rouge d'Absinthe.jpg");
 }
 .FolieU {
-    background: url("../../public/img/Background/L'Antre de la Folie.webp");
+    background: url("../../public/img/Background/L'Antre de la Folie.jpg");
 }
 .FleurU {
-    background: url("../../public/img/Background/Fleur d'Absinthe.webp");
+    background: url("../../public/img/Background/Fleur d'Absinthe.jpg");
 }
 .ChrysalisU {
-    background: url("../../public/img/Background/Chrysalis.webp");
+    background: url("../../public/img/Background/Chrysalis.jpg");
 }
 .PousseU {
-    background: url("../../public/img/Background/Pousse d'Absinthe.webp");
+    background: url("../../public/img/Background/Pousse d'Absinthe.jpg");
 }
 
 .HorsCollecU {
-    background: url("../../public/img/Background/Hors Collection.webp");
+    background: url("../../public/img/Background/Hors Collection.jpg");
 }
 
 #thisUniverse .container {
