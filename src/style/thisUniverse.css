@@ -25,56 +25,55 @@
 
 .MemoriaU {
     background: url("../../public/img/Background/Mémoria.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;/***/
-          animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; /***/
+    animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .FuturiaU {
     background: url("../../public/img/Background/Futuria.webp");
     z-index: 750;
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;/***/
-          animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; /***/
+    animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .OnyriaU {
     background: url("../../public/img/Background/Onyria.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;/***/
-          animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; /***/
+    animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .UrbanaU {
     background: url("../../public/img/Background/Terra Urbana.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;/***/
-          animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; /***/
+    animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .RougeU {
     background: url("../../public/img/Background/Rouge d'Absinthe.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;/***/
-          animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; /***/
+    animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .FolieU {
     background: url("../../public/img/Background/L'Antre de la Folie.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;/***/
-          animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; /***/
+    animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .FleurU {
     background: url("../../public/img/Background/Fleur d'Absinthe.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;/***/
-          animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; /***/
+    animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .ChrysalisU {
-
     background: url("../../public/img/Background/Chrysalis.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;/***/
-          animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; /***/
+    animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .PousseU {
     background: url("../../public/img/Background/Pousse d'Absinthe.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;/***/
-          animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; /***/
+    animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 .HorsCollecU {
     background: url("../../public/img/Background/Hors Collection.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;/***/
-          animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; /***/
+    animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 #thisUniverse .container {
@@ -90,9 +89,15 @@
     animation: anipers3 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
         alternate both;
     margin-bottom: 25px;
+    opacity: 0;
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; /***/
+    animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .UP {
     margin-bottom: 100px;
+    opacity: 0;
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; /***/
+    animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 #thisUniverse .row {
     display: flex;
