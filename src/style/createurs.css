@@ -27,7 +27,10 @@
   padding: 0 30px 0 30px;
 }
 .container h1 {
+  opacity: 0;
   margin-bottom: 70px;
+ -webkit-animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;/***/
+          animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
 }
 .subRow {
   display: flex;
@@ -36,11 +39,15 @@
 
 /* Profile card */
 .creator {
+  opacity: 0;
   display: flex;
   flex-direction: column;
   margin-bottom: 100px;
   position: relative;
   transition: 0.45s;
+    -webkit-animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;/***/
+          animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+
 }
 .creator2 {
   margin-bottom: 35px;
