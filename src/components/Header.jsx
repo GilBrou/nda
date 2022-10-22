@@ -51,6 +51,7 @@ export default function Header(data) {
           {/*Site Logo*/}
           <a href="/accueil">
             <img
+            fetchpriority="high"
               src={
                 data.data1.UimgLinks.IL0 +
                 data.data1.ressources.logo1 +

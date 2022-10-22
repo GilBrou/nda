@@ -6,17 +6,14 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <title>Éditions Noir d'Absinthe</title>
     <meta name="title" content="Noir d'Absinthe | Maison d'édition" />
     <meta name="description" content="Maison d'édition Noir d'Absinthe" />
-
     <meta name="keywords" content="Noir, Absinthe, édition, SFFF" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="language" content="French" />
     <meta name="revisit-after" content="30 days" />
     <meta name="author" content="Noir d'Absinthe" />
-
     <meta property="og:title" content="Noir d'Absinthe" />
     <meta
       property="og:description"
@@ -24,10 +21,38 @@
     />
     <meta property="og:site_name" content="Noir d'Absinthe" />
     <meta property="og:type" content="website" />
+
+    <!-- Load the stylesheet that will reference the LCP image. -->
+<link rel="stylesheet" href="../src/style/intro.css">
+<link rel="stylesheet" href="../src/index.css">
+<!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
+<link rel="preload" fetchpriority="high" as="image" href="../src/style/background/background.webp" type="image/webp">
+<!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
+<link rel="preload" fetchpriority="high" as="image" href="./img/LogoL.webp" type="image/webp">
+<link rel="preload" fetchpriority="high" as="image" href="./img/LogoS.webp" type="image/webp">
+
+
+
+
+      <!--To DEFER<-->
+
+
+<link rel="preload" href="css/bootstrap.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/bootstrap.css"></noscript>
+
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></noscript>
+
+
+<!--
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+<-->
+
 
     <!--
   <meta property="og:url" content="https://www.gillianbroussedev.com">

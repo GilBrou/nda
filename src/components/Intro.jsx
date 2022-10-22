@@ -8,6 +8,7 @@ export default function Intro(data) {
       <div className="intro" id="thisToggle">
         {/*Large Animated Logo*/}
         <img
+        fetchpriority="high"
           src={
             data.data1.UimgLinks.IL0 +
             data.data1.ressources.logo2 +

@@ -15,7 +15,7 @@
   animation: fade-in 2.5s; /**/
 
   /*Background*/
-  background: url("./background/background2.jpg");
+  background: url("./background/background2.webp");
   background-color: var(--blackish);
   background-position: center;
   background-attachment: fixed;
