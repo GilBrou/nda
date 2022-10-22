@@ -20,40 +20,61 @@
     background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
-    animation: fade-in 2.5s; /**/
+    /*animation: fade-in 2.5s;*/ /**/
 }
 
 .MemoriaU {
     background: url("../../public/img/Background/Mémoria.webp");
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;/***/
+          animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 .FuturiaU {
     background: url("../../public/img/Background/Futuria.webp");
     z-index: 750;
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;/***/
+          animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 .OnyriaU {
     background: url("../../public/img/Background/Onyria.webp");
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;/***/
+          animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 .UrbanaU {
     background: url("../../public/img/Background/Terra Urbana.webp");
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;/***/
+          animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 .RougeU {
     background: url("../../public/img/Background/Rouge d'Absinthe.webp");
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;/***/
+          animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 .FolieU {
     background: url("../../public/img/Background/L'Antre de la Folie.webp");
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;/***/
+          animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 .FleurU {
     background: url("../../public/img/Background/Fleur d'Absinthe.webp");
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;/***/
+          animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 .ChrysalisU {
+
     background: url("../../public/img/Background/Chrysalis.webp");
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;/***/
+          animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 .PousseU {
     background: url("../../public/img/Background/Pousse d'Absinthe.webp");
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;/***/
+          animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .HorsCollecU {
     background: url("../../public/img/Background/Hors Collection.webp");
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;/***/
+          animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 #thisUniverse .container {
