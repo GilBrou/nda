@@ -12,6 +12,8 @@
   padding: 17vh 0 10vh 0;
   position: relative;
 
+  animation: fade-in 2.5s; /**/
+
   /*Background*/
   background: url("./background/background2.jpg");
   background-color: var(--blackish);
@@ -76,10 +78,8 @@
 .creator .Credits {
   position: absolute;
   color: #ffd70099;
-  /*height: 30%;*/
   width: 85%;
   font-size: 10px !important;
-  /*bottom: -60px;*/
   bottom: -10px;
   text-shadow: 1px 1px 0.5px var(--blackish);
   pointer-events: none;

@@ -20,6 +20,7 @@
     background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
+    animation: fade-in 2.5s; /**/
 }
 
 .MemoriaU {
@@ -87,21 +88,6 @@
     margin-bottom: 150px;
 }
 
-#thisUniverse h2 {
-    /*    display: flex;*/
-    /*color:  red;*/
-}
-/*
-#thisUniverse .book img {
-    animation: anipers3 11.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
-        alternate both;
-}
-
-#thisUniverse .container .row .book:nth-child(even) img {
-    animation: anipers3 11.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
-        alternate both -7.5s;
-}
-*/
 #thisUniverse .container .row .book:nth-child(even) {
     display: flex;
     flex-wrap: wrap;
@@ -122,18 +108,18 @@
 }
 
 .book:nth-child(even) .bookRight {
-    animation: swing-in-left-fwd 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    animation: swing-in-left-fwd 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s
         both;
 }
 
 .bookLeft {
     width: 30%;
     position: relative;
-    animation: scale-in-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s both;
+    animation: scale-in-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
 }
 
 .book:nth-child(even) .bookLeft {
-    animation: scale-in-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s
+    animation: scale-in-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.3s
         both;
 }
 .bookLeft img {
@@ -151,7 +137,7 @@
     align-items: center;
     align-content: center;
     animation: swing-in-bottom-fwd 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275)
-        0.6s both;
+        1.6s both;
 }
 
 .ReviewLinks {
@@ -196,8 +182,6 @@
 }
 .ReviewLinks a:hover {
     transition: 0.3s;
-    /*color: var(--whiteish)!important;*/
-    /*color: var(--greenish)!important;*/
     transform: scale(1.2);
 }
 
@@ -223,7 +207,7 @@
     background-color: var(--whiteishTrans);
     box-shadow: 4px 4px 8px 1px var(--blackishBack2);
     animation: swing-in-right-fwd 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275)
-        0.3s both;
+        1.3s both;
     background: url("./background/background3.webp");
     pointer-events: none;
 }
@@ -262,7 +246,6 @@
 .subTitle {
     margin: 20px;
     display: flex;
-    /*width: 95%;*/
     text-align: left;
     align-content: center;
     justify-content: center;
@@ -322,11 +305,3 @@
     left: 40%;
     top: 30%;
 }
-/*
-.TerraAnimWrapper{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index:  5000;
-}
-*/

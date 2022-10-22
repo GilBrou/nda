@@ -34,14 +34,12 @@
     "IL1": "/img/Background/",
     "IL2": "/img/Photos/",
     "IL3": "/img/Livres/",
-    "IL1B": ".webp"
+    "IL1B": ".webp",
+    "IL1B2": ".jpg"
   },
   "PAGES A FAIRE": {
-    "SITE": "OPTIMIZE SPEED IMG ETC...",
-
-    "SITE": "RESPONSIVE",
-    "RESPONSIVE": "BUG MODALS ???",        
-    "CSS": "separate functions (for ThisUniverse ?)  ???",    
+    "RESPONSIVE": "BUG MODALS ???",
+    "CSS": "separate functions (for ThisUniverse ?)  ???",
     "book": "Check tags (ARRAY + OLDSITE)"
   },
   "FONCTIONNALITES A VOIR": {
