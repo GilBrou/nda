@@ -1,9 +1,6 @@
 /******CREATEURS******/
 import ReactTooltip from "react-tooltip";
-/*
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import Back from "../style/background/background2.jpg";
-*/
+
 import {
   DustAnim,
   MainAnim,

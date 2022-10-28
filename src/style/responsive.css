@@ -25,7 +25,7 @@
 	}
 
 	#createurs h1 {
-		animation: unset !important;
+		/*animation: unset !important;*/
 	}
 	.creator a::before {
 		color: white !important;
@@ -47,7 +47,7 @@
 		left: unset !important;
 		transform: translate(0%, -50%) !important;
 		margin: auto;
-		animation: unset !important;
+		/*animation: unset !important;*/
 		/*background-color: white !important;*/
 	}
 	.logoFull {
@@ -109,9 +109,15 @@
 
 /**********SM-768************/
 @media (max-width: 767px) {
+	#createurs .row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
 	.creator {
-		max-width: 50%;
-		margin: auto;
+		/*max-width: 50%;
+		margin: auto;*/
 	}
 }
 
@@ -210,7 +216,7 @@
 		margin: auto;
 	}
 	#thisUniverse * {
-		animation: unset !important;
+		/*animation: unset !important;*/
 	}
 	#thisUniverse h1 {
 		font-size: 40px !important;
@@ -219,7 +225,7 @@
 		font-size: 16px !important;
 	}
 	#thisUniverse h2 {
-		font-size: 24px !important;
+		font-size: 24px /*!important*/;
 	}
 	.subTitle {
 		margin: 10px 0 10px 0 !important;
@@ -233,5 +239,8 @@
 
 	.bookRight p {
 		font-size: 15px !important;
+	}
+	.bookRight .sousTitre {
+		font-size: 17px !important;
 	}
 }
