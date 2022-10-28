@@ -3,7 +3,6 @@
 /*** COMMENT AND CLEAN ***/
 
 #thisUniverse {
-    /*animation: animMuse 25s ease-out infinite alternate both;*/
     width: 100vw;
     height: 100%;
     max-width: 100%;
@@ -15,12 +14,10 @@
     padding: 13vh 0 10vh 0;
     background-attachment: fixed;
     background-size: cover;
-    /*background-position: center;*/
     background-position: 50% 10% !important; /**/
     background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
-    /*animation: fade-in 2.5s;*/ /**/
 }
 
 .MemoriaU {
@@ -89,15 +86,15 @@
     animation: anipers3 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
         alternate both;
     margin-bottom: 25px;
-    opacity: 0;
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; /***/
-    animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    /*opacity: 0;
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; */
+    /*animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; */
 }
 .UP {
     margin-bottom: 100px;
-    opacity: 0;
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; /***/
-    animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    /*opacity: 0;
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; */
+    /*animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;*/
 }
 #thisUniverse .row {
     display: flex;

@@ -135,7 +135,7 @@ export default function Createurs(data) {
         <h1 className="creaTitle">{data.data2.createurs.crea4}</h1>
         {/*Supporters's cards creation from Json data*/}
         <div className="row text-center">
-          <div className="subRow">
+          {/*<div className="subRow">*/}
             {data.data2
               ? data.data2.teamOmbre.sort(randomize).map((team, i) => (
                   <div
@@ -161,7 +161,7 @@ export default function Createurs(data) {
                   </div>
                 ))
               : "Loading..."}
-          </div>
+          {/*</div>*/}
         </div>
       </div>
       {/*Tooltips parameters for hover links*/}

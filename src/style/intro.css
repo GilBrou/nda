@@ -29,7 +29,9 @@
   font-size: 22px;
   width: 100%;
   font-weight: 100;
+  /*
   animation: anipers2 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
     alternate both;
+    */
   text-shadow: 5px 2px 12px var(--blackish);
 }
