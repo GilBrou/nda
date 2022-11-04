@@ -84,8 +84,9 @@
 .creator .Credits {
   position: absolute;
   color: #ffd70099;
-  width: 85%;
-  font-size: 10px !important;
+  width: 84%;
+  border-radius: 0 0 10px 10px;
+  font-size: 9px !important;
   bottom: -10px;
   text-shadow: 1px 1px 0.5px var(--blackish);
   pointer-events: none;

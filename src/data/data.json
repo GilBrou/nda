@@ -38,6 +38,8 @@
     "IL1B2": ".jpg"
   },
   "PAGES A FAIRE": {
+    "BUG FIX": "tooltip",
+
     "RESPONSIVE": "BUG MODALS ???",
     "CSS": "separate functions (for ThisUniverse ?)  ???",
     "book": "Check tags (ARRAY + OLDSITE)"
@@ -45,16 +47,21 @@
   "FONCTIONNALITES A VOIR": {
     "QUESTIONNAIRE EN LIGNE POUR AFFICHER TRI": "",
     "RECHERCHE PAR TAG/MOTS CLES": "",
-    "inclusion vidéos": "?",
     "NEWSLETTER": "?",
-    "INCLUSION IG ET FB ?": ""
+    "INCLUSION IG ET FB ?": "",
+    "livres": "integration liens vidéos",
+    "Plus de nouvelles gratuites en DL ou lecture en ligne": "?",
+    "NOUVELLES a embranchement online": "?",
+    "lien blog": "?",
+    "nouvelle boutique": "?"
+
+
   },
   "MORGANE TO DO": {
     "MAJ infosite": "",
     "MAJ KIT MEDIA": "",
     "MAJ createurs": "to do",
-    "Photos createurs": "to do",
-    "Plus de nouvelles gratuites en DL": "?"
+    "Photos createurs": "to do"
   },
   "MOI TO DO": {
     "SEO PERFORMANCE ET REFERENCEMENT": "1/2",

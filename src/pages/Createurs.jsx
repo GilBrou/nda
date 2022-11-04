@@ -34,6 +34,22 @@ export default function Createurs(data) {
   /*DOM*/
   return (
     <div id="createurs" className="text-center">
+      {/*Tooltips parameters for hover links*/}
+      <ReactTooltip
+        id="UtipLink"
+        place="bottom"
+        animation="FadeIn"
+        effect="solid"
+        textColor="#fff"
+        arrowColor="#222020"
+        /*border="true"*/
+        borderColor="#2CC78E"
+        effect="solid"
+        backgroundColor="#222020"
+        key="tipForLinks"
+      >
+        En savoir plus
+      </ReactTooltip>
       <div className="container text-center">
         {/*BACKGROUND ANIMATION*/}
         {DustAnim()}
@@ -136,50 +152,34 @@ export default function Createurs(data) {
         {/*Supporters's cards creation from Json data*/}
         <div className="row text-center">
           {/*<div className="subRow">*/}
-            {data.data2
-              ? data.data2.teamOmbre.sort(randomize).map((team, i) => (
-                  <div
-                    key={`${team.name}-${i}`}
-                    className="col-sm-3 col-md-2 col-lg-2 creator"
-                  >
-                    <img
-                      className="img-responsive creatora"
-                      src={
-                        data.data1.UimgLinks.IL2 +
-                        team.name +
-                        data.data1.UimgLinks.IL1B
-                      }
-                      alt={"photo de " + team.name + " " + team.name2}
-                    />
-                    <p className="Names" id={team.name + "P1"}>
-                      {team.name + " " + team.name2}
-                    </p>
-                    <p className="Jobs" id={team.name + "P2"}>
-                      {team.job}
-                    </p>
-                    {GetLink(team.Lien)}
-                  </div>
-                ))
-              : "Loading..."}
+          {data.data2
+            ? data.data2.teamOmbre.sort(randomize).map((team, i) => (
+                <div
+                  key={`${team.name}-${i}`}
+                  className="col-sm-3 col-md-2 col-lg-2 creator"
+                >
+                  <img
+                    className="img-responsive creatora"
+                    src={
+                      data.data1.UimgLinks.IL2 +
+                      team.name +
+                      data.data1.UimgLinks.IL1B
+                    }
+                    alt={"photo de " + team.name + " " + team.name2}
+                  />
+                  <p className="Names" id={team.name + "P1"}>
+                    {team.name + " " + team.name2}
+                  </p>
+                  <p className="Jobs" id={team.name + "P2"}>
+                    {team.job}
+                  </p>
+                  {GetLink(team.Lien)}
+                </div>
+              ))
+            : "Loading..."}
           {/*</div>*/}
         </div>
       </div>
-      {/*Tooltips parameters for hover links*/}
-      <ReactTooltip
-        id="UtipLink"
-        place="bottom"
-        animation="FadeIn"
-        effect="solid"
-        textColor="#fff"
-        arrowColor="#222020"
-        /*border="true"*/
-        borderColor="#2CC78E"
-        effect="solid"
-        backgroundColor="#222020"
-        key="tipForLinks"
-      >
-        En savoir plus
-      </ReactTooltip>
     </div>
   );
 }

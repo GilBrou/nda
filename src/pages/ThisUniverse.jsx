@@ -324,7 +324,7 @@ export default function ThisUniverse(data) {
         borderColor="var(--greenish)"
         effect="solid"
         backgroundColor="black"
-        key={"tipForReview"}
+        key={"tipReview"}
       >
         Avis
       </ReactTooltip>
