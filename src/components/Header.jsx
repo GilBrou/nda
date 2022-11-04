@@ -81,9 +81,14 @@ export default function Header(data) {
           </li>
           {/*2 - Univers*/}
           <li>
+            <a
+              href={data.data1 ? data.data1.links.menu2L : "loading..."}
+              className="page-scroll"
+            >
             <p className="noClick">
               {data.data1 ? data.data1.menu.menu2 : "loading..."}
             </p>
+            </a>
             {/*2b - Univers sub menu2 */}
             <ul className="subList">
               {/*Dynamic creation from Json data*/}

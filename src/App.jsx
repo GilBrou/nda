@@ -22,6 +22,7 @@ import Homepage from "./pages/Homepage";
 import Createurs from "./pages/Createurs";
 import ThisUniverse from "./pages/ThisUniverse";
 import Error404 from "./pages/Error404";
+import Univers from "./pages/Univers";
 
 /***DATAS***/
 import Data1 from "./data/data.json";
@@ -58,9 +59,13 @@ export default function App() {
           <Route exact path="/accueil">
             <Homepage data1={Data1} data2={Data2} />
           </Route>
-          {/*CREATEURSE*/}
+          {/*CREATEURS*/}
           <Route exact path="/createurs">
             <Createurs data1={Data1} data2={Data2} />
+          </Route>
+          {/*UNIVERS HOMEPAGE*/}
+          <Route exact path="/nos-univers">
+            <Univers data1={Data1} data2={Data2} />
           </Route>
           {/*UNIVERS*/}
           <Route
