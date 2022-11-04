@@ -53,7 +53,8 @@ export default function ThisUniverse(data) {
         window.location.pathname.indexOf("chrysalis") != -1 ||
         window.location.pathname.indexOf("pousse") != -1 ||
         window.location.pathname.indexOf("hors") != -1 ||
-        window.location.pathname.indexOf("urbana") != -1
+        window.location.pathname.indexOf("urbana") != -1 ||
+        window.location.pathname.indexOf("folie")
       ) {
         return (
           <div>
@@ -76,13 +77,6 @@ export default function ThisUniverse(data) {
           <div>
             {DustAnim()}
             {FleurRougeAnim()}
-          </div>
-        );
-      } else if (window.location.pathname.indexOf("folie") != -1) {
-        return (
-          <div>
-            {DustAnim()}
-            {FolieAnim()}
           </div>
         );
       }
@@ -225,6 +219,19 @@ export default function ThisUniverse(data) {
     }
   }
 
+  /***Check if  Sample is available and display it***/
+  function SetSample(props, i) {
+    if (props.extrait != 0) {
+      return (
+        <a className="AExtrait" href={props.extrait} target="_blank">
+          <div className="extrait">
+            <p>➔ Extrait</p>
+          </div>
+        </a>
+      );
+    }
+  }
+
   /***Check if tags are available and display them***/
   function SetTags(props, i) {
     if (props != 0) {
@@ -260,10 +267,17 @@ export default function ThisUniverse(data) {
               }
               alt={"Couverture de " + thatBook.titre}
             />
-
+            {SetSample(thatBook)}
             <div className="ReviewLinks">
               {thatBook.reviews.map((R, i) => SetReviews(R, i))}
             </div>
+            {/*******************EN COURS*************************/}
+            <div className="secondaryInfos">
+              <p>{thatBook.prix + " € - "}
+              {thatBook.pages + " pages"}</p>
+              <p>{"ISBN : " + thatBook.ISBN}</p>
+            </div>
+            {/*******************EN COURS*************************/}
 
             {SetBuyLinks(thatBook)}
           </div>
@@ -295,7 +309,9 @@ export default function ThisUniverse(data) {
 
   /***Randomize Book position in universe***/
   function randomize(a, b) {
+    /*
     return Math.random() - 0.5;
+    */
   }
 
   /***Check Selected Universe***/

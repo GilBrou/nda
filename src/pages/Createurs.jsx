@@ -27,8 +27,16 @@ export default function Createurs(data) {
     }
   }
 
-  function randomize(a, b) {
-    return Math.random() - 0.5;
+/*Alphabetical sorting*/
+  function alphabetical(a, b) {
+    console.log(a.name);
+    if (a.name < b.name) {
+      return -1;
+    }
+    if (a.name > b.name) {
+      return 1;
+    }
+    return 0;
   }
 
   /*DOM*/
@@ -92,7 +100,7 @@ export default function Createurs(data) {
         {/*Authors's cards creation from Json data*/}
         <div className="row text-center">
           {data.data2
-            ? data.data2.teamAuth.sort(randomize).map((team, i) => (
+            ? data.data2.teamAuth.sort(alphabetical).map((team, i) => (
                 <div
                   key={`${team.name}-${i}`}
                   className="col-sm-3 col-md-2 col-lg-2 creator creator2"
@@ -122,7 +130,7 @@ export default function Createurs(data) {
         {/*Illustrators's cards creation from Json data*/}
         <div className="row text-center">
           {data.data2
-            ? data.data2.teamIllus.sort(randomize).map((team, i) => (
+            ? data.data2.teamIllus.sort(alphabetical).map((team, i) => (
                 <div
                   key={`${team.name}-${i}`}
                   className="col-sm-3 col-md-2 col-lg-2 creator"
@@ -153,7 +161,7 @@ export default function Createurs(data) {
         <div className="row text-center">
           {/*<div className="subRow">*/}
           {data.data2
-            ? data.data2.teamOmbre.sort(randomize).map((team, i) => (
+            ? data.data2.teamOmbre.sort(alphabetical).map((team, i) => (
                 <div
                   key={`${team.name}-${i}`}
                   className="col-sm-3 col-md-2 col-lg-2 creator"

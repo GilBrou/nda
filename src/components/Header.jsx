@@ -51,7 +51,7 @@ export default function Header(data) {
           {/*Site Logo*/}
           <a href="/accueil">
             <img
-            fetchpriority="high"
+              fetchpriority="high"
               src={
                 data.data1.UimgLinks.IL0 +
                 data.data1.ressources.logo1 +
@@ -85,9 +85,9 @@ export default function Header(data) {
               href={data.data1 ? data.data1.links.menu2L : "loading..."}
               className="page-scroll"
             >
-            <p className="noClick">
-              {data.data1 ? data.data1.menu.menu2 : "loading..."}
-            </p>
+              <p className="noClick">
+                {data.data1 ? data.data1.menu.menu2 : "loading..."}
+              </p>
             </a>
             {/*2b - Univers sub menu2 */}
             <ul className="subList">
@@ -205,6 +205,14 @@ export default function Header(data) {
                   <p> {data.data2 ? data.data2.contact.P3 : "loading..."}</p>
                   <p> {data.data2 ? data.data2.contact.P4 : "loading..."}</p>
                   <p> {data.data2 ? data.data2.contact.P5 : "loading..."}</p>
+                  {/* Mail*/}
+                  <li>
+                    <a href={ThatMail}>
+                      <p className="Pcenter">
+                        {data.data2 ? data.data2.nda.mail : "loading..."}
+                      </p>
+                    </a>
+                  </li>
                   {/*Social Logo & Links*/}
                   <ul className="contactList">
                     <li>

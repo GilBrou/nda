@@ -16,9 +16,9 @@
 @keyframes ShadowAnim {
   0% {
     box-shadow: -5px -5px 10px -6px var(--greenish); /*1*/
-    transform: translateX(0px);
+    /*transform: translateX(0px);
     transform-origin: center;
-    transform: perspective(1000px) rotateY(5deg);
+    transform: perspective(1000px) rotateY(5deg);*/
   }
 
   8.33% {
@@ -40,9 +40,9 @@
     box-shadow: 5px 0px 10px -6px var(--greenish);
   }
   50% {
-    transform: translateX(10px);
+    /*transform: translateX(10px);
     transform-origin: center;
-    transform: perspective(1000px) rotateY(-5deg);
+    transform: perspective(1000px) rotateY(-5deg);*/
   }
   58.31% {
     box-shadow: 5px 2.5px 10px -6px var(--greenish);
@@ -67,9 +67,9 @@
   }
 
   100% {
-    transform: translateX(0px);
+    /*transform: translateX(0px);
     transform-origin: center;
-    transform: perspective(1000px) rotateY(5deg);
+    transform: perspective(1000px) rotateY(5deg);*/
   }
 }
 

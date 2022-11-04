@@ -86,6 +86,7 @@
     animation: anipers3 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
         alternate both;
     margin-bottom: 25px;
+    pointer-events: none;
     /*opacity: 0;
     -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; */
     /*animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; */
@@ -149,8 +150,70 @@
     transform-origin: center;
     transition: 0.8s;
     box-shadow: 4px 4px 10px 2px var(--blackishBack2);
+    position: relative;
 }
+/* Porfile links */
+/*.bookLeft img a {
+  width: 15%;
+  height: 12%;
+  text-decoration: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  border-radius: 10px 0 10px 0;
+  box-shadow: -2px -1px 3px 2px var(--blackish);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blueish);
+  transition: 0.45s;
+  z-index: 2;
+}
+*/
 
+/*************en cours *******************************/
+.extrait {
+    position: absolute;
+    /*
+    top:53.7%;
+    left: 12%;
+    */
+    top:313px;
+    left: 12%;
+
+    transition: 0.2s;
+    transform: scale(1);
+}
+.extrait p {
+    background: var(--whiteish);
+    padding: 10px 15px 10px 5px !important;
+    border-radius: 0 15px 0 0;
+    box-shadow: 1px 0px 10px -2px var(--blackish);
+    border:  solid 1px var(--blackish);
+    pointer-events: none;
+}
+.extrait:hover{
+    transform: scale(1.02);
+}
+.extrait:hover p{
+    background-color: var(--greenish);
+    pointer-events: none;
+}
+.secondaryInfos{
+    display: flex;
+    flex-wrap:  wrap;
+    width: 78%;
+}
+.secondaryInfos p{
+    display: flex;
+    justify-content: center;
+    padding: 2px!important;
+    font-size: 20px!important;
+    width: 50%;
+    font-weight: 550!important;
+}
+/*************en cours *******************************/
 .buyLinks,
 .ReviewLinks {
     width: 100%;
