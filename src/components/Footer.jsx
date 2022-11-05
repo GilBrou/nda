@@ -27,6 +27,12 @@ export default function Footer(data) {
   const [open5, setOpen5] = useState(false);
   const onOpenModal5 = () => setOpen5(true);
   const onCloseModal5 = () => setOpen5(false);
+  const [open6, setOpen6] = useState(false);
+  const onOpenModal6 = () => setOpen6(true);
+  const onCloseModal6 = () => setOpen6(false);
+  const [open7, setOpen7] = useState(false);
+  const onOpenModal7 = () => setOpen7(true);
+  const onCloseModal7 = () => setOpen7(false);
 
   /*Create mailto from Json*/
   const ThatMail = "mailto:" + data.data2.nda.mail;
@@ -40,7 +46,7 @@ export default function Footer(data) {
           <li>
             <div>
               <button
-                className="modalButton footB"
+                className="modalButton footB footMentions"
                 onClick={() => {
                   onOpenModal5();
                   HideThis();
@@ -97,6 +103,251 @@ export default function Footer(data) {
               </Modal>
             </div>
           </li>
+
+          {/*Confidentiality button & modal*/}
+          <li>
+            <div>
+              <button
+                className="modalButton footB footConf"
+                onClick={() => {
+                  onOpenModal6();
+                  HideThis();
+                }}
+              >
+                {data.data2
+                  ? data.data2.confidentiality.abrtitre
+                  : "loading..."}
+              </button>
+              <Modal
+                className="myModal"
+                open={open6}
+                onClose={() => {
+                  onCloseModal6();
+                  DisplayThis();
+                }}
+                center
+              >
+                <h1>
+                  {data.data2 ? data.data2.confidentiality.titre : "loading..."}
+                </h1>
+
+                <div className="paraMentions">
+                  <h2 className="leftTitle">
+                    {data.data2 ? data.data2.confidentiality.T1 : "loading..."}
+                  </h2>
+                  <p>
+                    {data.data2 ? data.data2.confidentiality.T1a : "loading..."}
+                  </p>
+                  <p>
+                    {data.data2 ? data.data2.confidentiality.T1b : "loading..."}
+                  </p>
+                </div>
+
+                <div className="paraMentions">
+                  <h2 className="leftTitle">
+                    {data.data2 ? data.data2.confidentiality.T2 : "loading..."}
+                  </h2>
+                  <p>
+                    {data.data2 ? data.data2.confidentiality.T2a : "loading..."}
+                  </p>
+                  <p>
+                    {data.data2 ? data.data2.confidentiality.T2b : "loading..."}
+                  </p>
+                  <p>
+                    {data.data2 ? data.data2.confidentiality.T2c : "loading..."}
+                  </p>
+                  <p>
+                    {data.data2 ? data.data2.confidentiality.T2d : "loading..."}
+                  </p>
+                  <p>
+                    {data.data2 ? data.data2.confidentiality.T2e : "loading..."}
+                  </p>
+                  <p>
+                    {data.data2 ? data.data2.confidentiality.T2f : "loading..."}
+                  </p>
+                  <p>
+                    {data.data2 ? data.data2.confidentiality.T2g : "loading..."}
+                  </p>
+                </div>
+
+                <div className="paraMentions">
+                  <h2 className="leftTitle">
+                    {data.data2 ? data.data2.confidentiality.T3 : "loading..."}
+                  </h2>
+                  <p>
+                    {data.data2 ? data.data2.confidentiality.T3a : "loading..."}
+                  </p>
+                </div>
+
+                <div className="paraMentions">
+                  <h2 className="leftTitle">
+                    {data.data2 ? data.data2.confidentiality.T4 : "loading..."}
+                  </h2>
+                  <p>
+                    {data.data2 ? data.data2.confidentiality.T4a : "loading..."}
+                  </p>
+                  <p>
+                    {data.data2 ? data.data2.confidentiality.T4b : "loading..."}
+                  </p>
+                  <p>
+                    {data.data2 ? data.data2.confidentiality.T4c : "loading..."}
+                  </p>
+                </div>
+
+                <div className="paraMentions">
+                  <h2 className="leftTitle">
+                    {data.data2 ? data.data2.confidentiality.T5 : "loading..."}
+                  </h2>
+                  <p>
+                    {data.data2 ? data.data2.confidentiality.T5a : "loading..."}
+                  </p>
+                </div>
+
+                <div className="paraMentions">
+                  <h2 className="leftTitle">
+                    {data.data2 ? data.data2.confidentiality.T6 : "loading..."}
+                  </h2>
+                  <p>
+                    {data.data2 ? data.data2.confidentiality.T6a : "loading..."}
+                  </p>
+                </div>
+
+                <div className="paraMentions">
+                  <h2 className="leftTitle">
+                    {data.data2 ? data.data2.confidentiality.T7 : "loading..."}
+                  </h2>
+                  <p>
+                    {data.data2 ? data.data2.confidentiality.T7a : "loading..."}
+                  </p>
+                </div>
+
+                <div className="paraMentions">
+                  <h2 className="leftTitle">
+                    {data.data2 ? data.data2.confidentiality.T8 : "loading..."}
+                  </h2>
+                  <p>
+                    {data.data2 ? data.data2.confidentiality.T8a : "loading..."}
+                  </p>
+                </div>
+              </Modal>
+            </div>
+          </li>
+
+          {/*CGV button & modal*/}
+          <li>
+            <div>
+              <button
+                className="modalButton footB footcgv"
+                onClick={() => {
+                  onOpenModal7();
+                  HideThis();
+                }}
+              >
+                {data.data2 ? data.data2.CGV.abrtitre : "loading..."}
+              </button>
+              <Modal
+                className="myModal"
+                open={open7}
+                onClose={() => {
+                  onCloseModal7();
+                  DisplayThis();
+                }}
+                center
+              >
+                <h1>{data.data2 ? data.data2.CGV.titre : "loading..."}</h1>
+
+                <div className="paraMentions">
+                  <h2 className="leftTitle">
+                    {data.data2 ? data.data2.CGV.T1 : "loading..."}
+                  </h2>
+                  <p>{data.data2 ? data.data2.CGV.T1a : "loading..."}</p>
+                  <p>{data.data2 ? data.data2.CGV.T1b : "loading..."}</p>
+                </div>
+
+                <div className="paraMentions">
+                  <h2 className="leftTitle">
+                    {data.data2 ? data.data2.CGV.T2 : "loading..."}
+                  </h2>
+                  <p>{data.data2 ? data.data2.CGV.T2a : "loading..."}</p>
+                </div>
+
+                <div className="paraMentions">
+                  <h2 className="leftTitle">
+                    {data.data2 ? data.data2.CGV.T3 : "loading..."}
+                  </h2>
+                  <p>{data.data2 ? data.data2.CGV.T3a : "loading..."}</p>
+                </div>
+
+                <div className="paraMentions">
+                  <h2 className="leftTitle">
+                    {data.data2 ? data.data2.CGV.T4 : "loading..."}
+                  </h2>
+                  <p>{data.data2 ? data.data2.CGV.T4a : "loading..."}</p>
+                  <p>{data.data2 ? data.data2.CGV.T4b : "loading..."}</p>
+                </div>
+
+                <div className="paraMentions">
+                  <h2 className="leftTitle">
+                    {data.data2 ? data.data2.CGV.T5 : "loading..."}
+                  </h2>
+                  <p>{data.data2 ? data.data2.CGV.T5a : "loading..."}</p>
+                </div>
+
+                <div className="paraMentions">
+                  <h2 className="leftTitle">
+                    {data.data2 ? data.data2.CGV.T6 : "loading..."}
+                  </h2>
+                  <p>{data.data2 ? data.data2.CGV.T6a : "loading..."}</p>
+                </div>
+
+                <div className="paraMentions">
+                  <h2 className="leftTitle">
+                    {data.data2 ? data.data2.CGV.T7 : "loading..."}
+                  </h2>
+                  <p>{data.data2 ? data.data2.CGV.T7a : "loading..."}</p>
+                  <p>{data.data2 ? data.data2.CGV.T7b : "loading..."}</p>
+                </div>
+
+                <div className="paraMentions">
+                  <h2 className="leftTitle">
+                    {data.data2 ? data.data2.CGV.T8 : "loading..."}
+                  </h2>
+                  <p>{data.data2 ? data.data2.CGV.T8a : "loading..."}</p>
+                  <p>{data.data2 ? data.data2.CGV.T8b : "loading..."}</p>
+                </div>
+
+                <div className="paraMentions">
+                  <h2 className="leftTitle">
+                    {data.data2 ? data.data2.CGV.T9 : "loading..."}
+                  </h2>
+                  <p>{data.data2 ? data.data2.CGV.T9a : "loading..."}</p>
+                </div>
+
+                <div className="paraMentions">
+                  <h2 className="leftTitle">
+                    {data.data2 ? data.data2.CGV.T10 : "loading..."}
+                  </h2>
+                  <p>{data.data2 ? data.data2.CGV.T10a : "loading..."}</p>
+                  <p>{data.data2 ? data.data2.CGV.T10b : "loading..."}</p>
+                </div>
+
+                <div className="paraMentions">
+                  <h2 className="leftTitle">
+                    {data.data2 ? data.data2.CGV.T11 : "loading..."}
+                  </h2>
+                  <p>{data.data2 ? data.data2.CGV.T11a : "loading..."}</p>
+                </div>
+
+                <div className="paraMentions">
+                  <h2 className="leftTitle">
+                    {data.data2 ? data.data2.CGV.T12 : "loading..."}
+                  </h2>
+                  <p>{data.data2 ? data.data2.CGV.T12a : "loading..."}</p>
+                </div>
+              </Modal>
+            </div>
+          </li>
+
           {/*Socials buttons & links*/}
           {/*Facebook*/}
           <li>

@@ -118,6 +118,12 @@
 		/*max-width: 50%;
 		margin: auto;*/
 	}
+
+	.menuF li:nth-child(1),
+	.menuF li:nth-child(2),
+	.menuF li:nth-child(3) {
+		display: none !important; /***********************/
+	}
 }
 
 /**********688************/
