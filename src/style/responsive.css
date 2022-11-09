@@ -104,6 +104,9 @@
 	.creator .Jobs {
 		bottom: -70px !important;
 	}
+	.thatULink{
+		pointer-events: none;
+	}
 }
 
 /**********SM-768************/

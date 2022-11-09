@@ -2,7 +2,8 @@
 
 /*** COMMENT AND CLEAN ***/
 
-#thisUniverse {
+#thisUniverse,
+#thisSearch {
     width: 100vw;
     height: 100%;
     max-width: 100%;
@@ -73,10 +74,12 @@
     animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-#thisUniverse .container {
+#thisUniverse .container,
+#thisSearch .container {
     padding: 0 30px 0 30px;
 }
-#thisUniverse h1 {
+#thisUniverse h1,
+#thisSearch h1 {
     text-align: center;
     font-size: 65px;
     text-shadow: 5px 2px 12px var(--blackish);
@@ -97,7 +100,8 @@
     -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; */
     /*animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;*/
 }
-#thisUniverse .row {
+#thisUniverse .row,
+#thisSearch .row {
     display: flex;
     flex-wrap: wrap;
 
@@ -105,21 +109,24 @@
     justify-content: center;
 }
 
-#thisUniverse .book {
+#thisUniverse .book,
+#thisSearch .book {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 150px;
 }
 
-#thisUniverse .container .row .book:nth-child(even) {
+#thisUniverse .container .row .book:nth-child(even),
+#thisSearch .container .row .book:nth-child(even) {
     display: flex;
     flex-wrap: wrap;
 
     flex-direction: row-reverse;
 }
 
-#thisUniverse .container .row .book:last-child {
+#thisUniverse .container .row .book:last-child,
+#thisSearch .container .row .book:last-child {
     margin-bottom: 50px;
 }
 .bookLeft,
@@ -152,67 +159,47 @@
     box-shadow: 4px 4px 10px 2px var(--blackishBack2);
     position: relative;
 }
-/* Porfile links */
-/*.bookLeft img a {
-  width: 15%;
-  height: 12%;
-  text-decoration: none;
-  cursor: pointer;
-  position: absolute;
-  bottom: 0;
-  right: 15px;
-  border-radius: 10px 0 10px 0;
-  box-shadow: -2px -1px 3px 2px var(--blackish);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--blueish);
-  transition: 0.45s;
-  z-index: 2;
-}
-*/
 
 /*************en cours *******************************/
-.extrait {
-    position: absolute;
-    /*
-    top:53.7%;
-    left: 12%;
-    */
-    top:313px;
-    left: 12%;
 
-    transition: 0.2s;
-    transform: scale(1);
+.imgWrap {
+    background-color: red;
+    position: relative;
+}
+
+.extrait {
+    bottom: -1px;
+    left: -1px;
+    position: absolute;
 }
 .extrait p {
     background: var(--whiteish);
     padding: 10px 15px 10px 5px !important;
     border-radius: 0 15px 0 0;
     box-shadow: 1px 0px 10px -2px var(--blackish);
-    border:  solid 1px var(--blackish);
+    border: solid 1px var(--blackish);
     pointer-events: none;
 }
-.extrait:hover{
-    transform: scale(1.02);
-}
-.extrait:hover p{
+
+.extrait:hover p {
     background-color: var(--greenish);
     pointer-events: none;
+    transition: 1s;
 }
-.secondaryInfos{
+.secondaryInfos {
     display: flex;
-    flex-wrap:  wrap;
+    flex-wrap: wrap;
     width: 78%;
 }
-.secondaryInfos p{
+.secondaryInfos p {
     display: flex;
     justify-content: center;
-    padding: 2px!important;
-    font-size: 20px!important;
+    padding: 2px !important;
+    font-size: 18px !important;
     width: 50%;
-    font-weight: 550!important;
+    font-weight: 550 !important;
 }
+
 /*************en cours *******************************/
 .buyLinks,
 .ReviewLinks {
@@ -355,13 +342,25 @@
     box-shadow: 4px 4px 20px 2px #232323 !important;
 }
 
+.OnyriaU .secondaryInfos p,
+.UrbanaU .secondaryInfos p,
+.RougeU .secondaryInfos p,
+.FolieU .secondaryInfos p,
+.FleurU .secondaryInfos p,
+.PousseU .secondaryInfos p,
+.HorsCollecU .secondaryInfos p,
+#thisSearch .secondaryInfos p {
+    color: var(--whiteish);
+}
+
 .OnyriaU .ReviewLinks a,
 .UrbanaU .ReviewLinks a,
 .RougeU .ReviewLinks a,
 .FolieU .ReviewLinks a,
 .FleurU .ReviewLinks a,
 .PousseU .ReviewLinks a,
-.HorsCollecU .ReviewLinks a {
+.HorsCollecU .ReviewLinks a,
+#thisSearch .ReviewLinks a {
     color: var(--whiteish) !important;
 }
 
@@ -371,7 +370,8 @@
 .FolieU .bookRight,
 .FleurU .bookRight,
 .PousseU .bookRight,
-.HorsCollecU .bookRight {
+.HorsCollecU .bookRight,
+#thisSearch .bookRight {
     background-color: var(--whiteishTrans3);
 }
 .authorList {

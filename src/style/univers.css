@@ -85,6 +85,19 @@
   position: absolute;
   width: 100%;
 }
+/**************************************************/
+  .slide{ /**/
+height: 100vh!important;
+    max-width: unset!important;
+    margin: auto;
+}
+  .imgU{ /**/
+    max-width: unset!important;
+    margin: auto;
+}
+
+/**************************************************/
+
 .slideshow .slide:first-child,
 .slideshow .slide:target {
   display: block;
@@ -96,16 +109,19 @@
   position: absolute;
   width: 100%;
 }
-.pagination a {
-  background-color: var(--blackish);
-  border-radius: 50%;
+.pagination a{
   display: block;
   height: 40px;
   width: 40px;
   margin-top: -100px;
-  box-shadow: 0 0 7px 0.5px var(--blackishBack2);
   transition: 0.2s;
   animation: circle 3s linear infinite;
+}
+.aAnim {
+  display: block;
+  min-height: 40px;
+  min-width: 40px;
+  box-shadow: 0 0 7px 0.5px var(--blackishBack2);
 }
 .pagination a:nth-child(2) {
   animation-delay: -0.3s;

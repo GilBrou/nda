@@ -70,7 +70,7 @@ export default function Univers(data) {
                   })()}
                   }{/*Universe Background*/},
                   <img
-                    className="img-responsive"
+                    className="img-responsive imgU"
                     src={
                       data.data1.UimgLinks.IL1 +
                       univers.name +

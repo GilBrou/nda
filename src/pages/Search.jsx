@@ -3,106 +3,10 @@ import { Link } from "react-router-dom";
 import ReactTooltip from "react-tooltip";
 
 /***COMPONENTS***/
-import {
-  DustAnim,
-  MainAnim,
-  TerraAnim,
-  FolieAnim,
-  FleurRougeAnim,
-  FuturiaAnim,
-} from "../components/UniversAnim";
+import { MainAnim } from "../components/UniversAnim";
 
 /***COMPONENT***/
-export default function ThisUniverse(data) {
-  /*Style page according to universe selected*/
-  const thisUniverse = document.getElementById("thisUniverse");
-
-  /***Select background image according to selected universe***/
-  function SetUniverse() {
-    if (thisUniverse != null || thisUniverse != undefined) {
-      if (window.location.pathname.indexOf("memoria") != -1) {
-        thisUniverse.classList.add("MemoriaU");
-      } else if (window.location.pathname.indexOf("futuria") != -1) {
-        thisUniverse.classList.add("FuturiaU");
-      } else if (window.location.pathname.indexOf("onyria") != -1) {
-        thisUniverse.classList.add("OnyriaU");
-      } else if (window.location.pathname.indexOf("urbana") != -1) {
-        thisUniverse.classList.add("UrbanaU");
-      } else if (window.location.pathname.indexOf("rouge") != -1) {
-        thisUniverse.classList.add("RougeU");
-      } else if (window.location.pathname.indexOf("folie") != -1) {
-        thisUniverse.classList.add("FolieU");
-      } else if (window.location.pathname.indexOf("fleur") != -1) {
-        thisUniverse.classList.add("FleurU");
-      } else if (window.location.pathname.indexOf("chrysalis") != -1) {
-        thisUniverse.classList.add("ChrysalisU");
-      } else if (window.location.pathname.indexOf("pousse") != -1) {
-        thisUniverse.classList.add("PousseU");
-      } else if (window.location.pathname.indexOf("hors") != -1) {
-        thisUniverse.classList.add("HorsCollecU");
-      }
-    }
-  }
-
-  /***Select background animation according to selected universe***/
-  function SetBackground() {
-    if (thisUniverse != null || thisUniverse != undefined) {
-      if (
-        window.location.pathname.indexOf("memoria") != -1 ||
-        window.location.pathname.indexOf("onyria") != -1 ||
-        window.location.pathname.indexOf("chrysalis") != -1 ||
-        window.location.pathname.indexOf("pousse") != -1 ||
-        window.location.pathname.indexOf("hors") != -1 ||
-        window.location.pathname.indexOf("urbana") != -1 ||
-        window.location.pathname.indexOf("folie")
-      ) {
-        return (
-          <div>
-            {DustAnim()}
-            {MainAnim()}
-          </div>
-        );
-      } else if (window.location.pathname.indexOf("futuria") != -1) {
-        return (
-          <div>
-            {DustAnim()}
-            {FuturiaAnim()}
-          </div>
-        );
-      } else if (
-        window.location.pathname.indexOf("rouge") != -1 ||
-        window.location.pathname.indexOf("fleur") != -1
-      ) {
-        return (
-          <div>
-            {DustAnim()}
-            {FleurRougeAnim()}
-          </div>
-        );
-      }
-    }
-  }
-
-  /***Select Title and Intro paragraph according to selected universe***/
-  function checkName(props) {
-    for (let i in props) {
-      let thisUL = props[i].link;
-      let thisUD = props[i].description;
-      let targetU = window.location.pathname;
-      if ("/" + thisUL === targetU) {
-        let thisU = props[i].name;
-        let thisTitle = thisU;
-        let thisIntro = thisUD;
-        return (
-          <div>
-            <h1 className="UTitle">{thisTitle}</h1>
-            <p className="UP">{thisIntro}</p>
-          </div>
-        );
-      }
-    }
-  }
-
+export default function Search(data) {
   /***Check if Reviews links are available and display them***/
   function SetReviews(props, i) {
     if (props != 0) {
@@ -243,15 +147,10 @@ export default function ThisUniverse(data) {
     }
   }
 
-  /***Sort books from Json according to selected Universe and display them***/
+  /***Sort books from Json according to target and display them***/
   function SortBooks(thatBook, i) {
-    let target0 = window.location.pathname;
-    let targetB = target0.replace(new RegExp(/[-]/g), " ");
-    let targetBa = thatBook.univers.toLowerCase();
-    let targetBb = "/" + targetBa;
-    let targetBb2 = targetBb.replace(new RegExp(/[']/g), " ");
-    let targetBc = targetBb2.replace(new RegExp(/[èéêë]/g), "e");
-    if (targetBc === targetB) {
+    let target = "Louise Le Bars";
+    if (thatBook.genres.includes(target) || thatBook.par.includes(target)) {
       return (
         <div
           key={`${thatBook.titre}-${i}`}
@@ -319,14 +218,9 @@ export default function ThisUniverse(data) {
     */
   }
 
-  /***Check Selected Universe***/
-  SetUniverse();
-
   return (
-    <div id="thisUniverse" className="text-center">
-      {SetBackground()}
+    <div id="thisSearch" className="text-center">
       <div className="container text-center">
-        {checkName(data.data2.univers)}
         <div className="row text-center justify-content-center">
           {/*Dynamic creation from Json data*/}
           {data.data3.Livres.sort(dateSort).map((thatBook, i) =>

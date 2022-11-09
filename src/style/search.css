@@ -1,0 +1,7 @@
+/****Search****/
+
+#thisSearch {
+        background: url("../../public/img/Background/Hors Collection.webp");
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}

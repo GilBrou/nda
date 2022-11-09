@@ -23,6 +23,7 @@ import Createurs from "./pages/Createurs";
 import ThisUniverse from "./pages/ThisUniverse";
 import Error404 from "./pages/Error404";
 import Univers from "./pages/Univers";
+import Search from "./pages/Search";
 
 /***DATAS***/
 import Data1 from "./data/data.json";
@@ -85,6 +86,12 @@ export default function App() {
           >
             <ThisUniverse data1={Data1} data2={Data2} data3={Data3} />
           </Route>
+
+          {/*SEARCH*/}
+          <Route exact path="/recherche">
+            <Search data1={Data1} data2={Data2} data3={Data3} />
+          </Route>
+
           {/*REDIRECT*/}
           <Route>
             <Redirect to="/accueil" />

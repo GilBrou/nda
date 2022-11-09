@@ -29,7 +29,7 @@ export default function Createurs(data) {
 
 /*Alphabetical sorting*/
   function alphabetical(a, b) {
-    console.log(a.name);
+    /*console.log(a.name);*/
     if (a.name < b.name) {
       return -1;
     }
