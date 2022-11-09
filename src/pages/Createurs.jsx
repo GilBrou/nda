@@ -49,8 +49,6 @@ export default function Createurs(data) {
           <div
             key={`${team.name}-${i}`}
             className="col-sm-3 col-md-2 col-lg-2 creator "
-            onclick="myScript"
-
           >
             <img
               className="img-responsive creatora"
