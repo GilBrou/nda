@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     padding: 13vh 0 10vh 0;
-    background-attachment: fixed;
+    background-attachment: fixed !important;
     background-size: cover;
     background-position: 50% 10% !important; /**/
     background-repeat: no-repeat;
@@ -337,6 +337,24 @@
     width: unset;
 }
 
+.subTitle a {
+    pointer-events: auto;
+    text-decoration: none !important;
+}
+.subTitle a p {
+    text-decoration: none !important;
+    pointer-events: none;
+    border: solid 1.5px var(--blackish);
+}
+.subTitle a:hover p {
+    transform: scale(1.2);
+    /*border: solid 2px var(--greenish);*/
+    color: var(--greenish);
+
+    background-color: var(--greenish);
+    color: var(--blackish);
+}
+
 /*Restyling*/
 .FolieU img {
     box-shadow: 4px 4px 20px 2px #232323 !important;
@@ -390,4 +408,17 @@
     position: fixed;
     left: 40%;
     top: 30%;
+}
+
+/****Search****/
+
+#thisSearch {
+    background-attachment: fixed !important;
+    background: url("../../public/img/Background/Hors Collection.webp");
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.targetH1 {
+    font-size: 60px !important;
+    margin-bottom: 7vh !important;
 }

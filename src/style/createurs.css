@@ -101,7 +101,6 @@
   box-shadow: -3px 0px 3px 2px var(--blackish);
   width: 100%;
   height: 100%;
-
 }
 
 /* Titles animations */
@@ -158,6 +157,10 @@
 .creator:hover .Names {
   background: unset;
   background-color: var(--blueish2);
+}
+
+.teamAuth .Jobs {
+  display: none;
 }
 
 /* Tooltip style*/

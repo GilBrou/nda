@@ -27,9 +27,8 @@ export default function Createurs(data) {
     }
   }
 
-/*Alphabetical sorting*/
+  /*Alphabetical sorting*/
   function alphabetical(a, b) {
-    /*console.log(a.name);*/
     if (a.name < b.name) {
       return -1;
     }
@@ -37,6 +36,70 @@ export default function Createurs(data) {
       return 1;
     }
     return 0;
+  }
+
+  function tryAuth(team, i) {
+    if (team.job.includes("aut")) {
+      /*console.log(team.name);*/
+      return (
+        <a
+          href={"/recherche#" + team.name + " " + team.name2}
+          key={team.name + "Link"}
+        >
+          <div
+            key={`${team.name}-${i}`}
+            className="col-sm-3 col-md-2 col-lg-2 creator "
+            onclick="myScript"
+
+          >
+            <img
+              className="img-responsive creatora"
+              src={
+                data.data1.UimgLinks.IL2 + team.name + data.data1.UimgLinks.IL1B
+              }
+              alt={"photo de " + team.name + " " + team.name2}
+            />
+
+            <p className="Names" id={team.name + "P1"}>
+              {team.name + " " + team.name2}
+            </p>
+            <p className="Jobs" id={team.name + "P2"}>
+              {team.job}
+            </p>
+            <p className="Credits" id={team.name + "P2"}>
+              {team.credits}
+            </p>
+            {GetLink(team.Lien)}
+          </div>
+        </a>
+      );
+    } else {
+      return (
+        <div
+          key={`${team.name}-${i}`}
+          className="col-sm-3 col-md-2 col-lg-2 creator"
+        >
+          <img
+            className="img-responsive creatora"
+            src={
+              data.data1.UimgLinks.IL2 + team.name + data.data1.UimgLinks.IL1B
+            }
+            alt={"photo de " + team.name + " " + team.name2}
+          />
+
+          <p className="Names" id={team.name + "P1"}>
+            {team.name + " " + team.name2}
+          </p>
+          <p className="Jobs" id={team.name + "P2"}>
+            {team.job}
+          </p>
+          <p className="Credits" id={team.name + "P2"}>
+            {team.credits}
+          </p>
+          {GetLink(team.Lien)}
+        </div>
+      );
+    }
   }
 
   /*DOM*/
@@ -67,62 +130,17 @@ export default function Createurs(data) {
         {/*Editors's cards creation from Json data*/}
         <div className="row text-center justify-content-center">
           {data.data2
-            ? data.data2.teamEdi.map((team, i) => (
-                <div
-                  key={`${team.name}-${i}`}
-                  className="col-sm-3 col-md-2 col-lg-2 creator"
-                >
-                  <img
-                    className="img-responsive creatora"
-                    src={
-                      data.data1.UimgLinks.IL2 +
-                      team.name +
-                      data.data1.UimgLinks.IL1B
-                    }
-                    alt={"photo de " + team.name + " " + team.name2}
-                  />
-                  <p className="Names" id={team.name + "P1"}>
-                    {team.name + " " + team.name2}
-                  </p>
-                  <p className="Jobs" id={team.name + "P2"}>
-                    {team.job}
-                  </p>
-                  <p className="Credits" id={team.name + "P2"}>
-                    {team.credits}
-                  </p>
-                  {GetLink(team.Lien)}
-                </div>
-              ))
+            ? data.data2.teamEdi.map((team, i) => tryAuth(team, i))
             : "Loading..."}
         </div>
         {/*Authors Section*/}
         <h1 className="creaTitle">{data.data2.createurs.crea2}</h1>
         {/*Authors's cards creation from Json data*/}
-        <div className="row text-center">
+        <div className="row text-center teamAuth">
           {data.data2
-            ? data.data2.teamAuth.sort(alphabetical).map((team, i) => (
-                <div
-                  key={`${team.name}-${i}`}
-                  className="col-sm-3 col-md-2 col-lg-2 creator creator2"
-                >
-                  <img
-                    className="img-responsive creatora"
-                    src={
-                      data.data1.UimgLinks.IL2 +
-                      team.name +
-                      data.data1.UimgLinks.IL1B
-                    }
-                    alt={"photo de " + team.name + " " + team.name2}
-                  />
-                  <p className="Names" id={team.name + "P1"}>
-                    {team.name + " " + team.name2}
-                  </p>
-                  <p className="Credits" id={team.name + "P2"}>
-                    {team.credits}
-                  </p>
-                  {GetLink(team.Lien)}
-                </div>
-              ))
+            ? data.data2.teamAuth
+                .sort(alphabetical)
+                .map((team, i) => tryAuth(team, i))
             : "Loading..."}
         </div>
         {/*Illustrators Section*/}
@@ -130,29 +148,9 @@ export default function Createurs(data) {
         {/*Illustrators's cards creation from Json data*/}
         <div className="row text-center">
           {data.data2
-            ? data.data2.teamIllus.sort(alphabetical).map((team, i) => (
-                <div
-                  key={`${team.name}-${i}`}
-                  className="col-sm-3 col-md-2 col-lg-2 creator"
-                >
-                  <img
-                    className="img-responsive creatora"
-                    src={
-                      data.data1.UimgLinks.IL2 +
-                      team.name +
-                      data.data1.UimgLinks.IL1B
-                    }
-                    alt={"photo de " + team.name + " " + team.name2}
-                  />
-                  <p className="Names" id={team.name + "P1"}>
-                    {team.name + " " + team.name2}
-                  </p>
-                  <p className="Jobs" id={team.name + "P2"}>
-                    {team.job}
-                  </p>
-                  {GetLink(team.Lien)}
-                </div>
-              ))
+            ? data.data2.teamIllus
+                .sort(alphabetical)
+                .map((team, i) => tryAuth(team, i))
             : "Loading..."}
         </div>
         {/*Support Section*/}

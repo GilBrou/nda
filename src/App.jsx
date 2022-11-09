@@ -88,7 +88,7 @@ export default function App() {
           </Route>
 
           {/*SEARCH*/}
-          <Route exact path="/recherche">
+          <Route path="/recherche">
             <Search data1={Data1} data2={Data2} data3={Data3} />
           </Route>
 

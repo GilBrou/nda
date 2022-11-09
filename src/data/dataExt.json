@@ -139,124 +139,119 @@
       "name2": "Pommereau",
       "Lien": "https://www.facebook.com/cpommereau/",
       "credits": "",
-
-      "job": ""
+      "job": "author"
     },
     {
       "name": "Sarah",
       "name2": "Buschmann",
       "Lien": "https://www.facebook.com/SarahBuschmannautrice/",
       "credits": "© Jack Schoonjans",
-      "job": ""
+      "job": "author"
     },
     {
       "name": "Cyrielle",
       "name2": "Bandura",
       "Lien": "https://www.instagram.com/dragonebuleuse/",
       "credits": "",
-
-      "job": ""
+      "job": "author"
     },
     {
       "name": "A.F",
       "name2": "Lune",
       "Lien": "https://www.facebook.com/people/AF-Lune/100012619089269/",
       "credits": "",
-
-      "job": ""
+      "job": "author"
     },
     {
       "name": "Pierre",
       "name2": "Efratas",
       "Lien": "",
       "credits": "© B.legrand",
-
-      "job": ""
+      "job": "author"
     },
     {
       "name": "Sara",
       "name2": "Pintado",
       "Lien": "https://www.facebook.com/people/Sara-Pintado-Autaire/100041399838599/",
       "credits": "",
-
-      "job": ""
+      "job": "author"
     },
     {
       "name": "Axelle",
       "name2": "Colau",
       "credits": "",
       "Lien": "https://axellecolau.fr/",
-      "job": ""
+      "job": "author"
     },
     {
       "name": "Marion",
       "name2": "B.",
       "credits": "© Marina Dufau",
       "Lien": "https://www.artofmarionb.com/",
-      "job": ""
+      "job": "author"
     },
     {
       "name": "Lisa",
       "name2": "Soto",
       "Lien": "https://www.facebook.com/lisa.soto.hb/",
       "credits": "",
-      "job": ""
+      "job": "author"
     },
     {
       "name": "Gillian",
       "name2": "Brousse",
       "Lien": "https://gillianbrousse.com/",
       "credits": "",
-      "job": ""
+      "job": "author"
     },
     {
       "name": "Magali",
       "name2": "Lefebvre",
       "Lien": "https://lullastories.wordpress.com/",
       "credits": "",
-      "job": ""
+      "job": "author"
     },
     {
       "name": "Népenth",
       "name2": "S.",
       "Lien": "https://lechatseraphique.wordpress.com/biographie/",
       "credits": "",
-      "job": ""
+      "job": "author"
     },
     {
       "name": "Geny H.",
       "name2": "David",
       "Lien": "https://davidbijoux.fr/",
       "credits": "",
-      "job": ""
+      "job": "author"
     },
     {
       "name": "Alizée",
       "name2": "Villemin",
       "Lien": "http://www.alizeevillemin.com/",
       "credits": "",
-      "job": ""
+      "job": "author"
     },
     {
       "name": "Frédérique",
       "name2": "Badoux",
       "Lien": "https://www.facebook.com/FredLBadoux/",
       "credits": "",
-      "job": ""
+      "job": "author"
     },
     {
       "name": "Marge",
       "name2": "Nantel",
       "Lien": "https://www.facebook.com/MargeNantel/",
       "credits": "",
-      "job": ""
+      "job": "author"
     },
     {
       "name": "Rachel",
       "name2": "Gali",
       "Lien": "https://www.rachelgali.com/",
       "credits": "",
-      "job": ""
+      "job": "author"
     }
   ],
   "teamIllus": [
@@ -272,7 +267,7 @@
       "name2": "",
       "credits": "",
       "Lien": "https://amaryan.fr/",
-      "job": ""
+      "job": "author"
     },
     {
       "name": "Emilie",
@@ -293,14 +288,14 @@
       "name2": "Cazuguel",
       "credits": "",
       "Lien": "https://www.facebook.com/lolokazu/",
-      "job": ""
+      "job": "author"
     },
     {
       "name": "Flokera",
       "name2": "",
       "credits": "",
       "Lien": "https://www.facebook.com/flokera.art/",
-      "job": ""
+      "job": "author"
     },
     {
       "name": "Marcela",
@@ -314,7 +309,7 @@
       "name2": "",
       "credits": "",
       "Lien": "https://www.ampreh.net/",
-      "job": ""
+      "job": "author"
     }
   ],
   "teamOmbre": [
@@ -402,7 +397,7 @@
     "titre": "Conditions générales de vente",
     "T1": "Article 1 : Champ d’application",
     "T1a": "Les présentes Conditions Générales de Ventes sont conclues entre, d’une part Noir d’Absinthe, SASU au capital de 1000€, dont le siège social se trouve au 8 allée Jacques Cartier, 35000 Rennes, et d’autre part toute personne physique ou moral qui commande un ou plusieurs produits par le biais du site noirdabsinthe.com",
-    "T1b":"Si une condition venait à manquer, elle serait considérée comme étant régie par les règles de vente à distance du lieu où siège la société",
+    "T1b": "Si une condition venait à manquer, elle serait considérée comme étant régie par les règles de vente à distance du lieu où siège la société",
     "T2": "Article 2 : Contrat",
     "T2a": "Le Client déclare être majeur et avoir la pleine capacité juridique, lui permettant de s’engager au titre des CGV ou agir sous la supervision et avec l’accord d’une personne ayant l’autorité parentale.",
     "T3": "Article 3 : Disponibilité des articles",
@@ -424,7 +419,7 @@
     "T9a": "Tous les éléments présents sur le site (images, textes, logos, illustrations, etc.) sont la propriété exclusive de Noir d’Absinthe. Toute reproduction totale ou partielle du site sans autorisation préalable est strictement interdite.",
     "T10": "Article 10 : Données personnelles",
     "T10a": "Noir d’Absinthe s’engage à ne pas divulguer à des tiers les informations que le client lui communique, qui sont réputées confidentielles. Elles ne seront utilisées que pour le traitement de la commande et à fins de facturation.",
-    "T10b":"En conformité à la loi Informatique et libertés du 6 janvier 1978, le client dispose d’un droit d’accès, de rectification et d’opposition aux données personnelles le concernant. Pour mettre en œuvre ce droit, il suffit au client de contacter Noir d’Absinthe en indiquant ses nom, prénom, adresse et e-mail par mail à contact@noirdabsinthe.com",
+    "T10b": "En conformité à la loi Informatique et libertés du 6 janvier 1978, le client dispose d’un droit d’accès, de rectification et d’opposition aux données personnelles le concernant. Pour mettre en œuvre ce droit, il suffit au client de contacter Noir d’Absinthe en indiquant ses nom, prénom, adresse et e-mail par mail à contact@noirdabsinthe.com",
     "T11": "Article 11. Loi applicable",
     "T11a": "Les ventes de Produits sont soumises à la loi française.",
     "T12": "Article 12 : Acceptation du client",
