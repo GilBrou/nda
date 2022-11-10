@@ -199,7 +199,7 @@ function SetSecondary(thatBook) {
 
 function SetNames(props, props0, i) {
 	let lastName = props0.slice(-1);
-	console.log(props);
+	/*console.log(props);*/
 	if (props != lastName) {
 		return (
 			<a href={"/recherche#" + props} key={props + "Link"} target="_self">
@@ -230,7 +230,7 @@ function SetTome(thatBook, i) {
 			>
 				<p className="tag" key={"tag" + thatBook.Série + i}>
 					{" "}
-					{"Univers " + thatBook.Série}
+					{"➔  Univers " + thatBook.Série}
 				</p>
 			</a>
 		);
@@ -295,6 +295,7 @@ export function SortBooks(thatBook, i, data) {
 					</div>
 					<p key={"resum1" + thatBook.titre}>{thatBook.résumé}</p>
 					<p key={"resum2" + thatBook.titre}>{thatBook.résumé2}</p>
+					<p key={"resum3" + thatBook.titre}>{thatBook.résumé3}</p>
 					{SetTome(thatBook, i)}
 				</div>
 			</div>
@@ -304,8 +305,6 @@ export function SortBooks(thatBook, i, data) {
 
 /***Sort books from Json according to target and display them***/
 export function SortTargetedBooks(thatBook, i, target, data) {
-	/*console.log(thatBook.Série);*/
-
 	if (
 		thatBook.genres.includes(target) ||
 		thatBook.par.includes(target) ||
@@ -361,6 +360,7 @@ export function SortTargetedBooks(thatBook, i, target, data) {
 					</div>
 					<p key={"resum1" + thatBook.titre}>{thatBook.résumé}</p>
 					<p key={"resum2" + thatBook.titre}>{thatBook.résumé2}</p>
+					<p key={"resum3" + thatBook.titre}>{thatBook.résumé3}</p>
 					{SetTome(thatBook, i)}
 				</div>
 			</div>

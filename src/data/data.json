@@ -37,16 +37,19 @@
     "IL1B": ".webp",
     "IL1B2": ".jpg"
   },
-  "PAGES A FAIRE": {
-    "BUG FIX": "tooltip",
-
-    "RESPONSIVE": "BUG MODALS ???",
-    "CSS": "separate functions (for ThisUniverse ?)  ???",
-    "book": "Check tags (ARRAY + OLDSITE)"
+  "A FAIRE": {
+    "Module accueil": "Dernières sorties",
+    "Module accueil": "Derniers evenements Fb ? posts inta et/ou Fb ?",
+    "Module accueil": "link vers univers?",
+    "Collapse": "Creators sections in responsive",
+    "BUG FIX": "tooltip ??????????????",
+    "RESPONSIVE": "Univers and search",
+    "RESPONSIVE": "BUG MODALS ???"
   },
   "FONCTIONNALITES A VOIR": {
+    "Barre de recherche ?": "",
+
     "QUESTIONNAIRE EN LIGNE POUR AFFICHER TRI": "",
-    "RECHERCHE PAR TAG/MOTS CLES": "",
     "NEWSLETTER": "?",
     "INCLUSION IG ET FB ?": "",
     "livres": "integration liens vidéos",
@@ -54,8 +57,6 @@
     "NOUVELLES a embranchement online": "?",
     "lien blog": "?",
     "nouvelle boutique": "?"
-
-
   },
   "MORGANE TO DO": {
     "MAJ infosite": "",
@@ -65,7 +66,6 @@
   },
   "MOI TO DO": {
     "SEO PERFORMANCE ET REFERENCEMENT": "1/2",
-    "tri json": "",
     "translate from excel": ""
   }
 }

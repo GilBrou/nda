@@ -275,6 +275,7 @@
 .bookRight {
     width: 65%;
     padding: 7px;
+    padding-bottom: 50px;
     color: var(--blackish);
     border-radius: 5px;
     background-color: var(--whiteishTrans);
@@ -344,6 +345,7 @@
     border-radius: 5px 0 5px 0;
     background-color: var(--blackish);
     right: 0;
+    transition: 1s;
 }
 .pSérie p {
     color: var(--whiteish);
@@ -351,6 +353,7 @@
 }
 .pSérie:hover {
     background-color: var(--greenish);
+
 }
 .pSérie:hover p {
     color: var(--blackish);
@@ -359,14 +362,16 @@
 .pSérie {
     pointer-events: auto;
     text-decoration: none !important;
+
 }
 .subTitle a p {
     text-decoration: none !important;
     pointer-events: none;
     border: solid 1.5px var(--blackish);
 }
-.subTitle a:hover p/*, .pSérie:hover p */ {
-    transform: scale(1.2);
+.subTitle a:hover p{
+    transition: 0.5s;
+    transform: scale(1.1);
     background-color: var(--greenish);
     color: var(--blackish);
 }
@@ -412,6 +417,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+}
+
+.authorList a {
+    color: inherit;
+    text-decoration: none;
+    pointer-events: auto;
+    transition: 0.5s;
+}
+
+.authorList a:hover{
+    transform: scale(1.05);
+    color: var(--whiteish);
 }
 
 /*Re-Style Folie Background anim**/

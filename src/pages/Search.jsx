@@ -14,7 +14,7 @@ import {
   SortBooks,
   SortTargetedBooks,
   dateSort,
-  dateSortInvert
+  dateSortInvert,
 } from "../components/SortBooks";
 
 /***COMPONENT***/
@@ -28,15 +28,26 @@ export default function Search(data) {
     });
   }, [history]);
 
+  /*Check if results == 0*/
+  function checkBookList() {
+    let Books = document.querySelectorAll(".book");
+    /*console.log(Books);*/
+    if (Books.length == 0) {
+      return <h2>Désolé, aucun livre ne correpsond à votre recherche</h2>;
+    }
+  }
+
   /*Targeted info*/
   let url_string = window.location.href;
   let url = new URL(url_string);
   let target0 = url.hash.replace("#", "");
   let target1 = target0.replace(/%20/g, " ");
-  let target = target1.replace(/%C3%A9/g, "é");
+  let target2 = target1.replace(/%C3%A9/g, "é");
+  let target = target2.replace(/%C3%A8/g, "è");
+
 
   function isThisBookFromLitUniverse(target, data) {
-    if (target.includes("Univers") || target.includes("Séries") ) {
+    if (target.includes("Univers") || target.includes("Séries")) {
       return data.data3.Livres.sort(dateSortInvert).map((thatBook, i) =>
         SortTargetedBooks(thatBook, i, target, data)
       );
@@ -52,14 +63,9 @@ export default function Search(data) {
       <div className="container text-center">
         <div className="row text-center justify-content-center">
           <h1 className="targetH1">{target}</h1>
+          {checkBookList()}
           {/*Dynamic creation from Json data*/}
           {isThisBookFromLitUniverse(target, data)}
-
-          {/*
-          {data.data3.Livres.sort(dateSort).map((thatBook, i) =>
-            SortTargetedBooks(thatBook, i, target, data)
-          )}
-          */}
         </div>{" "}
       </div>
       {/*Stylize Tooltips for Reviews*/}
