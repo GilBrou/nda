@@ -117,6 +117,26 @@ export default function ThisUniverse(data) {
   /***Check Selected Universe***/
   SetUniverse();
 
+
+/*****************************************************************************************/
+  /***Get all book tags***/ 
+  let allBooks = data.data3.Livres;
+  let allTags = [];
+  for (let i in allBooks) {
+    let thoseTags = allBooks[i].genres;
+    for (let i in thoseTags) allTags.push(thoseTags[i]);
+  }
+
+  let allTags2 = [...new Set(allTags)];
+  /*console.log(allTags2);*/
+
+  /***Get all book tags***/ 
+  let allBooks2 = allBooks.sort(dateSort);
+  /*console.log(allBooks2);*/
+
+/*****************************************************************************************/
+
+
   return (
     <div id="thisUniverse" className="text-center">
       {SetBackground()}

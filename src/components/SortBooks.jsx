@@ -148,10 +148,14 @@ export function SetTags(props, i) {
 
 /***Sort Book position***/
 export function dateSort(a, b) {
-	/*return Math.random() - 0.5;*/
 	return new Date(b.date) - new Date(a.date);
 }
 
+export function dateSortInvert(a, b) {
+	return new Date(a.date) - new Date(b.date);
+}
+
+/***display secondary Book informations***/
 function SetSecondary(thatBook) {
 	if (thatBook.prix != 0 && thatBook.pages != 0 && thatBook.ISBN != 0) {
 		return (
@@ -163,24 +167,72 @@ function SetSecondary(thatBook) {
 				<p>{"ISBN : " + thatBook.ISBN}</p>
 			</div>
 		);
+	} else if (
+		thatBook.prix != 0 &&
+		thatBook.pages == 0 &&
+		thatBook.ISBN == 0
+	) {
+		/*console.log("page's number and ISBN missing in " + thatBook.titre);*/
+
+		return (
+			<div className="secondaryInfos">
+				<p>{thatBook.prix + " €"}</p>
+			</div>
+		);
+	} else if (
+		thatBook.prix != 0 &&
+		thatBook.pages == 0 &&
+		thatBook.ISBN != 0
+	) {
+		/*console.log("page's number missing in " + thatBook.titre);*/
+
+		return (
+			<div className="secondaryInfos">
+				<p>{thatBook.prix + " €"}</p>
+				<p>{"ISBN : " + thatBook.ISBN}</p>
+			</div>
+		);
 	} else {
-		console.log("info's missing in " + thatBook.titre);
+		/*console.log("All secondary infos missing in " + thatBook.titre);*/
 	}
 }
 
 function SetNames(props, props0, i) {
 	let lastName = props0.slice(-1);
+	console.log(props);
 	if (props != lastName) {
 		return (
-			<h3 className="bAuthor" key={"author" + i}>
-				{props + ","}
-			</h3>
+			<a href={"/recherche#" + props} key={props + "Link"} target="_self">
+				<h3 className="bAuthor" key={"author" + i}>
+					{props + ","}
+				</h3>
+			</a>
 		);
 	} else {
 		return (
-			<h3 className="bAuthor" key={"author" + i}>
-				{props}
-			</h3>
+			<a href={"/recherche#" + props} key={props + "Link"} target="_self">
+				<h3 className="bAuthor" key={"author" + i}>
+					{props}
+				</h3>
+			</a>
+		);
+	}
+}
+
+/***Check if Book come from a litterary series***/
+function SetTome(thatBook, i) {
+	if (thatBook.tome >= 0) {
+		return (
+			<a
+				href={"/recherche#" + "Univers " + thatBook.Série}
+				className="page-scroll pSérie"
+				key={thatBook.Série + "Link"}
+			>
+				<p className="tag" key={"tag" + thatBook.Série + i}>
+					{" "}
+					{"Univers " + thatBook.Série}
+				</p>
+			</a>
 		);
 	}
 }
@@ -225,13 +277,9 @@ export function SortBooks(thatBook, i, data) {
 						{thatBook.titre} {thatBook.titre2}
 					</h2>
 					<div className="authorList">
-						{/*******************EN COURS*************************/}
-
 						{thatBook.par.map((par, i) =>
 							SetNames(par, thatBook.par, i)
 						)}
-
-						{/*******************EN COURS*************************/}
 					</div>
 					{SetPrize(thatBook)}
 
@@ -247,6 +295,7 @@ export function SortBooks(thatBook, i, data) {
 					</div>
 					<p key={"resum1" + thatBook.titre}>{thatBook.résumé}</p>
 					<p key={"resum2" + thatBook.titre}>{thatBook.résumé2}</p>
+					{SetTome(thatBook, i)}
 				</div>
 			</div>
 		);
@@ -255,10 +304,13 @@ export function SortBooks(thatBook, i, data) {
 
 /***Sort books from Json according to target and display them***/
 export function SortTargetedBooks(thatBook, i, target, data) {
+	/*console.log(thatBook.Série);*/
+
 	if (
 		thatBook.genres.includes(target) ||
 		thatBook.par.includes(target) ||
-		thatBook.format.includes(target)
+		thatBook.format.includes(target) ||
+		target.includes(thatBook.Série)
 	) {
 		return (
 			<div
@@ -282,10 +334,7 @@ export function SortTargetedBooks(thatBook, i, target, data) {
 					<div className="ReviewLinks">
 						{thatBook.reviews.map((R, i) => SetReviews(R, i))}
 					</div>
-					{/*******************EN COURS*************************/}
 					{SetSecondary(thatBook)}
-					{/*******************EN COURS*************************/}
-
 					{SetBuyLinks(thatBook)}
 				</div>
 
@@ -294,13 +343,9 @@ export function SortTargetedBooks(thatBook, i, target, data) {
 						{thatBook.titre} {thatBook.titre2}
 					</h2>
 					<div className="authorList">
-						{/*******************EN COURS*************************/}
-
 						{thatBook.par.map((par, i) =>
 							SetNames(par, thatBook.par, i)
 						)}
-
-						{/*******************EN COURS*************************/}
 					</div>
 					{SetPrize(thatBook)}
 
@@ -316,6 +361,7 @@ export function SortTargetedBooks(thatBook, i, target, data) {
 					</div>
 					<p key={"resum1" + thatBook.titre}>{thatBook.résumé}</p>
 					<p key={"resum2" + thatBook.titre}>{thatBook.résumé2}</p>
+					{SetTome(thatBook, i)}
 				</div>
 			</div>
 		);
