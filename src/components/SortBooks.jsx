@@ -309,7 +309,7 @@ export function SortTargetedBooks(thatBook, i, target, data) {
 		thatBook.genres.includes(target) ||
 		thatBook.par.includes(target) ||
 		thatBook.format.includes(target) ||
-		target.includes(thatBook.Série)
+		target.includes(thatBook.Série) 
 	) {
 		return (
 			<div

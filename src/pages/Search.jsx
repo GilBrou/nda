@@ -43,7 +43,11 @@ export default function Search(data) {
   let target0 = url.hash.replace("#", "");
   let target1 = target0.replace(/%20/g, " ");
   let target2 = target1.replace(/%C3%A9/g, "é");
-  let target = target2.replace(/%C3%A8/g, "è");
+  let target3 = target2.replace(/%C3%BC/g, "ü");
+  let target4 = target3.replace(/%C3%A8/g, "è");
+  let target5 = target4.replace(/%C3%AB/g, "ë");
+  let target = target5.replace(/%C3%89/g, "É");
+
 
 
   function isThisBookFromLitUniverse(target, data) {
