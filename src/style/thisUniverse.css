@@ -90,15 +90,9 @@
         alternate both;
     margin-bottom: 25px;
     pointer-events: none;
-    /*opacity: 0;
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; */
-    /*animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; */
 }
 .UP {
     margin-bottom: 100px;
-    /*opacity: 0;
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; */
-    /*animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;*/
 }
 #thisUniverse .row,
 #thisSearch .row {
@@ -163,7 +157,6 @@
 /*************en cours *******************************/
 
 .imgWrap {
-    background-color: red;
     position: relative;
 }
 
@@ -429,7 +422,7 @@
 
 .authorList a:hover{
     transform: scale(1.05);
-    color: var(--whiteish);
+    /*color: var(--whiteish);*/
 }
 
 /*Re-Style Folie Background anim**/

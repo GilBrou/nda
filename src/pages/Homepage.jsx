@@ -40,7 +40,7 @@ export default function Homepage(data) {
       {DustAnim()}
       {MainAnim()}
       */}
-      <Intro data1={data.data1} data2={data.data2} />
+      <Intro data1={data.data1} data2={data.data2} data3={data.data3}/>
     </div>
   );
 }

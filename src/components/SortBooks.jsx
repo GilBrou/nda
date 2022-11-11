@@ -308,8 +308,9 @@ export function SortTargetedBooks(thatBook, i, target, data) {
 	if (
 		thatBook.genres.includes(target) ||
 		thatBook.par.includes(target) ||
+		thatBook.titre.includes(target) ||
 		thatBook.format.includes(target) ||
-		target.includes(thatBook.Série) 
+		target.includes(thatBook.Série)
 	) {
 		return (
 			<div
@@ -366,4 +367,27 @@ export function SortTargetedBooks(thatBook, i, target, data) {
 			</div>
 		);
 	}
+}
+
+/***Sort books from Json according to selected Universe and display them***/
+export function LastBooks(thatBook, i, data) {
+	/*console.log(thatBook.titre);*/
+	return (
+		<a
+			href={"/recherche#" + thatBook.titre}
+			className="page-scroll"
+			key={thatBook.titre + "Link"}
+		>
+			<img
+				className="img-responsive"
+				src={
+					data.data1.UimgLinks.IL3 +
+					thatBook.lien +
+					data.data1.UimgLinks.IL1B
+				}
+				alt={"Couverture de " + thatBook.titre}
+				key={thatBook.titre + "intro"}
+			/>
+		</a>
+	);
 }

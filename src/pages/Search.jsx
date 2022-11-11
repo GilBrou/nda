@@ -48,8 +48,6 @@ export default function Search(data) {
   let target5 = target4.replace(/%C3%AB/g, "ë");
   let target = target5.replace(/%C3%89/g, "É");
 
-
-
   function isThisBookFromLitUniverse(target, data) {
     if (target.includes("Univers") || target.includes("Séries")) {
       return data.data3.Livres.sort(dateSortInvert).map((thatBook, i) =>

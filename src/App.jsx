@@ -58,7 +58,7 @@ export default function App() {
         <Switch>
           {/*HOMEPAGE*/}
           <Route exact path="/accueil">
-            <Homepage data1={Data1} data2={Data2} />
+            <Homepage data1={Data1} data2={Data2} data3={Data3} />
           </Route>
           {/*CREATEURS*/}
           <Route exact path="/createurs">

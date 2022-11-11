@@ -1,23 +1,29 @@
 /***INTRO***/
 #intro {
-  height: 100%;
-  width: auto;
-  display: flex;
-  flex-direction: row-reverse;
-  transition: 0.5s;
-}
-.intro {
-  width: 20%;
-  height: auto;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 55%;
-  left: 75%;
-  transform: translate(-50%, -50%);
+  justify-content: flex-end;
+  height: 100vh;
+  width: 100%;
+  transition: 0.5s;
+  margin: auto;
+  padding: 100px 50px;
+}
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
+.introLeft {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: -7vw;
 }
 .logoFull {
-  width: 100%;
+  width: 35%;
   margin: auto;
   height: auto;
   background-color: var(--blackish);
@@ -27,11 +33,43 @@
 .intro h1 {
   margin-top: 35px;
   font-size: 22px;
-  width: 100%;
+  width: 50%;
+  align-self: center;
   font-weight: 100;
-  /*
-  animation: anipers2 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
-    alternate both;
-    */
   text-shadow: 5px 2px 12px var(--blackish);
+}
+.introRight {
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.introRight h2 {
+  margin: auto;
+  font-size: 25px;
+  padding: 50px 0 5px 0;
+  text-transform: uppercase;
+  width: fit-content;
+  border-bottom: solid 1px var(--greenish);
+  /*margin-bottom: 25px;*/
+}
+.introBooks {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15px 50px;
+  align-items: center;
+}
+.introBooks img {
+  box-shadow: 4px 4px 8px 1px var(--blackishBack2);
+  transition: 0.5s;
+  transform: scale(1);
+  margin: 10px/* 20px 10px 20px*/;
+  max-width: 200px;  
+}
+.introBooks img:hover {
+  transform: scale(1.05);
 }
