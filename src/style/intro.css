@@ -45,6 +45,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /*
+  background-color:  var(--whiteishTrans);
+  background: url("./background/background3.webp"), var(--whiteishTrans);
+  background: url("./background/background3.webp"), var(--greenishTrans2);
+*/
+  /**/
+  background-color: var(--greenishTrans2);
+  border: solid 1px var(--blackishBack);
+  box-shadow: 0 0 10px -2px var(--blackishBack);
+  border-radius: 5px;
+  /**/
 }
 .introRight h2 {
   margin: auto;
@@ -53,7 +64,6 @@
   text-transform: uppercase;
   width: fit-content;
   border-bottom: solid 1px var(--greenish);
-  /*margin-bottom: 25px;*/
 }
 .introBooks {
   display: flex;
@@ -63,13 +73,47 @@
   padding: 15px 50px;
   align-items: center;
 }
+.introBooks a {
+  text-decoration: none;
+  position: relative;
+}
 .introBooks img {
   box-shadow: 4px 4px 8px 1px var(--blackishBack2);
   transition: 0.5s;
   transform: scale(1);
-  margin: 10px/* 20px 10px 20px*/;
-  max-width: 200px;  
+  margin: 20px;
+  max-width: 180px;
 }
+.overImg {
+  position: absolute;
+  width: 82%;
+  height: 50px;
+  background-color: var(--whiteish);
+  top: 15px;
+  left: 7px;
+  color: var(--blackish);
+  padding: 5px 10px 5px 10px;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 3px 15px 3px 15px;
+  transform: scale(1);
+  transition: 0.5s;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 4px 4px 8px 1px var(--blackishBack2);
+}
+
+.newTag {
+  background-color: var(--blackishBack2);
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  padding: 5px;
+  border-radius: 3px;
+  text-decoration: none;
+  pointer-events: none;
+}
+
 .introBooks img:hover {
   transform: scale(1.05);
 }

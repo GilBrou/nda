@@ -371,12 +371,11 @@ export function SortTargetedBooks(thatBook, i, target, data) {
 
 /***Sort books from Json according to selected Universe and display them***/
 export function LastBooks(thatBook, i, data) {
-	/*console.log(thatBook.titre);*/
 	return (
 		<a
 			href={"/recherche#" + thatBook.titre}
-			className="page-scroll"
-			key={thatBook.titre + "Link"}
+			className="page-scroll bL"
+			key={thatBook.lien + "Link"}
 		>
 			<img
 				className="img-responsive"
@@ -386,8 +385,12 @@ export function LastBooks(thatBook, i, data) {
 					data.data1.UimgLinks.IL1B
 				}
 				alt={"Couverture de " + thatBook.titre}
-				key={thatBook.titre + "intro"}
+				key={thatBook.lien + "intro"}
 			/>
+			<div className="overImg">{thatBook.univers}</div>
+			<p className="newTag">
+				{thatBook.format + " " + thatBook.genres[0]}
+			</p>
 		</a>
 	);
 }

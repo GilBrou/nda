@@ -272,16 +272,19 @@
 	#thisUniverse h1 {
 		animation: unset !important;
 	}
-	.univers h1 {
+	.univers h1, .search h1 {
 		animation: unset !important;
 		font-size: 40px !important;
 	}
-	.univers h2 {
+	.univers h2, .search h2{
 		text-align: center;
 		font-size: 20px !important;
 	}
-	.univers p {
+	.univers p, .search p {
 		text-align: justify !important;
+	}
+	.secondaryInfos {
+		width:  100%;
 	}
 	.linkToU {
 		position: absolute;

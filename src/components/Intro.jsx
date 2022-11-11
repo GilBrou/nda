@@ -4,8 +4,6 @@ import { LastBooks, dateSortInvert } from "../components/SortBooks";
 
 /***COMPONENT***/
 export default function Intro(data) {
-
-
   /*Display last 3 books*/
   function sliceBookArray(data) {
     let ThoselastBooks = data.data3.Livres.sort(dateSortInvert).slice(-3);

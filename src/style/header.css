@@ -151,7 +151,7 @@ ul li ul {
   display: block;
   padding: 0px 25px 10px 25px;
   line-height: 40px;
-  background: var(--blackishBack2);
+  background: var(--blackishBack);
   border-radius: 0px 0px 5px 5px;
   transition: opacity 0.2s, visibility 0.2s;
   font-size: 10px;

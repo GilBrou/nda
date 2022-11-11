@@ -575,7 +575,7 @@
       "titre": "Atesh",
       "titre2": "",
       "univers": "Pousse d'Absinthe",
-      "date": "2022-10-06",
+      "date": "2000-10-06",
       "pages": "30",
       "ISBN": " 978-2490417995",
       "prix": "7,5",
@@ -785,8 +785,8 @@
       "buyEbook": "https://www.amazon.fr/K%C3%A9vin-C%C3%A9cile-Pommereau-ebook/dp/B0BHX8JTGN/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=15DNF7WQ16ZZP&keywords=C%C3%A9cile+Pommereau+K%C3%A9vin&qid=1666136951&sprefix=c%C3%A9cile+pommereau+k%C3%A9vin%2Caps%2C105&sr=8-1"
     },
     {
-      "titre": "Mojunsha, Tome 2 :",
-      "titre2": "Tigre-à-dents-de-sabre",
+      "titre": "Mojunsha, Tome 2",
+      "titre2": ": Tigre-à-dents-de-sabre",
       "univers": "Mémoria",
       "date": "2022-09",
       "tome": "3",
@@ -814,8 +814,8 @@
       "buyEbook": "https://www.amazon.fr/gp/product/B0BFBRP8MV?ref_=dbs_p_pwh_rwt_anx_cl_1&storeType=ebooks"
     },
     {
-      "titre": "Mojunsha, Tome 1 :",
-      "titre2": "Panthère-des-ténèbres",
+      "titre": "Mojunsha, Tome 1",
+      "titre2": ": Panthère-des-ténèbres",
       "univers": "Mémoria",
       "date": "2019-05",
       "pages": "468",
@@ -1046,7 +1046,7 @@
       "buyPaper": "https://www.noirdabsinthe.com/product-page/monstresse-s",
       "buyEbook": "https://www.amazon.fr/Monstresse-s-Chevallier-emil/dp/2490417797/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=38GL07UZ5UVKF&keywords=monstresse%28s%29&qid=1666135319&qu=eyJxc2MiOiIxLjQ4IiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=monstres+des+%2Caps%2C142&sr=8-1"
     },
-   
+
     {
       "titre": "Prométhée",
       "titre2": "",
@@ -1269,33 +1269,7 @@
       "reviews": ["", "", "", "", ""],
       "buyPaper": "",
       "buyEbook": "https://payhip.com/b/x9HK"
-    }
-  ],
-  "template": {
-    "titre": "",
-    "titre2": "",
-    "univers": "",
-    "date": "1990-01",
-    "pages": "",
-    "ISBN": "",
-    "prix": "",
-    "extrait": "",
-    "lien": "",
-    "format": "Roman",
-    "sousTitre": "",
-    "par": [""],
-    "genres": ["", ""],
-    "résumé": "",
-    "résumé2": "",
-    "résumé3": "",
-    "résumé4": "",
-    "résumé5": "",
-    "résumé6": "",
-    "reviews": ["", "", "", "", ""],
-    "buyPaper": "",
-    "buyEbook": ""
-  },
-  "a-venir": [
+    },
     {
       "titre": "Au Coeur de la Science-fiction",
       "titre2": " - Prestige",
@@ -1329,7 +1303,7 @@
       "buyPaper": "",
       "buyEbook": ""
     },
-     {
+    {
       "titre": "Dremence",
       "titre2": "",
       "univers": "Hors Collection",
@@ -1356,16 +1330,16 @@
       "buyPaper": "https://www.noirdabsinthe.com/product-page/dremence",
       "buyEbook": ""
     },
-     {
+    {
       "titre": "Dremence",
       "titre2": " - Prestige",
       "univers": "Hors Collection",
-      "date": "2022-11-01",
+      "date": "2000-11-01",
       "pages": "",
       "ISBN": "978-2490417872",
       "prix": "30",
       "extrait": "",
-      "lien": "dremence",
+      "lien": "dremence-prestige",
       "format": "Roman",
       "sousTitre": "",
       "par": ["Morgane Stankiewiez", "Amaryan"],
@@ -1383,5 +1357,30 @@
       "buyPaper": "https://www.noirdabsinthe.com/product-page/dremence-cartonn%C3%A9e",
       "buyEbook": ""
     }
-  ]
+  ],
+  "template": {
+    "titre": "",
+    "titre2": "",
+    "univers": "",
+    "date": "1990-01",
+    "pages": "",
+    "ISBN": "",
+    "prix": "",
+    "extrait": "",
+    "lien": "",
+    "format": "Roman",
+    "sousTitre": "",
+    "par": [""],
+    "genres": ["", ""],
+    "résumé": "",
+    "résumé2": "",
+    "résumé3": "",
+    "résumé4": "",
+    "résumé5": "",
+    "résumé6": "",
+    "reviews": ["", "", "", "", ""],
+    "buyPaper": "",
+    "buyEbook": ""
+  },
+  "a-venir": []
 }

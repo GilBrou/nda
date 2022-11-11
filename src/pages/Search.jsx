@@ -31,7 +31,6 @@ export default function Search(data) {
   /*Check if results == 0*/
   function checkBookList() {
     let Books = document.querySelectorAll(".book");
-    /*console.log(Books);*/
     if (Books.length == 0) {
       return <h2>Désolé, aucun livre ne correpsond à votre recherche</h2>;
     }
@@ -49,6 +48,8 @@ export default function Search(data) {
   let target = target5.replace(/%C3%89/g, "É");
 
   function isThisBookFromLitUniverse(target, data) {
+
+    /*Check if books are needed in chronological order or antichronological*/
     if (target.includes("Univers") || target.includes("Séries")) {
       return data.data3.Livres.sort(dateSortInvert).map((thatBook, i) =>
         SortTargetedBooks(thatBook, i, target, data)
@@ -61,7 +62,7 @@ export default function Search(data) {
   }
 
   return (
-    <div id="thisSearch" className="text-center">
+    <div id="thisSearch" className="text-center search">
       <div className="container text-center">
         <div className="row text-center justify-content-center">
           <h1 className="targetH1">{target}</h1>
