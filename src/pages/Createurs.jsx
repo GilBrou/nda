@@ -19,7 +19,7 @@ export default function Createurs(data) {
         <a
           href={props}
           target="_blank"
-          className="page-scroll"
+          className="page-scroll extLink"
           data-tip
           data-for="UtipLink"
         ></a>
@@ -40,15 +40,14 @@ export default function Createurs(data) {
 
   function tryAuth(team, i) {
     if (team.job.includes("aut")) {
-      /*console.log(team.name);*/
       return (
-        <a
-          href={"/recherche#" + team.name + " " + team.name2}
-          key={team.name + "Link"}
+        <div
+          key={`${team.name}-${i}`}
+          className="col-sm-3 col-md-2 col-lg-2 creator "
         >
-          <div
-            key={`${team.name}-${i}`}
-            className="col-sm-3 col-md-2 col-lg-2 creator "
+          <a
+            href={"/recherche#" + team.name + " " + team.name2}
+            key={team.name + "Link"}
           >
             <img
               className="img-responsive creatora"
@@ -57,19 +56,18 @@ export default function Createurs(data) {
               }
               alt={"photo de " + team.name + " " + team.name2}
             />
-
-            <p className="Names" id={team.name + "P1"}>
-              {team.name + " " + team.name2}
-            </p>
-            <p className="Jobs" id={team.name + "P2"}>
-              {team.job}
-            </p>
-            <p className="Credits" id={team.name + "P2"}>
-              {team.credits}
-            </p>
-            {GetLink(team.Lien)}
-          </div>
-        </a>
+          </a>
+          <p className="Names" id={team.name + "P1"}>
+            {team.name + " " + team.name2}
+          </p>
+          <p className="Jobs" id={team.name + "P2"}>
+            {team.job}
+          </p>
+          <p className="Credits" id={team.name + "P2"}>
+            {team.credits}
+          </p>
+          {GetLink(team.Lien)}
+        </div>
       );
     } else {
       return (
@@ -144,7 +142,7 @@ export default function Createurs(data) {
         {/*Illustrators Section*/}
         <h1 className="creaTitle">{data.data2.createurs.crea3}</h1>
         {/*Illustrators's cards creation from Json data*/}
-        <div className="row text-center">
+        <div className="row text-center teamAuth">
           {data.data2
             ? data.data2.teamIllus
                 .sort(alphabetical)
@@ -154,8 +152,7 @@ export default function Createurs(data) {
         {/*Support Section*/}
         <h1 className="creaTitle">{data.data2.createurs.crea4}</h1>
         {/*Supporters's cards creation from Json data*/}
-        <div className="row text-center">
-          {/*<div className="subRow">*/}
+        <div className="row text-center teamAuth">
           {data.data2
             ? data.data2.teamOmbre.sort(alphabetical).map((team, i) => (
                 <div

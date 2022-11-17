@@ -39,23 +39,18 @@
   text-shadow: 5px 2px 12px var(--blackish);
 }
 .introRight {
+  background-color: red;
   width: fit-content;
   height: fit-content;
   margin: auto;
+  /*margin-top: 0px;/**/
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /*
-  background-color:  var(--whiteishTrans);
-  background: url("./background/background3.webp"), var(--whiteishTrans);
-  background: url("./background/background3.webp"), var(--greenishTrans2);
-*/
-  /**/
   background-color: var(--greenishTrans2);
   border: solid 1px var(--blackishBack);
   box-shadow: 0 0 10px -2px var(--blackishBack);
   border-radius: 5px;
-  /**/
 }
 .introRight h2 {
   margin: auto;
@@ -80,7 +75,6 @@
 .introBooks img {
   box-shadow: 4px 4px 8px 1px var(--blackishBack2);
   transition: 0.5s;
-  transform: scale(1);
   margin: 20px;
   max-width: 180px;
 }
@@ -102,7 +96,6 @@
   font-weight: 600;
   box-shadow: 4px 4px 8px 1px var(--blackishBack2);
 }
-
 .newTag {
   background-color: var(--blackishBack2);
   text-align: center;
@@ -112,8 +105,12 @@
   border-radius: 3px;
   text-decoration: none;
   pointer-events: none;
+  font-size: 16px;
 }
-
-.introBooks img:hover {
+.bL{
+  transform: scale(1);
+  transition:  0.5s;
+}
+.bL:hover {
   transform: scale(1.05);
 }

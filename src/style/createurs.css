@@ -11,7 +11,7 @@
   align-items: center;
   padding: 17vh 0 10vh 0;
   position: relative;
-  animation: fade-in 2.5s; /**/
+  animation: fade-in 2.5s;
 
   /*Background*/
   background: url("./background/background2.webp");
@@ -26,12 +26,8 @@
   padding: 0 30px 0 30px;
 }
 .container h1 {
-  /*opacity: 0;*/
   margin-bottom: 70px;
   pointer-events: none;
-  /*
-  -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both; /***/
-  /*animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;*/
 }
 .subRow {
   display: flex;
@@ -85,10 +81,11 @@
 .creator .Credits {
   position: absolute;
   color: #ffd70099;
-  width: 84%;
+  width: 80%;
   border-radius: 0 0 10px 10px;
-  font-size: 9px !important;
+  font-size: 8px !important;
   bottom: -10px;
+  padding-left: 10px ;
   text-shadow: 1px 1px 0.5px var(--blackish);
   pointer-events: none;
   background-color: var(--blackishBack2);
@@ -110,7 +107,7 @@
 }
 
 /* Profile links */
-.creator a {
+.creator .extLink {
   width: 15%;
   height: 12%;
   text-decoration: none;
@@ -127,7 +124,7 @@
   transition: 0.45s;
   z-index: 2;
 }
-.creator a::before {
+.creator .extLink::before {
   pointer-events: none;
   text-decoration: none;
   content: "+";
@@ -139,16 +136,16 @@
 }
 
 /* Porfile hover animations*/
-.creator:hover a {
+.creator:hover .extLink {
   -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
   animation: heartbeat 1.5s ease-in-out infinite both;
   background-color: var(--blueish2);
 }
-.creator:hover a::before {
+.creator:hover .extLink::before {
   animation: dotAnim2 0.1s linear both;
   color: var(--whiteish);
 }
-.creator:not(:hover) a::before {
+.creator:not(:hover) .extLink::before {
   animation: dotAnim3 0.1s linear both;
 }
 .creator:hover {
@@ -159,7 +156,7 @@
   background-color: var(--blueish2);
 }
 
-.teamAuth .Jobs {
+.teamAuth .Jobs{
   display: none;
 }
 

@@ -38,12 +38,23 @@ export default function Intro(data) {
             {data.data2 ? data.data2.nda.description : "loading..."}
           </h1>
         </div>
-
+        {/*
+        <div className="introRightWrapper">
+*/}
         <div className="introRight">
           {/*Dynamic creation from Json data*/}
           {sliceBookArray(data)}
         </div>
+        {/*
+              <div className="introRight">
+          {sliceBookArray(data)}
+        </div>
+*/}
       </div>
+      {/*
+
+      </div>
+      */}
     </section>
   );
 }
