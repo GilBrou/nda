@@ -27,7 +27,7 @@
 }
 .container h1 {
   margin-bottom: 70px;
-  pointer-events: none;
+  /*pointer-events: auto;*/
 }
 .subRow {
   display: flex;
@@ -85,7 +85,7 @@
   border-radius: 0 0 10px 10px;
   font-size: 8px !important;
   bottom: -10px;
-  padding-left: 10px ;
+  padding-left: 10px;
   text-shadow: 1px 1px 0.5px var(--blackish);
   pointer-events: none;
   background-color: var(--blackishBack2);
@@ -102,7 +102,7 @@
 
 /* Titles animations */
 .creaTitle {
-  animation: anipers3 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
+  animation: anipers2 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
     alternate both;
 }
 
@@ -149,14 +149,14 @@
   animation: dotAnim3 0.1s linear both;
 }
 .creator:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .creator:hover .Names {
   background: unset;
   background-color: var(--blueish2);
 }
 
-.teamAuth .Jobs{
+.teamAuth .Jobs {
   display: none;
 }
 

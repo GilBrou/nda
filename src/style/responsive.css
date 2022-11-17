@@ -30,11 +30,6 @@
 	nav div {
 		font-size: 16px;
 	}
-	/*
-	#createurs h1 {
-		animation: unset !important;
-	}
-	*/
 	.creator a::before {
 		color: white !important;
 	}
@@ -187,28 +182,29 @@
 		max-width: 70%;
 		margin: auto;
 	}
-	/*
-	#thisUniverse * {
-		animation: unset !important;
-	}
-	*/
-	#thisUniverse h1, #thisSearch h1{
+	#thisUniverse h1,
+	#thisSearch h1,
+	#createurs h1 {
 		font-size: 40px !important;
+	}
+	#createurs h1 {
+		font-size: 30px !important;
 	}
 	.UP {
 		font-size: 16px !important;
 	}
-	#thisUniverse h2, #thisSearch h2{
+	#thisUniverse h2,
+	#thisSearch h2 {
 		font-size: 24px;
 	}
 	.subTitle {
 		margin: 10px 0 10px 0 !important;
 	}
-	.secondaryInfos{
-		width: 100%!important;
+	.secondaryInfos {
+		width: 100% !important;
 	}
-	#thisUniverse h3, #thisSearch h3 {
-		/*font-size: 22px !important;*/
+	#thisUniverse h3,
+	#thisSearch h3 {
 		font-size: 18px !important;
 	}
 	.bookRight .tag {
@@ -221,7 +217,11 @@
 	.bookRight .sousTitre {
 		font-size: 17px !important;
 	}
-	#createurs h1,
+	/*
+	#createurs h1{
+		animation: unset !important;
+	}
+	*/
 	#thisUniverse h1 {
 		animation: unset !important;
 	}

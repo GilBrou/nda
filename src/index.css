@@ -22,7 +22,7 @@
 body,
 html {
   /*General*/
-  font-family: "Poppins", serif;
+  font-family: "Poppins", serif, arial;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   font-weight: 400;

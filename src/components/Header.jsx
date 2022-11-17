@@ -85,7 +85,7 @@ export default function Header(data) {
               href={data.data1 ? data.data1.links.menu2L : "loading..."}
               className="page-scroll thatULink"
             >
-              <p className="noClick">
+              <p>
                 {data.data1 ? data.data1.menu.menu2 : "loading..."}
               </p>
             </a>

@@ -1,5 +1,6 @@
 /******CREATEURS******/
 import ReactTooltip from "react-tooltip";
+import Collapsible from "react-collapsible";
 
 import {
   DustAnim,
@@ -121,65 +122,101 @@ export default function Createurs(data) {
         {/*BACKGROUND ANIMATION*/}
         {DustAnim()}
         {MainAnim()}
+
         {/*Editors Section*/}
-        <h1 className="creaTitle">{data.data2.createurs.crea1}</h1>
-        {/*Editors's cards creation from Json data*/}
-        <div className="row text-center justify-content-center">
-          {data.data2
-            ? data.data2.teamEdi.map((team, i) => tryAuth(team, i))
-            : "Loading..."}
-        </div>
+        <Collapsible
+          
+          transitionTime="550"
+          overflowWhenOpen ="visible"
+          easing ="ease-in-out"
+          triggerWhenOpen ={<h1 className="creaTitle">{data.data2.createurs.crea1}</h1>}
+          trigger={<h1 className="creaTitle">{ "⇓ " + data.data2.createurs.crea1}</h1>}
+        >
+          {/*Editors's cards creation from Json data*/}
+          <div className="row text-center justify-content-center">
+            {data.data2
+              ? data.data2.teamEdi.map((team, i) => tryAuth(team, i))
+              : "Loading..."}
+          </div>
+        </Collapsible>
+
         {/*Authors Section*/}
-        <h1 className="creaTitle">{data.data2.createurs.crea2}</h1>
-        {/*Authors's cards creation from Json data*/}
-        <div className="row text-center teamAuth">
-          {data.data2
-            ? data.data2.teamAuth
-                .sort(alphabetical)
-                .map((team, i) => tryAuth(team, i))
-            : "Loading..."}
-        </div>
+         <Collapsible
+          
+          transitionTime="550"
+          overflowWhenOpen ="visible"
+          easing ="ease-in-out"
+          triggerWhenOpen ={<h1 className="creaTitle">{data.data2.createurs.crea2}</h1>}
+          trigger={<h1 className="creaTitle">{ "⇓ " + data.data2.createurs.crea2}</h1>}
+        >
+          {/*Authors's cards creation from Json data*/}
+          <div className="row text-center teamAuth">
+            {data.data2
+              ? data.data2.teamAuth
+                  .sort(alphabetical)
+                  .map((team, i) => tryAuth(team, i))
+              : "Loading..."}
+          </div>
+        </Collapsible>
+
         {/*Illustrators Section*/}
-        <h1 className="creaTitle">{data.data2.createurs.crea3}</h1>
-        {/*Illustrators's cards creation from Json data*/}
-        <div className="row text-center teamAuth">
-          {data.data2
-            ? data.data2.teamIllus
-                .sort(alphabetical)
-                .map((team, i) => tryAuth(team, i))
-            : "Loading..."}
-        </div>
+        <Collapsible
+          
+          transitionTime="550"
+          overflowWhenOpen ="visible"
+          easing ="ease-in-out"
+          triggerWhenOpen ={<h1 className="creaTitle">{data.data2.createurs.crea3}</h1>}
+          trigger={<h1 className="creaTitle">{ "⇓ " + data.data2.createurs.crea3}</h1>}
+        >
+          {/*Illustrators's cards creation from Json data*/}
+          <div className="row text-center teamAuth">
+            {data.data2
+              ? data.data2.teamIllus
+                  .sort(alphabetical)
+                  .map((team, i) => tryAuth(team, i))
+              : "Loading..."}
+          </div>
+        </Collapsible>
+
         {/*Support Section*/}
-        <h1 className="creaTitle">{data.data2.createurs.crea4}</h1>
-        {/*Supporters's cards creation from Json data*/}
-        <div className="row text-center teamAuth">
-          {data.data2
-            ? data.data2.teamOmbre.sort(alphabetical).map((team, i) => (
-                <div
-                  key={`${team.name}-${i}`}
-                  className="col-sm-3 col-md-2 col-lg-2 creator"
-                >
-                  <img
-                    className="img-responsive creatora"
-                    src={
-                      data.data1.UimgLinks.IL2 +
-                      team.name +
-                      data.data1.UimgLinks.IL1B
-                    }
-                    alt={"photo de " + team.name + " " + team.name2}
-                  />
-                  <p className="Names" id={team.name + "P1"}>
-                    {team.name + " " + team.name2}
-                  </p>
-                  <p className="Jobs" id={team.name + "P2"}>
-                    {team.job}
-                  </p>
-                  {GetLink(team.Lien)}
-                </div>
-              ))
-            : "Loading..."}
-          {/*</div>*/}
-        </div>
+        <Collapsible
+          
+          transitionTime="550"
+          overflowWhenOpen ="visible"
+          easing ="ease-in-out"
+          triggerWhenOpen ={<h1 className="creaTitle">{data.data2.createurs.crea4}</h1>}
+          trigger={<h1 className="creaTitle">{ "⇓ " + data.data2.createurs.crea4}</h1>}
+        >
+          {/*Supporters's cards creation from Json data*/}
+          <div className="row text-center teamAuth">
+            {data.data2
+              ? data.data2.teamOmbre.sort(alphabetical).map((team, i) => (
+                  <div
+                    key={`${team.name}-${i}`}
+                    className="col-sm-3 col-md-2 col-lg-2 creator"
+                  >
+                    <img
+                      className="img-responsive creatora"
+                      src={
+                        data.data1.UimgLinks.IL2 +
+                        team.name +
+                        data.data1.UimgLinks.IL1B
+                      }
+                      alt={"photo de " + team.name + " " + team.name2}
+                    />
+                    <p className="Names" id={team.name + "P1"}>
+                      {team.name + " " + team.name2}
+                    </p>
+                    <p className="Jobs" id={team.name + "P2"}>
+                      {team.job}
+                    </p>
+                    {GetLink(team.Lien)}
+                  </div>
+                ))
+              : "Loading..."}
+            {/*</div>*/}
+          </div>
+        </Collapsible>
       </div>
     </div>
   );
