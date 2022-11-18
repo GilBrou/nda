@@ -1,6 +1,6 @@
 # Noir d'Absinthe
 
-![Preview](https://raw.githubusercontent.com/GilBrou/nda/master/public/img/LogoL.webp)
+![Preview](https://raw.githubusercontent.com/GilBrou/nda/master/public/img/LogoS.webp)
 
 Projet de création de site pour un éditeur professionnel : Noir D'Absinthe.
 
