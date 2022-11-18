@@ -39,19 +39,6 @@ export default function Createurs(data) {
     return 0;
   }
 
-  /*Collapsible default open/close*/
-  function DisplayCollapsible() {
-    let Screen = window.innerWidth;
-    console.log(Screen);
-    if (screen >= 766) {
-      console.log("open Collapsible");
-      return "true";
-    } else {
-      console.log("close Collapsible");
-      return "false";
-    }
-  }
-
   function tryAuth(team, i) {
     if (team.job.includes("aut")) {
       return (
@@ -138,7 +125,6 @@ export default function Createurs(data) {
 
         {/*Editors Section*/}
         <Collapsible
-          open={DisplayCollapsible()}
           transitionTime="550"
           overflowWhenOpen="visible"
           easing="ease-in-out"
@@ -160,7 +146,6 @@ export default function Createurs(data) {
         {/*Authors Section*/}
         <Collapsible
           transitionTime="550"
-          open={DisplayCollapsible()}
           overflowWhenOpen="visible"
           easing="ease-in-out"
           triggerWhenOpen={
@@ -185,7 +170,6 @@ export default function Createurs(data) {
           transitionTime="550"
           overflowWhenOpen="visible"
           easing="ease-in-out"
-          open={DisplayCollapsible()}
           triggerWhenOpen={
             <h1 className="creaTitle">{data.data2.createurs.crea3}</h1>
           }
@@ -205,10 +189,9 @@ export default function Createurs(data) {
 
         {/*Support Section*/}
         <Collapsible
-          transitionTime="550"
+          transitionTime="550"    
           overflowWhenOpen="visible"
           easing="ease-in-out"
-          open={DisplayCollapsible()}
           triggerWhenOpen={
             <h1 className="creaTitle">{data.data2.createurs.crea4}</h1>
           }
