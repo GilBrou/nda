@@ -39,6 +39,19 @@ export default function Createurs(data) {
     return 0;
   }
 
+  /*Collapsible default open/close*/
+  function DisplayCollapsible() {
+    let Screen = window.innerWidth;
+    console.log(Screen);
+    if (screen >= 766) {
+      console.log("open Collapsible");
+      return "true";
+    } else {
+      console.log("close Collapsible");
+      return "false";
+    }
+  }
+
   function tryAuth(team, i) {
     if (team.job.includes("aut")) {
       return (
@@ -125,12 +138,16 @@ export default function Createurs(data) {
 
         {/*Editors Section*/}
         <Collapsible
-          
+          open={DisplayCollapsible()}
           transitionTime="550"
-          overflowWhenOpen ="visible"
-          easing ="ease-in-out"
-          triggerWhenOpen ={<h1 className="creaTitle">{data.data2.createurs.crea1}</h1>}
-          trigger={<h1 className="creaTitle">{ "⇓ " + data.data2.createurs.crea1}</h1>}
+          overflowWhenOpen="visible"
+          easing="ease-in-out"
+          triggerWhenOpen={
+            <h1 className="creaTitle">{data.data2.createurs.crea1}</h1>
+          }
+          trigger={
+            <h1 className="creaTitle">{"⇓ " + data.data2.createurs.crea1}</h1>
+          }
         >
           {/*Editors's cards creation from Json data*/}
           <div className="row text-center justify-content-center">
@@ -141,13 +158,17 @@ export default function Createurs(data) {
         </Collapsible>
 
         {/*Authors Section*/}
-         <Collapsible
-          
+        <Collapsible
           transitionTime="550"
-          overflowWhenOpen ="visible"
-          easing ="ease-in-out"
-          triggerWhenOpen ={<h1 className="creaTitle">{data.data2.createurs.crea2}</h1>}
-          trigger={<h1 className="creaTitle">{ "⇓ " + data.data2.createurs.crea2}</h1>}
+          open={DisplayCollapsible()}
+          overflowWhenOpen="visible"
+          easing="ease-in-out"
+          triggerWhenOpen={
+            <h1 className="creaTitle">{data.data2.createurs.crea2}</h1>
+          }
+          trigger={
+            <h1 className="creaTitle">{"⇓ " + data.data2.createurs.crea2}</h1>
+          }
         >
           {/*Authors's cards creation from Json data*/}
           <div className="row text-center teamAuth">
@@ -161,12 +182,16 @@ export default function Createurs(data) {
 
         {/*Illustrators Section*/}
         <Collapsible
-          
           transitionTime="550"
-          overflowWhenOpen ="visible"
-          easing ="ease-in-out"
-          triggerWhenOpen ={<h1 className="creaTitle">{data.data2.createurs.crea3}</h1>}
-          trigger={<h1 className="creaTitle">{ "⇓ " + data.data2.createurs.crea3}</h1>}
+          overflowWhenOpen="visible"
+          easing="ease-in-out"
+          open={DisplayCollapsible()}
+          triggerWhenOpen={
+            <h1 className="creaTitle">{data.data2.createurs.crea3}</h1>
+          }
+          trigger={
+            <h1 className="creaTitle">{"⇓ " + data.data2.createurs.crea3}</h1>
+          }
         >
           {/*Illustrators's cards creation from Json data*/}
           <div className="row text-center teamAuth">
@@ -180,12 +205,16 @@ export default function Createurs(data) {
 
         {/*Support Section*/}
         <Collapsible
-          
           transitionTime="550"
-          overflowWhenOpen ="visible"
-          easing ="ease-in-out"
-          triggerWhenOpen ={<h1 className="creaTitle">{data.data2.createurs.crea4}</h1>}
-          trigger={<h1 className="creaTitle">{ "⇓ " + data.data2.createurs.crea4}</h1>}
+          overflowWhenOpen="visible"
+          easing="ease-in-out"
+          open={DisplayCollapsible()}
+          triggerWhenOpen={
+            <h1 className="creaTitle">{data.data2.createurs.crea4}</h1>
+          }
+          trigger={
+            <h1 className="creaTitle">{"⇓ " + data.data2.createurs.crea4}</h1>
+          }
         >
           {/*Supporters's cards creation from Json data*/}
           <div className="row text-center teamAuth">
