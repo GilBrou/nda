@@ -30,35 +30,9 @@ import Data1 from "./data/data.json";
 import Data2 from "./data/dataExt.json";
 import Data3 from "./data/dataExt2.json";
 
-async function getData() {
-    const data = await fetch(
-        /*"https://raw.githubusercontent.com/GilBrou/KasaProject/master/public/data.json"*/
-        "https://raw.githubusercontent.com/GilBrou/nda/master/public/dataExt2.json"
-        /*"https://github.com/GilBrou/nda/blob/master/src/data/dataExt2.json"*/
-    );
-    return data.json();
-}
-
-
 /***APP***/
 export default function App() {
-
-
-    const [data, setData] = useState([]);
-
-    useEffect(() => {
-        async function fetchDatas() {
-            let thisdata = await getData();
-            setData(thisdata);
-        }
-
-        fetchDatas();
-    }, []);
-
-    console.log(data)
-
   /*Get datas*/
-  /*
   const [allDatas, setAllDatas] = useState({});
   const [allDatas2, setAllDatas2] = useState({});
   const [allDatas3, setAllDatas3] = useState({});
@@ -67,11 +41,10 @@ export default function App() {
     async function fetchDatas() {
       setAllDatas(Data1);
       setAllDatas2(Data2);
-      setAllDatas3(Data3);
+      setAllDatas2(Data3);
     }
     fetchDatas();
   }, []);
-  */
 
   /*DOM*/
   return (
