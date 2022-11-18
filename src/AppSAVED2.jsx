@@ -28,12 +28,13 @@ import Search from "./pages/Search";
 /***DATAS***/
 import Data1 from "./data/data.json";
 import Data2 from "./data/dataExt.json";
-/*import Data3 from "./data/dataExt2.json";*/
+import Data3 from "./data/dataExt2.json";
 
 async function getData() {
     const data = await fetch("https://raw.githubusercontent.com/GilBrou/nda/master/public/dataExt2.json");
     return data.json();
-    
+
+    /*https://github.com/GilBrou/nda/blob/master/public/dataExt2.json*/
 }
 
 
@@ -41,8 +42,7 @@ async function getData() {
 export default function App() {
 
 
-    const [Data3, setData] = useState({});
-
+    const [data, setData] = useState([]);
 
     useEffect(() => {
         async function fetchDatas() {
@@ -53,6 +53,7 @@ export default function App() {
         fetchDatas();
     }, []);
 
+    console.log(data)
 
   /*Get datas*/
   /*
@@ -70,9 +71,6 @@ export default function App() {
   }, []);
   */
 
-    console.log(Data3)
-
-
   /*DOM*/
   return (
     <Router>
@@ -84,11 +82,9 @@ export default function App() {
         {/*ROUTES*/}
         <Switch>
           {/*HOMEPAGE*/}
-        {/*
           <Route exact path="/accueil">
             <Homepage data1={Data1} data2={Data2} data3={Data3} />
           </Route>
-          */}
           {/*CREATEURS*/}
           <Route exact path="/createurs">
             <Createurs data1={Data1} data2={Data2} />
