@@ -9,6 +9,9 @@ export default function Homepage(data) {
   const thisToggle = document.getElementById("thisToggle");
   const thisOverlay = document.getElementById("thisOverlay");
 
+
+
+
   /*DOM*/
   return (
     <div className="homepage">

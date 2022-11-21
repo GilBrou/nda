@@ -38,24 +38,32 @@
   font-weight: 100;
   text-shadow: 5px 2px 12px var(--blackish);
 }
-.introRight {
-  background-color: red;
+
+.introRightWrapper{
+  padding: 10px 0 5px 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 1150px;/*check responsive*/
+  max-width: 60%;
+   /*************/
+   background-color: var(--greenishTrans2);
+  border: solid 1px var(--blackishBack);
+  box-shadow: 0 0 10px -2px var(--blackishBack);
+  /*****************/
+}
+.introRight {  
   width: fit-content;
   height: fit-content;
   margin: auto;
-  /*margin-top: 0px;/**/
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--greenishTrans2);
-  border: solid 1px var(--blackishBack);
-  box-shadow: 0 0 10px -2px var(--blackishBack);
   border-radius: 5px;
 }
-.introRight h2 {
+#intro h2 {
   margin: auto;
   font-size: 25px;
-  padding: 50px 0 5px 0;
+  padding: 0 0 5px 0;
   text-transform: uppercase;
   width: fit-content;
   border-bottom: solid 1px var(--greenish);
@@ -118,7 +126,6 @@
 .pagination2 {
   margin-top: 150px;
   display: flex;
-
   bottom: 10px;
   justify-content: center;
   width: 100%;
@@ -131,9 +138,148 @@
   transition: 0.2s;
   animation: circle 3s linear infinite;
 }
+.pagination2 a:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.pagination2 a:nth-child(3) {
+  animation-delay: -0.6s;
+}
+.pagination2 a:nth-child(4) {
+  animation-delay: -0.9s;
+}
+.pagination2 a:nth-child(5) {
+  animation-delay: -1.2s;
+}
+.pagination2 a:nth-child(6) {
+  animation-delay: -1.5s;
+}
+.pagination2 a:nth-child(7) {
+  animation-delay: -1.8s;
+}
+.pagination2 a:nth-child(8) {
+  animation-delay: -2.1s;
+}
+.pagination2 a:nth-child(9) {
+  animation-delay: -2.4s;
+}
+.pagination2 a:nth-child(10) {
+  animation-delay: -2.7s;
+}
+
 .aAnim2 {
   display: block;
   min-height: 40px;
   min-width: 40px;
   box-shadow: 0 0 7px 0.5px var(--blackishBack2);
 }
+
+
+.pagination2 a:nth-child(1) div {
+  background: url("./background/backgroundU1.webp");
+  background-position: center;
+  animation: dotAnim 10s linear infinite both;
+}
+.pagination2 a:nth-child(2) div {
+  background: url("./background/backgroundU2.webp");
+  background-position: center;
+  animation: dotAnim 7s linear infinite both -1s;
+}
+.pagination2 a:nth-child(3) div {
+  background: url("./background/backgroundU3.webp");
+  background-position: center;
+  animation: dotAnim 15s linear infinite both -3s;
+}
+.pagination2 a:nth-child(4) div {
+  background: url("./background/backgroundU4.webp");
+  background-position: center;
+  animation: dotAnim 10s linear infinite both;
+}
+.pagination2 a:nth-child(5) div {
+  background: url("./background/backgroundU5.webp");
+  background-position: center;
+  animation: dotAnim 7s linear infinite both -1s;
+}
+.pagination2 a:nth-child(6) div {
+  background: url("./background/backgroundU6.webp");
+  background-position: center;
+  animation: dotAnim 15s linear infinite both -3s;
+}
+.pagination2 a:nth-child(7) div {
+  background: url("./background/backgroundU7.webp");
+  background-position: center;
+  animation: dotAnim 10s linear infinite both;
+}
+.pagination2 a:nth-child(8) div {
+  background: url("./background/backgroundU8.webp");
+  background-position: center;
+  animation: dotAnim 7s linear infinite both -1s;
+}
+.pagination2 a:nth-child(9) div {
+  background: url("./background/backgroundU9.webp");
+  background-position: center;
+  animation: dotAnim 13s linear infinite both -4s;
+}
+.pagination2 a:nth-child(10) div {
+  background: url("./background/backgroundU10.webp");
+  background-position: center;
+  animation: dotAnim 7s linear infinite both -2s;
+}
+.pagination2 a:not(:last-child) {
+  margin-right: 20px;
+}
+
+/*
+.introTags{
+  padding: 15px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 50%;///
+}
+.introTags a{
+    text-decoration: none !important;
+    transition: 0.3s;
+  padding: 2px;
+    text-align: center;
+    align-self: center;
+    margin: 3px;
+    border-radius: 5px!important;
+    width: unset;
+  z-index: 3000;
+  pointer-events: auto!important;
+}
+
+.introTags p{
+        border: solid 1.5px var(--blackish);
+
+font-size: 14px;
+
+}
+
+
+.introTags a:hover p{
+    
+    transform: scale(1.1);
+    background-color: var(--greenish);
+    color: var(--blackish);
+}
+*/
+
+.IntroLink{
+  margin-top: 10px;
+  text-decoration: none!important;
+  z-index: 3000  ;
+  pointer-events: auto!important;
+  color: inherit;
+}
+
+.IntroLink:hover {
+  text-decoration:inherit;
+  color: inherit;
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
