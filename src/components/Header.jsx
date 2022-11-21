@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import Form from "./Form";
 
 export default function Header(data) {
+
   /******Background object toggling******/
   /*background objects selection for toggling according to modals*/
   const thisToggle = document.getElementById("thisToggle");
@@ -85,9 +86,7 @@ export default function Header(data) {
               href={data.data1 ? data.data1.links.menu2L : "loading..."}
               className="page-scroll thatULink"
             >
-              <p>
-                {data.data1 ? data.data1.menu.menu2 : "loading..."}
-              </p>
+              <p>{data.data1 ? data.data1.menu.menu2 : "loading..."}</p>
             </a>
             {/*2b - Univers sub menu2 */}
             <ul className="subList">

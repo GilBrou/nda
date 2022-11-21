@@ -1,4 +1,7 @@
 /******INTRO MODULE******/
+
+import ReactTooltip from "react-tooltip";
+
 /***COMPONENTS***/
 import { LastBooks, dateSortInvert } from "../components/SortBooks";
 
@@ -38,23 +41,67 @@ export default function Intro(data) {
             {data.data2 ? data.data2.nda.description : "loading..."}
           </h1>
         </div>
-        {/*
-        <div className="introRightWrapper">
-*/}
-        <div className="introRight">
-          {/*Dynamic creation from Json data*/}
-          {sliceBookArray(data)}
-        </div>
-        {/*
-              <div className="introRight">
-          {sliceBookArray(data)}
-        </div>
-*/}
-      </div>
-      {/*
 
+        <div className="introRightWrapper">
+
+                {/*Universes selector*/},
+        <div className="pagination2">
+          {/*Dynamic creation from Json data*/}
+          {data.data2.univers.map(
+            (univers, i) => (
+              {
+                /*Universe slideshow links*/
+              },
+              (
+                <a
+                  href={"#-" + univers.link}
+                  key={univers.name + "a"}
+                  data-tip
+                  data-for={"Utip-" + univers.link}
+                >
+                  <div className="aAnim">
+                    <span></span>
+                  </div>
+                </a>
+              )
+            )
+          )}
+
+          {/*Dynamic creation from Json data*/}
+          {data.data2.univers.map(
+            (univers, i) => (
+              {
+                /*Universe slideshow links tooltips*/
+              },
+              (
+                <ReactTooltip
+                  id={"Utip-" + univers.link}
+                  place="top"
+                  animation="FadeIn"
+                  data-offset="{'top':5}"
+                  effect="solid"
+                  textColor="#fff"
+                  arrowColor="#222020"
+                  /*border="true"*/
+                  borderColor="#2CC78E"
+                  effect="solid"
+                  backgroundColor="#222020"
+                  key={"tipFor-" + univers.link}
+                >
+                  {univers.name}
+                </ReactTooltip>
+              )
+            )
+          )}
+        </div>
+
+          <div className="introRight">
+            {/*Dynamic creation from Json data*/}
+            {sliceBookArray(data)}
+          </div>
+
+        </div>
       </div>
-      */}
     </section>
   );
 }

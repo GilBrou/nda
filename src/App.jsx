@@ -4,14 +4,7 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Redirect } from "react-router";
-import {
-  DustAnim,
-  MainAnim,
-  TerraAnim,
-  FolieAnim,
-  FleurRougeAnim,
-  FuturiaAnim,
-} from "./components/UniversAnim";
+import { DustAnim, MainAnim } from "./components/UniversAnim";
 
 /***COMPONENTS***/
 import Header from "./components/Header";
@@ -28,34 +21,11 @@ import Search from "./pages/Search";
 /***DATAS***/
 import Data1 from "./data/data.json";
 import Data2 from "./data/dataExt.json";
-/*import Data3 from "./data/dataExt2.json";*/
-
-async function getData() {
-    const data = await fetch("https://raw.githubusercontent.com/GilBrou/nda/master/public/dataExt2.json");
-    return data.json();
-    
-}
-
+import Data3 from "./data/dataExt2.json";
 
 /***APP***/
 export default function App() {
-
-
-    const [Data3, setData] = useState({});
-
-
-    useEffect(() => {
-        async function fetchDatas() {
-            let thisdata = await getData();
-            setData(thisdata);
-        }
-
-        fetchDatas();
-    }, []);
-
-
   /*Get datas*/
-  /*
   const [allDatas, setAllDatas] = useState({});
   const [allDatas2, setAllDatas2] = useState({});
   const [allDatas3, setAllDatas3] = useState({});
@@ -68,10 +38,6 @@ export default function App() {
     }
     fetchDatas();
   }, []);
-  */
-
-    console.log(Data3)
-
 
   /*DOM*/
   return (
@@ -84,11 +50,9 @@ export default function App() {
         {/*ROUTES*/}
         <Switch>
           {/*HOMEPAGE*/}
-        {/*
           <Route exact path="/accueil">
             <Homepage data1={Data1} data2={Data2} data3={Data3} />
           </Route>
-          */}
           {/*CREATEURS*/}
           <Route exact path="/createurs">
             <Createurs data1={Data1} data2={Data2} />
@@ -115,18 +79,15 @@ export default function App() {
           >
             <ThisUniverse data1={Data1} data2={Data2} data3={Data3} />
           </Route>
-
           {/*SEARCH*/}
           <Route path="/recherche">
             <Search data1={Data1} data2={Data2} data3={Data3} />
           </Route>
-
           {/*REDIRECT*/}
           <Route>
             <Redirect to="/accueil" />
           </Route>
           {/*404 PAGE*/}
-
           <Route>
             <Error404 />
           </Route>

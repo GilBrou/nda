@@ -114,3 +114,26 @@
 .bL:hover {
   transform: scale(1.05);
 }
+
+.pagination2 {
+  margin-top: 150px;
+  display: flex;
+
+  bottom: 10px;
+  justify-content: center;
+  width: 100%;
+}
+.pagination2 a{
+  display: block;
+  height: 40px;
+  width: 40px;
+  margin-top: -100px;
+  transition: 0.2s;
+  animation: circle 3s linear infinite;
+}
+.aAnim2 {
+  display: block;
+  min-height: 40px;
+  min-width: 40px;
+  box-shadow: 0 0 7px 0.5px var(--blackishBack2);
+}
