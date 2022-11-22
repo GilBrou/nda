@@ -31,8 +31,8 @@ nav button p {
   margin: auto;
 }
 nav a:hover,
-nav button p:hover, 
-.thatULink:hover p{/*************************/
+nav button p:hover,
+.thatULink:hover p {
   color: var(--greenish);
   text-decoration: none;
 }

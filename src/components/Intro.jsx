@@ -7,16 +7,15 @@ import { LastBooks, dateSortInvert } from "../components/SortBooks";
 
 /***COMPONENT***/
 export default function Intro(data) {
-
-
-/*Get all book's tags
+  /*Get all book's tags
   let allBookTags = [];
   let allThoseBooks = data.data3.Livres;
   for (let i in allThoseBooks) {
     let thisOne = allThoseBooks[i];
     for (let i in thisOne.genres) {
-      if (
-        !allBookTags.includes(thisOne.genres[i]) &&
+
+                                    if (
+                              !allBookTags.includes(thisOne.genres[i]) &&
         !thisOne.genres[i] == "" &&
         !thisOne.genres[i].includes("12") &&
         !thisOne.genres[i].includes("Rétro") &&
