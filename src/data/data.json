@@ -38,10 +38,11 @@
     "IL1B2": ".jpg"
   },
   "A FAIRE": {
+    "JSONDATAS": "external fetch",
     "Module accueil": "Derniers evenements Fb ? posts inta et/ou Fb ?",
-    "Module accueil": "link vers univers?",
-    "BUG FIX": "tooltip ??????????????",
-    "RESPONSIVE": "BUG MODALS ???"
+    "RESPONSIVE": "BUG MODALS ???",
+    "SEO PERFORMANCE ET REFERENCEMENT": "again ?",
+    "translate from excel": "?"
   },
   "FONCTIONNALITES A VOIR": {
     "QUESTIONNAIRE EN LIGNE POUR AFFICHER TRI": "",
@@ -56,11 +57,6 @@
   "MORGANE TO DO": {
     "MAJ infosite": "",
     "MAJ KIT MEDIA": "",
-    "MAJ createurs": "to do",
     "Photos createurs": "to do"
-  },
-  "MOI TO DO": {
-    "SEO PERFORMANCE ET REFERENCEMENT": "1/2",
-    "translate from excel": ""
   }
 }

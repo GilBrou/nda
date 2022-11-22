@@ -1,18 +1,17 @@
 /******CREATEURS******/
 import ReactTooltip from "react-tooltip";
 import Collapsible from "react-collapsible";
-
-import {
-  DustAnim,
-  MainAnim,
-  TerraAnim,
-  FolieAnim,
-  FleurRougeAnim,
-  FuturiaAnim,
-} from "../components/UniversAnim";
+import { DustAnim, MainAnim } from "../components/UniversAnim";
 
 /***COMPONENT***/
 export default function Createurs(data) {
+  /*Collapsible default position according to window width*/
+  function checkWidth() {
+    if (window.innerWidth >= "740") {
+      return "true";
+    }
+  }
+
   /*Toggle link buttons*/
   function GetLink(props) {
     if (props >= "1") {
@@ -30,10 +29,10 @@ export default function Createurs(data) {
 
   /*Alphabetical sorting*/
   function alphabetical(a, b) {
-    if (a.name < b.name) {
+    if (a.name2 < b.name2) {
       return -1;
     }
-    if (a.name > b.name) {
+    if (a.name2 > b.name2) {
       return 1;
     }
     return 0;
@@ -41,14 +40,105 @@ export default function Createurs(data) {
 
   function tryAuth(team, i) {
     if (team.job.includes("aut")) {
-      return (
-        <div
-          key={`${team.name}-${i}`}
-          className="col-sm-3 col-md-2 col-lg-2 creator "
-        >
-          <a
-            href={"/recherche#" + team.name + " " + team.name2}
-            key={team.name + "Link"}
+      if (team.name2 != "") {
+        return (
+          <div
+            key={`${team.name}-${i}`}
+            className="col-sm-3 col-md-2 col-lg-2 creator "
+          >
+            <a
+              href={"/recherche#" + team.name + " " + team.name2}
+              key={team.name + "Link"}
+            >
+              <img
+                className="img-responsive creatora"
+                src={
+                  data.data1.UimgLinks.IL2 +
+                  team.name2 +
+                  data.data1.UimgLinks.IL1B
+                }
+                alt={"photo de " + team.name + " " + team.name2}
+              />
+            </a>
+            <p className="Names" id={team.name + "P1"}>
+              {team.name + " " + team.name2}
+            </p>
+            <p className="Jobs" id={team.name + "P2"}>
+              {team.job}
+            </p>
+            <p className="Credits" id={team.name + "P2"}>
+              {team.credits}
+            </p>
+            {GetLink(team.Lien)}
+          </div>
+        );
+      } else {
+        return (
+          <div
+            key={`${team.name}-${i}`}
+            className="col-sm-3 col-md-2 col-lg-2 creator "
+          >
+            <a
+              href={"/recherche#" + team.name + " " + team.name2}
+              key={team.name + "Link"}
+            >
+              <img
+                className="img-responsive creatora"
+                src={
+                  data.data1.UimgLinks.IL2 +
+                  team.name +
+                  data.data1.UimgLinks.IL1B
+                }
+                alt={"photo de " + team.name + " " + team.name2}
+              />
+            </a>
+            <p className="Names" id={team.name + "P1"}>
+              {team.name + " " + team.name2}
+            </p>
+            <p className="Jobs" id={team.name + "P2"}>
+              {team.job}
+            </p>
+            <p className="Credits" id={team.name + "P2"}>
+              {team.credits}
+            </p>
+            {GetLink(team.Lien)}
+          </div>
+        );
+      }
+    } else {
+      if (team.name2 != "") {
+        return (
+          <div
+            key={`${team.name}-${i}`}
+            className="col-sm-3 col-md-2 col-lg-2 creator"
+          >
+            <img
+              className="img-responsive creatora"
+              src={
+                data.data1.UimgLinks.IL2 +
+                team.name2 +
+                data.data1.UimgLinks.IL1B
+              }
+              alt={"photo de " + team.name + " " + team.name2}
+            />
+
+            <p className="Names" id={team.name + "P1"}>
+              {team.name + " " + team.name2}
+            </p>
+            <p className="Jobs" id={team.name + "P2"}>
+              {team.job}
+            </p>
+            <p className="Credits" id={team.name + "P2"}>
+              {team.credits}
+            </p>
+            {GetLink(team.Lien)}
+          </div>
+        );
+      } else {
+        return (
+          <div
+            key={`${team.name}-${i}`}
+            className="col-sm-3 col-md-2 col-lg-2 creator"
           >
             <img
               className="img-responsive creatora"
@@ -57,45 +147,20 @@ export default function Createurs(data) {
               }
               alt={"photo de " + team.name + " " + team.name2}
             />
-          </a>
-          <p className="Names" id={team.name + "P1"}>
-            {team.name + " " + team.name2}
-          </p>
-          <p className="Jobs" id={team.name + "P2"}>
-            {team.job}
-          </p>
-          <p className="Credits" id={team.name + "P2"}>
-            {team.credits}
-          </p>
-          {GetLink(team.Lien)}
-        </div>
-      );
-    } else {
-      return (
-        <div
-          key={`${team.name}-${i}`}
-          className="col-sm-3 col-md-2 col-lg-2 creator"
-        >
-          <img
-            className="img-responsive creatora"
-            src={
-              data.data1.UimgLinks.IL2 + team.name + data.data1.UimgLinks.IL1B
-            }
-            alt={"photo de " + team.name + " " + team.name2}
-          />
 
-          <p className="Names" id={team.name + "P1"}>
-            {team.name + " " + team.name2}
-          </p>
-          <p className="Jobs" id={team.name + "P2"}>
-            {team.job}
-          </p>
-          <p className="Credits" id={team.name + "P2"}>
-            {team.credits}
-          </p>
-          {GetLink(team.Lien)}
-        </div>
-      );
+            <p className="Names" id={team.name + "P1"}>
+              {team.name + " " + team.name2}
+            </p>
+            <p className="Jobs" id={team.name + "P2"}>
+              {team.job}
+            </p>
+            <p className="Credits" id={team.name + "P2"}>
+              {team.credits}
+            </p>
+            {GetLink(team.Lien)}
+          </div>
+        );
+      }
     }
   }
 
@@ -125,6 +190,7 @@ export default function Createurs(data) {
 
         {/*Editors Section*/}
         <Collapsible
+          open={checkWidth()}
           transitionTime="550"
           overflowWhenOpen="visible"
           easing="ease-in-out"
@@ -145,6 +211,7 @@ export default function Createurs(data) {
 
         {/*Authors Section*/}
         <Collapsible
+          open={checkWidth()}
           transitionTime="550"
           overflowWhenOpen="visible"
           easing="ease-in-out"
@@ -167,6 +234,7 @@ export default function Createurs(data) {
 
         {/*Illustrators Section*/}
         <Collapsible
+          open={checkWidth()}
           transitionTime="550"
           overflowWhenOpen="visible"
           easing="ease-in-out"
@@ -189,7 +257,8 @@ export default function Createurs(data) {
 
         {/*Support Section*/}
         <Collapsible
-          transitionTime="550"    
+          open={checkWidth()}
+          transitionTime="550"
           overflowWhenOpen="visible"
           easing="ease-in-out"
           triggerWhenOpen={
@@ -200,7 +269,7 @@ export default function Createurs(data) {
           }
         >
           {/*Supporters's cards creation from Json data*/}
-          <div className="row text-center teamAuth">
+          <div className="row text-center">
             {data.data2
               ? data.data2.teamOmbre.sort(alphabetical).map((team, i) => (
                   <div
@@ -211,7 +280,7 @@ export default function Createurs(data) {
                       className="img-responsive creatora"
                       src={
                         data.data1.UimgLinks.IL2 +
-                        team.name +
+                        team.name2 +
                         data.data1.UimgLinks.IL1B
                       }
                       alt={"photo de " + team.name + " " + team.name2}

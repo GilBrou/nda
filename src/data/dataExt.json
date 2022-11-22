@@ -125,8 +125,8 @@
       "job": "Correctrice"
     },
     {
-      "name": "Marin",
-      "name2": "' Maltese",
+      "name": "Marin'",
+      "name2": "Maltese",
       "Lien": "",
       "credits": "",
 
@@ -252,6 +252,169 @@
       "Lien": "https://www.rachelgali.com/",
       "credits": "",
       "job": "author"
+    },
+    {
+      "name": "Xavier",
+      "name2": "Lhomme",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Maxence",
+      "name2": "Madone",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+
+    {
+      "name": "Sarah",
+      "name2": "Kügel",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Dola",
+      "name2": "Rosselet",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+
+    {
+      "name": "Charlène",
+      "name2": "Ferlay",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Éli",
+      "name2": "Boudeau",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Maëlig",
+      "name2": "Duval",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Kathrine",
+      "name2": "Hasnaoui",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "KeoT",
+      "name2": "",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Stéphane",
+      "name2": "Miller",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Sarah",
+      "name2": "Delysle",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Cyril",
+      "name2": "Fallavollita",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Alexandra",
+      "name2": "Fiordelli",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Wilfried",
+      "name2": "Renaut",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Patrice",
+      "name2": "Quélard",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Michelle",
+      "name2": "Labeeu",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Jordi",
+      "name2": "Vila Cornellas",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Mathilde",
+      "name2": "Chau",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Geoffrey",
+      "name2": "Legrand",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Arthur-Coriolan",
+      "name2": "Wilmotte",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Roland",
+      "name2": "Voegele",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Céline",
+      "name2": "Chevet",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Amélia",
+      "name2": "Chatterton",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
     }
   ],
   "teamIllus": [
@@ -270,7 +433,7 @@
       "job": "author"
     },
     {
-      "name": "Emilie",
+      "name": "Émilie",
       "name2": "Léger",
       "credits": "",
       "Lien": "https://emilieleger.ca/",
@@ -281,7 +444,8 @@
       "name2": "",
       "credits": "",
       "Lien": "https://www.facebook.com/Invidiaillustrations/",
-      "job": ""
+
+      "job": "author"
     },
     {
       "name": "Laurent",
