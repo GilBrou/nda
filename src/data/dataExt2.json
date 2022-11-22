@@ -100,7 +100,12 @@
       "format": "Roman",
       "sousTitre": "",
       "par": ["A.F Lune"],
-      "genres": ["Science-fiction", "Planet Opera", "Mythologie"],
+      "genres": [
+        "Science-fiction",
+        "Space Opera",
+        "Planet Opera",
+        "Mythologie"
+      ],
 
       "résumé": "Harms Moyser est un soldat Lycaon engagé sur le Prétorien, vaisseau spatial amiral de la flotte humaine. Au cours d’une bataille contre les Enkidous, l’ennemi héréditaire de l’humanité, le vaisseau est happé par une tempête stellaire et doit se poser en catastrophe sur une planète inconnue. L’équipage y découvre des hommes, au stade de civilisation antique, qui les prennent pour des dieux. Et si ces derniers n’avaient pas tort ?",
       "résumé2": "Un texte unique, au carrefour entre Planet Opera et Tragédie grecque, véritable relecture des mythes antiques où dieux et hommes sont les jouets d’un Destin implacable.",
@@ -456,7 +461,13 @@
       "format": "Roman",
       "sousTitre": "Sélectionné Prix Bob Morane",
       "par": ["Gillian Brousse"],
-      "genres": ["Science-fiction", "Post-Apo", "Cyberpunk", "Sombre"],
+      "genres": [
+        "Science-fiction",
+        "Post-Apo",
+        "Cyberpunk",
+        "Dystopie",
+        "Sombre"
+      ],
       "résumé": " La vie de Shelby est chamboulée lorsque Zoé croise sa route. La jeune fille, dont les pensées s’accompagnent d’une bande son mystérieuse, fuit les Youngsters, des bandits de petite envergure un peu trop déterminés à la retrouver. À cause de cet ouragan aux cheveux roux, le misanthrope ordinaire doit accomplir une mission dont il se serait bien passé.",
       "résumé2": "Pour couronner le tout, nos deux héros se retrouvent mêlés bien malgré eux à la révolte qui gronde entre Novart et Veilam, les deux villes jumelles régies par la décadence et le hasard, et ils risquent fort de brûler en même temps que ces Spleen Cities.",
       "résumé3": "",
@@ -614,7 +625,16 @@
         "Morgane Stankiewiez",
         "Laurent Cazuguel"
       ],
-      "genres": ["Science-fiction", "Illustré", "Articles", "Interviews"],
+      "genres": [
+        "Science-fiction",
+        "Illustré",
+        "Articles",
+        "Interviews",
+        "Steampunk",
+        "Space Opera",
+        "Cyberpunk",
+        "Dystopie"
+      ],
       "résumé": "La Science-fiction incarne pour certains le domaine des possibles, alors que pour d’autres elle apparaît comme puérile, car souvent réduite à des stéréotypes éculés et des œuvres non représentatives. Avec cet ouvrage, nous entendons vous faire (re) découvrir ce vaste genre aux multiples facettes capable comme nul autre de s’interroger sur notre monde. Nous allons parcourir le temps à la recherche du moment où tout a commencé, rencontrer les précurseurs et les personnalités du genre, nous faufiler au cœur de récits majeurs et explorer ses thèmes de prédilection.",
       "résumé2": "Qui que vous soyez, peu importe où et quand vous existez, vous découvrirez des œuvres qui résonneront en vous. Alors, respirez un grand coup et accrochez-vous à ce livre, mais n’attachez pas vos ceintures, car là où nous allons, nous n’aurons plus besoin de routes…",
       "résumé3": "",
@@ -1238,7 +1258,9 @@
         "Point & Click",
         "Science-fiction",
         "Post-Apo",
-        "Cyberpunk"
+        "Cyberpunk",
+        "Dystopie",
+        "Sombre"
       ],
       "résumé": "Deux cent ans après un mystérieux cataclysme, les rescapés se sont divisés en deux cités : Novart et Veilam, protégées des créatures qui grouillent à l'extérieur par un mur gigantesque.",
       "résumé2": "Dans cette histoire qui précède le roman, vous incarnez Cibi, le chef de la bande des Youngsters, alors qu'il se réveille sans souvenirs dans cette ruelle crasseuse en territoire ennemi. Vous devrez trouver le moyen de regagner la sécurité et de faire la lumière sur ce qu'il s'est passé. Mais faites attention, car à Novart, le moindre faux pas peut signer votre arrêt de mort.",
@@ -1292,7 +1314,16 @@
         "Morgane Stankiewiez",
         "Laurent Cazuguel"
       ],
-      "genres": ["Illustré", "Science-fiction"],
+      "genres": [
+        "Science-fiction",
+        "Illustré",
+        "Articles",
+        "Interviews",
+        "Steampunk",
+        "Space Opera",
+        "Cyberpunk",
+        "Dystopie"
+      ],
       "résumé": "La Science-fiction incarne pour certains le domaine des possibles, alors que pour d’autres elle apparaît comme puérile, car souvent réduite à des stéréotypes éculés et des œuvres non représentatives. Avec cet ouvrage, nous entendons vous faire (re) découvrir ce vaste genre aux multiples facettes capable comme nul autre de s’interroger sur notre monde. Nous allons parcourir le temps à la recherche du moment où tout a commencé, rencontrer les précurseurs et les personnalités du genre, nous faufiler au cœur de récits majeurs et explorer ses thèmes de prédilection.",
       "résumé2": "Qui que vous soyez, peu importe où et quand vous existez, vous découvrirez des œuvres qui résonneront en vous. Alors, respirez un grand coup et accrochez-vous à ce livre, mais n’attachez pas vos ceintures, car là où nous allons, nous n’aurons plus besoin de routes…",
       "résumé3": "",

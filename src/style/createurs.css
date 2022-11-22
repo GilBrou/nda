@@ -11,7 +11,9 @@
   align-items: center;
   padding: 17vh 0 10vh 0;
   position: relative;
-  animation: fade-in 2.5s;
+/*  animation: fade-in 2.5s;*/
+  -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both; /***/
+  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 
   /*Background*/
   background: url("./background/background2.webp");
@@ -27,7 +29,6 @@
 }
 .container h1 {
   margin-bottom: 70px;
-  /*pointer-events: auto;*/
 }
 .subRow {
   display: flex;
@@ -42,8 +43,8 @@
   margin-bottom: 100px;
   position: relative;
   transition: 0.45s;
-  -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both; /***/
-  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
+  -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .creator2 {
   margin-bottom: 35px;
