@@ -24,7 +24,7 @@ export function SetBuyLinks(props) {
 			return (
 				<div className="buyLinks">
 					<a href={props.buyPaper} target="_blank">
-						Achat
+						🛒 Achat
 					</a>
 				</div>
 			);
@@ -32,7 +32,7 @@ export function SetBuyLinks(props) {
 			return (
 				<div className="buyLinks">
 					<a href={props.buyEbook} target="_blank">
-						Démo
+						⇩ Démo
 					</a>
 				</div>
 			);
@@ -40,10 +40,10 @@ export function SetBuyLinks(props) {
 			return (
 				<div className="buyLinks">
 					<a href={props.buyPaper} target="_blank">
-						Achat
+						🛒 Achat
 					</a>
 					<a href={props.buyEbook} target="_blank">
-						Démo
+						⇩ Démo
 					</a>
 				</div>
 			);
@@ -53,7 +53,7 @@ export function SetBuyLinks(props) {
 			return (
 				<div className="buyLinks">
 					<a href={props.buyPaper} target="_blank">
-						Télécharger
+						⇩ Télécharger
 					</a>
 				</div>
 			);
@@ -61,7 +61,7 @@ export function SetBuyLinks(props) {
 			return (
 				<div className="buyLinks">
 					<a href={props.buyEbook} target="_blank">
-						Télécharger
+						⇩ Télécharger
 					</a>
 				</div>
 			);
@@ -69,10 +69,10 @@ export function SetBuyLinks(props) {
 			return (
 				<div className="buyLinks">
 					<a href={props.buyPaper} target="_blank">
-						Télécharger
+						⇩ Télécharger
 					</a>
 					<a href={props.buyEbook} target="_blank">
-						Télécharger
+						⇩ Télécharger
 					</a>
 				</div>
 			);
@@ -82,7 +82,7 @@ export function SetBuyLinks(props) {
 			return (
 				<div className="buyLinks">
 					<a href={props.buyPaper} target="_blank">
-						Version papier
+						🛒 Version papier
 					</a>
 				</div>
 			);
@@ -90,7 +90,7 @@ export function SetBuyLinks(props) {
 			return (
 				<div className="buyLinks">
 					<a href={props.buyEbook} target="_blank">
-						E-book
+						🛒 E-book
 					</a>
 				</div>
 			);
@@ -98,10 +98,10 @@ export function SetBuyLinks(props) {
 			return (
 				<div className="buyLinks">
 					<a href={props.buyPaper} target="_blank">
-						Version papier
+						🛒 Version papier
 					</a>
 					<a href={props.buyEbook} target="_blank">
-						E-book
+						🛒 E-book
 					</a>
 				</div>
 			);

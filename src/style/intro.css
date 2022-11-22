@@ -225,7 +225,7 @@
 .IntroLink {
   margin-top: 10px;
   text-decoration: none !important;
-  z-index: 3000;
+  z-index: +1;
   pointer-events: auto !important;
   color: inherit;
 }
