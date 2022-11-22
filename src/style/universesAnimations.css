@@ -78,6 +78,7 @@ body.splat-toggle .splat {
   box-sizing: border-box;
   text-align: center;
   font-family: sans-serif, arial;
+  font-display: swap;
   font-size: 10px;
   font-weight: bold;
   background-color: rgba(255, 255, 255, 0.2);

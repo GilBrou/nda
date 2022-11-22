@@ -23,6 +23,7 @@ body,
 html {
   /*General*/
   font-family: "Poppins", serif, arial;
+  font-display: swap;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   font-weight: 400;

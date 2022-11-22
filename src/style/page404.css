@@ -52,6 +52,7 @@
   color: var(--blackish) !important;
   font-weight: 300;
   font-family: Audiowide, arial;
+  font-display: swap;
   padding: 12px;
   border-radius: 7px;
   background-color: var(--greenish);
