@@ -121,7 +121,6 @@ export default function Univers(data) {
                   effect="solid"
                   textColor="#fff"
                   arrowColor="#222020"
-                  /*border="true"*/
                   borderColor="#2CC78E"
                   effect="solid"
                   backgroundColor="#222020"
