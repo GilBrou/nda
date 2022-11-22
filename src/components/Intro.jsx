@@ -33,11 +33,8 @@ export default function Intro(data) {
     () => 0.5 - Math.random()
   ); 
 
-  *//*.splice(0, 5);*/
+  */ /*.splice(0, 5);*/
   /*console.log(newTagArray)*/
-
-
-
 
   /*Display last 3 books*/
   function sliceBookArray(data) {
@@ -75,11 +72,11 @@ export default function Intro(data) {
         </div>
 
         <div className="introRightWrapper">
-         <a
-              href={data.data1 ? data.data1.links.menu2L : "loading..."}
-              className="page-scroll IntroLink"
-            >
-          <h2>Nos Univers</h2>
+          <a
+            href={data.data1 ? data.data1.links.menu2L : "loading..."}
+            className="page-scroll IntroLink"
+          >
+            <h2 className="firsth2">Nos Univers</h2>
           </a>
           {/*Universes selector*/}
           <div className="pagination2">
@@ -103,7 +100,6 @@ export default function Intro(data) {
                 )
               )
             )}
-
             {/*Dynamic creation from Json data*/}
             {data.data2.univers.map(
               (univers, i) => (
@@ -131,27 +127,6 @@ export default function Intro(data) {
               )
             )}
           </div>
-          {/*
-          <h2>Recherche par genres</h2>
-          <div className="introTags">      
-            {newTagArray.map(
-              (genre, i) => (
-                      (
-                  <a
-                    href={"/recherche#" + genre}
-                    className="page-scroll"
-                    key={genre + "Link"}
-                  >
-                    <p className="newTag" key={"tag" + i}>
-                      {genre}
-                    </p>
-                  </a>
-                )
-              )
-            )}
-          </div>
-          */}
-
           <div className="introRight">
             {/*Dynamic creation from Json data*/}
             {sliceBookArray(data)}

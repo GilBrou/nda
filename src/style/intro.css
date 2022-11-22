@@ -15,6 +15,8 @@
   justify-content: space-between;
   height: 100%;
 }
+
+/*Left Part*/
 .introLeft {
   align-self: flex-end;
   display: flex;
@@ -39,19 +41,16 @@
   text-shadow: 5px 2px 12px var(--blackish);
 }
 
-.introRightWrapper{
+/*Right Part*/
+.introRightWrapper {
+  width: 85%;
+  margin-top: 100px;
   padding: 10px 0 5px 0;
   display: flex;
   flex-direction: column;
-  max-width: 1150px;/*check responsive*/
-  max-width: 60%;
-   /*************/
-   background-color: var(--greenishTrans2);
-  border: solid 1px var(--blackishBack);
-  box-shadow: 0 0 10px -2px var(--blackishBack);
-  /*****************/
+  justify-content: space-around;
 }
-.introRight {  
+.introRight {
   width: fit-content;
   height: fit-content;
   margin: auto;
@@ -114,27 +113,26 @@
   text-decoration: none;
   pointer-events: none;
   font-size: 16px;
+  margin-bottom: 50px;
 }
-.bL{
+.bL {
   transform: scale(1);
-  transition:  0.5s;
+  transition: 0.5s;
 }
 .bL:hover {
   transform: scale(1.05);
 }
-
 .pagination2 {
-  margin-top: 150px;
   display: flex;
-  bottom: 10px;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
 }
-.pagination2 a{
-  display: block;
+.pagination2 a {
   height: 40px;
   width: 40px;
-  margin-top: -100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   transition: 0.2s;
   animation: circle 3s linear infinite;
 }
@@ -165,15 +163,12 @@
 .pagination2 a:nth-child(10) {
   animation-delay: -2.7s;
 }
-
 .aAnim2 {
   display: block;
   min-height: 40px;
   min-width: 40px;
   box-shadow: 0 0 7px 0.5px var(--blackishBack2);
 }
-
-
 .pagination2 a:nth-child(1) div {
   background: url("./background/backgroundU1.webp");
   background-position: center;
@@ -227,59 +222,16 @@
 .pagination2 a:not(:last-child) {
   margin-right: 20px;
 }
-
-/*
-.introTags{
-  padding: 15px;
-  align-self: center;
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 50%;///
-}
-.introTags a{
-    text-decoration: none !important;
-    transition: 0.3s;
-  padding: 2px;
-    text-align: center;
-    align-self: center;
-    margin: 3px;
-    border-radius: 5px!important;
-    width: unset;
-  z-index: 3000;
-  pointer-events: auto!important;
-}
-
-.introTags p{
-        border: solid 1.5px var(--blackish);
-
-font-size: 14px;
-
-}
-
-
-.introTags a:hover p{
-    
-    transform: scale(1.1);
-    background-color: var(--greenish);
-    color: var(--blackish);
-}
-*/
-
-.IntroLink{
+.IntroLink {
   margin-top: 10px;
-  text-decoration: none!important;
-  z-index: 3000  ;
-  pointer-events: auto!important;
+  text-decoration: none !important;
+  z-index: 3000;
+  pointer-events: auto !important;
   color: inherit;
 }
-
 .IntroLink:hover {
-  text-decoration:inherit;
+  text-decoration: inherit;
   color: inherit;
   transform: scale(1.03);
   transition: 0.3s;
 }
-
