@@ -16,7 +16,7 @@
     padding: 13vh 0 10vh 0;
     background-attachment: fixed !important;
     background-size: cover;
-    background-position: 50% 10% !important; /**/
+    background-position: 50% 10% !important;
     background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
@@ -24,54 +24,54 @@
 
 .MemoriaU {
     background: url("../../public/img/Background/Mémoria.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; /***/
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .FuturiaU {
     background: url("../../public/img/Background/Futuria.webp");
     z-index: 750;
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; /***/
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .OnyriaU {
     background: url("../../public/img/Background/Onyria.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; /***/
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .UrbanaU {
     background: url("../../public/img/Background/Terra Urbana.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; /***/
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .RougeU {
     background: url("../../public/img/Background/Rouge d'Absinthe.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; /***/
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .FolieU {
     background: url("../../public/img/Background/L'Antre de la Folie.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; /***/
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .FleurU {
     background: url("../../public/img/Background/Fleur d'Absinthe.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; /***/
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .ChrysalisU {
     background: url("../../public/img/Background/Chrysalis.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; /***/
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .PousseU {
     background: url("../../public/img/Background/Pousse d'Absinthe.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; /***/
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 .HorsCollecU {
     background: url("../../public/img/Background/Hors Collection.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; /***/
+    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
@@ -155,8 +155,6 @@
     position: relative;
 }
 
-/*************en cours *******************************/
-
 .imgWrap {
     position: relative;
 }
@@ -193,8 +191,6 @@
     width: 50%;
     font-weight: 550 !important;
 }
-
-/*************en cours *******************************/
 .buyLinks,
 .ReviewLinks {
     width: 100%;
@@ -423,7 +419,6 @@
 
 .authorList a:hover{
     transform: scale(1.05);
-    /*color: var(--whiteish);*/
 }
 
 /*Re-Style Folie Background anim**/
@@ -438,8 +433,7 @@
     top: 30%;
 }
 
-/****Search****/
-
+/****Search page****/
 #thisSearch {
     background-attachment: fixed !important;
     background: url("../../public/img/Background/Hors Collection.webp");

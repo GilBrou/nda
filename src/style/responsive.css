@@ -1,5 +1,3 @@
-/***CLEAN AND COMMENT***/
-
 /***RESPONSIVE***/
 
 /**********1422************/
@@ -23,7 +21,7 @@
 	}
 }
 
-/**********MD-992************/
+/**********992************/
 @media (max-width: 992px) {
 	nav p,
 	nav button p,
@@ -46,11 +44,11 @@
 		margin-top: 10vh !important;
 		flex-direction: column !important;
 	}
-	.introLeft, .introRightWrapper {
+	.introLeft,
+	.introRightWrapper {
 		margin: auto !important;
 		width: 100% !important;
 	}
-
 	.logoFull {
 		min-width: 200px !important;
 		box-shadow: 0px 0px 15px -6px var(--greenish);
@@ -64,14 +62,14 @@
 	}
 }
 
-/**********MD-852************/
+/**********852************/
 @media (max-width: 852px) {
-
-.pagination2 a, .aAnim2{
-  height: 20px!important;
-  width: 20px!important;
-  margin: 10px;
-}
+	.pagination2 a,
+	.aAnim2 {
+		height: 20px !important;
+		width: 20px !important;
+		margin: 10px;
+	}
 	ul li ul {
 		padding: 0;
 		margin: 28px auto;
@@ -95,26 +93,24 @@
 	}
 }
 
-/**********SM-768************/
+/**********768************/
 @media (max-width: 768px) {
 	body,
 	html {
 		background-position: 30% center !important;
 	}
-
 	.react-responsive-modal-modal p {
 		font-size: 16px !important;
 	}
-
 	.creator .Jobs {
 		bottom: -70px !important;
 	}
 	.thatULink {
 		pointer-events: none;
 	}
-	.pagination2, .firsth2 {
-	display: none !important;
-
+	.pagination2,
+	.firsth2 {
+		display: none !important;
 	}
 }
 
@@ -176,10 +172,9 @@
 	.univers p {
 		font-size: 16px !important;
 	}
-
-.pagination{
-display: none!important;
-}
+	.pagination {
+		display: none !important;
+	}
 }
 
 /**********425************/
@@ -226,18 +221,12 @@ display: none!important;
 	.bookRight .tag {
 		margin: 3px 5px 3px 5px;
 	}
-
 	.bookRight p {
 		font-size: 15px !important;
 	}
 	.bookRight .sousTitre {
 		font-size: 17px !important;
 	}
-	/*
-	#createurs h1{
-		animation: unset !important;
-	}
-	*/
 	#thisUniverse h1 {
 		animation: unset !important;
 	}
