@@ -1,5 +1,3 @@
-/***CLEAN AND COMMENT***/
-
 /***INTRO***/
 #intro {
   display: flex;
@@ -138,91 +136,11 @@
   transition: 0.2s;
   animation: circle 3s linear infinite;
 }
-.pagination2 a:nth-child(2) {
-  animation-delay: -0.3s;
-}
-.pagination2 a:nth-child(3) {
-  animation-delay: -0.6s;
-}
-.pagination2 a:nth-child(4) {
-  animation-delay: -0.9s;
-}
-.pagination2 a:nth-child(5) {
-  animation-delay: -1.2s;
-}
-.pagination2 a:nth-child(6) {
-  animation-delay: -1.5s;
-}
-.pagination2 a:nth-child(7) {
-  animation-delay: -1.8s;
-}
-.pagination2 a:nth-child(8) {
-  animation-delay: -2.1s;
-}
-.pagination2 a:nth-child(9) {
-  animation-delay: -2.4s;
-}
-.pagination2 a:nth-child(10) {
-  animation-delay: -2.7s;
-}
 .aAnim2 {
   display: block;
   min-height: 40px;
   min-width: 40px;
   box-shadow: 0 0 7px 0.5px var(--blackishBack2);
-}
-.pagination2 a:nth-child(1) div {
-  background: url("./background/backgroundU1.webp");
-  background-position: center;
-  animation: dotAnim 10s linear infinite both;
-}
-.pagination2 a:nth-child(2) div {
-  background: url("./background/backgroundU2.webp");
-  background-position: center;
-  animation: dotAnim 7s linear infinite both -1s;
-}
-.pagination2 a:nth-child(3) div {
-  background: url("./background/backgroundU3.webp");
-  background-position: center;
-  animation: dotAnim 15s linear infinite both -3s;
-}
-.pagination2 a:nth-child(4) div {
-  background: url("./background/backgroundU4.webp");
-  background-position: center;
-  animation: dotAnim 10s linear infinite both;
-}
-.pagination2 a:nth-child(5) div {
-  background: url("./background/backgroundU5.webp");
-  background-position: center;
-  animation: dotAnim 7s linear infinite both -1s;
-}
-.pagination2 a:nth-child(6) div {
-  background: url("./background/backgroundU6.webp");
-  background-position: center;
-  animation: dotAnim 15s linear infinite both -3s;
-}
-.pagination2 a:nth-child(7) div {
-  background: url("./background/backgroundU7.webp");
-  background-position: center;
-  animation: dotAnim 10s linear infinite both;
-}
-.pagination2 a:nth-child(8) div {
-  background: url("./background/backgroundU8.webp");
-  background-position: center;
-  animation: dotAnim 7s linear infinite both -1s;
-}
-.pagination2 a:nth-child(9) div {
-  background: url("./background/backgroundU9.webp");
-  background-position: center;
-  animation: dotAnim 13s linear infinite both -4s;
-}
-.pagination2 a:nth-child(10) div {
-  background: url("./background/backgroundU10.webp");
-  background-position: center;
-  animation: dotAnim 7s linear infinite both -2s;
-}
-.pagination2 a:not(:last-child) {
-  margin-right: 20px;
 }
 .IntroLink {
   margin-top: 10px;

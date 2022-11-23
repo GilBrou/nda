@@ -119,31 +119,31 @@
   min-width: 40px;
   box-shadow: 0 0 7px 0.5px var(--blackishBack2);
 }
-.pagination a:nth-child(2) {
+.pagination a:nth-child(2), .pagination2 a:nth-child(2) {
   animation-delay: -0.3s;
 }
-.pagination a:nth-child(3) {
+.pagination a:nth-child(3), .pagination2 a:nth-child(3) {
   animation-delay: -0.6s;
 }
-.pagination a:nth-child(4) {
+.pagination a:nth-child(4), .pagination2 a:nth-child(4) {
   animation-delay: -0.9s;
 }
-.pagination a:nth-child(5) {
+.pagination a:nth-child(5), .pagination2 a:nth-child(5) {
   animation-delay: -1.2s;
 }
-.pagination a:nth-child(6) {
+.pagination a:nth-child(6), .pagination2 a:nth-child(6) {
   animation-delay: -1.5s;
 }
-.pagination a:nth-child(7) {
+.pagination a:nth-child(7), .pagination2 a:nth-child(7) {
   animation-delay: -1.8s;
 }
-.pagination a:nth-child(8) {
+.pagination a:nth-child(8), .pagination2 a:nth-child(8) {
   animation-delay: -2.1s;
 }
-.pagination a:nth-child(9) {
+.pagination a:nth-child(9), .pagination2 a:nth-child(9) {
   animation-delay: -2.4s;
 }
-.pagination a:nth-child(10) {
+.pagination a:nth-child(10), .pagination2 a:nth-child(10) {
   animation-delay: -2.7s;
 }
 .aAnim {
@@ -153,57 +153,57 @@
 }
 
 /*Univers Slideshow Dots style*/
-.pagination a:nth-child(1) div {
+.pagination a:nth-child(1) div, .pagination2 a:nth-child(1) div {
   background: url("./background/backgroundU1.webp");
   background-position: center;
   animation: dotAnim 10s linear infinite both;
 }
-.pagination a:nth-child(2) div {
+.pagination a:nth-child(2) div, .pagination2 a:nth-child(2) div {
   background: url("./background/backgroundU2.webp");
   background-position: center;
   animation: dotAnim 7s linear infinite both -1s;
 }
-.pagination a:nth-child(3) div {
+.pagination a:nth-child(3) div, .pagination2 a:nth-child(3) div {
   background: url("./background/backgroundU3.webp");
   background-position: center;
   animation: dotAnim 15s linear infinite both -3s;
 }
-.pagination a:nth-child(4) div {
+.pagination a:nth-child(4) div, .pagination2 a:nth-child(4) div {
   background: url("./background/backgroundU4.webp");
   background-position: center;
   animation: dotAnim 10s linear infinite both;
 }
-.pagination a:nth-child(5) div {
+.pagination a:nth-child(5) div, .pagination2 a:nth-child(5) div {
   background: url("./background/backgroundU5.webp");
   background-position: center;
   animation: dotAnim 7s linear infinite both -1s;
 }
-.pagination a:nth-child(6) div {
+.pagination a:nth-child(6) div, .pagination2 a:nth-child(6) div {
   background: url("./background/backgroundU6.webp");
   background-position: center;
   animation: dotAnim 15s linear infinite both -3s;
 }
-.pagination a:nth-child(7) div {
+.pagination a:nth-child(7) div, .pagination2 a:nth-child(7) div {
   background: url("./background/backgroundU7.webp");
   background-position: center;
   animation: dotAnim 10s linear infinite both;
 }
-.pagination a:nth-child(8) div {
+.pagination a:nth-child(8) div, .pagination2 a:nth-child(8) div {
   background: url("./background/backgroundU8.webp");
   background-position: center;
   animation: dotAnim 7s linear infinite both -1s;
 }
-.pagination a:nth-child(9) div {
+.pagination a:nth-child(9) div, .pagination2 a:nth-child(9) div {
   background: url("./background/backgroundU9.webp");
   background-position: center;
   animation: dotAnim 13s linear infinite both -4s;
 }
-.pagination a:nth-child(10) div {
+.pagination a:nth-child(10) div, .pagination2 a:nth-child(10) div {
   background: url("./background/backgroundU10.webp");
   background-position: center;
   animation: dotAnim 7s linear infinite both -2s;
 }
-.pagination a:not(:last-child) {
+.pagination a:not(:last-child),.pagination2 a:not(:last-child) {
   margin-right: 20px;
 }
 .pagination a p {

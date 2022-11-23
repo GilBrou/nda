@@ -2,7 +2,7 @@
 
 ![Preview](https://raw.githubusercontent.com/GilBrou/nda/master/public/img/LogoS.webp)
 
-Projet de création de site pour un éditeur professionnel : Noir D'Absinthe.
+Site pour un éditeur professionnel : Noir D'Absinthe.
 
 détail :
 
@@ -10,10 +10,9 @@ détail :
 		Structure logique des différents fichiers.
 		Composants modulaires et réutilisables.
 		DOM dynamique (depuis Json).
-		Page 404 pour les routes inexistantes.
 		Code commenté.
 		Site full responsive.
-		Création de la charte graphique, infographies et animations.
+		Respect/Création de la charte graphique, infographies et animations.
 	
 
 Environnement de travail :

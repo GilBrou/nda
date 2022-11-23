@@ -1,8 +1,6 @@
-/***CLEAN AND COMMENT***/
-
-
 /****This Universe****/
 
+/*This Universe and Search pages specificities*/
 #thisUniverse,
 #thisSearch {
     width: 100vw;
@@ -20,65 +18,48 @@
     background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
-}
-
-.MemoriaU {
-    background: url("../../public/img/Background/Mémoria.webp");
     -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+/*Background selection according to selected universe*/
+.MemoriaU {
+    background: url("../../public/img/Background/Mémoria.webp");
 }
 .FuturiaU {
     background: url("../../public/img/Background/Futuria.webp");
     z-index: 750;
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .OnyriaU {
     background: url("../../public/img/Background/Onyria.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .UrbanaU {
     background: url("../../public/img/Background/Terra Urbana.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .RougeU {
     background: url("../../public/img/Background/Rouge d'Absinthe.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .FolieU {
     background: url("../../public/img/Background/L'Antre de la Folie.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .FleurU {
     background: url("../../public/img/Background/Fleur d'Absinthe.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .ChrysalisU {
     background: url("../../public/img/Background/Chrysalis.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .PousseU {
     background: url("../../public/img/Background/Pousse d'Absinthe.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
-
 .HorsCollecU {
     background: url("../../public/img/Background/Hors Collection.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 #thisUniverse .container,
 #thisSearch .container {
     padding: 0 30px 0 30px;
 }
+
+/*Titles*/
 #thisUniverse h1,
 #thisSearch h1 {
     text-align: center;
@@ -99,11 +80,9 @@
 #thisSearch .row {
     display: flex;
     flex-wrap: wrap;
-
-    flex-direction: column; /**/
+    flex-direction: column;
     justify-content: center;
 }
-
 #thisUniverse .book,
 #thisSearch .book {
     display: flex;
@@ -111,12 +90,10 @@
     justify-content: space-around;
     margin-bottom: 150px;
 }
-
 #thisUniverse .container .row .book:nth-child(even),
 #thisSearch .container .row .book:nth-child(even) {
     display: flex;
     flex-wrap: wrap;
-
     flex-direction: row-reverse;
 }
 
@@ -124,6 +101,8 @@
 #thisSearch .container .row .book:last-child {
     margin-bottom: 50px;
 }
+
+/*Both Part*/
 .bookLeft,
 .bookRight {
     display: flex;
@@ -132,18 +111,16 @@
     align-items: center;
     justify-content: center;
 }
-
 .book:nth-child(even) .bookRight {
     animation: swing-in-left-fwd 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s
         both;
 }
-
+/*Left Part*/
 .bookLeft {
     width: 30%;
     position: relative;
     animation: scale-in-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
 }
-
 .book:nth-child(even) .bookLeft {
     animation: scale-in-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.3s
         both;
@@ -154,11 +131,9 @@
     box-shadow: 4px 4px 10px 2px var(--blackishBack2);
     position: relative;
 }
-
 .imgWrap {
     position: relative;
 }
-
 .extrait {
     bottom: -1px;
     left: -1px;
@@ -172,7 +147,6 @@
     border: solid 1px var(--blackish);
     pointer-events: none;
 }
-
 .extrait:hover p {
     background-color: var(--greenish);
     pointer-events: none;
@@ -202,7 +176,6 @@
     animation: swing-in-bottom-fwd 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275)
         1.6s both;
 }
-
 .ReviewLinks {
     width: 70%;
     margin-top: 20px;
@@ -213,7 +186,6 @@
     font-size: 18px !important;
     font-weight: bold !important;
 }
-
 .buyLinks a,
 .ReviewLinks a {
     text-decoration: none;
@@ -226,7 +198,6 @@
     margin: 20px 10px 0 10px;
     border-radius: 5px;
 }
-
 .buyLinks a {
     border: solid 1px var(--blackish);
     box-shadow: -3px 3px 5px 0.5px var(--blackishBack2);
@@ -239,7 +210,6 @@
     margin: 0px;
     color: var(--blackish) !important;
 }
-
 .ReviewLinks a {
     margin: 2px;
 }
@@ -247,21 +217,20 @@
     transition: 0.3s;
     transform: scale(1.2);
 }
-
 .buyLinks a:hover {
     transition: 0.4s;
     color: var(--greenish);
     box-shadow: 0px 0px 5px 0.5px var(--blackishBack2);
     transform: scale(1.1);
 }
-
 #thisUniverse .container .row .book:nth-child(even) img {
     box-shadow: 4px 4px 8px 1px var(--blackishBack2);
 }
-
 #thisUniverse .container .row .book:nth-child(even) .bookRight {
     box-shadow: -4px 4px 10px 2px var(--blackishBack2);
 }
+
+/*Right Part*/
 .bookRight {
     width: 65%;
     padding: 7px;
@@ -315,8 +284,7 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-
-.subTitle p/*, .pSérie p*/ {
+.subTitle p {
     color: var(--whiteish);
     background-color: var(--blackish);
     padding: 4px;
@@ -327,7 +295,6 @@
     border-radius: 5px;
     width: unset;
 }
-
 .pSérie {
     position: absolute;
     border: solid 1.5px var(--blackish);
@@ -343,7 +310,6 @@
 }
 .pSérie:hover {
     background-color: var(--greenish);
-
 }
 .pSérie:hover p {
     color: var(--blackish);
@@ -352,72 +318,63 @@
 .pSérie {
     pointer-events: auto;
     text-decoration: none !important;
-
 }
 .subTitle a p {
     text-decoration: none !important;
     pointer-events: none;
     border: solid 1.5px var(--blackish);
 }
-.subTitle a:hover p{
+.subTitle a:hover p {
     transition: 0.5s;
     transform: scale(1.1);
     background-color: var(--greenish);
     color: var(--blackish);
 }
 
-/*Restyling*/
+/*Restyling depending on background colors*/
 .FolieU img {
     box-shadow: 4px 4px 20px 2px #232323 !important;
 }
-
-.OnyriaU .secondaryInfos p,
-.UrbanaU .secondaryInfos p,
-.RougeU .secondaryInfos p,
-.FolieU .secondaryInfos p,
-.FleurU .secondaryInfos p,
-.PousseU .secondaryInfos p,
-.HorsCollecU .secondaryInfos p,
-#thisSearch .secondaryInfos p {
-    color: var(--whiteish);
-}
-
-.OnyriaU .ReviewLinks a,
-.UrbanaU .ReviewLinks a,
 .RougeU .ReviewLinks a,
 .FolieU .ReviewLinks a,
 .FleurU .ReviewLinks a,
 .PousseU .ReviewLinks a,
+.OnyriaU .ReviewLinks a,
+.UrbanaU .ReviewLinks a,
+.RougeU .secondaryInfos p,
+.FolieU .secondaryInfos p,
+.FleurU .secondaryInfos p,
+.OnyriaU .secondaryInfos p,
+.UrbanaU .secondaryInfos p,
+.PousseU .secondaryInfos p,
+#thisSearch .ReviewLinks a,
 .HorsCollecU .ReviewLinks a,
-#thisSearch .ReviewLinks a {
+#thisSearch .secondaryInfos p,
+.HorsCollecU .secondaryInfos p {
     color: var(--whiteish) !important;
 }
-
-.OnyriaU .bookRight,
-.UrbanaU .bookRight,
 .RougeU .bookRight,
 .FolieU .bookRight,
 .FleurU .bookRight,
 .PousseU .bookRight,
-.HorsCollecU .bookRight,
-#thisSearch .bookRight {
+.OnyriaU .bookRight,
+.UrbanaU .bookRight,
+#thisSearch .bookRight,
+.HorsCollecU .bookRight {
     background-color: var(--whiteishTrans3);
 }
 .authorList {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
-
 .authorList a {
     color: inherit;
     text-decoration: none;
     pointer-events: auto;
     transition: 0.5s;
 }
-
-.authorList a:hover{
+.authorList a:hover {
     transform: scale(1.05);
 }
 
@@ -426,7 +383,6 @@
     height: 100%;
     width: 100vw;
 }
-
 .FolieU .FolieAnim .absolute {
     position: fixed;
     left: 40%;
@@ -435,10 +391,7 @@
 
 /****Search page****/
 #thisSearch {
-    background-attachment: fixed !important;
-    background: url("../../public/img/Background/Hors Collection.webp");
-    -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    background: url("../../public/img/Background/Hors Collection.webp");    
 }
 .targetH1 {
     font-size: 60px !important;
