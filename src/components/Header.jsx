@@ -5,26 +5,14 @@ import React, { useState } from "react";
 import { Modal } from "react-responsive-modal";
 import { Link } from "react-router-dom";
 
+
 /***COMPONENTS***/
 import Form from "./Form";
+import { HideThis, DisplayThis } from "./Appendix";
 
 export default function Header(data) {
-  /******Background object toggling******/
   /*background objects selection for toggling according to modals*/
-  const thisToggle = document.getElementById("thisToggle");
-
-  /*Hide target when modal is open*/
-  function HideThis() {
-    if (thisToggle != null || thisToggle != undefined) {
-      thisToggle.style.visibility = "hidden";
-    }
-  }
-  /*Display target when modal is closed*/
-  function DisplayThis() {
-    if (thisToggle != null || thisToggle != undefined) {
-      thisToggle.style.visibility = "visible";
-    }
-  }
+  /*const thisToggle = document.getElementById("thisToggle");*/
 
   /*Toggle modals*/
   const [open, setOpen] = useState(false);

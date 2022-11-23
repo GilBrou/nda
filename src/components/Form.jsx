@@ -11,6 +11,7 @@ export default function Form() {
     >
       <div className="form-group">
         <div className="form-row">
+          {/*Champ Nom*/}
           <div className="col">
             <input
               type="text"
@@ -20,6 +21,7 @@ export default function Form() {
               required
             />
           </div>
+          {/*Champ e-mail*/}
           <div className="col">
             <input
               type="email"
@@ -31,6 +33,7 @@ export default function Form() {
           </div>
         </div>
       </div>
+      {/*Champ texte*/}
       <div className="form-group">
         <textarea
           placeholder="Votre message"
@@ -41,6 +44,7 @@ export default function Form() {
           defaultValue={""}
         />
       </div>
+      {/*Submit button*/}
       <button type="submit" className="btn btn-lg btn-dark btn-block">
         Envoyer
       </button>
