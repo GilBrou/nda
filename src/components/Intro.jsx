@@ -3,7 +3,7 @@
 import ReactTooltip from "react-tooltip";
 
 /***COMPONENTS***/
-import { LastBooks, dateSortInvert } from "../components/SortBooks";
+import { checkWidth2 } from "../components/Appendix";
 
 /***COMPONENT***/
 export default function Intro(data) {
@@ -78,23 +78,10 @@ export default function Intro(data) {
               )
             )}
           </div>
-          {/*Display last 3 books*/}
+          {/*Display last books*/}
           <div className="introRight">
-            {/*Dynamic creation from Json data*/}
-            {(() => {
-              let ThoselastBooks =
-                data.data3.Livres.sort(dateSortInvert).slice(-3);
-              return (
-                <div>
-                  <h2>Dernières Sorties </h2>
-                  <div className="introBooks">
-                    {ThoselastBooks.map((thatBook, i) =>
-                      LastBooks(thatBook, i, data)
-                    )}
-                  </div>
-                </div>
-              );
-            })()}
+            {/*Number of books diplayed in intro component depending on window width*/}
+            {checkWidth2(data)}
           </div>
         </div>
       </div>

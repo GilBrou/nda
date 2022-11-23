@@ -4,17 +4,10 @@ import Collapsible from "react-collapsible";
 
 /***COMPONENTs***/
 import { DustAnim, MainAnim } from "../components/UniversAnim";
-import { alphabetical } from "../components/Appendix";
+import { alphabetical, checkWidth } from "../components/Appendix";
 
 /***COMPONENT***/
 export default function Createurs(data) {
-  /*Collapsible toggling according to window width*/
-  function checkWidth() {
-    if (window.innerWidth >= "740") {
-      return "true";
-    }
-  }
-
   /*Toggle external links buttons for creators*/
   function GetLink(props) {
     if (props >= "1") {
@@ -187,6 +180,7 @@ export default function Createurs(data) {
         {DustAnim()}
         {MainAnim()}
         {/*Editors Section*/}
+        {/*Collapsible toggling according to window width*/}
         <Collapsible
           open={checkWidth()}
           transitionTime="550"
@@ -207,6 +201,7 @@ export default function Createurs(data) {
           </div>
         </Collapsible>
         {/*Authors Section*/}
+        {/*Collapsible toggling according to window width*/}
         <Collapsible
           open={checkWidth()}
           transitionTime="550"
@@ -229,6 +224,7 @@ export default function Createurs(data) {
           </div>
         </Collapsible>
         {/*Illustrators Section*/}
+        {/*Collapsible toggling according to window width*/}
         <Collapsible
           open={checkWidth()}
           transitionTime="550"
@@ -251,6 +247,7 @@ export default function Createurs(data) {
           </div>
         </Collapsible>
         {/*Support Section*/}
+        {/*Collapsible toggling according to window width*/}
         <Collapsible
           open={checkWidth()}
           transitionTime="550"

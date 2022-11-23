@@ -2,6 +2,7 @@
 
 /******COMPONENTS******/
 import { DustAnim, MainAnim } from "../components/UniversAnim";
+import { dateSortInvert, LastBooks } from "../components/SortBooks";
 
 /******Background object toggling******/
 /*Hide target when modal is open*/
@@ -122,5 +123,42 @@ export function SetBackground() {
 				</div>
 			);
 		}
+	}
+}
+
+/*Collapsible toggling according to window width*/
+export function checkWidth() {
+	if (window.innerWidth >= "740") {
+		return "true";
+	}
+}
+
+/*Number of books diplayed in intro component depending on window width*/
+export function checkWidth2(data) {
+	console.log(window.innerWidth);
+	console.log(window.innerHeight);
+	if (window.innerWidth >= "1874") {
+		let ThoselastBooks = data.data3.Livres.sort(dateSortInvert).slice(-5);
+		/*Dynamic creation from Json data*/
+
+		return (
+			<div>
+				<h2>Dernières Sorties </h2>
+				<div className="introBooks">
+					{ThoselastBooks.map((thatBook, i) => LastBooks(thatBook, i, data))}
+				</div>
+			</div>
+		);
+	} else {
+		let ThoselastBooks = data.data3.Livres.sort(dateSortInvert).slice(-3);
+		/*Dynamic creation from Json data*/
+		return (
+			<div>
+				<h2>Dernières Sorties </h2>
+				<div className="introBooks">
+					{ThoselastBooks.map((thatBook, i) => LastBooks(thatBook, i, data))}
+				</div>
+			</div>
+		);
 	}
 }
