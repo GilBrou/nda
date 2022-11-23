@@ -41,3 +41,14 @@ export function getAllTags(data) {
 	console.log(newTagArray);
 	*/
 }
+
+/*Alphabetical sorting*/
+export function alphabetical(a, b) {
+	if (a.name2 < b.name2) {
+		return -1;
+	}
+	if (a.name2 > b.name2) {
+		return 1;
+	}
+	return 0;
+}

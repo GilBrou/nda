@@ -1,7 +1,15 @@
+
+/******COMMENT AND CLEAN !!******/
+
 /******CREATEURS******/
 import ReactTooltip from "react-tooltip";
 import Collapsible from "react-collapsible";
+
+
+/***COMPONENTs***/
 import { DustAnim, MainAnim } from "../components/UniversAnim";
+import { alphabetical } from "../components/Appendix";
+
 
 /***COMPONENT***/
 export default function Createurs(data) {
@@ -25,17 +33,6 @@ export default function Createurs(data) {
         ></a>
       );
     }
-  }
-
-  /*Alphabetical sorting*/
-  function alphabetical(a, b) {
-    if (a.name2 < b.name2) {
-      return -1;
-    }
-    if (a.name2 > b.name2) {
-      return 1;
-    }
-    return 0;
   }
 
   function tryAuth(team, i) {

@@ -172,8 +172,13 @@ function SetSecondary(thatBook) {
 		thatBook.pages == 0 &&
 		thatBook.ISBN == 0
 	) {
-		/*console.log("page's number and ISBN missing in " + thatBook.titre);*/
-
+		if (!thatBook.titre.includes("Jeu")) {
+			console.log(
+				"page's number and ISBN missing in " +
+					thatBook.titre +
+					thatBook.titre2
+			);
+		}
 		return (
 			<div className="secondaryInfos">
 				<p>{thatBook.prix + " €"}</p>
@@ -184,8 +189,9 @@ function SetSecondary(thatBook) {
 		thatBook.pages == 0 &&
 		thatBook.ISBN != 0
 	) {
-		/*console.log("page's number missing in " + thatBook.titre);*/
-
+		console.log(
+			"page's number missing in " + thatBook.titre + thatBook.titre2
+		);
 		return (
 			<div className="secondaryInfos">
 				<p>{thatBook.prix + " €"}</p>
@@ -193,13 +199,19 @@ function SetSecondary(thatBook) {
 			</div>
 		);
 	} else {
-		/*console.log("All secondary infos missing in " + thatBook.titre);*/
+		if (!thatBook.titre.includes("Cernunnos")) {
+			console.log(
+				"All secondary infos missing in " +
+					thatBook.titre +
+					thatBook.titre2
+			);
+		}
 	}
 }
 
+/***Set Names***/
 function SetNames(props, props0, i) {
 	let lastName = props0.slice(-1);
-	/*console.log(props);*/
 	if (props != lastName) {
 		return (
 			<a href={"/recherche#" + props} key={props + "Link"} target="_self">
