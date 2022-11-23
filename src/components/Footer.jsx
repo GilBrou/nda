@@ -10,9 +10,6 @@ import { getModal } from "./Modals";
 
 /***COMPONENT***/
 export default function Footer(data) {
-  /*background objects selection for toggling according to modals*/
-  /*const thisToggle = document.getElementById("thisToggle");*/
-
   /*Toggle modal*/
   const modal5 = "modal5";
   const modal6 = "modal6";

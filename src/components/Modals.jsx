@@ -1,15 +1,188 @@
 /******MODALS******/
 
+/***COMPONENTS***/
+import Form from "./Form";
+
+/***COMPONENT***/
 /*Hide target when modal is open*/
 export function getModal(data, id) {
 	/*Create mailto from Json*/
 	const ThatMail = "mailto:" + data.data2.nda.mail;
 
-	/*Mentions modal*/
+	/*About modal*/
+	if (id.includes("1")) {
+		return (
+			<div>
+				<h1>{data.data2 ? data.data2.apropos.titre : "loading..."}</h1>
+				<p> {data.data2 ? data.data2.apropos.P1 : "loading..."}</p>
+				<p> {data.data2 ? data.data2.apropos.P2 : "loading..."}</p>
+				<p> {data.data2 ? data.data2.apropos.P3 : "loading..."}</p>
+				<p> {data.data2 ? data.data2.apropos.P4 : "loading..."}</p>
+				<p> {data.data2 ? data.data2.apropos.P5 : "loading..."}</p>
+				<img
+					src={
+						data.data1.UimgLinks.IL0 +
+						data.data1.ressources.logo1 +
+						data.data1.UimgLinks.IL1B
+					}
+					className=" logo img-responsive page-scroll modalImg aProposImg"
+					href="#page-top"
+					alt={"Logo de " + data.data1.nom}
+				/>{" "}
+			</div>
+		);
+	}
+	/*Contact Form modal*/
+	if (id.includes("2")) {
+		return (
+			<div>
+				<img
+					src={
+						data.data1.UimgLinks.IL0 +
+						data.data1.ressources.logo1 +
+						data.data1.UimgLinks.IL1B
+					}
+					className=" logo img-responsive page-scroll authorLogo"
+					href="#page-top"
+					alt={data.data1.nom}
+				/>{" "}
+				<h1>{data.data2 ? data.data2.contact.titre : "loading..."}</h1>
+				<Form />
+				<p>{data.data2 ? data.data2.contact.P1 : "loading..."}</p>
+				<p> {data.data2 ? data.data2.contact.P2 : "loading..."}</p>
+				<p> {data.data2 ? data.data2.contact.P3 : "loading..."}</p>
+				<p> {data.data2 ? data.data2.contact.P4 : "loading..."}</p>
+				<p> {data.data2 ? data.data2.contact.P5 : "loading..."}</p>
+				{/* Mail*/}
+				<li>
+					<a href={ThatMail}>
+						<p className="Pcenter">
+							{data.data2 ? data.data2.nda.mail : "loading..."}
+						</p>
+					</a>
+				</li>
+				{/*Social Logo & Links*/}
+				<ul className="contactList">
+					<li>
+						<a
+							href={data.data2 ? data.data2.nda.FB : "loading..."}
+							target="_blank"
+							className="fb"
+						>
+							<i
+								className={
+									data.data1
+										? data.data1.ressources.logoFB
+										: "loading..."
+								}
+								aria-hidden="true"
+							></i>
+						</a>
+					</li>
+
+					<li>
+						<a
+							href={data.data2 ? data.data2.nda.TW : "loading..."}
+							target="_blank"
+						>
+							<i
+								className={
+									data.data1
+										? data.data1.ressources.logoTW
+										: "loading..."
+								}
+								aria-hidden="true"
+							></i>
+						</a>
+					</li>
+
+					<li>
+						<a
+							href={data.data2 ? data.data2.nda.IG : "loading..."}
+							target="_blank"
+						>
+							<i
+								className={
+									data.data1
+										? data.data1.ressources.logoIG
+										: "loading..."
+								}
+								aria-hidden="true"
+							></i>
+						</a>
+					</li>
+
+					<li>
+						<a
+							href={data.data2 ? data.data2.nda.YT : "loading..."}
+							target="_blank"
+						>
+							<i
+								className={
+									data.data1
+										? data.data1.ressources.logoYT
+										: "loading..."
+								}
+								aria-hidden="true"
+							></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		);
+	}
+	/*Manuscripts & text submissions modal*/
+	if (id.includes("3")) {
+		return (
+			<div>
+				<h1>
+					{data.data2 ? data.data2.manuscrits.titre : "loading..."}
+				</h1>
+				<p className="Pcenter">
+					{data.data2 ? data.data2.manuscrits.P1 : "loading..."}
+				</p>
+				<p> {data.data2 ? data.data2.manuscrits.P2 : "loading..."}</p>
+				<p> {data.data2 ? data.data2.manuscrits.P3 : "loading..."}</p>
+				<p> {data.data2 ? data.data2.manuscrits.P4 : "loading..."}</p>
+				<p> {data.data2 ? data.data2.manuscrits.P5 : "loading..."}</p>
+				<img
+					src={
+						data.data1.UimgLinks.IL0 +
+						data.data1.ressources.logo1 +
+						data.data1.UimgLinks.IL1B
+					}
+					className=" logo img-responsive page-scroll authorLogo modalImg"
+					href="#page-top"
+					alt={data.data1 ? data.data1.nom : "loading..."}
+				/>{" "}
+			</div>
+		);
+	}
+	/*Press modal*/
 	if (id.includes("4")) {
 		return (
 			<div>
-				<div></div>
+				<h1>{data.data2 ? data.data2.presse.titre : "loading..."}</h1>
+				<p>{data.data2 ? data.data2.presse.P1 : "loading..."}</p>
+				<p> {data.data2 ? data.data2.presse.P2 : "loading..."}</p>
+				<p> {data.data2 ? data.data2.presse.P3 : "loading..."}</p>
+				<a href={ThatMail}>
+					<p className="Pcenter">
+						{data.data2 ? data.data2.nda.mail : "loading..."}
+					</p>
+				</a>
+				<p> {data.data2 ? data.data2.presse.P4 : "loading..."}</p>
+				<p> {data.data2 ? data.data2.presse.P5 : "loading..."}</p>
+				<img
+					src={
+						data.data1.UimgLinks.IL0 +
+						data.data1.ressources.logo1 +
+						data.data1.UimgLinks.IL1B
+					}
+					className=" logo img-responsive page-scroll authorLogo modalImg"
+					href="#page-top"
+					alt={data.data1 ? data.data1.nom : "loading..."}
+				/>{" "}
 			</div>
 		);
 	}
@@ -318,9 +491,5 @@ export function getModal(data, id) {
 				</div>
 			</div>
 		);
-		/*NO MATCH*/
-	} else {
-		console.log("No Modal Found");
-		return <div></div>;
 	}
 }

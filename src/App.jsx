@@ -9,6 +9,7 @@ import { DustAnim, MainAnim } from "./components/UniversAnim";
 /***COMPONENTS***/
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { getAllTags } from "./components/Appendix";
 
 /***PAGES***/
 import Homepage from "./pages/Homepage";
@@ -38,6 +39,9 @@ export default function App() {
     }
     fetchDatas();
   }, []);
+
+  /*Get all books tags*/
+  /*getAllTags(Data3);*/ /****************IF NEEDED******************************/
 
   /*DOM*/
   return (

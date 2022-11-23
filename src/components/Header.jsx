@@ -5,19 +5,16 @@ import React, { useState } from "react";
 import { Modal } from "react-responsive-modal";
 import { Link } from "react-router-dom";
 
-
 /***COMPONENTS***/
-import Form from "./Form";
 import { HideThis, DisplayThis } from "./Appendix";
+import { getModal } from "./Modals";
 
+/***COMPONENT***/
 export default function Header(data) {
-  /*background objects selection for toggling according to modals*/
-  /*const thisToggle = document.getElementById("thisToggle");*/
-
   /*Toggle modals*/
-  const [open, setOpen] = useState(false);
-  const onOpenModal = () => setOpen(true);
-  const onCloseModal = () => setOpen(false);
+  const [open1, setOpen1] = useState(false);
+  const onOpenModal1 = () => setOpen1(true);
+  const onCloseModal1 = () => setOpen1(false);
   const [open2, setOpen2] = useState(false);
   const onOpenModal2 = () => setOpen2(true);
   const onCloseModal2 = () => setOpen2(false);
@@ -27,9 +24,6 @@ export default function Header(data) {
   const [open4, setOpen4] = useState(false);
   const onOpenModal4 = () => setOpen4(true);
   const onCloseModal4 = () => setOpen4(false);
-
-  /*Create mailto from Json*/
-  const ThatMail = "mailto:" + data.data2.nda.mail;
 
   /*DOM*/
   return (
@@ -108,7 +102,7 @@ export default function Header(data) {
             <button
               className="modalButton"
               onClick={() => {
-                onOpenModal();
+                onOpenModal1();
                 HideThis();
               }}
             >
@@ -118,29 +112,14 @@ export default function Header(data) {
             <Modal
               id="aProposModal"
               className="myModal"
-              open={open}
+              open={open1}
               onClose={() => {
-                onCloseModal();
+                onCloseModal1();
                 DisplayThis();
               }}
               center
             >
-              <h1>{data.data2 ? data.data2.apropos.titre : "loading..."}</h1>
-              <p> {data.data2 ? data.data2.apropos.P1 : "loading..."}</p>
-              <p> {data.data2 ? data.data2.apropos.P2 : "loading..."}</p>
-              <p> {data.data2 ? data.data2.apropos.P3 : "loading..."}</p>
-              <p> {data.data2 ? data.data2.apropos.P4 : "loading..."}</p>
-              <p> {data.data2 ? data.data2.apropos.P5 : "loading..."}</p>
-              <img
-                src={
-                  data.data1.UimgLinks.IL0 +
-                  data.data1.ressources.logo1 +
-                  data.data1.UimgLinks.IL1B
-                }
-                className=" logo img-responsive page-scroll modalImg aProposImg"
-                href="#page-top"
-                alt={"Logo de " + data.data1.nom}
-              />{" "}
+              {getModal(data, "modal1")}
             </Modal>
           </li>
           {/*5 - Contact*/}
@@ -172,100 +151,7 @@ export default function Header(data) {
                   }}
                   center
                 >
-                  <img
-                    src={
-                      data.data1.UimgLinks.IL0 +
-                      data.data1.ressources.logo1 +
-                      data.data1.UimgLinks.IL1B
-                    }
-                    className=" logo img-responsive page-scroll authorLogo"
-                    href="#page-top"
-                    alt={data.data1.nom}
-                  />{" "}
-                  <h1>
-                    {data.data2 ? data.data2.contact.titre : "loading..."}
-                  </h1>
-                  <Form />
-                  <p>{data.data2 ? data.data2.contact.P1 : "loading..."}</p>
-                  <p> {data.data2 ? data.data2.contact.P2 : "loading..."}</p>
-                  <p> {data.data2 ? data.data2.contact.P3 : "loading..."}</p>
-                  <p> {data.data2 ? data.data2.contact.P4 : "loading..."}</p>
-                  <p> {data.data2 ? data.data2.contact.P5 : "loading..."}</p>
-                  {/* Mail*/}
-                  <li>
-                    <a href={ThatMail}>
-                      <p className="Pcenter">
-                        {data.data2 ? data.data2.nda.mail : "loading..."}
-                      </p>
-                    </a>
-                  </li>
-                  {/*Social Logo & Links*/}
-                  <ul className="contactList">
-                    <li>
-                      <a
-                        href={data.data2 ? data.data2.nda.FB : "loading..."}
-                        target="_blank"
-                        className="fb"
-                      >
-                        <i
-                          className={
-                            data.data1
-                              ? data.data1.ressources.logoFB
-                              : "loading..."
-                          }
-                          aria-hidden="true"
-                        ></i>
-                      </a>
-                    </li>
-
-                    <li>
-                      <a
-                        href={data.data2 ? data.data2.nda.TW : "loading..."}
-                        target="_blank"
-                      >
-                        <i
-                          className={
-                            data.data1
-                              ? data.data1.ressources.logoTW
-                              : "loading..."
-                          }
-                          aria-hidden="true"
-                        ></i>
-                      </a>
-                    </li>
-
-                    <li>
-                      <a
-                        href={data.data2 ? data.data2.nda.IG : "loading..."}
-                        target="_blank"
-                      >
-                        <i
-                          className={
-                            data.data1
-                              ? data.data1.ressources.logoIG
-                              : "loading..."
-                          }
-                          aria-hidden="true"
-                        ></i>
-                      </a>
-                    </li>
-
-                    <li>
-                      <a
-                        href={data.data2 ? data.data2.nda.YT : "loading..."}
-                        target="_blank"
-                      >
-                        <i
-                          className={
-                            data.data1
-                              ? data.data1.ressources.logoYT
-                              : "loading..."
-                          }
-                          aria-hidden="true"
-                        ></i>
-                      </a>
-                    </li>
-                  </ul>
+                  {getModal(data, "modal2")}
                 </Modal>
               </li>
               {/*5b - 2 - Manuscripts & text submissions + modal*/}
@@ -289,26 +175,7 @@ export default function Header(data) {
                   }}
                   center
                 >
-                  <h1>
-                    {data.data2 ? data.data2.manuscrits.titre : "loading..."}
-                  </h1>
-                  <p className="Pcenter">
-                    {data.data2 ? data.data2.manuscrits.P1 : "loading..."}
-                  </p>
-                  <p> {data.data2 ? data.data2.manuscrits.P2 : "loading..."}</p>
-                  <p> {data.data2 ? data.data2.manuscrits.P3 : "loading..."}</p>
-                  <p> {data.data2 ? data.data2.manuscrits.P4 : "loading..."}</p>
-                  <p> {data.data2 ? data.data2.manuscrits.P5 : "loading..."}</p>
-                  <img
-                    src={
-                      data.data1.UimgLinks.IL0 +
-                      data.data1.ressources.logo1 +
-                      data.data1.UimgLinks.IL1B
-                    }
-                    className=" logo img-responsive page-scroll authorLogo modalImg"
-                    href="#page-top"
-                    alt={data.data1 ? data.data1.nom : "loading..."}
-                  />{" "}
+                  {getModal(data, "modal3")}
                 </Modal>
               </li>
               {/*5b - 3 - Press + modal*/}
@@ -332,27 +199,7 @@ export default function Header(data) {
                   }}
                   center
                 >
-                  <h1>{data.data2 ? data.data2.presse.titre : "loading..."}</h1>
-                  <p>{data.data2 ? data.data2.presse.P1 : "loading..."}</p>
-                  <p> {data.data2 ? data.data2.presse.P2 : "loading..."}</p>
-                  <p> {data.data2 ? data.data2.presse.P3 : "loading..."}</p>
-                  <a href={ThatMail}>
-                    <p className="Pcenter">
-                      {data.data2 ? data.data2.nda.mail : "loading..."}
-                    </p>
-                  </a>
-                  <p> {data.data2 ? data.data2.presse.P4 : "loading..."}</p>
-                  <p> {data.data2 ? data.data2.presse.P5 : "loading..."}</p>
-                  <img
-                    src={
-                      data.data1.UimgLinks.IL0 +
-                      data.data1.ressources.logo1 +
-                      data.data1.UimgLinks.IL1B
-                    }
-                    className=" logo img-responsive page-scroll authorLogo modalImg"
-                    href="#page-top"
-                    alt={data.data1 ? data.data1.nom : "loading..."}
-                  />{" "}
+                  {getModal(data, "modal4")}
                 </Modal>
               </li>
               {/*5b - 4 - Media kit download link (PDF)*/}
