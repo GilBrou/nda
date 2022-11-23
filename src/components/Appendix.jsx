@@ -135,8 +135,6 @@ export function checkWidth() {
 
 /*Number of books diplayed in intro component depending on window width*/
 export function checkWidth2(data) {
-	console.log(window.innerWidth);
-	console.log(window.innerHeight);
 	if (window.innerWidth >= "1874") {
 		let ThoselastBooks = data.data3.Livres.sort(dateSortInvert).slice(-5);
 		/*Dynamic creation from Json data*/

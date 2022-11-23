@@ -11,7 +11,6 @@ import { getModal } from "./Modals";
 
 /***COMPONENT***/
 export default function Header(data) {
-  console.log(data)
   /*Toggle modals*/
   const [open1, setOpen1] = useState(false);
   const onOpenModal1 = () => setOpen1(true);
