@@ -41,7 +41,7 @@ export default function App() {
   }, []);
 
   /*Get all books tags*/
-  /*getAllTags(Data3);*/ /****************IF NEEDED******************************/
+  getAllTags(Data3); /****************IF NEEDED******************************/
 
   /*DOM*/
   return (

@@ -124,7 +124,7 @@ export default function ThisUniverse(data) {
   let allTags2 = [...new Set(allTags)];
   /***Get all book tags***/
   let allBooks2 = allBooks.sort(dateSort);
-  console.log(allBooks2);
+  /*console.log(allBooks2);*/
   /*****************************************************************************************/
 
   return (
