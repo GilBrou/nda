@@ -1,5 +1,8 @@
 /******APPENDIX******/
 
+/******COMPONENTS******/
+import { DustAnim, MainAnim } from "../components/UniversAnim";
+
 /******Background object toggling******/
 /*Hide target when modal is open*/
 export function HideThis() {
@@ -51,4 +54,73 @@ export function alphabetical(a, b) {
 		return 1;
 	}
 	return 0;
+}
+
+/***Select background image according to selected universe***/
+export function SetUniverse() {
+	const thisUniverse = document.getElementById("thisUniverse");
+
+	if (thisUniverse != null || thisUniverse != undefined) {
+		if (window.location.pathname.indexOf("memoria") != -1) {
+			thisUniverse.classList.add("MemoriaU");
+		} else if (window.location.pathname.indexOf("futuria") != -1) {
+			thisUniverse.classList.add("FuturiaU");
+		} else if (window.location.pathname.indexOf("onyria") != -1) {
+			thisUniverse.classList.add("OnyriaU");
+		} else if (window.location.pathname.indexOf("urbana") != -1) {
+			thisUniverse.classList.add("UrbanaU");
+		} else if (window.location.pathname.indexOf("rouge") != -1) {
+			thisUniverse.classList.add("RougeU");
+		} else if (window.location.pathname.indexOf("folie") != -1) {
+			thisUniverse.classList.add("FolieU");
+		} else if (window.location.pathname.indexOf("fleur") != -1) {
+			thisUniverse.classList.add("FleurU");
+		} else if (window.location.pathname.indexOf("chrysalis") != -1) {
+			thisUniverse.classList.add("ChrysalisU");
+		} else if (window.location.pathname.indexOf("pousse") != -1) {
+			thisUniverse.classList.add("PousseU");
+		} else if (window.location.pathname.indexOf("hors") != -1) {
+			thisUniverse.classList.add("HorsCollecU");
+		}
+	}
+}
+
+/***Select background animation according to selected universe***/
+export function SetBackground() {
+	const thisUniverse = document.getElementById("thisUniverse");
+	if (thisUniverse != null || thisUniverse != undefined) {
+		if (
+			window.location.pathname.indexOf("memoria") != -1 ||
+			window.location.pathname.indexOf("onyria") != -1 ||
+			window.location.pathname.indexOf("chrysalis") != -1 ||
+			window.location.pathname.indexOf("pousse") != -1 ||
+			window.location.pathname.indexOf("hors") != -1 ||
+			window.location.pathname.indexOf("urbana") != -1 ||
+			window.location.pathname.indexOf("folie")
+		) {
+			return (
+				<div>
+					{DustAnim()}
+					{MainAnim()}
+				</div>
+			);
+		} else if (window.location.pathname.indexOf("futuria") != -1) {
+			return (
+				<div>
+					{DustAnim()}
+					{FuturiaAnim()}
+				</div>
+			);
+		} else if (
+			window.location.pathname.indexOf("rouge") != -1 ||
+			window.location.pathname.indexOf("fleur") != -1
+		) {
+			return (
+				<div>
+					{DustAnim()}
+					{FleurRougeAnim()}
+				</div>
+			);
+		}
+	}
 }

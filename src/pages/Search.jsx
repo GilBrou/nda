@@ -1,8 +1,3 @@
-
-/******COMMENT AND CLEAN !!******/
-
-
-
 /******This Univers;e******/
 import ReactTooltip from "react-tooltip";
 import { useEffect } from "react";
@@ -24,8 +19,8 @@ import {
 
 /***COMPONENT***/
 export default function Search(data) {
+  /*Get search target*/
   const history = useHistory();
-
   useEffect(() => {
     return history.listen((location) => {
       window.location.reload();
@@ -33,7 +28,7 @@ export default function Search(data) {
     });
   }, [history]);
 
-  /*Check if results == 0*/
+  /*Display message if there is no match*/
   function checkBookList() {
     let Books = document.querySelectorAll(".book");
     if (Books.length == 0) {
@@ -52,9 +47,8 @@ export default function Search(data) {
   let target5 = target4.replace(/%C3%AB/g, "ë");
   let target = target5.replace(/%C3%89/g, "É");
 
+  /*Check if books are needed in chronological order or antichronological*/
   function isThisBookFromLitUniverse(target, data) {
-
-    /*Check if books are needed in chronological order or antichronological*/
     if (target.includes("Univers") || target.includes("Séries")) {
       return data.data3.Livres.sort(dateSortInvert).map((thatBook, i) =>
         SortTargetedBooks(thatBook, i, target, data)
@@ -65,7 +59,7 @@ export default function Search(data) {
       );
     }
   }
-
+  /***DOM***/
   return (
     <div id="thisSearch" className="text-center search">
       <div className="container text-center">

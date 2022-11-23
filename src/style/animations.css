@@ -1,26 +1,10 @@
 /***ANIMATIONS***/
 
-/***Background images's animation***/
-@keyframes animMuse {
-  0% {
-    background-position: 50% 47%;
-    background-size: 100%;
-  }
-  100% {
-    background-position: 47% 50%;
-    background-size: 107%;
-  }
-}
-
 /***Homepage logo L shadow and movement anim***/
 @keyframes ShadowAnim {
   0% {
-    box-shadow: -5px -5px 10px -6px var(--greenish); /*1*/
-    /*transform: translateX(0px);
-    transform-origin: center;
-    transform: perspective(1000px) rotateY(5deg);*/
+    box-shadow: -5px -5px 10px -6px var(--greenish);
   }
-
   8.33% {
     box-shadow: -2.5px -5px 10px -6px var(--blueish);
   }
@@ -31,18 +15,15 @@
     box-shadow: 2.5px -5px 10px -6px var(--blueish);
   }
   33.32% {
-    box-shadow: 5px -5px 10px -6px var(--blueish); /*2*/
+    box-shadow: 5px -5px 10px -6px var(--blueish);
   }
   41.65% {
-    box-shadow: 5px -2.5px 10px -6px var(--blueish); /*2*/
+    box-shadow: 5px -2.5px 10px -6px var(--blueish);
   }
   49.98% {
     box-shadow: 5px 0px 10px -6px var(--greenish);
   }
   50% {
-    /*transform: translateX(10px);
-    transform-origin: center;
-    transform: perspective(1000px) rotateY(-5deg);*/
   }
   58.31% {
     box-shadow: 5px 2.5px 10px -6px var(--greenish);
@@ -67,202 +48,6 @@
   }
 
   100% {
-    /*transform: translateX(0px);
-    transform-origin: center;
-    transform: perspective(1000px) rotateY(5deg);*/
-  }
-}
-
-/***404 neon anim***/
-@keyframes drawLine1 {
-  0% {
-    stroke-dashoffset: -940px;
-  }
-  100% {
-    stroke-dashoffset: 0px;
-  }
-}
-
-@keyframes drawLine2 {
-  0% {
-    stroke-dashoffset: -735px;
-  }
-  100% {
-    stroke-dashoffset: 0px;
-  }
-}
-
-@keyframes drawLine3 {
-  0% {
-    stroke-dashoffset: -940px;
-  }
-  100% {
-    stroke-dashoffset: 0px;
-  }
-}
-
-@keyframes flicker1 {
-  0% {
-    stroke: #00ff84;
-  }
-  1% {
-    stroke: transparent;
-  }
-  3% {
-    stroke: transparent;
-  }
-  4% {
-    stroke: #00ff84;
-  }
-  6% {
-    stroke: #00ff84;
-  }
-  7% {
-    stroke: transparent;
-  }
-  13% {
-    stroke: transparent;
-  }
-  14% {
-    stroke: #00ff84;
-  }
-  100% {
-    stroke: #00ff84;
-  }
-}
-
-@keyframes flicker2 {
-  0% {
-    stroke: #00ff84;
-  }
-  50% {
-    stroke: #00ff84;
-  }
-  51% {
-    stroke: transparent;
-  }
-  61% {
-    stroke: transparent;
-  }
-  62% {
-    stroke: #00ff84;
-  }
-  100% {
-    stroke: #00ff84;
-  }
-}
-
-@keyframes flicker3 {
-  0% {
-    stroke: #00ff84;
-  }
-  1% {
-    stroke: transparent;
-  }
-  10% {
-    stroke: transparent;
-  }
-  11% {
-    stroke: #00ff84;
-  }
-  40% {
-    stroke: #00ff84;
-  }
-  41% {
-    stroke: transparent;
-  }
-  45% {
-    stroke: transparent;
-  }
-  46% {
-    stroke: #00ff84;
-  }
-  100% {
-    stroke: #00ff84;
-  }
-}
-
-@keyframes flicker4 {
-  0% {
-    color: #00ff84;
-    text-shadow: 0px 0px 4px #00ff84;
-  }
-  30% {
-    color: #00ff84;
-    text-shadow: 0px 0px 4px #00ff84;
-  }
-  31% {
-    color: #001204;
-    text-shadow: 0px 0px 4px #001204;
-  }
-  32% {
-    color: #00ff84;
-    text-shadow: 0px 0px 4px #00ff84;
-  }
-  36% {
-    color: #00ff84;
-    text-shadow: 0px 0px 4px #00ff84;
-  }
-  37% {
-    color: #001204;
-    text-shadow: 0px 0px 4px #001204;
-  }
-  41% {
-    color: #001204;
-    text-shadow: 0px 0px 4px #001204;
-  }
-  42% {
-    color: #00ff84;
-    text-shadow: 0px 0px 4px #00ff84;
-  }
-  85% {
-    color: #00ff84;
-    text-shadow: 0px 0px 4px #00ff84;
-  }
-  86% {
-    color: #001204;
-    text-shadow: 0px 0px 4px #001204;
-  }
-  95% {
-    color: #001204;
-    text-shadow: 0px 0px 4px #001204;
-  }
-  96% {
-    color: #00ff66;
-    text-shadow: 0px 0px 4px #00ffb4;
-  }
-  100% {
-    color: #00ff90;
-    text-shadow: 0px 0px 4px #00ff96;
-  }
-}
-
-/***404 text fade in anim***/
-@keyframes fadeInText {
-  1% {
-    color: #001203;
-    text-shadow: 0px 0px 4px #00120a;
-  }
-  70% {
-    color: #00ffa8;
-    text-shadow: 0px 0px 14px #00ffa2;
-  }
-  100% {
-    color: #00ffa2;
-    text-shadow: 0px 0px 4px #00ff78;
-  }
-}
-
-/***404 color anim***/
-@keyframes hueRotate {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  50% {
-    filter: hue-rotate(10deg);
-  }
-  100% {
-    filter: hue-rotate(0deg);
   }
 }
 
@@ -304,7 +89,7 @@
   }
 }
 
-/***Folie Background (Spiral) Anim***/
+/***Fade In Anim***/
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0;
@@ -322,7 +107,7 @@
   }
 }
 
-/***Rotate and perspective anim***/
+/***Rotate and perspective anim for titles***/
 @keyframes anipers {
   0% {
     transform: translateX(0px);
@@ -351,8 +136,6 @@
     text-shadow: 5px 2px 12px var(--blackish);
   }
 }
-
-/***Rotate and perspective anim 2***/
 @keyframes anipers2 {
   0% {
     transform: translateX(0px);
@@ -384,8 +167,6 @@
     text-shadow: 5px 2px 12px var(--blackish);
   }
 }
-
-/***Rotate and perspective anim 3***/
 @keyframes anipers3 {
   0% {
     transform: translateX(0px);

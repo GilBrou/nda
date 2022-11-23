@@ -11,11 +11,8 @@
   align-items: center;
   padding: 17vh 0 10vh 0;
   position: relative;
-/*  animation: fade-in 2.5s;*/
   -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both; /***/
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-
-  /*Background*/
   background: url("./background/background2.webp");
   background-color: var(--blackish);
   background-position: center;
@@ -23,7 +20,6 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 .container {
   padding: 0 30px 0 30px;
 }

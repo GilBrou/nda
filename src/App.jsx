@@ -15,7 +15,6 @@ import { getAllTags } from "./components/Appendix";
 import Homepage from "./pages/Homepage";
 import Createurs from "./pages/Createurs";
 import ThisUniverse from "./pages/ThisUniverse";
-import Error404 from "./pages/Error404";
 import Univers from "./pages/Univers";
 import Search from "./pages/Search";
 
@@ -40,8 +39,10 @@ export default function App() {
     fetchDatas();
   }, []);
 
+  /****************IF NEEDED******************************/
   /*Get all books tags*/
-  getAllTags(Data3); /****************IF NEEDED******************************/
+  /*getAllTags(Data3);*/
+  /*******************************************************/
 
   /*DOM*/
   return (
@@ -90,10 +91,6 @@ export default function App() {
           {/*REDIRECT*/}
           <Route>
             <Redirect to="/accueil" />
-          </Route>
-          {/*404 PAGE*/}
-          <Route>
-            <Error404 />
           </Route>
         </Switch>
       </div>

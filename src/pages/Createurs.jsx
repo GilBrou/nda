@@ -1,26 +1,21 @@
-
-/******COMMENT AND CLEAN !!******/
-
 /******CREATEURS******/
 import ReactTooltip from "react-tooltip";
 import Collapsible from "react-collapsible";
-
 
 /***COMPONENTs***/
 import { DustAnim, MainAnim } from "../components/UniversAnim";
 import { alphabetical } from "../components/Appendix";
 
-
 /***COMPONENT***/
 export default function Createurs(data) {
-  /*Collapsible default position according to window width*/
+  /*Collapsible toggling according to window width*/
   function checkWidth() {
     if (window.innerWidth >= "740") {
       return "true";
     }
   }
 
-  /*Toggle link buttons*/
+  /*Toggle external links buttons for creators*/
   function GetLink(props) {
     if (props >= "1") {
       return (
@@ -35,8 +30,11 @@ export default function Createurs(data) {
     }
   }
 
+  /*Create creator card*/
   function tryAuth(team, i) {
+    /*creator card linked to books if creator is an author*/
     if (team.job.includes("aut")) {
+      /*creator card template if creator lacks surname*/
       if (team.name2 != "") {
         return (
           <div
@@ -70,6 +68,7 @@ export default function Createurs(data) {
           </div>
         );
       } else {
+        /*creator card template if creator has name + surname*/
         return (
           <div
             key={`${team.name}-${i}`}
@@ -103,6 +102,8 @@ export default function Createurs(data) {
         );
       }
     } else {
+      /*creator card template if creator isn't an author*/
+      /*creator card template if creator lacks surname*/
       if (team.name2 != "") {
         return (
           <div
@@ -132,6 +133,7 @@ export default function Createurs(data) {
           </div>
         );
       } else {
+        /*creator card template if creator has name + surname*/
         return (
           <div
             key={`${team.name}-${i}`}
@@ -184,7 +186,6 @@ export default function Createurs(data) {
         {/*BACKGROUND ANIMATION*/}
         {DustAnim()}
         {MainAnim()}
-
         {/*Editors Section*/}
         <Collapsible
           open={checkWidth()}
@@ -205,7 +206,6 @@ export default function Createurs(data) {
               : "Loading..."}
           </div>
         </Collapsible>
-
         {/*Authors Section*/}
         <Collapsible
           open={checkWidth()}
@@ -228,7 +228,6 @@ export default function Createurs(data) {
               : "Loading..."}
           </div>
         </Collapsible>
-
         {/*Illustrators Section*/}
         <Collapsible
           open={checkWidth()}
@@ -251,7 +250,6 @@ export default function Createurs(data) {
               : "Loading..."}
           </div>
         </Collapsible>
-
         {/*Support Section*/}
         <Collapsible
           open={checkWidth()}

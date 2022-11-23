@@ -203,8 +203,6 @@ ul li:hover ul {
 }
 .contactList .authorLogo {
   max-height: 40px;
-  /*height: 40px;
-  width: 100%;*/
 }
 .contactList.fb {
   margin: none;

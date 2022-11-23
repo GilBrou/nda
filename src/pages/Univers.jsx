@@ -1,7 +1,3 @@
-/******COMMENT AND CLEAN !!******/
-
-
-
 /******UNIVERS******/
 import ReactTooltip from "react-tooltip";
 
