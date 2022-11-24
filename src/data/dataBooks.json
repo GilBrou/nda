@@ -1388,30 +1388,5 @@
       "buyPaper": "https://www.noirdabsinthe.com/product-page/dremence-cartonn%C3%A9e",
       "buyEbook": "https://www.amazon.fr/gp/product/B0BJMJXCNZ/ref=dbs_a_def_rwt_bibl_vppi_i7"
     }
-  ],
-  "template": {
-    "titre": "",
-    "titre2": "",
-    "univers": "",
-    "date": "1990-01",
-    "pages": "",
-    "ISBN": "",
-    "prix": "",
-    "extrait": "",
-    "lien": "",
-    "format": "Roman",
-    "sousTitre": "",
-    "par": [""],
-    "genres": ["", ""],
-    "résumé": "",
-    "résumé2": "",
-    "résumé3": "",
-    "résumé4": "",
-    "résumé5": "",
-    "résumé6": "",
-    "reviews": ["", "", "", "", ""],
-    "buyPaper": "",
-    "buyEbook": ""
-  },
-  "a-venir": []
+  ]
 }
