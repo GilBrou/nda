@@ -1,0 +1,20 @@
+/***BOUTIQUE***/
+.shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  margin: auto;
+  animation: fade-in 1.5s;  
+  /*background-color: var(--blueish);*/
+}
+.shop iframe{
+  /*padding-top: 81px;*/
+  padding-top: 80px;
+    height: 100vh;
+  width: 100vw;
+  pointer-events: auto;
+  border: none;
+  z-index: +1;
+  /*border-top: inset 82px var(--blueish2);*/
+}

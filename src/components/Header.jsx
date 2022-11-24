@@ -227,10 +227,18 @@ export default function Header(data) {
             </a>
           </li>
           {/*7 Shop link*/}
+          {/*     <li>
+                 <a
+                   href={data.data2 ? data.data2.nda.boutique : "loading..."}
+                   target="_blank"
+                   className="page-scroll"
+                 >
+                   {data.data1 ? data.data1.menu.menu7 : "loading..."}
+                 </a>
+               </li>*/}
           <li>
             <a
-              href={data.data2 ? data.data2.nda.boutique : "loading..."}
-              target="_blank"
+              href={data.data1 ? data.data1.links.menu4L : "loading..."}
               className="page-scroll"
             >
               {data.data1 ? data.data1.menu.menu7 : "loading..."}

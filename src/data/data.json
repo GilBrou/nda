@@ -27,7 +27,9 @@
   "links": {
     "menu1L": "/accueil",
     "menu2L": "/nos-univers",
-    "menu3L": "/createurs"
+    "menu3L": "/createurs",
+    "menu4L": "/boutique"
+
   },
   "UimgLinks": {
     "IL0": "img/",

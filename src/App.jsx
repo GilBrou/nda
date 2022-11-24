@@ -11,9 +11,11 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { DustAnim, MainAnim } from "./components/UniversAnim";
 import { getAllTags } from "./components/Appendix";
+import Data00 from "./data/data.json";
 
 /***PAGES***/
 import Homepage from "./pages/Homepage";
+import Shop from "./pages/Shop";
 import Createurs from "./pages/Createurs";
 import ThisUniverse from "./pages/ThisUniverse";
 import Univers from "./pages/Univers";
@@ -54,11 +56,13 @@ export default function App() {
           const responseOne = responses[0];
           const responseTwo = responses[1];
           const responesThree = responses[2];
-          setData1(responseOne.data);
+          /*setData1(responseOne.data);*/
+          setData1(Data00);
+
           setData2(responseTwo.data);
           setData3(responesThree.data);
           setLoading(false);
-          setAllDatas(Data1);
+          setAllDatas(Data00);
           setAllDatas2(Data2);
           setAllDatas3(Data3);
         })
@@ -95,6 +99,10 @@ export default function App() {
             {/*UNIVERS HOMEPAGE*/}
             <Route exact path="/nos-univers">
               <Univers data1={Data1} data2={Data2} />
+            </Route>
+            {/*SHOP*/}
+            <Route exact path="/boutique">
+              <Shop data1={Data1} data2={Data2} data3={Data3} />
             </Route>
             {/*UNIVERS*/}
             <Route

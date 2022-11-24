@@ -19,6 +19,8 @@ nav {
   background: var(--blackish);
   z-index: 1000;
   box-shadow: 0 -5px 30px 1px var(--blackish);
+  /*box-shadow: 0 -5px 30px 0px var(--blueish);
+  box-shadow: 0 -20px 30px 0px var(--whiteish);*/
 }
 nav li a,
 nav li,
