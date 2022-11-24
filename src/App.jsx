@@ -24,6 +24,7 @@ import Search from "./pages/Search";
 
 /***APP***/
 export default function App() {
+
   /*Get datas*/
 
   /****************IF NEEDED******************************/
@@ -34,12 +35,12 @@ export default function App() {
   const [Data1, setData1] = useState({});
   const [Data2, setData2] = useState({});
   const [Data3, setData3] = useState({});
-
   const [allDatas, setAllDatas] = useState({});
   const [allDatas2, setAllDatas2] = useState({});
   const [allDatas3, setAllDatas3] = useState({});
 
-  let Json1 = "https://raw.githubusercontent.com/GilBrou/nda/master/data.json";
+  /*let Json1 = "https://raw.githubusercontent.com/GilBrou/nda/master/data.json";*/
+  let Json1 = "https://raw.githubusercontent.com/NoirDAbsinthe/NDAAPI/master/data.json";
   let Json2 =
     "https://raw.githubusercontent.com/GilBrou/nda/master/dataExt.json";
   let Json3 =
@@ -76,6 +77,9 @@ export default function App() {
   console.log(Loading);
   */
 
+  console.log(Data1);
+
+
   if (Loading) {
     return null;
   } else {
@@ -89,7 +93,7 @@ export default function App() {
       <div>{Data2.nda.description}</div>
       <div>{Data3.Livres[0].titre}</div>*/}
         <Header data1={Data1} data2={Data2} />
-        <div className="app">
+        <div className="app">        
           {/*ROUTES*/}
           <Switch>
             {/*HOMEPAGE*/}
