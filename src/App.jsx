@@ -42,9 +42,10 @@ export default function App() {
   /*let Json1 = "https://raw.githubusercontent.com/GilBrou/nda/master/data.json";*/
   let Json1 = "https://raw.githubusercontent.com/NoirDAbsinthe/NDAAPI/master/data.json";
   let Json2 =
-    "https://raw.githubusercontent.com/GilBrou/nda/master/dataExt.json";
+    "https://raw.githubusercontent.com/NoirDAbsinthe/NDAAPI/master/dataExt.json";
   let Json3 =
-    "https://raw.githubusercontent.com/GilBrou/nda/master/dataExt2.json";
+        "https://raw.githubusercontent.com/NoirDAbsinthe/NDAAPI/master/dataExt2.json";
+
 
   const requestOne = axios.get(Json1);
   const requestTwo = axios.get(Json2);
