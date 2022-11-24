@@ -12,8 +12,6 @@ export default function Intro(data) {
     <section id="intro">
       <div className="intro" id="thisToggle">
         <div className="introLeft">
-        <h1>{data.data1.nom}</h1>
-
           {/*Large Animated Logo*/}
           <img
             fetchpriority="high"
