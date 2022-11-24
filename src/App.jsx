@@ -1,6 +1,3 @@
-/******COMMENT AND CLEAN !!!!!!!!!!!******/
-
-
 /******APP******/
 
 /***GENERAL***/
@@ -24,28 +21,28 @@ import Search from "./pages/Search";
 
 /***APP***/
 export default function App() {
-  /*Get datas*/
-
-  /****************IF NEEDED******************************/
-  /*Get all books tags*/
+  /**************** Get all books tags if needed******************************/
   /*getAllTags(Data3);*/
-  /*******************************************************/
+  /***************************************************************************/
+
+  /*Get datas*/
   const [Loading, setLoading] = useState(true);
   const [Data1, setData1] = useState({});
   const [Data2, setData2] = useState({});
   const [Data3, setData3] = useState({});
-
   const [allDatas, setAllDatas] = useState({});
   const [allDatas2, setAllDatas2] = useState({});
   const [allDatas3, setAllDatas3] = useState({});
 
-  let Json1 = "https://raw.githubusercontent.com/GilBrou/nda/master/src/data/data.json";
+  /*Json file urls*/
+  let Json1 =
+    "https://raw.githubusercontent.com/GilBrou/nda/master/src/data/data.json";
   let Json2 =
     "https://raw.githubusercontent.com/NoirDAbsinthe/NDAAPI/master;/dataSite.json";
   let Json3 =
-        "https://raw.githubusercontent.com/NoirDAbsinthe/NDAAPI/master/dataBooks.json";
+    "https://raw.githubusercontent.com/NoirDAbsinthe/NDAAPI/master/dataBooks.json";
 
-
+  /*axios config*/
   const requestOne = axios.get(Json1);
   const requestTwo = axios.get(Json2);
   const requestThree = axios.get(Json3);
@@ -70,13 +67,7 @@ export default function App() {
     getDatas();
   }, []);
 
-  /*
-  console.log(Data1);
-  console.log(Data2);
-  console.log(Data3);
-  console.log(Loading);
-  */
-
+  /*Check if loading is complete before rendering*/
   if (Loading) {
     return null;
   } else {
