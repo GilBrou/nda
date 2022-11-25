@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 import { DustAnim, MainAnim } from "./components/UniversAnim";
 import { getAllTags } from "./components/Appendix";
 import Data00 from "./data/data.json";
-import Data4 from "./data/story.json";
+
 
 /***PAGES***/
 import Homepage from "./pages/Homepage";
@@ -108,7 +108,7 @@ export default function App() {
             </Route>
             {/*STORY*/}
             <Route exact path="/nouvelle">
-              <Story data4={Data4} />
+              <Story/>
             </Route>
             {/*UNIVERS*/}
             <Route
