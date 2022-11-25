@@ -25,7 +25,6 @@
   background-repeat: no-repeat !important;
   animation: animMuse 100s infinite alternate both;
   background: url("./background/Brume2.webp"), var(--blackish);
-  
 }
 /*Button general style*/
 .storyWrap button {
@@ -85,7 +84,6 @@
   font-size: 150px;
   width: fit-content;
   padding-bottom: 5px;
-  /*font-family: "Amatic SC", cursive;*/
   border-bottom: solid 1px var(--whiteish);
   text-shadow: 0px 0px 10px var(--blackish), 0px 0px 10px var(--whiteish);
 }
@@ -104,7 +102,7 @@
   text-shadow: 0px 0px 10px var(--blackish);
   text-align: justify;
   font-family: "Cutive Mono", monospace;
-  letter-spacing: -2px !important;
+  letter-spacing: -5px !important;
 }
 .auteur {
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1.5s both;
@@ -144,8 +142,7 @@
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 2.5s both;
   -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 2.5s both;
 }
-
-.next {
+.next {/*VOIR POUR ABSOLUTE ??????*/
   background-color: unset !important;
   box-shadow: unset !important;
   font-size: 35px !important;
@@ -159,3 +156,7 @@
   color: var(--whiteish) !important;
   transform: scale(1.5) !important;
 }
+.fin {
+  padding-top: 100px !important;
+  text-align: right !important;
+} /*******************/

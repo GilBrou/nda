@@ -11,9 +11,18 @@ import Data5 from "../data/story2.json";
 
 /***COMPONENT***/
 export default function Story() {
-  /*select short story*/
+  
+
+  /*********IF/ELSE AND URL PARAMS ..........************************TO*DO*********************/
+
+
+  /*define short story*/   
   let data = Data4;
   let audio = MaBrume;
+
+
+  /*********IF/ELSE AND URL PARAMS ..........************************TO*DO*********************/
+
 
   /*Page declaration*/
   const [page, setPage] = useState(0);
@@ -25,8 +34,7 @@ export default function Story() {
 
   /*StoryTelling*/
   function StoryTelling(data) {
-    /*console.log(page);*/
-
+    /*Check if this is the first page*/
     if (page == 0) {
       return (
         <div className="storyText">
@@ -43,7 +51,8 @@ export default function Story() {
         </div>
       );
     }
-    if (page >= 1) {
+    /*All story pages*/
+    if (page >= 1 && page < 21) {
       let refresh = document.getElementById("refresh");
       refresh.style.visibility = "visible";
       return (
@@ -118,6 +127,20 @@ export default function Story() {
           >
             <i className="fa fa-chevron-right" aria-hidden="true"></i>
           </button>
+        </div>
+      );
+    }
+    {
+      /*Check if this is the last page*/
+    }
+    if (page == 21) {
+      return (
+        <div className="storyText ">
+          {data.P21.map((P, i) => (
+            <h2 key={"P" + i}>{P}</h2>
+          ))}
+          {/*The End h2*/}
+          <h2 className="fin">Fin.</h2>
         </div>
       );
     }
