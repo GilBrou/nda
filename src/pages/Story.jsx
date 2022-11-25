@@ -21,10 +21,18 @@ export default function Story() {
 
   /*Page declaration*/
   const [page, setPage] = useState(0);
-
   /*Page incrementation*/
   function nextPage() {
     setPage(page + 1);
+  }
+  function previousPage() {
+    setPage(page - 1);
+  }
+  /*Play music as story begins*/
+  function firstClick(data) {
+    let playIt = document.getElementById("audioP");
+    playIt.play();
+    nextPage(data);
   }
 
   /*StoryTelling*/
@@ -38,7 +46,7 @@ export default function Story() {
           <button
             className="startButton"
             onClick={() => {
-              nextPage(data);
+              firstClick(data);
             }}
           >
             Commencer la lecture
@@ -52,9 +60,32 @@ export default function Story() {
       refresh.style.visibility = "visible";
       return (
         <div className="storyText ">
+          {/*Page number*/}
+          <p className="pageNum">{"Page " + page + " / 21"}</p>
+
+          {(() => {
+            if (page > 1) {
+              /*previous button*/
+              return (
+                <button
+                  className="previous"
+                  onClick={() => {
+                    previousPage(data);
+                  }}
+                >
+                  <i className="fa fa-chevron-left" aria-hidden="true"></i>
+                </button>
+              );
+            }
+          })()}
           {(() => {
             if (page == 1) {
-              return data.P1.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+              /*Dynamic display of every paragraph from Json according to page*/
+              return data.P1.map((P, i) => (
+                <h2 className="firstT" key={"P" + i}>
+                  {P}
+                </h2>
+              ));
             }
             if (page == 2) {
               return data.P2.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
@@ -114,6 +145,7 @@ export default function Story() {
               return data.P20.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
             }
           })()}
+          {/*Next button*/}
           <button
             className="next"
             onClick={() => {
@@ -131,11 +163,45 @@ export default function Story() {
     if (page == 21) {
       return (
         <div className="storyText ">
+          {/*Previous button*/}
+          <button
+            className="previous"
+            onClick={() => {
+              previousPage(data);
+            }}
+          >
+            <i className="fa fa-chevron-left" aria-hidden="true"></i>
+          </button>
+          {/*Page number*/}
+          <p className="pageNum">{"Page " + page + " / 21"}</p>
           {data.P21.map((P, i) => (
+            /*Lasts paragraphs*/
             <h2 key={"P" + i}>{P}</h2>
           ))}
-          {/*The End h2*/}
-          <h2 className="fin">Fin.</h2>
+          {/*End buttons*/}
+          {
+            /*Author button*/
+            <button
+              className="fin1"
+              onClick={() => {
+                window.location = "/recherche#" + data.Auteur;
+              }}
+            >
+              {"Découvrir d'autres textes de " + data.Auteur}
+            </button>
+          }
+
+          {
+            /*Back to short stories page*/
+            <button
+              className="fin2"
+              onClick={() => {
+                window.location = "/nouvelles";
+              }}
+            >
+              Retour à l'accueil des nouvelles
+            </button>
+          }
         </div>
       );
     }
@@ -159,13 +225,18 @@ export default function Story() {
             <i className="fa fa-refresh" aria-hidden="true"></i>
           </button>
         </div>
-        {/*Text part*/}
+        {/*all texts part*/}
         {StoryTelling(data)}
         {/*Audio player*/}
         <div className="audioWrap">
+          {/*radio antenna*/}
+          <div className="antenna"></div>
           <div id="audio">
+            {/*Woofers styling*/}
+            <div className="Radio Radio1"></div>
+            <div className="Radio Radio2"></div>
             <p>Ambiance sonore</p>
-            <audio src={audio} autoPlay controls loop></audio>
+            <audio id="audioP" src={audio} autoPlay controls loop></audio>
           </div>
         </div>
       </div>

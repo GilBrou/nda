@@ -368,12 +368,12 @@
 /*Background ligth animation*/
 @keyframes animMuse {
   0% {
-    background-position: 50% 47%;
+    background-position: 50% 30%;
     background-size: 100%;
     filter: hue-rotate(0deg);
   }
   100% {
-    background-position: 47% 50%;
+    background-position: 50% 45%;
     background-size: 150%;
     filter: hue-rotate(-50deg);
   }

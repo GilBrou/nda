@@ -8,15 +8,15 @@ import axios from "axios";
 
 /***COMPONENTS***/
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+/*import Footer from "./components/Footer";*/
 import { DustAnim, MainAnim } from "./components/UniversAnim";
 import { getAllTags } from "./components/Appendix";
 import Data00 from "./data/data.json";
 
-
 /***PAGES***/
 import Homepage from "./pages/Homepage";
 import Story from "./pages/Story";
+import Stories from "./pages/Stories";
 import Createurs from "./pages/Createurs";
 import ThisUniverse from "./pages/ThisUniverse";
 import Univers from "./pages/Univers";
@@ -101,9 +101,13 @@ export default function App() {
             <Route exact path="/nos-univers">
               <Univers data1={Data1} data2={Data2} />
             </Route>
+            {/*STORIES*/}
+            <Route exact path="/nouvelles">
+              <Stories />
+            </Route>
             {/*STORY*/}
             <Route exact path="/nouvelle">
-              <Story/>
+              <Story />
             </Route>
             {/*UNIVERS*/}
             <Route
@@ -133,7 +137,7 @@ export default function App() {
             </Route>
           </Switch>
         </div>
-        <Footer data1={Data1} data2={Data2} />
+        {/*  <Footer data1={Data1} data2={Data2} />*/}
       </Router>
     );
   }

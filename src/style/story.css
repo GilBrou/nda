@@ -8,6 +8,7 @@
 }
 /*Main Wrap*/
 .storyWrap {
+  z-index: -1;
   width: 100vw;
   height: 100%;
   padding-top: 60px;
@@ -18,24 +19,26 @@
   position: relative;
   align-items: center;
   flex-direction: column;
-  background-size: cover !important;
+  /*background-size: cover !important;*/ /**********************CHECKit for responsive****************/
   justify-content: center;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat !important;
-  background: url("./background/Brume2.webp"), var(--blackish);  
-  animation: animMuse 100s infinite alternate both !important; /*******check animuse*****/
+  background: url("./background/Brume2.webp"), var(--blackish);
+  animation: animMuse 70s infinite alternate both !important;
 }
+
 /*Button general style*/
 .storyWrap button {
   border: none;
   padding: 15px;
   outline: none;
   font-size: 18px;
-  border-radius: 25px;
+  /*border-radius: 25px;*/
+  border-radius: 15px;
   text-decoration: none;
   background-color: var(--blackish);
-  box-shadow: 0 0 15px -3px var(--whiteishTrans);
+  box-shadow: 0 0 15px -8px var(--whiteishTrans);
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
   -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
 }
@@ -87,15 +90,16 @@
   border-bottom: solid 1px var(--whiteish);
   text-shadow: 0px 0px 10px var(--blackish), 0px 0px 10px var(--whiteish);
 }
+/*Title*/
 .storyText h1 {
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
   -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
   font-family: "Amatic SC", cursive;
 }
-/*author and story text*/
+/*Author and story text*/
 .storyText h2 {
   width: 100%;
-  font-size: 40px;
+  font-size: 35px; /*********************CHECKit*******RESSPONSIVE*********/
   padding-top: 10px;
   margin-bottom: 25px;
   border-bottom: unset;
@@ -104,64 +108,138 @@
   font-family: "Cutive Mono", monospace;
   letter-spacing: -5px !important;
 }
+/*Author text*/
 .auteur {
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1.5s both;
   -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1.5s both;
   text-align: center !important;
   font-size: 50px !important;
 }
-/*
+/*First paragraph entrance*/
 .firstT {
-  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
-  -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
+  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
-.secondT {
-  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1.5s both;
-  -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1.5s both;
+/*Page numbers*/
+.pageNum {
+  margin: 0px auto 100px auto !important;
 }
-*/
-/*Audio player*/
+/*Audio player wrapper*/
 .audioWrap {
   flex: 1;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
+  position: relative;
 }
-
+/*Audio player*/
 #audio {
-  margin: 0 7px 7px 0;
+  position: relative;
   width: fit-content;
+  margin: 0 7px 7px 0;
   height: fit-content;
-  background-color: var(--blackish);
-  padding: 7px 10px 2px 10px;
-  border-radius: 40px 40px 40px 45px;
-  box-shadow: 0 0 15px -3px var(--blackish);
-  z-index: +1;
-  box-shadow: 0 0 15px -5px var(--whiteishTrans);
+  border-radius: 20px;
+  padding: 20px 7px 7px 10px;
+  border: double 7px #24150c;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  box-shadow: -5px 5px 15px -3px var(--blackish);
+  background: url("./background/wood.webp"), var(--blackish);
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 2.5s both;
   -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 2.5s both;
 }
-.next {
-  /*VOIR POUR ABSOLUTE ??????*/
-  position: absolute;
-  bottom: 50px;
-
-
-  background-color: unset !important;
-  box-shadow: unset !important;
-  font-size: 35px !important;
-  transform: scale(1) !important;
-  transition: 0.5s;
-  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both !important;
-  -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both !important;
+/*Audio player text*/
+#audio p {
+  font-size: 20px;
+  padding-bottom: 5px;
+  text-shadow: 1px 1px 1px gold;
+  font-family: "Cutive Mono", monospace;
 }
-.next:hover {
+/*Woofer styling*/
+.Radio {
+  top: 5px;
+  width: 50px;
+  right: 10px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  border: double 2px #24150c;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background: url("./background/grid.webp"), var(--blackish);
+}
+.Radio1 {
+  left: 10px;
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+}
+/*inset radio styling*/
+audio::-webkit-media-controls-panel {
+  background-size: cover !important;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat !important;
+  background: url("./background/wood2.webp"), #271910;
+}
+/*antenna styling*/
+.antenna {
+  right: 25px;
+  z-index: -1;
+  width: 100px;
+  bottom: 50px;
+  height: 200px;
+  position: absolute;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background: url("./background/antenna.webp");
+  animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2.5s both;
+  -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2.5s both;
+}
+
+/*left and right Arrows*/
+.next,
+.previous {
+  transition: 0.5s;
+  position: absolute;
+  font-size: 35px !important;
+  animation: unset !important;
+  box-shadow: unset !important;
+  transform: scale(1) !important;
+  background-color: unset !important;
+}
+/*left Arrow*/
+.previous {
+  left: 150px;
+}
+/*right Arrow*/
+.next {
+  right: 150px;
+}
+/*Arrows hover*/
+.next:hover,
+.previous:hover {
   background-color: none !important;
   color: var(--whiteish) !important;
-  transform: scale(1.5) !important;
+  transform: scale(1.25) !important;
 }
-.fin {
-  padding-top: 100px !important;
-  text-align: right !important;
-} /*******************/
+
+/*Author & back buttons*/
+.fin1,
+.fin2 {
+  z-index: +1;
+  margin: 5px auto 20px auto;
+  text-align: center !important;
+  animation: unset !important;
+}
+/*Author button*/
+.fin1 {
+  margin-top: 7vh !important;
+}
