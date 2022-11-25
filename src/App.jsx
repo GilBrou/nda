@@ -16,7 +16,6 @@ import Data00 from "./data/data.json";
 
 /***PAGES***/
 import Homepage from "./pages/Homepage";
-import Shop from "./pages/Shop";
 import Story from "./pages/Story";
 import Createurs from "./pages/Createurs";
 import ThisUniverse from "./pages/ThisUniverse";
@@ -101,10 +100,6 @@ export default function App() {
             {/*UNIVERS HOMEPAGE*/}
             <Route exact path="/nos-univers">
               <Univers data1={Data1} data2={Data2} />
-            </Route>
-            {/*SHOP*/}
-            <Route exact path="/boutique">
-              <Shop data1={Data1} data2={Data2} data3={Data3} />
             </Route>
             {/*STORY*/}
             <Route exact path="/nouvelle">

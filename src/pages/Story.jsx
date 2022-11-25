@@ -11,18 +11,13 @@ import Data5 from "../data/story2.json";
 
 /***COMPONENT***/
 export default function Story() {
-  
-
   /*********IF/ELSE AND URL PARAMS ..........************************TO*DO*********************/
 
-
-  /*define short story*/   
+  /*define short story*/
   let data = Data4;
   let audio = MaBrume;
 
-
   /*********IF/ELSE AND URL PARAMS ..........************************TO*DO*********************/
-
 
   /*Page declaration*/
   const [page, setPage] = useState(0);

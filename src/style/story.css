@@ -23,8 +23,8 @@
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat !important;
-  animation: animMuse 100s infinite alternate both;
-  background: url("./background/Brume2.webp"), var(--blackish);
+  background: url("./background/Brume2.webp"), var(--blackish);  
+  animation: animMuse 100s infinite alternate both !important; /*******check animuse*****/
 }
 /*Button general style*/
 .storyWrap button {
@@ -142,7 +142,12 @@
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 2.5s both;
   -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 2.5s both;
 }
-.next {/*VOIR POUR ABSOLUTE ??????*/
+.next {
+  /*VOIR POUR ABSOLUTE ??????*/
+  position: absolute;
+  bottom: 50px;
+
+
   background-color: unset !important;
   box-shadow: unset !important;
   font-size: 35px !important;
