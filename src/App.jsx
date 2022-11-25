@@ -12,10 +12,12 @@ import Footer from "./components/Footer";
 import { DustAnim, MainAnim } from "./components/UniversAnim";
 import { getAllTags } from "./components/Appendix";
 import Data00 from "./data/data.json";
+import Data4 from "./data/story.json";
 
 /***PAGES***/
 import Homepage from "./pages/Homepage";
 import Shop from "./pages/Shop";
+import Story from "./pages/Story";
 import Createurs from "./pages/Createurs";
 import ThisUniverse from "./pages/ThisUniverse";
 import Univers from "./pages/Univers";
@@ -103,6 +105,10 @@ export default function App() {
             {/*SHOP*/}
             <Route exact path="/boutique">
               <Shop data1={Data1} data2={Data2} data3={Data3} />
+            </Route>
+            {/*STORY*/}
+            <Route exact path="/nouvelle">
+              <Story data4={Data4} />
             </Route>
             {/*UNIVERS*/}
             <Route
