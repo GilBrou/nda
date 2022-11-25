@@ -21,6 +21,22 @@
 	}
 }
 
+/**********1066************/
+@media (max-width: 1066px) {
+	.storyText {
+		flex: unset !important;
+	}
+	.audioWrap {
+		margin-top: 50px;
+		flex: unset !important;
+		justify-content: center;
+		align-items: center;
+	}
+	#audio {
+		margin: auto !important;
+	}
+}
+
 /**********992************/
 @media (max-width: 992px) {
 	nav p,
@@ -251,5 +267,12 @@
 		position: absolute;
 		margin-top: 5vh;
 		width: 80%;
+	}
+}
+
+/**********382************/
+@media (max-width: 382px) {
+	.audioWrap {
+		margin-top: 5px;
 	}
 }

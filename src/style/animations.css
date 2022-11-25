@@ -365,3 +365,16 @@
     opacity: 1;
   }
 }
+/*Background ligth animation*/
+@keyframes animMuse {
+  0% {
+    background-position: 50% 47%;
+    background-size: 100%;
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    background-position: 47% 50%;
+    background-size: 150%;
+    filter: hue-rotate(-50deg);
+  }
+}
