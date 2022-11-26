@@ -2,28 +2,45 @@
 
 /***GENERAL***/
 import { useState, useEffect } from "react";
+import { Redirect } from "react-router";
 
 /***COMPONENTS***/
 import { DustAnim } from "../components/UniversAnim";
 import MaBrume from "../audio/MaBrume.wav";
+import Lilith from "../audio/Lilith.flac";
+import Somber from "../audio/Somber.wav";
+
 import Data4 from "../data/story.json";
 import Data5 from "../data/story2.json";
+import Data6 from "../data/story3.json";
+
+/*
+  check effects and animations for text !!!!!!!!!!!!!!!!!!
+  also check story  text !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+*/
 
 /***COMPONENT***/
 export default function Story() {
-  /*********IF/ELSE AND URL PARAMS ..........************************TO*DO*********************/
-
-  /*
-  check effects and animations for text !!!!!!!!!!!!!!!!!!
-  also check story  text !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-
-*/
   /*define short story*/
-  let data = Data4;
-  let audio = MaBrume;
-
-  /*********IF/ELSE AND URL PARAMS ..........************************TO*DO*********************/
+  const [data, setData] = useState({});
+  const [audio, setAudio] = useState({});
+  useEffect(() => {
+    function getStory() {
+      if (window.location.href.includes("brume")) {
+        setData(Data4);
+        setAudio(MaBrume);
+      } else if (window.location.href.includes("lilith")) {
+        setData(Data5);
+        setAudio(Lilith);
+      } else if (window.location.href.includes("somber")) {
+        setData(Data6);
+        setAudio(Somber);
+      } else {
+        window.location = "/nouvelles";
+      }
+    }
+    getStory();
+  }, []);
 
   /*Page declaration*/
   const [page, setPage] = useState(0);
@@ -43,6 +60,7 @@ export default function Story() {
 
   /*StoryTelling*/
   function StoryTelling(data) {
+    /*console.log(data)*/
     /*Check if this is the first page*/
     if (page == 0) {
       return (

@@ -8,16 +8,10 @@ import { DustAnim } from "../components/UniversAnim";
 import story1 from "../data/story.json";
 import story2 from "../data/story2.json";
 import story3 from "../data/story3.json";
-/*
-import story4 from "../data/story.json";
-import story5 from "../data/story2.json";
-import story6 from "../data/story3.json";
-import story7 from "../data/story.json";
-import story8 from "../data/story2.json";
-*/
+
 /***COMPONENT***/
 export default function Stories() {
-  let thoseStories = [story1, story2, story3/*, story4, story5, story6, story7, story8*/];
+  let thoseStories = [story1, story2, story3];
 
   /*DOM*/
   return (
