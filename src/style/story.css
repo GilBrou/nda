@@ -14,9 +14,9 @@
   padding-top: 60px;
   display: flex;
   max-width: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
   min-height: 100vh;
-  position: relative;
+  /*position: relative;*/
   align-items: center;
   flex-direction: column;
   /*background-size: cover !important;*/ /**********************CHECKit for responsive****************/
@@ -54,10 +54,10 @@
 /*refresh button*/
 .refresh,
 .goBack {
-  left: 10px;
+  /*left: 10px;*/
   width: 50px;
   height: 50px;
-  position: absolute;
+  /*position: absolute;*/
   border-radius: 50%;
   padding: unset !important;
   color: var(--greenish);
@@ -68,26 +68,16 @@
 }
 
 .refresh {
-  top: 80px;
-  visibility: hidden;
+  margin-top: 5px;
+  /*visibility: hidden;*/
   font-size: 25px !important;
 }
 
 .goBack {
-  top: 50px;
+  /*top: 50px;*/
   font-size: 23px !important;
 }
-/*Main part*/
-.storyText {
-  flex: 3;
-  width: 50vw;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 80px 0 20px 0;
-  flex-direction: column;
-  justify-content: center;
-}
+
 .storyText2 {
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s both;
   -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s both;
@@ -137,24 +127,14 @@
   margin: 0px auto 100px auto !important;
   /*color: var(--greenish);*/
 }
-/*Audio player wrapper*/
-.audioWrap {
-  flex: 1;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  position: relative;
-}
+/*************CHECK RESPONSIVE**********/
+
 /*Audio player*/
 #audio {
   position: relative;
-  width: fit-content;
-  margin: 0 20px 20px 0;
-  height: fit-content;
   border-radius: 20px;
   padding: 20px 7px 7px 10px;
+  margin-bottom: 3px;
   border: double 7px #24150c;
   background-position: center;
   background-attachment: fixed;
@@ -200,19 +180,16 @@ audio::-webkit-media-controls-panel {
   background-attachment: fixed;
   background-repeat: no-repeat !important;
   background-color: var(--greenish);
-  /*background: url("./background/wood2.webp"), var(--greenish);*/
   background: url("./background/wood2.webp"), #271910;
-
 }
 /*antenna styling*/
 .antenna {
-  /*right: 25px;*/
+  right: -20px;
   margin: 0 30px -100px 0;
-  z-index: -1;
   width: 100px;
-  /*bottom: 50px;*/
+  top: -112px;
   height: 200px;
-  /*position: absolute;*/
+  position: absolute;
   background-position: center;
   background-attachment: fixed;
   background-size: cover !important;
@@ -226,20 +203,11 @@ audio::-webkit-media-controls-panel {
 .previous {
   color: var(--greenish);
   transition: 0.5s;
-  position: absolute;
   font-size: 35px !important;
   animation: unset !important;
   box-shadow: unset !important;
   transform: scale(1) !important;
   background-color: unset !important;
-}
-/*left Arrow*/
-.previous {
-  left: 150px;
-}
-/*right Arrow*/
-.next {
-  right: 150px;
 }
 /*Arrows hover*/
 .next:hover,
@@ -248,16 +216,95 @@ audio::-webkit-media-controls-panel {
   color: var(--greenish) !important;
   transform: scale(1.25) !important;
 }
-
 /*Author & back buttons*/
 .fin1,
 .fin2 {
+  margin: 20px;
+  /*
   z-index: +1;
   margin: 5px auto 20px auto;
   text-align: center !important;
   animation: unset !important;
+  */
 }
 /*Author button*/
 .fin1 {
-  margin-top: 7vh !important;
+  /*margin-top: 7vh !important;*/
+}
+
+.left,
+.right {
+  /*
+  background-color: lightgoldenrodyellow;
+  flex-wrap: wrap;
+  padding:20px;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  */
+}
+.middle {
+  /*background-color: gold;*/
+  display: flex;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*Main part*/
+.storyText {
+  background-color: lightcyan;
+  /*height: 100%;*/
+  height: fit-content;
+  align-self: center;
+  flex-direction: column;
+  max-width: 600px !important;
+  display: flex;
+  /*  flex-wrap: wrap;*/
+  align-items: center;
+  /*padding: 80px 0 20px 0;*/
+  justify-content: center;
+  /*justify-content: space-between;*/
+}
+.storyText button {
+  width: fit-content;
+}
+/*DONE*/
+
+.top {
+  display: flex;
+  display: flex;
+  width: 100%;
+  flex: 6;
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /*justify-content: flex-end;*/
+  justify-content: space-between;
+  width: 100%;
+  max-height: 200px;
+  flex: 1;
+  padding: 0 20px 0 20px;
+}
+
+.left0 {
+  padding: 35px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttonWrap {
+  display: flex;
+  /*width: 100%;*/
+  /*flex-direction: column;
+  justify-content: space-between;*/
+  justify-content: space-envenly;
 }
