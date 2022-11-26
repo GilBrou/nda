@@ -93,8 +93,46 @@ export default function Story() {
             </div>
           </div>
 
-          {/*all texts part*/}
-          {StoryTelling(data)}
+          <div className="top2">
+            <div className="left">
+              {(() => {
+                if (page > 0) {
+                  /*previous button*/
+                  return (
+                    <button
+                      className="previous"
+                      onClick={() => {
+                        previousPage(data);
+                      }}
+                    >
+                      <i className="fa fa-chevron-left" aria-hidden="true"></i>
+                    </button>
+                  );
+                }
+              })()}
+            </div>
+
+            {/*all texts part*/}
+            {StoryTelling(data)}
+
+            <div className="right">
+              {(() => {
+                if (page > 0) {
+                  /*Next button*/
+                  return (
+                    <button
+                      className="next"
+                      onClick={() => {
+                        nextPage(data);
+                      }}
+                    >
+                      <i className="fa fa-chevron-right" aria-hidden="true"></i>
+                    </button>
+                  );
+                }
+              })()}
+            </div>
+          </div>
         </div>
 
         {/*Audio player*/}
@@ -138,8 +176,7 @@ export default function Story() {
 
   /*StoryTelling*/
   function StoryTelling(data) {
-    /*console.log(data)*/
-    /*Check if this is the first page*/
+    /*first page*/
     if (page == 0) {
       return (
         <div className="middle">
@@ -160,112 +197,78 @@ export default function Story() {
     }
     /*All story pages*/
     if (page >= 1 && page < 21) {
-      let refresh = document.getElementById("refresh");
-      refresh.style.visibility = "visible";
       return (
-        <div>
-          <div className="left">
+        <div className="middle">
+          <div className="storyText ">
+            {/*Page number*/}
+            <p className="pageNum">{"Page " + page + " / 21"}</p>
+            {/*Dynamic display of every paragraph from Json according to page*/}
             {(() => {
-              if (page > 1) {
-                /*previous button*/
-                return (
-                  <button
-                    className="previous"
-                    onClick={() => {
-                      previousPage(data);
-                    }}
-                  >
-                    <i className="fa fa-chevron-left" aria-hidden="true"></i>
-                  </button>
-                );
+              if (page == 1) {
+                return data.P1.map((P, i) => (
+                  <h2 className="firstT" key={"P" + i}>
+                    {P}
+                  </h2>
+                ));
+              }
+              if (page == 2) {
+                return data.P2.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+              }
+              if (page == 3) {
+                return data.P3.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+              }
+              if (page == 4) {
+                return data.P4.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+              }
+              if (page == 5) {
+                return data.P5.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+              }
+              if (page == 6) {
+                return data.P6.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+              }
+              if (page == 7) {
+                return data.P7.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+              }
+              if (page == 8) {
+                return data.P8.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+              }
+              if (page == 9) {
+                return data.P9.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+              }
+              if (page == 10) {
+                return data.P10.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+              }
+              if (page == 11) {
+                return data.P11.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+              }
+              if (page == 12) {
+                return data.P12.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+              }
+              if (page == 13) {
+                return data.P13.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+              }
+              if (page == 14) {
+                return data.P14.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+              }
+              if (page == 15) {
+                return data.P15.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+              }
+              if (page == 16) {
+                return data.P16.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+              }
+              if (page == 17) {
+                return data.P17.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+              }
+              if (page == 18) {
+                return data.P18.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+              }
+              if (page == 19) {
+                return data.P19.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+              }
+              if (page == 20) {
+                return data.P20.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
               }
             })()}
-          </div>
-          <div className="storyText ">
-            <div className="middle">
-              {/*Page number*/}
-              <p className="pageNum">{"Page " + page + " / 21"}</p>
-              {(() => {
-                if (page == 1) {
-                  /*Dynamic display of every paragraph from Json according to page*/
-                  return data.P1.map((P, i) => (
-                    <h2 className="firstT" key={"P" + i}>
-                      {P}
-                    </h2>
-                  ));
-                }
-                if (page == 2) {
-                  return data.P2.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-                }
-                if (page == 3) {
-                  return data.P3.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-                }
-                if (page == 4) {
-                  return data.P4.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-                }
-                if (page == 5) {
-                  return data.P5.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-                }
-                if (page == 6) {
-                  return data.P6.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-                }
-                if (page == 7) {
-                  return data.P7.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-                }
-                if (page == 8) {
-                  return data.P8.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-                }
-                if (page == 9) {
-                  return data.P9.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-                }
-                if (page == 10) {
-                  return data.P10.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-                }
-                if (page == 11) {
-                  return data.P11.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-                }
-                if (page == 12) {
-                  return data.P12.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-                }
-                if (page == 13) {
-                  return data.P13.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-                }
-                if (page == 14) {
-                  return data.P14.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-                }
-                if (page == 15) {
-                  return data.P15.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-                }
-                if (page == 16) {
-                  return data.P16.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-                }
-                if (page == 17) {
-                  return data.P17.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-                }
-                if (page == 18) {
-                  return data.P18.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-                }
-                if (page == 19) {
-                  return data.P19.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-                }
-                if (page == 20) {
-                  return data.P20.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-                }
-              })()}
-            </div>
-            {/*Next button doestn hide*/}
-
-            <div className="right">
-              {/*Next button*/}
-              <button
-                className="next"
-                onClick={() => {
-                  nextPage(data);
-                }}
-              >
-                <i className="fa fa-chevron-right" aria-hidden="true"></i>
-              </button>
-            </div>
           </div>
         </div>
       );
@@ -278,17 +281,6 @@ export default function Story() {
         <div className="middle">
           {/*Page number*/}
           <p className="pageNum">{"Page " + page + " / 21"}</p>
-          <div className="left">
-            {/*Previous button*/}
-            <button
-              className="previous"
-              onClick={() => {
-                previousPage(data);
-              }}
-            >
-              <i className="fa fa-chevron-left" aria-hidden="true"></i>
-            </button>
-          </div>
           <div className="storyText ">
             {data.P21.map((P, i) => (
               /*Lasts paragraphs*/

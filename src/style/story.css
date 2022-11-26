@@ -54,7 +54,6 @@
 /*refresh button*/
 .refresh,
 .goBack {
-  /*left: 10px;*/
   width: 50px;
   height: 50px;
   /*position: absolute;*/
@@ -97,6 +96,7 @@
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
   -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
   font-family: "Amatic SC", cursive;
+margin-top: 120px!important;
 }
 /*Author and story text*/
 .storyText h2 {
@@ -109,6 +109,8 @@
   text-align: justify;
   font-family: "Cutive Mono", monospace;
   letter-spacing: -5px !important;
+  /*background-color: blue;*/
+
 }
 /*Author text*/
 .auteur {
@@ -121,11 +123,12 @@
 .firstT {
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+
 }
 /*Page numbers*/
 .pageNum {
   margin: 0px auto 100px auto !important;
-  /*color: var(--greenish);*/
+    color: var(--greenish);
 }
 /*************CHECK RESPONSIVE**********/
 
@@ -220,55 +223,31 @@ audio::-webkit-media-controls-panel {
 .fin1,
 .fin2 {
   margin: 20px;
-  /*
   z-index: +1;
-  margin: 5px auto 20px auto;
-  text-align: center !important;
-  animation: unset !important;
-  */
 }
-/*Author button*/
-.fin1 {
-  /*margin-top: 7vh !important;*/
-}
-
 .left,
 .right {
-  /*
-  background-color: lightgoldenrodyellow;
-  flex-wrap: wrap;
-  padding:20px;
-  flex: 1;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  */
+  width: 5%;
 }
 .middle {
   /*background-color: gold;*/
   display: flex;
-  width: 100%;
-  display: flex;
+  height: 100%;
+  width: 90%;
   justify-content: center;
 }
 
 /*Main part*/
 .storyText {
-  background-color: lightcyan;
-  /*height: 100%;*/
-  height: fit-content;
-  align-self: center;
-  flex-direction: column;
-  max-width: 600px !important;
+  /*background-color: red;*/
+  width: 80%;
+  padding: 50px;
+  flex-wrap: wrap;
   display: flex;
-  /*  flex-wrap: wrap;*/
+  flex-direction: column;
+  /*justify-content: center;*/
   align-items: center;
-  /*padding: 80px 0 20px 0;*/
-  justify-content: center;
-  /*justify-content: space-between;*/
+
 }
 .storyText button {
   width: fit-content;
@@ -277,9 +256,21 @@ audio::-webkit-media-controls-panel {
 
 .top {
   display: flex;
+  width: 100%;
+  flex: 2;
+  /*justify-content: center;*/
+}
+
+.top2 {
+  /*background-color: lightseagreen;*/
   display: flex;
   width: 100%;
-  flex: 6;
+  /*justify-content: space-between;*/
+  justify-content: center;
+  margin-top: 24px;
+  align-items: center;
+  background-color: blue;
+
 }
 
 .bottom {
@@ -299,12 +290,10 @@ audio::-webkit-media-controls-panel {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: red;
 }
 
 .buttonWrap {
   display: flex;
-  /*width: 100%;*/
-  /*flex-direction: column;
-  justify-content: space-between;*/
   justify-content: space-envenly;
 }
