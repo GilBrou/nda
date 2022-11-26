@@ -47,7 +47,7 @@ export default function Stories() {
               <a href={"/nouvelle#" + story.Link} key={story.Titre + "Link"}>
                 <div className="StoryCard">
                   <p className="cardTitle">{story.Titre}</p>
-                  <p className="cardAuthor">{"par " + story.Auteur}</p>
+                  <p className="cardAuthor">{story.Auteur}</p>
                   <p className="readingTime">
                     {"🕑 " + story.Time}
                   </p>

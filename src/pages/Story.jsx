@@ -54,7 +54,7 @@ export default function Story() {
   /*Play music as story begins*/
   function firstClick(data) {
     let playIt = document.getElementById("audioP");
-    playIt.play();
+    /*playIt.play();*/
     nextPage(data);
   }
 
@@ -166,7 +166,7 @@ export default function Story() {
             {/*Woofers styling*/}
             <div className="Radio Radio1"></div>
             <div className="Radio Radio2"></div>
-            <p>Ambiance sonore</p>
+            <p>Ambiance Sonore</p>
             <audio id="audioP" src={audio} /*autoPlay*/ controls loop></audio>
           </div>
         </div>
@@ -182,14 +182,14 @@ export default function Story() {
         <div className="middle">
           <div className="storyText">
             <h1>{data.Titre}</h1>
-            <h2 className="auteur">{"par " + data.Auteur}</h2>
+            <h2 className="auteur">{data.Auteur}</h2>
             <button
               className="startButton"
               onClick={() => {
                 firstClick(data);
               }}
             >
-              Commencer la lecture
+              <p>▶</p>
             </button>
           </div>
         </div>
