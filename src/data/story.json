@@ -69,24 +69,28 @@
   "P15": [
     "J’entends une musique et je contemple le grain du mur, et puis les araignées.",
     "Comme j’aimerais danser!",
-    "Un éclair me parcourt. Il provient d’en bas. Du bas qui depuis longtemps n’est plus vraiment moi. À ma grande surprise, mon orteil remue à la manière d’une chrysalide prête à se fissurer. Ne serais-je plus larve, deviendrais-je papillon?"
+    "Un éclair me parcourt. Il provient d’en bas. Du bas qui depuis longtemps n’est plus vraiment moi. À ma grande surprise, mon orteil remue à la manière d’une chrysalide prête à se fissurer."
   ],
   "P16": [
+    " Ne serais-je plus larve, deviendrais-je papillon?",
     "Je regarde la fenêtre. Comme j’aimerais voler!",
     "Je pousse un râle. Mes pieds se contractent et mes mains semblent vibrer. La musique m’emporte et je suis décidée."
   ],
   "P17": [
-    "Le voilà qui monte les escaliers, je l’entends. J’ai hâte de voir sa tête quand il me verra voler!",
-    "Le docteur pousse la porte et me voit gigoter. Je croise son regard, et la brume m’enserre la gorge."
+    "Le voilà qui monte les escaliers, je l’entends. J’ai hâte de voir sa tête quand je m'envolerai !",
+    "Le docteur pousse la porte et me voit gigoter.",
+    "Je croise son regard, et la brume m’enserre la gorge."
   ],
-  "P18": ["C’est vrai qu’il était beau, cet inconnu."],
+  "P18": [
+    "C’est vrai qu’il était beau, cet inconnu.",
+    "Jamais je n'aurais dû m'arrêter, ni chercher à l'aider.",
+    "Désormais je lui appartiens."
+  ],
   "P19": [
     "Il attrape une seringue sur la commode et me fait basculer avec douceur dans le fauteuil roulant.",
     "Il m’enlace et l’aiguille me pénètre."
   ],
-  "P20": ["—Tu ne voudrais quand même pas me fausser compagnie ?"],
-
-  "P21": [
+  "P20": [
     "La musique a cessé.",
     "Ma mémoire est une brume et mon corps un linceul."
   ]

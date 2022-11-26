@@ -7,6 +7,7 @@ import { Redirect } from "react-router";
 /***COMPONENTS***/
 import { DustAnim } from "../components/UniversAnim";
 import MaBrume from "../audio/MaBrume.wav";
+import kidz from "../audio/kidz.wav";
 import Lilith from "../audio/Lilith.flac";
 import Somber from "../audio/Somber.wav";
 
@@ -20,7 +21,18 @@ import Data6 from "../data/story3.json";
 */
 
 /***COMPONENT***/
+
+
+                      /*style and props this*/
 export default function Story() {
+  function playIt2() {
+    let playIt2 = document.getElementById("kidz");
+    setTimeout(() => {
+      /*console.log("Delayed for 1 second.");*/
+      /*playIt2.play();*/
+    }, 3000);
+  }
+
   /*define short story*/
   const [data, setData] = useState({});
   const [audio, setAudio] = useState({});
@@ -46,7 +58,9 @@ export default function Story() {
   const [page, setPage] = useState(0);
   /*Page incrementation*/
   function nextPage() {
-    setPage(page + 1);
+    if (page != "20") {
+      setPage(page + 1);
+    }
   }
   function previousPage() {
     setPage(page - 1);
@@ -54,7 +68,7 @@ export default function Story() {
   /*Play music as story begins*/
   function firstClick(data) {
     let playIt = document.getElementById("audioP");
-    /*playIt.play();*/
+    playIt.play();
     nextPage(data);
   }
 
@@ -84,7 +98,7 @@ export default function Story() {
                 id="refresh"
                 className="refresh"
                 onClick={() => {
-                  location.reload();
+                  setPage(0);
                 }}
               >
                 {" "}
@@ -100,6 +114,7 @@ export default function Story() {
                   /*previous button*/
                   return (
                     <button
+                      id="previous"
                       className="previous"
                       onClick={() => {
                         previousPage(data);
@@ -121,6 +136,7 @@ export default function Story() {
                   /*Next button*/
                   return (
                     <button
+                      id="next"
                       className="next"
                       onClick={() => {
                         nextPage(data);
@@ -140,37 +156,38 @@ export default function Story() {
           {/*End buttons*/}
           <div className="buttonWrap">
             {/*Author button*/}
-            <button
-              className="fin1"
+            <div
+              id="fin1"
+              className="fin1 fin"
               onClick={() => {
                 window.location = "/recherche#" + data.Auteur;
               }}
             >
               {"Découvrir d'autres textes de " + data.Auteur}
-            </button>
+            </div>
 
             {/*Back to short stories page*/}
-            <button
-              className="fin2"
+            <div
+              id="fin2"
+              className="fin2 fin"
               onClick={() => {
                 window.location = "/nouvelles";
               }}
             >
               Retour à l'accueil des nouvelles
-            </button>
+            </div>
           </div>
 
           <div id="audio">
-            {/*radio antenna*/}
-            <div className="antenna"></div>
             {/*Woofers styling*/}
             <div className="Radio Radio1"></div>
             <div className="Radio Radio2"></div>
-            <p>Ambiance Sonore</p>
+            {<p>Ambiance Sonore</p>}
             <audio id="audioP" src={audio} /*autoPlay*/ controls loop></audio>
           </div>
         </div>
       </div>
+      <audio className="hideAudio" id="kidz" src={kidz}></audio>
     </div>
   );
 
@@ -178,6 +195,16 @@ export default function Story() {
   function StoryTelling(data) {
     /*first page*/
     if (page == 0) {
+      let endButton1 = document.getElementById("fin1");
+      let endButton2 = document.getElementById("fin2");
+      if (
+        endButton1 != null ||
+        (endButton1 != undefined && endButton2 != null) ||
+        endButton2 != undefined
+      ) {
+        endButton1.style.visibility = "hidden";
+        endButton2.style.visibility = "hidden";
+      }
       return (
         <div className="middle">
           <div className="storyText">
@@ -196,22 +223,24 @@ export default function Story() {
       );
     }
     /*All story pages*/
-    if (page >= 1 && page < 21) {
+    if (page >= 1 && page < 20) {
       return (
-        <div className="middle">
+        <div className="middle" id="middle">
           <div className="storyText ">
             {/*Page number*/}
-            <p className="pageNum">{"Page " + page + " / 21"}</p>
+            <p className="pageNum">{"Page " + page + " / 20"}</p>
             {/*Dynamic display of every paragraph from Json according to page*/}
             {(() => {
               if (page == 1) {
                 return data.P1.map((P, i) => (
-                  <h2 className="firstT" key={"P" + i}>
+                  <h2 className="blurIt" key={"P" + i}>
                     {P}
                   </h2>
                 ));
               }
               if (page == 2) {
+                playIt2();
+
                 return data.P2.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
               }
               if (page == 3) {
@@ -245,6 +274,8 @@ export default function Story() {
                 return data.P12.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
               }
               if (page == 13) {
+                /*document.querySelector('html').style.filter = 'invert(100%)'*/
+
                 return data.P13.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
               }
               if (page == 14) {
@@ -265,9 +296,6 @@ export default function Story() {
               if (page == 19) {
                 return data.P19.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
               }
-              if (page == 20) {
-                return data.P20.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-              }
             })()}
           </div>
         </div>
@@ -276,18 +304,25 @@ export default function Story() {
     {
       /*Check if this is the last page*/
     }
-    if (page == 21) {
+    if (page == 20) {
+      let endButton1 = document.getElementById("fin1");
+      let endButton2 = document.getElementById("fin2");
+      let arrowleft = document.getElementById("next");
+      let arrowright = document.getElementById("previous");
+      arrowleft.style.visibility = "hidden";
+      arrowright.style.visibility = "hidden";
+      endButton1.style.visibility = "visible";
+      endButton2.style.visibility = "visible";
       return (
         <div className="middle">
           {/*Page number*/}
-          <p className="pageNum">{"Page " + page + " / 21"}</p>
           <div className="storyText ">
-            {data.P21.map((P, i) => (
+            <p className="pageNum">{"Page " + page + " / 20"}</p>
+            {data.P20.map((P, i) => (
               /*Lasts paragraphs*/
               <h2 key={"P" + i}>{P}</h2>
             ))}
           </div>
-          }
         </div>
       );
     }

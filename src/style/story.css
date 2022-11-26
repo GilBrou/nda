@@ -14,9 +14,8 @@
   padding-top: 60px;
   display: flex;
   max-width: 100%;
-  /*overflow: hidden;*/
+  overflow: hidden;
   min-height: 100vh;
-  /*position: relative;*/
   align-items: center;
   flex-direction: column;
   /*background-size: cover !important;*/ /**********************CHECKit for responsive****************/
@@ -27,7 +26,6 @@
   background: url("./background/Brume2.webp"), var(--blackish);
   animation: animMuse 70s infinite alternate both !important;
 }
-
 /*Button general style*/
 .storyWrap button {
   outline: none;
@@ -40,11 +38,33 @@
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
   -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
   border-radius: 50%;
-  width: 65px !important;
+  width: 65px;
   height: 65px;
+  border-radius: 50%;
   transition: 0.2s;
   transform: scale(1);
+  background-color: var(--blackishBack3);
 }
+.fin {
+  font-size: 16px;
+  width: fit-content;
+  cursor: pointer;
+  border-radius: 13px;
+  background-color: var(--blackish);
+  border: solid 1px var(--greenish);
+  color: var(--whiteish) !important;
+  padding: 20px;
+  transition: 0.5s;
+  font-family: "poppins", cursive;
+}
+
+.fin:hover {
+  background: unset !important;
+  background-color: var(--greenish) !important;
+  border: solid 1px var(--blackish);
+  color: var(--blackish) !important;
+}
+
 .storyWrap button:hover {
   border: none;
   outline: none;
@@ -55,6 +75,9 @@
   border-color: var(--greenish) !important;
   background-color: unset !important;
   color: var(--whiteish);
+}
+.startButton {
+  background-color: unset !important;
 }
 .startButton p {
   margin: 0 -5px 0 0;
@@ -68,15 +91,9 @@
 .refresh {
   margin-top: 15px;
   font-size: 25px !important;
-  background-color: var(--blackishBack3);
-  border-radius: 50%;
-  
 }
 .goBack {
   font-size: 23px !important;
-  background-color: var(--blackishBack3);
-  border-radius: 50%;
-
 }
 .storyText2 {
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s both;
@@ -91,7 +108,6 @@
   padding-bottom: 20px;
   border-bottom: solid 1px var(--greenish);
   /*border-bottom: solid 1px var(--whiteish);*/
-
   text-shadow: 0px 0px 10px var(--blackish), 0px 0px 10px var(--whiteish);
 }
 /*Title*/
@@ -104,15 +120,14 @@
 /*Author and story text*/
 .storyText h2 {
   width: 100%;
-  font-size: 33px; /*********************CHECKit*******RESSPONSIVE*********/
+  font-size: 30px; /*********************CHECKit*******RESSPONSIVE*********/
   padding-top: 10px;
-  margin-bottom: 25px;
   border-bottom: unset;
   text-shadow: 0px 0px 10px var(--blackish);
   text-align: justify;
   font-family: "Cutive Mono", monospace;
-  letter-spacing: -5px !important;
-  /*background-color: blue;*/
+  letter-spacing: -3px !important;
+  line-height: 50px;
 }
 /*Author text*/
 .auteur {
@@ -123,15 +138,10 @@
   margin: 10px auto 50px auto !important;
   /*color: var(--greenish);*/
 }
-/*First paragraph entrance*/
-.firstT {
-  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
 /*Page numbers*/
 .pageNum {
   margin: 0px auto 100px auto !important;
-  /*color: var(--greenish);*/
+  color: var(--greenish); /**/
 }
 /*************CHECK RESPONSIVE**********/
 
@@ -156,13 +166,14 @@
   font-size: 25px;
   padding-bottom: 5px;
   text-shadow: 1px 1px 1px var(--blackish);
-  /*font-family: "Cutive Mono", monospace;*/
   font-family: "Satisfy", cursive;
-  /*color: var(--greenish);*/
+  /*
   color: #654532;
   color: #846f63;
   color: #ad9e95;
   color: #c3b0a4;
+  */
+  color: var(--greenish);
 }
 /*Woofer styling*/
 .Radio {
@@ -191,30 +202,12 @@ audio::-webkit-media-controls-panel {
   background-attachment: fixed;
   background-repeat: no-repeat !important;
   background-color: var(--greenish);
-  background: url("./background/wood2.webp"), #271910;
   background: url("./background/wood2.webp"), #ad9e95;
 }
-/*antenna styling*/
-.antenna {
-  display: none; /****************/
-  right: -30px;
-  margin: 0 30px -100px 0;
-  width: 100px;
-  top: -103px;
-  height: 200px;
-  position: absolute;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  background: url("./background/antenna.webp");
-  animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2.5s both;
-  -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2.5s both;
-}
+
 /*left and right Arrows*/
 .next,
 .previous {
-  /*color: var(--greenish);*/
   color: var(--whiteish) !important;
   transition: 0.5s;
   font-size: 35px !important;
@@ -224,6 +217,7 @@ audio::-webkit-media-controls-panel {
   background-color: unset !important;
   border: unset !important;
 }
+
 /*Arrows hover*/
 .next:hover,
 .previous:hover {
@@ -237,41 +231,36 @@ audio::-webkit-media-controls-panel {
   z-index: +1;
   visibility: hidden;
 }
-.left,
 .right {
-  width: 5%;
+  margin-right: 80px;
 }
+
 .middle {
   /*background-color: gold;*/
   display: flex;
   height: 100%;
-  width: 90%;
+  min-height: 650px;
+  /*
+  max-height: 650px;*/
+  /*flex-wrap: nowrap;*/
+  /*width: 70%;*/
+  width: 65%;
   justify-content: center;
 }
-
 /*Main part*/
 .storyText {
-  /*background-color: red;*/
-  width: 80%;
+  width: 100%;
   padding: 50px;
   flex-wrap: wrap;
   display: flex;
   flex-direction: column;
-  /*justify-content: center;*/
   align-items: center;
 }
-.storyText button {
-  width: fit-content;
-}
-/*DONE*/
-
 .top {
   display: flex;
   width: 100%;
   flex: 2;
-  /*justify-content: center;*/
 }
-
 .top2 {
   display: flex;
   width: 100%;
@@ -279,12 +268,10 @@ audio::-webkit-media-controls-panel {
   margin-top: 24px;
   align-items: center;
 }
-
 .bottom {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  /*justify-content: flex-end;*/
   justify-content: space-between;
   width: 100%;
   max-height: 200px;
@@ -298,7 +285,6 @@ audio::-webkit-media-controls-panel {
   flex-direction: column;
   align-items: center;
 }
-
 .buttonWrap {
   display: flex;
   justify-content: space-envenly;

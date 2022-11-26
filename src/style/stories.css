@@ -143,3 +143,74 @@
   letter-spacing: 0;
   border: solid 1px var(--greenish);
 }
+
+
+/*anims*/
+
+.blurIt {
+  -webkit-animation: text-blur-out 4s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2s both ;
+          animation: text-blur-out 4s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2s  both;
+}
+
+ /*animation text-blur-out*/
+
+@-webkit-keyframes text-blur-out {
+
+  0% {
+    -webkit-filter: blur(0.01);
+            filter: blur(0.01);
+  }
+  25% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+  }
+    50% {
+    -webkit-filter: blur(0.01);
+            filter: blur(0.01);  
+}
+   75% {
+    -webkit-filter: blur(0.01);
+            filter: blur(0.01);  
+}
+    100% {
+    -webkit-filter: blur(0.01);
+            filter: blur(0.01);  
+}
+
+
+
+}
+
+
+
+@keyframes text-blur-out {
+  0% {
+    -webkit-filter: blur(0.01);
+            filter: blur(0.01);
+  }
+  25% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+  }
+    50% {
+    -webkit-filter: blur(0.01);
+            filter: blur(0.01);  
+}
+   75% {
+    -webkit-filter: blur(0.01);
+            filter: blur(0.01);  
+}
+    100% {
+    -webkit-filter: blur(0.01);
+            filter: blur(0.01);  
+}
+
+
+
+}
+
+
+
+.hideAudio{
+  visibility: hidden;
+}
