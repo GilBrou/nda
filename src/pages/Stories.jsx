@@ -5,12 +5,20 @@ import { useState, useEffect } from "react";
 
 /***COMPONENTS***/
 import { DustAnim } from "../components/UniversAnim";
-import Data4 from "../data/story.json";
-import Data5 from "../data/story2.json";
-import Data6 from "../data/story3.json";
-
+import story1 from "../data/story.json";
+import story2 from "../data/story2.json";
+import story3 from "../data/story3.json";
+/*
+import story4 from "../data/story.json";
+import story5 from "../data/story2.json";
+import story6 from "../data/story3.json";
+import story7 from "../data/story.json";
+import story8 from "../data/story2.json";
+*/
 /***COMPONENT***/
 export default function Stories() {
+  let thoseStories = [story1, story2, story3/*, story4, story5, story6, story7, story8*/];
+
   /*DOM*/
   return (
     <div className="story0">
@@ -40,39 +48,19 @@ export default function Stories() {
           alt="Image d'étincelle"
         />{" "}
         <div className="cardWrapper">
-          <div className="StoryCard">
-            <p className="cardTitle">{Data4.Titre}</p>
-            <p className="cardAuthor">{"par " + Data4.Auteur}</p>
-          </div>
-          <div className="StoryCard">
-            <p className="cardTitle">{Data5.Titre}</p>
-            <p className="cardAuthor">{"par " + Data5.Auteur}</p>
-          </div>
-          <div className="StoryCard">
-            <p className="cardTitle">{Data6.Titre}</p>
-            <p className="cardAuthor">{"par " + Data6.Auteur}</p>
-          </div>
-          <div className="StoryCard">
-            <p className="cardTitle">{Data4.Titre}</p>
-            <p className="cardAuthor">{"par " + Data4.Auteur}</p>
-          </div>
-          <div className="StoryCard">
-            <p className="cardTitle">{Data4.Titre}</p>
-            <p className="cardAuthor">{"par " + Data4.Auteur}</p>
-          </div>
-          <div className="StoryCard">
-            <p className="cardTitle">{Data4.Titre}</p>
-            <p className="cardAuthor">{"par " + Data4.Auteur}</p>
-          </div>
-          <div className="StoryCard">
-            <p className="cardTitle">{Data4.Titre}</p>
-            <p className="cardAuthor">{"par " + Data4.Auteur}</p>
-          </div>
-          <div className="StoryCard">
-            <p className="cardTitle">{Data4.Titre}</p>
-            <p className="cardAuthor">{"par " + Data4.Auteur}</p>
-          </div>
-          
+          {thoseStories.map((story, i) => {
+            return (
+              <a href={"/nouvelle#" + story.Link} key={story.Titre + "Link"}>
+                <div className="StoryCard">
+                  <p className="cardTitle">{story.Titre}</p>
+                  <p className="cardAuthor">{"par " + story.Auteur}</p>
+                  <p className="readingTime">
+                    {"🕑 " + story.Time}
+                  </p>
+                </div>
+              </a>
+            );
+          })}
         </div>
       </div>
     </div>

@@ -52,18 +52,30 @@
   background-color: var(--whiteish);
 }
 /*refresh button*/
-.refresh {
-  top: 50px;
+.refresh,
+.goBack {
   left: 10px;
   width: 50px;
   height: 50px;
-  visibility: hidden;
   position: absolute;
   border-radius: 50%;
   padding: unset !important;
+  color: var(--greenish);
 }
-.refresh i {
-  font-size: 30px;
+.refresh:hover button,
+.goBack:hover button {
+  background-color: var(--greenish);
+}
+
+.refresh {
+  top: 80px;
+  visibility: hidden;
+  font-size: 25px !important;
+}
+
+.goBack {
+  top: 50px;
+  font-size: 23px !important;
 }
 /*Main part*/
 .storyText {
@@ -87,7 +99,7 @@
   font-size: 150px;
   width: fit-content;
   padding-bottom: 5px;
-  border-bottom: solid 1px var(--whiteish);
+  border-bottom: solid 1px var(--greenish);
   text-shadow: 0px 0px 10px var(--blackish), 0px 0px 10px var(--whiteish);
 }
 /*Title*/
@@ -99,7 +111,7 @@
 /*Author and story text*/
 .storyText h2 {
   width: 100%;
-  font-size: 35px; /*********************CHECKit*******RESSPONSIVE*********/
+  font-size: 34px; /*********************CHECKit*******RESSPONSIVE*********/
   padding-top: 10px;
   margin-bottom: 25px;
   border-bottom: unset;
@@ -123,6 +135,7 @@
 /*Page numbers*/
 .pageNum {
   margin: 0px auto 100px auto !important;
+  color: var(--greenish);
 }
 /*Audio player wrapper*/
 .audioWrap {
@@ -138,7 +151,7 @@
 #audio {
   position: relative;
   width: fit-content;
-  margin: 0 7px 7px 0;
+  margin: 0 20px 20px 0;
   height: fit-content;
   border-radius: 20px;
   padding: 20px 7px 7px 10px;
@@ -156,8 +169,9 @@
 #audio p {
   font-size: 20px;
   padding-bottom: 5px;
-  text-shadow: 1px 1px 1px gold;
+  text-shadow: 1px 1px 1px var(--blackish);
   font-family: "Cutive Mono", monospace;
+  color: var(--greenish);
 }
 /*Woofer styling*/
 .Radio {
@@ -185,16 +199,20 @@ audio::-webkit-media-controls-panel {
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat !important;
+  background-color: var(--greenish);
+  /*background: url("./background/wood2.webp"), var(--greenish);*/
   background: url("./background/wood2.webp"), #271910;
+
 }
 /*antenna styling*/
 .antenna {
-  right: 25px;
+  /*right: 25px;*/
+  margin: 0 30px -100px 0;
   z-index: -1;
   width: 100px;
-  bottom: 50px;
+  /*bottom: 50px;*/
   height: 200px;
-  position: absolute;
+  /*position: absolute;*/
   background-position: center;
   background-attachment: fixed;
   background-size: cover !important;
@@ -203,10 +221,10 @@ audio::-webkit-media-controls-panel {
   animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2.5s both;
   -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2.5s both;
 }
-
 /*left and right Arrows*/
 .next,
 .previous {
+  color: var(--greenish);
   transition: 0.5s;
   position: absolute;
   font-size: 35px !important;
@@ -227,7 +245,7 @@ audio::-webkit-media-controls-panel {
 .next:hover,
 .previous:hover {
   background-color: none !important;
-  color: var(--whiteish) !important;
+  color: var(--greenish) !important;
   transform: scale(1.25) !important;
 }
 

@@ -225,6 +225,19 @@ export default function Story() {
             <i className="fa fa-refresh" aria-hidden="true"></i>
           </button>
         </div>
+        {/*goBack button*/}
+        <div className="goBack">
+          <button
+            id="goBack"
+            className="goBack"
+            onClick={() => {
+              window.location = "/nouvelles";
+            }}
+          >
+            {" "}
+            <i className="fa fa-arrow-left" aria-hidden="true"></i>
+          </button>
+        </div>
         {/*all texts part*/}
         {StoryTelling(data)}
         {/*Audio player*/}
