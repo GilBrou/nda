@@ -13,6 +13,12 @@ import Data5 from "../data/story2.json";
 export default function Story() {
   /*********IF/ELSE AND URL PARAMS ..........************************TO*DO*********************/
 
+  /*
+  check effects and animations for text !!!!!!!!!!!!!!!!!!
+  also check story  text !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+*/
   /*define short story*/
   let data = Data4;
   let audio = MaBrume;

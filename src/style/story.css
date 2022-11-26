@@ -49,7 +49,7 @@
   text-decoration: none;
   transform: scale(1.03);
   color: var(--blackish);
-  background-color: var(--whiteish);
+  background-color: var(--greenish);
 }
 /*refresh button*/
 .refresh,
@@ -111,7 +111,7 @@
 /*Author and story text*/
 .storyText h2 {
   width: 100%;
-  font-size: 34px; /*********************CHECKit*******RESSPONSIVE*********/
+  font-size: 33px; /*********************CHECKit*******RESSPONSIVE*********/
   padding-top: 10px;
   margin-bottom: 25px;
   border-bottom: unset;
@@ -135,7 +135,7 @@
 /*Page numbers*/
 .pageNum {
   margin: 0px auto 100px auto !important;
-  color: var(--greenish);
+  /*color: var(--greenish);*/
 }
 /*Audio player wrapper*/
 .audioWrap {
