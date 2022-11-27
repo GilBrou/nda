@@ -27,7 +27,8 @@ export default function Stories() {
         />{" "}
         <h2>
           Retrouvez dans cette section des nouvelles gratuites agrémentées
-          d'effets visuels et d'ambiances sonores favorisant l'immersion.
+          d'effets visuels et d'ambiances sonores.
+          L'écoute au casque est conseillée pour une meilleure immersion.
         </h2>
         <img
           fetchpriority="high"

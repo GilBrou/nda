@@ -8,6 +8,8 @@ import { Redirect } from "react-router";
 import { DustAnim } from "../components/UniversAnim";
 import MaBrume from "../audio/MaBrume.wav";
 import kidz from "../audio/kidz.wav";
+import Bal from "../audio/Bal.mp3";
+import Jazz from "../audio/Jazz.mp3";
 import Lilith from "../audio/Lilith.flac";
 import Somber from "../audio/Somber.wav";
 
@@ -22,15 +24,132 @@ import Data6 from "../data/story3.json";
 
 /***COMPONENT***/
 
-
-                      /*style and props this*/
+/*style and props this*/
 export default function Story() {
-  function playIt2() {
-    let playIt2 = document.getElementById("kidz");
+  /*play secondary audio*/
+  function playIt2(sound) {
+    sound.volume = 0.06;
     setTimeout(() => {
-      /*console.log("Delayed for 1 second.");*/
-      /*playIt2.play();*/
-    }, 3000);
+      sound.play();
+    }, 2000);
+    setTimeout(() => {
+      sound.pause();
+    }, 10000);
+  }
+
+  function playIt3(sound) {
+    let playIt = document.getElementById("audioP");
+    playIt.volume = 0.7;
+    sound.volume = 0.1;
+    setTimeout(() => {
+      sound.play();
+    }, 300);
+    setTimeout(() => {
+      let playIt = document.getElementById("audioP");
+      sound.play();
+      playIt.volume = 0.5;
+    }, 500);
+    setTimeout(() => {
+      let playIt = document.getElementById("audioP");
+      sound.pause();
+      playIt.volume = 1;
+    }, 10000);
+  }
+
+  /*stop secondary audio*/
+  function stopIt2(sound) {
+    sound.volume = 0.03;
+    setTimeout(() => {
+      sound.volume = 0.01;
+      sound.pause();
+    }, 500);
+  }
+
+  /*stop secondary audio*/
+  function fadeAll() {
+    document.getElementById("storyWrap").style.filter = "brightness(0)";
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(10%)";
+    }, 50);
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(20%)";
+    }, 75);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(30%)";
+    }, 100);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(40%)";
+    }, 125);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(50%)";
+    }, 150);
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(60%)";
+    }, 175);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(70%)";
+    }, 200);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(80%)";
+    }, 225);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(90%)";
+    }, 250);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(100%)";
+    }, 275);
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(80%)";
+    }, 300);
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(60%)";
+    }, 325);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(40%)";
+    }, 350);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(60%)";
+    }, 375);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(80%)";
+    }, 400);
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(100%)";
+    }, 425);
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "unset";
+    }, 450);
+  }
+
+  function flash() {
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "invert(100%)";
+    }, 4000);
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "unset";
+    }, 4070);
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "invert(100%)";
+    }, 4095);
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "unset";
+    }, 4105);
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "invert(100%)";
+    }, 4120);
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "unset";
+    }, 4170);
   }
 
   /*define short story*/
@@ -62,9 +181,6 @@ export default function Story() {
       setPage(page + 1);
     }
   }
-  function previousPage() {
-    setPage(page - 1);
-  }
   /*Play music as story begins*/
   function firstClick(data) {
     let playIt = document.getElementById("audioP");
@@ -75,7 +191,7 @@ export default function Story() {
   /*DOM*/
   return (
     <div className="story">
-      <div className="storyWrap">
+      <div className="storyWrap" id="storyWrap">
         {DustAnim()}
         <div className="top">
           <div className="left0">
@@ -98,7 +214,8 @@ export default function Story() {
                 id="refresh"
                 className="refresh"
                 onClick={() => {
-                  setPage(0);
+                  /*setPage(0);*/
+                  location.reload();
                 }}
               >
                 {" "}
@@ -108,25 +225,6 @@ export default function Story() {
           </div>
 
           <div className="top2">
-            <div className="left">
-              {(() => {
-                if (page > 0) {
-                  /*previous button*/
-                  return (
-                    <button
-                      id="previous"
-                      className="previous"
-                      onClick={() => {
-                        previousPage(data);
-                      }}
-                    >
-                      <i className="fa fa-chevron-left" aria-hidden="true"></i>
-                    </button>
-                  );
-                }
-              })()}
-            </div>
-
             {/*all texts part*/}
             {StoryTelling(data)}
 
@@ -183,11 +281,29 @@ export default function Story() {
             <div className="Radio Radio1"></div>
             <div className="Radio Radio2"></div>
             {<p>Ambiance Sonore</p>}
-            <audio id="audioP" src={audio} /*autoPlay*/ controls loop></audio>
+            <audio
+              id="audioP"
+              className="audio"
+              src={audio}
+              /*autoPlay*/ controls
+              loop
+            ></audio>
           </div>
         </div>
       </div>
-      <audio className="hideAudio" id="kidz" src={kidz}></audio>
+      <audio
+        className="hideAudio"
+        className="audio"
+        id="kidz"
+        src={kidz}
+      ></audio>
+      <audio className="hideAudio" className="audio" id="Bal" src={Bal}></audio>
+      <audio
+        className="hideAudio"
+        className="audio"
+        id="Jazz"
+        src={Jazz}
+      ></audio>
     </div>
   );
 
@@ -205,6 +321,7 @@ export default function Story() {
         endButton1.style.visibility = "hidden";
         endButton2.style.visibility = "hidden";
       }
+
       return (
         <div className="middle">
           <div className="storyText">
@@ -239,11 +356,13 @@ export default function Story() {
                 ));
               }
               if (page == 2) {
-                playIt2();
-
+                let sound = document.getElementById("kidz");
+                playIt2(sound);
                 return data.P2.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
               }
               if (page == 3) {
+                let sound = document.getElementById("kidz");
+                stopIt2(sound);
                 return data.P3.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
               }
               if (page == 4) {
@@ -253,12 +372,25 @@ export default function Story() {
                 return data.P5.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
               }
               if (page == 6) {
-                return data.P6.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+                fadeAll();
+                return data.P6.map((P, i) => (
+                  <h2 className="fade" key={"P" + i}>
+                    {P}
+                  </h2>
+                ));
               }
               if (page == 7) {
+                let sound = document.getElementById("Bal");
+                let sound2 = document.getElementById("Jazz");
+                playIt2(sound);
+                playIt3(sound2);
                 return data.P7.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
               }
               if (page == 8) {
+                let sound = document.getElementById("Bal");
+                let sound2 = document.getElementById("Jazz");
+                stopIt2(sound);
+                stopIt2(sound2);
                 return data.P8.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
               }
               if (page == 9) {
@@ -274,8 +406,7 @@ export default function Story() {
                 return data.P12.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
               }
               if (page == 13) {
-                /*document.querySelector('html').style.filter = 'invert(100%)'*/
-
+                flash();
                 return data.P13.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
               }
               if (page == 14) {
@@ -307,9 +438,7 @@ export default function Story() {
     if (page == 20) {
       let endButton1 = document.getElementById("fin1");
       let endButton2 = document.getElementById("fin2");
-      let arrowleft = document.getElementById("next");
-      let arrowright = document.getElementById("previous");
-      arrowleft.style.visibility = "hidden";
+      let arrowright = document.getElementById("next");
       arrowright.style.visibility = "hidden";
       endButton1.style.visibility = "visible";
       endButton2.style.visibility = "visible";

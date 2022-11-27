@@ -206,8 +206,8 @@ audio::-webkit-media-controls-panel {
 }
 
 /*left and right Arrows*/
-.next,
-.previous {
+.next/*,
+.previous */ {
   color: var(--whiteish) !important;
   transition: 0.5s;
   font-size: 35px !important;
@@ -220,7 +220,7 @@ audio::-webkit-media-controls-panel {
 
 /*Arrows hover*/
 .next:hover,
-.previous:hover {
+/*.previous:hover */ {
   transform: scale(1.25) !important;
   color: var(--greenish) !important;
 }
@@ -288,4 +288,68 @@ audio::-webkit-media-controls-panel {
 .buttonWrap {
   display: flex;
   justify-content: space-envenly;
+}
+
+/*anims*/
+
+.blurIt {
+  -webkit-animation: text-blur-out 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s
+    both;
+  animation: text-blur-out 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s both;
+}
+
+.hideAudio {
+  visibility: hidden;
+}
+.fade {
+  -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s both;
+  animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s both;
+}
+
+/*anims details*/
+
+/*animation text-blur-out*/
+@-webkit-keyframes text-blur-out {
+  0% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  25% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+  }
+  50% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  75% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  100% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+}
+@keyframes text-blur-out {
+  0% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  25% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+  }
+  50% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  75% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  100% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
 }
