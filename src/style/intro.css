@@ -73,7 +73,8 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 15px 50px;
-  align-items: center;
+  /*align-items: center;*//**/
+  height: 100%;
 }
 .introBooks a {
   text-decoration: none;
