@@ -1,103 +1,69 @@
 /***STORIES***/
+/**************************Sections***********************************/
 .story0 {
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  overflow: hidden;
 }
 /*Main Wrap*/
 .storyWrap2 {
-  padding: 0 50px 0 50px;
+  padding: 0 25px 0 25px;
   z-index: -1;
-  width: 100vw;
-  padding-top: 12vh;
-  padding-bottom: 12vh;
-  height: 100%;
+  /*width: 100vw;*/
+  padding: 12vh 0 5vh 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /*background-size: cover !important;*/ /**********************CHECKit for responsive****************/
+  background-size: cover;
   background-position: center;
   background-attachment: fixed !important;
   background-repeat: no-repeat !important;
-  background: url("./background/Brume2.webp"), var(--blackish);
+  background: url("./background/Brume.webp"), var(--blackish);
   font-family: "Cutive Mono", monospace;
   letter-spacing: -4px !important;
 }
-/*Title*/
-.storyWrap2 h1 {
-  text-align: left;
-  width: fit-content;
-  padding-bottom: 12px;
-  margin: 0;
-  margin-left: 220px;
-  font-size: 70px;
-  /*border-bottom: solid 1px var(--whiteish);*/
-  /*text-shadow: 0px 0px 10px var(--blackish), 0px 0px 10px var(--whiteish);*/
-  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
-  -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
-  letter-spacing: 0px !important;
-  text-transform: uppercase;
-  text-shadow: 0px 0px 15px var(--blackish);
+.top1,
+.top2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
-/*details text*/
-.storyWrap2 h2 {
-  text-align: left;
-  width: 70% !important;
-  margin-left: 350px;
-  font-size: 35px;
-  text-align: center !important;
-  text-shadow: 0px 0px 10px var(--blackish);
-  text-align: justify;
-  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1.5s both;
-  -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1.5s both;
+.top1 {
+  margin: 0 auto;
+  width: 100%;
 }
-/*wave img*/
-.wave {
-  max-width: 220px;
-  position: absolute;
-  right: 450px;
-  top: 80px;
-  transform: rotate(2deg);
-}
-/*Spark img 1*/
-.spark {
-  max-width: 500px;
-  position: absolute;
-  left: -300px;
-  top: 0;
-}
-/*Spark img 2*/
-.spark2 {
-  max-width: 800px;
-  position: absolute;
-  left: -450px;
-  top: -80px;
-  -webkit-transform: scaleX(-1.5);
-  transform: scaleX(-1.5);
+.top2 {
+  width: 90%;
+  margin: 0 auto;
 }
 /*Cards wrapper*/
 .cardWrapper {
-  /*margin-top: 50px;*/
-  margin-top: 150px;
-
+  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
+  -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   padding: 5px;
-  justify-content: center;
+  justify-content: space-around;
 }
-/*Story cards*/
-.cardWrapper a {
-  text-decoration: none;
+/**************************Images************************************/
+.wave {
+  width: 150px;
+  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1.2s both;
+  -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1.2s both;
+  mix-blend-mode: overlay;
 }
-.StoryCard:hover {
-  transform: scale(1.02);
+.cog {
+  height: 120px;
+  mix-blend-mode: overlay;
 }
+/**************************Cards************************************/
 .StoryCard {
   transform: scale(1);
   transition: 0.5s;
   margin: 25px;
   text-align: center !important;
-  /*padding: 30px 20px 20px 20px;*/
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -109,26 +75,11 @@
   position: relative;
   box-shadow: 3px 3px 10px 2px var(--blackish);
 }
-/*Story Title*/
-.cardTitle {
-  font-size: 85px;
-  font-family: "Amatic SC", cursive;
-  width: fit-content;
-  border-bottom: solid 1px var(--greenish);
-  border-bottom: solid 1px var(--whiteish);
-  text-shadow: 0px 0px 10px var(--blackish);
+.cardWrapper a {
+  text-decoration: none;
 }
-/*Story Author*/
-.cardAuthor {
-  font-size: 45px; /*********************CHECKit*******RESSPONSIVE*********/
-  padding-top: 10px;
-  margin-bottom: 25px;
-  border-bottom: unset;
-  padding: 0;
-  text-shadow: 0px 0px 10px var(--blackish);
-  text-align: justify;
-  letter-spacing: -5px !important;
-  color: var(--greenish);
+.StoryCard:hover {
+  transform: scale(1.02);
 }
 /*Story reading time*/
 .readingTime {
@@ -142,4 +93,47 @@
   font-family: poppins;
   letter-spacing: 0;
   border: solid 1px var(--greenish);
+}
+/***************************Texts*************************************/
+/*Title*/
+.storyWrap2 h1 {
+  padding-bottom: 12px;
+  margin: 0 50px 50px 50px;
+  font-size: 70px;
+  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
+  -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
+  letter-spacing: 0px !important;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 15px var(--blackish);
+  align-self: center;
+  color: var(--greenish);
+  border-bottom: solid 1px var(--whiteish);
+}
+/*details text*/
+.storyWrap2 h2 {
+  margin: auto;
+  font-size: 32px;
+  text-shadow: 0px 0px 10px var(--blackish);
+  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1.5s both;
+  -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1.5s both;
+}
+/*Story Title*/
+.cardTitle {
+  font-size: 80px;
+  font-family: "Amatic SC", cursive;
+  width: fit-content;
+  border-bottom: solid 1px var(--greenish);
+  border-bottom: solid 1px var(--whiteish);
+  text-shadow: 0px 0px 10px var(--blackish);
+}
+/*Story Author*/
+.cardAuthor {
+  font-size: 40px;
+  margin-bottom: 25px;
+  border-bottom: unset;
+  padding: 0;
+  text-shadow: 0px 0px 10px var(--blackish);
+  text-align: justify;
+  letter-spacing: -5px !important;
+  color: var(--greenish);
 }

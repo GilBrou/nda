@@ -13,7 +13,7 @@ import Jazz from "../audio/Jazz.mp3";
 import Lilith from "../audio/Lilith.flac";
 import Somber from "../audio/Somber.wav";
 
-import data from "../data/story.json";
+import data from "../data/story1.json";
 
 /*
   check effects and animations for text !!!!!!!!!!!!!!!!!!
@@ -177,6 +177,7 @@ export default function Story() {
     console.log(soundButton);
     if (musicToggle && soundButton != null && soundButton != undefined) {
       soundButton.style.padding = "0 5px 0 0";
+      soundButton.style.color = "var(--greenish)";
       return <i className="fa fa-music" aria-hidden="true"></i>;
     } else if (
       !musicToggle &&
@@ -184,7 +185,8 @@ export default function Story() {
       soundButton != undefined
     ) {
       soundButton.style.padding = "0";
-      return <i className="fa fa-times-circle" aria-hidden="true"></i>;
+      soundButton.style.color = "var(--whiteish)";
+      return <i className="fa fa-times" aria-hidden="true"></i>;
     }
   }
   /*toggle Music Icon*/

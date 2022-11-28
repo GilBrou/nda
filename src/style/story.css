@@ -20,21 +20,19 @@
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
-  background-size: cover !important; /**********************CHECKit for responsive****************/
+  background-size: cover !important;
   justify-content: center;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat !important;
-  background: url("./background/Brume2.webp"), var(--blackish);
+  background: url("./background/Brume.webp"), var(--blackish);
   animation: animMuse 70s infinite alternate both !important;
 }
 /*Top Section*/
 .top {
   display: flex;
-  /*justify-content: space-between;*/
   width: 100vw;
   height: 93vh;
-  /*background-color: gold;*/
 }
 /**************Left*/
 .left {
@@ -45,7 +43,6 @@
 }
 /*Middle Section*/
 .middle {
-  /*background-color: seagreen;*/
   padding: 50px;
   width: 75%;
   height: 100%;
@@ -57,7 +54,6 @@
 }
 /**************Right*/
 .right {
-  /*background-color: red;*/
   right: 0;
   top: 50%;
   display: flex;
@@ -67,13 +63,6 @@
 }
 /*Bottom Section*/
 .bottom {
-  /*margin-top: 50px;*/
-  /*width: 100%;*/
-  /*display: flex;*/
-  /*align-items: center;*/
-  /*justify-content: center;*/
-  /*align-self: flex-end;*/
-  /*background-color: red;*/
   position: absolute;
   bottom: 20px;
 }
@@ -150,6 +139,7 @@
 .soundButton {
   font-size: 30px !important;
   padding: 0 5px 0 0;
+  position: relative;
 }
 /*Right Arrows*/
 .next {
@@ -177,7 +167,6 @@
   width: fit-content;
   padding-bottom: 20px;
   border-bottom: solid 1px var(--greenish);
-  /*border-bottom: solid 1px var(--whiteish);*/
   text-shadow: 0px 0px 10px var(--blackish), 0px 0px 10px var(--whiteish);
 }
 /*Title*/
@@ -185,7 +174,6 @@
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
   -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
   font-family: "Amatic SC", cursive;
-  /*margin-top: 120px !important;*/
 }
 /*Author and story text*/
 .middle h2 {
@@ -206,14 +194,12 @@
   text-align: center !important;
   font-size: 50px !important;
   margin: 10px auto 50px auto !important;
-  /*color: var(--greenish);*/
 }
 /*Page numbers*/
 .pageNum {
   position: absolute;
   top: 120px;
-  /*margin: 0px auto 100px auto !important;*/
-  color: var(--greenish); /**/
+  color: var(--greenish);
 }
 /**************************Animation DETAILS**********************************/
 .blurIt {

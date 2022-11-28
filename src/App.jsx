@@ -15,7 +15,7 @@ import Data00 from "./data/data.json";
 
 /***PAGES***/
 import Homepage from "./pages/Homepage";
-import Story from "./pages/Story";
+import StoryBrume from "./pages/StoryBrume";
 import Stories from "./pages/Stories";
 import Createurs from "./pages/Createurs";
 import ThisUniverse from "./pages/ThisUniverse";
@@ -103,11 +103,11 @@ export default function App() {
             </Route>
             {/*STORIES*/}
             <Route exact path="/nouvelles">
-              <Stories />
+              <Stories data={Data2}/>
             </Route>
             {/*STORY*/}
-            <Route exact path="/nouvelle">
-              <Story />
+            <Route exact path={"/ma-brume"}>
+              <StoryBrume />
             </Route>
             {/*UNIVERS*/}
             <Route
