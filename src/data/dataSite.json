@@ -12,7 +12,8 @@
     "Tiphs": "https://www.tiphs-art.com/"
   },
   "stories": {
-    "titre": "Bibliothèque augmentée",
+    "titre0": "Bibliothèque augmentée",
+    "titre": "Lecture augmentée",
     "argu": "Retrouvez dans cette section des nouvelles gratuites agrémentées d'animations et d'une ambiance sonore. L'utilisation du casque est conseillée pour une meilleure immersion."
   },
 
@@ -240,7 +241,7 @@
     {
       "name": "Frédérique",
       "name2": "Badoux",
-      "Lien": "https://www.facebook.com/FredLBadoux/",
+      "Lien": "https://www.facebook.com/FredLBadoux",
       "credits": "",
       "job": "author"
     },
@@ -354,14 +355,14 @@
     {
       "name": "Wilfried",
       "name2": "Renaut",
-      "Lien": "",
-      "credits": "",
+      "Lien": "https://www.instagram.com/wilfriedrenaut/",
+      "credits": "© Mathieu Quéré",
       "job": "author"
     },
     {
       "name": "Patrice",
       "name2": "Quélard",
-      "Lien": "",
+      "Lien": "https://patricequelard.wordpress.com/",
       "credits": "",
       "job": "author"
     },

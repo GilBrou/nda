@@ -14,6 +14,8 @@
   "menu": {
     "menu1": "Accueil",
     "menu2": "Univers ▾",
+    "menu2b": "Bibliothèque augmentée",
+    "menu2b": "Lecture augmentée",
     "menu3": "Créateurs",
     "menu4": "À propos",
     "menu5": "Contact ▾",
@@ -28,7 +30,8 @@
     "menu1L": "/accueil",
     "menu2L": "/nos-univers",
     "menu3L": "/createurs",
-    "menu4L": "/boutique"
+    "menu4L": "/boutique",
+    "menu5L": "/nouvelles"
 
   },
   "UimgLinks": {

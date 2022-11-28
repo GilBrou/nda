@@ -37,22 +37,27 @@ export default function Stories(data) {
         <div className="cardWrapper">
           {thoseStories.map((story, i) => {
             return (
-              <a href={"/" + story.Link} key={story.Titre + "Link" + i}>
-                <div className="StoryCard">
-                  <p className="cardTitle">{story.Titre}</p>
-                  <p className="cardAuthor">{story.Auteur}</p>
-                  <p className="readingTime">{"🕑 " + story.Time}</p>
-                  <div className="tagWrap">
-                    {story.tags.map((tag, i) => {
-                      return (
-                        <p key={"tagStory" + i} className="newTag newTag2">
-                          {tag}
-                        </p>
-                      );
-                    })}
+              {
+                /*<a href={"/" + story.Link} key={story.Titre + "Link" + i}>*/
+              },
+              (
+                <a href="/nouvelles">
+                  <div className="StoryCard">
+                    <p className="cardTitle">{story.Titre}</p>
+                    <p className="cardAuthor">{story.Auteur}</p>
+                    <p className="readingTime">{"🕑 " + story.Time}</p>
+                    <div className="tagWrap">
+                      {story.tags.map((tag, i) => {
+                        return (
+                          <p key={"tagStory" + i} className="newTag newTag2">
+                            {tag}
+                          </p>
+                        );
+                      })}
+                    </div>
                   </div>
-                </div>
-              </a>
+                </a>
+              )
             );
           })}
         </div>

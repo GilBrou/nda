@@ -27,6 +27,7 @@ export default function Createurs(data) {
   function tryAuth(team, i) {
     /*creator card linked to books if creator is an author*/
     if (team.job.includes("aut")) {
+      /*console.log(team.name + " " + team.name2)*/
       /*creator card template if creator lacks surname*/
       if (team.name2 != "") {
         return (
@@ -97,6 +98,8 @@ export default function Createurs(data) {
     } else {
       /*creator card template if creator isn't an author*/
       /*creator card template if creator lacks surname*/
+      /*console.log(team.name + " " + team.name2)*/
+
       if (team.name2 != "") {
         return (
           <div
