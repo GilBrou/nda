@@ -41,7 +41,7 @@ export default function Stories(data) {
                 /*<a href={"/" + story.Link} key={story.Titre + "Link" + i}>*/
               },
               (
-                <a href="/nouvelles">
+                <a href="/nouvelles" key={story.Titre + "Link" + i}>
                   <div className="StoryCard">
                     <p className="cardTitle">{story.Titre}</p>
                     <p className="cardAuthor">{story.Auteur}</p>

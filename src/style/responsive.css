@@ -41,7 +41,7 @@
 	nav li a,
 	nav li,
 	nav div {
-		font-size: 16px;
+		font-size: 12px;
 	}
 	.creator a::before {
 		color: white !important;
@@ -103,6 +103,13 @@
 	body,
 	html {
 		background-position: 40% center !important;
+	}
+	nav p,
+	nav button p,
+	nav li a,
+	nav li,
+	nav div {
+		font-size: 15px;
 	}
 }
 

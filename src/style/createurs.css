@@ -57,10 +57,11 @@
   opacity: 0.8;
   background-color: var(--blueish0);
   height: 100%;
-  border-radius: 10px 0 0 10px;
+  border-radius: 0 10px 10px  0 ;
   box-shadow: 0px 0px 3px 2px var(--blackish);
   transition: 0.3s;
   z-index: 2;
+  transform: rotate(-180deg);
 }
 
 /* under card infos */
