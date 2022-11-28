@@ -210,9 +210,17 @@
 .hideAudio {
   display: none;
 }
-.fade {
-  -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s both;
-  animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s both;
+.fadeIt {
+  -webkit-animation: fade-in 6s;
+  animation: fade-in 6s;
+}
+.smoky {
+  background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+  /*filter: grayscale(100%) brightness(130%);*/
+  filter: grayscale(100%) brightness(115%);
+  color: var(--whiteishTrans);
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
 }
 
 /**************************Animation**********************************/

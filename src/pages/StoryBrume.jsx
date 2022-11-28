@@ -103,6 +103,37 @@ export default function Story() {
       stopIt2(sound);
     }, 9000);
   }
+  /*play secondary music*/
+
+  function playIt3(sound) {
+    let sound0 = document.getElementById("audioP");
+    sound.volume = 0.01;
+    sound0.volume = 0.9;
+    setTimeout(() => {
+      sound.play();
+      sound0.volume = 0.8;
+    }, 500);
+    setTimeout(() => {
+      sound.volume = 0.03;
+      sound0.volume = 0.6;
+    }, 750);
+    setTimeout(() => {
+      sound.volume = 0.05;
+      sound0.volume = 0.6;
+    }, 1000);
+    setTimeout(() => {
+      sound.volume = 0.08;
+      sound0.volume = 0.6;
+    }, 1250);
+    setTimeout(() => {
+      sound.volume = 0.1;
+    }, 1500);
+    setTimeout(() => {
+      sound.volume = 0.1;
+      sound0.volume = 0.5;
+      stopIt2(sound);
+    }, 9000);
+  }
   /*stop secondary audio*/
   function stopIt2(sound) {
     sound.volume = 0.07;
@@ -116,6 +147,127 @@ export default function Story() {
       sound.volume = 0.01;
       sound.pause();
     }, 1000);
+  }
+
+  /*fade all anim*/
+  function fadeAll() {
+    document.getElementById("storyWrap").style.filter = "brightness(0)";
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(10%)";
+    }, 100);
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(20%)";
+    }, 125);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(30%)";
+    }, 150);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(40%)";
+    }, 175);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(50%)";
+    }, 200);
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(60%)";
+    }, 225);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(70%)";
+    }, 250);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(80%)";
+    }, 275);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(90%)";
+    }, 300);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(100%)";
+    }, 325);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(10%)";
+    }, 450);
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(20%)";
+    }, 500);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(30%)";
+    }, 475);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(40%)";
+    }, 500);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(50%)";
+    }, 525);
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(60%)";
+    }, 550);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(70%)";
+    }, 575);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(80%)";
+    }, 600);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(90%)";
+    }, 625);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(100%)";
+    }, 650);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(10%)";
+    }, 775);
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(20%)";
+    }, 785);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(30%)";
+    }, 795);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(40%)";
+    }, 805);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(50%)";
+    }, 815);
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(60%)";
+    }, 825);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(70%)";
+    }, 835);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(80%)";
+    }, 845);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(90%)";
+    }, 855);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(100%)";
+    }, 865);
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "unset";
+    }, 870);
   }
 
   /*DOM*/
@@ -169,7 +321,7 @@ export default function Story() {
 
           {/*all texts part*/}
           {(() => {
-            /*first page*/
+            /*Story HomePage*/
             /**********************Story HomePage********************************/
             if (page == 0) {
               return (
@@ -197,11 +349,16 @@ export default function Story() {
                   {(() => {
                     /**********************Page1********************************/
                     if (page == 1) {
-                      return data.P1.map((P, i) => (
-                        <h2 className="blurIt" key={"P" + i}>
-                          {P}
-                        </h2>
-                      ));
+                      return (
+                        <div>
+                          <h2 className="blurIt" key={"P" + 1}>
+                            {data.P1[0]}
+                          </h2>
+                          <h2 className="blurIt" key={"P" + 2}>
+                            {data.P1[1]}
+                          </h2>
+                        </div>
+                      );
                     }
                     /**********************Page2********************************/
                     if (page == 2) {
@@ -214,7 +371,13 @@ export default function Story() {
                     }
                     /**********************Page3********************************/
                     if (page == 3) {
-                      return data.P3.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+                      let sound = document.getElementById("Kidz");
+                      stopIt2(sound);
+                      return data.P3.map((P, i) => (
+                        <h2 className="smoky" key={"P" + i}>
+                          {P}
+                        </h2>
+                      ));
                     }
                     /**********************Page4********************************/
                     if (page == 4) {
@@ -227,29 +390,31 @@ export default function Story() {
                     /**********************Page6********************************/
                     if (page == 6) {
                       fadeAll();
-                      return data.P6.map((P, i) => (
-                        <h2 className="fade" key={"P" + i}>
-                          {P}
-                        </h2>
-                      ));
+                      return (
+                        <div className="fadeIt">
+                          {(() => {
+                            return data.P6.map((P, i) => (
+                              <h2 key={"P" + i}>
+                                {P}
+                              </h2>
+                            ));
+                          })()}
+                        </div>
+                      );
                     }
                     /**********************Page7********************************/
                     if (page == 7) {
-                      /*
-                      let sound = document.getElementById("Bal");
-                      let sound2 = document.getElementById("Jazz");
-                      playIt2(sound);
-                      playIt3(sound2);*/
+                      let sound = document.getElementById("Jazz");
+                      if (musicToggle) {
+                        playIt3(sound);
+                      }
                       return data.P7.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
                     }
                     /**********************Page8********************************/
                     if (page == 8) {
-                      /*
-                      let sound = document.getElementById("Bal");
-                      let sound2 = document.getElementById("Jazz");
+                      let sound = document.getElementById("Jazz");
                       stopIt2(sound);
-                      stopIt2(sound2);*/
-                      return data.P8.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+                      return data.P8.map((P, i) => <h2 className="smoky" key={"P" + i}>{P}</h2>);
                     }
                     /**********************Page9********************************/
                     if (page == 9) {
@@ -259,6 +424,8 @@ export default function Story() {
                     if (page == 10) {
                       return data.P10.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
                     }
+                    /*RESTART HERE !!!!!!!!!!ZOOM background (mur)!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
                     /**********************Page11********************************/
                     if (page == 11) {
                       return data.P11.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
@@ -270,7 +437,6 @@ export default function Story() {
                     /**********************Page13
                      ********************************/
                     if (page == 13) {
-                      flash();
                       return data.P13.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
                     }
                     /**********************Page14********************************/
@@ -366,7 +532,7 @@ export default function Story() {
       </div>
       <audio id="audioP" className="audio" src={audio} loop></audio>
       <audio className="hideAudio audio" id="Kidz" src={kidz}></audio>
-      <audio className="hideAudio" className="audio" id="Bal" src={Bal}></audio>
+      <audio className="hideAudio audio" id="Bal" src={Bal}></audio>
       <audio className="hideAudio audio" id="Jazz" src={Jazz}></audio>
       <ReactTooltip
         id="TipSound"
