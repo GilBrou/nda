@@ -15,8 +15,8 @@ export default function Univers(data) {
   /*DOM*/
   return (
     <div className="univers">
-      <div className="container">
-        <div className="slideshow">
+      <div className="container" >
+        <div className="slideshow" >
           {/*Dynamic creation from Json data*/}
           {data.data2.univers.map(
             (univers, i) => (

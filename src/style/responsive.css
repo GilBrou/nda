@@ -202,18 +202,20 @@
 	}
 	.cardTitle {
 		margin-top: 15px;
-		font-size: 45px !important;
+		font-size: 60px !important;
 		padding-bottom: 15px;
 	}
 	.cardAuthor {
-		font-size: 35px !important;
+		font-size: 30px !important;
 		text-align: center !important;
 	}
 	.StoryCard {
 		padding: 10px !important;
 	}
+	.newTag2 {
+		font-size: 15px !important;
+	}
 }
-
 /**********425************/
 @media (max-width: 425px) {
 	.react-responsive-modal-modal {

@@ -62,7 +62,7 @@ export default function Search(data) {
   /***DOM***/
   return (
     <div id="thisSearch" className="text-center search">
-      <div className="container text-center">
+      <div className="container text-center" id="thisToggle">
         <div className="row text-center justify-content-center">
           <h1 className="targetH1">{target}</h1>
           {checkBookList()}

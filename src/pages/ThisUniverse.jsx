@@ -24,7 +24,7 @@ export default function ThisUniverse(data) {
     <div id="thisUniverse" className="text-center">
       {SetBackground()}
       {/*Select Title and Intro paragraph according to selected universe*/}
-      <div className="container text-center">
+      <div className="container text-center" id="thisToggle">
         {(() => {
           let props = data.data2.univers;
           for (let i in props) {

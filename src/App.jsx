@@ -8,7 +8,6 @@ import axios from "axios";
 
 /***COMPONENTS***/
 import Header from "./components/Header";
-/*import Footer from "./components/Footer";*/
 import { DustAnim, MainAnim } from "./components/UniversAnim";
 import { getAllTags } from "./components/Appendix";
 import Data00 from "./data/data.json";
@@ -24,10 +23,6 @@ import Search from "./pages/Search";
 
 /***APP***/
 export default function App() {
-  /**************** Get all books tags if needed******************************/
-  /*getAllTags(Data3);*/
-  /***************************************************************************/
-
   /*Get datas*/
   const [Loading, setLoading] = useState(true);
   const [Data1, setData1] = useState({});
@@ -72,6 +67,10 @@ export default function App() {
     getDatas();
   }, []);
 
+  /**************** Get all books tags if needed******************************/
+  /*getAllTags(Data3);*/
+  /***************************************************************************/
+
   /*Check if loading is complete before rendering*/
   if (Loading) {
     return null;
@@ -82,9 +81,6 @@ export default function App() {
         {/*BACKGROUND ANIMATION*/}
         {DustAnim()}
         {MainAnim()}
-        {/*      <div>{Data1.nom}</div>
-      <div>{Data2.nda.description}</div>
-      <div>{Data3.Livres[0].titre}</div>*/}
         <Header data1={Data1} data2={Data2} />
         <div className="app">
           {/*ROUTES*/}
@@ -103,7 +99,7 @@ export default function App() {
             </Route>
             {/*STORIES*/}
             <Route exact path="/nouvelles">
-              <Stories data={Data2}/>
+              <Stories data={Data2} />
             </Route>
             {/*STORY*/}
             <Route exact path={"/ma-brume"}>
@@ -137,7 +133,6 @@ export default function App() {
             </Route>
           </Switch>
         </div>
-        {/*  <Footer data1={Data1} data2={Data2} />*/}
       </Router>
     );
   }

@@ -3,6 +3,7 @@
 /***GENERAL***/
 import { useState, useEffect } from "react";
 import { Redirect } from "react-router";
+import ReactTooltip from "react-tooltip";
 
 /***COMPONENTS***/
 import { DustAnim } from "../components/UniversAnim";
@@ -12,7 +13,6 @@ import Bal from "../audio/Bal.mp3";
 import Jazz from "../audio/Jazz.mp3";
 import Lilith from "../audio/Lilith.flac";
 import Somber from "../audio/Somber.wav";
-
 import data from "../data/story1.json";
 
 /*
@@ -174,7 +174,6 @@ export default function Story() {
   let [musicToggle, setmusicToggle] = useState(true);
   function toggleSoundIcon() {
     let soundButton = document.getElementById("soundButton");
-    console.log(soundButton);
     if (musicToggle && soundButton != null && soundButton != undefined) {
       soundButton.style.padding = "0 5px 0 0";
       soundButton.style.color = "var(--greenish)";
@@ -205,10 +204,10 @@ export default function Story() {
     <div className="story">
       <div className="storyWrap" id="storyWrap">
         {DustAnim()}
-        <div className="top">
+        <div className="top" id="thisToggle">
           <div className="left">
             {/*Refresh button*/}
-            <div className="soundButton">
+            <div className="soundButton" data-tip data-for="TipSound">
               <button
                 id="soundButton"
                 className="soundButton music"
@@ -222,7 +221,7 @@ export default function Story() {
               </button>
             </div>
             {/*Refresh button*/}
-            <div className="refresh">
+            <div className="refresh" data-tip data-for="TipRefresh">
               <button
                 id="refresh"
                 className="refresh"
@@ -235,7 +234,7 @@ export default function Story() {
               </button>
             </div>
             {/*goBack button*/}
-            <div className="goBack">
+            <div className="goBack" data-tip data-for="TipBiblio">
               <button
                 id="goBack"
                 className="goBack"
@@ -276,6 +275,45 @@ export default function Story() {
       <audio className="hideAudio audio" id="kidz" src={kidz}></audio>
       <audio className="hideAudio" className="audio" id="Bal" src={Bal}></audio>
       <audio className="hideAudio audio" id="Jazz" src={Jazz}></audio>
+      <ReactTooltip
+        id="TipSound"
+        place="bottom"
+        animation="FadeIn"
+        effect="solid"
+        textColor="var(--blackish)"
+        arrowColor="var(--greenish)"
+        effect="solid"
+        backgroundColor="var(--greenish)"
+        key="TipForSound"
+      >
+        Activer / Désactiver le son
+      </ReactTooltip>
+      <ReactTooltip
+        id="TipRefresh"
+        place="bottom"
+        animation="FadeIn"
+        effect="solid"
+        textColor="var(--blackish)"
+        arrowColor="var(--greenish)"
+        effect="solid"
+        backgroundColor="var(--greenish)"
+        key="TipForRefresh"
+      >
+        Reprendre depuis le début
+      </ReactTooltip>
+      <ReactTooltip
+        id="TipBiblio"
+        place="bottom"
+        animation="FadeIn"
+        effect="solid"
+        textColor="var(--blackish)"
+        arrowColor="var(--greenish)"
+        effect="solid"
+        backgroundColor="var(--greenish)"
+        key="TipForBiblio"
+      >
+        Retour à la bibliothèque
+      </ReactTooltip>
     </div>
   );
 

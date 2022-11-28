@@ -18,7 +18,7 @@
   background-position: center;
   background-attachment: fixed !important;
   background-repeat: no-repeat !important;
-  background: url("./background/Brume.webp"), var(--blackish);
+  background: url("./background/Stories.webp"), var(--blackish);
   font-family: "Cutive Mono", monospace;
   letter-spacing: -4px !important;
 }
@@ -46,6 +46,14 @@
   flex-wrap: wrap;
   padding: 5px;
   justify-content: space-around;
+}
+.tagWrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  border: solid 1px var(--greenish);
+  border-radius: inherit;
 }
 /**************************Images************************************/
 .wave {
@@ -93,6 +101,14 @@
   font-family: poppins;
   letter-spacing: 0;
   border: solid 1px var(--greenish);
+}
+.newTag2 {
+  margin: 10px;
+  font-size: 18px;
+  background-color: unset;
+  color: var(--whiteish);
+  letter-spacing: 0px;
+  font-family: "poppins";
 }
 /***************************Texts*************************************/
 /*Title*/
