@@ -15,11 +15,6 @@ import Lilith from "../audio/Lilith.flac";
 import Somber from "../audio/Somber.wav";
 import data from "../data/story1.json";
 
-/*
-  check effects and animations for text !!!!!!!!!!!!!!!!!!
-  also check story  text !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-*/
-
 /***COMPONENT***/
 
 /*style and props this*/
@@ -34,7 +29,6 @@ export default function Story() {
       sound.pause();
     }, 10000);
   }
-
   function playIt3(sound) {
     let playIt = document.getElementById("audioP");
     playIt.volume = 0.7;
@@ -63,7 +57,7 @@ export default function Story() {
     }, 500);
   }
 
-  /*stop secondary audio*/
+  /*fadeANim*/
   function fadeAll() {
     document.getElementById("storyWrap").style.filter = "brightness(0)";
     setTimeout(() => {
@@ -129,6 +123,7 @@ export default function Story() {
     }, 450);
   }
 
+  /*Flash anim*/
   function flash() {
     setTimeout(() => {
       document.getElementById("storyWrap").style.filter = "invert(100%)";
@@ -169,7 +164,6 @@ export default function Story() {
       console.log("music is off");
     }
   }
-
   /*toggle Music*/
   let [musicToggle, setmusicToggle] = useState(true);
   function toggleSoundIcon() {
@@ -198,7 +192,6 @@ export default function Story() {
       console.log("Sound is on");
     }
   }
-
   /*DOM*/
   return (
     <div className="story">
@@ -249,7 +242,156 @@ export default function Story() {
           </div>
 
           {/*all texts part*/}
-          {StoryTelling(data)}
+          {(() => {
+            /*first page*/
+            if (page == 0) {
+              return (
+                <div className="middle">
+                  <h1>{data.Titre}</h1>
+                  <h2 className="auteur">{data.Auteur}</h2>
+                  <button
+                    className="startButton"
+                    onClick={() => {
+                      firstClick(data);
+                    }}
+                  >
+                    <p>▶</p>
+                  </button>
+                </div>
+              );
+            }
+            /*All story pages*/
+            if (page >= 1 && page < 20) {
+              return (
+                <div className="middle" id="middle">
+                  {/*Page number*/}
+                  <p className="pageNum">{"Page " + page + " / 20"}</p>
+                  {/*Dynamic display of every paragraph from Json according to page*/}
+                  {(() => {
+                    if (page == 1) {
+                      return data.P1.map((P, i) => (
+                        <h2 className="blurIt" key={"P" + i}>
+                          {P}
+                        </h2>
+                      ));
+                    }
+                    if (page == 2) {
+                      let sound = document.getElementById("kidz");
+                      playIt2(sound);
+                      return data.P2.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+                    }
+                    if (page == 3) {
+                      let sound = document.getElementById("kidz");
+                      stopIt2(sound);
+                      return data.P3.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+                    }
+                    if (page == 4) {
+                      return data.P4.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+                    }
+                    if (page == 5) {
+                      return data.P5.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+                    }
+                    if (page == 6) {
+                      fadeAll();
+                      return data.P6.map((P, i) => (
+                        <h2 className="fade" key={"P" + i}>
+                          {P}
+                        </h2>
+                      ));
+                    }
+                    if (page == 7) {
+                      let sound = document.getElementById("Bal");
+                      let sound2 = document.getElementById("Jazz");
+                      playIt2(sound);
+                      playIt3(sound2);
+                      return data.P7.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+                    }
+                    if (page == 8) {
+                      let sound = document.getElementById("Bal");
+                      let sound2 = document.getElementById("Jazz");
+                      stopIt2(sound);
+                      stopIt2(sound2);
+                      return data.P8.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+                    }
+                    if (page == 9) {
+                      return data.P9.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+                    }
+                    if (page == 10) {
+                      return data.P10.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+                    }
+                    if (page == 11) {
+                      return data.P11.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+                    }
+                    if (page == 12) {
+                      return data.P12.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+                    }
+                    if (page == 13) {
+                      flash();
+                      return data.P13.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+                    }
+                    if (page == 14) {
+                      return data.P14.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+                    }
+                    if (page == 15) {
+                      return data.P15.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+                    }
+                    if (page == 16) {
+                      return data.P16.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+                    }
+                    if (page == 17) {
+                      return data.P17.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+                    }
+                    if (page == 18) {
+                      return data.P18.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+                    }
+                    if (page == 19) {
+                      return data.P19.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
+                    }
+                  })()}
+                </div>
+              );
+            }
+            {
+              /*Check if this is the last page*/
+            }
+            if (page == 20) {
+              let arrowright = document.getElementById("next");
+              arrowright.style.display = "none";
+              return (
+                <div className="middle">
+                  {/*Page number*/}
+                  <p className="pageNum">{"Page " + page + " / 20"}</p>
+                  {data.P20.map((P, i) => (
+                    /*Lasts paragraphs*/
+                    <h2 key={"P" + i}>{P}</h2>
+                  ))}
+                  {/*End buttons*/}
+                  <div className="bottom">
+                    {/*Author button*/}
+                    <div
+                      id="fin1"
+                      className="fin"
+                      onClick={() => {
+                        window.location = "/recherche#" + data.Auteur;
+                      }}
+                    >
+                      {"Découvrir d'autres textes de " + data.Auteur}
+                    </div>
+                    {/*Back to short stories page*/}
+                    <div
+                      id="fin2"
+                      className="fin"
+                      onClick={() => {
+                        window.location = "/nouvelles";
+                      }}
+                    >
+                      Retour à l'accueil des nouvelles
+                    </div>
+                  </div>
+                </div>
+              );
+            }
+          })()}
 
           <div className="right">
             {(() => {
@@ -316,168 +458,4 @@ export default function Story() {
       </ReactTooltip>
     </div>
   );
-
-  /*StoryTelling*/
-  function StoryTelling(data) {
-    /*first page*/
-    if (page == 0) {
-      let endButton1 = document.getElementById("fin1");
-      let endButton2 = document.getElementById("fin2");
-      if (
-        endButton1 != null ||
-        (endButton1 != undefined && endButton2 != null) ||
-        endButton2 != undefined
-      ) {
-        /*
-        endButton1.style.visibility = "hidden";
-        endButton2.style.visibility = "hidden";*/
-      }
-
-      return (
-        <div className="middle">
-          <h1>{data.Titre}</h1>
-          <h2 className="auteur">{data.Auteur}</h2>
-          <button
-            className="startButton"
-            onClick={() => {
-              firstClick(data);
-            }}
-          >
-            <p>▶</p>
-          </button>
-        </div>
-      );
-    }
-    /*All story pages*/
-    if (page >= 1 && page < 20) {
-      return (
-        <div className="middle" id="middle">
-          {/*Page number*/}
-          <p className="pageNum">{"Page " + page + " / 20"}</p>
-          {/*Dynamic display of every paragraph from Json according to page*/}
-          {(() => {
-            if (page == 1) {
-              return data.P1.map((P, i) => (
-                <h2 className="blurIt" key={"P" + i}>
-                  {P}
-                </h2>
-              ));
-            }
-            if (page == 2) {
-              let sound = document.getElementById("kidz");
-              playIt2(sound);
-              return data.P2.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-            }
-            if (page == 3) {
-              let sound = document.getElementById("kidz");
-              stopIt2(sound);
-              return data.P3.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-            }
-            if (page == 4) {
-              return data.P4.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-            }
-            if (page == 5) {
-              return data.P5.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-            }
-            if (page == 6) {
-              fadeAll();
-              return data.P6.map((P, i) => (
-                <h2 className="fade" key={"P" + i}>
-                  {P}
-                </h2>
-              ));
-            }
-            if (page == 7) {
-              let sound = document.getElementById("Bal");
-              let sound2 = document.getElementById("Jazz");
-              playIt2(sound);
-              playIt3(sound2);
-              return data.P7.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-            }
-            if (page == 8) {
-              let sound = document.getElementById("Bal");
-              let sound2 = document.getElementById("Jazz");
-              stopIt2(sound);
-              stopIt2(sound2);
-              return data.P8.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-            }
-            if (page == 9) {
-              return data.P9.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-            }
-            if (page == 10) {
-              return data.P10.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-            }
-            if (page == 11) {
-              return data.P11.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-            }
-            if (page == 12) {
-              return data.P12.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-            }
-            if (page == 13) {
-              flash();
-              return data.P13.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-            }
-            if (page == 14) {
-              return data.P14.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-            }
-            if (page == 15) {
-              return data.P15.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-            }
-            if (page == 16) {
-              return data.P16.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-            }
-            if (page == 17) {
-              return data.P17.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-            }
-            if (page == 18) {
-              return data.P18.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-            }
-            if (page == 19) {
-              return data.P19.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
-            }
-          })()}
-        </div>
-      );
-    }
-    {
-      /*Check if this is the last page*/
-    }
-    if (page == 20) {
-      let arrowright = document.getElementById("next");
-      arrowright.style.display = "none";
-      return (
-        <div className="middle">
-          {/*Page number*/}
-          <p className="pageNum">{"Page " + page + " / 20"}</p>
-          {data.P20.map((P, i) => (
-            /*Lasts paragraphs*/
-            <h2 key={"P" + i}>{P}</h2>
-          ))}
-          {/*End buttons*/}
-          <div className="bottom">
-            {/*Author button*/}
-            <div
-              id="fin1"
-              className="fin"
-              onClick={() => {
-                window.location = "/recherche#" + data.Auteur;
-              }}
-            >
-              {"Découvrir d'autres textes de " + data.Auteur}
-            </div>
-            {/*Back to short stories page*/}
-            <div
-              id="fin2"
-              className="fin"
-              onClick={() => {
-                window.location = "/nouvelles";
-              }}
-            >
-              Retour à l'accueil des nouvelles
-            </div>
-          </div>
-        </div>
-      );
-    }
-  }
 }
