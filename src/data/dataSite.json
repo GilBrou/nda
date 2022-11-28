@@ -11,6 +11,11 @@
     "YT": "https://www.youtube.com/channel/UCbZRksrbS8qcN6fzv4Y3y-g/",
     "Tiphs": "https://www.tiphs-art.com/"
   },
+  "stories": {
+    "titre" : "",
+    "argu":""
+  },
+
   "univers": [
     {
       "name": "Mémoria",

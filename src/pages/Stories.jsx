@@ -35,7 +35,10 @@ export default function Stories(data) {
             className=" cog img-responsive"
             alt="image d'onde musicale analogique"
           />{" "}
-          <h1>Bibliothèque augmentée</h1>
+          <h1>
+            {data.stories.titre}
+            
+          </h1>
           <img
             fetchpriority="high"
             src="img/wave.webp"
@@ -45,16 +48,13 @@ export default function Stories(data) {
         </div>
         <div className="top2">
           <h2>
-            Retrouvez dans cette section des nouvelles gratuites agrémentées
-            d'effets visuels et d'ambiances sonores. L'écoute au casque est
-            conseillée pour une meilleure immersion.
+            {data.stories.argu}
           </h2>
         </div>
-
         <div className="cardWrapper">
           {thoseStories.map((story, i) => {
             return (
-              <a href={"/" + story.Link} key={story.Titre + "Link" +i}>
+              <a href={"/" + story.Link} key={story.Titre + "Link" + i}>
                 <div className="StoryCard">
                   <p className="cardTitle">{story.Titre}</p>
                   <p className="cardAuthor">{story.Auteur}</p>
