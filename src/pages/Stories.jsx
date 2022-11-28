@@ -6,12 +6,10 @@ import { useState, useEffect } from "react";
 /***COMPONENTS***/
 import { DustAnim } from "../components/UniversAnim";
 import story1 from "../data/story.json";
-import story2 from "../data/story2.json";
-import story3 from "../data/story3.json";
 
 /***COMPONENT***/
 export default function Stories() {
-  let thoseStories = [story1, story2, story3];
+  let thoseStories = [story1, story1, story1, story1, story1];
 
   /*DOM*/
   return (

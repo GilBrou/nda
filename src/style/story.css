@@ -1,6 +1,7 @@
 /***STORY***/
 
-/*all Wrap*/
+/**************************Sections**********************************/
+/*all*/
 .story {
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -15,10 +16,11 @@
   display: flex;
   max-width: 100%;
   overflow: hidden;
+  position: relative;
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
-  /*background-size: cover !important;*/ /**********************CHECKit for responsive****************/
+  background-size: cover !important; /**********************CHECKit for responsive****************/
   justify-content: center;
   background-position: center;
   background-attachment: fixed;
@@ -26,6 +28,56 @@
   background: url("./background/Brume2.webp"), var(--blackish);
   animation: animMuse 70s infinite alternate both !important;
 }
+/*Top Section*/
+.top {
+  display: flex;
+  /*justify-content: space-between;*/
+  width: 100vw;
+  height: 93vh;
+  /*background-color: gold;*/
+}
+/**************Left*/
+.left {
+  padding: 45px 10px 0 15px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+/*Middle Section*/
+.middle {
+  /*background-color: seagreen;*/
+  padding: 50px;
+  width: 75%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/**************Right*/
+.right {
+  /*background-color: red;*/
+  right: 0;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+}
+/*Bottom Section*/
+.bottom {
+  /*margin-top: 50px;*/
+  /*width: 100%;*/
+  /*display: flex;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  /*align-self: flex-end;*/
+  /*background-color: red;*/
+  position: absolute;
+  bottom: 20px;
+}
+/**************************Buttons**********************************/
 /*Button general style*/
 .storyWrap button {
   outline: none;
@@ -45,26 +97,28 @@
   transform: scale(1);
   background-color: var(--blackishBack3);
 }
+/*Author & back buttons*/
 .fin {
   font-size: 16px;
   width: fit-content;
   cursor: pointer;
-  border-radius: 13px;
+  border-radius: 15px;
   background-color: var(--blackish);
   border: solid 1px var(--greenish);
-  color: var(--whiteish) !important;
-  padding: 20px;
+  padding: 15px;
   transition: 0.5s;
-  font-family: "poppins", cursive;
+  z-index: +1;
 }
-
+#fin2 {
+  margin: 10px 0 0 50px;
+}
 .fin:hover {
   background: unset !important;
   background-color: var(--greenish) !important;
   border: solid 1px var(--blackish);
   color: var(--blackish) !important;
+  transform: scale(1.05);
 }
-
 .storyWrap button:hover {
   border: none;
   outline: none;
@@ -88,20 +142,36 @@
   color: var(--whiteish);
 }
 /*refresh button*/
-.refresh {
+.refresh,
+.goBack {
   margin-top: 15px;
   font-size: 25px !important;
 }
-.goBack {
-  font-size: 23px !important;
+.soundButton {
+  font-size: 30px !important;
+  padding: 0 5px 0 0;
 }
-.storyText2 {
-  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s both;
-  -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s both;
+/*Right Arrows*/
+.next {
+  color: var(--whiteish) !important;
+  transition: 0.5s;
+  font-size: 35px !important;
+  animation: unset !important;
+  box-shadow: unset !important;
+  transform: scale(1) !important;
+  background-color: unset !important;
+  border: unset !important;
 }
+/*Arrows hover*/
+.next:hover {
+  transform: scale(1.25) !important;
+  color: var(--greenish) !important;
+}
+
+/**************************Texts**********************************/
 /*Title and Author text*/
-.storyText h1,
-.storyText h2 {
+.middle h1,
+.middle h2 {
   margin: 0;
   font-size: 150px;
   width: fit-content;
@@ -111,16 +181,16 @@
   text-shadow: 0px 0px 10px var(--blackish), 0px 0px 10px var(--whiteish);
 }
 /*Title*/
-.storyText h1 {
+.middle h1 {
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
   -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
   font-family: "Amatic SC", cursive;
-  margin-top: 120px !important;
+  /*margin-top: 120px !important;*/
 }
 /*Author and story text*/
-.storyText h2 {
+.middle h2 {
   width: 100%;
-  font-size: 30px; /*********************CHECKit*******RESSPONSIVE*********/
+  font-size: 30px;
   padding-top: 10px;
   border-bottom: unset;
   text-shadow: 0px 0px 10px var(--blackish);
@@ -140,174 +210,26 @@
 }
 /*Page numbers*/
 .pageNum {
-  margin: 0px auto 100px auto !important;
+  position: absolute;
+  top: 120px;
+  /*margin: 0px auto 100px auto !important;*/
   color: var(--greenish); /**/
 }
-/*************CHECK RESPONSIVE**********/
-
-/*Audio player*/
-#audio {
-  position: relative;
-  border-radius: 20px;
-  padding: 20px 7px 7px 10px;
-  margin-bottom: 3px;
-  border: double 7px #24150c;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  box-shadow: -5px 5px 15px -3px var(--blackish);
-  background: url("./background/wood.webp"), var(--blackish);
-  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 2.5s both;
-  -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 2.5s both;
-}
-/*Audio player text*/
-#audio p {
-  font-size: 25px;
-  padding-bottom: 5px;
-  text-shadow: 1px 1px 1px var(--blackish);
-  font-family: "Satisfy", cursive;
-  /*
-  color: #654532;
-  color: #846f63;
-  color: #ad9e95;
-  color: #c3b0a4;
-  */
-  color: var(--greenish);
-}
-/*Woofer styling*/
-.Radio {
-  top: 5px;
-  width: 50px;
-  right: 10px;
-  height: 50px;
-  border-radius: 50%;
-  position: absolute;
-  border: double 2px #24150c;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  background: url("./background/grid.webp"), var(--blackish);
-}
-.Radio1 {
-  left: 10px;
-  transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-}
-/*inset radio styling*/
-audio::-webkit-media-controls-panel {
-  background-size: cover !important;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat !important;
-  background-color: var(--greenish);
-  background: url("./background/wood2.webp"), #ad9e95;
-}
-
-/*left and right Arrows*/
-.next/*,
-.previous */ {
-  color: var(--whiteish) !important;
-  transition: 0.5s;
-  font-size: 35px !important;
-  animation: unset !important;
-  box-shadow: unset !important;
-  transform: scale(1) !important;
-  background-color: unset !important;
-  border: unset !important;
-}
-
-/*Arrows hover*/
-.next:hover,
-/*.previous:hover */ {
-  transform: scale(1.25) !important;
-  color: var(--greenish) !important;
-}
-/*Author & back buttons*/
-.fin1,
-.fin2 {
-  margin: 20px;
-  z-index: +1;
-  visibility: hidden;
-}
-.right {
-  margin-right: 80px;
-}
-
-.middle {
-  /*background-color: gold;*/
-  display: flex;
-  height: 100%;
-  min-height: 650px;
-  /*
-  max-height: 650px;*/
-  /*flex-wrap: nowrap;*/
-  /*width: 70%;*/
-  width: 65%;
-  justify-content: center;
-}
-/*Main part*/
-.storyText {
-  width: 100%;
-  padding: 50px;
-  flex-wrap: wrap;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.top {
-  display: flex;
-  width: 100%;
-  flex: 2;
-}
-.top2 {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin-top: 24px;
-  align-items: center;
-}
-.bottom {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  max-height: 200px;
-  flex: 1;
-  padding: 0 20px 20px 0;
-}
-
-.left0 {
-  padding: 35px 10px 10px 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.buttonWrap {
-  display: flex;
-  justify-content: space-envenly;
-}
-
-/*anims*/
-
+/**************************Animation DETAILS**********************************/
 .blurIt {
-  -webkit-animation: text-blur-out 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s
+  -webkit-animation: text-blur-out 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1.2s
     both;
-  animation: text-blur-out 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s both;
+  animation: text-blur-out 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1.2s both;
 }
-
 .hideAudio {
-  visibility: hidden;
+  display: none;
 }
 .fade {
   -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s both;
   animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s both;
 }
 
-/*anims details*/
-
+/**************************Animation**********************************/
 /*animation text-blur-out*/
 @-webkit-keyframes text-blur-out {
   0% {
