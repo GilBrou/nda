@@ -20,8 +20,8 @@
   background-repeat: no-repeat !important;
   background: url("./background/Stories.webp"), var(--blackish);
   font-family: "Cutive Mono", monospace;
-
   letter-spacing: -4px !important;
+  animation: animMuse 50s infinite alternate both;
 }
 .top1,
 .top2 {
@@ -46,7 +46,7 @@
 .cardWrapper {
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
   -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
-  margin-top: 50px;
+  margin-top: 0px;
   display: flex;
   flex-wrap: wrap;
   padding: 5px;
@@ -119,7 +119,6 @@
 /*Title*/
 .storyWrap2 h1 {
   padding-bottom: 12px;
-  /*margin: 0 50px 50px 50px;*/
   margin: 0 50px 0 50px;
   font-size: 70px;
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
@@ -129,8 +128,6 @@
   text-shadow: 0px 0px 15px var(--blackish);
   align-self: center;
   color: var(--greenish);
-  /*border-bottom: solid 1px var(--whiteish);*/
-  /*font-family: poppins;*/
 }
 /*details text*/
 .storyWrap2 h2 {

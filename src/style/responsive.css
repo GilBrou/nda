@@ -128,9 +128,11 @@
 	.thatULink {
 		pointer-events: none;
 	}
+	/*
 	.StoryLink {
 		display: none !important;
 	}
+	*/
 	.pagination2,
 	.firsth2 {
 		display: none !important;
@@ -144,7 +146,7 @@
 		position: relative;
 		width: 100%;
 		justify-content: space-evenly;
-		margin: 30px auto 0 auto;
+		margin: 50px auto 0 auto;
 		flex-direction: row;
 	}
 	.middle {
@@ -179,8 +181,8 @@
 	}
 	.refresh,
 	.goBack,
-	.soundButton,
-	.startButton {
+	.soundButton
+	/*,.startButton */ {
 		width: 45px !important;
 		height: 45px !important;
 		margin: auto;
@@ -196,12 +198,14 @@
 	}
 	.refresh i,
 	.goBack i,
-	.soundButton i,
-	.startButton p {
+	.soundButton i
+	/*, .startButton p */ {
 		font-size: 24px;
+		padding: unset !important;
 	}
 	.middle h1 {
 		font-size: 65px;
+		font-size: 70px;
 	}
 	.auteur {
 		font-size: 26px !important;
@@ -210,6 +214,25 @@
 		font-size: 25px;
 		line-height: 25px;
 		letter-spacing: -2px !important;
+	}
+	.backOverlay2,
+	.backOverlay {
+		background-position: center;
+		width: 100vw;
+		height: 100vh;
+	}
+	.page12 {
+		background-position: center !important;
+		width: 100vw;
+		height: 300vh;
+	}
+	.page20 {
+		top: 25%;
+		height: 150vh;
+	}
+	.buyLinks a,
+	.ReviewLinks a {
+		width: 100%;
 	}
 }
 /**********767************/

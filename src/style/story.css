@@ -26,7 +26,6 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background: url("./background/Brume.webp"), var(--blackish);
-  /*animation: animMuse 50s infinite alternate both;*/
 }
 /*Top Section*/
 .top {
@@ -150,8 +149,7 @@
   font-size: 25px !important;
 }
 .soundButton {
-  font-size: 30px /*!important*/;
-  /*padding: 0 5px 0 0;*/
+  font-size: 30px;
   position: relative;
 }
 /*Right Arrows*/
@@ -170,7 +168,6 @@
   transform: scale(1.25) !important;
   color: var(--greenish) !important;
 }
-
 /**************************Texts**********************************/
 /*Title and Author text*/
 .middle h1,
@@ -224,8 +221,8 @@
   display: none;
 }
 .fadeIt {
-  -webkit-animation: fade-in 6s;
-  animation: fade-in 6s;
+  -webkit-animation: fade-inAnim 6s;
+  animation: fade-inAnim 6s;
 }
 .fadeIt2 {
   -webkit-animation: fade-in 16s;
@@ -253,19 +250,13 @@
   filter: saturate(0%) brightness(100%);
   z-index: -1500;
 }
-.page3,
-.page19 {
-  filter: saturate(0%) brightness(150%) invert(1);
-  background: url("https://media.giphy.com/media/3ohs7UHbxuz3Fj5cDS/giphy.gif");
-}
 .page8p {
   text-shadow: 2px 2px 5px var(--blackish) !important;
 }
 .page8 {
   opacity: 0.2;
   z-index: -1500;
-  filter: saturate(0%) brightness(300%);
-  background-blend-mode: ;
+  filter: saturate(0%) brightness(700%) contrast(250%);
   background: url("https://media.giphy.com/media/xTiTnKM3hza0rromgU/giphy.gif");
 }
 .page12 {
@@ -274,7 +265,14 @@
   z-index: -1500;
   background: url("https://media.giphy.com/media/xfleD6ByCmgta/giphy.gif");
 }
+.page13 {
+  opacity: 1;
+  filter: saturate(0%) brightness(150%);
+  z-index: -1500;
+  background: var(--whiteish);
+}
 .page15 {
+  opacity: 0.05;
   background: url("https://media.giphy.com/media/fqVodOPZg9uBYvYjes/giphy.gif");
 }
 .page16 {
@@ -283,13 +281,13 @@
   background: url("https://media.giphy.com/media/TWszQ81GTtQje/giphy.gif");
 }
 .page17 {
-  opacity: 0.1;
-  filter: saturate(0%) brightness(75%);
+  opacity: 0.05;
+  filter: saturate(0%) brightness(100%);
   background: url("https://media.giphy.com/media/EhoruF6g803JKuGqGB/giphy.gif");
 }
 .page20 {
   transform: translate(-50%, -58%);
   height: 200%;
-  opacity: 0.25;
+  opacity: 0.15;
   background: url("https://media.giphy.com/media/9ZUA8tHLUgspy/giphy.gif");
 }
