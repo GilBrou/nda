@@ -128,6 +128,9 @@
 	.thatULink {
 		pointer-events: none;
 	}
+	.StoryLink {
+		display: none !important;
+	}
 	.pagination2,
 	.firsth2 {
 		display: none !important;

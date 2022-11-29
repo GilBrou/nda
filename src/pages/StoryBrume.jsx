@@ -9,7 +9,8 @@ import ReactTooltip from "react-tooltip";
 import { DustAnim } from "../components/UniversAnim";
 import audio from "../audio/MaBrume.wav";
 import kidz from "../audio/kidz.wav";
-import Bal from "../audio/Bal.mp3";
+import Horn from "../audio/Horn.wav";
+import Dread from "../audio/Dread.mp3";
 import Dumbo from "../audio/Dumbo.mp3";
 import Drone from "../audio/Drone.mp3";
 import Jazz from "../audio/Jazz.mp3";
@@ -64,10 +65,23 @@ export default function Story() {
       setmusicToggle(false);
       console.log("Sound is off");
       let Audio1 = document.getElementById("audioP");
-      let Audio2 = document.getElementById("Jazz");
-      let Audio3 = document.getElementById("Bal");
-      let Audio4 = document.getElementById("Kidz");
-      let allMusic = [Audio1, Audio2, Audio3, Audio4];
+      let Audio2 = document.getElementById("Kidz");
+      let Audio3 = document.getElementById("Jazz");
+      let Audio4 = document.getElementById("Dumbo");
+      let Audio5 = document.getElementById("Drone");
+      let Audio6 = document.getElementById("Horn");
+      let Audio7 = document.getElementById("Dread");
+      let Audio8 = document.getElementById("Dread2");
+      let allMusic = [
+        Audio1,
+        Audio2,
+        Audio3,
+        Audio4,
+        Audio5,
+        Audio6,
+        Audio7,
+        Audio8,
+      ];
       console.log(allMusic);
       for (let i in allMusic) {
         if (allMusic[i] != null && allMusic[i] != undefined) {
@@ -140,7 +154,6 @@ export default function Story() {
   function playIt4(sound) {
     let sound0 = document.getElementById("audioP");
     sound.volume = 0.01;
-    sound0.volume = 0.9;
     setTimeout(() => {
       sound0.volume = 0.7;
     }, 1000);
@@ -169,6 +182,21 @@ export default function Story() {
     }, 4000);
   }
 
+  function playIt5(sound) {
+    let sound0 = document.getElementById("audioP");
+    sound.volume = 0.3;
+    sound.play();
+    setTimeout(() => {
+      sound0.volume = 0.6;
+    }, 1000);
+    setTimeout(() => {
+      sound0.volume = 0.3;
+    }, 1500);
+    setTimeout(() => {
+      stopIt2(sound0);
+    }, 2000);
+  }
+
   /*stop secondary audio*/
   function stopIt2(sound) {
     sound.volume = 0.07;
@@ -189,41 +217,41 @@ export default function Story() {
     document.getElementById("storyWrap").style.filter = "brightness(0)";
     setTimeout(() => {
       document.getElementById("storyWrap").style.filter = "brightness(10%)";
-    }, 100);
+    }, 150);
     setTimeout(() => {
       document.getElementById("storyWrap").style.filter = "brightness(20%)";
-    }, 125);
-
-    setTimeout(() => {
-      document.getElementById("storyWrap").style.filter = "brightness(30%)";
-    }, 150);
-
-    setTimeout(() => {
-      document.getElementById("storyWrap").style.filter = "brightness(40%)";
     }, 175);
 
     setTimeout(() => {
-      document.getElementById("storyWrap").style.filter = "brightness(50%)";
+      document.getElementById("storyWrap").style.filter = "brightness(30%)";
     }, 200);
+
     setTimeout(() => {
-      document.getElementById("storyWrap").style.filter = "brightness(60%)";
+      document.getElementById("storyWrap").style.filter = "brightness(40%)";
     }, 225);
 
     setTimeout(() => {
-      document.getElementById("storyWrap").style.filter = "brightness(70%)";
+      document.getElementById("storyWrap").style.filter = "brightness(50%)";
     }, 250);
-
     setTimeout(() => {
-      document.getElementById("storyWrap").style.filter = "brightness(80%)";
+      document.getElementById("storyWrap").style.filter = "brightness(60%)";
     }, 275);
 
     setTimeout(() => {
-      document.getElementById("storyWrap").style.filter = "brightness(90%)";
+      document.getElementById("storyWrap").style.filter = "brightness(70%)";
     }, 300);
 
     setTimeout(() => {
-      document.getElementById("storyWrap").style.filter = "brightness(100%)";
+      document.getElementById("storyWrap").style.filter = "brightness(80%)";
     }, 325);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(90%)";
+    }, 350);
+
+    setTimeout(() => {
+      document.getElementById("storyWrap").style.filter = "brightness(100%)";
+    }, 375);
 
     setTimeout(() => {
       document.getElementById("storyWrap").style.filter = "brightness(10%)";
@@ -329,13 +357,32 @@ export default function Story() {
     }, 4000);
   }
 
+  function Ending() {
+    document.getElementById("left").classList.add("fadeIt2");
+    let sound = document.getElementById("Dread2");
+    if (musicToggle) {
+      playIt5(sound);
+      let Audio2 = document.getElementById("Kidz");
+      let Audio3 = document.getElementById("Jazz");
+      let Audio4 = document.getElementById("Dumbo");
+      let Audio5 = document.getElementById("Drone");
+      let Audio6 = document.getElementById("Horn");
+      let allMusic = [Audio2, Audio3, Audio4, Audio5, Audio6];
+      for (let i in allMusic) {
+        if (allMusic[i] != null && allMusic[i] != undefined) {
+          allMusic[i].pause();
+        }
+      }
+    }
+  }
+
   /*DOM*/
   return (
     <div className="story">
       <div className="storyWrap" id="storyWrap">
         {DustAnim()}
         <div className="top" id="thisToggle">
-          <div className="left">
+          <div id="left" className="left">
             {/*Refresh button*/}
             <div className="soundButton" data-tip data-for="TipSound">
               <button
@@ -426,22 +473,16 @@ export default function Story() {
                       if (musicToggle) {
                         playIt2(sound);
                       }
-                      return data.P2.map((P, i) => (
-                        <h2 className="smoky" key={"P" + i}>
-                          {P}
-                        </h2>
-                      ));
+                      return data.P2.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
                     }
                     /**********************Page3********************************/
                     if (page == 3) {
                       let sound = document.getElementById("Kidz");
                       stopIt2(sound);
                       return (
-                        <div>
+                        <div className="fadeIt">
                           {data.P3.map((P, i) => (
-                            <h2 className="smoky" key={"P" + i}>
-                              {P}
-                            </h2>
+                            <h2 key={"P" + i}>{P}</h2>
                           ))}
 
                           <div className="page3 backOverlay"></div>
@@ -450,19 +491,11 @@ export default function Story() {
                     }
                     /**********************Page4********************************/
                     if (page == 4) {
-                      return data.P4.map((P, i) => (
-                        <h2 className="smoky" key={"P" + i}>
-                          {P}
-                        </h2>
-                      ));
+                      return data.P4.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
                     }
                     /**********************Page5********************************/
                     if (page == 5) {
-                      return data.P5.map((P, i) => (
-                        <h2 className="smoky" key={"P" + i}>
-                          {P}
-                        </h2>
-                      ));
+                      return data.P5.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
                     }
                     /**********************Page6********************************/
                     if (page == 6) {
@@ -482,27 +515,19 @@ export default function Story() {
                     /**********************Page7********************************/
                     if (page == 7) {
                       let sound = document.getElementById("Jazz");
-                      let sound2 = document.getElementById("Bal");
                       if (musicToggle) {
                         playIt3(sound);
-                        playIt2(sound2);
                       }
-                      return data.P7.map((P, i) => (
-                        <h2 className="smoky" key={"P" + i}>
-                          {P}
-                        </h2>
-                      ));
+                      return data.P7.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
                     }
                     /**********************Page8********************************/
                     if (page == 8) {
                       let sound = document.getElementById("Jazz");
-                      let sound2 = document.getElementById("Bal");
                       stopIt2(sound);
-                      stopIt2(sound2);
                       return (
-                        <div>
+                        <div className="fadeIt">
                           {data.P8.map((P, i) => (
-                            <h2 className="page8p" key={"P" + i}>
+                            <h2 className="page8p smoky" key={"P" + i}>
                               {P}
                             </h2>
                           ))}
@@ -512,19 +537,11 @@ export default function Story() {
                     }
                     /**********************Page9********************************/
                     if (page == 9) {
-                      return data.P9.map((P, i) => (
-                        <h2 className="smoky" key={"P" + i}>
-                          {P}
-                        </h2>
-                      ));
+                      return data.P9.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
                     }
                     /**********************Page10********************************/
                     if (page == 10) {
-                      return data.P10.map((P, i) => (
-                        <h2 className="smoky" key={"P" + i}>
-                          {P}
-                        </h2>
-                      ));
+                      return data.P10.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
                     }
                     /**********************Page11********************************/
                     if (page == 11) {
@@ -537,11 +554,9 @@ export default function Story() {
                     /**********************Page12********************************/
                     if (page == 12) {
                       return (
-                        <div>
+                        <div className="fadeIt">
                           {data.P12.map((P, i) => (
-                            <h2 className="smoky" key={"P" + i}>
-                              {P}
-                            </h2>
+                            <h2 key={"P" + i}>{P}</h2>
                           ))}
                           <div className="page12 backOverlay"></div>
                         </div>
@@ -555,32 +570,24 @@ export default function Story() {
                         playIt4(sound);
                       }
                       flash();
-                      return data.P13.map((P, i) => (
-                        <h2 className="smoky" key={"P" + i}>
-                          {P}
-                        </h2>
-                      ));
+                      return data.P13.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
                     }
                     /**********************Page14********************************/
-
-                    /*here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
                     if (page == 14) {
                       let sound = document.getElementById("Dumbo");
                       stopIt2(sound);
-                      return data.P14.map((P, i) => (
-                        <h2 className="smoky" key={"P" + i}>
-                          {P}
-                        </h2>
-                      ));
+                      let sound2 = document.getElementById("Horn");
+                      if (musicToggle) {
+                        playIt2(sound2);
+                      }
+                      return data.P14.map((P, i) => <h2 key={"P" + i}>{P}</h2>);
                     }
                     /**********************Page15********************************/
                     if (page == 15) {
                       return (
-                        <div>
+                        <div className="fadeIt">
                           {data.P15.map((P, i) => (
-                            <h2 className="smoky" key={"P" + i}>
-                              {P}
-                            </h2>
+                            <h2 key={"P" + i}>{P}</h2>
                           ))}
                           <div className="page15 backOverlay"></div>
                         </div>
@@ -588,22 +595,29 @@ export default function Story() {
                     }
                     /**********************Page16********************************/
                     if (page == 16) {
-                      return data.P16.map((P, i) => (
-                        <h2 className="smoky" key={"P" + i}>
-                          {P}
-                        </h2>
-                      ));
+                      return (
+                        <div>
+                          {data.P16.map((P, i) => (
+                            <h2 key={"P" + i}>{P}</h2>
+                          ))}
+                          <div className="page16 backOverlay"></div>
+                        </div>
+                      );
                     }
                     /**********************Page17********************************/
                     if (page == 17) {
+                      let sound = document.getElementById("Dread");
+                      if (musicToggle) {
+                        playIt2(sound);
+                      }
                       return (
-                        <div>
+                        <div className="fadeIt">
                           {data.P17.map((P, i) => (
-                            <h2 className="smoky" key={"P" + i}>
-                              {P}
-                            </h2>
+                            <h2 key={"P" + i}>{P}</h2>
                           ))}
-                          <div className="page17 backOverlay"></div>
+                          <div className="backOverlay3">
+                            <div className="page17 backOverlay"></div>
+                          </div>
                         </div>
                       );
                     }
@@ -615,14 +629,14 @@ export default function Story() {
                         </h2>
                       ));
                     }
-                    /**********************Page20********************************/
+                    /**********************Page19********************************/
                     if (page == 19) {
+                      let sound = document.getElementById("Dread");
+                      sound.pause();
                       return (
-                        <div>
+                        <div className="fadeIt">
                           {data.P19.map((P, i) => (
-                            <h2 className="smoky" key={"P" + i}>
-                              {P}
-                            </h2>
+                            <h2 key={"P" + i}>{P}</h2>
                           ))}
 
                           <div className="page19 backOverlay"></div>
@@ -636,20 +650,23 @@ export default function Story() {
             {
               /*Check if this is the last page*/
             }
-            /**********************Story last page********************************/
+            /**********************Story last page =  page20********************************/
             if (page == 20) {
+              /*fadeAll();*/
+
+              Ending();
               let arrowright = document.getElementById("next");
               arrowright.style.display = "none";
               return (
-                <div className="middle">
+                <div className="middle fadeIt">
                   {/*Page number*/}
-                  <p className="pageNum">{"Page " + page + " / 20"}</p>
+                  <p className="pageNum fadeIt2">{"Page " + page + " / 20"}</p>
                   {data.P20.map((P, i) => (
                     /*Lasts paragraphs*/
                     <h2 key={"P" + i}>{P}</h2>
                   ))}
                   {/*End buttons*/}
-                  <div className="bottom">
+                  <div className="bottom fadeIt2">
                     {/*Author button*/}
                     <div
                       id="fin1"
@@ -702,10 +719,12 @@ export default function Story() {
 
       <audio id="audioP" className="audio" src={audio} loop></audio>
       <audio className="hideAudio audio" id="Kidz" src={kidz}></audio>
-      <audio className="hideAudio audio" id="Bal" src={Bal}></audio>
       <audio className="hideAudio audio" id="Jazz" src={Jazz}></audio>
       <audio className="hideAudio audio" id="Dumbo" src={Dumbo}></audio>
       <audio className="hideAudio audio" id="Drone" src={Drone}></audio>
+      <audio className="hideAudio audio" id="Horn" src={Horn}></audio>
+      <audio className="hideAudio audio" id="Dread" src={Dread}></audio>
+      <audio className="hideAudio audio" id="Dread2" loop src={Dread}></audio>
       <ReactTooltip
         id="TipSound"
         place="bottom"

@@ -30,7 +30,6 @@
     "menu1L": "/accueil",
     "menu2L": "/nos-univers",
     "menu3L": "/createurs",
-    "menu4L": "/boutique",
     "menu5L": "/nouvelles"
 
   },
@@ -43,10 +42,7 @@
     "IL1B2": ".jpg"
   },
   "A FAIRE": {
-    "HEADER": "responsive",
     "intro": "diff same book different version",
-    "Stories": "responsive",
-    "Story": "responsive",
     "Cookies": "???",
     "nouvelle boutique": "?",
     "Module accueil": "Derniers evenements Fb ? posts inta et/ou Fb ?",

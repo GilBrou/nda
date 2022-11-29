@@ -89,11 +89,8 @@ export default function Header(data) {
             </ul>
           </li>
           {/*2.5 - Lecture en ligne*/}
-          <li>
-            <a
-              href={data.data1 ? data.data1.links.menu5L : "loading..."}
-              className="page-scroll"
-            >
+          <li className="StoryLink">
+            <a href={data.data1 ? data.data1.links.menu5L : "loading..."}>
               {data.data1 ? data.data1.menu.menu2b : "loading..."}
             </a>
           </li>
@@ -245,16 +242,6 @@ export default function Header(data) {
               {data.data1 ? data.data1.menu.menu7 : "loading..."}
             </a>
           </li>
-          {/*
-          <li>
-              <a
-                href={data.data1 ? data.data1.links.menu4L : "loading..."}
-                className="page-scroll"
-              >
-                {data.data1 ? data.data1.menu.menu7 : "loading..."}
-              </a>
-            </li>
-            */}
         </ul>
       </nav>
     </header>
