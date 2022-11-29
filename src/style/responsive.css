@@ -136,36 +136,82 @@
 		display: none !important;
 	}
 	/*Style story*/
-
-	.middle {
-		background-color: darkred;
+	.top {
+		flex-direction: column;
 	}
-	/*
 	.left {
-		background-color: lightblue;
+		padding: 5px !important;
+		position: relative;
+		width: 100%;
+		justify-content: space-evenly;
+		margin: 30px auto 0 auto;
+		flex-direction: row;
 	}
-	*/
-/*button*/
+	.middle {
+		padding: 35px 15px 15px 15px !important;
+		width: 100%;
+		position: relative;
+		margin: auto;
+	}
+	.right {
+		z-index: 1500;
+		position: relative;
+		top: 0;
+		justify-content: center;
+		flex-direction: row;
+		width: 100%;
+		padding: 5px 0 25px 0;
+	}
+	.bottom {
+		position: relative;
+		margin-top: 30px;
+	}
+	.fin {
+		font-size: unset !important;
+		padding: 5px 10px 5px 10px;
+		width: 100% !important;
+		font-size: 14px !important;
+		margin: 10px auto 10px auto !important;
+	}
+	.soundButton {
+		padding: 0 !important;
+		padding: 0 5px 15px 0 !important;
+	}
 	.refresh,
 	.goBack,
-	.soundButton {
+	.soundButton,
+	.startButton {
+		width: 45px !important;
+		height: 45px !important;
+		margin: auto;
+		margin: 0 0 10px 0;
+	}
+	.next {
 		width: 40px !important;
 		height: 40px !important;
 	}
+	.pageNum {
+		top: 25px;
+		font-size: 16px;
+	}
 	.refresh i,
 	.goBack i,
-	.soundButton i {
+	.soundButton i,
+	.startButton p {
 		font-size: 24px;
-
 	}
-	.right {
-		background-color: lightblue;
+	.middle h1 {
+		font-size: 65px;
 	}
-	.bottom {
-		background-color: lightcoral;
+	.auteur {
+		font-size: 26px !important;
+	}
+	.middle h2 {
+		font-size: 25px;
+		line-height: 25px;
+		letter-spacing: -2px !important;
 	}
 }
-
 /**********767************/
 @media (max-width: 767px) {
 	#createurs .row {
