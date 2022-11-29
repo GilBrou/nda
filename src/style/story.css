@@ -28,14 +28,13 @@
   background: url("./background/Brume.webp"), var(--blackish);
   /*animation: animMuse 50s infinite alternate both;*/
 }
-
 /*Top Section*/
 .top {
   display: flex;
   width: 100vw;
   height: 93vh;
 }
-/**************Left*/
+/*Left*/
 .left {
   padding: 45px 10px 0 15px;
   display: flex;
@@ -54,7 +53,6 @@
   justify-content: center;
   z-index: 1 !important;
 }
-
 .backOverlay2 {
   position: absolute;
   background-size: inherit;
@@ -67,8 +65,7 @@
   z-index: -500 !important;
   background: url("https://media.giphy.com/media/kg19fN5BXbZGIDznzG/giphy.gif");
 }
-
-/**************Right*/
+/*Right*/
 .right {
   right: 0;
   top: 50%;
@@ -153,8 +150,8 @@
   font-size: 25px !important;
 }
 .soundButton {
-  font-size: 30px !important;
-  padding: 0 5px 0 0;
+  font-size: 30px/*!important*/;
+  /*padding: 0 5px 0 0;*/
   position: relative;
 }
 /*Right Arrows*/
@@ -217,7 +214,7 @@
   top: 120px;
   color: var(--greenish);
 }
-/**************************Animation DETAILS**********************************/
+/**************************Animation**********************************/
 .blurIt {
   -webkit-animation: text-blur-out 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s
     both;
@@ -230,7 +227,6 @@
   -webkit-animation: fade-in 6s;
   animation: fade-in 6s;
 }
-
 .fadeIt2 {
   -webkit-animation: fade-in 16s;
   animation: fade-in 16s linear;
@@ -257,7 +253,6 @@
   filter: saturate(0%) brightness(100%);
   z-index: -1500;
 }
-
 .page3,
 .page19 {
   filter: saturate(0%) brightness(150%) invert(1);
@@ -266,7 +261,6 @@
 .page8p {
   text-shadow: 2px 2px 5px var(--blackish) !important;
 }
-
 .page8 {
   opacity: 0.2;
   z-index: -1500;
@@ -274,19 +268,15 @@
   background-blend-mode: ;
   background: url("https://media.giphy.com/media/xTiTnKM3hza0rromgU/giphy.gif");
 }
-
 .page12 {
   opacity: 0.15;
   filter: saturate(0%) brightness(150%);
   z-index: -1500;
-
   background: url("https://media.giphy.com/media/xfleD6ByCmgta/giphy.gif");
 }
-
 .page15 {
   background: url("https://media.giphy.com/media/fqVodOPZg9uBYvYjes/giphy.gif");
 }
-
 .page16 {
   opacity: 0.03;
   transform: translate(-50%, -50%);
@@ -294,7 +284,7 @@
 }
 .page17 {
   opacity: 0.1;
-  filter: saturate(0%) brightness(50%);
+  filter: saturate(0%) brightness(75%);
   background: url("https://media.giphy.com/media/EhoruF6g803JKuGqGB/giphy.gif");
 }
 .page20 {
@@ -302,67 +292,4 @@
   height: 200%;
   opacity: 0.25;
   background: url("https://media.giphy.com/media/9ZUA8tHLUgspy/giphy.gif");
-}
-
-/**************************Animation**********************************/
-/*animation text-blur-out*/
-@-webkit-keyframes text-blur-out {
-  0% {
-    -webkit-filter: blur(0.01);
-    filter: blur(0.01);
-  }
-  25% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-  }
-  50% {
-    -webkit-filter: blur(0.01);
-    filter: blur(0.01);
-  }
-  75% {
-    -webkit-filter: blur(0.01);
-    filter: blur(0.01);
-  }
-  100% {
-    -webkit-filter: blur(0.01);
-    filter: blur(0.01);
-  }
-}
-@keyframes text-blur-out {
-  0% {
-    -webkit-filter: blur(0.01);
-    filter: blur(0.01);
-  }
-  25% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-  }
-  50% {
-    -webkit-filter: blur(0.01);
-    filter: blur(0.01);
-  }
-  75% {
-    -webkit-filter: blur(0.01);
-    filter: blur(0.01);
-  }
-  100% {
-    -webkit-filter: blur(0.01);
-    filter: blur(0.01);
-  }
-}
-
-
-/*shake*/
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }

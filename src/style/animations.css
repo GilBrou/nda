@@ -366,7 +366,6 @@
   }
 }
 
-
 /*Background ligth animation*/
 @keyframes animMuse {
   0% {
@@ -376,5 +375,51 @@
   100% {
     background-position: 47% 50%;
     background-size: 125%;
+  }
+}
+
+/*animation text-blur-out*/
+@-webkit-keyframes text-blur-out {
+  0% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  25% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+  }
+  50% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  75% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  100% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+}
+@keyframes text-blur-out {
+  0% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  25% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+  }
+  50% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  75% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  100% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
   }
 }

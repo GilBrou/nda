@@ -135,6 +135,35 @@
 	.firsth2 {
 		display: none !important;
 	}
+	/*Style story*/
+
+	.middle {
+		background-color: darkred;
+	}
+	/*
+	.left {
+		background-color: lightblue;
+	}
+	*/
+/*button*/
+	.refresh,
+	.goBack,
+	.soundButton {
+		width: 40px !important;
+		height: 40px !important;
+	}
+	.refresh i,
+	.goBack i,
+	.soundButton i {
+		font-size: 24px;
+
+	}
+	.right {
+		background-color: lightblue;
+	}
+	.bottom {
+		background-color: lightcoral;
+	}
 }
 
 /**********767************/
