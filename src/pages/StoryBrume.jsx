@@ -442,7 +442,7 @@ export default function Story() {
                         window.location = "/recherche#" + data.Auteur;
                       }}
                     >
-                      {"Découvrir d'autres textes de " + data.Auteur}
+                     <p> {"Découvrir d'autres textes de " + data.Auteur}</p>
                     </div>
                     {/*Back to short stories page*/}
                     <div
@@ -452,7 +452,7 @@ export default function Story() {
                         window.location = "/nouvelles";
                       }}
                     >
-                      Retour à l'accueil des nouvelles
+                      <p>Retour à l'accueil des nouvelles</p>
                     </div>
                   </div>
                   <div className="page20 backOverlay"></div>
