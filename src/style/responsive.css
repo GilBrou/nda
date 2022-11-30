@@ -150,13 +150,15 @@
 		flex-direction: row;
 	}
 	.middle {
-		padding: 35px 15px 15px 15px !important;
+		padding: 0 15px 15px 0!important;
 		width: 100%;
 		position: relative;
 		margin: auto;
 	}
 	.right {
-		z-index: 1500;
+		/*z-index: 1500;*/
+		/*z-index: 1500;*/
+
 		/*position: relative;*/
 		/*top: 0;*/
 		/*height: 50%;*/
@@ -187,7 +189,7 @@
 	.refresh,
 	.goBack,
 	.soundButton
-	/*,.startButton */ {
+	{
 		width: 45px !important;
 		height: 45px !important;
 		margin: auto;
@@ -196,6 +198,8 @@
 	.next {
 		width: 40px !important;
 		height: 40px !important;
+z-index: 1500;
+
 	}
 	.pageNum {
 		top: 25px;
