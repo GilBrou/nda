@@ -142,23 +142,20 @@
 		flex-direction: column;
 	}
 	.left {
-		/*padding: 5px !important;*/
 		padding: 0px !important;
 		position: relative;
 		width: 100%;
 		justify-content: space-evenly;
-		/*height: fit-content;*/
-		/*margin: 50px auto 0 auto;*/
 		margin: 35px auto 0 auto;
 		flex-direction: row;
 	}
 	.middle {
-		padding: 70px 15px 0px 15px!important;
+		padding: 70px 15px 0px 15px !important;
 		width: 100%;
 		position: relative;
 		justify-content: unset;
-
-	}.middle h2 {
+	}
+	.middle h2 {
 	}
 	.right {
 		bottom: 50px;
@@ -169,11 +166,11 @@
 		padding: 0px 0 25px 0;
 	}
 	.bottom {
-		margin-top: 100px!important;
+		margin-top: 100px !important;
 		position: relative;
 		margin-top: 30px;
 	}
-	.bottom p{
+	.bottom p {
 		margin: 0;
 		font-size: 16px;
 	}
@@ -191,21 +188,19 @@
 	}
 	.refresh,
 	.goBack,
-	.soundButton
-	{
+	.soundButton {
 		width: 45px !important;
 		height: 45px !important;
 		margin: auto;
-		background: unset!important;
-		border : none!important;
-		box-shadow: unset!important;
+		background: unset !important;
+		border: none !important;
+		box-shadow: unset !important;
 	}
 	.next {
 		width: 40px !important;
 		height: 40px !important;
 
-z-index: 1500;
-
+		z-index: 1500;
 	}
 	.pageNum {
 		top: 25px;
@@ -229,7 +224,7 @@ z-index: 1500;
 		font-size: 25px;
 		line-height: 25px;
 		letter-spacing: -2px !important;
-		padding-bottom: 10px!important;		
+		padding-bottom: 10px !important;
 	}
 	.backOverlay2,
 	.backOverlay {

@@ -9,10 +9,11 @@ import ReactTooltip from "react-tooltip";
 import { DustAnim } from "../components/UniversAnim";
 import {
   fadeAll,
-  removeback,
   flash,
+  flash2,
   playIt2,
   playIt3,
+  playIt4,
   stopIt2,
 } from "../components/StoryBrumeAnim";
 import data from "../data/story1.json";
@@ -94,7 +95,7 @@ export default function Story() {
     document.getElementById("left").classList.add("fadeIt2");
     let sound = document.getElementById("Dread");
     if (musicToggle) {
-      playIt3(sound);
+      playIt4(sound);
       let Audio1 = document.getElementById("Kidz");
       let Audio2 = document.getElementById("Jazz");
       let Audio3 = document.getElementById("Drone");
@@ -250,7 +251,7 @@ export default function Story() {
                     if (page == 7) {
                       let sound = document.getElementById("Jazz");
                       if (musicToggle) {
-                        playIt2(sound);
+                        playIt3(sound);
                       }
                       return data.P7.map((P, i) => (
                         <h2 className="smoky" key={"P" + i}>
@@ -260,7 +261,6 @@ export default function Story() {
                     }
                     /*Page8*/
                     if (page == 8) {
-                      /*removeback();*/
                       let sound = document.getElementById("Jazz");
                       stopIt2(sound);
                       return (
@@ -271,10 +271,7 @@ export default function Story() {
                             </h2>
                           ))}
                           <div className="fadeIt">
-                            <div
-                              /*id="remBack"*/
-                              className="page8 backOverlay"
-                            ></div>
+                            <div className="page8 backOverlay"></div>
                           </div>
                         </div>
                       );
@@ -321,19 +318,12 @@ export default function Story() {
                     /*Page13*/
                     if (page == 13) {
                       flash();
-                      return (
-                        <div>
-                          {data.P13.map((P, i) => (
-                            <h2 className="smoky" key={"P" + i}>
-                              {P}
-                            </h2>
-                          ))}
-                          {/*<div
-                                                      id="remBack2"
-                                                      className="page13 backOverlay"
-                                                    ></div>*/}
-                        </div>
-                      );
+                      flash2();
+                      return data.P13.map((P, i) => (
+                        <h2 className="smoky" key={"P" + i}>
+                          {P}
+                        </h2>
+                      ));
                     }
                     /*Page14*/
                     if (page == 14) {
@@ -373,10 +363,6 @@ export default function Story() {
                     }
                     /*Page17*/
                     if (page == 17) {
-                      let sound = document.getElementById("Dread");
-                      if (musicToggle) {
-                        playIt2(sound);
-                      }
                       return (
                         <div>
                           {data.P17.map((P, i) => (
@@ -392,8 +378,6 @@ export default function Story() {
                     }
                     /*Page18*/
                     if (page == 18) {
-                      let sound = document.getElementById("Dread");
-                      stopIt2(sound);
                       return data.P18.map((P, i) => (
                         <h2 className="smoky" key={"P" + i}>
                           {P}
@@ -404,15 +388,11 @@ export default function Story() {
                     if (page == 19) {
                       let sound = document.getElementById("Dread");
                       sound.pause();
-                      return (
-                        <div className="fadeIt">
-                          {data.P19.map((P, i) => (
-                            <h2 className="smoky" key={"P" + i}>
-                              {P}
-                            </h2>
-                          ))}
-                        </div>
-                      );
+                      return data.P19.map((P, i) => (
+                        <h2 className="smoky" key={"P" + i}>
+                          {P}
+                        </h2>
+                      ));
                     }
                   })()}
                 </div>
@@ -442,7 +422,7 @@ export default function Story() {
                         window.location = "/recherche#" + data.Auteur;
                       }}
                     >
-                     <p> {"Découvrir d'autres textes de " + data.Auteur}</p>
+                      <p> {"Découvrir d'autres textes de " + data.Auteur}</p>
                     </div>
                     {/*Back to short stories page*/}
                     <div
@@ -487,7 +467,7 @@ export default function Story() {
       <audio className="hideAudio audio" id="Kidz" src={kidz}></audio>
       <audio className="hideAudio audio" id="Jazz" src={Jazz}></audio>
       <audio className="hideAudio audio" id="Drone" src={Drone}></audio>
-      <audio className="hideAudio audio" id="Dread" src={Dread}></audio>
+      <audio className="hideAudio audio" id="Dread" src={Dread} loop></audio>
       {/*Left part buttons tooltips*/}
       {/*Sound tooltip*/}
       <ReactTooltip
