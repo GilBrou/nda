@@ -6,6 +6,9 @@
   -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   overflow: hidden;
 }
+.argu2{
+  background-color: red;
+}
 /*Main Wrap*/
 .storyWrap2 {
   padding: 0 25px 0 25px;

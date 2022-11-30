@@ -35,6 +35,7 @@ export default function Stories(data) {
         </div>
         <div className="top2">
           <h2>{data.data.stories.argu}</h2>
+          <h2 className="argu2">{data.data.stories.argu2}</h2>
         </div>
         <div className="cardWrapper">
           {thoseStories.map((story, i) => {
