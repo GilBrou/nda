@@ -22,7 +22,6 @@ import data from "../data/story1.json";
 import audio from "../audio/MaBrume.wav";
 import kidz from "../audio/kidz.wav";
 import Dread from "../audio/Dread.mp3";
-import Drone from "../audio/Drone.mp3";
 import Jazz from "../audio/Jazz.mp3";
 
 /***COMPONENT***/
@@ -73,7 +72,6 @@ export default function Story() {
       let Audio1 = document.getElementById("audioP");
       let Audio2 = document.getElementById("Kidz");
       let Audio3 = document.getElementById("Jazz");
-      let Audio4 = document.getElementById("Drone");
       let Audio5 = document.getElementById("Dread");
       let allMusic = [Audio1, Audio2, Audio3, Audio4, Audio5];
       for (let i in allMusic) {
@@ -98,7 +96,6 @@ export default function Story() {
       playIt4(sound);
       let Audio1 = document.getElementById("Kidz");
       let Audio2 = document.getElementById("Jazz");
-      let Audio3 = document.getElementById("Drone");
       let allMusic = [Audio1, Audio2, Audio3];
       for (let i in allMusic) {
         if (allMusic[i] != null && allMusic[i] != undefined) {
@@ -466,7 +463,6 @@ export default function Story() {
       <audio id="audioP" className="audio" src={audio} loop></audio>
       <audio className="hideAudio audio" id="Kidz" src={kidz}></audio>
       <audio className="hideAudio audio" id="Jazz" src={Jazz}></audio>
-      <audio className="hideAudio audio" id="Drone" src={Drone}></audio>
       <audio className="hideAudio audio" id="Dread" src={Dread} loop></audio>
       {/*Left part buttons tooltips*/}
       {/*Sound tooltip*/}
