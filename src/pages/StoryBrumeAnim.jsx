@@ -240,7 +240,6 @@ export function flash() {
     document.getElementById("storyWrap").style.filter = "unset";
   }, 870);
 }
-
 /*Flash anim2*/
 export function flash2() {
   setTimeout(() => {
@@ -363,7 +362,6 @@ export function flash2() {
     }, 870);
   }, 3000);
 }
-
 /*play secondary audio*/
 export function playIt2(sound) {
   sound.volume = 0.01;

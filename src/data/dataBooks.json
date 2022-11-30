@@ -319,6 +319,31 @@
       "buyEbook": "https://www.amazon.fr/Comment-bien-raconter-histoires-d%C3%A9criture-ebook/dp/B07Y3Z19DZ/ref=as_li_ss_tl?_encoding=UTF8&qid=1569145362&sr=1-11&linkCode=sl1&tag=neocity-21&linkId=80f1899a8b5a04f6d3992f2aeab3e681&language=fr_FR"
     },
     {
+      "titre": "Comment Bien Raconter des Histoires ?",
+      "titre2": "",
+      "univers": "Hors Collection",
+      "date": "2022-11-01",
+      "pages": "",
+      "durée": "4h31",
+      "ISBN": "",
+      "ASIN": "B0BH9B6DBF",
+      "prix": "",
+      "extrait": "https://www.amazon.fr/gp/product/B0BH9B6DBF/ref=dbs_a_def_rwt_hsch_vapi_taud_p1_i0",
+      "lien": "comment-bien-raconter-des-histoires-livre-audio",
+      "format": "Livre audio",
+      "sousTitre": "",
+      "par": ["Morgane Stankiewiez"],
+      "lu": ["Katherine Pageon"],
+      "genres": ["Guide d'écriture"],
+      "résumé": "Avec la participation de Cécile Pommereau et Sara Pintado",
+      "résumé2": "En France, on considère l’écrivain comme un génie au talent inné. Aux États-Unis, au contraire, on perçoit l’écriture comme un artisanat qui demande simplement de la méthode et du travail. Dans ce guide d’écriture, je partagerai mon approche, quelque part entre ces deux extrêmes. Nous discuterons du cœur des histoires, de leur âme et de la manière de créer des personnages, des intrigues qui vous correspondent et captivent les lecteurs.",
+      "résumé3": "Nous parlerons aussi de la structure du récit et d’aspects plus techniques, utiles pour bien comprendre les possibilités qu’offre cet Art. La simplicité et l’honnêteté se trouveront au cœur de votre démarche tout au long de votre périple. C’est ce qui vous permettra de terminer un premier roman et, ce faisant, de devenir écrivain.",
+      "reviews": [
+        ""
+      ],
+      "buyAudio": "https://www.amazon.fr/gp/product/B0BH9B6DBF/ref=dbs_a_def_rwt_hsch_vapi_taud_p1_i0"
+    },
+    {
       "titre": "Sagas des Neuf Mondes",
       "titre2": "",
       "univers": "Mémoria",

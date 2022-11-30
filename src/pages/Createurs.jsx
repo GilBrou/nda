@@ -197,7 +197,7 @@ export default function Createurs(data) {
           }
         >
           {/*Editors's cards creation from Json data*/}
-          <div className="row text-center justify-content-center">
+          <div className="row text-center justify-content-center ediSection">
             {data.data2
               ? data.data2.teamEdi.map((team, i) => tryAuth(team, i))
               : "Loading..."}
@@ -264,12 +264,12 @@ export default function Createurs(data) {
           }
         >
           {/*Supporters's cards creation from Json data*/}
-          <div className="row text-center">
+          <div className="row text-center supSection">
             {data.data2
               ? data.data2.teamOmbre.sort(alphabetical).map((team, i) => (
                   <div
                     key={`${team.name}-${i}`}
-                    className="col-sm-3 col-md-2 col-lg-2 creator"
+                    className="col-sm-3 col-md-2 col-lg-2 creator "
                   >
                     <img
                       className="img-responsive creatora"

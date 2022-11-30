@@ -11,7 +11,7 @@ import story3 from "../data/story3.json";
 
 /***COMPONENT***/
 export default function Stories(data) {
-  let thoseStories = [story1 /*, story2, story3*/];
+  let thoseStories = [story1/*, story2, story3*/];
 
   /*DOM*/
   return (

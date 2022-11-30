@@ -15,7 +15,7 @@ import {
   playIt3,
   playIt4,
   stopIt2,
-} from "../components/StoryBrumeAnim";
+} from "./StoryBrumeAnim";
 import data from "../data/story1.json";
 
 /***AUDIO***/
