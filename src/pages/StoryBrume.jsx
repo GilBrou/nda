@@ -72,8 +72,8 @@ export default function Story() {
       let Audio1 = document.getElementById("audioP");
       let Audio2 = document.getElementById("Kidz");
       let Audio3 = document.getElementById("Jazz");
-      let Audio5 = document.getElementById("Dread");
-      let allMusic = [Audio1, Audio2, Audio3, Audio4, Audio5];
+      let Audio4 = document.getElementById("Dread");
+      let allMusic = [Audio1, Audio2, Audio3, Audio4];
       for (let i in allMusic) {
         if (allMusic[i] != null && allMusic[i] != undefined) {
           allMusic[i].pause();
@@ -96,7 +96,7 @@ export default function Story() {
       playIt4(sound);
       let Audio1 = document.getElementById("Kidz");
       let Audio2 = document.getElementById("Jazz");
-      let allMusic = [Audio1, Audio2, Audio3];
+      let allMusic = [Audio1, Audio2];
       for (let i in allMusic) {
         if (allMusic[i] != null && allMusic[i] != undefined) {
           allMusic[i].pause();

@@ -211,6 +211,11 @@
   top: 120px;
   color: var(--greenish);
 }
+/*Ending button text*/
+.bottom p {
+  margin: 0;
+}
+
 /**************************Animation**********************************/
 .blurIt {
   -webkit-animation: text-blur-out 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s
