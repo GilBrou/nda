@@ -164,45 +164,124 @@ export function removeback() {
   }
 }
 /*remove background2*/
-export function removeback2() {
-  let target = document.getElementById("remBack2");
-  if (target != null && target != undefined) {
-    setTimeout(() => {
-      setTimeout(() => {
-        document.getElementById("remBack2").style.opacity = "1";
-      }, 25);
-      setTimeout(() => {
-        document.getElementById("remBack2").style.opacity = "0.80";
-      }, 50);
+export function flash() {
+ document.getElementById("storyWrap").style.filter = "brightness(200%)";
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(190%)";
+  }, 150);
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(180%)";
+  }, 175);
 
-      setTimeout(() => {
-        document.getElementById("remBack2").style.opacity = "0.75";
-      }, 75);
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(170%)";
+  }, 200);
 
-      setTimeout(() => {
-        document.getElementById("remBack2").style.opacity = "0.60";
-      }, 100);
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(160%)";
+  }, 225);
 
-      setTimeout(() => {
-        document.getElementById("remBack2").style.opacity = "0.50";
-      }, 125);
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(150%)";
+  }, 250);
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(140%)";
+  }, 275);
 
-      setTimeout(() => {
-        document.getElementById("remBack2").style.opacity = "0.35";
-      }, 150);
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(130%)";
+  }, 300);
 
-      setTimeout(() => {
-        document.getElementById("remBack2").style.opacity = "0.25";
-      }, 175);
-      setTimeout(() => {
-        document.getElementById("remBack2").style.opacity = "0.10";
-      }, 200);
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(120%)";
+  }, 325);
 
-      setTimeout(() => {
-        document.getElementById("remBack2").style.opacity = "0";
-      }, 225);
-    }, 500);
-  }
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(110%)";
+  }, 350);
+
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(100%)";
+  }, 375);
+
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(110%)";
+  }, 450);
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(120%)";
+  }, 500);
+
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(130%)";
+  }, 475);
+
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(140%)";
+  }, 500);
+
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(150%)";
+  }, 525);
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(160%)";
+  }, 550);
+
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(170%)";
+  }, 575);
+
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(180%)";
+  }, 600);
+
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(190%)";
+  }, 625);
+
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(200%)";
+  }, 650);
+
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(190%)";
+  }, 775);
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(180%)";
+  }, 785);
+
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(170%)";
+  }, 795);
+
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(160%)";
+  }, 805);
+
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(150%)";
+  }, 815);
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(140%)";
+  }, 825);
+
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(130%)";
+  }, 835);
+
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(120%)";
+  }, 845);
+
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(110%)";
+  }, 855);
+
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "brightness(100%)";
+  }, 865);
+  setTimeout(() => {
+    document.getElementById("storyWrap").style.filter = "unset";
+  }, 870);
 }
 
 /*play secondary audio*/

@@ -10,7 +10,7 @@ import { DustAnim } from "../components/UniversAnim";
 import {
   fadeAll,
   removeback,
-  removeback2,
+  flash,
   playIt2,
   playIt3,
   stopIt2,
@@ -260,7 +260,7 @@ export default function Story() {
                     }
                     /*Page8*/
                     if (page == 8) {
-                      removeback();
+                      /*removeback();*/
                       let sound = document.getElementById("Jazz");
                       stopIt2(sound);
                       return (
@@ -272,7 +272,7 @@ export default function Story() {
                           ))}
                           <div className="fadeIt">
                             <div
-                              id="remBack"
+                              /*id="remBack"*/
                               className="page8 backOverlay"
                             ></div>
                           </div>
@@ -320,7 +320,7 @@ export default function Story() {
                     }
                     /*Page13*/
                     if (page == 13) {
-                      removeback2();
+                      flash();
                       return (
                         <div>
                           {data.P13.map((P, i) => (
@@ -328,10 +328,10 @@ export default function Story() {
                               {P}
                             </h2>
                           ))}
-                          <div
-                            id="remBack2"
-                            className="page13 backOverlay"
-                          ></div>
+                          {/*<div
+                                                      id="remBack2"
+                                                      className="page13 backOverlay"
+                                                    ></div>*/}
                         </div>
                       );
                     }

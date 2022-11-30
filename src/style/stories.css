@@ -21,7 +21,7 @@
   background: url("./background/Stories.webp"), var(--blackish);
   font-family: "Cutive Mono", monospace;
   letter-spacing: -4px !important;
-  animation: animMuse 50s infinite alternate both;
+  /*animation: animMuse 50s infinite alternate both;*/
 }
 .top1,
 .top2 {
