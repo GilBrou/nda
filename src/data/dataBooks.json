@@ -238,6 +238,29 @@
       "buyEbook": "https://www.amazon.fr/Sextape-Version-LGBT-Dorian-Lake-ebook/dp/B07TJBJ5YB/ref=as_li_ss_tl?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=sextape+lgbt&qid=1561720802&s=gateway&sr=8-1&linkCode=sl1&tag=neocity-21&linkId=4c9c99fb299d545fc388ff2b56dbe079&language=fr_FR"
     },
     {
+      "titre": "Sextape",
+      "titre2": "",
+      "univers": "Fleur d'Absinthe",
+      "date": "2022-11-22",
+      "pages": "",
+      "durée": "4h58",
+      "ISBN": "",
+      "ASIN": "B0BMVQ3CVD",
+      "prix": "",
+      "extrait": "https://www.amazon.fr/gp/product/B0BMVQ3CVD/ref=dbs_a_def_rwt_hsch_vapi_taud_p1_i1",
+      "lien": "sextape-livre-audio",
+      "format": "Livre audio",
+      "sousTitre": "",
+      "par": ["Morgane Stankiewiez"],
+      "lu": ["Emmanuelle Kant"],
+      "genres": ["Contemporain", "Romance", "LGBT"],
+      "résumé": "La vie d’Alice est bouleversée lorsqu’une Sextape vieille de dix-huit ans fait surface, la mettant en scène avec Styx Winter, aujourd’hui star du rock planétaire.",
+      "résumé2": " Heureusement pour elle, Eva, une attachée de communication new-yorkaise, va l’aider à transformer ce désastre en opportunité…",
+      "résumé3": "",
+      "reviews": [""],
+      "buyAudio": "https://www.amazon.fr/gp/product/B0BMVQ3CVD/ref=dbs_a_def_rwt_hsch_vapi_taud_p1_i1"
+    },
+    {
       "titre": "Athnuachan",
       "titre2": ": L'Académie",
       "univers": "Chrysalis",
@@ -338,9 +361,7 @@
       "résumé": "Avec la participation de Cécile Pommereau et Sara Pintado",
       "résumé2": "En France, on considère l’écrivain comme un génie au talent inné. Aux États-Unis, au contraire, on perçoit l’écriture comme un artisanat qui demande simplement de la méthode et du travail. Dans ce guide d’écriture, je partagerai mon approche, quelque part entre ces deux extrêmes. Nous discuterons du cœur des histoires, de leur âme et de la manière de créer des personnages, des intrigues qui vous correspondent et captivent les lecteurs.",
       "résumé3": "Nous parlerons aussi de la structure du récit et d’aspects plus techniques, utiles pour bien comprendre les possibilités qu’offre cet Art. La simplicité et l’honnêteté se trouveront au cœur de votre démarche tout au long de votre périple. C’est ce qui vous permettra de terminer un premier roman et, ce faisant, de devenir écrivain.",
-      "reviews": [
-        ""
-      ],
+      "reviews": [""],
       "buyAudio": "https://www.amazon.fr/gp/product/B0BH9B6DBF/ref=dbs_a_def_rwt_hsch_vapi_taud_p1_i0"
     },
     {
