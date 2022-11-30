@@ -143,7 +143,9 @@ export function checkWidth2(data) {
 			<div>
 				<h2>Dernières Sorties </h2>
 				<div className="introBooks">
-					{ThoselastBooks.map((thatBook, i) => LastBooks(thatBook, i, data))}
+					{ThoselastBooks.map((thatBook, i) =>
+						LastBooks(thatBook, i, data)
+					)}
 				</div>
 			</div>
 		);
@@ -154,7 +156,9 @@ export function checkWidth2(data) {
 			<div>
 				<h2>Dernières Sorties </h2>
 				<div className="introBooks">
-					{ThoselastBooks.map((thatBook, i) => LastBooks(thatBook, i, data))}
+					{ThoselastBooks.map((thatBook, i) =>
+						LastBooks(thatBook, i, data)
+					)}
 				</div>
 			</div>
 		);

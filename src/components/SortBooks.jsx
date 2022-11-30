@@ -48,6 +48,16 @@ export function SetBuyLinks(props) {
 				</div>
 			);
 		}
+	} else if (props.format === "Livre audio") {
+		if (props.buyAudio != 0) {
+			return (
+				<div className="buyLinks">
+					<a href={props.buyAudio} target="_blank">
+						🛒 Achat
+					</a>
+				</div>
+			);
+		}
 	} else if (props.format === "Nouvelle") {
 		if (props.buyPaper != 0 && props.buyEbook == 0) {
 			return (
@@ -196,6 +206,13 @@ function SetSecondary(thatBook) {
 			<div className="secondaryInfos">
 				<p>{thatBook.prix + " €"}</p>
 				<p>{"ISBN : " + thatBook.ISBN}</p>
+			</div>
+		);
+	} else if (thatBook.durée != 0 && thatBook.durée != undefined) {
+		return (
+			<div className="secondaryInfos">
+				<p>{"Lu par " + thatBook.lu}</p>
+				<p>{"Durée : " + thatBook.durée}</p>
 			</div>
 		);
 	} else {
@@ -383,26 +400,49 @@ export function SortTargetedBooks(thatBook, i, target, data) {
 
 /***Sort books from Json according to selected Universe and display them***/
 export function LastBooks(thatBook, i, data) {
-	return (
-		<a
-			href={"/recherche#" + thatBook.titre}
-			className="page-scroll bL"
-			key={thatBook.lien + "Link"}
-		>
-			<img
-				className="img-responsive"
-				src={
-					data.data1.UimgLinks.IL3 +
-					thatBook.lien +
-					data.data1.UimgLinks.IL1B
-				}
-				alt={"Couverture de " + thatBook.titre}
-				key={thatBook.lien + "intro"}
-			/>
-			<div className="overImg">{thatBook.univers}</div>
-			<p className="newTag">
-				{thatBook.format + " " + thatBook.genres[0]}
-			</p>
-		</a>
-	);
+	if (thatBook.durée != null && thatBook.durée != undefined) {
+		return (
+			<a
+				href={"/recherche#" + thatBook.titre}
+				className="page-scroll bL"
+				key={thatBook.lien + "Link"}
+			>
+				<img
+					className="img-responsive"
+					src={
+						data.data1.UimgLinks.IL3 +
+						thatBook.lien +
+						data.data1.UimgLinks.IL1B
+					}
+					alt={"Couverture de " + thatBook.titre}
+					key={thatBook.lien + "intro"}
+				/>
+				<div className="overImg">{thatBook.univers}</div>
+				<p className="newTag">{thatBook.format}</p>
+			</a>
+		);
+	} else {
+		return (
+			<a
+				href={"/recherche#" + thatBook.titre}
+				className="page-scroll bL"
+				key={thatBook.lien + "Link"}
+			>
+				<img
+					className="img-responsive"
+					src={
+						data.data1.UimgLinks.IL3 +
+						thatBook.lien +
+						data.data1.UimgLinks.IL1B
+					}
+					alt={"Couverture de " + thatBook.titre}
+					key={thatBook.lien + "intro"}
+				/>
+				<div className="overImg">{thatBook.univers}</div>
+				<p className="newTag">
+					{thatBook.format + " " + thatBook.genres[0]}
+				</p>
+			</a>
+		);
+	}
 }
