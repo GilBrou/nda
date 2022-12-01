@@ -124,7 +124,18 @@
   line-height: 15px;
   align-items: center;
 }
-.Tiphs {
+.Pcenter2Bis{
+  margin-top: 10px;
+}
+.Pcenter2 a{
+text-decoration: none;
+transform: scale(1);
+
+}
+.Pcenter2 a:hover{
+transform: scale(1.02);
+}
+.CreatorLink {
   color: var(--greenish);
   margin-left: 5px;
 }

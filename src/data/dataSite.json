@@ -9,7 +9,8 @@
     "TW": "https://twitter.com/NoirdAbsinthe",
     "IG": "https://www.instagram.com/noirdabsinthe/",
     "YT": "https://www.youtube.com/channel/UCbZRksrbS8qcN6fzv4Y3y-g/",
-    "Tiphs": "https://www.tiphs-art.com/"
+    "Tiphs": "https://www.tiphs-art.com/",
+    "Dev": "https://www.gillianbroussedev.com"
   },
   "stories": {
     "titre0": "Lecture augmentée",
@@ -532,7 +533,10 @@
     "P5": "FR25835370859",
     "P6": "Les illustrations de ce site sont protégées.",
     "P7": "Elles ont été réalisées pour Noir d'Absinthe par",
-    "P8": "Tiphs."
+    "P8": "Tiphs.",
+    "P9": "Site réalisé par",
+    "P10": "Gillian Brousse"
+
   },
   "confidentiality": {
     "abrtitre": "Confidentialité",

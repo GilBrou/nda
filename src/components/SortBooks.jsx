@@ -264,20 +264,36 @@ function SetNames(props, props0, i) {
 }
 
 /***Check if Book come from a litterary series***/
-function SetTome(thatBook, i) {
+function SetTome(thatBook, i) {	
 	if (thatBook.tome >= 0) {
-		return (
-			<a
-				href={"/recherche#" + "Univers " + thatBook.Série}
-				className="page-scroll pSérie"
-				key={thatBook.Série + "Link"}
-			>
-				<p className="tag" key={"tag" + thatBook.Série + i}>
-					{" "}
-					{"➔  Univers " + thatBook.Série}
-				</p>
-			</a>
-		);
+		console.log(thatBook.versions)
+		if (thatBook.versions == "oui") {
+			return (
+				<a
+					href={"/recherche#" + thatBook.Série}
+					className="page-scroll pSérie"
+					key={thatBook.Série + "Link"}
+				>
+					<p className="tag" key={"tag" + thatBook.Série + i}>
+						{" "}
+						{"➔  Versions "}
+					</p>
+				</a>
+			);
+		} else {
+			return (
+				<a
+					href={"/recherche#" + "Univers " + thatBook.Série}
+					className="page-scroll pSérie"
+					key={thatBook.Série + "Link"}
+				>
+					<p className="tag" key={"tag" + thatBook.Série + i}>
+						{" "}
+						{"➔  Univers " + thatBook.Série}
+					</p>
+				</a>
+			);
+		}
 	}
 }
 

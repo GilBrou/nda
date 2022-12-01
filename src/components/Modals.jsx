@@ -223,10 +223,29 @@ export function getModal(data, id) {
 							}
 							target="_blank"
 						>
-							<p className="Tiphs">
+							<p className="CreatorLink">
 								{data.data2
 									? data.data2.mentions.P8
 									: "loading..."}
+							</p>
+						</a>
+					</span>
+				</div>
+				<div className="Pcenter2 Pcenter2Bis">
+					<span className="Pinline">
+						<p className="">
+							{" "}
+							{data.data2 ? data.data2.mentions.P9 : "loading..."}
+						</p>
+
+						<a
+							href={
+								data.data2 ? data.data2.nda.Dev : "loading..."
+							}
+							target="_blank"
+						>
+							<p className="CreatorLink">
+								{data.data2.mentions.P10 + "."}
 							</p>
 						</a>
 					</span>
