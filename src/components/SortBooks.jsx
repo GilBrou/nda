@@ -122,7 +122,26 @@ export function SetBuyLinks(props) {
 /***Check if Litterary Proze are available and display them***/
 export function SetPrize(props, i) {
 	if (props.sousTitre != 0) {
-		return <h2 className="sousTitre">{props.sousTitre}</h2>;
+		/*Check if it is an audiobook*/
+		if (props.sousTitre.includes("Audible")) {
+			console.log(props.sousTitre);
+			return (
+				<a
+					href={"/recherche#" + props.sousTitre}
+					className="page-scroll audiobook"
+					key={props.sousTitre + "Link"}
+				>
+					<h2
+						key={"tag tagAudiobook" + i}
+						className="sousTitre"
+					>
+						{props.sousTitre}
+					</h2>
+				</a>
+			);
+		} else {
+			return <h2 className="sousTitre">{props.sousTitre}</h2>;
+		}
 	}
 }
 
