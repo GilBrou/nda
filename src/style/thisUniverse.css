@@ -263,18 +263,18 @@
     font-size: 22px !important;
     border-radius: 5px;
 }
-.audiobook {
-    transform: scale(1);
+/*
+.audiobook h2 {
+    background-color: #f09e2a;
     transition: 0.5s;
-    pointer-events: auto;
-    text-decoration: none!important;
+    color: var(--blackish);
 }
-.audiobook h2{
-    background-color: #F09E2A;
+*/
+.audioTag p {
+    background-color: #f09e2a !important;
     transition: 0.5s;
-color: var(--blackish);
-
-
+    color: var(--blackish) !important;
+    border: solid 1.5px #f09e2a !important;
 }
 .book h3 {
     font-size: 24px;
@@ -337,15 +337,13 @@ color: var(--blackish);
     pointer-events: none;
     border: solid 1.5px var(--blackish);
 }
-.subTitle a:hover p{
+
+.subTitle a:hover p {
     transition: 0.5s;
     transform: scale(1.1);
-    background-color: var(--greenish);
-    color: var(--blackish);
-}
-.audiobook:hover h2{
-    transition: 0.5s;
-    transform: scale(1.1);
+    background-color: var(--greenish) !important;
+    color: var(--blackish) !important;
+    border: solid 1.5px var(--blackish) !important;
 }
 
 /*Restyling depending on background colors*/
@@ -408,7 +406,7 @@ color: var(--blackish);
 
 /****Search page****/
 #thisSearch {
-    background: url("../../public/img/Background/Hors Collection.webp");    
+    background: url("../../public/img/Background/Hors Collection.webp");
 }
 .targetH1 {
     font-size: 60px !important;

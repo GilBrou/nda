@@ -124,17 +124,13 @@ export function SetPrize(props, i) {
 	if (props.sousTitre != 0) {
 		/*Check if it is an audiobook*/
 		if (props.sousTitre.includes("Audible")) {
-			console.log(props.sousTitre);
 			return (
 				<a
 					href={"/recherche#" + props.sousTitre}
 					className="page-scroll audiobook"
 					key={props.sousTitre + "Link"}
 				>
-					<h2
-						key={"tag tagAudiobook" + i}
-						className="sousTitre"
-					>
+					<h2 key={"tag tagAudiobook" + i} className="sousTitre">
 						{props.sousTitre}
 					</h2>
 				</a>
@@ -330,15 +326,30 @@ export function SortBooks(thatBook, i, data) {
 						)}
 					</div>
 					{SetPrize(thatBook)}
-
 					<div className="subTitle">
-						<a
-							href={"/recherche#" + thatBook.format}
-							className="page-scroll"
-							key={thatBook.format + "Link"}
-						>
-							<p>{thatBook.format}</p>
-						</a>
+						{/*Check if it is an audiobook*/}
+						{(() => {
+							if (thatBook.format == "Livre audio") {
+								return (
+									<a
+										href={"/recherche#" + thatBook.format}
+										className="page-scroll audioTag"
+										key={thatBook.format + "Link"}
+									>
+										<p>{thatBook.format}</p>
+									</a>
+								);
+							} else {
+								<a
+									href={"/recherche#" + thatBook.format}
+									className="page-scroll coucou"
+									key={thatBook.format + "Link"}
+								>
+									<p>{thatBook.format}</p>
+								</a>;
+							}
+						})()}
+
 						{thatBook.genres.map((tag, i) => SetTags(tag, i))}
 					</div>
 					<p key={"resum1" + thatBook.titre}>{thatBook.résumé}</p>
@@ -396,17 +407,32 @@ export function SortTargetedBooks(thatBook, i, target, data) {
 						)}
 					</div>
 					{SetPrize(thatBook)}
-
 					<div className="subTitle">
-						<a
-							href={"/recherche#" + thatBook.format}
-							className="page-scroll"
-							key={thatBook.format + "Link"}
-						>
-							<p>{thatBook.format}</p>
-						</a>
+						{/*Check if it is an audiobook*/}
+						{(() => {
+							if (thatBook.format == "Livre audio") {
+								return (
+									<a
+										href={"/recherche#" + thatBook.format}
+										className="page-scroll audioTag"
+										key={thatBook.format + "Link"}
+									>
+										<p>{thatBook.format}</p>
+									</a>
+								);
+							} else {
+								<a
+									href={"/recherche#" + thatBook.format}
+									className="page-scroll coucou"
+									key={thatBook.format + "Link"}
+								>
+									<p>{thatBook.format}</p>
+								</a>;
+							}
+						})()}
 						{thatBook.genres.map((tag, i) => SetTags(tag, i))}
 					</div>
+
 					<p key={"resum1" + thatBook.titre}>{thatBook.résumé}</p>
 					<p key={"resum2" + thatBook.titre}>{thatBook.résumé2}</p>
 					<p key={"resum3" + thatBook.titre}>{thatBook.résumé3}</p>
