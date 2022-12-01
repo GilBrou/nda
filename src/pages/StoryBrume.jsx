@@ -34,6 +34,11 @@ export default function Story() {
       setPage(page + 1);
     }
   }
+  function previousPage() {
+    if (page != "20" && page != "0") {
+      setPage(page - 1);
+    }
+  }
 
   /*Play music as story begins*/
   function firstClick(data) {
@@ -88,8 +93,6 @@ export default function Story() {
 
   /*Ending styling*/
   function Ending() {
-    let arrowright = document.getElementById("next");
-    arrowright.style.display = "none";
     document.getElementById("left").classList.add("fadeIt2");
     let sound = document.getElementById("Dread");
     if (musicToggle) {
@@ -114,6 +117,7 @@ export default function Story() {
         {DustAnim()}
         <div className="top" id="thisToggle">
           {/*Left section with controls*/}
+
           <div id="left" className="left">
             {/*Sound button*/}
             <div className="soundButton" data-tip data-for="TipSound">
@@ -156,6 +160,24 @@ export default function Story() {
               </button>
             </div>
           </div>
+          <div className="left0">
+            {(() => {
+              if (page > 1 && page != 20) {
+                /*previous button*/
+                return (
+                  <button
+                    id="previous"
+                    className="previous"
+                    onClick={() => {
+                      previousPage(data);
+                    }}
+                  >
+                    <i className="fa fa-chevron-left" aria-hidden="true"></i>
+                  </button>
+                );
+              }
+            })()}
+          </div>
           {/*Main part : text*/}
           {(() => {
             /*Story HomePage*/
@@ -185,6 +207,8 @@ export default function Story() {
                   {(() => {
                     /*Page1*/
                     if (page == 1) {
+                      let sound = document.getElementById("Kidz");
+                      stopIt2(sound);
                       return data.P1.map((P, i) => (
                         <h2 className="blurIt" key={"P" + i}>
                           {P}
@@ -231,6 +255,8 @@ export default function Story() {
                     }
                     /*Page6*/
                     if (page == 6) {
+                      let sound = document.getElementById("Jazz");
+                      stopIt2(sound);
                       fadeAll();
                       return (
                         <div className="fadeIt">
@@ -437,10 +463,10 @@ export default function Story() {
               );
             }
           })()}
-          {/*Right par : next button*/}
+          {/*Right part : next button*/}
           <div className="right">
             {(() => {
-              if (page > 0) {
+              if (page > 0 && page != 20) {
                 /*Next button*/
                 return (
                   <button

@@ -65,13 +65,18 @@
   background: url("https://media.giphy.com/media/kg19fN5BXbZGIDznzG/giphy.gif");
 }
 /*Right*/
-.right {
+.right,
+.left0 {
   right: 0;
   top: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: absolute;
+}
+.left0 {
+  left: 0;
+  width: fit-content;
 }
 /*Bottom Section*/
 .bottom {
@@ -153,7 +158,8 @@
   position: relative;
 }
 /*Right Arrows*/
-.next {
+.next,
+.previous {
   color: var(--whiteish) !important;
   transition: 0.5s;
   font-size: 35px !important;
@@ -164,7 +170,8 @@
   border: unset !important;
 }
 /*Arrows hover*/
-.next:hover {
+.next:hover,
+.previous:hover {
   transform: scale(1.25) !important;
   color: var(--greenish) !important;
 }
