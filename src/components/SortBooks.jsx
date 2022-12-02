@@ -264,9 +264,8 @@ function SetNames(props, props0, i) {
 }
 
 /***Check if Book come from a litterary series***/
-function SetTome(thatBook, i) {	
+function SetTome(thatBook, i) {
 	if (thatBook.tome >= 0) {
-		console.log(thatBook.versions)
 		if (thatBook.versions == "oui") {
 			return (
 				<a
