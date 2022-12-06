@@ -68,7 +68,7 @@ export default function App() {
   }, []);
 
   /**************** Get all books tags if needed******************************/
-  /*getAllTags(Data3);*/
+  getAllTags(Data3);
   /***************************************************************************/
 
   /*Check if loading is complete before rendering*/
