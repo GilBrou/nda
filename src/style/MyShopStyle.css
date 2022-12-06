@@ -1,0 +1,35 @@
+/*MyShopStyle*/
+
+html, body, main,  header, header *, .bg-light{
+	color: white!important;
+	background-color: #000000!important;
+}
+header img, footer img{
+ filter: invert(100%);
+}
+.bg-light{
+	text-align: center;
+}
+.bg-light h2{
+	color: white!important;
+	background-color: #000000!important;
+}
+.card {
+	color: black;
+	border-radius: 10px;
+}
+.card-img-top {
+	border-radius: 10px 10px 0 0;
+}
+.card-body
+{
+	border-radius: 0 0 10px 10px;
+	padding-top: 5px!important;
+}
+
+header a, header i, footer a, footer i, footer h5, .text-primary{
+	color: white!important;
+}
+.list-inline{
+	
+}
