@@ -15,8 +15,12 @@ header img, footer img{
 	background-color: #000000!important;
 }
 .card {
-	color: black;
+	color: white!important;
 	border-radius: 5px;
+	background-color: black;
+}
+.text-dark{
+	color: white!important;	
 }
 .card-img-top {
 	border-radius: 5px 5px 0 0;
@@ -28,4 +32,7 @@ header img, footer img{
 }
 header a, header i, footer a, footer i, footer h5, .text-primary{
 	color: white!important;
+}
+.col-lg-3.align-self-lg-end.text-lg-right{
+	display: none;
 }
