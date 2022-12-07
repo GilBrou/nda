@@ -5,7 +5,7 @@
     "tel": "06 52 49 96 97",
     "blog": "https://www.noirdabsinthe.com/blog",
     "boutique": "https://noirdabsinthe.hiboutik.com/myshop/",
-        "FB": "https://www.facebook.com/NoirdAbsinthe/",
+    "FB": "https://www.facebook.com/NoirdAbsinthe/",
     "TW": "https://twitter.com/NoirdAbsinthe",
     "IG": "https://www.instagram.com/noirdabsinthe/",
     "YT": "https://www.youtube.com/channel/UCbZRksrbS8qcN6fzv4Y3y-g/",
@@ -123,22 +123,6 @@
       "credits": "",
 
       "job": "Directrice de collection"
-    },
-    {
-      "name": "Anne",
-      "name2": "Ledieu",
-      "Lien": "https://lesmotspourlecrire.com/",
-      "credits": "",
-
-      "job": "Correctrice"
-    },
-    {
-      "name": "Marin'",
-      "name2": "Maltese",
-      "Lien": "",
-      "credits": "",
-
-      "job": "Directrice commerciale"
     }
   ],
   "teamAuth": [
@@ -490,7 +474,7 @@
       "name2": "Boerlen",
       "credits": "",
       "Lien": "",
-      "job": "Comité de lecture, Béta-lectrice"
+      "job": "Comité de lecture"
     },
     {
       "name": "Tristan",
@@ -504,7 +488,28 @@
       "name2": "Aufderbruck",
       "credits": "",
       "Lien": "",
-      "job": "Responsable des visuels, Béta-lecteur"
+      "job": "Responsable des visuels"
+    },
+    {
+      "name": "Anne",
+      "name2": "Ledieu",
+      "Lien": "https://lesmotspourlecrire.com/",
+      "credits": "",
+      "job": "Correctrice"
+    },
+    {
+      "name": "Marin'",
+      "name2": "Maltese",
+      "Lien": "https://siennapratt.art.blog/",
+      "credits": "",
+      "job": "Comité de lecture"
+    },
+    {
+      "name": "Eve",
+      "name2": "Mattatia",
+      "Lien": "",
+      "credits": "",
+      "job": "Comité de lecture"
     }
   ],
 
@@ -536,7 +541,6 @@
     "P8": "Tiphs.",
     "P9": "Site réalisé par",
     "P10": "Gillian Brousse"
-
   },
   "confidentiality": {
     "abrtitre": "Confidentialité",

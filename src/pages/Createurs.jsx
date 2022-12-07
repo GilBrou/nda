@@ -241,7 +241,7 @@ export default function Createurs(data) {
           }
         >
           {/*Illustrators's cards creation from Json data*/}
-          <div className="row text-center teamAuth">
+          <div className="row text-center teamAuth teamIllus">
             {data.data2
               ? data.data2.teamIllus
                   .sort(alphabetical)

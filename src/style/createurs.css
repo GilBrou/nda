@@ -46,7 +46,11 @@
 .supSection .creator {
   margin-bottom: 100px !important;
 }
-
+.ediSection, .supSection/*, .teamIllus, .teamAuth*/ {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 /* Vertical Names */
 .creator .Names {
   padding: 3px;
