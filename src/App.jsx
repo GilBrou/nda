@@ -67,6 +67,9 @@ export default function App() {
     getDatas();
   }, []);
 
+/**************** Get all books if needed******************************/
+  /*getAllTags(Data3);*/
+  /*console.log(allDatas3.Livres)*/
   /**************** Get all books tags if needed******************************/
   /*getAllTags(Data3);*/
   /***************************************************************************/
