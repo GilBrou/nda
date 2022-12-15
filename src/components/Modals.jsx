@@ -2,6 +2,7 @@
 
 /***COMPONENTS***/
 import Form from "./Form";
+import Newsletter from "./Newsletter";
 
 /***COMPONENT***/
 /*Hide target when modal is open*/
@@ -53,6 +54,8 @@ export function getModal(data, id) {
 				<p> {data.data2 ? data.data2.contact.P3 : "loading..."}</p>
 				<p> {data.data2 ? data.data2.contact.P4 : "loading..."}</p>
 				<p> {data.data2 ? data.data2.contact.P5 : "loading..."}</p>
+				{/*Newsletter*/}
+				<Newsletter />
 				{/* Mail*/}
 				<li>
 					<a href={ThatMail}>
