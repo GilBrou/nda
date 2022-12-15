@@ -30,12 +30,13 @@ form textarea:focus {
   outline: none;
 }
 form button,
-.btn-block {
+.btn-block,
+#News button {
   display: block;
   /*width: 25%;*/
   width: 250px;
   border-radius: 3px;
-  background: var(--greenish);
+  background: var(--greenish) !important;
   border: none;
   outline: none;
   cursor: pointer;
@@ -48,6 +49,7 @@ form button,
   text-transform: uppercase;
 }
 
-form button:hover {
+form button:hover,
+#News button {
   transform: scale(1.1);
 }

@@ -2,12 +2,16 @@
 
 
 
-#mc_embed_signup_scroll{
+#News{
+  margin-top:20px;
 
 }
 
-#mc_embed_signup_scroll label {
+#News label {
+  font-size: 16px;
       margin-top: 15px;
     color: var(--whiteish);
+}
+#News button {
 }
 
