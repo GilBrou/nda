@@ -103,7 +103,7 @@ export default function App() {
             </Route>
             {/*TEAM PAGE*/}
             <Route exact path="/actionnaires">
-              <Team />
+              <Team data={Data2}/>
             </Route>
             {/*STORIES*/}
             <Route exact path="/nouvelles">

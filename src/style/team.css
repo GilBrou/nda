@@ -1,7 +1,48 @@
 /***TEAM***/
-
-#team{
+#team {
+  padding: 50px;
+  margin: 125px auto;
+  align-self: center;
+  max-width: 80vw;
+  background-color: var(--blackishBack);
+}
+.TeamTitle {
+  color: var(--greenish);
+}
+.TeamTitle,
+.TeamSub {
+  text-align: center;
+  margin-bottom: 50px !important;
+}
+.TeamSub {
+  font-size: 25px !important;
+  color: var(--whiteish) !important;
+  margin: auto;
+  border-bottom: unset !important;
+}
+.teamWrap {
+  display: flex;
+  justify-content: space-around;
+}
+.teamLeft,
+.teamRight {
+  padding: 15px;
+  flex: 1;
+}
+#team h2 {
+  color: var(--greenish);
+  font-size: 20px;
+  width: fit-content;
+  margin: 5px auto 5px auto;
+  padding-bottom: 5px;
+  border-bottom: solid 1px var(--greenish);
+}
+#team a p{
+  margin: 25px auto 25px auto;
+  width: fit-content;
+}
+.teamWrap a{
+  cursor: pointer!important;
+  width: 100%;
   background-color: red;
-  width: 100vw;
-  height: 100vh;
 }
