@@ -15,6 +15,7 @@ import Data00 from "./data/data.json";
 /***PAGES***/
 import Homepage from "./pages/Homepage";
 import StoryBrume from "./pages/StoryBrume";
+import Team from "./pages/Team";
 import Stories from "./pages/Stories";
 import Createurs from "./pages/Createurs";
 import ThisUniverse from "./pages/ThisUniverse";
@@ -67,7 +68,7 @@ export default function App() {
     getDatas();
   }, []);
 
-/**************** Get all books if needed******************************/
+  /**************** Get all books if needed******************************/
   /*getAllTags(Data3);*/
   /*console.log(allDatas3.Livres)*/
   /**************** Get all books tags if needed******************************/
@@ -99,6 +100,10 @@ export default function App() {
             {/*UNIVERS HOMEPAGE*/}
             <Route exact path="/nos-univers">
               <Univers data1={Data1} data2={Data2} />
+            </Route>
+            {/*TEAM PAGE*/}
+            <Route exact path="/actionnaires">
+              <Team />
             </Route>
             {/*STORIES*/}
             <Route exact path="/nouvelles">

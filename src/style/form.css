@@ -31,7 +31,7 @@ form textarea:focus {
 }
 form button,
 .btn-block,
-#News button {
+#News .button {
   display: block;
   /*width: 25%;*/
   width: 250px;
@@ -45,11 +45,25 @@ form button,
   color: var(--blackish);
   margin: 0 auto;
   border: solid 1px var(--blackish);
+  transform: scale(1);
   transition: 0.4s;
   text-transform: uppercase;
 }
 
 form button:hover,
-#News button {
+#News .button:hover {
   transform: scale(1.1);
 }
+
+/***NEWSLETTER***/
+
+#News{
+  margin-top:20px;
+}
+#News label {
+  font-size: 16px;
+      margin-top: 15px;
+    color: var(--whiteish);
+}
+
+

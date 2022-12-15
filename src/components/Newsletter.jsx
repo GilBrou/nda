@@ -16,11 +16,7 @@ export default function Newsletter() {
 					information.
 				</label>
 				<input type="email" placeholder="Adresse email" required />
-				<input
-					type="submit"
-					Value="S'inscrire"
-					className="button"
-				/>
+				<input type="submit" value="S'inscrire" className="button" />
 			</form>
 		</div>
 	);
