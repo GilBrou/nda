@@ -1,41 +1,34 @@
 /******TEAM Page******/
 
+/***GENERAL***/
+import { useState, useEffect } from "react";
+
 /***DATA***/
 import data from "../data/Team.json";
 
 /***COMPONENT***/
 export default function Team() {
+  /*Toggle Login*/
+  const [logged, setLogged] = useState(false);
 
-/*islogged useffect ?*
-
-
+  /*Login Function*/
   function Log() {
     let pass = document.getElementById("pass");
     if (pass != null && pass != undefined) {
       document.getElementById("pass").addEventListener("input", () => {
         let thisPass = pass.value;
         if (thisPass == data.team.in) {
-          let logger = document.getElementById("team0");
-          team0.style.display = "none";
-          let onceLogged = document.getElementById("team");
-          onceLogged.style.display = "block";
+          setLogged(true);
         }
       });
     }
   }
-  /*DOM*/
 
-  return (
-    <div>
-      <div id="team0">
-        <div className="login-wrapper">
-          <label>
-            {<p>Merci de rentrer votre mot de passe</p>}
-            <input type="text" id="pass" />
-            {Log()}
-          </label>
-        </div>
-      </div>
+  /*DOM*/
+  /*Check if user is logged*/
+  if (logged) {
+    /*if user is logged, return team content*/
+    return (
       <div id="team">
         <h1 className="TeamTitle">Page Actionnaires</h1>
         <h2 className="TeamSub">
@@ -57,7 +50,7 @@ export default function Team() {
             <a href={data.team.pv2} target="_blank">
               <p>AG Rémunération dirigeante 21/12/2020</p>
             </a>
-            <h2 className="secTitle">📼 Replay Assemblées Générales</h2>
+            <h2 className="secTitle">▶ Replay Assemblées Générales</h2>
             <a href={data.team.replay3} target="_blank">
               <p>AG Ordinaire 09/12/2022</p>
             </a>
@@ -73,17 +66,28 @@ export default function Team() {
             <a href={data.team.doc1} target="_blank">
               <p>Liasse fiscale 2020-2021 </p>
             </a>
-
             <a href={data.team.doc2} target="_blank">
               <p>Liasse fiscale 2019-2020 </p>
             </a>
-
             <a href={data.team.doc3} target="_blank">
               <p>Liasse fiscale 2018-2019 </p>
             </a>
           </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  } else {
+    /*if user isn't logged, return login form*/
+    return (
+      <div id="team0">
+        <div className="login-wrapper">
+          <label>
+            {<p>Merci de rentrer votre mot de passe</p>}
+            <input type="text" id="pass" />
+            {Log()}
+          </label>
+        </div>
+      </div>
+    );
+  }
 }
