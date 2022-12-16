@@ -15,7 +15,7 @@ export default function Newsletter() {
 					Inscrivez-vous à notre liste de diffusion ne manquez aucune
 					information.
 				</label>
-				<input type="email" placeholder="Adresse email" required />
+				<input type="email" placeholder="E-mail" required />
 				<input type="submit" value="S'inscrire" className="button" />
 			</form>
 		</div>

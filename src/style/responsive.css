@@ -276,6 +276,7 @@
 		font-size: 18px !important;
 	}
 	form button,
+		form .button,
 	.btn-block {
 		width: 55% !important;
 	}
@@ -407,7 +408,6 @@
 		width: 80%;
 	}
 }
-
 /**********382************/
 @media (max-width: 382px) {
 	.audioWrap {
