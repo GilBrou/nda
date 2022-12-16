@@ -1,24 +1,47 @@
 /***TEAM***/
+#team0 {
+  padding: 50px;
+  /*margin: 30vh auto;*/
+  align-self: center;
+  align-items: center;
+  /*max-width: 50vw;*/
+  background-color: var(--blackishBack);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  opacity: 0;
+  -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; /**/
+  border-radius: 3px;
+}
 #team {
+  border-radius: 3px;  
+  display: none;
   padding: 50px;
   margin: 125px auto;
   align-self: center;
   max-width: 80vw;
   background-color: var(--blackishBack);
+  position: relative;
+  opacity: 0;
+  -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; /**/
 }
 .TeamTitle {
   color: var(--greenish);
+  margin-bottom: 50px !important;
 }
 .TeamTitle,
 .TeamSub {
   text-align: center;
-  margin-bottom: 50px !important;
 }
 .TeamSub {
-  font-size: 25px !important;
-  color: var(--whiteish) !important;
+  font-size: 22px;
+  color: var(--whiteish);
   margin: auto;
-  border-bottom: unset !important;
+  border-bottom: unset;
 }
 .teamWrap {
   display: flex;
@@ -27,22 +50,45 @@
 .teamLeft,
 .teamRight {
   padding: 15px;
-  flex: 1;
 }
-#team h2 {
+.secTitle {
   color: var(--greenish);
   font-size: 20px;
   width: fit-content;
-  margin: 5px auto 5px auto;
+  margin: 25px 0 25px 0;
   padding-bottom: 5px;
   border-bottom: solid 1px var(--greenish);
 }
-#team a p{
+#team p {
+  margin: 15px auto 15px auto;
+  transform: scale(1);
+  transition: 0.3s;
+}
+#team a {
   margin: 25px auto 25px auto;
   width: fit-content;
+  text-decoration: none;
 }
-.teamWrap a{
-  cursor: pointer!important;
+#team p:hover {
+  transform: scale(1.02);
+}
+
+/*LOGIN*/
+.login-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  justify-content: center;
+}
+
+.login-wrapper h1{
   width: 100%;
-  background-color: red;
+  font-size: 32px;
+}
+.login-wrapper button, .login-wrapper input{
+width: 300px;
+}
+
+.login-wrapper input{
+  color: var(--blackish);
 }

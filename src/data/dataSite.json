@@ -12,17 +12,6 @@
     "Tiphs": "https://www.tiphs-art.com/",
     "Dev": "https://www.gillianbroussedev.com"
   },
-  "team": {
-    "in": "Absinthia",
-    "statuts": "/Statuts.pdf",
-    "pv": ["/pv1.pdf", "/pv2.pdf"],
-    "doc": ["/doc1.pdf", "/doc2.pdf", "/doc3.pdf"],
-    "replay": [
-      "https://www.youtube.com/watch?v=3Wp3_C5UZZQ&ab_channel=Noird%27Absinthe",
-      "https://www.youtube.com/watch?v=DYbZ6V9pwEg&ab_channel=Noird%27Absinthe",
-      "https://www.youtube.com/watch?v=dWgTNCqhRHo&ab_channel=Noird%27Absinthe"
-    ]
-  },
   "stories": {
     "titre0": "Lecture augmentée",
     "titre": "Lecture en ligne",

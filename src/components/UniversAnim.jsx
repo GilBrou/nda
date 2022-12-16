@@ -3,7 +3,7 @@
 /*Dust Anim*/
 export function DustAnim() {
 	return (
-		<div className="bg-animation">
+		<div className="bg-animation" id ="bg-animation">
 			<div id="stars" />
 			<div id="stars2" />
 			<div id="stars4" />

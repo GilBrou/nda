@@ -1,8 +1,5 @@
 /******STORY******/
 
-/***GENERAL***/
-import { useState, useEffect } from "react";
-
 /***COMPONENTS***/
 import { DustAnim, MainAnim } from "../components/UniversAnim";
 import story1 from "../data/story1.json";
