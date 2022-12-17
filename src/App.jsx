@@ -35,29 +35,23 @@ export default function App() {
 
   /*Json file urls*/
   let Json1 =
-    "https://raw.githubusercontent.com/GilBrou/nda/master/src/data/data.json";
-  let Json2 =
     "https://raw.githubusercontent.com/NoirDAbsinthe/NDAAPI/master/dataSite.json";
-  let Json3 =
+  let Json2 =
     "https://raw.githubusercontent.com/NoirDAbsinthe/NDAAPI/master/dataBooks.json";
 
   /*axios config*/
   const requestOne = axios.get(Json1);
   const requestTwo = axios.get(Json2);
-  const requestThree = axios.get(Json3);
 
   useEffect(() => {
     async function getDatas() {
-      axios.all([requestOne, requestTwo, requestThree]).then(
+      axios.all([requestOne, requestTwo]).then(
         axios.spread((...responses) => {
           const responseOne = responses[0];
           const responseTwo = responses[1];
-          const responesThree = responses[2];
-          /*setData1(responseOne.data);*/
           setData1(Data00);
-
-          setData2(responseTwo.data);
-          setData3(responesThree.data);
+          setData2(responseOne.data);
+          setData3(responseTwo.data);
           setLoading(false);
           setAllDatas(Data00);
           setAllDatas2(Data2);
@@ -68,10 +62,8 @@ export default function App() {
     getDatas();
   }, []);
 
-  /**************** Get all books if needed******************************/
-  /*getAllTags(Data3);*/
+  /**************** Get all books or book tags if needed******************************/
   /*console.log(allDatas3.Livres)*/
-  /**************** Get all books tags if needed******************************/
   /*getAllTags(Data3);*/
   /***************************************************************************/
 

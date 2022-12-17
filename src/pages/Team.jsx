@@ -4,13 +4,18 @@
 import { useState, useEffect } from "react";
 
 /***DATA***/
-import statuts from "../data/Statuts.pdf";
-import pv1 from "../data/pv1.pdf";
-
-import pv2 from "../data/pv2.pdf";
-import doc1 from "../data/doc1.pdf";
-import doc2 from "../data/doc2.pdf";
-import doc3 from "../data/doc3.pdf";
+let statuts =
+  "https://raw.githubusercontent.com/NoirDAbsinthe/NDAAPI/master/Statuts.pdf";
+let pv1 =
+  "https://raw.githubusercontent.com/NoirDAbsinthe/NDAAPI/master/pv1.pdf";
+let pv2 =
+  "https://raw.githubusercontent.com/NoirDAbsinthe/NDAAPI/master/pv2.pdf";
+let doc1 =
+  "https://raw.githubusercontent.com/NoirDAbsinthe/NDAAPI/master/doc1.pdf";
+let doc2 =
+  "https://raw.githubusercontent.com/NoirDAbsinthe/NDAAPI/master/doc2.pdf";
+let doc3 =
+  "https://raw.githubusercontent.com/NoirDAbsinthe/NDAAPI/master/doc3.pdf";
 let replay1 =
   "https://www.youtube.com/watch?v=3Wp3_C5UZZQ&ab_channel=Noird%27Absinthe";
 let replay2 =
