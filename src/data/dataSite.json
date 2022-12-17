@@ -1,5 +1,6 @@
 {
   "nda": {
+    "teamIn": "Absinthia",
     "description": "Maison d'édition spécialisée dans les littératures de l'imaginaire.",
     "mail": "contact@noirdabsinthe.com",
     "tel": "06 52 49 96 97",
@@ -320,6 +321,92 @@
       "name2": "Chatterton",
       "Lien": "https://lestribulationsdemisschatterton.com/",
       "credits": "© Anais Nannini",
+      "job": "author"
+    },
+    {
+      "name": "Sarah",
+      "name2": "Kügel",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Dola",
+      "name2": "Rosselet",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Éli",
+      "name2": "Boudeau",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Maëlig",
+      "name2": "Duval",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Kathrine",
+      "name2": "Hasnaoui",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Stéphane",
+      "name2": "Miller",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Cyril",
+      "name2": "Fallavollita",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Alexandra",
+      "name2": "Fiordelli",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+
+    {
+      "name": "Mathilde",
+      "name2": "Chau",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+
+    {
+      "name": "Arthur-Coriolan",
+      "name2": "Wilmotte",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Roland",
+      "name2": "Voegele",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Céline",
+      "name2": "Chevet",
+      "Lien": "",
+      "credits": "",
       "job": "author"
     }
   ],

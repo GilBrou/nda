@@ -4,10 +4,22 @@
 import { useState, useEffect } from "react";
 
 /***DATA***/
-import data from "../data/Team.json";
+import statuts from "../data/Statuts.pdf";
+import pv1 from "../data/pv1.pdf";
+
+import pv2 from "../data/pv2.pdf";
+import doc1 from "../data/doc1.pdf";
+import doc2 from "../data/doc2.pdf";
+import doc3 from "../data/doc3.pdf";
+let replay1 =
+  "https://www.youtube.com/watch?v=3Wp3_C5UZZQ&ab_channel=Noird%27Absinthe";
+let replay2 =
+  "https://www.youtube.com/watch?v=DYbZ6V9pwEg&ab_channel=Noird%27Absinthe";
+let replay3 =
+  "https://www.youtube.com/watch?v=dWgTNCqhRHo&ab_channel=Noird%27Absinthe";
 
 /***COMPONENT***/
-export default function Team() {
+export default function Team(data) {
   /*Toggle Login*/
   const [logged, setLogged] = useState(false);
 
@@ -17,7 +29,7 @@ export default function Team() {
     if (pass != null && pass != undefined) {
       document.getElementById("pass").addEventListener("input", () => {
         let thisPass = pass.value;
-        if (thisPass == data.team.in) {
+        if (thisPass == data.data.nda.teamIn) {
           setLogged(true);
         }
       });
@@ -35,41 +47,42 @@ export default function Team() {
           Bienvenue, vous retrouverez ici tous les documents liés à l'entreprise
           Noir d'Absinthe
         </h2>
-        <div className="teamWrap">
+        <div className="teamWrap" id="thisToggle">
           <div className="teamLeft">
             <h2 className="secTitle">🗍 Statuts</h2>
-            <a href={data.team.statuts} target="_blank">
+            <a href={statuts} target="_blank">
               <p>Statuts au 10 juillet 2019</p>
             </a>
             <h2 className="secTitle">
               🖹 Procès-verbaux d'Assemblées Générales
             </h2>
-            <a href={data.team.pv1} target="_blank">
+            <a href={pv1} target="_blank">
               <p>AG Augmentation Capital 29/12/2020</p>
             </a>
-            <a href={data.team.pv2} target="_blank">
+
+            <a href={pv2} target="_blank">
               <p>AG Rémunération dirigeante 21/12/2020</p>
             </a>
             <h2 className="secTitle">▶ Replay Assemblées Générales</h2>
-            <a href={data.team.replay3} target="_blank">
+            <a href={replay3} target="_blank">
               <p>AG Ordinaire 09/12/2022</p>
             </a>
-            <a href={data.team.replay2} target="_blank">
+            <a href={replay2} target="_blank">
               <p>AG Ordinaire 18/11/2021</p>
             </a>
-            <a href={data.team.replay1} target="_blank">
+            <a href={replay1} target="_blank">
               <p>AG Extraordinaire 29/12/2020</p>
             </a>
           </div>
           <div className="teamRight">
-            <h2 className="secTitle">🗐 Documents comptables</h2>
-            <a href={data.team.doc1} target="_blank">
+            <h2 className="secTitle secTitleR;">🗐 Documents comptables</h2>
+            <a href={doc1} target="_blank">
               <p>Liasse fiscale 2020-2021 </p>
             </a>
-            <a href={data.team.doc2} target="_blank">
+            <a href={doc2} target="_blank">
               <p>Liasse fiscale 2019-2020 </p>
             </a>
-            <a href={data.team.doc3} target="_blank">
+            <a href={doc3} target="_blank">
               <p>Liasse fiscale 2018-2019 </p>
             </a>
           </div>
@@ -80,7 +93,7 @@ export default function Team() {
     /*if user isn't logged, return login form*/
     return (
       <div id="team0">
-        <div className="login-wrapper">
+        <div className="login-wrapper" id="thisToggle">
           <label>
             {<p>Merci de rentrer votre mot de passe</p>}
             <input type="text" id="pass" />

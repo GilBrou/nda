@@ -144,11 +144,12 @@
   box-shadow: 0 0 7px 0.5px var(--blackishBack2);
 }
 .IntroLink {
-  margin-top: 10px;
   text-decoration: none !important;
   z-index: +1;
+  width: fit-content;
   pointer-events: auto !important;
   color: inherit;
+  margin: 10px auto 0 auto;
 }
 .IntroLink:hover {
   text-decoration: inherit;

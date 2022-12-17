@@ -1,7 +1,6 @@
 /***TEAM***/
 
-/*TO DO: RESPONSIVE*/
-
+/*Logger*/
 #team0 {
   padding: 50px;
   align-self: center;
@@ -17,6 +16,19 @@
   animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   border-radius: 3px;
 }
+.login-wrapper label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.login-wrapper input {
+  width: 300px;
+  align-self: center;
+  color: var(--blackish);
+}
+/*Main Content*/
 #team {
   border-radius: 3px;
   padding: 50px;
@@ -29,6 +41,7 @@
   -webkit-animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
+/*Title and info paragraph*/
 .TeamTitle {
   color: var(--greenish);
   margin-bottom: 50px !important;
@@ -43,6 +56,8 @@
   margin: auto;
   border-bottom: unset;
 }
+
+/*Modules left & right*/
 .teamWrap {
   display: flex;
   justify-content: space-around;
@@ -51,6 +66,7 @@
 .teamRight {
   padding: 15px;
 }
+/*Modules Titles*/
 .secTitle {
   color: var(--greenish);
   font-size: 20px;
@@ -59,6 +75,7 @@
   padding-bottom: 5px;
   border-bottom: solid 1px var(--greenish);
 }
+/*Modules links and text*/
 #team p {
   margin: 15px auto 15px auto;
   transform: scale(1);
@@ -71,16 +88,4 @@
 }
 #team p:hover {
   transform: scale(1.02);
-}
-.login-wrapper label {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-}
-.login-wrapper input {
-  width: 300px;
-  align-self: center;
-  color: var(--blackish);
 }

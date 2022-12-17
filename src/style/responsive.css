@@ -73,6 +73,11 @@
 	.creator .Jobs {
 		bottom: -70px !important;
 	}
+	#team {
+		padding: 20px;
+		margin: 100px auto;
+		max-width: 90vw;
+	}
 }
 
 /**********852************/
@@ -128,11 +133,6 @@
 	.thatULink {
 		pointer-events: none;
 	}
-	/*
-	.StoryLink {
-		display: none !important;
-	}
-	*/
 	.pagination2,
 	.firsth2 {
 		display: none !important;
@@ -241,6 +241,16 @@
 	.ReviewLinks a {
 		width: 100%;
 	}
+	.teamWrap {
+		flex-direction: column;
+		justify-content: center;
+	}
+	.teamRight {
+		padding-top: 0;
+	}
+	.secTitleR {
+		margin-top: 0;
+	}
 }
 /**********767************/
 @media (max-width: 767px) {
@@ -276,7 +286,7 @@
 		font-size: 18px !important;
 	}
 	form button,
-		form .button,
+	form .button,
 	.btn-block {
 		width: 55% !important;
 	}
@@ -406,6 +416,22 @@
 		position: absolute;
 		margin-top: 5vh;
 		width: 80%;
+	}
+	#team0 {
+		padding: 50px 10px 50px 10px;
+		max-width: 95vw;
+	}
+	#team0 p {
+		font-size: 16px;
+	}
+	.TeamTitle {
+		font-size: 26px;
+	}
+	.TeamSub {
+		font-size: 18px;
+	}
+	.secTitle {
+		font-size: 16px;
 	}
 }
 /**********382************/
