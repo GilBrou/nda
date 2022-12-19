@@ -462,3 +462,23 @@
     filter: blur(0.01);
   }
 }
+
+/***Fade out loader Anim***/
+@-webkit-keyframes fade-outLoader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes fade-outLoader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

@@ -67,6 +67,7 @@ export default function App() {
   /*getAllTags(Data3);*/
   /***************************************************************************/
 
+
   /*Check if loading is complete before rendering*/
   if (Loading) {
     return null;
@@ -77,6 +78,7 @@ export default function App() {
         {/*BACKGROUND ANIMATION*/}
         {DustAnim()}
         {MainAnim()}
+        
         <Header data1={Data1} data2={Data2} />
         <div className="app">
           {/*ROUTES*/}
