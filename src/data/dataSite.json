@@ -330,48 +330,7 @@
       "credits": "",
       "job": "author"
     },
-    {
-      "name": "Dola",
-      "name2": "Rosselet",
-      "Lien": "",
-      "credits": "",
-      "job": "author"
-    },
-    {
-      "name": "Éli",
-      "name2": "Boudeau",
-      "Lien": "",
-      "credits": "",
-      "job": "author"
-    },
-    {
-      "name": "Maëlig",
-      "name2": "Duval",
-      "Lien": "",
-      "credits": "",
-      "job": "author"
-    },
-    {
-      "name": "Kathrine",
-      "name2": "Hasnaoui",
-      "Lien": "",
-      "credits": "",
-      "job": "author"
-    },
-    {
-      "name": "Stéphane",
-      "name2": "Miller",
-      "Lien": "",
-      "credits": "",
-      "job": "author"
-    },
-    {
-      "name": "Cyril",
-      "name2": "Fallavollita",
-      "Lien": "",
-      "credits": "",
-      "job": "author"
-    },
+
     {
       "name": "Alexandra",
       "name2": "Fiordelli",
@@ -388,20 +347,6 @@
       "job": "author"
     },
 
-    {
-      "name": "Arthur-Coriolan",
-      "name2": "Wilmotte",
-      "Lien": "",
-      "credits": "",
-      "job": "author"
-    },
-    {
-      "name": "Roland",
-      "name2": "Voegele",
-      "Lien": "",
-      "credits": "",
-      "job": "author"
-    },
     {
       "name": "Céline",
       "name2": "Chevet",
@@ -514,6 +459,64 @@
     }
   ],
 
+  "auteurs non répondu": [
+    {
+      "name": "Dola",
+      "name2": "Rosselet",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Éli",
+      "name2": "Boudeau",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Maëlig",
+      "name2": "Duval",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Kathrine",
+      "name2": "Hasnaoui",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Stéphane",
+      "name2": "Miller",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Cyril",
+      "name2": "Fallavollita",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Arthur-Coriolan",
+      "name2": "Wilmotte",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Roland",
+      "name2": "Voegele",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    }
+  ],
   "manuscrits": {
     "titre": "Manuscrits & AT",
     "P1": "Les soumissions sont désormais fermées et aucun AT n'est en cours.",
