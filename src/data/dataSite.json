@@ -338,15 +338,6 @@
       "credits": "",
       "job": "author"
     },
-
-    {
-      "name": "Mathilde",
-      "name2": "Chau",
-      "Lien": "",
-      "credits": "",
-      "job": "author"
-    },
-
     {
       "name": "Céline",
       "name2": "Chevet",
@@ -462,6 +453,13 @@
     {
       "name": "Dola",
       "name2": "Rosselet",
+      "Lien": "",
+      "credits": "",
+      "job": "author"
+    },
+    {
+      "name": "Mathilde",
+      "name2": "Chau",
       "Lien": "",
       "credits": "",
       "job": "author"
