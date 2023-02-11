@@ -89,11 +89,11 @@ export default function Header(data) {
             </ul>
           </li>
           {/*2.5 - Lecture en ligne*/}
-          <li className="StoryLink">
-            <a href={data.data1 ? data.data1.links.menu5L : "loading..."}>
-              {data.data1 ? data.data1.menu.menu2b : "loading..."}
-            </a>
-          </li>
+          {/*<li className="StoryLink">
+              <a href={data.data1 ? data.data1.links.menu5L : "loading..."}>
+                {data.data1 ? data.data1.menu.menu2b : "loading..."}
+              </a>
+            </li>*/}
           {/*3 - Créateurs*/}
           <li>
             <a

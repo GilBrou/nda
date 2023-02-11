@@ -67,7 +67,6 @@ export default function App() {
   /*getAllTags(Data3);*/
   /***************************************************************************/
 
-
   /*Check if loading is complete before rendering*/
   if (Loading) {
     return null;
@@ -78,7 +77,7 @@ export default function App() {
         {/*BACKGROUND ANIMATION*/}
         {DustAnim()}
         {MainAnim()}
-        
+
         <Header data1={Data1} data2={Data2} />
         <div className="app">
           {/*ROUTES*/}
@@ -100,13 +99,13 @@ export default function App() {
               <Team data={Data2} />
             </Route>
             {/*STORIES*/}
-            <Route exact path="/nouvelles">
-              <Stories data={Data2} />
-            </Route>
+            {/*<Route exact path="/nouvelles">
+                     <Stories data={Data2} />
+                   </Route>*/}
             {/*STORY*/}
-            <Route exact path={"/ma-brume"}>
-              <StoryBrume />
-            </Route>
+            {/*  <Route exact path={"/ma-brume"}>
+                        <StoryBrume />
+                      </Route>*/}
             {/*UNIVERS*/}
             <Route
               exact
