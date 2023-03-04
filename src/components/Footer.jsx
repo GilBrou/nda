@@ -57,6 +57,7 @@ export default function Footer(data) {
           </li>
 
           {/*Confidentiality button & modal*/}
+          {/*
           <li>
             <div>
               <button
@@ -79,37 +80,42 @@ export default function Footer(data) {
                 }}
                 center
               >
+              */}
                 {/*Get modal details*/}
+          {/*
                 {getModal(data, modal6)}
               </Modal>
             </div>
           </li>
+          */}
           {/*CGV button & modal*/}
-          <li>
-            <div>
-              <button
-                className="modalButton footB footcgv"
-                onClick={() => {
-                  onOpenModal7();
-                  HideThis();
-                }}
-              >
-                {data.data2 ? data.data2.CGV.abrtitre : "loading..."}
-              </button>
-              <Modal
-                className="myModal"
-                open={open7}
-                onClose={() => {
-                  onCloseModal7();
-                  DisplayThis();
-                }}
-                center
-              >
-                {/*Get modal details*/}
-                {getModal(data, modal7)}
-              </Modal>
-            </div>
-          </li>
+ {/*         <li>
+             <div>
+               <button
+                 className="modalButton footB footcgv"
+                 onClick={() => {
+                   onOpenModal7();
+                   HideThis();
+                 }}
+               >
+                 {data.data2 ? data.data2.CGV.abrtitre : "loading..."}
+               </button>
+               <Modal
+                 className="myModal"
+                 open={open7}
+                 onClose={() => {
+                   onCloseModal7();
+                   DisplayThis();
+                 }}
+                 center
+               >
+               */}
+                 {/*Get modal details*/}
+          {/*
+                 {getModal(data, modal7)}
+               </Modal>
+             </div>
+           </li>*/}
 
           {/*Socials buttons & links*/}
           {/*Facebook*/}
