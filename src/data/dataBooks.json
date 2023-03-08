@@ -1418,10 +1418,11 @@
       "buyPaper": "https://noirdabsinthe.hiboutik.com/myshop/?page=product&id=89",
       "buyEbook": "https://www.amazon.fr/gp/product/B0BJMJXCNZ/ref=dbs_a_def_rwt_bibl_vppi_i7"
     },
+
     {
       "titre": "Bad Queen",
       "titre2": "",
-      "tome": "",      
+
       "univers": "Fleur d'Absinthe",
       "date": "2023-03-01",
       "pages": "560",
@@ -1432,12 +1433,7 @@
       "format": "Roman",
       "sousTitre": "",
       "par": ["Magali Lefebvre"],
-      "genres": [
-        "Fantasy",
-        "Conte",
-        "Réécriture de conte",
-        "Romance"        
-      ],
+      "genres": ["Fantasy", "Conte", "Réécriture de conte", "Romance"],
       "résumé": "Miroir, miroir... connaissez-vous son histoire ?",
       "résumé2": "Bien avant qu'elle soit reine ou sorcière, Violaine, guerrière décelant les destins, était loin de se douter que le pouvoir coulant dans ses veines lui vaudrait tant d'attentions. D'abord de la part de cruels étrangers, prêts à l'arracher à sa famille et à sa patrie pour s'approprier ses pouvoirs... Puis d'un royaume menacé et de sa reine, dont elle deviendrait le dernier espoir... Et enfin de cet homme, l'ennemi honorable dont elle ne pouvait deviner le futur et qui, pourtant, faisait battre son coeur avec tant de force...",
       "résumé3": "Miroir, miroir... préparez-vous à entendre l'histoire de Violaine, la Reine-Sorcière !",
