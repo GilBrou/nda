@@ -240,3 +240,12 @@ footer i{
 footer i:hover, footer a:hover{
 	background-color: unset!important;
 }
+
+
+#btn_pickup_delivery_top_left{
+	display: none;
+}
+
+.modal-content{
+	color :black!important;
+}
