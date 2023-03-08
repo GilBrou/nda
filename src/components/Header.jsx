@@ -223,7 +223,7 @@ export default function Header(data) {
             </ul>
           </li>
           {/*6 Blog link*/}
-          <li>
+{/*          <li>
             <a
               href={data.data2 ? data.data2.nda.blog : "loading..."}
               target="_blank"
@@ -231,7 +231,7 @@ export default function Header(data) {
             >
               {data.data1 ? data.data1.menu.menu6 : "loading..."}
             </a>
-          </li>
+          </li>*/}
           {/*7 Shop link*/}
           <li>
             <a
