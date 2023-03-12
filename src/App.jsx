@@ -78,7 +78,7 @@ export default function App() {
         {DustAnim()}
         {MainAnim()}
 
-        <Header data1={Data1} data2={Data2} />
+        {/*<Header data1={Data1} data2={Data2} />*/}
         <div className="app">
           {/*ROUTES*/}
           <Switch>

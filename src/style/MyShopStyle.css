@@ -81,18 +81,7 @@ footer br,
 
 	background-image: url("https://noirdabsinthe.hiboutik.com/shop/image.php?img=img_back_food.jpg");
 }
-/*
-footer
-	> div
-	> div.row.justify-content-lg-between.space-top-2.space-bottom-lg-2 {
-	background-position: center;
-	background-attachment: fixed;
-	background-size: cover;
-	background-repeat: no-repeat;
 
-	background-image: url("https://noirdabsinthe.hiboutik.com/shop/image.php?img=img_back_food.jpg");
-}
-*/
 #detail_product_cat,
 #detail_product_sku,
 #productpageavailability {
@@ -248,4 +237,32 @@ footer i:hover, footer a:hover{
 
 .modal-content{
 	color :black!important;
+}
+
+#login .btn, .input-group .btn, form .btn, #payment-form #submit{
+
+background-color:#85dd91 !important;
+border: 1px solid #85dd91!important;
+color: white!important;
+
+}
+
+form{
+	color: white;
+}
+
+form h1, form h2, form h3, form h4, form #submitBtn #text, form #submitBtn i, #payment-form h1, #payment-form h2, .card h2, .row h2, .card, .card i{
+	color: white!important;
+}
+
+#submitBtn{
+	opacity: 1;
+}
+
+form a, form label, /*.card button,*/ .fa-check-circle, #content > div.container.space-2.space-lg-3 > div > div > h1{
+color:#85dd91 !important;
+}
+
+#login_top_right{
+	display: none;
 }
