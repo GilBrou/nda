@@ -6,7 +6,7 @@ export default function Form() {
   return (
     <form
       target="_blank"
-      action="https://formsubmit.co/gillian.brousse@outlook.fr"
+      action="https://formsubmit.co/contact@noirdabsinthe.com"
       method="POST"
     >
       <div className="form-group">
