@@ -514,4 +514,31 @@ export function getModal(data, id) {
 			</div>
 		);
 	}
+	if (id.includes("8")) {
+		return (
+			<div className="MModal">
+				<h1>
+					{data.data2 ? data.data2.manifeste.titre : "loading..."}
+				</h1>
+				<p className="greenP">
+					{data.data2 ? data.data2.manifeste.P1 : "loading..."}
+				</p>
+				<p>{data.data2 ? data.data2.manifeste.P2 : "loading..."}</p>
+				<p>{data.data2 ? data.data2.manifeste.P3 : "loading..."}</p>
+				<p>{data.data2 ? data.data2.manifeste.P4 : "loading..."}</p>
+				<p>{data.data2 ? data.data2.manifeste.P5 : "loading..."}</p>
+				<p>{data.data2 ? data.data2.manifeste.P6 : "loading..."}</p>
+				<p>{data.data2 ? data.data2.manifeste.P7 : "loading..."}</p>
+				<p>{data.data2 ? data.data2.manifeste.P8 : "loading..."}</p>
+				<p>{data.data2 ? data.data2.manifeste.P9 : "loading..."}</p>
+				<p>{data.data2 ? data.data2.manifeste.P10 : "loading..."}</p>
+				<p>{data.data2 ? data.data2.manifeste.P11 : "loading..."}</p>
+				<p>{data.data2 ? data.data2.manifeste.P12 : "loading..."}</p>
+				<p>{data.data2 ? data.data2.manifeste.P13 : "loading..."}</p>
+				<p className="nameRight greenP">
+					{data.data2 ? data.data2.manifeste.P14 : "loading..."}
+				</p>
+			</div>
+		);
+	}
 }

@@ -24,6 +24,9 @@ export default function Header(data) {
   const [open4, setOpen4] = useState(false);
   const onOpenModal4 = () => setOpen4(true);
   const onCloseModal4 = () => setOpen4(false);
+  const [open8, setOpen8] = useState(false);
+  const onOpenModal8 = () => setOpen8(true);
+  const onCloseModal8 = () => setOpen8(false);
 
   /*DOM*/
   return (
@@ -60,6 +63,31 @@ export default function Header(data) {
             >
               {data.data1 ? data.data1.menu.menu1 : "loading..."}
             </a>
+          </li>
+          {/*4 - manifeste + modal*/}
+          <li>
+            <button
+              className="modalButton"
+              onClick={() => {
+                onOpenModal8();
+                HideThis();
+              }}
+            >
+              {" "}
+              <p>{data.data1 ? data.data1.menu.menu8 : "loading..."}</p>
+            </button>
+            <Modal
+              id="manifesteModal"
+              className="myModal;"
+              open={open8}
+              onClose={() => {
+                onCloseModal8();
+                DisplayThis();
+              }}
+              center
+            >
+              {getModal(data, "modal8")}
+            </Modal>
           </li>
           {/*2 - Univers*/}
           <li>
@@ -223,7 +251,7 @@ export default function Header(data) {
             </ul>
           </li>
           {/*6 Blog link*/}
-{/*          <li>
+          {/*          <li>
             <a
               href={data.data2 ? data.data2.nda.blog : "loading..."}
               target="_blank"

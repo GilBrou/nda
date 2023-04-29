@@ -24,7 +24,8 @@
     "menu5c": "Service-presse",
     "menu5d": "Kit média",
     "menu6": "Blog",
-    "menu7": "Boutique"
+    "menu7": "Boutique",
+    "menu8": "Manifeste éditorial"
   },
   "links": {
     "menu1L": "/accueil",
@@ -46,3 +47,4 @@
     "lien blog": "A FAIRE QUAND FINI"
   }
 }
+

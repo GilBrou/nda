@@ -47,7 +47,7 @@
   background-repeat: no-repeat;
   overflow: hidden;
   margin: 1.2rem;
-  margin-top:  5vh;
+  margin-top: 5vh;
   padding: 50px;
   border-radius: 5px;
   position: relative;
@@ -124,16 +124,15 @@
   line-height: 15px;
   align-items: center;
 }
-.Pcenter2Bis{
+.Pcenter2Bis {
   margin-top: 10px;
 }
-.Pcenter2 a{
-text-decoration: none;
-transform: scale(1);
-
+.Pcenter2 a {
+  text-decoration: none;
+  transform: scale(1);
 }
-.Pcenter2 a:hover{
-transform: scale(1.02);
+.Pcenter2 a:hover {
+  transform: scale(1.02);
 }
 .CreatorLink {
   color: var(--greenish);
@@ -145,4 +144,13 @@ transform: scale(1.02);
 }
 .aProposImg {
   margin: 30px auto 0 auto;
+}
+.MModal p {
+  font-size: 16px !important;
+}
+.greenP {
+  color: var(--greenish);
+}
+.nameRight {
+  text-align: right !important;
 }
