@@ -405,15 +405,15 @@
       "buyEbook": "https://www.amazon.fr/dp/B07PYTML39/ref=as_li_ss_tl?ie=UTF8&qid=1553245150&sr=8-4&keywords=neuf+mondes&linkCode=sl1&tag=neocity-21&linkId=f8c80b9ed3dbe3e050c1361a362d5ae1&language=fr_FR"
     },
     {
-      "titre": "Les Chroniques de Maugis",
+      "titre": "Bayard le cheval fée",
       "titre2": "",
       "univers": "Mémoria",
       "date": "2019-10",
       "pages": "440",
-      "ISBN": "978-2490417407",
+      "ISBN": " 978-2493801074",
       "prix": "19,90",
-      "extrait": "https://www.amazon.fr/Chroniques-Maugis-Pierre-Efratas/dp/2490417401/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1666093280&sr=8-1&asin=B08129CCLH&revisionId=6852b3a8&format=1&depth=1",
-      "lien": "les-chroniques-de-maugis",
+      "extrait": "https://www.amazon.fr/Bayard-cheval-f%C3%A9e-Pierre-Efratas/dp/2493801075/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1FN884LO2FR38&keywords=Bayard+le+cheval+f%C3%A9e&qid=1683565856&s=books&sprefix=bayard+le+cheval+f%C3%A9e%2Cstripbooks%2C80&sr=1-1&asin=2493801075&revisionId=&format=4&depth=1",
+      "lien": "Bayard-le-cheval-fée",
       "format": "Roman",
       "sousTitre": "",
       "par": ["Pierre Efratas"],
@@ -429,7 +429,7 @@
         ""
       ],
       "buyPaper": "https://noirdabsinthe.hiboutik.com/myshop/?page=product&id=30",
-      "buyEbook": "https://www.amazon.fr/Chroniques-Maugis-Pierre-Efratas-ebook/dp/B08129CCLH/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=HQEPKT27T0KY&keywords=Les+Chroniques+de+Maugis&qid=1666093280&qu=eyJxc2MiOiIwLjAwIiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=les+chroniques+de+maugis%2Caps%2C110&sr=8-1"
+      "buyEbook": ""
     },
     {
       "titre": "La Folie et l'Absinthe",

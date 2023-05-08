@@ -46,6 +46,17 @@ export function getAllTags(data) {
 	*/
 }
 
+/*Get all book's tags + book title*/
+export function getAllTags2(data) {
+	let allBookTags = [];
+	let allThoseBooks = data.Livres;
+	for (let i in allThoseBooks) {
+		let thisOne = allThoseBooks[i];
+		console.log(thisOne.titre + " " + thisOne.titre2 + " " + ":" + " " + thisOne.genres + ".")
+	}
+	
+}
+
 /*Alphabetical sorting*/
 export function alphabetical(a, b) {
 	if (a.name2 < b.name2) {

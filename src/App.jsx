@@ -10,6 +10,8 @@ import axios from "axios";
 import Header from "./components/Header";
 import { DustAnim, MainAnim } from "./components/UniversAnim";
 import { getAllTags } from "./components/Appendix";
+import { getAllTags2 } from "./components/Appendix";
+
 import Data00 from "./data/data.json";
 
 /***PAGES***/
@@ -65,6 +67,7 @@ export default function App() {
   /**************** Get all books or book tags if needed******************************/
   /*console.log(Data3.Livres)*/
   /*getAllTags(Data3);*/
+  getAllTags2(Data3)
   /***************************************************************************/
 
   /*Check if loading is complete before rendering*/
