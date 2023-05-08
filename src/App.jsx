@@ -67,7 +67,7 @@ export default function App() {
   /**************** Get all books or book tags if needed******************************/
   /*console.log(Data3.Livres)*/
   /*getAllTags(Data3);*/
-  getAllTags2(Data3)
+  /*getAllTags2(Data3)*/
   /***************************************************************************/
 
   /*Check if loading is complete before rendering*/
