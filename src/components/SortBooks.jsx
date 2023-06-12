@@ -263,6 +263,21 @@ function SetNames(props, props0, i) {
 	}
 }
 
+/***Set Names2 (artist)***/
+function SetNames2(props) {
+	if (props == 0 || props == null || props == undefined) {
+		/*console.log(props)*/
+	} else {
+		return (
+			<a href={"/recherche#" + props} key={props + "Link"} target="_self">
+				<h3 className="bAuthor illustrator " key={"authorIlus"}>
+					{"Couverture de" + " " + props}
+				</h3>
+			</a>
+		);
+	}
+}
+
 /***Check if Book come from a litterary series***/
 function SetTome(thatBook, i) {
 	if (thatBook.tome >= 0) {
@@ -340,6 +355,9 @@ export function SortBooks(thatBook, i, data) {
 							SetNames(par, thatBook.par, i)
 						)}
 					</div>
+					<div className="authorList artistList">
+						{SetNames2(thatBook.illus)}
+					</div>
 					{SetPrize(thatBook)}
 					<div className="subTitle">
 						{/*Check if it is an audiobook*/}
@@ -379,9 +397,11 @@ export function SortBooks(thatBook, i, data) {
 
 /***Sort books from Json according to target and display them***/
 export function SortTargetedBooks(thatBook, i, target, data) {
+	/*console.log(thatBook.illus)*/
 	if (
 		thatBook.genres.includes(target) ||
 		thatBook.par.includes(target) ||
+		thatBook.illus == target ||
 		thatBook.titre.includes(target) ||
 		thatBook.format.includes(target) ||
 		target.includes(thatBook.Série)
@@ -420,6 +440,9 @@ export function SortTargetedBooks(thatBook, i, target, data) {
 						{thatBook.par.map((par, i) =>
 							SetNames(par, thatBook.par, i)
 						)}
+					</div>
+					<div className="authorList artistList">
+						{SetNames2(thatBook.illus)}
 					</div>
 					{SetPrize(thatBook)}
 					<div className="subTitle">

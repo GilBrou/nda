@@ -352,7 +352,7 @@
       "name2": "",
       "Lien": "https://www.tiphs-art.com/",
       "credits": "",
-      "job": ""
+      "job": "author"
     },
     {
       "name": "MoonE",
@@ -369,11 +369,18 @@
       "job": "author"
     },
     {
+      "name": "Virginie",
+      "name2": "Carquin",
+      "credits": "",
+      "Lien": "",
+      "job": "author"
+    },
+    {
       "name": "Émilie",
       "name2": "Léger",
       "credits": "",
       "Lien": "https://emilieleger.ca/",
-      "job": ""
+      "job": "author"
     },
     {
       "name": "Svalia",
@@ -390,6 +397,27 @@
       "job": "author"
     },
     {
+      "name": "Laura",
+      "name2": "Csajagi",
+      "credits": "",
+      "Lien": "",
+      "job": "author"
+    },
+    {
+      "name": "Alix",
+      "name2": "Macron",
+      "credits": "",
+      "Lien": "",
+      "job": "author"
+    },
+    {
+      "name": "Thibault",
+      "name2": "Benett",
+      "credits": "",
+      "Lien": "",
+      "job": "author"
+    },
+    {
       "name": "Flokera",
       "name2": "",
       "credits": "",
@@ -401,7 +429,7 @@
       "name2": "Bolivar",
       "credits": "",
       "Lien": "https://www.artstation.com/marcelabolivar",
-      "job": ""
+      "job": "author"
     },
     {
       "name": "Ampreh",

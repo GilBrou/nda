@@ -254,6 +254,11 @@
     padding-bottom: 4px;
     border-bottom: solid 2px var(--blackish);
 }
+.illustrator{
+    font-style: italic;
+    font-size: 18px!important;
+
+}
 .sousTitre {
     border: unset !important;
     color: var(--whiteish);
@@ -263,6 +268,8 @@
     font-size: 22px !important;
     border-radius: 5px;
 }
+
+
 /*
 .audiobook h2 {
     background-color: #f09e2a;
