@@ -1517,6 +1517,35 @@
       ],
       "buyPaper": "https://noirdabsinthe.hiboutik.com/myshop/?page=product&id=91",
       "buyEbook": "https://www.amazon.fr/Bad-Queen-Magalie-Lefebvre/dp/2493801008/ref=sr_1_11?qid=1678293464&refinements=p_27%3AMagalie+Lefebvre&s=books&sr=1-11&text=Magalie+Lefebvre"
+    },
+     {
+      "titre": "Lili et Grugru",
+      "titre2": "",
+
+      "univers": "pousse d'Absinthe",
+      "date": "2023-09-01",
+      "pages": "",
+      "ISBN": "978-2490417803",
+      "prix": "15",
+      "extrait": "",
+      "lien": "lili-et-grugru",
+      "format": "Album",
+      "sousTitre": "",
+      "illus": "Flokera",
+      "par": ["Flokera"],
+      "genres": ["Jeunesse", "Conte", "Illustré", "Fantasy"],      
+      "résumé": "Au coeur de la forêt, naît une amitié entre Lili, une petite fée espiègle, et Grugru, un jeune Korrigan explorateur",
+      "résumé2": "La vie de l'autre semblant bien plus intéressante, ils décident d'échanger leur place : grâce à la magie, Lili se retrouve dans le corps de Grugru, et vice versa.",
+      "résumé3": "Mais tout ne se passe pas aussi bien que prévu et voilà que nos deux amis partent en quâte de la Grande Enchanteresse pour réparer leurs bêtises.",
+      "reviews": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "buyPaper": "https://noirdabsinthe.hiboutik.com/myshop/?page=product&id=92",
+      "buyEbook": ""
     }
   ]
 }
