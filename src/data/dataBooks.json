@@ -463,7 +463,7 @@
         "Wilfried Renaut",
         "Émilie Chevallier",
         "Geoffrey Legrand",
-        "Amaryan",
+        "Anouck Faure",
         "Dorian Lake",
         "Arthur-Coriolan Wilmotte",
         "Sarah Buschmann",
@@ -535,7 +535,7 @@
       "lien": "spleen-cities",
       "format": "Roman",
       "sousTitre": "Sélectionné Prix Bob Morane",
-      "illus": "Amaryan",
+      "illus": "Anouck Faure",
       "par": ["Gillian Brousse"],
       "genres": [
         "Science-fiction",
@@ -1033,7 +1033,7 @@
       "lien": "hors-caste",
       "format": "Roman",
       "sousTitre": "",
-      "illus": "Amaryan",
+      "illus": "Anouck Faure",
       "par": ["Marge Nantel"],
       "genres": ["Dark Fantasy", "Fantasy", "Aventure", "Romance", "LGBT"],
       "résumé": "Suèhl est tellement dépourvu de magie qu’il n’appartient à aucune caste à Hemurn, où seul le Don confère une situation sociale. Repoussé, délaissé, il ne s’attend pas à attirer l’attention de cet étranger à la puissance hors norme.",
@@ -1145,7 +1145,7 @@
       "lien": "zhaodi",
       "format": "Roman",
       "sousTitre": "",
-      "illus": "Amaryan",
+      "illus": "Anouck Faure",
       "par": ["Morgane Stankiewiez", "Sarah Buschmann"],
       "genres": [
         "Thriller",
@@ -1427,8 +1427,8 @@
       "lien": "dremence",
       "format": "Roman",
       "sousTitre": "",
-      "illus": "Amaryan",
-      "par": ["Morgane Stankiewiez", "Amaryan"],
+      "illus": "Anouck Faure",
+      "par": ["Morgane Stankiewiez", "Anouck Faure"],
       "genres": [
         "Futuriste",
         "Illustré",
@@ -1465,8 +1465,8 @@
       "lien": "dremence-prestige",
       "format": "Roman",
       "sousTitre": "",
-      "illus": "Amaryan",
-      "par": ["Morgane Stankiewiez", "Amaryan"],
+      "illus": "Anouck Faure",
+      "par": ["Morgane Stankiewiez", "Anouck Faure"],
       "genres": [
         "Futuriste",
         "Illustré",
@@ -1502,7 +1502,7 @@
       "lien": "bad-queen",
       "format": "Roman",
       "sousTitre": "",
-      "illus": "Amaryan",
+      "illus": "Anouck Faure",
       "par": ["Magali Lefebvre"],
       "genres": ["Fantasy", "Conte", "Réécriture de conte", "Romance"],
       "résumé": "Miroir, miroir... connaissez-vous son histoire ?",
@@ -1518,10 +1518,9 @@
       "buyPaper": "https://noirdabsinthe.hiboutik.com/myshop/?page=product&id=91",
       "buyEbook": "https://www.amazon.fr/Bad-Queen-Magalie-Lefebvre/dp/2493801008/ref=sr_1_11?qid=1678293464&refinements=p_27%3AMagalie+Lefebvre&s=books&sr=1-11&text=Magalie+Lefebvre"
     },
-     {
+    {
       "titre": "Lili et Grugru",
       "titre2": "",
-
       "univers": "pousse d'Absinthe",
       "date": "2023-09-01",
       "pages": "",
@@ -1533,19 +1532,42 @@
       "sousTitre": "",
       "illus": "Flokera",
       "par": ["Flokera"],
-      "genres": ["Jeunesse", "Conte", "Illustré", "Fantasy"],      
+      "genres": ["Jeunesse", "Conte", "Illustré", "Fantasy"],
       "résumé": "Au coeur de la forêt, naît une amitié entre Lili, une petite fée espiègle, et Grugru, un jeune Korrigan explorateur",
       "résumé2": "La vie de l'autre semblant bien plus intéressante, ils décident d'échanger leur place : grâce à la magie, Lili se retrouve dans le corps de Grugru, et vice versa.",
       "résumé3": "Mais tout ne se passe pas aussi bien que prévu et voilà que nos deux amis partent en quâte de la Grande Enchanteresse pour réparer leurs bêtises.",
-      "reviews": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
+      "reviews": ["", "", "", "", ""],
       "buyPaper": "https://noirdabsinthe.hiboutik.com/myshop/?page=product&id=92",
       "buyEbook": ""
+    },
+    {
+      "titre": "La Cour de l'Hiver",
+      "titre2": "",
+      "univers": "Chrysalis",
+      "date": "2023-11-24",
+      "pages": "428",
+      "ISBN": "978-2493801012",
+      "prix": "19,90",
+      "extrait": "",
+      "lien": "la-cour-de-l-hiver",
+      "format": "Roman",
+      "sousTitre": "",
+      "illus": "Anouck Faure",
+      "par": ["Morgane Stankiewiez"],
+      "genres": [
+        "Jeune Adulte",
+        "Fantasy",
+        "Conte",
+        "Féérie",
+        "LGBT",
+        "Contemporain"
+      ],
+      "résumé": "Une fée qui s’ignore, prisonnière d’une adolescence trop normale, voit sa vie chamboulée quand elle fait la rencontre épistolaire de Csilla, une jeune femme solaire qui lui dévoile les véritables couleurs de son âme.",
+      "résumé2": "Un roman jeune adulte entre la Bretagne, Paris et l’Alsace, et surtout, dans le Monde des Fées.",
+      "résumé3": "",
+      "reviews": ["", "", "", ""],
+      "buyPaper": "https://noirdabsinthe.hiboutik.com/myshop/?page=product&id=93",
+      "buyEbook": "https://www.amazon.fr/Cour-lHiver-Morgane-Stankiewiez-ebook/dp/B0CLVWL3ZY/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=19R0S3FC370LX&keywords=Morgane+Stankiewiez+La+Cour+de+l%27Hiver&qid=1698477783&s=digital-text&sprefix=morgane+stankiewiez+la+cour+de+l%27hiver%2Cdigital-text%2C86&sr=1-1"
     }
   ]
 }

@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 
 
 /***COMPONENT***/
-export default function Homepage(data) {
+export default function Homepage(data) {  
   /*DOM*/
   return (
     <div>
