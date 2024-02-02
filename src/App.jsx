@@ -4,202 +4,140 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Redirect } from "react-router";
+import axios from "axios";
+
+/***COMPONENTS***/
+import Header from "./components/Header";
+import { DustAnim, MainAnim } from "./components/UniversAnim";
+import { getAllTags } from "./components/Appendix";
+import { getAllTags2 } from "./components/Appendix";
+
+import Data00 from "./data/data.json";
+
+/***PAGES***/
+import Homepage from "./pages/Homepage";
+import StoryBrume from "./pages/StoryBrume";
+import Team from "./pages/Team";
+import Stories from "./pages/Stories";
+import Createurs from "./pages/Createurs";
+import ThisUniverse from "./pages/ThisUniverse";
+import Univers from "./pages/Univers";
+import Search from "./pages/Search";
 
 /***APP***/
 export default function App() {
-  /*Dust Anim*/
-  function DustAnim() {
+  /*Get datas*/
+  const [Loading, setLoading] = useState(true);
+  const [Data1, setData1] = useState({});
+  const [Data2, setData2] = useState({});
+  const [Data3, setData3] = useState({});
+  const [allDatas, setAllDatas] = useState({});
+  const [allDatas2, setAllDatas2] = useState({});
+  const [allDatas3, setAllDatas3] = useState({});
+
+  /*Json file urls*/
+  let Json1 =
+    "https://raw.githubusercontent.com/NoirDAbsinthe/NDAAPI/master/dataSite.json";
+  let Json2 =
+    "https://raw.githubusercontent.com/NoirDAbsinthe/NDAAPI/master/dataBooks.json";
+
+  /*axios config*/
+  const requestOne = axios.get(Json1);
+  const requestTwo = axios.get(Json2);
+
+  useEffect(() => {
+    async function getDatas() {
+      axios.all([requestOne, requestTwo]).then(
+        axios.spread((...responses) => {
+          const responseOne = responses[0];
+          const responseTwo = responses[1];
+          setData1(Data00);
+          setData2(responseOne.data);
+          setData3(responseTwo.data);
+          setLoading(false);
+          setAllDatas(Data00);
+          setAllDatas2(Data2);
+          setAllDatas3(Data3);
+        })
+      );
+    }
+    getDatas();
+  }, []);
+
+  /**************** Get all books or book tags if needed******************************/
+  /*console.log(Data3.Livres)*/
+  /*getAllTags(Data3);*/
+  /*getAllTags2(Data3)*/
+  /***************************************************************************/
+
+  /*Check if loading is complete before rendering*/
+  if (Loading) {
+    return null;
+  } else {
+    /*DOM*/
     return (
-      <div className="bg-animation" id="bg-animation">
-        <div id="stars" />
-        <div id="stars2" />
-        <div id="stars4" />
-      </div>
+      <Router>
+        {/*BACKGROUND ANIMATION*/}
+        {DustAnim()}
+        {MainAnim()}
+
+        <Header data1={Data1} data2={Data2} />
+        <div className="app">
+          {/*ROUTES*/}
+          <Switch>
+            {/*HOMEPAGE*/}
+            <Route exact path="/accueil">
+              <Homepage data1={Data1} data2={Data2} data3={Data3} />
+            </Route>
+            {/*CREATEURS*/}
+            <Route exact path="/createurs">
+              <Createurs data1={Data1} data2={Data2} />
+            </Route>
+            {/*UNIVERS HOMEPAGE*/}
+            <Route exact path="/nos-univers">
+              <Univers data1={Data1} data2={Data2} />
+            </Route>
+            {/*TEAM PAGE*/}
+            <Route exact path="/actionnaires">
+              <Team data={Data2} />
+            </Route>
+            {/*STORIES*/}
+            {/*<Route exact path="/nouvelles">
+                     <Stories data={Data2} />
+                   </Route>*/}
+            {/*STORY*/}
+            {/*  <Route exact path={"/ma-brume"}>
+                        <StoryBrume />
+                      </Route>*/}
+            {/*UNIVERS*/}
+            <Route
+              exact
+              path={[
+                "/memoria",
+                "/futuria",
+                "/onyria",
+                "/terra-urbana",
+                "/rouge-d-absinthe",
+                "/l-antre-de-la-folie",
+                "/fleur-d-absinthe",
+                "/chrysalis",
+                "/pousse-d-absinthe",
+                "/hors-collection",
+              ]}
+            >
+              <ThisUniverse data1={Data1} data2={Data2} data3={Data3} />
+            </Route>
+            {/*SEARCH*/}
+            <Route path="/recherche">
+              <Search data1={Data1} data2={Data2} data3={Data3} />
+            </Route>
+            {/*REDIRECT*/}
+            <Route>
+              <Redirect to="/accueil" />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
     );
   }
-
-  /*Firefly Anim*/
-  function MainAnim() {
-    return (
-      <div>
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-        <div className="firefly" />
-      </div>
-    );
-  }
-
-  /*DOM*/
-  return (
-    <Router>
-      {/*BACKGROUND ANIMATION*/}
-      {DustAnim()}
-      {MainAnim()}
-      <div className="app">
-        {/*ROUTES*/}
-        <Switch>
-          {/*HOMEPAGE*/}
-          <Route exact path="/accueil">
-            <div className="homepage">
-              <section id="intro">
-                <div className="intro" id="thisToggle">
-                  <div className="introRightWrapperGoodbye">
-                    <h2>Bonjour à toutes et à tous</h2>
-
-                    <h2 className="secondH2">
-                      Après six années à défendre une littérature féministe,
-                      humaniste, marginale et sombre, Noir d’Absinthe arrive au
-                      bout de son épopée.
-                    </h2>
-
-                    <p>
-                      <strong>
-                        Nous avons en effet décidé de fermer la maison d’édition
-                      </strong>
-                      , pour plusieurs raisons. Il y a celle, évidente, des
-                      finances : lorsque l’on est indépendantes dans le monde du
-                      livre, il est quasi impossible de s’en sortir, surtout
-                      dans une littérature de niche. Nous avons tenu six ans, et
-                      c’est déjà beaucoup dans ce milieu.
-                    </p>
-                    <p>
-                      Mais la vraie raison, qui en découle, est celle du feu.
-                      Tenir une maison d’édition demande une énergie de tous les
-                      instants, un engagement total, une motivation permanente,
-                      et c’est difficile à maintenir dans un cadre si peu
-                      valorisé, dans lequel on donne toute sa force pour à peine
-                      vivoter. Et encore…
-                    </p>
-                    <p>
-                      Nous préférons fermer avant de devenir amères, avant de
-                      perdre le sens de ce que nous faisons, avant d’oublier que
-                      tout cela, c’est pour l’Art et l’Art seul. La misère du
-                      monde de la culture a cet effet délétère : avec le temps,
-                      on se demande comment on va passer le mois, non plus
-                      comment on va toucher des âmes.
-                    </p>
-                    <p>
-                      Il n’était pas question de s’oublier. La maison d’édition
-                      était un moyen de transmettre de l’Art, mais ce n’était
-                      pas une fin en soi. L’Art que nous avons partagé est
-                      toujours là, les esprits que nous avons touchés avec nos
-                      mots se souviennent, les œuvres sont loin d’être parties.
-                    </p>
-                    <p>
-                      Nous fermons donc par choix, avec la fierté d’avoir été
-                      authentiques et vraies, depuis les prémices jusqu’à
-                      aujourd’hui, de ne jamais avoir baissé les bras, de
-                      n’avoir accepté nul compromis.
-                      <strong>Nous fermons, oui, mais debout.</strong>
-                    </p>
-                    <p>
-                      <strong>
-                        Nous tenons à remercier toutes celles et ceux qui nous
-                        ont soutenues toutes ces années
-                      </strong>
-                      . Les lectrices et lecteurs qui ont cru en nous et ont
-                      donné une chance, une vie à nos textes. Les blogueuses et
-                      blogueurs qui ont valorisé notre catalogue avec ferveur.
-                      Les stagiaires qui nous ont tant aidées. Les salons qui
-                      nous ont reçues, mêmes quand nous n’étions pas connues.
-                      Les autres maisons d’édition qui nous ont accueillies avec
-                      respect dans le milieu de l’imaginaire. Les artistes, de
-                      Noir d’Absinthe ou non, qui ont parlé de nous et nous ont
-                      mis en avant. Les institutions, surtout en Bretagne, qui
-                      ont soutenu par leurs conseils et leurs subventions notre
-                      structure.
-                    </p>
-                    <p>
-                      Noir d’Absinthe ferme, et c’est un échec, non pas
-                      personnel – nous avons tout donné – mais de notre société,
-                      de la culture, de cet environnement capitaliste où l’Art,
-                      le vrai, est une monnaie. Ce combat pour proposer de la
-                      littérature impactante et puissante n’est pas terminé, et
-                      nos artistes-auteurs continueront d’écrire et de publier,
-                      en autoédition ou bien chez d’autres maisons d’édition, et
-                      nous continuerons de faire valoir notre Art.
-                    </p>
-                    <p>
-                      D’un point de vue plus pratique,
-                      <strong>
-                        tout le catalogue reste disponible jusqu’à la fin
-                        février
-                      </strong>
-                      , après quoi les livres ne pourront plus être commandés
-                      sur le site Internet et les libraires ne pourront plus se
-                      réapprovisionner auprès de notre imprimeur. Vos dernières
-                      commandes nous aideront à financer la fermeture de
-                      l’entreprise, qui coûte cher hélas, et de donner un coup
-                      de pouce à nos artistes.
-                    </p>
-                    <p>
-                      <strong>
-                        Enfin, nous proposons tous les titres du catalogue en
-                        numérique à prix libre
-                      </strong>
-                      . Cela vous permettra d’acquérir nos titres tant qu’ils
-                      sont disponibles et à nous de diffuser nos œuvres un
-                      maximum dans ce dernier mois. Notre lectorat nous a
-                      soutenu et nous a fait tenir toutes ces années, et nous
-                      souhaitons une dernière fois vous faire confiance et vous
-                      offrir votre art. Si vous n’avez pas pu vous offrir
-                      certains de nos titres pour des raisons économiques, ce
-                      sera l’occasion. Si vous voulez nous soutenir et nous
-                      aider à passer ce cap, c’est l’occasion aussi.
-                    </p>
-                    <p className="finalWord">
-                      Nous vous faisons entièrement confiance, comme vous nous
-                      avez fait confiance pendant six ans.
-                    </p>
-                    <div className="buyLinWrapper">
-                      <a
-                        href="https://noirdabsinthe.hiboutik.com/myshop/"
-                        target="_blank"
-                      >
-                        Boutique
-                      </a>
-
-                      <a href="https://payhip.com/b/1FKDJ" target="_blank">
-                        Collection numérique à prix libre
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </div>
-          </Route>
-          {/*REDIRECT*/}
-          <Route>
-            <Redirect to="/accueil" />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-  );
 }
