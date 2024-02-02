@@ -13,13 +13,10 @@ import { getAllTags } from "./components/Appendix";
 import { getAllTags2 } from "./components/Appendix";
 
 import Data00 from "./data/data.json";
-import Data01 from "./data/dataSite.json";
-import Data02 from "./data/dataBooks.json";
 
 /***PAGES***/
 import Homepage from "./pages/Homepage";
 import StoryBrume from "./pages/StoryBrume";
-import Team from "./pages/Team";
 import Stories from "./pages/Stories";
 import Createurs from "./pages/Createurs";
 import ThisUniverse from "./pages/ThisUniverse";
@@ -33,13 +30,35 @@ export default function App() {
   const [Data1, setData1] = useState({});
   const [Data2, setData2] = useState({});
   const [Data3, setData3] = useState({});
+  const [allDatas, setAllDatas] = useState({});
+  const [allDatas2, setAllDatas2] = useState({});
+  const [allDatas3, setAllDatas3] = useState({});
+
+  /*Json file urls*/
+  let Json1 =
+    "https://raw.githubusercontent.com/GilBrou/nda/master/src/data/dataSite.json";
+  let Json2 =
+    "https://raw.githubusercontent.com/GilBrou/nda/master/src/data/dataBooks.json";
+
+  /*axios config*/
+  const requestOne = axios.get(Json1);
+  const requestTwo = axios.get(Json2);
 
   useEffect(() => {
     async function getDatas() {
-      setData1(Data00);
-      setData2(Data01);
-      setData3(Data02);
-      setLoading(false);
+      axios.all([requestOne, requestTwo]).then(
+        axios.spread((...responses) => {
+          const responseOne = responses[0];
+          const responseTwo = responses[1];
+          setData1(Data00);
+          setData2(responseOne.data);
+          setData3(responseTwo.data);
+          setLoading(false);
+          setAllDatas(Data00);
+          setAllDatas2(Data2);
+          setAllDatas3(Data3);
+        })
+      );
     }
     getDatas();
   }, []);
@@ -76,11 +95,7 @@ export default function App() {
             {/*UNIVERS HOMEPAGE*/}
             <Route exact path="/nos-univers">
               <Univers data1={Data1} data2={Data2} />
-            </Route>
-            {/*TEAM PAGE*/}
-            <Route exact path="/actionnaires">
-              <Team data={Data2} />
-            </Route>
+            </Route>            
             {/*STORIES*/}
             <Route exact path="/nouvelles">
                      <Stories data={Data2} />
