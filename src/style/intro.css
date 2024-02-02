@@ -8,6 +8,7 @@
   transition: 0.5s;
   margin: auto;
   padding: 100px 50px;
+  padding: 100px 0px;
 }
 .intro {
   display: flex;
@@ -23,6 +24,7 @@
   flex-direction: column;
   width: 50%;
   margin-left: -7vw;
+  display: none;
 }
 .logoFull {
   width: 35%;
@@ -49,6 +51,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  display: none;
 }
 .introRight {
   width: fit-content;
@@ -73,7 +76,7 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 15px 50px;
-  /*align-items: center;*//**/
+  /*align-items: center;*/ /**/
   height: 100%;
 }
 .introBooks a {
@@ -156,4 +159,49 @@
   color: inherit;
   transform: scale(1.03);
   transition: 0.3s;
+}
+
+/*Goodbye*/
+
+.introRightWrapperGoodbye {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 15px 35px;
+  height: fit-content;
+  max-width: 80%;
+  margin: -15px auto;
+}
+.introRightWrapperGoodbye h2 {
+  font-size: 18px!important;
+  text-align: center;
+  border: none!important;
+
+}
+.introRightWrapperGoodbye .secondH2 {
+  font-size: 16px!important;
+  text-align: center;
+  margin: 25px auto!important;
+  color:var(--greenish);
+
+
+
+}
+
+
+.introRightWrapperGoodbye strong{
+  color:var(--greenish);
+  margin: auto 5px;
+
+}
+
+
+.introRightWrapperGoodbye p {
+  font-size: 16px!important;
+  text-align: justify;
+
+}
+.introRightWrapperGoodbye .finalWord {
+  font-size: 16.5px!important;
+  text-align: center;
+  margin: 25px auto!important;
+  color:var(--greenish);
 }

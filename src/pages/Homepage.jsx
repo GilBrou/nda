@@ -12,7 +12,7 @@ export default function Homepage(data) {
     <div>
       <div className="homepage">
         <Intro data1={data.data1} data2={data.data2} data3={data.data3} />
-        <Footer data1={data.data1} data2={data.data2} />
+        {/*<Footer data1={data.data1} data2={data.data2} />*/}
       </div>
     </div>
   );

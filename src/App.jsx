@@ -13,6 +13,8 @@ import { getAllTags } from "./components/Appendix";
 import { getAllTags2 } from "./components/Appendix";
 
 import Data00 from "./data/data.json";
+import Data01 from "./data/dataSite.json";
+import Data02 from "./data/dataBooks.json";
 
 /***PAGES***/
 import Homepage from "./pages/Homepage";
@@ -36,15 +38,20 @@ export default function App() {
   const [allDatas3, setAllDatas3] = useState({});
 
   /*Json file urls*/
+  /*
   let Json1 =
     "https://raw.githubusercontent.com/NoirDAbsinthe/NDAAPI/master/dataSite.json";
   let Json2 =
     "https://raw.githubusercontent.com/NoirDAbsinthe/NDAAPI/master/dataBooks.json";
+*/
 
   /*axios config*/
+  /*
   const requestOne = axios.get(Json1);
   const requestTwo = axios.get(Json2);
+*/
 
+  /*
   useEffect(() => {
     async function getDatas() {
       axios.all([requestOne, requestTwo]).then(
@@ -60,6 +67,20 @@ export default function App() {
           setAllDatas3(Data3);
         })
       );
+    }
+    getDatas();
+  }, []);
+*/
+
+  useEffect(() => {
+    async function getDatas() {
+      setData1(Data00);
+      setData2(Data01);
+      setData3(Data02);
+      setLoading(false);
+      setAllDatas(Data00);
+      setAllDatas2(Data2);
+      setAllDatas3(Data3);
     }
     getDatas();
   }, []);
@@ -90,17 +111,17 @@ export default function App() {
               <Homepage data1={Data1} data2={Data2} data3={Data3} />
             </Route>
             {/*CREATEURS*/}
-            <Route exact path="/createurs">
-              <Createurs data1={Data1} data2={Data2} />
-            </Route>
+            {/*<Route exact path="/createurs">
+                          <Createurs data1={Data1} data2={Data2} />
+                        </Route>*/}
             {/*UNIVERS HOMEPAGE*/}
-            <Route exact path="/nos-univers">
-              <Univers data1={Data1} data2={Data2} />
-            </Route>
+            {/*<Route exact path="/nos-univers">
+                          <Univers data1={Data1} data2={Data2} />
+                        </Route>*/}
             {/*TEAM PAGE*/}
-            <Route exact path="/actionnaires">
-              <Team data={Data2} />
-            </Route>
+            {/*<Route exact path="/actionnaires">
+                          <Team data={Data2} />
+                        </Route>*/}
             {/*STORIES*/}
             {/*<Route exact path="/nouvelles">
                      <Stories data={Data2} />
@@ -110,27 +131,27 @@ export default function App() {
                         <StoryBrume />
                       </Route>*/}
             {/*UNIVERS*/}
-            <Route
-              exact
-              path={[
-                "/memoria",
-                "/futuria",
-                "/onyria",
-                "/terra-urbana",
-                "/rouge-d-absinthe",
-                "/l-antre-de-la-folie",
-                "/fleur-d-absinthe",
-                "/chrysalis",
-                "/pousse-d-absinthe",
-                "/hors-collection",
-              ]}
-            >
-              <ThisUniverse data1={Data1} data2={Data2} data3={Data3} />
-            </Route>
+            {/*<Route
+                          exact
+                          path={[
+                            "/memoria",
+                            "/futuria",
+                            "/onyria",
+                            "/terra-urbana",
+                            "/rouge-d-absinthe",
+                            "/l-antre-de-la-folie",
+                            "/fleur-d-absinthe",
+                            "/chrysalis",
+                            "/pousse-d-absinthe",
+                            "/hors-collection",
+                          ]}
+                        >
+                          <ThisUniverse data1={Data1} data2={Data2} data3={Data3} />
+                        </Route>*/}
             {/*SEARCH*/}
-            <Route path="/recherche">
-              <Search data1={Data1} data2={Data2} data3={Data3} />
-            </Route>
+            {/*<Route path="/recherche">
+                          <Search data1={Data1} data2={Data2} data3={Data3} />
+                        </Route>*/}
             {/*REDIRECT*/}
             <Route>
               <Redirect to="/accueil" />

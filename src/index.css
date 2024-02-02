@@ -42,9 +42,11 @@ html {
   background-color: var(--blackish);
   background: url("./style/background/background.webp");
   background-color: var(--blackish);
-  background-position: center;
+  background-position: 75% 38%;
+  
+
   background-attachment: fixed;
-  background-size: cover;
+  /*background-size: cover;*/
   background-repeat: no-repeat;
 
   /*Color Variables*/
