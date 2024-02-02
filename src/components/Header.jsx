@@ -112,16 +112,16 @@ export default function Header(data) {
                       </a>
                     </li>
                   )
-                )
+                ),
               )}
             </ul>
           </li>
           {/*2.5 - Lecture en ligne*/}
-          {/*<li className="StoryLink">
-              <a href={data.data1 ? data.data1.links.menu5L : "loading..."}>
-                {data.data1 ? data.data1.menu.menu2b : "loading..."}
-              </a>
-            </li>*/}
+          <li className="StoryLink">
+            <a href={data.data1 ? data.data1.links.menu5L : "loading..."}>
+              {data.data1 ? data.data1.menu.menu2b : "loading..."}
+            </a>
+          </li>
           {/*3 - Créateurs*/}
           <li>
             <a
@@ -165,29 +165,29 @@ export default function Header(data) {
             {/*5b - Contact sub menu2 */}
             <ul className="subList">
               {/*5b - 1 - Contact Form & Modal */}
-              <li>
-                <button
-                  className="modalButton"
-                  onClick={() => {
-                    onOpenModal2();
-                    HideThis();
-                  }}
-                >
-                  {" "}
-                  {data.data1 ? data.data1.menu.menu5a : "loading..."}
-                </button>
-                <Modal
-                  className="myModal"
-                  open={open2}
-                  onClose={() => {
-                    onCloseModal2();
-                    DisplayThis();
-                  }}
-                  center
-                >
-                  {getModal(data, "modal2")}
-                </Modal>
-              </li>
+              {/*<li>
+                              <button
+                                className="modalButton"
+                                onClick={() => {
+                                  onOpenModal2();
+                                  HideThis();
+                                }}
+                              >
+                                {" "}
+                                {data.data1 ? data.data1.menu.menu5a : "loading..."}
+                              </button>
+                              <Modal
+                                className="myModal"
+                                open={open2}
+                                onClose={() => {
+                                  onCloseModal2();
+                                  DisplayThis();
+                                }}
+                                center
+                              >
+                                {getModal(data, "modal2")}
+                              </Modal>
+                            </li>*/}
               {/*5b - 2 - Manuscripts & text submissions + modal*/}
               <li>
                 <button
@@ -213,29 +213,29 @@ export default function Header(data) {
                 </Modal>
               </li>
               {/*5b - 3 - Press + modal*/}
-              <li>
-                <button
-                  className="modalButton"
-                  onClick={() => {
-                    onOpenModal4();
-                    HideThis();
-                  }}
-                >
-                  {" "}
-                  {data.data1 ? data.data1.menu.menu5c : "loading..."}
-                </button>
-                <Modal
-                  className="myModal"
-                  open={open4}
-                  onClose={() => {
-                    onCloseModal4();
-                    DisplayThis();
-                  }}
-                  center
-                >
-                  {getModal(data, "modal4")}
-                </Modal>
-              </li>
+              {/*<li>
+                              <button
+                                className="modalButton"
+                                onClick={() => {
+                                  onOpenModal4();
+                                  HideThis();
+                                }}
+                              >
+                                {" "}
+                                {data.data1 ? data.data1.menu.menu5c : "loading..."}
+                              </button>
+                              <Modal
+                                className="myModal"
+                                open={open4}
+                                onClose={() => {
+                                  onCloseModal4();
+                                  DisplayThis();
+                                }}
+                                center
+                              >
+                                {getModal(data, "modal4")}
+                              </Modal>
+                            </li>*/}
               {/*5b - 4 - Media kit download link (PDF)*/}
               <li>
                 <Link
@@ -251,7 +251,7 @@ export default function Header(data) {
             </ul>
           </li>
           {/*6 Blog link*/}
-                <li>
+          <li>
             <a
               href={data.data2 ? data.data2.nda.blog : "loading..."}
               target="_blank"

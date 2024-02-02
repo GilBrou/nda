@@ -200,17 +200,18 @@ export function getModal(data, id) {
 					<p> {data.data2 ? data.data2.mentions.P2 : "loading..."}</p>
 					<p> {data.data2 ? data.data2.mentions.P3 : "loading..."}</p>
 				</div>
-				<div className="paraMentions">
-					<a href={ThatMail}>
-						<p>{data.data2 ? data.data2.nda.mail : "loading..."}</p>
-					</a>
-					<p>{data.data2 ? data.data2.nda.tel : "loading..."}</p>
-				</div>
+				{/*<div className="paraMentions">
+									<a href={ThatMail}>
+										<p>{data.data2 ? data.data2.nda.mail : "loading..."}</p>
+									</a>
+									<p>{data.data2 ? data.data2.nda.tel : "loading..."}</p>
+								</div>
 
 				<div className="paraMentions">
 					<p> {data.data2 ? data.data2.mentions.P4 : "loading..."}</p>
 					<p> {data.data2 ? data.data2.mentions.P5 : "loading..."}</p>
 				</div>
+				*/}
 				<div className="Pcenter2">
 					<p> {data.data2 ? data.data2.mentions.P6 : "loading..."}</p>
 

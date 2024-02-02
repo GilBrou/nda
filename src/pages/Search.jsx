@@ -32,9 +32,11 @@ export default function Search(data) {
   function checkBookList() {
     let Books = document.querySelectorAll(".book");
     if (Books.length == 0) {
-      return <h2>Désolé, aucun livre ne correpsond à votre recherche</h2>;
+      {
+        /*return <h2>Désolé, aucun livre ne correspond à votre recherche</h2>;*/
+      } /*CHECKit*/
     }
-  }
+  }11
 
   /*Targeted info*/
   let url_string = window.location.href;
@@ -51,11 +53,11 @@ export default function Search(data) {
   function isThisBookFromLitUniverse(target, data) {
     if (target.includes("Univers") || target.includes("Séries")) {
       return data.data3.Livres.sort(dateSortInvert).map((thatBook, i) =>
-        SortTargetedBooks(thatBook, i, target, data)
+        SortTargetedBooks(thatBook, i, target, data),
       );
     } else {
       return data.data3.Livres.sort(dateSort).map((thatBook, i) =>
-        SortTargetedBooks(thatBook, i, target, data)
+        SortTargetedBooks(thatBook, i, target, data),
       );
     }
   }
